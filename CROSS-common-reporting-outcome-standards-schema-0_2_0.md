@@ -47,6 +47,10 @@ CROSS applies to any grants program that makes funding decisions based on expect
 
 Runbooks providing pre-built configurations for common program types are companion documents to this standard. A funder adopting CROSS may select a runbook as a starting configuration or build a custom configuration from the gate architecture specification in Part IV.
 
+CROSS imposes obligations on concurrent funding attribution as well as on applicants and reviewers. Where concurrent funding is disclosed under Part VI, scope attribution and outcome credit obligations are specified in Part VI-A.
+
+CROSS imposes obligations on funders as well as on applicants, grantees, and reviewers. Funder obligations and redress mechanisms are specified in Part XI.
+
 ---
 
 ## Part I: Independence and Suite References
@@ -151,6 +155,8 @@ Outcome evidence: a measurable change has occurred in the specified population, 
 
 Impact evidence: a credible causal link is established between the funded work and the measured change, through methodology sufficient to support causal inference. Not required in most public goods grant contexts, but may be configured as a continuation gate requirement for large-scale programs with institutional funders.
 
+For on-chain contract and protocol deliverables, output evidence includes not only the existence of the deployed contract but also the existence of a verification artifact demonstrating that the contract satisfies the specified invariant set. Where the obligation object is a behavioral property rather than a discrete output, the verification artifact is part of the output evidence, not only supporting documentation.
+
 **Evidence strength.** The verification mechanism at any gate falls into one of four levels, in ascending order of rigor.
 
 Self-report with documentation: the grantee provides a narrative account with supporting links, files, or on-chain data references, reviewed by funder staff against the published criteria. Appropriate for small grants and early-stage progress verification gates.
@@ -158,6 +164,8 @@ Self-report with documentation: the grantee provides a narrative account with su
 Third-party verifiable: the evidence is independently accessible to any reviewer with internet access, from sources outside the applicant's control. On-chain data from named public contracts, public repository activity, published results with open data. Appropriate as the minimum for completion verification gates above small grant thresholds.
 
 Independent review: a named party outside the funder-grantee relationship confirms that the submitted evidence meets the completion criteria. The reviewer may be a domain expert, a named committee member not involved in the original award decision, or another funder who has reviewed the same work. Appropriate for continuation gates and for grants above a funder-defined size threshold.
+
+For contract-centric interventions, independent review and independent evaluation may be satisfied by a named external security auditor, formal verification provider, or equivalent qualified reviewer who attests that the submitted verification artifacts and on-chain behavior meet the published completion criteria.
 
 Independent evaluation: a qualified evaluator with relevant domain expertise conducts a structured assessment of whether the funded work produced the claimed output, usage, or outcome, using methods proportional to the evidence scope required. Appropriate for Stage 2 and Stage 3 grants in graduated programs, and for programs where causal attribution is material to the funding decision.
 
@@ -193,6 +201,26 @@ For build-obligation indicators: the measurement form is typically binary (the d
 
 For change-obligation indicators: the measurement form is typically quantitative or ordinal. The declaration must include the unit of measurement and the direction of desirable change.
 
+**On-Chain Execution and Verification Instruments.** For interventions where the primary deliverable is a smart contract, protocol, or on-chain system, the obligation object may be the contract's behavior under specified conditions rather than discrete artifacts or counts. In these cases, the indicator's measurement form and evidence classification must explicitly name the execution and verification instruments that will be used to confirm completion.
+
+An execution and verification instrument is any mechanism that provides structured evidence about contract behavior or protocol properties, including but not limited to:
+
+- Formal verification artifacts (machine-checkable proofs and their specifications).
+- Independent security audits and review reports.
+- On-chain invariant monitors or watchdog contracts.
+- Canonical transaction patterns or state transitions on named contracts, observable from public blockchain data.
+
+Where the obligation object is a contract's behavior, the indicator specification must additionally contain:
+
+- **Invariant specification.** A narrative description of the invariants or properties the contract must satisfy (for example, conservation of balances, absence of re-entrancy on named functions, bounded slippage for a specific operation). This description is the human-readable counterpart of the formal specification used in verification tools.
+- **Verification method.** A statement of whether the invariant will be assessed by formal verification, independent audit, manual review of on-chain behavior, continuous monitoring, or a combination. If formal verification is used, the named tool or approach must be specified (for example, model checking, theorem proving, or a named framework).
+- **Verification artifact.** The concrete artifact that constitutes completion evidence: a proof object, an audit report from a named firm, or a named contract and query that a reviewer can use to reproduce the behavioral check from public chain data.
+- **Failure surface.** At least one example of behavior that would constitute a failure to meet the invariant, and how such a failure would be detected by the chosen instrument.
+
+For build-obligation indicators in contract-centric projects, the measurement form may be binary ("the contract satisfies the specified invariant set as demonstrated by the named verification artifact") rather than a count of outputs. The operational definition and construction methodology fields must still enable an independent reviewer to reproduce the verification procedure or validate the artifact from public sources.
+
+Indicators that rely solely on applicant-controlled test suites or private monitoring dashboards, without any independent verification instrument, fail the integrity standard. They may appear as supplementary evidence but do not satisfy the minimum verification requirement at the completion gate for contract-centric deliverables.
+
 **Operational definition.** A narrative specification of what counts and what does not count as one unit of the claimed result. Must include: inclusion criteria (what qualifies as one instance), exclusion criteria (what the indicator explicitly does not count), unit of analysis (person, wallet address, transaction, repository, site, or other named unit), and edge case determination (at least one example of how an ambiguous instance is handled). Without an operational definition, the claimed indicator is a name, not a measurement instrument.
 
 **Construction and aggregation methodology.** The calculation rule in sufficient detail that an independent reviewer with access to the stated data source could replicate the result. Must include the formula or counting rule, how partial data is handled, and how values from sub-units are aggregated. For build-obligation indicators, the construction methodology specifies how completion is determined: what constitutes a passing demonstration, who performs the verification, and by what process. For change-obligation indicators, this is the standard data construction methodology. Self-report of a result without a stated construction methodology does not satisfy this field.
@@ -222,6 +250,77 @@ All active grants, investments, or revenue sources from the prior 24 months that
 - Whether any investor or funder has board, coordinating, or decision-making rights over the funded work
 
 Non-disclosure of concurrent funding is a disqualifier. Disclosure is not. An applicant with venture capital backing can receive public goods grant funding if the relationship between commercial financing and the public goods ask is clear and the public goods ask is specifically scoped to work the commercial funding does not cover.
+
+---
+
+## Part VI-A: Scope Attribution and Outcome Credit
+
+CROSS distinguishes between disclosure of concurrent funding (Part VI) and attribution of results to specific funding sources. This Part specifies how scope attribution and outcome credit are handled when concurrent funding is present. It applies across all obligation modes and all gate types where outcome or usage evidence is required.
+
+Scope attribution and outcome credit obligations are triggered when the concurrent funding disclosure requirement in Part VI is triggered. Where no concurrent funding exists, this Part does not apply.
+
+### 1. Additionality Declaration (Budget Scope)
+
+Where concurrent funding is disclosed at application stage, the applicant must submit an additionality declaration for this award. The additionality declaration specifies what this grant funds that concurrent sources do not.
+
+The additionality declaration is a required field in the entry specification for any application with concurrent funding, across build, change, and retroactive obligation modes. Failure to submit an additionality declaration when concurrent funding is disclosed is a gate failure at entry.
+
+The additionality declaration must contain:
+
+- **Scope boundary.** A narrative specification of the work, deliverables, or costs funded by this grant that are not funded by any concurrently disclosed source. The boundary must be specific enough that a reviewer can determine whether a proposed activity lies inside or outside this grant's scope.
+- **Overlap statement.** A brief statement of where overlap exists between this grant and concurrent sources, if any, and how double funding of the same input is avoided in practice.
+- **Assurance of non-duplication.** An attestation that the applicant will not knowingly charge the same cost to multiple funders, and that any material changes in concurrent funding affecting this assurance will be reported at the next gate.
+
+For build-obligation applications, the additionality declaration specifies which parts of the deliverable or which development stages this grant covers relative to other funders.
+
+For change-obligation applications, the additionality declaration specifies which portion of the intervention pathway (activities, geography, population segment, or time period) this grant is funding relative to other funders.
+
+For retroactive applications, the additionality declaration specifies whether the prior contribution has already received retroactive awards from other programs and what forward-facing obligations, if any, this award uniquely creates.
+
+### 2. Outcome Credit Attribution (Reporting Stage)
+
+Where concurrent funding is disclosed and outcome or usage evidence is required at a completion verification or continuation gate, the applicant must submit an outcome credit attribution statement alongside their results. This requirement applies to any gate configured at usage, outcome, or impact evidence scope in Part IV.
+
+The outcome credit attribution statement must contain:
+
+- **Attribution fractions.** A declared percentage allocation of the reported result across all funders that materially contributed to it, including this program. Percentages must sum to 100 percent across named funders and, where relevant, a residual category for un-funded or self-funded contribution.
+- **Attribution rationale.** A short narrative explaining how the attribution fractions were determined. The rationale must name the main factors used (relative funding amounts, timing, specific work packages funded, or other relevant distinctions) and acknowledge material uncertainties.
+- **Change tracking.** If attribution fractions change between reporting periods for the same indicator, the applicant must document the reason for the change and its implications for comparability of prior periods.
+
+The attribution requirement is a documentation obligation, not a causal proof requirement. The failure mode is absence of a declared attribution position where concurrent funding exists, not imprecision in the fractions themselves. Reviewers assess whether an attribution statement is present and coherent with the additionality declaration and the indicator specification.
+
+### 3. Gate-Level Consistency
+
+Reviewers must assess consistency between:
+
+- The concurrent funding disclosure (Part VI)
+- The additionality declaration (Section 1 of this Part)
+- The indicator specification (Part V)
+- The outcome credit attribution statement (Section 2 of this Part)
+
+Inconsistencies that must be flagged at the rigor tier include:
+
+- An additionality declaration that asserts unique funding for work that, by the applicant's own description, is also fully funded by another source.
+- An outcome credit attribution statement that assigns 100 percent of outcome credit to this funder where multiple concurrent funders are disclosed for the same scope and time period.
+- Material changes in attribution fractions across periods without documented rationale.
+
+These are rigor-tier failures, not automatic gate failures. Review committees may request clarification or revision before making a final determination.
+
+### 4. Program-Level Continuation Gate Option
+
+Programs that configure a continuation specification gate in Part IV may activate a scope attribution check as part of the continuation criteria. Where activated, the continuation gate must specify:
+
+- Whether a public prior-claims registry or equivalent record will be consulted to determine whether the same outcomes have been previously claimed in other programs.
+- How inconsistent or conflicting attribution statements across funders will be handled in continuation decisions.
+- Whether a minimum standard for attribution coherence (for example, stable fractions over time for the same indicator absent documented changes in the funding mix) is required for advancement to the next stage.
+
+Activation of the scope attribution check at continuation is optional at Stage 1 and required for programs whose Grant Configurator specifies Stage 2 or above, consistent with the cost-effectiveness and maturation logic in Part IV and the Appendix.
+
+### 5. Relationship to Concurrent Funding Disclosure
+
+Concurrent funding disclosure in Part VI is a public documentation requirement. The additionality declaration and outcome credit attribution requirements in this Part are obligation requirements. Disclosure alone is not sufficient for CROSS conformance where concurrent funding exists.
+
+Non-disclosure of concurrent funding remains a disqualifying integrity failure under Part VI. Submission of a materially incomplete or incoherent additionality declaration or attribution statement is a rigor-tier failure under this Part, subject to remediation where feasible.
 
 ---
 
@@ -295,6 +394,10 @@ CROSS is implemented through four operational tools. The standard specifies what
 
 **CROSS Grant Configurator** (CROSS-grant-configurator-0_2_0.md): the funder onboarding instrument. Generates a round-specific obligation specification from the funder's declared obligation mode, gate configuration, evidence requirements, and infrastructure declarations. Inherits all field definitions, tier logic, and conflict of interest requirements from this standard. The configurator also supports program-level configuration: the continuation gate structure and stage progression requirements are specified here, separately from individual round configuration. Runbook configurations may be selected as a starting point and customized.
 
+The Grant Configurator records whether concurrent funding is present and, where it is, activates the additionality declaration and outcome credit attribution requirements specified in Part VI-A. These parameters are published alongside gate configurations so applicants understand both their obligations and their methods for recording attribution.
+
+The Grant Configurator also records the program's funder-side obligation configuration: internal clarification mechanism, structured appeals procedure, and whether an independent redress mechanism is operated. These parameters are published alongside gate configurations so applicants understand both their obligations and their avenues for recourse.
+
 **CROSS Grantee Dashboard** (CROSS-grantee-dashboard-0_2_0.md): the post-award obligation interface. Converts the round specification produced by the Grant Configurator into a live record for each funded project. Inherits the indicator schema, evidence requirements, gate configuration, disaggregation ratchet, cumulative/non-cumulative designation, and disbursement condition structure from the configurator. Tracks gate evidence submissions and produces structured attestations suitable for on-chain publication.
 
 **CROSS Reviewers Dashboard** (CROSS-reviewers-dashboard-0_1_0.md): the stage-gated review interface. Active only during the evaluation stage of a round, as configured in the Grant Configurator. Enforces conflict of interest declarations as access gates before any application is opened. Maintains assessment isolation between reviewers until submission. Provides role-differentiated access: guest reviewers see their assigned applications; lead reviewers see all applications and submitted assessments; funder administrators see the aggregate output. Loads the appropriate rubric based on the obligation mode configured for the round. Provides AI-assisted evaluation in three layers: submitted evidence verification against the applicant's claims, independent investigation of applicant claims against third-party sources, and a draft evaluation applying the rubric to the combined findings. Human reviewer assessment is the final artifact; the AI draft and investigation findings are stored alongside it in the review record.
@@ -319,6 +422,76 @@ The standard states criteria tersely. The companion documents operationalize the
 
 ---
 
+---
+
+## Part XI: Funder Obligations and Redress
+
+CROSS specifies what funded interventions are obligated to demonstrate and how reviewers must assess the evidence. It also imposes obligations on funders: to publish gate configurations, declare verification infrastructure, and apply gate criteria as published. This Part specifies the minimum mechanisms by which funders are held to their published obligations, and how applicants and grantees may seek redress when they believe those obligations have been violated.
+
+This Part applies to all CROSS-conformant programs. Configurable elements are tiered by program scale.
+
+---
+
+#### 1. Funder Obligation Requirements
+
+In addition to the obligations stated elsewhere in this standard, a CROSS-conformant funder must:
+
+- Maintain a record of gate configurations, infrastructure declarations, and documented waivers for each round and stage.
+- Apply gate criteria consistently with the published configuration for that round.
+- Document any deviation from the published configuration or infrastructure declaration, including justification and the party under whose authority the deviation was made.
+
+Failure to meet these obligations is a funder obligation violation. It does not automatically invalidate individual awards, but it does create an obligation to remediate where affected applicants or grantees are identified.
+
+---
+
+#### 2. Internal Review and Clarification
+
+Before formal redress is sought, applicants and grantees must have access to an internal clarification mechanism. At minimum, this mechanism must provide:
+
+- A named point of contact to whom applicants and grantees can submit questions about how gate decisions were applied in their specific case.
+- A requirement that the funder provide a written response explaining how the decision was consistent with the published gate configuration, the applicable rubric, and the evidence on record.
+- A time bound for response that is shorter than the round's typical cycle time, so that clarifications can inform subsequent applications.
+
+The internal clarification mechanism is not an appeals body. It is a structured means of obtaining a record of the funder's reasoning and ensuring that gate decisions are anchored to the published configuration.
+
+---
+
+#### 3. Structured Appeals on Procedural Grounds
+
+CROSS recognizes appeals on procedural grounds: claims that the funder did not follow its own published gate configuration, infrastructure declaration, or conflict of interest framework in a way that materially affected an applicant or grantee.
+
+A CROSS-conformant program must:
+
+- Publish an appeals procedure that specifies:
+    - What decisions are appealable (for example, entry gate rejections, completion verification failures, continuation denials).
+    - The grounds on which appeals may be made (procedural non-conformance, conflict of interest violations, undisclosed changes to gate configuration).
+    - The time window within which an appeal must be filed after the decision is communicated.
+- Designate an appeals body that is structurally separate from the original decision-making panel. In small programs, this may be a board member or external advisor who did not participate in the original decision.
+- Commit to issuing a written determination on each appeal that states:
+    - Whether a funder obligation violation occurred.
+    - Whether the original decision stands, is modified, or is reversed.
+    - What remediation, if any, will be offered.
+
+Appeals under this Part assess whether the funder followed CROSS-conformant procedures. They do not reopen substantive scoring absent a documented procedural error.
+
+---
+
+#### 4. Independent Redress Mechanism (Optional)
+
+Larger programs and multi-round ecosystems may configure an independent redress mechanism analogous to the Independent Redress Mechanism operated by institutional funders such as the Green Climate Fund and the World Bank. Where configured, the mechanism:
+
+- Accepts complaints from applicants, grantees, or affected parties who allege that the funder has violated CROSS or its own published policies.
+- Operates independently from the program's grant decision-making structure.
+- May review documentation, interview parties, and issue findings and recommendations.
+
+For CROSS conformance, the independent mechanism is optional. Where a program chooses to operate without one, the funder must state this explicitly in the Grant Configurator and publish the decision as part of the program-level specification.
+
+---
+
+#### 5. Linkage to Failure Record Obligation
+
+Where a funder obligation violation has materially affected the status of a grant (for example, premature termination, unjustified completion failure, or denial of continuation funding), the case must be recorded in the funder's failure record, alongside the remediation offered. Future versions of this standard may make the failure record a conformance requirement for all CROSS-conformant programs.
+
 ## Appendix: Open Design Questions (v0.2.0)
 
 **Single-outcome constraint.** Whether CROSS should require one primary indicator per application or permit multiple. Current position: permit multiple, require one designated primary indicator. The primary indicator is the one against which the entry specification, progress verification, and completion verification gates are primarily assessed.
@@ -339,5 +512,7 @@ The standard states criteria tersely. The companion documents operationalize the
 
 | Version | Date | Summary |
 |---|---|---|
+| 0.2.2 | 2026-05-15 | Added Part VI-A: Scope Attribution and Outcome Credit, specifying additionality declaration and outcome credit attribution requirements triggered by concurrent funding disclosure. Added cross-reference in the Scope section. Added Grant Configurator note in Part IX specifying how Part VI-A parameters are recorded and published. Added Part XI: Funder Obligations and Redress, specifying minimum mechanisms by which funders are held to their published gate configurations and how applicants may seek recourse. Added cross-references in Scope and Implementation Architecture. |
+| 0.2.1 | 2026-05-15 | On-chain execution and verification instruments: added subsection to Part V specifying indicator requirements for smart contract and protocol deliverables, including invariant specification, verification method, verification artifact, and failure surface fields. Added two clarifying paragraphs to Part IV on verification artifacts as output evidence and on independent review for contract-centric interventions. |
 | 0.2.0 | 2026-05-14 | Major structural revision. Introduced three accountability modes (build, change, retroactive). Theory of Build correctly scoped as a failure mode in change-accountability rounds only. Replaced Level 1 / Level 2 binary with four-gate architecture (entry specification, progress verification, completion verification, continuation specification). Added evidence scope and evidence strength taxonomies. Added program-level continuation gate. Replaced constrained data type list with open measurement form and evidence classification. Added Reviewers Dashboard to implementation architecture. Added runbook library concept. Added funder maturation tracking note. Resolved several v0.1.0 open questions. |
 | 0.1.0 | 2026-05-14 | Initial draft. Single accountability mode (change). Binary Theory of Build gate (Level 1) and scored rigor tier (Level 2). PIRS-derived indicator schema with four-option data type field. |
