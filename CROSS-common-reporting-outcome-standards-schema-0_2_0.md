@@ -175,6 +175,23 @@ Independent evaluation: a qualified evaluator with relevant domain expertise con
 
 **Cost-effectiveness for continuation.** Where a continuation gate is configured for a change-obligation program, the entry specification for the next stage includes a cost-effectiveness consideration: does the evidence from the prior stage indicate that further investment in this intervention produces meaningful change relative to available alternatives? This is not a disqualifying criterion at first-stage entry; it is a continuation criterion. The Grant Configurator may configure cost-effectiveness as a required or advisory element of the continuation gate.
 
+**External Standard References**
+
+Any gate in a CROSS-conformant program may reference an external standard by URL. Where a gate references an external standard, the funder specifies: the URL at which the standard is published, a human-readable label, a version anchor (a dated access record, version number, or content hash) that identifies which edition of the standard governs, and the scope of the reference (which gate criteria the standard governs: eligibility, evidence quality, methodology, or all gates in the round).
+
+A version anchor is required. Without a version anchor, the referenced standard may change after the gate configuration is published, making the gate undefined. At minimum, the funder must record the date on which the URL was confirmed to contain the standard being referenced. A versioned URL or content hash provides stronger anchoring.
+
+At configuration time, the system confirms that the URL resolves to readable content and extracts a summary of the standard's key criteria for display in the Grant Configurator and the Grantee Dashboard. This confirmation is re-run at each gate if no version anchor is provided. If the URL does not resolve or the content is not substantive, the reference cannot be saved.
+
+For standards that are themselves approved lists of items (for example, the Open Source Initiative approved license list, the Open Definition approved data license list, or the OFAC Specially Designated Nationals list), the reference may specify a list membership check: the funder identifies the list URL, specifies the field or item type to match, and the system confirms membership programmatically against the machine-readable version of the list at the anchored date. Machine-readable approved lists suitable for this use include:
+
+- Software licenses: the SPDX License List JSON at https://github.com/spdx/license-list-data, with an OSI-approved boolean field per license identifier.
+- Open content and data licenses: the Open Definition API at https://licenses.opendefinition.org/licenses/groups/all.json.
+- Sanctions screening: the OFAC Specially Designated Nationals list XML at https://sanctionslist.ofac.treas.gov/Home/SdnList, updated daily.
+- Digital Public Goods registry: the Digital Public Goods Alliance candidate list JSON at https://github.com/DPGAlliance/publicgoods-candidates.
+
+Where a funder references an external standard for the eligibility gate, that standard governs the eligibility determination in addition to any criteria specified directly in the gate configuration. The external standard reference does not replace CROSS's own gate criteria; it adds to them. Reviewers must assess conformance with both.
+
 ---
 
 ## Part V: Indicator Specification
@@ -396,6 +413,8 @@ CROSS is implemented through four operational tools. The standard specifies what
 
 The Grant Configurator records whether concurrent funding is present and, where it is, activates the additionality declaration and outcome credit attribution requirements specified in Part VI-A. These parameters are published alongside gate configurations so applicants understand both their obligations and their methods for recording attribution.
 
+The Grant Configurator records external standard references for each gate, including the URL, version anchor, scope, and machine-readable list membership check parameters where applicable. These parameters are published alongside gate configurations so applicants and reviewers can confirm the standards in force for each gate.
+
 The Grant Configurator also records the program's funder-side obligation configuration: internal clarification mechanism, structured appeals procedure, and whether an independent redress mechanism is operated. These parameters are published alongside gate configurations so applicants understand both their obligations and their avenues for recourse.
 
 **CROSS Grantee Dashboard** (CROSS-grantee-dashboard-0_2_0.md): the post-award obligation interface. Converts the round specification produced by the Grant Configurator into a live record for each funded project. Inherits the indicator schema, evidence requirements, gate configuration, disaggregation ratchet, cumulative/non-cumulative designation, and disbursement condition structure from the configurator. Tracks gate evidence submissions and produces structured attestations suitable for on-chain publication.
@@ -512,7 +531,7 @@ Where a funder obligation violation has materially affected the status of a gran
 
 | Version | Date | Summary |
 |---|---|---|
-| 0.2.2 | 2026-05-15 | Added Part VI-A: Scope Attribution and Outcome Credit, specifying additionality declaration and outcome credit attribution requirements triggered by concurrent funding disclosure. Added cross-reference in the Scope section. Added Grant Configurator note in Part IX specifying how Part VI-A parameters are recorded and published. Added Part XI: Funder Obligations and Redress, specifying minimum mechanisms by which funders are held to their published gate configurations and how applicants may seek recourse. Added cross-references in Scope and Implementation Architecture. |
+| 0.2.2 | 2026-05-15 | Added Part VI-A: Scope Attribution and Outcome Credit, specifying additionality declaration and outcome credit attribution requirements triggered by concurrent funding disclosure. Added cross-reference in the Scope section. Added Grant Configurator note in Part IX specifying how Part VI-A parameters are recorded and published. Added Part XI: Funder Obligations and Redress, specifying minimum mechanisms by which funders are held to their published gate configurations and how applicants may seek recourse. Added cross-references in Scope and Implementation Architecture. External Standard References: new subsection in Part IV specifying the mechanism by which any gate may reference an external standard by URL with a version anchor, including support for machine-readable approved lists. |
 | 0.2.1 | 2026-05-15 | On-chain execution and verification instruments: added subsection to Part V specifying indicator requirements for smart contract and protocol deliverables, including invariant specification, verification method, verification artifact, and failure surface fields. Added two clarifying paragraphs to Part IV on verification artifacts as output evidence and on independent review for contract-centric interventions. |
 | 0.2.0 | 2026-05-14 | Major structural revision. Introduced three accountability modes (build, change, retroactive). Theory of Build correctly scoped as a failure mode in change-accountability rounds only. Replaced Level 1 / Level 2 binary with four-gate architecture (entry specification, progress verification, completion verification, continuation specification). Added evidence scope and evidence strength taxonomies. Added program-level continuation gate. Replaced constrained data type list with open measurement form and evidence classification. Added Reviewers Dashboard to implementation architecture. Added runbook library concept. Added funder maturation tracking note. Resolved several v0.1.0 open questions. |
 | 0.1.0 | 2026-05-14 | Initial draft. Single accountability mode (change). Binary Theory of Build gate (Level 1) and scored rigor tier (Level 2). PIRS-derived indicator schema with four-option data type field. |
