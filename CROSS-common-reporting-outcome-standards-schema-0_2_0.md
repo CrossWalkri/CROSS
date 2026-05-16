@@ -1,6 +1,6 @@
 ---
 title: CROSS - Common Reporting Outcome Standards Schema
-version: 0.2.4
+version: 0.3.0
 date: 2026-05-15
 license: CC0
 status: Working draft. Supersedes version 0.1.0. Incorporates comparative research across thirteen grant programs spanning web3, open source, and institutional funding contexts.
@@ -25,7 +25,7 @@ implementation_documents:
 
 # CROSS: Common Reporting Outcome Standards Schema
 
-Version 0.2.4 | 2026-05-15 | CC0
+Version 0.3.0 | 2026-05-15 | CC0
 
 ---
 
@@ -211,36 +211,11 @@ Independent evaluation: a qualified evaluator with relevant domain expertise con
 
 **External Standard References**
 
-Any gate in a CROSS-conformant program may reference an external standard by URL. Where a gate references an external standard, the funder specifies: the URL at which the standard is published, a human-readable label, a version anchor (a dated access record, version number, or content hash) that identifies which edition of the standard governs, and the scope of the reference (which gate criteria the standard governs: eligibility, evidence quality, methodology, or all gates in the round).
-
-A version anchor is required. Without a version anchor, the referenced standard may change after the gate configuration is published, making the gate undefined. At minimum, the funder must record the date on which the URL was confirmed to contain the standard being referenced. A versioned URL or content hash provides stronger anchoring.
-
-At configuration time, the system confirms that the URL resolves to readable content and extracts a summary of the standard's key criteria for display in the Grant Configurator and the Grantee Dashboard. This confirmation is re-run at each gate if no version anchor is provided. If the URL does not resolve or the content is not substantive, the reference cannot be saved.
-
-For standards that are themselves approved lists of items (for example, the Open Source Initiative approved license list, the Open Definition approved data license list, or the OFAC Specially Designated Nationals list), the reference may specify a list membership check: the funder identifies the list URL, specifies the field or item type to match, and the system confirms membership programmatically against the machine-readable version of the list at the anchored date. Machine-readable approved lists suitable for this use include:
-
-- Software licenses: the SPDX License List JSON at https://github.com/spdx/license-list-data, with an OSI-approved boolean field per license identifier.
-- Open content and data licenses: the Open Definition API at https://licenses.opendefinition.org/licenses/groups/all.json.
-- Sanctions screening: the OFAC Specially Designated Nationals list XML at https://sanctionslist.ofac.treas.gov/Home/SdnList, updated daily.
-- Digital Public Goods registry: the Digital Public Goods Alliance candidate list JSON at https://github.com/DPGAlliance/publicgoods-candidates.
-
-Where a funder references an external standard for the eligibility gate, that standard governs the eligibility determination in addition to any criteria specified directly in the gate configuration. The external standard reference does not replace CROSS's own gate criteria; it adds to them. Reviewers must assess conformance with both.
+External standard references in a CROSS-conformant gate must follow the WALKRI External Standard Reference Protocol (WALKRI-standard-0_1_0.md, Part VI), including URL, version anchor, scope, and compliance threshold specification. A reference without a compliance threshold delegates interpretation to reviewers and is a gate criterion specification failure.
 
 **Gate Criterion Specification**
 
-The bidirectional precision principle applies to gate criteria as well as to applicant indicators. CROSS Part V requires applicants to specify their outcome indicators with operational definitions, measurement form, construction methodology, and evidence classification. The same precision requirement applies to funders specifying gate criteria. A gate criterion that a reviewer cannot operationalize consistently is a funder-side conformance failure.
-
-Every gate criterion published in a CROSS-conformant round must satisfy the following specification requirements:
-
-- **Criterion intent.** A plain-language statement of what the criterion is measuring or verifying, distinct from the label. "Qualifies as a Digital Public Good" is a label; "the project satisfies DPG Standard Indicators 2, 4, and 5 as specified below" is a criterion intent.
-- **Operational definition.** For criteria with defined options or thresholds: what each option or threshold means, with at least one example of a qualifying and a non-qualifying case. Options without definitions produce inconsistent reviewer judgments.
-- **Response form.** Whether the criterion is single-select, multi-select, binary, numeric, text, or URL, and the justification for that form. A single-select response form for a criterion that naturally produces multiple valid answers externalizes the cost of ambiguity onto applicants.
-- **Evidence form.** The specific artifact or data point that satisfies the criterion: a file in a public repository, a URL resolving to readable content, a named on-chain address, a signed attestation. A criterion satisfied only by reviewer judgment without a named evidence form is not operable at third-party verifiable strength or above.
-- **Compliance threshold.** For criteria referencing external standards with multiple sub-indicators: which sub-indicators are required, which are advisory, and whether compliance is all-or-nothing or minimum-subset. A criterion referencing an external standard without specifying which components apply delegates interpretation to reviewers, producing inconsistent outcomes.
-
-For external standard references activated under the External Standard References subsection above, the compliance threshold requirement applies in full: the funder must enumerate which components of the referenced standard are gate criteria, what evidence satisfies each component, and the minimum threshold for gate passage. An external standard reference without a compliance threshold specification is incomplete and must be resolved before the round opens.
-
-The DPG Standard case illustrates the requirement: a gate criterion of "qualifies as a Digital Public Good" is incomplete without specifying which of the nine DPG Standard indicators are required, what evidence form satisfies each (for example, a LICENSE file in a public repository for Indicator 2, a public documentation URL accessible without authentication for Indicator 5), and whether all nine indicators or a specified subset must pass. An incomplete DPG criterion produces reviewer shortcuts (registry membership checked as a proxy for the nine-indicator assessment) that the funder cannot detect or audit after the fact.
+Gate criteria in a CROSS-conformant round must meet WALKRI criterion specification requirements at Standard certification level or above (WALKRI-standard-0_1_0.md, Part III). A gate criterion that does not pass WALKRI audit before the round opens is a funder-side conformance failure. The five required elements are: criterion intent, operational definition with examples, response form with justification, evidence form, and compliance threshold for any external standard reference.
 
 ---
 
@@ -288,7 +263,7 @@ For build-obligation indicators in contract-centric projects, the measurement fo
 
 Indicators that rely solely on applicant-controlled test suites or private monitoring dashboards, without any independent verification instrument, fail the integrity standard. They may appear as supplementary evidence but do not satisfy the minimum verification requirement at the completion gate for contract-centric deliverables.
 
-**Operational definition.** A narrative specification of what counts and what does not count as one unit of the claimed result. Must include: inclusion criteria (what qualifies as one instance), exclusion criteria (what the indicator explicitly does not count), unit of analysis (person, wallet address, transaction, repository, site, or other named unit), and edge case determination (at least one example of how an ambiguous instance is handled). Without an operational definition, the claimed indicator is a name, not a measurement instrument.
+**Operational definition.** A narrative specification of what counts and what does not count as one unit of the claimed result. Must include: inclusion criteria (what qualifies as one instance), exclusion criteria (what the indicator explicitly does not count), unit of analysis (person, wallet address, transaction, repository, site, or other named unit), and edge case determination (at least one example of how an ambiguous instance is handled). Without an operational definition, the claimed indicator is a name, not a measurement instrument. The operational definition must meet WALKRI requirements for inclusion criteria, exclusion criteria, unit of analysis, and edge case determination (WALKRI-standard-0_1_0.md, Part III, Criterion 2).
 
 **Construction and aggregation methodology.** The calculation rule in sufficient detail that an independent reviewer with access to the stated data source could replicate the result. Must include the formula or counting rule, how partial data is handled, and how values from sub-units are aggregated. For build-obligation indicators, the construction methodology specifies how completion is determined: what constitutes a passing demonstration, who performs the verification, and by what process. For change-obligation indicators, this is the standard data construction methodology. Self-report of a result without a stated construction methodology does not satisfy this field.
 
@@ -450,17 +425,7 @@ Non-disclosure of a Tier 1 conflict is a disqualifying violation. Non-disclosure
 
 ## Part VIII: Data Quality Standards
 
-The following five standards apply to the indicator specification across all obligation modes. Reviewers apply them during gate assessment. Each standard has its own assessment question and failure mode.
-
-**Validity.** The measurement instrument must have a documented logical chain from the evidence collected to the result level claimed. Assessment question: could an independent reviewer, given the stated source and construction methodology, confirm that the indicator measures what it claims to measure? Validity failure: the reported metric is downstream of unmeasured confounders, or the completion criteria named for a deliverable are insufficient to determine whether the work was done.
-
-**Integrity.** Evidence collection and reporting must be separated from the actor who benefits from the results. A named independent verification mechanism is required. Assessment question: does any evidence for this claim originate from a source independent of the applicant? Integrity failure: all evidence originates from applicant-controlled systems with no independent corroboration.
-
-**Precision.** The measurement method must be capable of detecting changes at the magnitude the project claims to produce, or confirming completion at the specificity the criteria require. Assessment question: is the measurement or verification instrument precise enough to support the claimed result? Precision failure: completion criteria so vague that any output satisfies them; or a change claim smaller than the variance of the measurement instrument.
-
-**Reliability.** The measurement instrument and collection methodology must be consistent across reporting periods. Assessment question: if this project submitted a prior report using a different metric, methodology, or completion criteria for the same indicator, is the change documented and the comparability of prior periods determined? Reliability failure: different criteria or metrics reported in different periods without explanation.
-
-**Timeliness.** Evidence must be current to the reporting period. Assessment question: does the collection frequency match the funder's decision cycle? Timeliness failure: annual data collection where quarterly disbursement decisions depend on current data; or a completion claim based on work from a prior period not covered by the current gate.
+CROSS-conformant indicators are assessed against the five WALKRI Data Quality Standards: Validity, Integrity, Precision, Reliability, and Timeliness (WALKRI-standard-0_1_0.md, Part V). Reviewers apply WALKRI assessment questions and failure mode definitions during gate assessment. The rubric companion document (CROSS-common-reporting-outcome-standards-schema-rubric-0_2_0.md) contains the assessment questions for each standard as applied to CROSS gate contexts.
 
 ---
 
@@ -592,6 +557,7 @@ Where a funder obligation violation has materially affected the status of a gran
 
 | Version | Date | Summary |
 |---|---|---|
+| 0.3.0 | 2026-05-15 | Structural scope change: Gate Criterion Specification, External Standard References, and Data Quality Standards now reference WALKRI (github.com/cross-walkri/WALKRI) rather than specifying requirements directly. Operational definition field in Part V now references WALKRI criterion specification requirements. No obligation architecture changes. |
 | 0.2.4 | 2026-05-15 | Bidirectional Precision Principle: added Gate Criterion Specification subsection to Part IV requiring funders to specify gate criteria with the same operational definition, response form, evidence form, and compliance threshold precision that Part V requires of applicant indicators. Added compliance threshold requirement for external standard references: funders must enumerate which sub-indicators apply, what evidence satisfies each, and the minimum threshold for gate passage, illustrated with the DPG Standard nine-indicator case. Added field clarity gate to Grant Configurator in Part IX: AI-assisted review flags ambiguous criteria before a round opens; overrides are documented conformance choices in the published round configuration. |
 | 0.2.3 | 2026-05-15 | Four structural additions. (1) Part II: extended the open source and intellectual property dimension with an IP ownership declaration requirement for research, model, and novel artifact outputs; Grant Configurator activation note added. (2) Part IV: added Pre-Award Indicator Confirmation Window subsection specifying the optional post-entry, pre-disbursement review of indicator specifications, including silence-as-confirmation rule and governing scope. (3) Part IV: added Outcome Verification with Counterfactual Reference subsection specifying the four required contract elements (counterfactual baseline, attribution argument, comparison period or group, independent attestation) for gates configured at counterfactual reference level; distinguished from default outcome evidence scope. (4) Part V: added Sustainability and Transition Plan as a funder-activated optional field specifying post-grant continuation conditions for infrastructure-producing grants. |
 | 0.2.2 | 2026-05-15 | Added Part VI-A: Scope Attribution and Outcome Credit, specifying additionality declaration and outcome credit attribution requirements triggered by concurrent funding disclosure. Added cross-reference in the Scope section. Added Grant Configurator note in Part IX specifying how Part VI-A parameters are recorded and published. Added Part XI: Funder Obligations and Redress, specifying minimum mechanisms by which funders are held to their published gate configurations and how applicants may seek recourse. Added cross-references in Scope and Implementation Architecture. External Standard References: new subsection in Part IV specifying the mechanism by which any gate may reference an external standard by URL with a version anchor, including support for machine-readable approved lists. |
