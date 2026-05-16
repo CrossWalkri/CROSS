@@ -27,7 +27,7 @@ Each case can be read independently. The recommendation vocabulary throughout is
 **Project:** Mushee Allocate
 **Ask:** \$6,330
 **Outcome:** Do not fund
-**Criterion illustrated:** Coordinating party engagement and beneficiary validation; entry specification gate
+**Criterion Illustrated:** Coordinating party engagement and beneficiary validation; entry specification gate
 
 ### The Application
 
@@ -66,7 +66,7 @@ The conformant application would then have specified what Mushee Allocate does t
 **Project:** mev-commit (Primev)
 **Ask:** \$100,000
 **Outcome:** Do not fund
-**Criterion illustrated:** Operational definition; Integrity
+**Criterion Illustrated:** Operational definition; Integrity
 
 ### The Application
 
@@ -121,7 +121,7 @@ Time window: 12-week rolling average at the time of each milestone report.
 **Project:** MoaV (Mother of All VPNs)
 **Ask:** \$30,000
 **Outcome:** Fund with conditions
-**Criterion illustrated:** Privacy and data sensitivity accommodation
+**Criterion Illustrated:** Privacy and data sensitivity accommodation
 
 ### The Application
 
@@ -166,7 +166,7 @@ Fourth, it would commit to at minimum one piece of independent validation that d
 **Project:** The Interfold (formerly Enclave)
 **Ask:** \$100,000
 **Outcome:** Fund with conditions
-**Criterion illustrated:** Concurrent funding disclosure; Adverse signal disclosure
+**Criterion Illustrated:** Concurrent funding disclosure; Adverse signal disclosure
 
 ### The Application
 
@@ -211,7 +211,7 @@ With these disclosures complete, the evaluation would have proceeded directly to
 **Project:** Gean (Go Lean Ethereum Consensus Client)
 **Ask:** \$30,000
 **Outcome:** Fund with conditions
-**Criterion illustrated:** Entry specification gate passage; Institutional capacity; Conditional funding
+**Criterion Illustrated:** Entry specification gate passage; Institutional capacity; Conditional funding
 
 ### The Application
 
@@ -248,7 +248,7 @@ This case illustrates the distinction between a project that passes the entry sp
 **Project:** poidh ("pics or it didn't happen")
 **Ask:** \$20,000
 **Outcome:** Fund with conditions
-**Criterion illustrated:** Adverse signal disclosure; Conditional funding
+**Criterion Illustrated:** Adverse signal disclosure; Conditional funding
 
 ### The Application
 

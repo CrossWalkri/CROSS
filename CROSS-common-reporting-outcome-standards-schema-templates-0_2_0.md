@@ -149,9 +149,9 @@ The distinction between Standard and Small Team scale in change-obligation round
 
 *The dates during which the contribution was produced or sustained.*
 
-**Start date:** ___________________________
+**Start Date:** ___________________________
 
-**End date (or "ongoing"):** ___________________________
+**End Date (or "ongoing"):** ___________________________
 
 ---
 
@@ -233,7 +233,7 @@ The distinction between Standard and Small Team scale in change-obligation round
 
 *Use this form when the round operates in change obligation mode and the committee has determined that Small Team scale applies. It captures the essential FROM state and TO state. Attach this form to the main application.*
 
-**Fields omitted from the Standard version and why:** Theory of change formalization (activities, outputs, outcomes, named assumptions), adaptive management mechanism. The Coordination Scaling Standard makes these optional for small-team applications with specific diagnoses and modest claims. All other FROM/TO fields remain required.
+**Fields Omitted From The Standard Version And Why:** Theory of change formalization (activities, outputs, outcomes, named assumptions), adaptive management mechanism. The Coordination Scaling Standard makes these optional for small-team applications with specific diagnoses and modest claims. All other FROM/TO fields remain required.
 
 ---
 
@@ -583,7 +583,7 @@ The distinction between Standard and Small Team scale in change-obligation round
 
 ### Field 7: Disaggregation Categories
 
-**Ratchet notice:** Disaggregation categories committed to in this form may be supplemented in subsequent reporting periods (you may add categories), but may not be removed without committee approval and documented rationale.
+**Ratchet Notice:** Disaggregation categories committed to in this form may be supplemented in subsequent reporting periods (you may add categories), but may not be removed without committee approval and documented rationale.
 
 | Disaggregation category | How values will be reported separately |
 |---|---|
@@ -619,19 +619,19 @@ The distinction between Standard and Small Team scale in change-obligation round
 
 ### Field 9: Data Cost Estimation
 
-**Standard version:** Provide an estimate of the cost of data collection for this indicator across the full grant period.
+**Standard Version:** Provide an estimate of the cost of data collection for this indicator across the full grant period.
 
-**Small Team version (simplified):** Attest that data collection for this indicator is feasible within your project budget using free or low-cost methods.
+**Small Team Version (simplified):** Attest that data collection for this indicator is feasible within your project budget using free or low-cost methods.
 
 Select the version that applies:
 
 - [ ] Standard version
 
-> **Approximate cost:** \$[amount]
+> **Approximate Cost:** \$[amount]
 >
-> **Funding source for data collection:** [Grant budget / other named source]
+> **Funding Source For Data Collection:** [Grant budget / other named source]
 >
-> **Budget line item or category:** [Enter line item]
+> **Budget Line Item Or Category:** [Enter line item]
 
 - [ ] Small Team version (simplified)
 
@@ -665,7 +665,7 @@ Select the version that applies:
 
 ---
 
-**Build-obligation (coordinating party engagement dimension activated):** The documented current absence or inadequacy of the deliverable, with named evidence of the gap.
+**Build-obligation (coordinating Party Engagement Dimension Activated):** The documented current absence or inadequacy of the deliverable, with named evidence of the gap.
 
 **Evidence of the gap**
 
@@ -673,7 +673,7 @@ Select the version that applies:
 
 ---
 
-**Retroactive obligation:** The documented state of the prior contribution at the time the award period begins.
+**Retroactive Obligation:** The documented state of the prior contribution at the time the award period begins.
 
 **Description of prior contribution state**
 
@@ -716,7 +716,7 @@ Select the version that applies:
 
 ---
 
-**Retroactive with forward commitment:** The named action the awardee commits to completing.
+**Retroactive With Forward Commitment:** The named action the awardee commits to completing.
 
 **Forward commitment target**
 
@@ -785,7 +785,7 @@ Select the version that applies:
 
 I confirm that the above is a complete and accurate disclosure of all active funding sources related to the scope of this application from the prior 24 months, and (for retroactive applications) all prior awards for the same or overlapping contribution. I understand that non-disclosure of concurrent funding is a disqualifier under CROSS, and that disclosure itself is not a disqualifier.
 
-**Applicant signature (or equivalent attestation):** ___________________________
+**Applicant Signature (or Equivalent Attestation):** ___________________________
 
 **Date:** ___________________________
 
@@ -849,7 +849,7 @@ I confirm that the above is a complete and accurate disclosure of all active fun
 
 I confirm that the above disclosure is complete and accurate to the best of my knowledge. I understand that non-disclosure of adverse signals is a process violation under the Adverse-Signal Engagement Principle Core Standard, whose requirements CROSS incorporates by reference. Disclosure does not disqualify this application; it initiates a structured engagement process.
 
-**Applicant signature (or equivalent attestation):** ___________________________
+**Applicant Signature (or Equivalent Attestation):** ___________________________
 
 **Date:** ___________________________
 
@@ -1004,7 +1004,7 @@ I confirm that the above disclosure is complete and accurate to the best of my k
 
 I confirm that this declaration is complete and accurate to the best of my knowledge. I understand that undisclosed Tier 1 relationships constitute a disqualifying violation and that undisclosed Tier 2 relationships constitute a process violation requiring remediation. The reasonable third party standard applies to novel relationship types not listed above.
 
-**Reviewer signature (or equivalent attestation):** ___________________________
+**Reviewer Signature (or Equivalent Attestation):** ___________________________
 
 **Date:** ___________________________
 
@@ -1058,11 +1058,11 @@ I confirm that this declaration is complete and accurate to the best of my knowl
 
 ### Tier Definitions for Applicant Reference
 
-**Tier 1 (categorical bar):** Direct financial interest in the reviewer from your project, family relationship, or having the reviewer named on your project's public materials.
+**Tier 1 (categorical Bar):** Direct financial interest in the reviewer from your project, family relationship, or having the reviewer named on your project's public materials.
 
-**Tier 2 (disclosure required, qualified waiver possible):** Employment of the reviewer by your organization in the past 36 months, co-authorship or active collaboration in the past 48 months, mentor or student relationship, governance token voting by the reviewer on your project's proposals, or organizational financial relationship between your project and the reviewer's employer.
+**Tier 2 (disclosure Required, Qualified Waiver Possible):** Employment of the reviewer by your organization in the past 36 months, co-authorship or active collaboration in the past 48 months, mentor or student relationship, governance token voting by the reviewer on your project's proposals, or organizational financial relationship between your project and the reviewer's employer.
 
-**Tier 3 (disclosure encouraged):** Social and community relationships, prior cross-round interactions, informal mentorship or advisory conversations.
+**Tier 3 (disclosure Encouraged):** Social and community relationships, prior cross-round interactions, informal mentorship or advisory conversations.
 
 ---
 
@@ -1094,7 +1094,7 @@ I confirm that this declaration is complete and accurate to the best of my knowl
 
 I confirm that this declaration is complete and accurate to the best of my knowledge. I understand that this form covers relationships I am aware of at the time of submission and that I will notify the committee administrator promptly if I become aware of additional relevant relationships after submission.
 
-**Applicant signature (or equivalent attestation):** ___________________________
+**Applicant Signature (or Equivalent Attestation):** ___________________________
 
 **Date:** ___________________________
 
@@ -1148,7 +1148,7 @@ The relationships and declarations in my pre-review conflict of interest declara
 
 ---
 
-**Reviewer signature (or equivalent attestation):** ___________________________
+**Reviewer Signature (or Equivalent Attestation):** ___________________________
 
 **Date:** ___________________________
 
@@ -1240,7 +1240,7 @@ The relationships and declarations in my pre-review conflict of interest declara
 
 ### Attestation
 
-**Applicant signature (or equivalent attestation):** ___________________________
+**Applicant Signature (or Equivalent Attestation):** ___________________________
 
 **Date:** ___________________________
 
@@ -1291,11 +1291,11 @@ The relationships and declarations in my pre-review conflict of interest declara
 
 ### Round Configuration (confirm from published round specification)
 
-**Obligation mode:** [ ] Build / [ ] Change / [ ] Retroactive
+**Obligation Mode:** [ ] Build / [ ] Change / [ ] Retroactive
 
-**Evidence scope required at this gate:** [ ] Output / [ ] Usage / [ ] Outcome / [ ] Impact
+**Evidence Scope Required At This Gate:** [ ] Output / [ ] Usage / [ ] Outcome / [ ] Impact
 
-**Evidence strength required at this gate:** [ ] Self-report with documentation / [ ] Third-party verifiable / [ ] Independent review / [ ] Independent evaluation
+**Evidence Strength Required At This Gate:** [ ] Self-report with documentation / [ ] Third-party verifiable / [ ] Independent review / [ ] Independent evaluation
 
 ---
 
@@ -1392,7 +1392,7 @@ The relationships and declarations in my pre-review conflict of interest declara
 
 I confirm that the evidence submitted in this form is accurate and complete to the best of my knowledge. I understand that grantee self-report alone does not satisfy the completion verification gate and that the funder will review this submission against the published completion criteria before releasing final payment.
 
-**Applicant signature (or equivalent attestation):** ___________________________
+**Applicant Signature (or Equivalent Attestation):** ___________________________
 
 **Date:** ___________________________
 

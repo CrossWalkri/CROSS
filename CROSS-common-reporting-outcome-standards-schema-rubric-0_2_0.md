@@ -131,13 +131,13 @@ Gate fails: document "Gate fails: [describe what is absent from the application:
 
 CROSS requires applicants to self-specify their outcome indicators. The rubric in this section assesses the quality of the applicant's self-specified indicators across 11 required fields. Each field is scored on a 1-4 scale using the definitions below.
 
-**Score 4 (Meets standard):** The field is complete, specific, and independently verifiable. An independent reviewer with access to the stated sources could confirm the field content without contacting the applicant.
+**Score 4 (meets Standard):** The field is complete, specific, and independently verifiable. An independent reviewer with access to the stated sources could confirm the field content without contacting the applicant.
 
-**Score 3 (Minor gap):** The field is substantially complete. One specific, addressable gap is present. The gap is resolvable without structural redesign of the indicator. A score of 3 does not trigger a condition; reviewers note it in the evaluation record.
+**Score 3 (minor Gap):** The field is substantially complete. One specific, addressable gap is present. The gap is resolvable without structural redesign of the indicator. A score of 3 does not trigger a condition; reviewers note it in the evaluation record.
 
-**Score 2 (Conditional):** The field has a significant gap that must be resolved before disbursement. A score of 2 generates a condition. The condition must be specific, verifiable, and time-bounded. An application with one or more 2s cannot receive a Fund recommendation; it receives Fund with conditions if all other criteria are met.
+**Score 2 (conditional):** The field has a significant gap that must be resolved before disbursement. A score of 2 generates a condition. The condition must be specific, verifiable, and time-bounded. An application with one or more 2s cannot receive a Fund recommendation; it receives Fund with conditions if all other criteria are met.
 
-**Score 1 (Fails standard):** The field is absent, generic, or unverifiable. An application with any indicator field scored 1 is ineligible for funding without resubmission. A score of 1 on the primary indicator produces a Do not fund recommendation.
+**Score 1 (fails Standard):** The field is absent, generic, or unverifiable. An application with any indicator field scored 1 is ineligible for funding without resubmission. A score of 1 on the primary indicator produces a Do not fund recommendation.
 
 Where multiple indicators are specified, each indicator is scored independently. The recommendation reflects the weakest primary indicator.
 
@@ -147,7 +147,7 @@ In retroactive obligation rounds where no indicator specification is required by
 
 ### Field 1: Indicator Name
 
-**Reviewer question:** Is a short, descriptive label present? Is it distinguishable from generic category labels?
+**Reviewer Question:** Is a short, descriptive label present? Is it distinguishable from generic category labels?
 
 | Score | Criterion |
 |---|---|
@@ -160,7 +160,7 @@ In retroactive obligation rounds where no indicator specification is required by
 
 ### Field 2: Rationale for Indicator
 
-**Reviewer question:** Does the applicant explain why this indicator was chosen over available alternatives? Is the diagnostic reasoning that preceded tool selection visible?
+**Reviewer Question:** Does the applicant explain why this indicator was chosen over available alternatives? Is the diagnostic reasoning that preceded tool selection visible?
 
 Rationale is mandatory. An applicant who cannot articulate why they selected a particular indicator over obvious alternatives has not engaged seriously with whether the measurement instrument is valid.
 
@@ -175,7 +175,7 @@ Rationale is mandatory. An applicant who cannot articulate why they selected a p
 
 ### Field 3: Measurement Form and Evidence Classification
 
-**Reviewer question:** Has the applicant named the measurement form in plain language, with enough specificity to classify it against the three evidence classification axes? Is the stated measurement form consistent with the construction methodology in Field 5?
+**Reviewer Question:** Has the applicant named the measurement form in plain language, with enough specificity to classify it against the three evidence classification axes? Is the stated measurement form consistent with the construction methodology in Field 5?
 
 This field replaces the constrained four-option data type list from version 0.1.0. The applicant now names the measurement form in plain language rather than selecting from a list. Reviewers classify the stated form against three axes for data quality assessment purposes. The applicant is not required to use the axis vocabulary; the reviewer applies the classification.
 
@@ -194,9 +194,9 @@ This field replaces the constrained four-option data type list from version 0.1.
 - Cumulative: values sum correctly across reporting periods; see Field 6 for the applicant's explicit designation
 - Non-cumulative: values describe a state at a point in time; summing across periods is a construction error
 
-**For build-obligation indicators:** the measurement form is typically binary or qualitative. The measurement form declaration specifies what done looks like with enough precision that a reviewer who did not commission the work could verify it independently.
+**For Build-obligation Indicators:** the measurement form is typically binary or qualitative. The measurement form declaration specifies what done looks like with enough precision that a reviewer who did not commission the work could verify it independently.
 
-**For change-obligation indicators:** the measurement form is typically quantitative or ordinal. The declaration must include the unit of measurement and the direction of desirable change.
+**For Change-obligation Indicators:** the measurement form is typically quantitative or ordinal. The declaration must include the unit of measurement and the direction of desirable change.
 
 | Score | Criterion |
 |---|---|
@@ -207,7 +207,7 @@ This field replaces the constrained four-option data type list from version 0.1.
 
 **On-chain verification check (apply when the primary deliverable is a smart contract, protocol, or on-chain system).** Before applying the Field 3 scores above, confirm whether the obligation object is a contract's behavioral properties rather than discrete outputs or a published artifact. If yes, the indicator must additionally contain four named sub-fields: invariant specification, verification method, verification artifact, and failure surface. Assess these as follows.
 
-**Reviewer question:** Is an invariant specification present? Is the verification method named? Is the verification artifact a type that an independent reviewer can access without contacting the applicant (a public audit report, a public proof artifact, or a named contract address and query against public chain data)?
+**Reviewer Question:** Is an invariant specification present? Is the verification method named? Is the verification artifact a type that an independent reviewer can access without contacting the applicant (a public audit report, a public proof artifact, or a named contract address and query against public chain data)?
 
 | Finding | Action |
 |---|---|
@@ -222,7 +222,7 @@ Note: applicant-controlled test suites and private monitoring dashboards may app
 
 ### Field 4: Operational Definition
 
-**Reviewer question:** Are all four required sub-components present: inclusion criteria, exclusion criteria, unit of analysis, and at least one edge case determination?
+**Reviewer Question:** Are all four required sub-components present: inclusion criteria, exclusion criteria, unit of analysis, and at least one edge case determination?
 
 | Score | Criterion |
 |---|---|
@@ -235,7 +235,7 @@ Note: applicant-controlled test suites and private monitoring dashboards may app
 
 ### Field 5: Construction and Aggregation Methodology
 
-**Reviewer question:** Is the construction methodology detailed enough that an independent reviewer with access to the stated data source could replicate the result, without contacting the applicant?
+**Reviewer Question:** Is the construction methodology detailed enough that an independent reviewer with access to the stated data source could replicate the result, without contacting the applicant?
 
 For build-obligation indicators: the construction methodology specifies how completion is determined, who performs the verification, and by what process.
 
@@ -252,7 +252,7 @@ For change-obligation indicators: the standard data construction methodology app
 
 ### Field 6: Cumulative or Non-Cumulative
 
-**Reviewer question:** Has the applicant designated the indicator as cumulative or non-cumulative? Does the target calculation match the designation?
+**Reviewer Question:** Has the applicant designated the indicator as cumulative or non-cumulative? Does the target calculation match the designation?
 
 Note: this field is primarily relevant for change-obligation and build-obligation indicators that involve counting over time. Binary completion criteria (did or did not ship the deliverable) are not subject to the cumulative/non-cumulative distinction; mark as not applicable and score 4 for build-obligation binary indicators.
 
@@ -267,7 +267,7 @@ Note: this field is primarily relevant for change-obligation and build-obligatio
 
 ### Field 7: Disaggregation
 
-**Reviewer question:** Are disaggregation categories named? Is the applicant aware that committed categories may be supplemented but not removed without committee approval?
+**Reviewer Question:** Are disaggregation categories named? Is the applicant aware that committed categories may be supplemented but not removed without committee approval?
 
 | Score | Criterion |
 |---|---|
@@ -280,7 +280,7 @@ Note: this field is primarily relevant for change-obligation and build-obligatio
 
 ### Field 8: Data Source and Collection Method
 
-**Reviewer question:** Is the named source independently accessible? Is the collection method described? Does any evidence source independent of the applicant appear?
+**Reviewer Question:** Is the named source independently accessible? Is the collection method described? Does any evidence source independent of the applicant appear?
 
 For build-obligation indicators: the data source for completion verification is the named artifact itself plus the named party who will confirm it meets the completion criteria.
 
@@ -295,7 +295,7 @@ For build-obligation indicators: the data source for completion verification is 
 
 ### Field 9: Data Cost Estimation
 
-**Reviewer question:** Has the applicant attested that data collection is feasible within the project budget?
+**Reviewer Question:** Has the applicant attested that data collection is feasible within the project budget?
 
 | Score | Criterion |
 |---|---|
@@ -310,7 +310,7 @@ For build-obligation indicators: the data source for completion verification is 
 
 **Reviewer question and mode-specific assessment.**
 
-**For change-obligation indicators:** Is the FROM state specific, measurable, and sourced? Does it express the same unit and type as the indicator's operational definition?
+**For Change-obligation Indicators:** Is the FROM state specific, measurable, and sourced? Does it express the same unit and type as the indicator's operational definition?
 
 | Score | Criterion |
 |---|---|
@@ -319,7 +319,7 @@ For build-obligation indicators: the data source for completion verification is 
 | 2 | Baseline is directional rather than specific (e.g., "currently low adoption"), or the baseline and target are expressed in different units, or the baseline is asserted without any source. |
 | 1 | Baseline is absent. The TO state target appears without any FROM state reference. |
 
-**For build-obligation indicators where the coordinating party engagement dimension is activated:** Is the documented current absence or inadequacy of the deliverable present, with named evidence?
+**For Build-obligation Indicators Where The Coordinating Party Engagement Dimension Is Activated:** Is the documented current absence or inadequacy of the deliverable present, with named evidence?
 
 | Score | Criterion |
 |---|---|
@@ -328,9 +328,9 @@ For build-obligation indicators: the data source for completion verification is 
 | 2 | The gap is asserted by the applicant without independent evidence. |
 | 1 | No evidence of the need for the deliverable is present. |
 
-**For build-obligation indicators where the coordinating party engagement dimension is not activated:** Score 4 for any reasonable plain-language statement of what problem or gap the deliverable addresses. This dimension is advisory at this level.
+**For Build-obligation Indicators Where The Coordinating Party Engagement Dimension Is Not Activated:** Score 4 for any reasonable plain-language statement of what problem or gap the deliverable addresses. This dimension is advisory at this level.
 
-**For retroactive obligation indicators:** Is the documented state of the prior contribution at the time the award period begins present, with named evidence of use?
+**For Retroactive Obligation Indicators:** Is the documented state of the prior contribution at the time the award period begins present, with named evidence of use?
 
 Apply the change-obligation scoring logic to the evidence of prior contribution: is it specific, does it name a period and source, and is the source independently accessible?
 
@@ -340,7 +340,7 @@ Apply the change-obligation scoring logic to the evidence of prior contribution:
 
 **Reviewer question and mode-specific assessment.**
 
-**For change-obligation indicators:** Is the target expressed in the same units as the baseline? Is it consistent with the cumulative/non-cumulative designation? Is it specific enough to be verifiable?
+**For Change-obligation Indicators:** Is the target expressed in the same units as the baseline? Is it consistent with the cumulative/non-cumulative designation? Is it specific enough to be verifiable?
 
 | Score | Criterion |
 |---|---|
@@ -349,7 +349,7 @@ Apply the change-obligation scoring logic to the evidence of prior contribution:
 | 2 | Target is directional rather than specific ("increase user adoption"), or units differ from the baseline, or the designation mismatch noted in Field 6 causes internal inconsistency. |
 | 1 | Target is absent. |
 
-**For build-obligation indicators:** Is the completion criteria clear enough that a reviewer who did not commission the work could verify whether it was met? Do the criteria correspond to the measurement form stated in Field 3?
+**For Build-obligation Indicators:** Is the completion criteria clear enough that a reviewer who did not commission the work could verify whether it was met? Do the criteria correspond to the measurement form stated in Field 3?
 
 | Score | Criterion |
 |---|---|
@@ -358,7 +358,7 @@ Apply the change-obligation scoring logic to the evidence of prior contribution:
 | 2 | Completion criteria are present but too vague for independent verification (e.g., "a working prototype" without specifying what working means or how it will be demonstrated). |
 | 1 | No completion criteria are present. |
 
-**For retroactive obligation with a forward commitment configured:** Is the forward commitment specific enough to verify at the close of the commitment period?
+**For Retroactive Obligation With A Forward Commitment Configured:** Is the forward commitment specific enough to verify at the close of the commitment period?
 
 Apply the build-obligation scoring logic to the forward commitment criteria.
 
@@ -374,59 +374,59 @@ In retroactive obligation rounds where the program has not configured indicator-
 
 ### Standard 1: Validity
 
-**Assessment question:** Could I, with access to the stated data source and the stated construction methodology, confirm that this indicator measures what the applicant claims it measures?
+**Assessment Question:** Could I, with access to the stated data source and the stated construction methodology, confirm that this indicator measures what the applicant claims it measures?
 
 For build-obligation rounds: is there a documented logical chain from the stated completion criteria to the deliverable being what the applicant says it is?
 
-**Common failure mode:** A macro-level adoption metric (ecosystem-wide transaction volume, protocol total value locked) is claimed as evidence of a specific project's contribution. The validity failure is the undocumented causal claim connecting the project's work to the metric's movement.
+**Common Failure Mode:** A macro-level adoption metric (ecosystem-wide transaction volume, protocol total value locked) is claimed as evidence of a specific project's contribution. The validity failure is the undocumented causal claim connecting the project's work to the metric's movement.
 
-**Finding options:** Pass, Conditional (a specific gap in the causal documentation can be resolved before disbursement), or Fail (the indicator is structurally disconnected from the claimed result and the problem is not correctable without redesigning the indicator).
+**Finding Options:** Pass, Conditional (a specific gap in the causal documentation can be resolved before disbursement), or Fail (the indicator is structurally disconnected from the claimed result and the problem is not correctable without redesigning the indicator).
 
 ---
 
 ### Standard 2: Integrity
 
-**Assessment question:** Does any evidence for this application's claims originate from a source independent of the applicant?
+**Assessment Question:** Does any evidence for this application's claims originate from a source independent of the applicant?
 
 For all modes: data collection and reporting must be separated from the actor who benefits from the results. Applicant-controlled dashboards, internal databases, and self-reported results without named independent corroboration do not satisfy this standard on their own.
 
 For build-obligation rounds: the named verifying party in Field 8 (who will confirm the deliverable meets the completion criteria) must be independent of the applicant.
 
-**Finding options:** Pass, Conditional (a specific independent source can be added before disbursement), or Fail (all evidence is applicant-controlled and no independent source is available for the primary outcome claim).
+**Finding Options:** Pass, Conditional (a specific independent source can be added before disbursement), or Fail (all evidence is applicant-controlled and no independent source is available for the primary outcome claim).
 
 ---
 
 ### Standard 3: Precision
 
-**Assessment question:** Is the claimed change larger than the variance of the measurement method, or are the completion criteria specific enough to distinguish done from not done?
+**Assessment Question:** Is the claimed change larger than the variance of the measurement method, or are the completion criteria specific enough to distinguish done from not done?
 
 For change-obligation rounds: the measurement instrument must be capable of detecting changes at the magnitude the project claims to produce.
 
 For build-obligation rounds: the completion criteria must be specific enough to distinguish a passing deliverable from a failing one. Criteria that accept any output ("a working prototype," "some documentation") fail this standard.
 
-**Finding options:** Pass, Conditional (the instrument can be refined to achieve the required precision), or Fail (the instrument is structurally incapable of detecting the claimed effect size or distinguishing completion).
+**Finding Options:** Pass, Conditional (the instrument can be refined to achieve the required precision), or Fail (the instrument is structurally incapable of detecting the claimed effect size or distinguishing completion).
 
 ---
 
 ### Standard 4: Reliability
 
-**Assessment question:** Has the applicant used different metrics or methodologies for the same indicator in prior reporting, and if so, is the change documented with a rationale?
+**Assessment Question:** Has the applicant used different metrics or methodologies for the same indicator in prior reporting, and if so, is the change documented with a rationale?
 
 For first-time applicants: does the methodology specify enough precision that it could be applied consistently across reporting periods?
 
 For continuation grants in any obligation mode: compare the indicator specification in this application against any prior reports on file. Methodology changes are not automatically disqualifying when documented; they are disqualifying when undocumented.
 
-**Finding options:** Pass, Conditional (a specific prior discrepancy can be documented and resolved before disbursement), or Fail (multiple undocumented methodology changes make prior periods incomparable and the baseline is unreliable).
+**Finding Options:** Pass, Conditional (a specific prior discrepancy can be documented and resolved before disbursement), or Fail (multiple undocumented methodology changes make prior periods incomparable and the baseline is unreliable).
 
 ---
 
 ### Standard 5: Timeliness
 
-**Assessment question:** Will the data be current at each disbursement decision point given the collection frequency?
+**Assessment Question:** Will the data be current at each disbursement decision point given the collection frequency?
 
 For all obligation modes: data must be current to the reporting period. Annual data collection cannot support quarterly disbursement decisions. A completion claim based on work from a prior period not covered by the current gate does not satisfy timeliness.
 
-**Finding options:** Pass, Conditional (a secondary indicator or interim collection method can bridge the frequency gap), or Fail (no feasible collection method can satisfy the timeliness requirement for the proposed disbursement structure).
+**Finding Options:** Pass, Conditional (a secondary indicator or interim collection method can bridge the frequency gap), or Fail (no feasible collection method can satisfy the timeliness requirement for the proposed disbursement structure).
 
 ---
 
@@ -442,9 +442,9 @@ The three conformance checks are binary: each either passes or fails. They are n
 
 For retroactive obligation rounds: the disclosure must cover prior awards for the same or overlapping work, as well as active grants and investments related to the application's scope.
 
-**Independent evidence:** If the reviewer has independent evidence of a funding relationship not disclosed in the form (public announcements, on-chain treasury flows, prior evaluations from other funders), the application fails this check. The finding must be documented with the source of the independent evidence.
+**Independent Evidence:** If the reviewer has independent evidence of a funding relationship not disclosed in the form (public announcements, on-chain treasury flows, prior evaluations from other funders), the application fails this check. The finding must be documented with the source of the independent evidence.
 
-**Finding options:** Pass, or Fail (form is incomplete, a required field is absent, or the reviewer has independent evidence of an undisclosed relationship). Disclosed concurrent funding is not a disqualifier; non-disclosure is.
+**Finding Options:** Pass, or Fail (form is incomplete, a required field is absent, or the reviewer has independent evidence of an undisclosed relationship). Disclosed concurrent funding is not a disqualifier; non-disclosure is.
 
 ---
 
@@ -454,7 +454,7 @@ This check applies in addition to Check 1 wherever the concurrent funding disclo
 
 **Rigor tier check at entry.**
 
-**Test (additionality declaration):** Is an additionality declaration present? Does the scope boundary specify what this grant funds that concurrent sources do not, at a level of specificity that allows a reviewer to determine whether any proposed activity falls inside or outside this grant's scope?
+**Test (additionality Declaration):** Is an additionality declaration present? Does the scope boundary specify what this grant funds that concurrent sources do not, at a level of specificity that allows a reviewer to determine whether any proposed activity falls inside or outside this grant's scope?
 
 | Finding | Action |
 |---|---|
@@ -483,7 +483,7 @@ If attribution fractions change between reporting periods for the same indicator
 
 **Standard:** The Adverse-Signal Engagement Principle Core Standard, incorporated by reference in CROSS, requires applicants to surface signals that contradict their self-presentation. Reviewers must not suppress adverse signals discovered during evaluation.
 
-**Finding options:** Pass (disclosure field is present; signals are disclosed or attested absent; no undisclosed signals discovered by reviewer), or Adverse signal documented (reviewer adds a specific signal to the evaluation record; committee notes it in deliberations). Non-disclosure of a signal the reviewer independently discovers is a process finding the committee weighs in deliberation; it does not automatically disqualify unless the signal also triggers Check 1.
+**Finding Options:** Pass (disclosure field is present; signals are disclosed or attested absent; no undisclosed signals discovered by reviewer), or Adverse signal documented (reviewer adds a specific signal to the evaluation record; committee notes it in deliberations). Non-disclosure of a signal the reviewer independently discovers is a process finding the committee weighs in deliberation; it does not automatically disqualify unless the signal also triggers Check 1.
 
 ---
 
@@ -491,11 +491,11 @@ If attribution fractions change between reporting periods for the same indicator
 
 **Test:** Has each reviewer completed a conflict of interest declaration before review began? Was the declaration submitted to the named receiving function? Has a post-participation certification been completed?
 
-**Tier 1 violations (categorical bar, no waiver):** Any Tier 1 conflict discovered after a review has been completed disqualifies the entire evaluation. The review must be restarted with a non-conflicted panel.
+**Tier 1 Violations (categorical Bar, No Waiver):** Any Tier 1 conflict discovered after a review has been completed disqualifies the entire evaluation. The review must be restarted with a non-conflicted panel.
 
-**Tier 2 violations (disclosure required, qualified waiver possible):** Tier 2 violations discovered during or after review require remediation: retroactive recusal, review restart, or award cancellation, depending on the degree of influence the conflicted party had.
+**Tier 2 Violations (disclosure Required, Qualified Waiver Possible):** Tier 2 violations discovered during or after review require remediation: retroactive recusal, review restart, or award cancellation, depending on the degree of influence the conflicted party had.
 
-**Finding options:** Pass (all declarations on file, submitted before review began, post-participation certifications complete, no Tier 1 or undisclosed Tier 2 conflicts identified), or Violation (document the tier, the relationship, and the remediation determination).
+**Finding Options:** Pass (all declarations on file, submitted before review began, post-participation certifications complete, no Tier 1 or undisclosed Tier 2 conflicts identified), or Violation (document the tier, the relationship, and the remediation determination).
 
 ---
 
