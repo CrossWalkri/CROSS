@@ -1,34 +1,68 @@
 # CROSS: Common Reporting Outcome Standards Schema
 
-Version 0.2.0 | 2026-05-14 | CC0
+Version 0.3.8 | 2026-05-18 | CC0
 
-Most grant programs have a funding process but no accountability standard. They collect applications, select projects, distribute funds, and hope for the best. CROSS fills that gap.
+Most grant programs never write down what grantees must prove to get paid. They have eligibility criteria. They do not have an obligation architecture. Reviewers fill the gap with their own judgment. The data this produces looks structured, but it is not.
 
-CROSS is a standard for grant accountability. It answers three questions that every grant program must answer but rarely specifies: what must an applicant demonstrate before funding is approved, what must a grantee report during the grant, and what evidence must a funder actually evaluate before releasing each payment. It does this across three types of grants: grants for building something specific, grants for producing a measurable change in the world, and grants recognizing work already done.
+CROSS fixes that. It specifies what must be demonstrated at each payment gate, declared before any applicant sees the form, in one of three obligation modes: build something specific, produce a measurable change in the world, or recognize work already done. Every grants program answers these questions implicitly every round. CROSS makes the answers explicit, documented, and auditable.
 
-CROSS does not tell programs how to structure their coordination, how to score applications, or how to distribute funds. It specifies the content of accountability at each stage of the funding lifecycle, and makes that content portable across programs so that grantees, funders, and evaluators work from the same definitions.
+**CROSS is the first standard that has ever required this decision to be written down before the round opens.**
+
+![GIGO pipeline: obligation never specified and questions not designed to measure enter a funnel, producing data that cannot be compared, aggregated, or trusted. No existing tool touches the source.](assets/gigo-pipeline.png)
 
 ---
 
-## Why CROSS was designed this way
+## Two failure modes. One fix.
 
-Comparative examination of thirteen grant programs spanning web3, open source, and institutional funding contexts reveals a consistent pattern: the failure locates itself differently depending on the type of program.
+Comparative examination of grant programs across web3, open source, and institutional contexts surfaces a consistent pattern. The failure locates itself differently depending on the type of program.
 
-In web3 and blockchain grant programs, the hard part is consistently upstream: at the point of claim specification. Applicants default to aspiration language: direction statements that name what they are trying to achieve rather than conditions that can be independently measured. Without a specific measurable baseline, there is no measurement instrument. There is no FROM state, so there can be no TO state, so there can be no outcome. The evaluation process ends up assessing the quality of the aspiration, not the credibility of the claim. Funding decisions are made on the basis of who sounds most plausible, not who has specified what they will actually produce.
+In web3 grant programs, the hard part is consistently upstream: at the point of claim specification. Applicants default to aspiration language, naming what they are trying to achieve rather than conditions that can be independently measured. Without a specific measurable baseline there is no measurement instrument, no FROM state, no outcome. Funding decisions are made on the basis of who sounds most plausible, not who has specified what they will actually produce.
 
-In governmental and institutional grant programs, the hard part tends to locate itself downstream: at the point of reporting and verification. The compliance layer is thick. Applications are detailed. Reports arrive on schedule. But the reports describe activity, not outcomes. Grantees learn to write good reports rather than to produce measurable results. Funders receive documentation they cannot verify against any pre-specified baseline. The evidentiary chain between award and impact exists on paper but not in practice.
+In governmental and institutional programs, the hard part tends to locate itself downstream: at reporting and verification. Applications are detailed. Reports arrive on schedule. But the reports describe activity, not outcomes. Grantees learn to write good reports rather than produce measurable results. The evidentiary chain between award and impact exists on paper but not in practice.
 
-CROSS was designed to be portable across both failure modes. It does this by separating the evidentiary structure from the program design, and making both configurable.
+CROSS was designed to be portable across both failure modes. It separates the evidentiary structure from the program design and makes both configurable. Programs configure where the evidentiary pressure falls. The gate architecture installs it at the front for programs where baseline specificity is the failure mode, and at the back for programs where outcome verification is the failure mode.
 
-The three obligation modes allow funders to match the accountability structure to the nature of the work. Build obligation applies where the deliverable is a specific artifact: something is either built or it is not, and the gate tests whether the delivered thing matches what was specified. Change obligation applies where the goal is a measurable shift in the world: the entry specification gate requires a specific measurable baseline and a targeted state in the same units, which prevents aspiration language from entering the record at all. Retroactive obligation applies where the work is already done: the gate tests whether the documented impact is credibly attributed to the prior work.
+---
 
-A structural innovation in CROSS is the distinction between build nested inside change and build as a replacement for change. Many grant programs encounter applications that profess a theory of change (a specified FROM condition, a defined population, a targeted TO state, and a mechanism connecting the intervention to the shift) but present only a theory of build: the applicant describes what they will produce without specifying what condition in the world is different because of it. Prior to CROSS, this distinction was a matter of reviewer judgment, which is inconsistently applied and difficult to defend at scale. CROSS makes it structurally testable.
+## What CROSS specifies
 
-Build legitimately sits inside a change-obligation claim when the applicant can name a FROM state that satisfies the entry gate: a specific measurable condition in a defined population, with a named data source, that the built thing is designed to address. In that case the build is the mechanism of change and the change specification is intact. The two are nested correctly. Build becomes the failure mode when it has replaced the change specification entirely: the applicant names a deliverable where a problem diagnosis was required, and cannot produce a FROM state because the problem was never diagnosed before the solution was designed. The entry specification gate surfaces this immediately. An applicant who began with the problem produces the FROM state, because naming a specific measurable condition in a defined population is the natural output of having diagnosed it. An applicant who began with the solution cannot, because the problem was never named before the solution was conceived.
+**Three obligation modes** correspond to three fundamentally different accountability structures. Build obligation applies where the deliverable is a specific artifact: the gate tests whether the delivered thing matches what was specified. Change obligation applies where the goal is a measurable shift in an external condition: the entry specification gate requires a baseline, a target in the same units, a defined population, a named data source, and a mechanism connecting the intervention to the anticipated shift. This prevents aspiration language from entering the record at all. Retroactive obligation applies where work is already done: the gate tests whether documented impact is credibly attributed to prior activity.
 
-The gate architecture allows funders to configure where the evidentiary pressure falls. A small community program running its first funding round may need only an entry specification gate: establish what is being built or changed before any funds release. A large institutional program running a multi-year initiative may need all four gates: entry specification before funding, milestone gates during delivery, a completion gate at close, and a continuation gate governing whether the grantee enters the next round. The gates that apply, and the rigor tier at which each gate is set, are published in the round specification before any application opens. The gate is one layer of detection; the assessment rubric and the reviewer assessment are structurally distinct additional layers, each operating with different evidence and different points of failure.
+**A four-gate sequence** governs each funding release: entry specification before any funds move, one or more milestone gates during delivery, a completion gate at close, and an optional continuation gate determining whether a grantee enters subsequent rounds. Programs configure which gates apply and at what rigor tier, and publish that configuration before any application opens.
 
-The result is a system where the hard part is placed where the structural failure mode requires it. For programs where baseline specificity is the failure mode, the entry specification gate installs it at the front. For programs where outcome verification is the failure mode, the milestone and completion gates install it at the back. The configuration is funder-facing; the field definitions are standardized across funders so that a grantee's CROSS record from one program is directly readable by a reviewer at a different program. The hard part, wherever it is placed, is done once rather than re-invented per funder.
+**Eight independent obligation dimensions** can be configured independently within a single round: outcome specificity, evidence quality tier, attribution claim strength, financial transparency scope, organizational disclosure depth, institutional framework alignment, portfolio position declaration, and causality stance. The dimensions do not collapse into a single score because the failure modes they address are structurally distinct.
+
+**Organizational identity** requires five declared fields: legal or registered name, primary operating jurisdiction, primary contact, governance structure type, and organizational history. Version 0.3.8 adds Field 6: an on-chain identity anchor, recording the grantee's verifiable on-chain identifier and linking the declaration to on-chain activity records without requiring that linkage as a condition of participation.
+
+**Two funder-side procedures** were formalized at v0.3.8. The Attestation Corpus query retrieves all prior CROSS declarations associated with a grantee's identity anchor before a funding decision is made; it gives the declaration surface its accountability teeth. The Cohort Position assessment places each applicant's funding request in the context of the full applicant pool, including what each applicant has already received, from which sources, against which declared obligations, and whether the requested amount is sufficient, redundant, or misaligned given that history.
+
+**Theory of Change architecture** in CROSS is not a narrative. It is a structured registry of causal claims at four levels (goal, outcome, output, activity) with named assumptions, stated evidence sources, and declared confidence tiers for each causal link. The architecture follows the Compact Logic hierarchy used by MCC and USAID, making CROSS ToC declarations natively compatible with those frameworks without requiring separate documentation.
+
+---
+
+## Compatibility is the point
+
+![CROSS+WALKRI stack: any form builder or grants platform below, CROSS+WALKRI in the middle providing obligation architecture and field quality, Web3 and institutional standards above. One conformant round, both directions, no extra work.](assets/stack-diagram.png)
+
+CROSS sits in the middle of the grants stack, not at the top or bottom. Form builders and grants platforms sit below it and implement it. Programs, institutional reporting, and portfolio intelligence sit above it and build on it.
+
+Below: any form builder producing JSON Schema, which every major form tool already does, is already CROSS-compatible at the field level. Programs do not change their stack. They specify their obligation architecture correctly before publishing the form.
+
+Above: a CROSS-conformant round exports in two directions simultaneously. To the Web3 ecosystem: DAOIP-5 GrantPool objects, W3C Verifiable Credential-compatible gate attestations, and OpenGrants Gateway API interoperability. To the institutional side: OECD DAC evaluation criteria, IRIS+ metadata requirements, and USAID PIRS compliance, all as structural consequences of a correctly configured round, not as separate reporting obligations.
+
+One conformant round. Both directions. No extra work.
+
+Compatibility statements are formally published rather than asserted. CROSS currently holds confirmed compatibility with OECD DAC evaluation criteria, IRIS+ metadata requirements, USAID PIRS, and DAOIP-5. The USAID PIRS statement confirms that CROSS's eleven-field indicator specification satisfies all nine required PIRS elements. A program reporting to USAID that implements CROSS does not need to produce separate PIRS documentation: the CROSS specification produces it as a structural output.
+
+---
+
+## Who this is built for
+
+![Cascade pyramid: Grantees and Reviewers at the base, Operators and Platform Providers, Analysts and Institutional Funders, Strategic Planners at the apex. Smaller decisions with immediate feedback at the base; larger decisions with billions at stake at the top. Strategic level value requires ecosystem-wide adoption to materialise.](assets/for-all-pyramid.png)
+
+Fixing GIGO at the source produces value that compounds with every layer up the grants ecosystem. Grantees encounter questions that specify what they must prove. Reviewers assess against criteria written before they arrived. Operators run rounds that produce comparable data automatically. Analysts consume structured, aggregated data instead of manually reconciling incommensurable reports. Institutional co-funders receive compliance output as a byproduct of the round being run correctly. Strategic planners, deciding how to allocate billions across sectors and geographies, are currently making those decisions on GIGO. CROSS+WALKRI data, accumulated across programs and rounds at scale, is what eventually gives them something real to work with.
+
+The strategic planning benefit materialises as adoption accumulates. The foundation is correct. The compounding takes time and scale.
 
 ---
 
@@ -44,23 +78,83 @@ CROSS is an independently published standard. It is co-released alongside the Co
 
 **Main standard**
 
-`CROSS-common-reporting-outcome-standards-schema-0_2_0.md` is the canonical specification. Read this first.
+`CROSS-common-reporting-outcome-standards-schema-0_3_8.md` is the canonical specification. Read this first.
 
 **Companion documents**
 
 `CROSS-runbooks-0_1_0.md` contains six pre-built gate configuration packages for common program types: Discovery Sprint, Staged Development, Community Allocation with Build Obligation, Retroactive Impact, Graduated Evidence, and Institutional Conformance. Each runbook selects an accountability mode, configures gate evidence requirements, and includes a recommended rubric emphasis section. Funders new to CROSS should start with the runbook that best matches their program type.
 
-`CROSS-common-reporting-outcome-standards-schema-guidance-0_2_0.md` contains field-by-field guidance for applicants completing an entry specification under any accountability mode. It covers the three-mode entry specification architecture, the gate framework, field interpretation, and the distinction between D1 (sourcing) and D2 (specification) failures.
+`CROSS-common-reporting-outcome-standards-schema-guidance-0_3_8.md` contains field-by-field guidance for applicants completing an entry specification under any accountability mode. It covers the three-mode entry specification architecture, the gate framework, field interpretation, and the distinction between D1 (sourcing) and D2 (specification) failures.
 
-`CROSS-common-reporting-outcome-standards-schema-rubric-0_2_0.md` contains the funder-facing assessment rubric. It is organized by accountability mode. The confirmed rubric block is published before the round opens and loaded by reviewers without modification.
+`CROSS-common-reporting-outcome-standards-schema-rubric-0_3_8.md` contains the funder-facing assessment rubric, organized by accountability mode. The confirmed rubric block is published before the round opens and loaded by reviewers without modification.
 
-`CROSS-common-reporting-outcome-standards-schema-templates-0_2_0.md` contains submission templates for each accountability mode and gate type, including the gate evidence submission template.
+`CROSS-common-reporting-outcome-standards-schema-templates-0_3_8.md` contains submission templates for each accountability mode and gate type, including the gate evidence submission template.
 
-`CROSS-common-reporting-outcome-standards-schema-worked-examples-0_2_0.md` contains six cases demonstrating how the entry specification gate and rigor tier apply across different application types, including boundary cases.
+`CROSS-common-reporting-outcome-standards-schema-worked-examples-0_3_8.md` contains six cases demonstrating how the entry specification gate and rigor tier apply across different application types, including boundary cases.
 
 **Skills**
 
-`skills/claude-skill-CROSS-0_2_0.md` is the Claude skill for applying CROSS in an extended AI-assisted session. It encodes the three accountability modes, gate architecture, indicator specification fields, and the full assessment rubric in a format optimized for AI-assisted grant evaluation and program design.
+`skills/claude-skill-CROSS-0_3_8.md` is the Claude skill for applying CROSS in an extended AI-assisted session. It encodes the three accountability modes, gate architecture, indicator specification fields, and the full assessment rubric in a format optimized for AI-assisted grant evaluation and program design.
+
+---
+
+## Ecosystem position
+
+Every major tool in the grants stack was examined before CROSS was designed. The table below shows where each sits and what it covers. The pattern is consistent: existing tools manage, format, or document data produced by a grants process. None specify the obligation architecture or field quality that determines whether the data is trustworthy before the process begins.
+
+| Tool / Standard | Layer | Obligation architecture | Field quality | Web3 output | Institutional output |
+|:--|:--|:--|:--|:--|:--|
+| **CROSS** | Specification | Three modes, four-gate sequence | n/a (see WALKRI) | DAOIP-5, W3C VCs, OpenGrants | OECD DAC, IRIS+, USAID PIRS |
+| **WALKRI** | Specification | n/a (see CROSS) | Five pre-publication field requirements | n/a | USAID data quality criteria |
+| [Logframe / LFA](https://www.oecd.org/en/topics/sub-issues/development-co-operation-evaluation-and-effectiveness/evaluation-criteria.html) | Methodology | ToC hierarchy; no gate architecture or obligation modes | n/a | n/a | OECD DAC evaluation criteria |
+| [IRIS+](https://iris.thegiin.org/standards/) | Vocabulary | n/a | n/a | n/a | Indicator reference library |
+| [DAOIP-5](https://github.com/metagov/daostar/blob/main/DAOIPs/daoip-5.md) | Interoperability | n/a | n/a | Grants data portability | n/a |
+| [KarmaGAP](https://docs.gap.karmahq.xyz/) | Post-funding tracking | n/a | n/a | EAS milestone attestations | n/a |
+| [EAS](https://docs.attest.org/) | Attestation layer | n/a | n/a | Permissionless schema registry | n/a |
+| [Gitcoin Grants Stack](https://github.com/gitcoinco/grants-stack) | Platform | n/a | n/a | DAOIP-5 only | n/a |
+| [Hypercerts](https://docs.hypercerts.org) | Post-work | n/a | n/a | Impact certificates | n/a |
+
+---
+
+## Relationship to Logframe / LFA
+
+The Logical Framework Approach (Logframe) is the dominant evaluation methodology in development finance and the UN system. CROSS's Theory of Change architecture is compatible with Logframe and extends it in four specific ways.
+
+**Where they align.** The Logframe hierarchy (Activities, Outputs, Purpose/Outcome, Goal/Impact) maps directly to CROSS's Compact Logic hierarchy (Activity, Output, Outcome, Goal), inverted in presentation direction but identical in causal structure. CROSS's causality stance field (contribution vs attribution) corresponds to the Logframe assumptions column, which specifies external conditions that must hold for causal logic between levels to function. Both operate within the OECD DAC evaluation criteria framework (Relevance, Coherence, Effectiveness, Efficiency, Impact, Sustainability).
+
+**Where CROSS extends Logframe.** The Logframe performs one causal assessment at end-of-project. CROSS specifies four named gates with published evidence requirements before any applicant submits: entry specification gate (baseline and target required before funding), progress verification gates during delivery, completion gate at close, and continuation gate determining whether a grantee enters subsequent rounds. Each gate has configurable evidence scope and strength, declared in the round specification. The Logframe does not specify obligation modes before a round opens, does not distinguish build obligation (artifact delivery) from change obligation (measurable shift) from retroactive obligation (prior work), and does not specify what makes an intake field a measurement instrument. WALKRI addresses that third gap; CROSS addresses the first two.
+
+A CROSS+WALKRI-conformant round satisfies OECD DAC evaluation criteria as a structural consequence of conformance. The formal compatibility statement is in `statements/USAID-PIRS-CROSS-WALKRI-compatibility-0_1_0.md`.
+
+---
+
+## Compatibility references
+
+The compatibility claims in this README are formally published as compatibility statements in the `statements/` directory of the CROSS+WALKRI repository. Specific external documentation:
+
+- [DAOIP-5 GrantPool specification](https://github.com/metagov/daostar/blob/main/DAOIPs/daoip-5.md)
+- [W3C Verifiable Credentials Data Model v2.0](https://www.w3.org/TR/vc-data-model-2.0/)
+- [OECD DAC Evaluation Criteria](https://www.oecd.org/en/topics/sub-issues/development-co-operation-evaluation-and-effectiveness/evaluation-criteria.html)
+- [IRIS+ Standards](https://iris.thegiin.org/standards/)
+- [USAID PIRS requirements](https://2017-2020.usaid.gov/sites/default/files/documents/1861/Recommended_PIRS_for_USAID_indicators_0.pdf)
+
+**CROSS indicator specification vs USAID PIRS nine required elements:**
+
+USAID requires nine documented elements per indicator in a Performance Indicator Reference Sheet. CROSS's eleven-field indicator specification satisfies all nine as a structural consequence of conformance.
+
+| USAID PIRS element | CROSS field(s) |
+|:--|:--|
+| Indicator name | Field 1: Indicator name |
+| Definition and unit of measure | Field 2: Definition / Field 3: Unit of measure |
+| Disaggregation | Field 6: Population scope |
+| Rationale and linkages | Field 11: Causality stance |
+| Data acquisition (source, method, frequency) | Field 7: Data source / Field 8: Collection frequency |
+| Data quality assessment | WALKRI five field requirements (applied at specification stage) |
+| Responsible party | Field 9: Responsible party |
+| Baseline value | Field 4: Baseline value |
+| Targets | Field 5: Target value |
+
+A program reporting to USAID that implements CROSS does not produce PIRS documentation separately. The CROSS round specification produces it as a structural output.
 
 ---
 
@@ -81,5 +175,6 @@ Adoption of CROSS does not require adoption of the Suite. The inherited requirem
 
 | Version | Date | Summary |
 |---------|------|---------|
+| 0.3.8 | 2026-05-18 | Five organizational identity fields plus on-chain identity anchor (Field 6), Attestation Corpus query procedure, Cohort Position assessment procedure, eight independent obligation dimensions, Theory of Change architecture (Part IX-B), institutional framework compatibility statements (OECD DAC, IRIS+, USAID PIRS, DAOIP-5). |
 | 0.2.0 | 2026-05-14 | Three accountability modes, four-gate architecture, program-level continuation gate, open measurement form replacing constrained data type list, runbooks, full companion document suite. |
 | 0.1.0 | 2026-05-14 | Initial release. Change accountability mode, Level 1 and Level 2 gate structure. |
