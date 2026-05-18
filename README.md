@@ -2,6 +2,8 @@
 
 Version 0.3.8 | 2026-05-18 | CC0
 
+**Two standards. One problem.**
+
 Most grant programs never write down what grantees must prove to get paid. They have eligibility criteria. They do not have an obligation architecture. Reviewers fill the gap with their own judgment. The data this produces looks structured, but it is not.
 
 CROSS fixes that. It specifies what must be demonstrated at each payment gate, declared before any applicant sees the form, in one of three obligation modes: build something specific, produce a measurable change in the world, or recognize work already done. Every grants program answers these questions implicitly every round. CROSS makes the answers explicit, documented, and auditable.
