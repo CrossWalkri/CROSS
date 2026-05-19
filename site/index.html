@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CROSS+WALKRI</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:           #0a0d1a;
+      --bg-card:      #12172a;
+      --bg-elevated:  #1a2035;
+      --bg-banner:    #0f1525;
+      --cyan:         #22d3ee;
+      --cyan-dark:    #0891b2;
+      --gold:         #f59e0b;
+      --gold-dark:    #b45309;
+      --green:        #10b981;
+      --green-dark:   #059669;
+      --violet:       #8b5cf6;
+      --violet-dark:  #6d28d9;
+      --orange:       #f97316;
+      --orange-dark:  #c2410c;
+      --blue:         #3b82f6;
+      --blue-dark:    #1d4ed8;
+      --text:         #e2e8f0;
+      --muted:        #6b7a99;
+      --border:       #1e2a45;
+      --border-light: #2a3a5c;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+
+    .container { max-width: 800px; margin: 0 auto; padding: 0 1.5rem; }
+
+    /* Header */
+    .site-header {
+      background: var(--bg-card);
+      border-bottom: 1px solid var(--border);
+      padding: 1.25rem 1.5rem;
+    }
+    .site-header h1 { font-size: 1.1rem; font-weight: 700; color: var(--text); }
+    .site-header p { font-size: 0.78rem; color: var(--muted); margin-top: 0.2rem; }
+    .site-header a { color: var(--cyan); text-decoration: none; }
+    .site-header a:hover { text-decoration: underline; }
+
+    /* Views */
+    .view { display: none; padding: 2rem 0 4rem; }
+    .view.active { display: block; }
+
+    /* Gateway */
+    .gateway-description {
+      font-size: 0.95rem; color: var(--muted); margin-bottom: 2rem; line-height: 1.7;
+      padding-top: 0.5rem;
+    }
+
+    .gateway-cards {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 2.5rem;
+    }
+    @media (max-width: 600px) { .gateway-cards { grid-template-columns: 1fr; } }
+
+    .gateway-card {
+      background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px;
+      padding: 1.4rem 1.25rem; cursor: pointer; text-align: left; width: 100%;
+      transition: border-color 0.15s, transform 0.1s; display: flex; flex-direction: column; gap: 0.5rem;
+    }
+    .gateway-card:hover { transform: translateY(-1px); }
+    .gateway-card--cyan:hover  { border-color: var(--cyan); }
+    .gateway-card--gold:hover  { border-color: var(--gold); }
+    .gateway-card--green:hover { border-color: var(--green); }
+    .gateway-card--violet:hover { border-color: var(--violet); }
+    .gateway-card--orange:hover { border-color: var(--orange); }
+    .gateway-card--blue:hover  { border-color: var(--blue); }
+
+    .card-cohort {
+      font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em;
+    }
+    .gateway-card--cyan   .card-cohort { color: var(--cyan); }
+    .gateway-card--gold   .card-cohort { color: var(--gold); }
+    .gateway-card--green  .card-cohort { color: var(--green); }
+    .gateway-card--violet .card-cohort { color: var(--violet); }
+    .gateway-card--orange .card-cohort { color: var(--orange); }
+    .gateway-card--blue   .card-cohort { color: var(--blue); }
+
+    .gateway-card h2 { font-size: 0.95rem; font-weight: 600; color: var(--text); }
+    .gateway-card p  { font-size: 0.8rem; color: var(--muted); line-height: 1.5; flex: 1; }
+    .gateway-card .arrow { font-size: 1rem; align-self: flex-end; }
+    .gateway-card--cyan   .arrow { color: var(--cyan); }
+    .gateway-card--gold   .arrow { color: var(--gold); }
+    .gateway-card--green  .arrow { color: var(--green); }
+    .gateway-card--violet .arrow { color: var(--violet); }
+    .gateway-card--orange .arrow { color: var(--orange); }
+    .gateway-card--blue   .arrow { color: var(--blue); }
+
+    .library-link-row {
+      text-align: center; margin-bottom: 2.5rem;
+    }
+    .library-link-btn {
+      background: none; border: 1px solid var(--border); border-radius: 6px;
+      color: var(--muted); font-size: 0.82rem; padding: 0.5rem 1.2rem; cursor: pointer;
+      transition: border-color 0.15s, color 0.15s;
+    }
+    .library-link-btn:hover { border-color: var(--border-light); color: var(--text); }
+
+    /* Foundation block */
+    .foundation-block {
+      background: var(--bg-banner); border: 1px solid var(--border); border-radius: 8px;
+      padding: 1.5rem; margin-top: 1rem;
+    }
+    .foundation-block p { font-size: 0.82rem; color: var(--muted); line-height: 1.7; }
+    .foundation-block p + p { margin-top: 0.75rem; }
+
+    /* Selected prompt view */
+    .back-btn {
+      background: none; border: none; color: var(--muted); font-size: 0.82rem;
+      cursor: pointer; padding: 0; margin-bottom: 1.5rem; display: block;
+    }
+    .back-btn:hover { color: var(--text); }
+
+    .selected-cohort-label {
+      font-size: 0.7rem; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 0.08em; margin-bottom: 0.4rem;
+    }
+    .selected-heading { font-size: 1.3rem; font-weight: 700; margin-bottom: 0.4rem; }
+    .selected-sub { font-size: 0.85rem; color: var(--muted); margin-bottom: 1.5rem; line-height: 1.6; }
+
+    .prompt-list { display: flex; flex-direction: column; gap: 1rem; }
+
+    .prompt-item {
+      background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px;
+      padding: 1.25rem;
+    }
+    .prompt-item-header {
+      display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem;
+      margin-bottom: 0.75rem;
+    }
+    .prompt-item-title { font-size: 0.9rem; font-weight: 600; }
+    .copy-btn {
+      flex-shrink: 0; background: var(--cyan); color: var(--bg); border: none;
+      border-radius: 5px; padding: 0.35rem 0.85rem; font-size: 0.75rem; font-weight: 600;
+      cursor: pointer; transition: background 0.15s;
+    }
+    .copy-btn:hover { background: var(--cyan-dark); }
+    .copy-btn.copied { background: var(--green); }
+    .copy-btn.gold   { background: var(--gold); color: var(--bg); }
+    .copy-btn.gold:hover { background: var(--gold-dark); }
+    .copy-btn.green  { background: var(--green); }
+    .copy-btn.green:hover { background: var(--green-dark); }
+    .copy-btn.violet { background: var(--violet); }
+    .copy-btn.violet:hover { background: var(--violet-dark); }
+    .copy-btn.orange { background: var(--orange); }
+    .copy-btn.orange:hover { background: var(--orange-dark); }
+    .copy-btn.blue   { background: var(--blue); }
+    .copy-btn.blue:hover { background: var(--blue-dark); }
+
+    .prompt-preview {
+      font-size: 0.78rem; color: var(--muted); line-height: 1.5;
+      display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;
+    }
+
+    /* Library view */
+    .instruction-banner {
+      background: var(--bg-banner); border: 1px solid var(--border); border-radius: 8px;
+      padding: 1rem 1.25rem; margin-bottom: 2rem; font-size: 0.82rem; color: var(--muted);
+    }
+    .instruction-steps {
+      display: flex; gap: 1rem; margin-top: 0.75rem; flex-wrap: wrap;
+    }
+    .step { display: flex; align-items: center; gap: 0.4rem; }
+    .step-num {
+      width: 20px; height: 20px; border-radius: 50%; background: var(--cyan);
+      color: var(--bg); font-size: 0.7rem; font-weight: 700; display: flex;
+      align-items: center; justify-content: center;
+    }
+
+    .group { margin-bottom: 2.5rem; }
+    .group-heading {
+      font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em;
+      color: var(--muted); border-bottom: 1px solid var(--border); padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    .group-heading.cyan   { color: var(--cyan); border-color: var(--cyan); }
+    .group-heading.gold   { color: var(--gold); border-color: var(--gold); }
+    .group-heading.green  { color: var(--green); border-color: var(--green); }
+    .group-heading.violet { color: var(--violet); border-color: var(--violet); }
+    .group-heading.orange { color: var(--orange); border-color: var(--orange); }
+    .group-heading.blue   { color: var(--blue); border-color: var(--blue); }
+
+    .lib-card {
+      background: var(--bg-card); border: 1px solid var(--border); border-radius: 7px;
+      padding: 0.9rem 1rem; margin-bottom: 0.6rem; display: flex;
+      justify-content: space-between; align-items: center; gap: 1rem;
+    }
+    .lib-card:hover { border-color: var(--border-light); }
+    .lib-card-info h3 { font-size: 0.85rem; font-weight: 600; margin-bottom: 0.2rem; }
+    .lib-card-info .use-on { font-size: 0.74rem; color: var(--muted); }
+
+    /* Footer */
+    .site-footer {
+      border-top: 1px solid var(--border); padding: 1.5rem; text-align: center;
+      font-size: 0.78rem; color: var(--muted);
+    }
+    .site-footer a { color: var(--cyan); text-decoration: none; }
+    .site-footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <h1>CROSS+WALKRI</h1>
+    <p>Common Reporting Outcome Standards Schema and Working Architecture for Legible, Knowledge-Ready Intake &nbsp;·&nbsp; CC0 &nbsp;·&nbsp;
+      <a href="https://github.com/cross-walkri" target="_blank" rel="noopener">github.com/cross-walkri</a>
+    </p>
+  </div>
+</header>
+
+<main>
+
+<!-- GATEWAY -->
+<section id="view-gateway" class="view active">
+  <div class="container">
+    <p class="gateway-description">Round design and form field design are where governance decisions meet the road. CROSS specifies what grantees must demonstrate at each payment gate, declared before any applicant sees the form. WALKRI specifies the quality of the fields through which that demonstration is collected. Select your role to find prompts built for your specific situation.</p>
+
+    <div class="gateway-cards">
+
+      <button class="gateway-card gateway-card--cyan" onclick="showCohort('grantees')">
+        <span class="card-cohort">Grantees</span>
+        <h2>I am applying for a grant</h2>
+        <p>Understand what a funder is actually requiring of you, what evidence a gate needs, and how to answer fields that specify what they measure.</p>
+        <span class="arrow">→</span>
+      </button>
+
+      <button class="gateway-card gateway-card--gold" onclick="showCohort('reviewers')">
+        <span class="card-cohort">Reviewers</span>
+        <h2>I am reviewing applications</h2>
+        <p>Score field specifications against WALKRI criteria, calibrate your review against a compliance threshold, and flag underspecified fields before a form goes live.</p>
+        <span class="arrow">→</span>
+      </button>
+
+      <button class="gateway-card gateway-card--green" onclick="showCohort('operators')">
+        <span class="card-cohort">Program Operators</span>
+        <h2>I am running a grant round</h2>
+        <p>Configure your obligation mode and gates, audit your intake form, specify fields to WALKRI standard, and identify which bundle matches your program type.</p>
+        <span class="arrow">→</span>
+      </button>
+
+      <button class="gateway-card gateway-card--violet" onclick="showCohort('platforms')">
+        <span class="card-cohort">Platform Providers</span>
+        <h2>I am building grants tooling</h2>
+        <p>Understand what CROSS+WALKRI conformance requires from your platform and how your existing data model maps to the standards.</p>
+        <span class="arrow">→</span>
+      </button>
+
+      <button class="gateway-card gateway-card--orange" onclick="showCohort('analysts')">
+        <span class="card-cohort">Analysts</span>
+        <h2>I am analyzing grant programs</h2>
+        <p>Analyze a grant portfolio using CROSS primitives, compare obligation structures across programs, and identify what the data supports.</p>
+        <span class="arrow">→</span>
+      </button>
+
+      <button class="gateway-card gateway-card--blue" onclick="showCohort('funders')">
+        <span class="card-cohort">Institutional Funders</span>
+        <h2>I am evaluating or co-funding</h2>
+        <p>Map CROSS+WALKRI to your compliance framework and evaluate whether a grant round was run correctly against the standard.</p>
+        <span class="arrow">→</span>
+      </button>
+
+    </div>
+
+    <div class="library-link-row">
+      <button class="library-link-btn" onclick="showView('library')">Browse the full prompt library →</button>
+    </div>
+
+    <div class="foundation-block">
+      <p>Across the 95+ frameworks documented in this corpus, from the Hewlett Foundation's evaluation approach to USAID PIRS to OECD DAC criteria, a consistent pattern emerges: data quality problems in grant programs trace to specification decisions made before the first application was submitted. Round design and form field design are where funding governance either happens with intention or happens by default.</p>
+      <p>A funder who treats these as administrative overhead is making governance decisions without acknowledging that governance decisions are being made. The field that does not specify what it measures is not neutral: it transfers interpretive power to whoever scores it, invisibly, after submission. CROSS+WALKRI addresses this at the source, before any applicant sees the form.</p>
+    </div>
+  </div>
+</section>
+
+<!-- COHORT VIEW -->
+<section id="view-cohort" class="view">
+  <div class="container">
+    <button class="back-btn" onclick="showView('gateway')">← Back</button>
+    <div class="selected-cohort-label" id="cohort-label"></div>
+    <h2 class="selected-heading" id="cohort-heading"></h2>
+    <p class="selected-sub" id="cohort-sub"></p>
+    <div class="prompt-list" id="cohort-prompts"></div>
+  </div>
+</section>
+
+<!-- LIBRARY -->
+<section id="view-library" class="view">
+  <div class="container">
+    <button class="back-btn" onclick="showView('gateway')">← Back</button>
+
+    <div class="instruction-banner">
+      <strong>How to use these prompts:</strong> Copy the prompt, then open Claude or your preferred AI in a new tab and paste.
+      <div class="instruction-steps">
+        <div class="step"><div class="step-num">1</div>Click Copy Prompt</div>
+        <div class="step"><div class="step-num">2</div>Open your AI in a new tab</div>
+        <div class="step"><div class="step-num">3</div>Paste and send</div>
+        <div class="step"><div class="step-num">4</div>Fill in the bracketed fields</div>
+      </div>
+    </div>
+
+    <div id="library-content"></div>
+
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  CROSS+WALKRI is published CC0: dedicated to the public domain. No licensing, no arrangements, no asks. &nbsp;·&nbsp;
+  <a href="https://github.com/cross-walkri/CROSS" target="_blank" rel="noopener">CROSS</a> &nbsp;·&nbsp;
+  <a href="https://github.com/cross-walkri/WALKRI" target="_blank" rel="noopener">WALKRI</a>
+</footer>
+
+<script>
+const COHORTS = {
+  grantees: {
+    label: 'Grantees',
+    color: 'cyan',
+    heading: 'Prompts for Grant Applicants',
+    sub: 'Understand what a funder requires, what evidence a gate needs, and how to interpret fields that specify what they measure.',
+    prompts: [
+      {
+        title: 'Does my project qualify?',
+        preview: 'Assess whether your project fits a grant round\'s obligation mode, public benefit mechanism, and evidence requirements.',
+        text: `I am working with the CROSS+WALKRI grant standards (github.com/cross-walkri). CROSS specifies what grantees must demonstrate at each gate. WALKRI specifies what each intake field must measure.
+
+Here is what I know about the round I am applying to:
+[describe the round, its obligation mode if stated, and its eligibility criteria]
+
+Here is my project:
+[describe your project, what it produces, who uses it, and what stage it is at]
+
+Please assess:
+(1) Which CROSS obligation mode my project falls under: Build (I am producing a specific deliverable), Change (I am shifting a measurable condition in a population), or Retroactive (I am seeking recognition for prior contribution).
+(2) Which public benefit mechanism applies: output production, access provision, condition change, or ecosystem shift.
+(3) What evidence I would need at the completion gate given this obligation mode.
+(4) Any gaps between what the round appears to require and what my project can currently demonstrate.
+
+Be specific about what qualifies and what does not.`
+      },
+      {
+        title: 'What does this gate require?',
+        preview: 'Understand exactly what a specific CROSS gate requires and what a passing submission looks like.',
+        text: `I am preparing for a specific gate in a grant process and need to understand what CROSS requires at this stage.
+
+The gate I am preparing for:
+[entry / application / completion / continuation]
+
+The obligation mode declared by the funder:
+[Build / Change / Retroactive / not stated]
+
+What the funder has said about this gate:
+[paste any published criteria, or write "none stated"]
+
+Please tell me:
+(1) What CROSS requires at this gate type for this obligation mode.
+(2) What evidence form is appropriate and what makes it independently verifiable versus self-report.
+(3) What a passing submission looks like versus a failing one, with specific examples.
+(4) What I should prepare that the funder's published criteria may not have made explicit.`
+      },
+      {
+        title: 'Help me answer this field',
+        preview: 'Understand what an application field is actually measuring so you can answer it precisely and provide the right evidence.',
+        text: `I am filling in a grant application and need to understand what this field is actually measuring so I can answer it correctly and provide the right evidence.
+
+The field label:
+[paste the field label exactly]
+
+Any caption or instructions:
+[paste any helper text, or "none"]
+
+The field type:
+[text / dropdown / multiple choice / file upload / etc.]
+
+Options if multiple choice:
+[list the options, or "not applicable"]
+
+Please tell me:
+(1) What this field is most likely trying to measure.
+(2) What a strong response looks like versus a weak one.
+(3) What specific evidence or artifacts I should reference.
+(4) Whether this field appears to be a WALKRI-conformant measurement instrument or an underspecified label, and what that means for how I should interpret it.
+(5) If it is a label: what the funder probably wants even though the field does not specify it.`
+      }
+    ]
+  },
+
+  reviewers: {
+    label: 'Reviewers',
+    color: 'gold',
+    heading: 'Prompts for Grant Reviewers',
+    sub: 'Score field specifications, calibrate reviews against compliance thresholds, and flag underspecified fields before a form goes live.',
+    prompts: [
+      {
+        title: 'Score this field specification',
+        preview: 'Audit a field against all five WALKRI criteria and get a verdict: instrument or label.',
+        text: `I am auditing a grant application field against WALKRI (Working Architecture for Legible, Knowledge-Ready Intake, github.com/cross-walkri). WALKRI requires five elements for a field to be a measurement instrument rather than a label:
+
+1. Criterion intent: a written statement of what the field measures, distinct from its label.
+2. Operational definition: qualifying and non-qualifying examples that constrain interpretation.
+3. Response form: the field type with a justification for why that type fits the criterion intent.
+4. Evidence form: the specific artifact type and access path required to answer it.
+5. Compliance threshold: for fields referencing external standards, which components apply and what passage looks like.
+
+Here is the field I am auditing:
+Label: [paste label]
+Caption or instructions: [paste any helper text]
+Field type: [text / dropdown / etc.]
+Options: [if applicable, list them]
+Any stated evidence requirements: [paste if any]
+
+Please score this field against all five criteria. For each criterion: state whether it passes or fails, what specifically passes or fails, and what the field would need to say to become conformant. End with a verdict: instrument or label, and why.`
+      },
+      {
+        title: 'Calibrate my review',
+        preview: 'Apply a field\'s compliance threshold consistently across multiple submissions and identify where reviewer judgment is unavoidable.',
+        text: `I am reviewing grant applications and need to apply a specific field's compliance threshold consistently across multiple submissions.
+
+The field I am scoring:
+[paste the full field specification including any criteria]
+
+The compliance threshold as stated:
+[paste exactly what the funder specified, or "none stated"]
+
+Submission A:
+[paste the applicant's response]
+
+Submission B:
+[paste the applicant's response]
+
+Please:
+(1) Assess whether the compliance threshold is sufficiently specified to score consistently, or whether it leaves interpretation open.
+(2) Apply the threshold to each submission and give a pass or fail with reasoning.
+(3) Flag any reviewer judgment calls the threshold does not resolve, so I know where my discretion is unavoidable and potentially inconsistent.
+(4) If the threshold is underspecified, suggest what it would need to say to make consistent scoring possible.`
+      },
+      {
+        title: 'Flag underspecified fields in this form',
+        preview: 'Audit a full form before publication and identify which fields are labels rather than measurement instruments.',
+        text: `I am auditing a grant application form before it is published. WALKRI requires that every field be a measurement instrument before any applicant sees it. A field that does not specify what it measures is a label; labels produce responses, not data.
+
+Here is the form I am auditing:
+[paste the full list of fields with their labels, captions, field types, and options]
+
+For each field, tell me:
+(1) Whether it is an instrument or a label.
+(2) Which of the five WALKRI criteria it fails if it is a label.
+(3) What the field would need to add to become conformant.
+
+Summarize with:
+- A count of instruments versus labels.
+- The three fields most in need of revision and why.
+- Any systemic patterns across the form (e.g., evidence is consistently optional, no operational definitions exist, all narrative fields are open-ended).`
+      }
+    ]
+  },
+
+  operators: {
+    label: 'Program Operators',
+    color: 'green',
+    heading: 'Prompts for Program Operators',
+    sub: 'Configure your obligation mode and gates, audit your intake form, specify fields to WALKRI standard, and identify which bundle matches your program.',
+    prompts: [
+      {
+        title: 'Configure my round',
+        preview: 'Get a recommended obligation mode, gate structure, and key indicator fields for your grant program.',
+        text: `I am setting up a grant round and need to configure it correctly under CROSS (Common Reporting Outcome Standards Schema, github.com/cross-walkri). CROSS requires that I declare my obligation mode, gate structure, and key indicator specifications before any application opens.
+
+My program:
+[describe what you are funding, who can apply, and what you expect grantees to produce]
+
+My funding pool:
+[amount and currency]
+
+My timeline:
+[application window, expected completion, any milestone dates]
+
+Please recommend:
+(1) Which CROSS obligation mode fits my program (Build, Change, or Retroactive) and why.
+(2) Which gates I should configure and what each should require from applicants.
+(3) What public benefit mechanism and access condition I should require applicants to declare.
+(4) The three most important indicator fields for my program type.
+(5) What my entry specification gate must commit to in writing before applications open.`
+      },
+      {
+        title: 'Audit my intake form',
+        preview: 'Run a full WALKRI audit on your form, identify systemic patterns, and get conformant versions of your highest-risk fields.',
+        text: `I am auditing my grant application form against WALKRI before it goes live. WALKRI requires that every field specify its criterion intent, operational definition, response form, evidence form, and compliance threshold before any applicant sees it.
+
+Here is my current form:
+[paste all fields with labels, captions, field types, and options]
+
+Please run a full WALKRI audit. For each field:
+- State the verdict: instrument or label.
+- Name which criteria fail.
+- State what the field needs to become conformant.
+
+Then:
+- Identify the systemic patterns across the form.
+- Name the three fields where the data quality risk is highest.
+- Write a WALKRI-conformant version of each of those three fields.`
+      },
+      {
+        title: 'Specify this field',
+        preview: 'Write a fully conformant WALKRI field specification from a plain-language description of what you want to measure.',
+        text: `I need to specify a grant application field to WALKRI standard before publishing my form. WALKRI requires five elements: criterion intent, operational definition (with qualifying and non-qualifying examples), response form (with justification), evidence form (artifact type and access path), and compliance threshold.
+
+What I want to measure:
+[describe in plain language what you are trying to find out from applicants]
+
+Program context:
+[what type of program is this, what obligation mode, what are you funding]
+
+Field type I am considering:
+[text / dropdown / multiple choice / file upload / etc.]
+
+Please write a fully conformant WALKRI field specification. Include all five elements. For the operational definition, include at least three qualifying and two non-qualifying examples. For the evidence form, name the specific artifact and access path an applicant must provide.`
+      },
+      {
+        title: 'Which bundle matches my program?',
+        preview: 'Identify which of the ten CROSS+WALKRI program type bundles fits your program and what that means for your configuration.',
+        text: `CROSS+WALKRI publishes ten program type bundles, each combining a CROSS runbook, WALKRI field specifications, and a compatibility map for a specific grant program type. The ten types are: Web3/public goods, international development, research grants, community foundation, corporate CSR/impact, challenge prizes, participatory/equity, Islamic/endowment, European philanthropy, and fiscal sponsorship.
+
+My program:
+[describe your program, who funds it, who can apply, what you expect grantees to produce, and any institutional standards you must satisfy]
+
+Please:
+(1) Identify which bundle best fits my program and why.
+(2) Note if my program spans multiple bundle types and how to handle that.
+(3) Name the CROSS obligation mode most appropriate for my program type.
+(4) Identify the two or three institutional frameworks from the compatibility corpus most relevant to my program.`
+      }
+    ]
+  },
+
+  platforms: {
+    label: 'Platform Providers',
+    color: 'violet',
+    heading: 'Prompts for Platform Providers',
+    sub: 'Understand what CROSS+WALKRI conformance requires from your platform and map your existing data model to the standards.',
+    prompts: [
+      {
+        title: 'What does conformance require?',
+        preview: 'Get a clear picture of what your platform must support at each CROSS gate and what WALKRI requires from your form builder layer.',
+        text: `I am building or operating a grants platform and want to understand what CROSS+WALKRI conformance requires from my platform. CROSS specifies the gate structure and obligation architecture. WALKRI specifies the field quality requirements. A conformant platform makes it structurally easy to run conformant rounds.
+
+My platform:
+[describe what your platform does, what form builders you support, how you store and export grant data, and what integrations you have]
+
+Please describe:
+(1) What CROSS requires at each gate type that my platform would need to support.
+(2) What WALKRI requires that my form builder layer must enforce before fields are published.
+(3) What data formats my platform would need to export to produce DAOIP-5-compatible grant data and WALKRI-conformant field specifications.
+(4) What the minimum viable conformance integration looks like versus a full implementation.
+(5) Which of the CROSS+WALKRI compatibility frameworks my platform's outputs would satisfy as a structural consequence of conformance.`
+      },
+      {
+        title: 'Map my data model',
+        preview: 'Map your platform\'s existing fields and schema to CROSS+WALKRI concepts and identify what is missing.',
+        text: `I want to map my platform's existing data model to CROSS+WALKRI so I can assess what is already covered and what gaps exist.
+
+My current data model:
+[paste your field names, types, and any existing schema]
+
+CROSS requires: obligation mode declaration, three-mode classification (Build/Change/Retroactive), four gate types (entry specification, application, completion, continuation), eleven indicator fields, organizational identity (six required fields), concurrent funding disclosure, and public benefit mechanism declaration.
+
+WALKRI requires: criterion intent, operational definition, response form, evidence form, and compliance threshold for every intake field.
+
+Please:
+(1) Map each element of my data model to the nearest CROSS or WALKRI concept.
+(2) Identify which CROSS and WALKRI requirements I have no current coverage for.
+(3) Suggest the minimum additions that would make my platform CROSS+WALKRI conformant.
+(4) Identify which additions would be structural (require schema changes) versus operational (require process changes only).`
+      }
+    ]
+  },
+
+  analysts: {
+    label: 'Analysts',
+    color: 'orange',
+    heading: 'Prompts for Analysts',
+    sub: 'Analyze grant portfolios using CROSS primitives, compare obligation structures, and assess what the data can and cannot support.',
+    prompts: [
+      {
+        title: 'Analyze this portfolio',
+        preview: 'Classify a grant portfolio against CROSS primitives and identify structural gaps in what the data can support.',
+        text: `I want to analyze a grant portfolio using the CROSS+WALKRI primitives framework. CROSS identifies ten underlying measurement primitives that any grant program implements: obligation mode, theory of change hierarchy, causality stance, disaggregation ratchet, independent verification pathway, portfolio aggregation, organizational identity anchor, learning loop, evidence form specification, and coherence disclosure.
+
+Portfolio data:
+[paste your grant data: program names, obligation modes if known, reported outcomes, evidence types, funding amounts]
+
+Please:
+(1) Classify each program by which CROSS primitives it exemplifies.
+(2) Identify where the portfolio has structural gaps: programs that are all output-evidence only, programs with no independent verification, programs with no continuation gate.
+(3) Assess whether the portfolio data is comparable across programs or whether it is structurally incommensurable, and why.
+(4) Identify what additional specification at the program level would make cross-program analysis meaningful.
+(5) State what claims the current data can support and what claims it cannot.`
+      },
+      {
+        title: 'Compare two program structures',
+        preview: 'Compare two grant programs structurally using CROSS and assess whether their data is commensurable.',
+        text: `I want to compare two grant programs using CROSS+WALKRI to understand their structural differences and what those differences mean for the data each produces.
+
+Program A:
+[describe the program, its eligibility criteria, what it funds, what it requires of grantees, how it evaluates outcomes]
+
+Program B:
+[describe the program similarly]
+
+Please compare:
+(1) Which CROSS obligation mode each program appears to be running (Build, Change, or Retroactive) and what evidence that assessment rests on.
+(2) Which gates each program has configured and what each gate requires.
+(3) Whether the evidence each program collects is commensurable: could you compare outcomes across these two programs, and why or why not.
+(4) What a CROSS+WALKRI-conformant version of each program would require that the current version does not.
+(5) What legitimate cross-program findings are possible given the current data, and what would need to change to support stronger claims.`
+      }
+    ]
+  },
+
+  funders: {
+    label: 'Institutional Funders',
+    color: 'blue',
+    heading: 'Prompts for Institutional Funders',
+    sub: 'Map CROSS+WALKRI to your compliance framework and evaluate whether a grant round was run correctly against the standard.',
+    prompts: [
+      {
+        title: 'Map to my compliance framework',
+        preview: 'Identify which CROSS+WALKRI compatibility statements apply to your framework and what a conformant round produces.',
+        text: `I am an institutional funder evaluating whether CROSS+WALKRI satisfies my compliance requirements. CROSS+WALKRI holds confirmed compatibility with 95+ frameworks including USAID PIRS, OECD DAC evaluation criteria, IRIS+ metadata requirements, Gates Foundation Open Access Policy, PCORI methodology standards, and many others. A program running a CROSS+WALKRI-conformant round produces compliance with applicable frameworks as a structural consequence of conformance.
+
+My compliance framework:
+[name the framework(s) you are required to satisfy and paste any key requirements]
+
+Please:
+(1) Identify which CROSS+WALKRI compatibility statements are most relevant to my framework.
+(2) Map the specific requirements of my framework to CROSS gate structure and WALKRI field requirements.
+(3) Identify any requirements of my framework that CROSS+WALKRI does not cover and would need to be addressed separately.
+(4) Describe what a CROSS+WALKRI-conformant round would produce that satisfies my framework as a structural byproduct.
+(5) Estimate the compliance documentation burden that CROSS+WALKRI conformance would eliminate for programs I co-fund.`
+      },
+      {
+        title: 'Evaluate this round',
+        preview: 'Assess whether a grant round was run correctly under CROSS+WALKRI across all four gates.',
+        text: `I want to evaluate whether a grant round was run correctly under CROSS+WALKRI. A correctly run round requires: an entry specification gate committed to before applications opened, application fields that are WALKRI-conformant measurement instruments, a completion gate with defined evidence requirements, and an attestation corpus that records gate decisions.
+
+The round I am evaluating:
+[paste or describe the round's published eligibility criteria, application form fields, any stated completion requirements, and any available reporting on outcomes]
+
+Please assess:
+(1) Whether an entry specification gate appears to have been run before applications opened.
+(2) Whether the application fields function as WALKRI measurement instruments or as labels.
+(3) Whether a completion gate was defined and what it required.
+(4) Whether the round produces data that is comparable across applicants and across rounds.
+(5) The structural gaps and what a conformant version of this round would have required.
+(6) What the data produced by this round can legitimately support as a finding, given its specification quality.`
+      }
+    ]
+  }
+}
+
+function showView(id) {
+  document.querySelectorAll('.view').forEach(v => v.classList.remove('active'))
+  document.getElementById('view-' + id).classList.add('active')
+  window.scrollTo(0, 0)
+}
+
+function showCohort(cohortKey) {
+  const cohort = COHORTS[cohortKey]
+  document.getElementById('cohort-label').textContent = cohort.label
+  document.getElementById('cohort-label').style.color = `var(--${cohort.color})`
+  document.getElementById('cohort-heading').textContent = cohort.heading
+  document.getElementById('cohort-sub').textContent = cohort.sub
+
+  const container = document.getElementById('cohort-prompts')
+  container.innerHTML = ''
+
+  cohort.prompts.forEach((p, i) => {
+    const card = document.createElement('div')
+    card.className = 'prompt-item'
+    card.innerHTML = `
+      <div class="prompt-item-header">
+        <div class="prompt-item-title">${p.title}</div>
+        <button class="copy-btn ${cohort.color}" onclick="copyPrompt(this, ${JSON.stringify(p.text).replace(/</g,'&lt;')})">Copy Prompt</button>
+      </div>
+      <div class="prompt-preview">${p.preview}</div>
+    `
+    container.appendChild(card)
+  })
+
+  showView('cohort')
+}
+
+function copyPrompt(btn, text) {
+  navigator.clipboard.writeText(text).then(() => {
+    const orig = btn.textContent
+    btn.textContent = 'Copied!'
+    btn.classList.add('copied')
+    setTimeout(() => { btn.textContent = orig; btn.classList.remove('copied') }, 2000)
+  })
+}
+
+function buildLibrary() {
+  const container = document.getElementById('library-content')
+  container.innerHTML = ''
+
+  Object.entries(COHORTS).forEach(([key, cohort]) => {
+    const group = document.createElement('div')
+    group.className = 'group'
+    group.innerHTML = `<div class="group-heading ${cohort.color}">${cohort.label}</div>`
+
+    cohort.prompts.forEach(p => {
+      const card = document.createElement('div')
+      card.className = 'lib-card'
+      card.innerHTML = `
+        <div class="lib-card-info">
+          <h3>${p.title}</h3>
+          <div class="use-on">${p.preview}</div>
+        </div>
+        <button class="copy-btn ${cohort.color}" onclick="copyPrompt(this, ${JSON.stringify(p.text).replace(/</g,'&lt;')})">Copy</button>
+      `
+      group.appendChild(card)
+    })
+
+    container.appendChild(group)
+  })
+}
+
+buildLibrary()
+</script>
+
+</body>
+</html>
