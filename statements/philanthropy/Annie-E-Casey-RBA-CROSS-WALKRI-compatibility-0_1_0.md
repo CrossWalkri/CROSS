@@ -3,7 +3,7 @@ title: Annie E. Casey Foundation and Results-Based Accountability (RBA) Compatib
 version: 0.1.0
 date: 2026-05-18
 license: CC0
-standards: CROSS v0.4.4 (github.com/cross-walkri/CROSS), WALKRI v0.1.7 (github.com/cross-walkri/WALKRI)
+standards: CROSS v0.4.4 (github.com/CrossWalkri/CROSS), WALKRI v0.1.7 (github.com/CrossWalkri/WALKRI)
 references:
   - https://www.aecf.org/resources/a-road-to-results-a-performance-measurement-guidebook
   - https://www.aecf.org/resources/a-road-to-results-results-based-accountability-in-the-annie-e-casey-founda/
@@ -66,4 +66,4 @@ WALKRI also ensures that the population accountability frame is implemented as a
 
 ---
 
-*Published under CC0. For the current version of CROSS and WALKRI, see github.com/cross-walkri.*
+*Published under CC0. For the current version of CROSS and WALKRI, see github.com/CrossWalkri.*
