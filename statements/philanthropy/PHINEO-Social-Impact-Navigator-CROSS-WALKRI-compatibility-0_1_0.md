@@ -3,7 +3,7 @@ title: PHINEO Social Impact Navigator (Kursbuch Wirkung) Compatibility - CROSS+W
 version: 0.1.0
 date: 2026-05-18
 license: CC0
-standards: CROSS v0.4.2 (github.com/cross-walkri/CROSS), WALKRI v0.1.6 (github.com/cross-walkri/WALKRI)
+standards: CROSS v0.4.2 (github.com/CrossWalkri/CROSS), WALKRI v0.1.6 (github.com/CrossWalkri/WALKRI)
 references:
   - https://www.phineo.org/downloads/PHINEO_Social_Impact_Navigator_HQ.pdf
   - https://www.phineo.org/en/social-impact-navigator
@@ -84,15 +84,15 @@ This is the instrument-level implementation of the Social Impact Navigator's nee
 
 ---
 
-*Published under CC0. For the current version of CROSS and WALKRI, see github.com/cross-walkri.*
+*Published under CC0. For the current version of CROSS and WALKRI, see github.com/CrossWalkri.*
 
 ---
 
 ## Further Information
 
-CROSS: github.com/cross-walkri/CROSS
+CROSS: github.com/CrossWalkri/CROSS
 
-WALKRI: github.com/cross-walkri/WALKRI
+WALKRI: github.com/CrossWalkri/WALKRI
 
 PHINEO Social Impact Navigator: https://www.phineo.org/en/social-impact-navigator
 
