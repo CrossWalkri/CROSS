@@ -965,7 +965,7 @@ function showCohort(cohortKey) {
     card.innerHTML = `
       <div class="prompt-item-header">
         <div class="prompt-item-title">${p.title}</div>
-        <button class="copy-btn ${cohort.color}" onclick="copyPrompt(this, ${JSON.stringify(p.text).replace(/</g,'&lt;')})">Copy Prompt</button>
+        <button class="copy-btn ${cohort.color}" onclick="copyPrompt(this, ${JSON.stringify(p.text).replace(/</g,'&lt;').replace(/"/g,'&quot;')})">Copy Prompt</button>
       </div>
       <div class="prompt-preview">${p.preview}</div>
     `
@@ -1001,7 +1001,7 @@ function buildLibrary() {
           <h3>${p.title}</h3>
           <div class="use-on">${p.preview}</div>
         </div>
-        <button class="copy-btn ${cohort.color}" onclick="copyPrompt(this, ${JSON.stringify(p.text).replace(/</g,'&lt;')})">Copy</button>
+        <button class="copy-btn ${cohort.color}" onclick="copyPrompt(this, ${JSON.stringify(p.text).replace(/</g,'&lt;').replace(/"/g,'&quot;')})">Copy</button>
       `
       group.appendChild(card)
     })
