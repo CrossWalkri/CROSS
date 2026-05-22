@@ -3,7 +3,7 @@ title: Ryan White HIV/AIDS Program Services Report and HAB Performance Measures 
 version: 0.1.0
 date: 2026-05-18
 license: CC0
-standards: CROSS v0.4.5 (github.com/cross-walkri/CROSS), WALKRI v0.1.7 (github.com/cross-walkri/WALKRI)
+standards: CROSS v0.4.5 (github.com/CrossWalkri/CROSS), WALKRI v0.1.7 (github.com/CrossWalkri/WALKRI)
 references:
   - Ryan White HIV/AIDS Program (ryanwhite.hrsa.gov)
   - Ryan White Services Report (RSR) Data and Technical Assistance (hab.hrsa.gov/data/data-reports)
@@ -78,4 +78,4 @@ For subrecipient networks, where a Parts A or B grantee passes Ryan White fundin
 
 ---
 
-*Published under CC0. For the current version of CROSS and WALKRI, see github.com/cross-walkri.*
+*Published under CC0. For the current version of CROSS and WALKRI, see github.com/CrossWalkri.*
