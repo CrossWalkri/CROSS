@@ -3,7 +3,7 @@ title: USCCB Catholic Campaign for Human Development (CCHD) Evaluation Criteria 
 version: 0.1.0
 date: 2026-05-18
 license: CC0
-standards: CROSS v0.4.4 (github.com/cross-walkri/CROSS), WALKRI v0.1.7 (github.com/cross-walkri/WALKRI)
+standards: CROSS v0.4.4 (github.com/CrossWalkri/CROSS), WALKRI v0.1.7 (github.com/CrossWalkri/WALKRI)
 references:
   - https://www.usccb.org/committees/catholic-campaign-human-development/community-development-criteria-guidelines-and
   - https://www.usccb.org/committees/catholic-campaign-human-development/economic-development-criteria-and-guidelines
@@ -71,4 +71,4 @@ WALKRI applies the same logic to all other CCHD criteria. The democratic governa
 
 ---
 
-*Published under CC0. For the current version of CROSS and WALKRI, see github.com/cross-walkri.*
+*Published under CC0. For the current version of CROSS and WALKRI, see github.com/CrossWalkri.*
