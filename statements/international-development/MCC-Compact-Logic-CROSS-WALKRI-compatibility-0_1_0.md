@@ -3,7 +3,7 @@ title: MCC Compact Logic Compatibility - CROSS+WALKRI
 version: 0.1.0
 date: 2026-05-18
 license: CC0
-standards: CROSS v0.4.0 (github.com/cross-walkri/CROSS), WALKRI v0.1.6 (github.com/cross-walkri/WALKRI)
+standards: CROSS v0.4.0 (github.com/CrossWalkri/CROSS), WALKRI v0.1.6 (github.com/CrossWalkri/WALKRI)
 references:
   - MCC Policy for Monitoring and Evaluation (mcc.gov/resources/doc/policy-for-monitoring-and-evaluation)
   - MCC Compact Logic hierarchy and Results Framework requirements
@@ -123,4 +123,4 @@ These five criteria are identical to WALKRI's five data quality standards (Secti
 
 ---
 
-*Published under CC0. For the current version of CROSS and WALKRI, see github.com/cross-walkri.*
+*Published under CC0. For the current version of CROSS and WALKRI, see github.com/CrossWalkri.*
