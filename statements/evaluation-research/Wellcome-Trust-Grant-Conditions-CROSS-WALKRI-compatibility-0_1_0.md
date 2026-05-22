@@ -3,7 +3,7 @@ title: Wellcome Trust Grant Conditions and Open Access Policy Compatibility - CR
 version: 0.1.0
 date: 2026-05-18
 license: CC0
-standards: CROSS v0.4.4 (github.com/cross-walkri/CROSS), WALKRI v0.1.7 (github.com/cross-walkri/WALKRI)
+standards: CROSS v0.4.4 (github.com/CrossWalkri/CROSS), WALKRI v0.1.7 (github.com/CrossWalkri/WALKRI)
 references:
   - Wellcome Grant Conditions (UK and overseas awards) (wellcome.org)
   - Wellcome Open Access Policy (effective January 2021) (wellcome.org)
@@ -66,4 +66,4 @@ WALKRI's five requirements applied to each of the 16 Researchfish output categor
 
 ---
 
-*Published under CC0. For the current version of CROSS and WALKRI, see github.com/cross-walkri.*
+*Published under CC0. For the current version of CROSS and WALKRI, see github.com/CrossWalkri.*
