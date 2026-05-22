@@ -3,7 +3,7 @@ title: AAOIFI Standards for Zakat and Waqf Administration Compatibility - CROSS+
 version: 0.1.0
 date: 2026-05-18
 license: CC0
-standards: CROSS v0.4.2 (github.com/cross-walkri/CROSS), WALKRI v0.1.6 (github.com/cross-walkri/WALKRI)
+standards: CROSS v0.4.2 (github.com/CrossWalkri/CROSS), WALKRI v0.1.6 (github.com/CrossWalkri/WALKRI)
 references:
   - AAOIFI FAS 39 Financial Reporting for Zakah (aaoifi.com/announcement/aaoifi-issues-financial-accounting-standard-fas-39-financial-reporting-for-zakah/?lang=en)
   - AAOIFI FAS 37 Financial Reporting by Waqf Institutions (aaoifi.com/announcement/aaoifi-issues-financial-accounting-standard-37-financial-reporting-by-waqf-institutions/?lang=en)
@@ -74,4 +74,4 @@ This collection-instrument accountability is the layer that neither AAOIFI's fin
 
 ---
 
-*Published under CC0. For the current version of CROSS and WALKRI, see github.com/cross-walkri.*
+*Published under CC0. For the current version of CROSS and WALKRI, see github.com/CrossWalkri.*
