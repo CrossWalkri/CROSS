@@ -3,7 +3,7 @@ title: 2 CFR 200 (OMB Uniform Guidance for Federal Awards) Compatibility - CROSS
 version: 0.1.0
 date: 2026-05-18
 license: CC0
-standards: CROSS v0.4.4 (github.com/cross-walkri/CROSS), WALKRI v0.1.7 (github.com/cross-walkri/WALKRI)
+standards: CROSS v0.4.4 (github.com/CrossWalkri/CROSS), WALKRI v0.1.7 (github.com/CrossWalkri/WALKRI)
 references:
   - https://www.ecfr.gov/current/title-2/subtitle-A/chapter-II/part-200
   - https://www.epa.gov/grants/whats-new-2024-revision-2-cfr-part-200
@@ -61,4 +61,4 @@ WALKRI's evidence form requirement, which specifies that every field identify an
 
 ---
 
-*Published under CC0. For the current version of CROSS and WALKRI, see github.com/cross-walkri.*
+*Published under CC0. For the current version of CROSS and WALKRI, see github.com/CrossWalkri.*
