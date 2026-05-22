@@ -3,7 +3,7 @@ title: Evaluation Methodologies (Outcome Harvesting, MSC, Developmental Evaluati
 version: 0.1.0
 date: 2026-05-18
 license: CC0
-standards: CROSS v0.4.2 (github.com/cross-walkri/CROSS), WALKRI v0.1.6 (github.com/cross-walkri/WALKRI)
+standards: CROSS v0.4.2 (github.com/CrossWalkri/CROSS), WALKRI v0.1.6 (github.com/CrossWalkri/WALKRI)
 references:
   - Outcome Harvesting, https://www.betterevaluation.org/methods-approaches/approaches/outcome-harvesting
   - Most Significant Change technique guide, https://www.betterevaluation.org/tools-resources/most-significant-change-technique-guide-its-use
@@ -68,9 +68,9 @@ For programs using any of these four methodologies, WALKRI conformance means tha
 
 ## Further Information
 
-CROSS: github.com/cross-walkri/CROSS
+CROSS: github.com/CrossWalkri/CROSS
 
-WALKRI: github.com/cross-walkri/WALKRI
+WALKRI: github.com/CrossWalkri/WALKRI
 
 Outcome Harvesting (Better Evaluation): https://www.betterevaluation.org/methods-approaches/approaches/outcome-harvesting
 
