@@ -3,7 +3,7 @@ title: HRSA Health Center Program Uniform Data System Compatibility - CROSS+WALK
 version: 0.1.0
 date: 2026-05-18
 license: CC0
-standards: CROSS v0.4.4 (github.com/cross-walkri/CROSS), WALKRI v0.1.7 (github.com/cross-walkri/WALKRI)
+standards: CROSS v0.4.4 (github.com/CrossWalkri/CROSS), WALKRI v0.1.7 (github.com/CrossWalkri/WALKRI)
 references:
   - HRSA Uniform Data System (UDS) annual reporting requirements (bphc.hrsa.gov)
   - HRSA Bureau of Primary Health Care (BPHC) UDS guidance (bphc.hrsa.gov)
@@ -66,4 +66,4 @@ WALKRI's five requirements applied to UDS-supporting intake fields resolve these
 
 ---
 
-*Published under CC0. For the current version of CROSS and WALKRI, see github.com/cross-walkri.*
+*Published under CC0. For the current version of CROSS and WALKRI, see github.com/CrossWalkri.*
