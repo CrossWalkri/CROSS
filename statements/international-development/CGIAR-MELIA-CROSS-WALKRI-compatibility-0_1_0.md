@@ -3,7 +3,7 @@ title: CGIAR MELIA (Monitoring, Evaluation, Learning, and Impact Assessment) Fra
 version: 0.1.0
 date: 2026-05-18
 license: CC0
-standards: CROSS v0.4.4 (github.com/cross-walkri/CROSS), WALKRI v0.1.7 (github.com/cross-walkri/WALKRI)
+standards: CROSS v0.4.4 (github.com/CrossWalkri/CROSS), WALKRI v0.1.7 (github.com/CrossWalkri/WALKRI)
 references:
   - https://www.cgiar.org/sites/g/files/fvypus371/files/uploads/files-cgiar-meeting-docs/SC15-06a_New-CGIAR-Evaluation-Framework.pdf
   - https://iaes.cgiar.org/evaluation/cgiar-evaluation-framework-and-policy
@@ -65,4 +65,4 @@ The deeper alignment between WALKRI and MELIA is architectural. MELIA's mandator
 
 ---
 
-*Published under CC0. For the current version of CROSS and WALKRI, see github.com/cross-walkri.*
+*Published under CC0. For the current version of CROSS and WALKRI, see github.com/CrossWalkri.*
