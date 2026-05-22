@@ -3,7 +3,7 @@ title: International Non-Profit Accounting Standard (INPAS) Compatibility - CROS
 version: 0.1.0
 date: 2026-05-18
 license: CC0
-standards: CROSS v0.4.3 (github.com/cross-walkri/CROSS), WALKRI v0.1.7 (github.com/cross-walkri/WALKRI)
+standards: CROSS v0.4.3 (github.com/CrossWalkri/CROSS), WALKRI v0.1.7 (github.com/CrossWalkri/WALKRI)
 references:
   - https://ifr4npo.org
   - https://humentum.org/international-financial-reporting-for-nonprofit-organizations/
@@ -69,4 +69,4 @@ INPAS is the first accounting standard that directly governs how nonprofit organ
 
 ---
 
-*Published under CC0. For the current version of CROSS and WALKRI, see github.com/cross-walkri.*
+*Published under CC0. For the current version of CROSS and WALKRI, see github.com/CrossWalkri.*
