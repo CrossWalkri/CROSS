@@ -3,7 +3,7 @@ title: IDRC Research Quality Plus (RQ+) Compatibility - CROSS+WALKRI
 version: 0.1.0
 date: 2026-05-18
 license: CC0
-standards: CROSS v0.4.2 (github.com/cross-walkri/CROSS), WALKRI v0.1.6 (github.com/cross-walkri/WALKRI)
+standards: CROSS v0.4.2 (github.com/CrossWalkri/CROSS), WALKRI v0.1.6 (github.com/CrossWalkri/WALKRI)
 references:
   - https://idrc-crdi.ca/en/rqplus
   - https://idrc-crdi.ca/sites/default/files/sp/Documents%20EN/research-quality-plus-assessment-instrument.pdf
@@ -68,4 +68,4 @@ For programs being evaluated under RQ+, CROSS+WALKRI compliance provides a docum
 
 ---
 
-*Published under CC0. For the current version of CROSS and WALKRI, see github.com/cross-walkri.*
+*Published under CC0. For the current version of CROSS and WALKRI, see github.com/CrossWalkri.*
