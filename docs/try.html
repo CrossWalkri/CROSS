@@ -269,14 +269,15 @@
         <button class="provider-btn active" id="providerAnthropic" onclick="setProvider('anthropic')">Anthropic (Claude)</button>
         <button class="provider-btn" id="providerOpenai" onclick="setProvider('openai')">OpenAI (GPT)</button>
       </div>
-      <div class="section-label" id="keyLabel">API Key (Anthropic)</div>
+      <div class="section-label" id="keyLabel">Your API Key (required &mdash; Anthropic)</div>
       <div class="key-row">
         <input type="password" class="key-input" id="apiKey" placeholder="sk-ant-..." autocomplete="off">
-        <button class="save-btn" onclick="saveKey()">Save</button>
+        <button class="save-btn" onclick="saveKey()">Save for this tab</button>
       </div>
       <p class="key-note" id="keyNote">
+        <strong>You must use your own API key.</strong> This tool has no shared key and no free tier.
         Get an Anthropic key at <a href="https://console.anthropic.com" target="_blank">console.anthropic.com</a>.
-        Your key is stored only in this browser tab and sent to Anthropic via a secure proxy. We never log or store it.
+        Your key is held in this browser tab only and never sent to our servers.
       </p>
     </div>
 
@@ -404,13 +405,13 @@
     }
 
     function loadKey() {
-      var saved = localStorage.getItem(providerConfig[currentProvider].storageKey)
+      var saved = sessionStorage.getItem(providerConfig[currentProvider].storageKey)
       document.getElementById('apiKey').value = saved || ''
     }
 
     function saveKey() {
       var key = document.getElementById('apiKey').value.trim()
-      if (key) localStorage.setItem(providerConfig[currentProvider].storageKey, key)
+      if (key) sessionStorage.setItem(providerConfig[currentProvider].storageKey, key)
     }
 
     function setMode(mode) {
