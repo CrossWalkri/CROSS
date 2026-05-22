@@ -3,7 +3,7 @@ title: FSG Collective Impact Compatibility - CROSS+WALKRI
 version: 0.1.0
 date: 2026-05-18
 license: CC0
-standards: CROSS v0.4.0 (github.com/cross-walkri/CROSS), WALKRI v0.1.6 (github.com/cross-walkri/WALKRI)
+standards: CROSS v0.4.0 (github.com/CrossWalkri/CROSS), WALKRI v0.1.6 (github.com/CrossWalkri/WALKRI)
 references:
   - FSG Guide to Evaluating Collective Impact, 2014, with Aspen Institute, https://www.fsg.org/resource/guide-evaluating-collective-impact/
 ---
@@ -73,9 +73,9 @@ Field 10 (institutional framework alignment) can record the collective impact in
 
 ## Further Information
 
-CROSS: github.com/cross-walkri/CROSS
+CROSS: github.com/CrossWalkri/CROSS
 
-WALKRI: github.com/cross-walkri/WALKRI
+WALKRI: github.com/CrossWalkri/WALKRI
 
 FSG Guide to Evaluating Collective Impact: https://www.fsg.org/resource/guide-evaluating-collective-impact/
 
