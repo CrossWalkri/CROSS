@@ -3,7 +3,7 @@ title: Good Financial Grant Practice (GFGP / ARS 1651) Compatibility - CROSS+WAL
 version: 0.1.0
 date: 2026-05-18
 license: CC0
-standards: CROSS v0.4.4 (github.com/cross-walkri/CROSS), WALKRI v0.1.7 (github.com/cross-walkri/WALKRI)
+standards: CROSS v0.4.4 (github.com/CrossWalkri/CROSS), WALKRI v0.1.7 (github.com/CrossWalkri/WALKRI)
 references:
   - https://www.globalgrantcommunity.com/standard
   - https://health-policy-systems.biomedcentral.com/articles/10.1186/s12961-025-01343-7
@@ -64,4 +64,4 @@ More broadly, GFGP certification represents a claim about organizational systems
 
 ---
 
-*Published under CC0. For the current version of CROSS and WALKRI, see github.com/cross-walkri.*
+*Published under CC0. For the current version of CROSS and WALKRI, see github.com/CrossWalkri.*
