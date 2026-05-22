@@ -3,7 +3,7 @@ title: SDC Results Framework Compatibility - CROSS+WALKRI
 version: 0.1.0
 date: 2026-05-18
 license: CC0
-standards: CROSS v0.4.0 (github.com/cross-walkri/CROSS), WALKRI v0.1.6 (github.com/cross-walkri/WALKRI)
+standards: CROSS v0.4.0 (github.com/CrossWalkri/CROSS), WALKRI v0.1.6 (github.com/CrossWalkri/WALKRI)
 references:
   - Swiss Agency for Development and Cooperation (SDC), International Cooperation Strategy 2025-2028
   - SDC Aggregated Reference Indicators and Thematic Reference Indicators
@@ -107,9 +107,9 @@ Programs funded by SDC that adopt CROSS+WALKRI should:
 
 ## Further Information
 
-CROSS: github.com/cross-walkri/CROSS
+CROSS: github.com/CrossWalkri/CROSS
 
-WALKRI: github.com/cross-walkri/WALKRI
+WALKRI: github.com/CrossWalkri/WALKRI
 
 SDC Guidance and Indicators: https://www.sdc-cde.ch/en/guidance-and-indicators
 
