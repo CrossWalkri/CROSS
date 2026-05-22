@@ -27,6 +27,8 @@ Conflict of interest requirements from Part VII of the standard apply to all run
 
 Concurrent funding disclosure from Part VI applies to all runbooks without exception.
 
+The gate architecture in these runbooks maps to the CLEAR round lifecycle (Commit, List, Evaluate, Attest, Register). The Entry Specification gate corresponds to the Commit and List stages: publishing the obligation architecture before applications open, then collecting applications against it. The Completion Verification gate corresponds to the Attest stage. The institutional memory produced at round close corresponds to the Register stage.
+
 ---
 
 ## Runbook 1: Discovery Sprint
@@ -50,7 +52,7 @@ The deliverable is a document, specification, dataset, assessment, or design art
 
 **Conflict of interest.** Standard three-tier declaration applies. Because discovery sprint grants are small and the time commitment for reviewers is brief, the conflict of interest declaration may be administered through a concise form covering all three tiers. No waiver process is available for Tier 1 conflicts regardless of grant size.
 
-**Infrastructure declaration requirements.** No gate in this runbook requires independent review. The infrastructure declaration for the completion verification gate specifies the named staff member and the timeline for artifact review after submission. This must be published before the round opens.
+**Infrastructure declaration requirements.** No gate in this runbook requires independent review. The infrastructure declaration for the completion verification gate specifies the named staff member and the timeline for artifact review after submission. This must be published before the round opens (the Commit stage).
 
 **Optional dimension activation.** For discovery sprint grants, the environmental and social impact, gender equity, and procurement integrity dimensions are typically not activated. The funder may activate them if the program area warrants.
 
