@@ -3,7 +3,7 @@ title: USAID PIRS Compatibility - CROSS+WALKRI
 version: 0.1.1
 date: 2026-05-18
 license: CC0
-standards: CROSS v0.3.7 (github.com/cross-walkri/CROSS), WALKRI v0.1.6 (github.com/cross-walkri/WALKRI)
+standards: CROSS v0.3.7 (github.com/CrossWalkri/CROSS), WALKRI v0.1.6 (github.com/CrossWalkri/WALKRI)
 references:
   - USAID ADS 201 (Automated Directives System Chapter 201, Program Cycle Policy)
   - USAID Performance Indicator Reference Sheet (PIRS) Requirements
@@ -140,9 +140,9 @@ Programs reporting to USAID do not need to produce separate PIRS documentation f
 
 ## Further Information
 
-CROSS: github.com/cross-walkri/CROSS
+CROSS: github.com/CrossWalkri/CROSS
 
-WALKRI: github.com/cross-walkri/WALKRI
+WALKRI: github.com/CrossWalkri/WALKRI
 
 USAID ADS 201: usaid.gov/ads/policy/200/201
 
