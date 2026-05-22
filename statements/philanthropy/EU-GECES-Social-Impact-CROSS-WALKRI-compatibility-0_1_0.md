@@ -3,7 +3,7 @@ title: EU GECES Social Impact Measurement Report (2014) Compatibility - CROSS+WA
 version: 0.1.0
 date: 2026-05-18
 license: CC0
-standards: CROSS v0.4.2 (github.com/cross-walkri/CROSS), WALKRI v0.1.6 (github.com/cross-walkri/WALKRI)
+standards: CROSS v0.4.2 (github.com/CrossWalkri/CROSS), WALKRI v0.1.6 (github.com/CrossWalkri/WALKRI)
 references:
   - https://social-economy-gateway.ec.europa.eu/document/download/c1bd2c6d-f51c-43d8-b74b-b02ead31b01b_en?filename=proposed+approaches+to+social+impact+measurement+in-KE0414665ENN_0.pdf
   - https://ec.europa.eu/social/main.jsp?catId=738
@@ -72,15 +72,15 @@ For displacement and drop-off, WALKRI's compliance threshold requirement is part
 
 ---
 
-*Published under CC0. For the current version of CROSS and WALKRI, see github.com/cross-walkri.*
+*Published under CC0. For the current version of CROSS and WALKRI, see github.com/CrossWalkri.*
 
 ---
 
 ## Further Information
 
-CROSS: github.com/cross-walkri/CROSS
+CROSS: github.com/CrossWalkri/CROSS
 
-WALKRI: github.com/cross-walkri/WALKRI
+WALKRI: github.com/CrossWalkri/WALKRI
 
 GECES Report (2014): https://social-economy-gateway.ec.europa.eu/document/download/c1bd2c6d-f51c-43d8-b74b-b02ead31b01b_en?filename=proposed+approaches+to+social+impact+measurement+in-KE0414665ENN_0.pdf
 
