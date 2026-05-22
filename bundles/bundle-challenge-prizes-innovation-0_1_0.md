@@ -3,7 +3,7 @@ title: CROSS+WALKRI Program Bundle - Challenge Prizes and Innovation Grants
 version: 0.1.0
 date: 2026-05-19
 license: CC0
-standards: CROSS v0.4.7 (github.com/cross-walkri/CROSS), WALKRI v0.1.7 (github.com/cross-walkri/WALKRI)
+standards: CROSS v0.4.7 (github.com/CrossWalkri/CROSS), WALKRI v0.1.7 (github.com/CrossWalkri/WALKRI)
 bundle_type: challenge-prizes-innovation
 ---
 
@@ -308,4 +308,4 @@ Compatibility statements: Optimism-Retro-Funding-2025, ARPA-H-Payable-Milestones
 
 ---
 
-*Published under CC0. For the current version of CROSS and WALKRI, see github.com/cross-walkri.*
+*Published under CC0. For the current version of CROSS and WALKRI, see github.com/CrossWalkri.*
