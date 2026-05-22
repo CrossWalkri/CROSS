@@ -3,7 +3,7 @@ title: FCDO Programme Operating Framework Compatibility - CROSS+WALKRI
 version: 0.1.0
 date: 2026-05-18
 license: CC0
-standards: CROSS v0.4.0 (github.com/cross-walkri/CROSS), WALKRI v0.1.6 (github.com/cross-walkri/WALKRI)
+standards: CROSS v0.4.0 (github.com/CrossWalkri/CROSS), WALKRI v0.1.6 (github.com/CrossWalkri/WALKRI)
 references:
   - FCDO Programme Operating Framework, https://www.gov.uk/government/publications/fcdo-programme-operating-framework
   - IATI Standard v2.03, iatistandard.org
@@ -120,9 +120,9 @@ Programs seeking FCDO co-financing or operating under FCDO contracts that adopt 
 
 ## Further Information
 
-CROSS: github.com/cross-walkri/CROSS
+CROSS: github.com/CrossWalkri/CROSS
 
-WALKRI: github.com/cross-walkri/WALKRI
+WALKRI: github.com/CrossWalkri/WALKRI
 
 FCDO Programme Operating Framework: https://www.gov.uk/government/publications/fcdo-programme-operating-framework
 
