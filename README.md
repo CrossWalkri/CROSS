@@ -40,6 +40,8 @@ CROSS is an architecture for putting the order back. It does not add bureaucracy
 
 ## What existing tools don't address
 
+![CLEAR Funding Lifecycle: the closed loop on the left shows obligation architecture published as machine-readable data flowing from operator to grantee, outcomes recorded as structured data feeding back into the next round's design. The open chain on the right shows the current state: the loop resets each round.](assets/clear-funding-lifecycle.png)
+
 Every form builder, every grants management platform, and every grants intelligence tool currently available operates at the communication and workflow layer: how questions are phrased, how approvals route, how data aggregates. These are real and useful products. None of them require a field to be a measurement instrument before applicants see it. None require an obligation architecture to be published before applications open. None enforce the specification sequence.
 
 CROSS operates at a different layer. It is not a form builder and not a grants platform. It is an accountability standard that sits above both: it specifies what a conformant program must commit to before applications open, produces a machine-readable obligation architecture that any tool can implement, and generates structured data that flows upward to institutional reporting, portfolio analysis, and AI systems that require a stable data foundation.
