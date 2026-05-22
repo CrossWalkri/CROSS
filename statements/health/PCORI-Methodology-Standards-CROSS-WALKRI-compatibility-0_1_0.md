@@ -3,7 +3,7 @@ title: PCORI Methodology Standards Compatibility - CROSS+WALKRI
 version: 0.1.0
 date: 2026-05-18
 license: CC0
-standards: CROSS v0.4.5 (github.com/cross-walkri/CROSS), WALKRI v0.1.7 (github.com/cross-walkri/WALKRI)
+standards: CROSS v0.4.5 (github.com/CrossWalkri/CROSS), WALKRI v0.1.7 (github.com/CrossWalkri/WALKRI)
 references:
   - PCORI Methodology Standards, March 2024 (pcori.org/sites/default/files/PCORI-Methodology-Standards.pdf)
   - Affordable Care Act, Section 6301 (Patient-Centered Outcomes Research Institute)
@@ -78,4 +78,4 @@ For multi-site PCORI studies, the WALKRI pre-publication audit across all partic
 
 ---
 
-*Published under CC0. For the current version of CROSS and WALKRI, see github.com/cross-walkri.*
+*Published under CC0. For the current version of CROSS and WALKRI, see github.com/CrossWalkri.*
