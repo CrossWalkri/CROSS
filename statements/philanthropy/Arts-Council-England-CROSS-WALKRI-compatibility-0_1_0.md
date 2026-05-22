@@ -3,7 +3,7 @@ title: Arts Council England Let's Create Investment Principles Compatibility - C
 version: 0.1.0
 date: 2026-05-18
 license: CC0
-standards: CROSS v0.4.2 (github.com/cross-walkri/CROSS), WALKRI v0.1.6 (github.com/cross-walkri/WALKRI)
+standards: CROSS v0.4.2 (github.com/CrossWalkri/CROSS), WALKRI v0.1.6 (github.com/CrossWalkri/WALKRI)
 references:
   - Arts Council England Let's Create Strategy, https://www.artscouncil.org.uk/lets-create/strategy-2020-2030/investment-principles
   - NPO/IPSO Investment Principles Plan Guide 2024-25, https://www.artscouncil.org.uk/sites/default/files/2024-01/2024-25%20How%20to%20guide%20-%20Investment%20Principles%20Plan%20(for%20NPOs%20and%20IPSOs)%20LP.pdf
@@ -63,9 +63,9 @@ For NPOs and IPSOs using CROSS+WALKRI, the Investment Principles Plan ceases to 
 
 ## Further Information
 
-CROSS: github.com/cross-walkri/CROSS
+CROSS: github.com/CrossWalkri/CROSS
 
-WALKRI: github.com/cross-walkri/WALKRI
+WALKRI: github.com/CrossWalkri/WALKRI
 
 Arts Council England Let's Create Investment Principles: https://www.artscouncil.org.uk/lets-create/strategy-2020-2030/investment-principles
 
