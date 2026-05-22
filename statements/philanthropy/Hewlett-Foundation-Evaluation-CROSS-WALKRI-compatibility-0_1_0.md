@@ -3,7 +3,7 @@ title: Hewlett Foundation Evaluation Compatibility - CROSS+WALKRI
 version: 0.1.0
 date: 2026-05-18
 license: CC0
-standards: CROSS v0.4.0 (github.com/cross-walkri/CROSS), WALKRI v0.1.6 (github.com/cross-walkri/WALKRI)
+standards: CROSS v0.4.0 (github.com/CrossWalkri/CROSS), WALKRI v0.1.6 (github.com/CrossWalkri/WALKRI)
 references:
   - Hewlett Foundation Evaluation Principles and Practices, Second Edition (2019): https://hewlett.org/wp-content/uploads/2019/03/Evaluation-Principles-and-Practices-Second-Edition.pdf
   - Hewlett Foundation Evaluation Principles and Practices, First Edition (December 2012, Fay Twersky and Karen Lindblom): widely distributed internal working paper, 7 principles
@@ -157,9 +157,9 @@ The OFG framework is archived by Hewlett as a named program but remains widely c
 
 ## Further Information
 
-CROSS: github.com/cross-walkri/CROSS
+CROSS: github.com/CrossWalkri/CROSS
 
-WALKRI: github.com/cross-walkri/WALKRI
+WALKRI: github.com/CrossWalkri/WALKRI
 
 Hewlett Foundation Evaluation Principles and Practices (Second Edition, 2019): https://hewlett.org/wp-content/uploads/2019/03/Evaluation-Principles-and-Practices-Second-Edition.pdf
 
