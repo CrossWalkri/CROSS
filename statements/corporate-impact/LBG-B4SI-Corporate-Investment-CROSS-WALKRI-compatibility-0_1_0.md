@@ -3,7 +3,7 @@ title: LBG / B4SI Corporate Community Investment Standard Compatibility - CROSS+
 version: 0.1.0
 date: 2026-05-18
 license: CC0
-standards: CROSS v0.4.2 (github.com/cross-walkri/CROSS), WALKRI v0.1.6 (github.com/cross-walkri/WALKRI)
+standards: CROSS v0.4.2 (github.com/CrossWalkri/CROSS), WALKRI v0.1.6 (github.com/CrossWalkri/WALKRI)
 references:
   - https://b4si.net/wp-content/uploads/2018/10/LBG-Public-Guidance-Manual_2018.pdf
   - https://onlbg.com/en/the-methodological-framework/
@@ -68,4 +68,4 @@ WALKRI's pre-publication audit specifies what each field collects, what measurem
 
 ---
 
-*Published under CC0. For the current version of CROSS and WALKRI, see github.com/cross-walkri.*
+*Published under CC0. For the current version of CROSS and WALKRI, see github.com/CrossWalkri.*
