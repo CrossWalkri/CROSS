@@ -3,7 +3,7 @@ title: Gold Standard for Global Goals Compatibility - CROSS+WALKRI
 version: 0.1.0
 date: 2026-05-18
 license: CC0
-standards: CROSS v0.4.4 (github.com/cross-walkri/CROSS), WALKRI v0.1.7 (github.com/cross-walkri/WALKRI)
+standards: CROSS v0.4.4 (github.com/CrossWalkri/CROSS), WALKRI v0.1.7 (github.com/CrossWalkri/WALKRI)
 references:
   - https://globalgoals.goldstandard.org/standards/101_V2.1_PAR_Principles-Requirements.pdf
   - https://globalgoals.goldstandard.org/standards/000.4_V1.0_Gov_Impacts-Monitoring-Evaluation-Manual.pdf
@@ -70,4 +70,4 @@ WALKRI's compliance threshold requirement also addresses a specific Gold Standar
 
 ---
 
-*Published under CC0. For the current version of CROSS and WALKRI, see github.com/cross-walkri.*
+*Published under CC0. For the current version of CROSS and WALKRI, see github.com/CrossWalkri.*
