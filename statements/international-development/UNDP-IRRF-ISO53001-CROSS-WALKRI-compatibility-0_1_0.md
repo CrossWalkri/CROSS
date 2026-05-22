@@ -3,7 +3,7 @@ title: UNDP IRRF and ISO/UNDP 53001 Compatibility - CROSS+WALKRI
 version: 0.1.0
 date: 2026-05-18
 license: CC0
-standards: CROSS v0.4.0 (github.com/cross-walkri/CROSS), WALKRI v0.1.6 (github.com/cross-walkri/WALKRI)
+standards: CROSS v0.4.0 (github.com/CrossWalkri/CROSS), WALKRI v0.1.6 (github.com/CrossWalkri/WALKRI)
 references:
   - UNDP Integrated Results and Resources Framework (IRRF 2023, undp.org)
   - ISO/UNDP PAS 53002:2024 (free guidance document, iso.org/standard/53001)
@@ -103,4 +103,4 @@ The most material change between PAS 53002:2024 and the final ISO/UNDP 53001 sta
 
 ---
 
-*Published under CC0. For the current version of CROSS and WALKRI, see github.com/cross-walkri.*
+*Published under CC0. For the current version of CROSS and WALKRI, see github.com/CrossWalkri.*
