@@ -22,6 +22,8 @@ The six runbooks in CROSS-runbooks-0_1_0.md address the core program types: disc
 
 The universal gate requirements from the first edition's final section apply to all runbooks in this document without exception. Nothing in this document reduces or supersedes any requirement of the CROSS Common Reporting Outcome Standards Schema.
 
+The CLEAR lifecycle (Commit, List, Evaluate, Attest, Register) is the program-level frame within which all runbook gate configurations operate. The gate architecture in these runbooks maps to CLEAR as follows: the Entry Specification gate corresponds to the Commit and List stages, publishing the obligation architecture before applications open and then collecting applications against it; the Completion Verification gate corresponds to the Attest stage; and the Reflection gate (Runbook 7) together with the institutional memory it produces corresponds to the Register stage.
+
 ---
 
 ## Runbook 7: Adaptive Learning Cycle
@@ -41,7 +43,7 @@ The universal gate requirements from the first edition's final section apply to 
 | Entry specification | Yes | Output or Outcome (per obligation mode) | Third-party verifiable or Independent review (per obligation mode) | Entry specification must reference findings from the prior reflection stage if a prior round has been completed |
 | Progress verification | Configurable | Per obligation mode | Per obligation mode | Standard configuration per obligation mode |
 | Completion verification | Yes | Per obligation mode | Per obligation mode | Named reviewer confirms completion and submits learning documentation alongside evidence |
-| Reflection gate (between rounds) | Yes | Program-level learning | Facilitated documentation | Designated facilitator or staff synthesizes completion findings into a structured reflection record before the next entry specification gate opens |
+| Reflection gate (between rounds) (Register stage) | Yes | Program-level learning | Facilitated documentation | Designated facilitator or staff synthesizes completion findings into a structured reflection record before the next entry specification gate opens |
 | Next entry specification gate | Yes | Per obligation mode | Per obligation mode | The opening of this gate is conditioned on completion of the reflection gate |
 
 **Reflection gate requirements.** Before the next round's entry specification gate may open, the program operator must complete and publish a reflection record covering: (1) what the prior round's completion evidence showed, including unexpected findings; (2) what the round's gate configuration, rubric, or eligibility criteria would be changed to incorporate those findings; (3) what the changes will be in the next round's specification, stated in the form of specific field or criterion modifications; and (4) any indicators that showed insufficient sensitivity or poor commensurability across grantees, with a notation of how they will be revised.
@@ -52,7 +54,7 @@ The reflection record is a program-level attestation, not a grantee deliverable.
 
 **Conflict of interest.** Standard three-tier declaration applies per round. Facilitators who produce the reflection record must declare conflicts under Tier 2 (professional relationships with prior-round grantees). The reflection record is a programmatic document, not a funding decision; lower conflict thresholds apply than at the allocation gate. However, a facilitator with a Tier 1 conflict with a prior-round grantee should not produce the sections of the reflection record that assess that grantee's outcomes.
 
-**Infrastructure declaration requirements.** Before each round opens, the funder must publish: who will facilitate the reflection stage, what the reflection process is (structured template, workshop, or peer review), and when the reflection record will be published relative to the next round's opening. The reflection gate is a new gate type and its infrastructure must be declared with the same specificity as completion verification gates.
+**Infrastructure declaration requirements.** Before each round opens (the Commit stage), the funder must publish: who will facilitate the reflection stage, what the reflection process is (structured template, workshop, or peer review), and when the reflection record will be published relative to the next round's opening. The reflection gate is a new gate type and its infrastructure must be declared with the same specificity as completion verification gates.
 
 **Recommended rubric emphasis.** For rounds after the first, the rubric should explicitly credit applications that demonstrate engagement with the prior round's findings: a proposal that addresses a gap identified in the reflection record is more likely to contribute to the program's learning agenda than one that repeats prior-round approaches. The rubric's unintended outcomes section is especially important in adaptive learning programs: unexpected findings from prior rounds are the primary source of reflection record content.
 
