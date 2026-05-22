@@ -3,7 +3,7 @@ title: CSBG Results Oriented Management and Accountability (ROMA) Compatibility 
 version: 0.1.0
 date: 2026-05-18
 license: CC0
-standards: CROSS v0.4.5 (github.com/cross-walkri/CROSS), WALKRI v0.1.7 (github.com/cross-walkri/WALKRI)
+standards: CROSS v0.4.5 (github.com/CrossWalkri/CROSS), WALKRI v0.1.7 (github.com/CrossWalkri/WALKRI)
 references:
   - Community Services Block Grant Act, 42 U.S.C. § 9901 et seq.
   - CSBG Reauthorization Act of 1998, Pub. L. 105-285
@@ -63,4 +63,4 @@ WALKRI's criterion intent requirement, applied to a CAA intake field that record
 
 ---
 
-*Published under CC0. For the current version of CROSS and WALKRI, see github.com/cross-walkri.*
+*Published under CC0. For the current version of CROSS and WALKRI, see github.com/CrossWalkri.*
