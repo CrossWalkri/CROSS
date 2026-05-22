@@ -201,6 +201,34 @@
     .lib-card-info h3 { font-size: 0.85rem; font-weight: 600; margin-bottom: 0.2rem; }
     .lib-card-info .use-on { font-size: 0.74rem; color: var(--muted); }
 
+    /* Reference index */
+    .ref-section { margin-bottom: 2.5rem; }
+    .ref-section h2 { font-size: 1rem; font-weight: 700; color: var(--text); margin-bottom: 0.3rem; }
+    .ref-section .ref-meta { font-size: 0.78rem; color: var(--muted); margin-bottom: 1rem; }
+    .ref-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 0.6rem; }
+    .ref-card {
+      background: var(--bg-card); border: 1px solid var(--border); border-radius: 7px;
+      padding: 0.75rem 1rem; text-decoration: none; color: var(--text);
+      font-size: 0.82rem; font-weight: 500; display: block; transition: border-color 0.15s;
+    }
+    .ref-card:hover { border-color: var(--border-light); color: var(--cyan); }
+    .ref-cat { margin-bottom: 1.5rem; }
+    .ref-cat details summary {
+      font-size: 0.85rem; font-weight: 600; color: var(--text); cursor: pointer;
+      padding: 0.5rem 0; border-bottom: 1px solid var(--border); list-style: none;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .ref-cat details summary::-webkit-details-marker { display: none; }
+    .ref-cat details summary .count { font-size: 0.75rem; color: var(--muted); font-weight: 400; }
+    .ref-cat details summary .chevron { font-size: 0.7rem; color: var(--muted); transition: transform 0.15s; }
+    .ref-cat details[open] summary .chevron { transform: rotate(90deg); }
+    .ref-cat details .ref-list { padding: 0.6rem 0 0.4rem; display: flex; flex-direction: column; gap: 0.3rem; }
+    .ref-cat details .ref-list a {
+      font-size: 0.78rem; color: var(--muted); text-decoration: none;
+      padding: 0.25rem 0.5rem; border-radius: 4px; transition: color 0.12s;
+    }
+    .ref-cat details .ref-list a:hover { color: var(--cyan); }
+
     /* Footer */
     .site-footer {
       border-top: 1px solid var(--border); padding: 1.5rem; text-align: center;
@@ -276,6 +304,7 @@
 
     <div class="library-link-row">
       <button class="library-link-btn" onclick="showView('library')">Browse the full prompt library →</button>
+      <button class="library-link-btn" style="margin-top:0.5rem;" onclick="showView('reference')">Browse bundles and compatibility statements →</button>
     </div>
 
     <div class="foundation-block">
@@ -313,6 +342,242 @@
 
     <div id="library-content"></div>
 
+  </div>
+</section>
+
+<!-- REFERENCE INDEX -->
+<section id="view-reference" class="view">
+  <div class="container">
+    <button class="back-btn" onclick="showView('gateway')">← Back</button>
+
+    <div class="ref-section">
+      <h2>Program bundles</h2>
+      <p class="ref-meta">Ten sector-specific implementation guides, each combining a CROSS runbook, WALKRI field specifications, and a compatibility map for that program type.</p>
+      <div class="ref-grid">
+        <a class="ref-card" href="https://github.com/CrossWalkri/CROSS/blob/main/bundles/bundle-web3-public-goods-0_1_0.md" target="_blank" rel="noopener">Web3 / Public Goods</a>
+        <a class="ref-card" href="https://github.com/CrossWalkri/CROSS/blob/main/bundles/bundle-international-development-0_1_0.md" target="_blank" rel="noopener">International Development</a>
+        <a class="ref-card" href="https://github.com/CrossWalkri/CROSS/blob/main/bundles/bundle-research-grants-0_1_0.md" target="_blank" rel="noopener">Research Grants</a>
+        <a class="ref-card" href="https://github.com/CrossWalkri/CROSS/blob/main/bundles/bundle-community-foundation-0_1_0.md" target="_blank" rel="noopener">Community Foundation</a>
+        <a class="ref-card" href="https://github.com/CrossWalkri/CROSS/blob/main/bundles/bundle-corporate-csr-impact-0_1_0.md" target="_blank" rel="noopener">Corporate CSR / Impact</a>
+        <a class="ref-card" href="https://github.com/CrossWalkri/CROSS/blob/main/bundles/bundle-challenge-prizes-innovation-0_1_0.md" target="_blank" rel="noopener">Challenge Prizes &amp; Innovation</a>
+        <a class="ref-card" href="https://github.com/CrossWalkri/CROSS/blob/main/bundles/bundle-participatory-equity-0_1_0.md" target="_blank" rel="noopener">Participatory / Equity</a>
+        <a class="ref-card" href="https://github.com/CrossWalkri/CROSS/blob/main/bundles/bundle-islamic-endowment-0_1_0.md" target="_blank" rel="noopener">Islamic / Endowment</a>
+        <a class="ref-card" href="https://github.com/CrossWalkri/CROSS/blob/main/bundles/bundle-european-philanthropy-0_1_0.md" target="_blank" rel="noopener">European Philanthropy</a>
+        <a class="ref-card" href="https://github.com/CrossWalkri/CROSS/blob/main/bundles/bundle-fiscal-sponsorship-0_1_0.md" target="_blank" rel="noopener">Fiscal Sponsorship</a>
+      </div>
+    </div>
+
+    <div class="ref-section">
+      <h2>Compatibility statements</h2>
+      <p class="ref-meta">Formal documents mapping how established frameworks across every major grants sector relate to CROSS+WALKRI. Also includes null-finding documentation for frameworks searched without a published standard.</p>
+
+      <div class="ref-cat">
+        <details>
+          <summary>International Development <span class="count">27 statements</span><span class="chevron">›</span></summary>
+          <div class="ref-list">
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/international-development/USAID-PIRS-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">USAID PIRS</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/international-development/USAID-CLA-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">USAID CLA</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/international-development/World-Bank-RF-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">World Bank Results Framework</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/international-development/OECD-DAC-CRS-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">OECD DAC / CRS</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/international-development/IATI-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">IATI</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/international-development/Logframe-LFA-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">Logframe / LFA</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/international-development/MCC-Compact-Logic-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">MCC Compact Logic</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/international-development/PEPFAR-MER-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">PEPFAR MER</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/international-development/Global-Fund-ME-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">Global Fund M&amp;E</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/international-development/GAVI-Grant-Performance-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">GAVI Grant Performance</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/international-development/FCDO-PrOF-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">FCDO PrOF (UK)</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/international-development/DFAT-Australia-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">DFAT Australia</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/international-development/BMZ-GIZ-German-Development-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">BMZ / GIZ (Germany)</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/international-development/AFD-French-Development-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">AFD (France)</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/international-development/JICA-Japan-ODA-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">JICA / Japan ODA</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/international-development/Nordic-Bilateral-Aid-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">Nordic Bilateral Aid</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/international-development/Global-Affairs-Canada-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">Global Affairs Canada</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/international-development/SDC-Results-Framework-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">SDC Results Framework (Switzerland)</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/international-development/EU-GERF-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">EU GERF</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/international-development/IDB-Invest-DELTA-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">IDB Invest DELTA</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/international-development/NDB-New-Development-Bank-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">NDB</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/international-development/IDRC-Research-Quality-Plus-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">IDRC Research Quality Plus</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/international-development/OCHA-CBPF-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">OCHA CBPF</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/international-development/Core-Humanitarian-Standard-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">Core Humanitarian Standard</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/international-development/CGIAR-MELIA-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">CGIAR MELIA</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/international-development/CRS-ProPack-MEAL-System-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">CRS ProPack MEAL</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/international-development/World-Vision-LEAP-Programme-Cycle-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">World Vision LEAP</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/international-development/IAF-Grassroots-Development-Framework-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">IAF Grassroots Development Framework</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/international-development/PMD-Pro-FMD-Pro-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">PMD Pro / FMD Pro</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/international-development/TOSSD-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">TOSSD</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/international-development/UNDP-IRRF-ISO53001-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">UNDP IRRF / ISO 53001</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/international-development/UNDP-SDG-Impact-Standards-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">UNDP SDG Impact Standards</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/international-development/Caritas-Internationalis-CIMS-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">Caritas Internationalis CIMS</a>
+          </div>
+        </details>
+      </div>
+
+      <div class="ref-cat">
+        <details>
+          <summary>Philanthropy <span class="count">22 statements</span><span class="chevron">›</span></summary>
+          <div class="ref-list">
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/philanthropy/Gates-Foundation-Evaluation-Policy-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">Gates Foundation Evaluation Policy</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/philanthropy/Hewlett-Foundation-Evaluation-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">Hewlett Foundation Evaluation</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/philanthropy/Ford-Foundation-OSL-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">Ford Foundation OSL</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/philanthropy/MacArthur-Foundation-Evaluation-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">MacArthur Foundation Evaluation</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/philanthropy/Packard-Foundation-MEL-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">Packard Foundation MEL</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/philanthropy/Rockefeller-Strategic-Learning-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">Rockefeller Strategic Learning</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/philanthropy/Walton-Family-Foundation-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">Walton Family Foundation</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/philanthropy/Kellogg-Evaluation-Logic-Model-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">Kellogg Logic Model</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/philanthropy/Annie-E-Casey-RBA-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">Annie E. Casey RBA</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/philanthropy/IMLS-Outcome-Based-Evaluation-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">IMLS Outcome-Based Evaluation</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/philanthropy/NED-National-Endowment-for-Democracy-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">National Endowment for Democracy</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/philanthropy/Community-Foundation-National-Standards-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">Community Foundation National Standards</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/philanthropy/Arts-Council-England-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">Arts Council England</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/philanthropy/Sport-England-Evaluation-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">Sport England Evaluation</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/philanthropy/NLCF-Lottery-Grantmaking-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">NLCF Lottery Grantmaking (UK)</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/philanthropy/UK-GovS015-Magenta-Book-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">UK Magenta Book</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/philanthropy/PHINEO-Social-Impact-Navigator-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">PHINEO Social Impact Navigator</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/philanthropy/EVPA-Impact-Europe-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">EVPA / Impact Europe</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/philanthropy/ESIF-EU-Cohesion-Policy-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">ESIF / EU Cohesion Policy</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/philanthropy/EU-GECES-Social-Impact-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">EU GECES Social Impact</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/philanthropy/FSG-Collective-Impact-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">FSG Collective Impact</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/philanthropy/Equitable-Evaluation-Initiative-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">Equitable Evaluation Initiative</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/philanthropy/NCRP-Racial-Equity-Grantmaking-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">NCRP Racial Equity Grantmaking</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/philanthropy/Trust-Based-Philanthropy-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">Trust-Based Philanthropy</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/philanthropy/Nesta-Challenge-Prizes-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">Nesta Challenge Prizes</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/philanthropy/OECD-Citizen-Participation-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">OECD Citizen Participation</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/philanthropy/Participatory-Budgeting-15-Metrics-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">Participatory Budgeting 15 Metrics</a>
+          </div>
+        </details>
+      </div>
+
+      <div class="ref-cat">
+        <details>
+          <summary>Governance &amp; Fiscal <span class="count">10 statements</span><span class="chevron">›</span></summary>
+          <div class="ref-list">
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/governance-fiscal/2-CFR-200-Federal-Awards-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">2 CFR 200 Federal Awards</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/governance-fiscal/GREAT-Act-US-Federal-Grants-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">GREAT Act</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/governance-fiscal/GPC-Grant-Professional-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">GPC Grant Professional Standards</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/governance-fiscal/GFGP-ARS1651-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">GFGP / ARS 1651</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/governance-fiscal/INPAS-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">INPAS</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/governance-fiscal/Accountable-Now-CSO-Accountability-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">Accountable Now CSO</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/governance-fiscal/NNFS-Fiscal-Sponsorship-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">NNFS Fiscal Sponsorship</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/governance-fiscal/USCCB-CCHD-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">USCCB CCHD</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/governance-fiscal/IsDB-Evaluation-Guidelines-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">IsDB Evaluation Guidelines</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/governance-fiscal/AAOIFI-Islamic-Giving-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">AAOIFI Islamic Giving</a>
+          </div>
+        </details>
+      </div>
+
+      <div class="ref-cat">
+        <details>
+          <summary>Corporate Impact <span class="count">10 statements</span><span class="chevron">›</span></summary>
+          <div class="ref-list">
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/corporate-impact/GRI-Standards-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">GRI Standards</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/corporate-impact/Impact-Management-Norms-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">Impact Management Norms</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/corporate-impact/IFC-OPIM-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">IFC OPIM</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/corporate-impact/ICMA-Social-Bond-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">ICMA Social Bond</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/corporate-impact/OECD-DAC-Blended-Finance-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">OECD DAC Blended Finance</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/corporate-impact/ISEAL-Code-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">ISEAL Code</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/corporate-impact/LBG-B4SI-Corporate-Investment-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">LBG / B4SI Corporate Investment</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/corporate-impact/India-CSR-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">India CSR (Companies Act 2013)</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/corporate-impact/SROI-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">SROI</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/corporate-impact/Government-Outcomes-Lab-INDIGO-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">Government Outcomes Lab INDIGO</a>
+          </div>
+        </details>
+      </div>
+
+      <div class="ref-cat">
+        <details>
+          <summary>Evaluation &amp; Research <span class="count">8 statements</span><span class="chevron">›</span></summary>
+          <div class="ref-list">
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/evaluation-research/AEA-Program-Evaluation-Standards-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">AEA Program Evaluation Standards</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/evaluation-research/Arnold-Ventures-Open-Science-Guidelines-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">Arnold Ventures Open Science</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/evaluation-research/Evaluation-Methodologies-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">Evaluation Methodologies</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/evaluation-research/DDI-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">DDI</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/evaluation-research/Gates-Open-Access-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">Gates Open Access</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/evaluation-research/Research-Funder-DMP-Standards-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">Research Funder DMP Standards</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/evaluation-research/SBIR-STTR-Commercialization-Benchmarks-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">SBIR / STTR Commercialization Benchmarks</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/evaluation-research/Wellcome-Trust-Grant-Conditions-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">Wellcome Trust Grant Conditions</a>
+          </div>
+        </details>
+      </div>
+
+      <div class="ref-cat">
+        <details>
+          <summary>Web3 <span class="count">8 statements</span><span class="chevron">›</span></summary>
+          <div class="ref-list">
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/web3/Allo-Protocol-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">Allo Protocol</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/web3/Gitcoin-Passport-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">Gitcoin Passport</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/web3/Hypercerts-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">Hypercerts</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/web3/KarmaGAP-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">KarmaGAP</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/web3/Optimism-Retro-Funding-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">Optimism Retro Funding</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/web3/Optimism-Retro-Funding-Impact-Evaluation-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">Optimism Retro Funding Impact Evaluation</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/web3/OSO-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">OSO</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/web3/360Giving-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">360Giving</a>
+          </div>
+        </details>
+      </div>
+
+      <div class="ref-cat">
+        <details>
+          <summary>Health <span class="count">7 statements</span><span class="chevron">›</span></summary>
+          <div class="ref-list">
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/health/PCORI-Methodology-Standards-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">PCORI Methodology Standards</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/health/ARPA-H-Payable-Milestones-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">ARPA-H Payable Milestones</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/health/HRSA-Title-V-MCH-National-Performance-Measures-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">HRSA Title V MCH</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/health/HRSA-Uniform-Data-System-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">HRSA Uniform Data System</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/health/Ryan-White-HIV-AIDS-Program-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">Ryan White HIV/AIDS Program</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/health/SAMHSA-National-Outcome-Measures-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">SAMHSA National Outcome Measures</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/health/UNTF-UN-Women-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">UNTF / UN Women</a>
+          </div>
+        </details>
+      </div>
+
+      <div class="ref-cat">
+        <details>
+          <summary>Education &amp; Workforce <span class="count">6 statements</span><span class="chevron">›</span></summary>
+          <div class="ref-list">
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/education-workforce/ESSA-WWC-EIR-Education-Evidence-Framework-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">ESSA / WWC / EIR</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/education-workforce/WIOA-Workforce-Performance-Accountability-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">WIOA Workforce Performance</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/education-workforce/AmeriCorps-State-National-Performance-Measurement-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">AmeriCorps Performance Measurement</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/education-workforce/Head-Start-Program-Performance-Standards-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">Head Start Performance Standards</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/education-workforce/Perkins-V-CTE-Core-Performance-Indicators-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">Perkins V CTE Indicators</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/education-workforce/SNAP-Ed-Evaluation-Framework-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">SNAP-Ed Evaluation Framework</a>
+          </div>
+        </details>
+      </div>
+
+      <div class="ref-cat">
+        <details>
+          <summary>Environment &amp; Climate <span class="count">4 statements</span><span class="chevron">›</span></summary>
+          <div class="ref-list">
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/environment-climate/Verra-VCS-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">Verra VCS</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/environment-climate/Gold-Standard-Global-Goals-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">Gold Standard for Global Goals</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/environment-climate/IUCN-Global-Standard-Nature-based-Solutions-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">IUCN Nature-based Solutions</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/environment-climate/REDD-Warsaw-Framework-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">REDD+ Warsaw Framework</a>
+          </div>
+        </details>
+      </div>
+
+      <div class="ref-cat">
+        <details>
+          <summary>Human Services <span class="count">3 statements</span><span class="chevron">›</span></summary>
+          <div class="ref-list">
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/human-services/CSBG-ROMA-Results-Oriented-Management-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">CSBG ROMA</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/human-services/HUD-Continuum-of-Care-System-Performance-Measures-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">HUD Continuum of Care</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/human-services/LIHEAP-Performance-Measures-CROSS-WALKRI-compatibility-0_1_0.md" target="_blank" rel="noopener">LIHEAP Performance Measures</a>
+          </div>
+        </details>
+      </div>
+
+      <div class="ref-cat">
+        <details>
+          <summary>Meta <span class="count">2 documents</span><span class="chevron">›</span></summary>
+          <div class="ref-list">
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/meta/CROSS-WALKRI-coverage-gap-map-0_1_0.md" target="_blank" rel="noopener">Coverage gap map: frameworks searched without a published standard</a>
+            <a href="https://github.com/CrossWalkri/CROSS/blob/main/statements/meta/attestation-landscape-CROSS-WALKRI-0_1_0.md" target="_blank" rel="noopener">Attestation landscape</a>
+          </div>
+        </details>
+      </div>
+
+    </div>
   </div>
 </section>
 
