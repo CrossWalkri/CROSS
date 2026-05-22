@@ -3,7 +3,7 @@ title: IsDB Independent Evaluation Guidelines Compatibility - CROSS+WALKRI
 version: 0.1.0
 date: 2026-05-18
 license: CC0
-standards: CROSS v0.4.2 (github.com/cross-walkri/CROSS), WALKRI v0.1.6 (github.com/cross-walkri/WALKRI)
+standards: CROSS v0.4.2 (github.com/CrossWalkri/CROSS), WALKRI v0.1.6 (github.com/CrossWalkri/WALKRI)
 references:
   - IsDB Independent Evaluation Guidelines for Public Sector Project Evaluation, September 2024 (isdb.org/sites/default/files/media/documents/2024-09/Independent%20Evaluation%20Guidelines%20for%20Public%20Sector%20Project%20Evaluation.pdf)
   - IsDB Guidelines for Preparing Project Performance Evaluation Reports, 2024 (isdb.org/publications/independent-evaluation-guidelines-for-project-completion-report)
@@ -85,4 +85,4 @@ For programs operating under IsDB co-financing or technical assistance mandates,
 
 ---
 
-*Published under CC0. For the current version of CROSS and WALKRI, see github.com/cross-walkri.*
+*Published under CC0. For the current version of CROSS and WALKRI, see github.com/CrossWalkri.*
