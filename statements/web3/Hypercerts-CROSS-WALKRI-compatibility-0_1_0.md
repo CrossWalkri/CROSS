@@ -3,7 +3,7 @@ title: Hypercerts Compatibility - CROSS+WALKRI
 version: 0.1.0
 date: 2026-05-16
 license: CC0
-standards: CROSS v0.3.7 (github.com/cross-walkri/CROSS), WALKRI v0.1.6 (github.com/cross-walkri/WALKRI)
+standards: CROSS v0.3.7 (github.com/CrossWalkri/CROSS), WALKRI v0.1.6 (github.com/CrossWalkri/WALKRI)
 references:
   - Hypercerts ERC-1155 Standard (hypercerts.org)
   - Hypercerts Metadata Schema (github.com/hypercerts-org/hypercerts)
@@ -138,9 +138,9 @@ Programs that do not currently use Hypercerts but want to integrate them should 
 
 ## Further Information
 
-CROSS: github.com/cross-walkri/CROSS
+CROSS: github.com/CrossWalkri/CROSS
 
-WALKRI: github.com/cross-walkri/WALKRI
+WALKRI: github.com/CrossWalkri/WALKRI
 
 Hypercerts: hypercerts.org
 
