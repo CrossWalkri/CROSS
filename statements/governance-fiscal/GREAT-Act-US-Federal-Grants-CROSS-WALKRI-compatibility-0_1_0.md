@@ -3,7 +3,7 @@ title: GREAT Act - US Federal Grants Data Standards Compatibility - CROSS+WALKRI
 version: 0.1.0
 date: 2026-05-18
 license: CC0
-standards: CROSS v0.4.0 (github.com/cross-walkri/CROSS), WALKRI v0.1.6 (github.com/cross-walkri/WALKRI)
+standards: CROSS v0.4.0 (github.com/CrossWalkri/CROSS), WALKRI v0.1.6 (github.com/CrossWalkri/WALKRI)
 references:
   - GREAT Act (Grant Reporting Efficiency and Agreements Transparency Act, 2019)
   - OMB M-24-11 (April 2024), Grants Standard Data Elements Implementation
@@ -115,9 +115,9 @@ Programs receiving federal awards do not need to produce separate programmatic n
 
 ## Further Information
 
-CROSS: github.com/cross-walkri/CROSS
+CROSS: github.com/CrossWalkri/CROSS
 
-WALKRI: github.com/cross-walkri/WALKRI
+WALKRI: github.com/CrossWalkri/WALKRI
 
 GREAT Act implementation: grants.gov/data-standards
 
