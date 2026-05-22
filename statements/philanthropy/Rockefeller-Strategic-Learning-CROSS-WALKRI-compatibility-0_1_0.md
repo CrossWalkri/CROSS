@@ -3,7 +3,7 @@ title: Rockefeller Foundation Strategic Learning Blueprint Compatibility - CROSS
 version: 0.1.0
 date: 2026-05-18
 license: CC0
-standards: CROSS v0.4.1 (github.com/cross-walkri/CROSS), WALKRI v0.1.6 (github.com/cross-walkri/WALKRI)
+standards: CROSS v0.4.1 (github.com/CrossWalkri/CROSS), WALKRI v0.1.6 (github.com/CrossWalkri/WALKRI)
 references:
   - https://www.rockefellerfoundation.org/perspective/deepening-impact-through-strategic-learning/
   - https://www.rockefellerfoundation.org/report/2024-impact-report/
@@ -15,7 +15,7 @@ references:
 
 This statement documents structural alignment between the Rockefeller Foundation's 2024 Strategic Learning Blueprint and the CROSS+WALKRI specification standards. The Blueprint, published alongside the 2024 Impact Report, articulates the Foundation's operating principles for measurement, learning, and evidence sharing across its grantmaking portfolio. The two primary sources are the Blueprint perspective piece (rockefellerfoundation.org/perspective/deepening-impact-through-strategic-learning/) and the 2024 Impact Report.
 
-CROSS v0.4.1 and WALKRI v0.1.6 are both published under CC0 at github.com/cross-walkri.
+CROSS v0.4.1 and WALKRI v0.1.6 are both published under CC0 at github.com/CrossWalkri.
 
 ## The Rockefeller Strategic Learning Blueprint: Core Principles
 
