@@ -3,7 +3,7 @@ title: EVPA / Impact Europe Five-Step Impact Measurement Guide Compatibility - C
 version: 0.1.0
 date: 2026-05-18
 license: CC0
-standards: CROSS v0.4.2 (github.com/cross-walkri/CROSS), WALKRI v0.1.6 (github.com/cross-walkri/WALKRI)
+standards: CROSS v0.4.2 (github.com/CrossWalkri/CROSS), WALKRI v0.1.6 (github.com/CrossWalkri/WALKRI)
 references:
   - https://www.impacteurope.net/sites/www.evpa.ngo/files/publications/EVPA_A_Practical_Guide_to_Measuring_and_-Managing_Impact_final.pdf
   - https://www.impacteurope.net
@@ -74,15 +74,15 @@ WALKRI's evidence form requirement, applied to the indicators declared at Step 1
 
 ---
 
-*Published under CC0. For the current version of CROSS and WALKRI, see github.com/cross-walkri.*
+*Published under CC0. For the current version of CROSS and WALKRI, see github.com/CrossWalkri.*
 
 ---
 
 ## Further Information
 
-CROSS: github.com/cross-walkri/CROSS
+CROSS: github.com/CrossWalkri/CROSS
 
-WALKRI: github.com/cross-walkri/WALKRI
+WALKRI: github.com/CrossWalkri/WALKRI
 
 EVPA / Impact Europe: https://www.impacteurope.net
 
