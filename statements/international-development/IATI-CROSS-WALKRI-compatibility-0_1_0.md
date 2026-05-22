@@ -3,7 +3,7 @@ title: IATI v2.03 Compatibility - CROSS+WALKRI
 version: 0.1.0
 date: 2026-05-16
 license: CC0
-standards: CROSS v0.3.7 (github.com/cross-walkri/CROSS), WALKRI v0.1.6 (github.com/cross-walkri/WALKRI)
+standards: CROSS v0.3.7 (github.com/CrossWalkri/CROSS), WALKRI v0.1.6 (github.com/CrossWalkri/WALKRI)
 references:
   - IATI Standard v2.03 (iatistandard.org/en/iati-standard/203/)
   - IATI Activity Standard (iatistandard.org/en/iati-standard/203/activity-standard/)
@@ -164,9 +164,9 @@ Programs that have not previously published IATI data and are adopting CROSS+WAL
 
 ## Further Information
 
-CROSS: github.com/cross-walkri/CROSS
+CROSS: github.com/CrossWalkri/CROSS
 
-WALKRI: github.com/cross-walkri/WALKRI
+WALKRI: github.com/CrossWalkri/WALKRI
 
 IATI Standard v2.03: iatistandard.org/en/iati-standard/203/
 
