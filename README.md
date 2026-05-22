@@ -38,6 +38,18 @@ CROSS is an architecture for putting the order back. It does not add bureaucracy
 
 ---
 
+## What existing tools don't address
+
+Every form builder, every grants management platform, and every grants intelligence tool currently available operates at the communication and workflow layer: how questions are phrased, how approvals route, how data aggregates. These are real and useful products. None of them require a field to be a measurement instrument before applicants see it. None require an obligation architecture to be published before applications open. None enforce the specification sequence.
+
+CROSS operates at a different layer. It is not a form builder and not a grants platform. It is an accountability standard that sits above both: it specifies what a conformant program must commit to before applications open, produces a machine-readable obligation architecture that any tool can implement, and generates structured data that flows upward to institutional reporting, portfolio analysis, and AI systems that require a stable data foundation.
+
+Because the obligation architecture is expressed as a machine-readable standard rather than a narrative document, it can travel. A round specification published in the canonical CROSS format is importable by any conformant tool, processable by an AI, and usable by a grantee to understand what the round requires and structure their application before they write a word of it. The clarity flows with the specification, to anyone who reads it, without requiring a relationship or an inference.
+
+The form builders will not get here. Their product is the communication surface. The accountability layer requires a different foundation: the discipline of specifying the obligation as data before any application opens, and making that specification machine-readable enough that it closes the loop between what was funded and what was learned.
+
+---
+
 ## What CROSS specifies
 
 ![Three obligation modes: Build, Change, and Retroactive, each shown as a distinct accountability structure with its gate test.](assets/cross-obligation-modes.png)
@@ -149,9 +161,6 @@ The `statements/` directory contains 126+ individually published compatibility s
 ---
 
 ## AI tools
-
-The standards website is at **[crosswalkri.github.io/CROSS](https://crosswalkri.github.io/CROSS/)** and **[crosswalkri.com](https://crosswalkri.com)**. It hosts documentation, examples, and AI-assisted tools built on these standards.
-
 
 The CROSS+WALKRI tools repository publishes an MCP server that exposes CROSS and WALKRI as callable tools in Claude Code, Cursor, and any MCP-compatible AI assistant. Install once; the tools are then available in any conversation without copy-pasting prompts or standard text.
 
