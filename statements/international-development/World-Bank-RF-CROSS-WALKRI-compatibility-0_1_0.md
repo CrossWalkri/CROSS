@@ -3,7 +3,7 @@ title: World Bank Results Framework Compatibility - CROSS+WALKRI
 version: 0.1.0
 date: 2026-05-18
 license: CC0
-standards: CROSS v0.4.0 (github.com/cross-walkri/CROSS), WALKRI v0.1.6 (github.com/cross-walkri/WALKRI)
+standards: CROSS v0.4.0 (github.com/CrossWalkri/CROSS), WALKRI v0.1.6 (github.com/CrossWalkri/WALKRI)
 references:
   - Managing World Bank Trust Funds for Results (November 2025, thedocs.worldbank.org)
   - World Bank Results Framework guidance, Annex 2 (November 2025)
@@ -80,4 +80,4 @@ The World Bank's M&E guidance requires that baseline values be verifiable. A lab
 
 ---
 
-*Published under CC0. For the current version of CROSS and WALKRI, see github.com/cross-walkri.*
+*Published under CC0. For the current version of CROSS and WALKRI, see github.com/CrossWalkri.*
