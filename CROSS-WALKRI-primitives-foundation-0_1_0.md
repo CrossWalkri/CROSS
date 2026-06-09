@@ -1958,7 +1958,7 @@ The five analytical outputs that a portfolio with declared ToC pathway registrie
 
 **Efficiency analysis**: whether investment concentration is proportionate to pathway position in the causal chain.
 
-**Relationships:** These outputs are enabled by: ToC pathway registry declarations + dependency declarations + causality stance tags + round linkage records + sufficiency position declarations. The Grants Scaffold tool renders these outputs programmatically from CROSS+WALKRI-conformant data.
+**Relationships:** These outputs are enabled by: ToC pathway registry declarations + dependency declarations + causality stance tags + round linkage records + sufficiency position declarations. A conformant tool renders these outputs programmatically from CROSS+WALKRI-conformant data.
 
 ---
 
@@ -2202,7 +2202,7 @@ CROSS (CROSS-common-reporting-outcome-standards-schema-0_5_0.md): all provisions
 
 WALKRI (WALKRI-standard-0_1_0.md): all criterion specification requirements, field type classifications, and quality standards are applications of primitives defined here.
 
-Grants Forge Suite (grants-forge-suite-product-description-0_1_0.md): the five tools implement primitives in operational interfaces. Grants Forge implements obligation mode, gate type, and scope declarations. Grants Field Calibrator implements criterion specification elements and data quality standards. Grants Causeway implements the ToC hierarchy and pathway primitives. Grants Crucible implements evidence scope, evidence strength, and evidence type. Grants Scaffold implements portfolio analysis output primitives.
+Implementation tools: conformant operational tools apply these primitives in user-facing interfaces, covering obligation mode, gate type, and scope declarations; criterion specification elements and data quality standards; the theory-of-change hierarchy and pathway primitives; evidence scope, strength, and type; and portfolio-analysis outputs.
 
 Frame Language Grammar (Crypto/frame-language/frame-language-grammar-0_1_0.md): the methodological primitives in Layer 1 of this document are derived from the Frame Language grammar. The grammar document is the canonical source for Frame Language primitives; this document includes them by reference for the purpose of setting how CROSS and WALKRI provisions are written.
 
