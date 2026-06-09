@@ -1,7 +1,7 @@
 ---
 title: IUCN Global Standard for Nature-based Solutions Compatibility - CROSS+WALKRI
-version: 0.1.0
-date: 2026-05-18
+version: 0.1.2
+date: 2026-06-08
 license: CC0
 standards: CROSS v0.4.5 (github.com/CrossWalkri/CROSS), WALKRI v0.1.7 (github.com/CrossWalkri/WALKRI)
 references:
@@ -10,6 +10,13 @@ references:
   - iucn.org/resources/publication/iucn-global-standard-nature-based-solutions-first-edition
   - GCF Environmental and Social Safeguards (gcfund.org)
   - GEF Integrated Safeguards System (thegef.org)
+lens_tags:
+  calibration_tier: outcome_specified_self_reported
+  authority_source: civil_society_advisory
+  cultural_methodological_lineage: western_institutional
+  funder_typology: multilateral_bank_or_fund
+  framework_scope_type: certification
+  # IUCN is a quasi-multilateral conservation union; Global Standard is a self-assessment framework with certification ambitions; multilateral_bank_or_fund chosen because IUCN operates as multilateral conservation body; alternative civil_society_advisory for funder typology not in enum so retained authority as civil_society_advisory
 ---
 
 # IUCN Global Standard for Nature-based Solutions
@@ -26,7 +33,7 @@ The IUCN Global Standard for Nature-based Solutions (IUCN NbS Standard), adopted
 
 ## The IUCN Global Standard for Nature-based Solutions
 
-The IUCN Global Standard for NbS is the authoritative international definition of what constitutes a credible nature-based solution. Its development engaged more than 800 practitioners across more than 100 countries through a multi-year consultative process, and it was formally adopted by the IUCN Council in 2020. The Standard is not merely aspirational: GCF, GEF, and bilateral donors including KfW and the UK FCDO now require conformance for NbS-classified grantees, making the eight Criteria a de facto pre-condition for access to the largest pools of public climate and biodiversity finance.
+The IUCN Global Standard for NbS is the authoritative international definition of what constitutes a verifiable nature-based solution. Its development engaged more than 800 practitioners across more than 100 countries through a multi-year consultative process, and it was formally adopted by the IUCN Council in 2020. The Standard is not merely aspirational: GCF, GEF, and bilateral donors including KfW and the UK FCDO now require conformance for NbS-classified grantees, making the eight Criteria a de facto pre-condition for access to the largest pools of public climate and biodiversity finance.
 
 The Standard's eight Criteria span the full project lifecycle. Criterion 1 requires that the NbS addresses a defined societal challenge. Criterion 2 requires that biodiversity is maintained or enhanced and that outcomes are benchmarked against a reference state and periodically assessed. Criterion 3 requires net gain for biodiversity. Criterion 4 requires economic viability. Criterion 5 requires inclusive, transparent, adaptive governance. Criterion 6 requires that trade-offs are balanced. Criterion 7 requires that the NbS is adaptive. Criterion 8 requires long-term sustainability. The 28 Indicators attached to these Criteria provide the measurement framework through which compliance is assessed.
 
@@ -61,10 +68,19 @@ CROSS addresses the IUCN NbS Standard's eight Criteria at the structural level t
 
 ## How WALKRI Complements This Alignment
 
-The IUCN NbS Standard's 28 Indicators define what must be measured but do not specify how measurement instruments should be constructed before any project developer submits an application. WALKRI's five pre-publication field requirements address this gap at the instrument level. Before any NbS project intake form is deployed, WALKRI requires: the criterion intent for each indicator field (what the Standard intends the field to capture and why), the operational definition (what counts as a "biodiversity outcome" or "net gain" in this specific ecosystem and measurement context), the response form (what format project developers use to document their evidence), the evidence form (what data qualifies as sufficient documentation of the claimed biodiversity state), and the compliance threshold (what minimum level of evidence satisfies the Standard's indicator at each gate).
+The IUCN NbS Standard's 28 Indicators define what must be measured but do not specify how measurement instruments should be constructed before any project developer submits an application. WALKRI's five pre-publication field requirements address this gap at the instrument level. Before any NbS project intake form is deployed, WALKRI requires: the criterion intent for each indicator field (what the Standard intends the field to capture and why), the operational definition (what counts as a "biodiversity outcome" or "net gain" in this specific ecosystem and measurement context), the response form (what format project developers use to document their evidence), the evidence form (what data qualifies as sufficient documentation of the claimed biodiversity state), and the conformance threshold (what minimum level of evidence satisfies the Standard's indicator at each gate).
 
 The Standard's most acute operational definition gap is Criterion 2's biodiversity benchmark requirement. "Biodiversity" can be operationalized as species richness, species abundance, functional diversity, ecosystem integrity, or any combination of these, each requiring different data collection protocols and producing non-comparable datasets. Without WALKRI-level specification applied before any project developer begins baseline data collection, two projects both claiming to satisfy Criterion 2 may have produced data that cannot be compared in any portfolio review. WALKRI's operational definition requirement, applied to the intake instrument before deployment, locks in the specific ecological measurement protocol that constitutes biodiversity evidence for that project and for GCF or GEF portfolio comparison purposes.
 
 ---
 
 *Published under CC0. For the current version of CROSS and WALKRI, see github.com/CrossWalkri.*
+
+---
+
+## Changelog
+
+| Version | Date | Summary |
+|---|---|---|
+| 0.1.2 | 2026-06-08 | Frame Language own-voice pass applied as part of the corpus-wide 2026-06-08 sweep: own-voice watchlist terms (govern-family, accountability, mandatory, compliance, enforce, legitimate) recast to conformance and obligation vocabulary where they appeared in this document's own voice; citation use of source-framework terms preserved. Primitive-rename references aligned to current canon (Continuity Capacity, the Collective disbursement state, Affected Population Verification Gate). Em-dash- and watchlist-clean re-verified. No compatibility finding or mapping changed; vocabulary only. |
+| 0.1.1 | 2026-05-23 | Retroactive lens tagging: added calibration_tier, authority_source, cultural_methodological_lineage, funder_typology, framework_scope_type per Lenses Framework v0.1.0. |

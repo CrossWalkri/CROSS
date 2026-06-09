@@ -1,13 +1,20 @@
 ---
 title: Hewlett Foundation Evaluation Compatibility - CROSS+WALKRI
-version: 0.1.0
-date: 2026-05-18
+version: 0.1.2
+date: 2026-06-08
 license: CC0
 standards: CROSS v0.4.0 (github.com/CrossWalkri/CROSS), WALKRI v0.1.6 (github.com/CrossWalkri/WALKRI)
 references:
   - Hewlett Foundation Evaluation Principles and Practices, Second Edition (2019): https://hewlett.org/wp-content/uploads/2019/03/Evaluation-Principles-and-Practices-Second-Edition.pdf
   - Hewlett Foundation Evaluation Principles and Practices, First Edition (December 2012, Fay Twersky and Karen Lindblom): widely distributed internal working paper, 7 principles
   - Hewlett Foundation Outcome Focused Grantmaking (March 2012): archived foundational framework, 10 elements
+lens_tags:
+  calibration_tier: outcome_specified_self_reported
+  authority_source: voluntary_published
+  cultural_methodological_lineage: western_institutional
+  funder_typology: private_foundation
+  framework_scope_type: allocator_process
+  # William and Flora Hewlett Foundation Evaluation Principles and Practices
 ---
 
 # Hewlett Foundation Evaluation Compatibility
@@ -46,9 +53,9 @@ Grantees are explicitly required to cooperate in evaluations and provide informa
 
 Hewlett's Outcome Orientation principle requires that evaluations be linked to a theory of change before evaluation design begins, with intended outcomes defined clearly enough to be measured.
 
-CROSS addresses this principle directly. Every CROSS-conformant round includes a declared program-level Theory of Change before applicants apply. The Theory of Change is structured as a goal/outcome/output/activity hierarchy with named causal links, using CROSS's ToC architecture. Outcome indicators are specified at the entry specification gate using CROSS's 11-field indicator format. This means the theory of change is not a narrative document produced after the fact; it is a structured obligation architecture that precedes and governs the entire program.
+CROSS addresses this principle directly. Every CROSS-conformant round includes a declared program-level Theory of Change before applicants apply. The Theory of Change is structured as a goal/outcome/output/activity hierarchy with named causal links, using CROSS's ToC architecture. Outcome indicators are specified at the entry specification gate using CROSS's 11-field indicator format. This means the theory of change is not a narrative document produced after the fact; it is a structured obligation architecture that precedes and structures the entire program.
 
-For Hewlett program officers working with CROSS-conformant grantees, the Outcome Orientation requirement is satisfied before the grant agreement is signed. The theory of change exists in structured form, the outcome indicators are specified, and the causal links between activities and outcomes are documented. The evaluation can begin with an already-structured accountability architecture rather than constructing one from the program narrative.
+For Hewlett program officers working with CROSS-conformant grantees, the Outcome Orientation requirement is satisfied before the grant agreement is signed. The theory of change exists in structured form, the outcome indicators are specified, and the causal links between activities and outcomes are documented. The evaluation can begin with an already-structured obligation architecture rather than constructing one from the program narrative.
 
 ---
 
@@ -90,7 +97,7 @@ Together, CROSS and WALKRI produce evaluations that are structured around decisi
 
 ## Principle 5: Learning Culture
 
-Hewlett's Learning Culture principle requires that evaluations generate usable knowledge enabling mid-course corrections and institutional learning. Evaluation should not be a terminal accountability exercise; it should produce findings that change practice.
+Hewlett's Learning Culture principle requires that evaluations generate usable knowledge enabling mid-course corrections and institutional learning. Evaluation should not be a terminal obligation-fulfillment exercise; it should produce findings that change practice.
 
 CROSS's developmental gate character supports this principle. Progress verification gates in CROSS are configured as developmental rather than summative: they identify what needs to change before the next gate, not only whether the grantee has met a binary threshold. This produces the mid-course learning that Hewlett's principle requires.
 
@@ -114,7 +121,7 @@ This is the strongest argument for the compatibility between CROSS+WALKRI and th
 
 The Hewlett guide is published as a normative resource for peer funders, not only as Hewlett's own internal policy. A large share of US foundations use the guide as a reference when designing grant conditions and evaluation requirements. Any funder that uses the Hewlett guide as a reference implicitly requires, for each of its five principles, what CROSS+WALKRI provides structurally.
 
-This is a market positioning claim, not a compliance claim. CROSS+WALKRI is not certified by Hewlett, and Hewlett has not endorsed CROSS+WALKRI. The claim is simply that the accountability architecture CROSS+WALKRI provides is the architecture that Hewlett-aligned funders are already requiring, expressed in a different vocabulary. CROSS+WALKRI makes that architecture explicit, structured, and reusable across programs and funders.
+This is a market positioning claim, not a conformance claim. CROSS+WALKRI is not certified by Hewlett, and Hewlett has not endorsed CROSS+WALKRI. The claim is simply that the obligation architecture CROSS+WALKRI provides is the architecture that Hewlett-aligned funders are already requiring, expressed in a different vocabulary. CROSS+WALKRI makes that architecture explicit, structured, and reusable across programs and funders.
 
 ---
 
@@ -144,12 +151,12 @@ The OFG's 10 elements and their CROSS mappings:
 | 3. Capacity scan (field and grantee capacity) | CROSS Cohort Position assessment places each applicant against the full cohort; CROSS organizational identity declaration (governance, history, stage) | Partial alignment |
 | 4. Metrics and targets | CROSS eleven-field indicator specification (Fields 1-5: name, definition, unit, baseline, target) | Full alignment |
 | 5. Expected return (ROI estimation) | Outside CROSS scope; CROSS does not specify investment return calculations | Out of scope |
-| 6-7. Financial/personnel budget and partner plan | Outside CROSS scope; CROSS governs obligation architecture, not financial planning | Out of scope |
+| 6-7. Financial/personnel budget and partner plan | Outside CROSS scope; CROSS covers obligation architecture, not financial planning | Out of scope |
 | 8. Due diligence and capacity building plan | CROSS organizational identity declaration, sufficiency position assessment, and disclosure requirements | Partial alignment |
 | 9. Monitoring and evaluation plan | CROSS four-gate architecture (entry, progress, completion, continuation) with published evidence requirements per gate | Full alignment |
 | 10. Phasing and exit plan | CROSS continuation gate specification: what a grantee must demonstrate to enter subsequent rounds | Partial alignment |
 
-Elements 5, 6, and 7 are financial planning and ROI estimation functions outside the grant specification layer that CROSS governs. All other elements have direct CROSS equivalents. A program using CROSS to govern its obligation architecture produces OFG Elements 1, 2, 4, and 9 as structural outputs of a conformant round, before the first application is submitted.
+Elements 5, 6, and 7 are financial planning and ROI estimation functions outside the grant specification layer that CROSS covers. All other elements have direct CROSS equivalents. A program using CROSS to govern its obligation architecture produces OFG Elements 1, 2, 4, and 9 as structural outputs of a conformant round, before the first application is submitted.
 
 The OFG framework is archived by Hewlett as a named program but remains widely cited and actively used across the US philanthropy sector as a reference model for outcome-oriented grantmaking. Its core vocabulary (theory of change, metrics and targets, monitoring plan) is the vocabulary that CROSS formalizes at the specification layer.
 
@@ -172,3 +179,5 @@ License: CC0
 | Version | Date | Summary |
 |---|---|---|
 | 0.1.0 | 2026-05-18 | Initial draft. Five Hewlett principles mapped to CROSS and WALKRI provisions. Data provision requirement addressed structurally. Peer-funder implication stated. Mapping table. |
+| 0.1.1 | 2026-05-23 | Retroactive lens tagging: added calibration_tier, authority_source, cultural_methodological_lineage, funder_typology, framework_scope_type per Lenses Framework v0.1.0. |
+| 0.1.2 | 2026-06-08 | Frame Language own-voice pass applied as part of the corpus-wide 2026-06-08 sweep: own-voice watchlist terms (govern-family, accountability, mandatory, compliance, enforce, legitimate) recast to conformance and obligation vocabulary where they appeared in this document's own voice; citation use of source-framework terms preserved. Primitive-rename references aligned to current canon (Continuity Capacity, the Collective disbursement state, Affected Population Verification Gate). Em-dash- and watchlist-clean re-verified. No compatibility finding or mapping changed; vocabulary only. |

@@ -1,7 +1,7 @@
 ---
 title: FCDO Programme Operating Framework Compatibility - CROSS+WALKRI
-version: 0.1.0
-date: 2026-05-18
+version: 0.1.2
+date: 2026-06-08
 license: CC0
 standards: CROSS v0.4.0 (github.com/CrossWalkri/CROSS), WALKRI v0.1.6 (github.com/CrossWalkri/WALKRI)
 references:
@@ -10,6 +10,13 @@ references:
   - OECD DAC Evaluation Criteria, oecd.org/dac/evaluation/daccriteriaforevaluatingdevelopmentassistance.htm
   - CROSS+WALKRI IATI Compatibility Statement v0.1.0
   - CROSS+WALKRI OECD DAC CRS Compatibility Statement v0.1.0
+lens_tags:
+  calibration_tier: independently_verified
+  authority_source: statutory
+  cultural_methodological_lineage: western_institutional
+  funder_typology: bilateral_aid_agency
+  framework_scope_type: grantee_outcome_measurement
+  # UK Foreign Commonwealth and Development Office Programme Operating Framework; statutory under International Development Act
 ---
 
 # FCDO Programme Operating Framework Compatibility
@@ -78,7 +85,7 @@ The completion gate produces the evidence base for the Programme Completion Repo
 
 PrOF requires that every Programme Design Document include an evidence plan. The evidence plan specifies how the programme will collect, manage, and use evidence to inform decisions. It is not a data management plan in the technical sense; it is a forward-looking specification of how measurement will work in practice.
 
-WALKRI's five pre-publication field requirements are the specification-layer expression of an evidence plan at the instrument level. The criterion intent requirement specifies what each field measures. The operational definition requirement specifies what counts and what does not. The response form justification requires that the collection method be explained and matched to the measurement goal. The evidence form requirement specifies what artifact independently verifies each claimed measurement. The compliance threshold requirement specifies when a response is sufficient.
+WALKRI's five pre-publication field requirements are the specification-layer expression of an evidence plan at the instrument level. The criterion intent requirement specifies what each field measures. The operational definition requirement specifies what counts and what does not. The response form justification requires that the collection method be explained and matched to the measurement goal. The evidence form requirement specifies what artifact independently verifies each claimed measurement. The conformance threshold requirement specifies when a response is sufficient.
 
 A programme whose collection instruments satisfy WALKRI's five requirements has, at the field level, addressed the core questions an evidence plan must answer: what is being measured, how, with what instrument, through what verification pathway, and under what sufficiency criteria. This does not replace the narrative evidence plan that PrOF requires; it satisfies the specification content that the evidence plan must document.
 
@@ -137,3 +144,5 @@ License: CC0
 | Version | Date | Summary |
 |---|---|---|
 | 0.1.0 | 2026-05-18 | Initial draft. Two compatibility pathways (OECD DAC and IATI) documented. Gate architecture mapped to PrOF programme cycle milestones. WALKRI evidence plan alignment documented. Full PDD mapping table. Adoption guidance. |
+| 0.1.1 | 2026-05-23 | Retroactive lens tagging: added calibration_tier, authority_source, cultural_methodological_lineage, funder_typology, framework_scope_type per Lenses Framework v0.1.0. |
+| 0.1.2 | 2026-06-08 | Frame Language own-voice pass applied as part of the corpus-wide 2026-06-08 sweep: own-voice watchlist terms (govern-family, accountability, mandatory, compliance, enforce, legitimate) recast to conformance and obligation vocabulary where they appeared in this document's own voice; citation use of source-framework terms preserved. Primitive-rename references aligned to current canon (Continuity Capacity, the Collective disbursement state, Affected Population Verification Gate). Em-dash- and watchlist-clean re-verified. No compatibility finding or mapping changed; vocabulary only. |

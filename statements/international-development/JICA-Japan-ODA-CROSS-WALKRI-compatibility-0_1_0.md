@@ -1,13 +1,20 @@
 ---
 title: JICA and Japan's ODA Evaluation System Compatibility - CROSS+WALKRI
-version: 0.1.0
-date: 2026-05-18
+version: 0.1.2
+date: 2026-06-08
 license: CC0
 standards: CROSS v0.4.2 (github.com/CrossWalkri/CROSS), WALKRI v0.1.6 (github.com/CrossWalkri/WALKRI)
 references:
   - https://www.jica.go.jp/english/our_work/evaluation/tech_and_grant/guides/guideline.html
   - https://www.mofa.go.jp/policy/oda/evaluation/basic_documents/pdfs/guidelines11th.pdf
   - https://www.mofa.go.jp/policy/oda/evaluation/basic_documents/pdfs/handbook2024.pdf
+lens_tags:
+  calibration_tier: independently_verified
+  authority_source: statutory
+  cultural_methodological_lineage: western_institutional
+  funder_typology: bilateral_aid_agency
+  framework_scope_type: grantee_outcome_measurement
+  # Japan International Cooperation Agency Official Development Assistance
 ---
 
 # JICA and Japan's ODA Evaluation System
@@ -18,15 +25,15 @@ references:
 
 ## Summary
 
-Japan's official development assistance evaluation system, administered through JICA and governed by Japan's Ministry of Foreign Affairs ODA Evaluation Guidelines (11th edition), operates through six OECD DAC criteria applied across a continuous PDCA (Plan-Do-Check-Act) cycle. JICA's distinctive requirements, including mandatory ex-ante evaluation, lifecycle-stage PDCA documentation, a uniform project rating system, and mandatory ex-post evaluation three to five years after project completion, map directly onto CROSS gate architecture. WALKRI's instrument-level field specification requirements satisfy the accuracy standards on which JICA's rating system depends.
+Japan's official development assistance evaluation system, administered through JICA and subject to Japan's Ministry of Foreign Affairs ODA Evaluation Guidelines (11th edition), operates through six OECD DAC criteria applied across a continuous PDCA (Plan-Do-Check-Act) cycle. JICA's distinctive requirements, including mandatory ex-ante evaluation, lifecycle-stage PDCA documentation, a uniform project rating system, and mandatory ex-post evaluation three to five years after project completion, map directly onto CROSS gate architecture. WALKRI's instrument-level field specification requirements satisfy the accuracy standards on which JICA's rating system depends.
 
 ---
 
 ## The JICA/ODA Framework's Approach
 
-JICA is one of the world's five largest bilateral donors, operating a grant and technical assistance portfolio spanning more than 150 countries. Its evaluation system is formally governed by two instruments: the JICA "Guideline for Project Evaluation" and Japan's Ministry of Foreign Affairs "ODA Evaluation Guidelines" (now in its 11th edition). Both instruments apply the six OECD DAC criteria (relevance, coherence, effectiveness, efficiency, impact, sustainability) across all evaluations, establishing a common baseline with the rest of the international development evaluation community.
+JICA is one of the world's five largest bilateral donors, operating a grant and technical assistance portfolio spanning more than 150 countries. Its evaluation system is formally subject to two instruments: the JICA "Guideline for Project Evaluation" and Japan's Ministry of Foreign Affairs "ODA Evaluation Guidelines" (now in its 11th edition). Both instruments apply the six OECD DAC criteria (relevance, coherence, effectiveness, efficiency, impact, sustainability) across all evaluations, establishing a common baseline with the rest of the international development evaluation community.
 
-What distinguishes JICA's system from a standard DAC application is its mandatory PDCA cycle structure. JICA requires that evaluation not be treated as a terminal event conducted after project close; instead, Plan-Do-Check-Act cycles must be documented at every lifecycle stage. This transforms evaluation from an accountability instrument applied retrospectively into a continuous improvement loop woven through project design, implementation, monitoring, and closure. The PDCA mandate is not optional or aspirational: projects that cannot demonstrate cycle documentation at each stage fail to meet JICA's procedural requirements.
+What distinguishes JICA's system from a standard DAC application is its mandatory PDCA cycle structure. JICA requires that evaluation not be treated as a terminal event conducted after project close; instead, Plan-Do-Check-Act cycles must be documented at every lifecycle stage. This transforms evaluation from a reporting instrument applied retrospectively into a continuous improvement loop woven through project design, implementation, monitoring, and closure. The PDCA mandate is not optional or aspirational: projects that cannot demonstrate cycle documentation at each stage fail to meet JICA's procedural requirements.
 
 A second distinctive requirement is mandatory ex-ante evaluation. Before any JICA-supported project receives approval, a standard-format ex-ante evaluation must be completed and documented. This requirement is structural: it gates project authorization. Ex-ante evaluation documents what the project intends to achieve, what evidence supports the design, what indicators will measure progress, and what rating will constitute success. The completion of this documentation before the project commences creates an independent pre-commitment record that survives the project's implementation phase intact.
 
@@ -68,8 +75,17 @@ For ex-post evaluation, the CROSS Attestation Corpus provides the longitudinal r
 
 WALKRI's five pre-publication field requirements address the accuracy standards on which JICA's uniform rating system depends. A rating applied consistently across a portfolio is only as meaningful as the measurement instruments underlying the evidence being rated. WALKRI requires that each measurement field be specified with instrument type, unit of measure, collection method, verification pathway, and access information before applications open. This level of instrument-level specification provides the methodological precision that JICA's rating system presupposes but that most grant application formats do not structurally enforce.
 
-For programs seeking to satisfy both JICA's evaluation requirements and CROSS+WALKRI standards simultaneously, the practical implication is that WALKRI-compliant intake fields double as the measurement instrument documentation that a JICA ex-ante evaluation must contain. Programs operating in JICA-funded contexts therefore gain dual compliance from a single documentation effort: WALKRI fields satisfy JICA's ex-ante instrument documentation requirements, while CROSS gates satisfy JICA's PDCA lifecycle documentation requirements.
+For programs seeking to satisfy both JICA's evaluation requirements and CROSS+WALKRI standards simultaneously, the practical implication is that WALKRI-conformant intake fields double as the measurement instrument documentation that a JICA ex-ante evaluation must contain. Programs operating in JICA-funded contexts therefore gain dual conformance from a single documentation effort: WALKRI fields satisfy JICA's ex-ante instrument documentation requirements, while CROSS gates satisfy JICA's PDCA lifecycle documentation requirements.
 
 ---
 
 *Published under CC0. For the current version of CROSS and WALKRI, see github.com/CrossWalkri.*
+
+---
+
+## Changelog
+
+| Version | Date | Summary |
+|---|---|---|
+| 0.1.2 | 2026-06-08 | Frame Language own-voice pass applied as part of the corpus-wide 2026-06-08 sweep: own-voice watchlist terms (govern-family, accountability, mandatory, compliance, enforce, legitimate) recast to conformance and obligation vocabulary where they appeared in this document's own voice; citation use of source-framework terms preserved. Primitive-rename references aligned to current canon (Continuity Capacity, the Collective disbursement state, Affected Population Verification Gate). Em-dash- and watchlist-clean re-verified. No compatibility finding or mapping changed; vocabulary only. |
+| 0.1.1 | 2026-05-23 | Retroactive lens tagging: added calibration_tier, authority_source, cultural_methodological_lineage, funder_typology, framework_scope_type per Lenses Framework v0.1.0. |

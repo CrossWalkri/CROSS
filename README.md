@@ -1,6 +1,6 @@
 # CROSS: Common Reporting Outcome Standards Schema
 
-Version 0.4.7 | 2026-05-19 | CC0
+Version 0.4.8 | 2026-06-08 | CC0
 
 **Two standards. One problem.**
 
@@ -28,11 +28,11 @@ CROSS was designed to be portable across both failure modes. It separates the ev
 
 ## The correct order of operations
 
-Across the 95+ frameworks documented in this corpus, from the Hewlett Foundation's evaluation approach to USAID PIRS to OECD DAC criteria, a consistent pattern emerges: data quality problems in grant programs trace to specification decisions made before the first application was submitted. Round design is where funding governance either happens with intention or happens by default. Application design and field specification are where that governance meets the applicant. The quality of decisions made at these two stages determines whether the data a program produces can be compared, aggregated, trusted, or used.
+Across the 95+ frameworks documented in this corpus, from the Hewlett Foundation's evaluation approach to USAID PIRS to OECD DAC criteria, a consistent pattern emerges: data quality problems in grant programs trace to specification decisions made before the first application was submitted. Round design is where funding decisions are either made with intention or made by default. Application design and field specification are where those decisions meet the applicant. The quality of decisions made at these two stages determines whether the data a program produces can be compared, aggregated, trusted, or used.
 
 The obligation architecture that serious grantmakers developed across international development, philanthropy, public health, research funding, and environmental finance is not bureaucratic preference. It is the correct order of operations: specify what grantees must demonstrate before anyone applies; collect evidence against that specification; evaluate delivery before funds continue; carry what you learned into the next round. Every serious grants institution outside the Web3 ecosystem arrived at this sequence through experience with the consequences of inverting it.
 
-Web3 grants programs inverted the order by inheriting a founding template that was designed for a different problem. The Moloch DAO ragequit addressed pre-disbursement pool governance among known contributors. Quadratic funding addressed allocation optimality. Neither addressed the operational sequence that makes a grants program learn over time. The result is a sector that has disbursed over a billion dollars under an architecture that was never designed to track what those disbursements produced, reproducing at scale the single failure mode that every institutional grantmaker developed its back-end accountability infrastructure to prevent.
+Web3 grants programs inverted the order by inheriting a founding template that was designed for a different problem. The Moloch DAO ragequit addressed pre-disbursement pool governance among known contributors. Quadratic funding addressed allocation optimality. Neither addressed the operational sequence that makes a grants program learn over time. The result is a sector that has disbursed over a billion dollars under an architecture that was never designed to track what those disbursements produced, reproducing at scale the single failure mode that every institutional grantmaker developed its back-end verification infrastructure to prevent.
 
 CROSS is an architecture for putting the order back. It does not add bureaucracy to a system that was working. It restores the sequence that was missing from the founding template and that every other serious grants institution uses as its operational foundation.
 
@@ -42,35 +42,35 @@ CROSS is an architecture for putting the order back. It does not add bureaucracy
 
 ![CLEAR Funding Lifecycle: the closed loop on the left shows obligation architecture published as machine-readable data flowing from operator to grantee, outcomes recorded as structured data feeding back into the next round's design. The open chain on the right shows the current state: the loop resets each round.](assets/clear-funding-lifecycle.png)
 
-Every form builder, every grants management platform, and every grants intelligence tool currently available operates at the communication and workflow layer: how questions are phrased, how approvals route, how data aggregates. These are real and useful products. None of them require a field to be a measurement instrument before applicants see it. None require an obligation architecture to be published before applications open. None enforce the specification sequence.
+Every form builder, every grants management platform, and every grants intelligence tool currently available operates at the communication and workflow layer: how questions are phrased, how approvals route, how data aggregates. These are real and useful products. None of them require a field to be a measurement instrument before applicants see it. None require an obligation architecture to be published before applications open. None require the specification sequence.
 
-CROSS operates at a different layer. It is not a form builder and not a grants platform. It is an accountability standard that sits above both: it specifies what a conformant program must commit to before applications open, produces a machine-readable obligation architecture that any tool can implement, and generates structured data that flows upward to institutional reporting, portfolio analysis, and AI systems that require a stable data foundation.
+CROSS operates at a different layer. It is not a form builder and not a grants platform. It is an obligation standard that sits above both: it specifies what a conformant program must commit to before applications open, produces a machine-readable obligation architecture that any tool can implement, and generates structured data that flows upward to institutional reporting, portfolio analysis, and AI systems that require a stable data foundation.
 
 Because the obligation architecture is expressed as a machine-readable standard rather than a narrative document, it can travel. A round specification published in the canonical CROSS format is importable by any conformant tool, processable by an AI, and usable by a grantee to understand what the round requires and structure their application before they write a word of it. The clarity flows with the specification, to anyone who reads it, without requiring a relationship or an inference.
 
-The form builders will not get here. Their product is the communication surface. The accountability layer requires a different foundation: the discipline of specifying the obligation as data before any application opens, and making that specification machine-readable enough that it closes the loop between what was funded and what was learned.
+The form builders will not get here. Their product is the communication surface. The obligation layer requires a different foundation: the discipline of specifying the obligation as data before any application opens, and making that specification machine-readable enough that it closes the loop between what was funded and what was learned.
 
 ---
 
 ## What CROSS specifies
 
-![Three obligation modes: Build, Change, and Retroactive, each shown as a distinct accountability structure with its gate test.](assets/cross-obligation-modes.png)
+![Three obligation modes: Build, Change, and Retroactive, each shown as a distinct obligation structure with its gate test.](assets/cross-obligation-modes.png)
 
-**Three obligation modes** correspond to three fundamentally different accountability structures.
+**Three obligation modes** correspond to three fundamentally different obligation structures.
 
 Build obligation applies where the deliverable is a specific artifact. Gate tests confirm whether the delivered thing matches what was specified. This is the right mode for software tools, research reports, infrastructure deployments, and any work where completion has a clear binary test.
 
 Change obligation applies where the goal is a measurable shift in an external condition. The entry specification gate requires a baseline value, a target in the same units, a defined population, a named data source, and a stated mechanism connecting the intervention to the anticipated shift. This prevents aspiration language from entering the record because a grantee cannot name a FROM state without having diagnosed the problem before designing the solution.
 
-Retroactive obligation applies where work is already done. Gate tests confirm whether the documented impact is credibly attributed to the prior activity. This is the right mode for retrospective public goods funding, recognition of past contributions, and programs where the work precedes the funding decision.
+Retroactive obligation applies where work is already done. Gate tests confirm whether the documented impact is verifiably attributed to the prior activity. This is the right mode for retrospective public goods funding, recognition of past contributions, and programs where the work precedes the funding decision.
 
-**A four-gate sequence** governs each funding release: entry specification before any funds move, one or more milestone gates during delivery, a completion gate at close, and an optional continuation gate determining whether a grantee enters subsequent rounds. Programs configure which gates apply and at what rigor tier, and publish that configuration before any application opens.
+**A four-gate sequence** structures each funding release: entry specification before any funds move, one or more milestone gates during delivery, a completion gate at close, and an optional continuation gate determining whether a grantee enters subsequent rounds. Programs configure which gates apply and at what rigor tier, and publish that configuration before any application opens.
 
 **Eight independent obligation dimensions** can be configured independently within a single round: outcome specificity, evidence quality tier, attribution claim strength, financial transparency scope, organizational disclosure depth, institutional framework alignment, portfolio position declaration, and causality stance. The dimensions do not collapse into a single score because the failure modes they address are structurally distinct.
 
 **Organizational identity** requires five declared fields: legal or registered name, primary operating jurisdiction, primary contact, governance structure type, and organizational history. Version 0.3.8 adds Field 6: an on-chain identity anchor, recording the grantee's verifiable on-chain identifier and linking the declaration to on-chain activity records without requiring that linkage as a condition of participation.
 
-**Two funder-side procedures** were formalized at v0.3.8. The Attestation Corpus query retrieves all prior CROSS declarations associated with a grantee's identity anchor before a funding decision is made; it gives the declaration surface its accountability teeth. The Cohort Position assessment places each applicant's funding request in the context of the full applicant pool, including what each applicant has already received, from which sources, against which declared obligations, and whether the requested amount is sufficient, redundant, or misaligned given that history.
+**Two funder-side procedures** were formalized at v0.3.8. The Attestation Corpus query retrieves all prior CROSS declarations associated with a grantee's identity anchor before a funding decision is made; it gives the declaration surface its verification teeth. The Cohort Position assessment places each applicant's funding request in the context of the full applicant pool, including what each applicant has already received, from which sources, against which declared obligations, and whether the requested amount is sufficient, redundant, or misaligned given that history.
 
 **Theory of Change architecture** in CROSS is not a narrative. It is a structured registry of causal claims at four levels (goal, outcome, output, activity) with named assumptions, stated evidence sources, and declared confidence tiers for each causal link. The architecture follows the Compact Logic hierarchy used by MCC and USAID, making CROSS ToC declarations natively compatible with those frameworks without requiring separate documentation.
 
@@ -84,11 +84,11 @@ CROSS sits in the middle of the grants stack, not at the top or bottom. Form bui
 
 Below: any form builder producing JSON Schema, which every major form tool already does, is already CROSS-compatible at the field level. Programs do not change their stack. They specify their obligation architecture correctly before publishing the form.
 
-Above: a CROSS-conformant round exports in two directions simultaneously. To the Web3 ecosystem: DAOIP-5 GrantPool objects, W3C Verifiable Credential-compatible gate attestations, and OpenGrants Gateway API interoperability. To the institutional side: OECD DAC evaluation criteria, IRIS+ metadata requirements, and USAID PIRS compliance, all as structural consequences of a correctly configured round, not as separate reporting obligations.
+Above: a CROSS-conformant round exports in two directions simultaneously. To the Web3 ecosystem: DAOIP-5 GrantPool objects, W3C Verifiable Credential-compatible gate attestations, and OpenGrants Gateway API interoperability. To the institutional side: OECD DAC evaluation criteria, IRIS+ metadata requirements, and USAID PIRS conformance, all as structural consequences of a correctly configured round, not as separate reporting obligations.
 
 One conformant round. Both directions. No extra work.
 
-Compatibility statements are formally published rather than asserted. CROSS holds confirmed compatibility with 95+ frameworks spanning international development aid, impact investing, philanthropic foundations, bilateral and multilateral agencies, public health, workforce development, environmental and carbon finance, education, corporate accountability, Islamic giving, humanitarian standards, Web3 public goods, and emerging technology grant programs. The full corpus of compatibility statements is in the `statements/` directory. The `CROSS-WALKRI-primitives-framework-index-0_1_0.md` document maps each underlying measurement primitive to its strongest framework exemplars across the corpus, enabling efficient classification of new frameworks without requiring individual compatibility statements for every program type. A program running a CROSS+WALKRI-conformant round produces compliance with applicable frameworks as a structural consequence of conformance, not as separate documentation work.
+Compatibility statements are formally published rather than asserted. CROSS holds confirmed compatibility with 95+ frameworks spanning international development aid, impact investing, philanthropic foundations, bilateral and multilateral agencies, public health, workforce development, environmental and carbon finance, education, corporate accountability, Islamic giving, humanitarian standards, Web3 public goods, and emerging technology grant programs. The full corpus of compatibility statements is in the `statements/` directory. The `CROSS-WALKRI-primitives-framework-index-0_1_0.md` document maps each underlying measurement primitive to its strongest framework exemplars across the corpus, enabling efficient classification of new frameworks without requiring individual compatibility statements for every program type. A program running a CROSS+WALKRI-conformant round satisfies applicable frameworks as a structural consequence of conformance, not as separate documentation work.
 
 ---
 
@@ -96,7 +96,7 @@ Compatibility statements are formally published rather than asserted. CROSS hold
 
 ![Cascade pyramid: Grantees and Reviewers at the base, Operators and Platform Providers, Analysts and Institutional Funders, Strategic Planners at the apex. Smaller decisions with immediate feedback at the base; larger decisions with billions at stake at the top. Strategic level value requires ecosystem-wide adoption to materialise.](assets/cross-walkri-value-cascade.png)
 
-Fixing GIGO at the source produces value that compounds with every layer up the grants ecosystem. Grantees encounter questions that specify what they must prove. Reviewers assess against criteria written before they arrived. Operators run rounds that produce comparable data automatically. Analysts consume structured, aggregated data instead of manually reconciling incommensurable reports. Institutional co-funders receive compliance output as a byproduct of the round being run correctly. Strategic planners, deciding how to allocate billions across sectors and geographies, are currently making those decisions on GIGO. CROSS+WALKRI data, accumulated across programs and rounds at scale, is what eventually gives them something real to work with.
+Fixing GIGO at the source produces value that compounds with every layer up the grants ecosystem. Grantees encounter questions that specify what they must prove. Reviewers assess against criteria written before they arrived. Operators run rounds that produce comparable data automatically. Analysts consume structured, aggregated data instead of manually reconciling incommensurable reports. Institutional co-funders receive conformance output as a byproduct of the round being run correctly. Strategic planners, deciding how to allocate billions across sectors and geographies, are currently making those decisions on GIGO. CROSS+WALKRI data, accumulated across programs and rounds at scale, is what eventually gives them something real to work with.
 
 The strategic planning benefit materialises as adoption accumulates. The foundation is correct. The compounding takes time and scale.
 
@@ -114,7 +114,7 @@ The value CROSS creates is specific to each layer of the grants ecosystem.
 
 **Analysts** gain structurally comparable obligation declarations across programs and epochs. A portfolio of CROSS-conformant rounds can answer questions that currently require months of manual reconstruction: how many programs have Change-mode obligations versus Build-mode? What proportion passed milestone gates at the highest rigor tier? How does the portfolio's attribution stance distribution compare across rounds? These questions cannot be answered at all from incommensurable round records. They answer themselves from CROSS-conformant data.
 
-**Institutional co-funders** receive OECD DAC, USAID PIRS, and IRIS+ compliance as structural outputs of the round being configured correctly. A development agency co-funding a program running CROSS does not need to impose separate reporting requirements or conduct a separate data quality assessment. The Attestation Corpus query and Cohort Position assessment also give institutional funders cross-program grantee history that previously required expensive independent research.
+**Institutional co-funders** receive OECD DAC, USAID PIRS, and IRIS+ conformance as structural outputs of the round being configured correctly. A development agency co-funding a program running CROSS does not need to impose separate reporting requirements or conduct a separate data quality assessment. The Attestation Corpus query and Cohort Position assessment also give institutional funders cross-program grantee history that previously required expensive independent research.
 
 **Platform providers** gain structural comparability across every program running on the platform from a single conformance requirement. Multi-program portfolio analysis, cross-round grantee tracking, and institutional reporting outputs are available without custom integration between programs.
 
@@ -132,7 +132,7 @@ CROSS is an independently published standard. It is co-released alongside the Co
 
 **Main standard**
 
-`CROSS-common-reporting-outcome-standards-schema-0_2_0.md` is the canonical specification. Read this first. It includes Part XII, which documents formal structural alignment with 95+ external frameworks spanning every major grants ecosystem worldwide.
+`CROSS-common-reporting-outcome-standards-schema-0_5_0.md` is the canonical specification. Read this first. It includes Part XII, which documents formal structural alignment with 95+ external frameworks spanning every major grants ecosystem worldwide.
 
 **Program type bundles**
 
@@ -152,11 +152,11 @@ The `statements/` directory contains 126+ individually published compatibility s
 
 `CROSS-runbooks-0_1_0.md` contains six pre-built gate configuration packages for common program types. Funders new to CROSS should start with the runbook or bundle that best matches their program type.
 
-`CROSS-common-reporting-outcome-standards-schema-guidance-0_2_0.md` contains field-by-field guidance for applicants completing an entry specification under any accountability mode.
+`CROSS-common-reporting-outcome-standards-schema-guidance-0_2_0.md` contains field-by-field guidance for applicants completing an entry specification under any obligation mode.
 
-`CROSS-common-reporting-outcome-standards-schema-rubric-0_2_0.md` contains the funder-facing assessment rubric, organized by accountability mode.
+`CROSS-common-reporting-outcome-standards-schema-rubric-0_2_0.md` contains the funder-facing assessment rubric, organized by obligation mode.
 
-`CROSS-common-reporting-outcome-standards-schema-templates-0_2_0.md` contains submission templates for each accountability mode and gate type.
+`CROSS-common-reporting-outcome-standards-schema-templates-0_2_0.md` contains submission templates for each obligation mode and gate type.
 
 `CROSS-common-reporting-outcome-standards-schema-worked-examples-0_2_0.md` contains six cases demonstrating how the entry specification gate and rigor tier apply across different application types.
 
@@ -202,7 +202,7 @@ Source and full documentation: github.com/CrossWalkri/tools
 
 ## Ecosystem position
 
-Every major tool in the grants stack was examined before CROSS was designed. The table below shows where each sits and what it covers. The pattern is consistent: existing tools manage, format, or document data produced by a grants process. None specify the obligation architecture or field quality that determines whether the data is trustworthy before the process begins.
+Every major tool in the grants stack was examined before CROSS was designed. The table below shows where each sits and what it covers. The pattern is consistent: existing tools process, format, or document data produced by a grants process. None specify the obligation architecture or field quality that determines whether the data is trustworthy before the process begins.
 
 | Tool / Standard | Layer | Obligation architecture | Field quality | Web3 output | Institutional output |
 |:--|:--|:--|:--|:--|:--|
@@ -238,7 +238,7 @@ A CROSS+WALKRI-conformant round satisfies OECD DAC evaluation criteria as a stru
 
 ## Compatibility statements
 
-Formally published compatibility statements are in the `statements/` directory. Together they document what "fixes GIGO at the source" means across every major grants ecosystem: a CROSS+WALKRI-conformant round produces structurally comparable, auditable, interoperable data that satisfies institutional compliance requirements without additional documentation work.
+Formally published compatibility statements are in the `statements/` directory. Together they document what "fixes GIGO at the source" means across every major grants ecosystem: a CROSS+WALKRI-conformant round produces structurally comparable, auditable, interoperable data that satisfies institutional conformance requirements without additional documentation work.
 
 ### International development and aid
 
@@ -247,7 +247,7 @@ Formally published compatibility statements are in the `statements/` directory. 
 | [USAID PIRS](https://2017-2020.usaid.gov/sites/default/files/documents/1861/Recommended_PIRS_for_USAID_indicators_0.pdf) | CROSS eleven-field indicator spec satisfies all nine required PIRS elements | `USAID-PIRS-CROSS-WALKRI-compatibility-0_1_0.md` |
 | [OECD DAC Evaluation Criteria](https://www.oecd.org/en/topics/sub-issues/development-co-operation-evaluation-and-effectiveness/evaluation-criteria.html) | CROSS ToC architecture and gate sequence satisfies all six OECD DAC criteria | `USAID-PIRS-CROSS-WALKRI-compatibility-0_1_0.md` |
 | [OECD DAC CRS](https://www.oecd.org/en/data/insights/data-explainers/2024/10/resources-for-reporting-development-finance-statistics.html) | CROSS produces CRS-compatible programmatic metadata; sector codes map to Field 10 | `OECD-DAC-CRS-CROSS-WALKRI-compatibility-0_1_0.md` |
-| [IATI Reporting Standard](https://iatistandard.org/en/iati-standard/) | CROSS obligation architecture maps to IATI activity-standard mandatory elements | `IATI-CROSS-WALKRI-compatibility-0_1_0.md` |
+| [IATI Reporting Standard](https://iatistandard.org/en/iati-standard/) | CROSS obligation architecture maps to IATI activity-standard required elements | `IATI-CROSS-WALKRI-compatibility-0_1_0.md` |
 | [UNDP IRRF](https://www.undp.org/sites/g/files/zskgke326/files/2024-05/Annex_IRRF_2023_final.pdf) | CROSS indicator spec satisfies all IRRF indicator documentation requirements at PDO and IR levels | `UNDP-IRRF-ISO53001-CROSS-WALKRI-compatibility-0_1_0.md` |
 | [ISO/UNDP 53001](https://www.iso.org/standard/53001) | CROSS Change mode and causality stance satisfy forthcoming SDG contribution claim certification (PAS 53002:2024 guidance available now) | `UNDP-IRRF-ISO53001-CROSS-WALKRI-compatibility-0_1_0.md` |
 | [World Bank Results Framework](https://thedocs.worldbank.org/en/doc/53cdf82b744cbd51242fad67a1306b12-0060072025/original/Annex-2-Guidance-on-Managing-World-Bank-Trust-Funds-for-Results-Nov-2025.pdf) | CROSS indicator fields map to all required RF elements; PDO/IR levels map to CROSS outcome/output levels | `World-Bank-RF-CROSS-WALKRI-compatibility-0_1_0.md` |
@@ -261,7 +261,7 @@ Formally published compatibility statements are in the `statements/` directory. 
 | [EU Global Europe Results Framework (DG INTPA)](https://capacity4dev.europa.eu/resources/results-indicators_en) | CROSS ToC architecture maps to GERF results chain; OECD CRS alignment covers statistical reporting; Field 10 accommodates GERF sector codes | `EU-GERF-CROSS-WALKRI-compatibility-0_1_0.md` |
 | [Multilateral Development Banks (ADB, AfDB, IDB, EBRD, GCF, GEF)](https://www.mcc.gov/resources/doc/policy-for-monitoring-and-evaluation/) | All MDB results frameworks derive from OECD DAC and World Bank RF; CROSS OECD and World Bank alignments cover MDB requirements; Field 10 accommodates MDB sector codes and GCF impact areas | see CROSS Part XII, MDB section |
 | [FCDO Programme Operating Framework](https://www.gov.uk/government/publications/fcdo-programme-operating-framework) | CROSS gate architecture maps to PrOF programme cycle milestones and evidence standards | `FCDO-PrOF-CROSS-WALKRI-compatibility-0_1_0.md` |
-| [Core Humanitarian Standard (2024)](https://www.corehumanitarianstandard.org/the-standard) | CROSS gate architecture satisfies CHS Commitments 7, 8, and 9 (evidence-based adaptation, ethical resource management, continuous improvement) | `Core-Humanitarian-Standard-CROSS-WALKRI-compatibility-0_1_0.md` |
+| [Core Humanitarian Standard (2024)](https://www.corehumanitarianstandard.org/the-standard) | CROSS gate architecture satisfies CHS Commitments 7, 8, and 9 (evidence-based adaptation, ethical resource stewardship, continuous improvement) | `Core-Humanitarian-Standard-CROSS-WALKRI-compatibility-0_1_0.md` |
 | [OCHA CBPF Global Guidelines (Emergency Grants)](https://www.unocha.org/publications/report/world/country-based-pooled-funds-global-guidelines) | CROSS output/outcome gates satisfy CBPF results-chain requirements; timeliness principle addressed by CROSS gate dates; Field 10 accommodates CBPF sector codes | `OCHA-CBPF-CROSS-WALKRI-compatibility-0_1_0.md` |
 | [US Federal Grants Data Standards (GREAT Act / OMB M-24-11)](https://www.grants.gov/data-standards) | CROSS organizational identity and ToC fields cover the programmatic elements of the 15 uniform data elements; WALKRI addresses the data quality gap GREAT Act reporting requirements require | `GREAT-Act-US-Federal-Grants-CROSS-WALKRI-compatibility-0_1_0.md` |
 
@@ -295,7 +295,7 @@ Formally published compatibility statements are in the `statements/` directory. 
 | [Gates Foundation Open Access Policy](https://openaccess.gatesfoundation.org) | WALKRI evidence form requirement produces Data Availability Statement content structurally; WALKRI satisfies FAIR by construction | `Gates-Open-Access-WALKRI-compatibility-0_1_0.md` |
 | [NIH Data Management and Sharing Policy](https://oir.nih.gov/sourcebook/intramural-program-oversight/intramural-data-sharing/2023-nih-data-management-sharing-policy) | WALKRI five field requirements produce DMP content as a structural output; criterion intent = data type, evidence form = repository and access path | `Research-Funder-DMP-Standards-WALKRI-compatibility-0_1_0.md` |
 | [NSF Data Management Plan](https://www.nsf.gov/funding/data-management-plan) | Same structural mapping as NIH; WALKRI pre-publication timing matches NSF's pre-research specification requirement | `Research-Funder-DMP-Standards-WALKRI-compatibility-0_1_0.md` |
-| [Horizon Europe Open Science / EU DMP](https://erc.europa.eu/manage-your-project/open-science) | WALKRI audit before form publication satisfies Horizon's requirement that DMP be prepared within six months of grant signature; FAIR compliance by construction | `Research-Funder-DMP-Standards-WALKRI-compatibility-0_1_0.md` |
+| [Horizon Europe Open Science / EU DMP](https://erc.europa.eu/manage-your-project/open-science) | WALKRI audit before form publication satisfies Horizon's requirement that DMP be prepared within six months of grant signature; FAIR conformance by construction | `Research-Funder-DMP-Standards-WALKRI-compatibility-0_1_0.md` |
 | [Wellcome Trust Data and Materials Policy](https://wellcome.org/research-funding/guidance/policies-grant-conditions/data-software-materials-management-and-sharing-policy) | WALKRI application-stage audit aligns exactly with Wellcome's outputs management plan requirement at application stage | `Research-Funder-DMP-Standards-WALKRI-compatibility-0_1_0.md` |
 
 ### Open data and scholarly infrastructure
@@ -303,7 +303,7 @@ Formally published compatibility statements are in the `statements/` directory. 
 | Framework | Coverage | Statement |
 |:--|:--|:--|
 | [FAIR Data Principles](https://www.go-fair.org/fair-principles/) | WALKRI satisfies all four FAIR principles by construction (findable conformance record URI, accessible open JSON Schema, interoperable x-walkri- namespace, reusable provenance envelope) | `WALKRI-standard-0_1_6.md` (Part X, Section 7.3) |
-| [IATI Reporting Standard](https://iatistandard.org/en/iati-standard/) | CROSS activity-standard fields map to IATI mandatory elements; CRS alignment follows from IATI bridge | `IATI-CROSS-WALKRI-compatibility-0_1_0.md` |
+| [IATI Reporting Standard](https://iatistandard.org/en/iati-standard/) | CROSS activity-standard fields map to IATI required elements; CRS alignment follows from IATI bridge | `IATI-CROSS-WALKRI-compatibility-0_1_0.md` |
 | [DDI (Data Documentation Initiative)](https://ddialliance.org/) | CROSS indicator specification fields map to DDI's metadata vocabulary for survey and observational data | `DDI-CROSS-WALKRI-compatibility-0_1_0.md` |
 | [schema.org/Grant](https://schema.org/Grant) | CROSS grant round records can be expressed as schema.org Grant markup; FundingScheme and FundingAgency types align with CROSS organizational identity fields | lightweight note in `CROSS-position-statement-0_1_0.md` |
 | [DataCite Metadata Schema v4.5](https://schema.datacite.org/) | CROSS organizational identity and output records map to DataCite fundingReference properties; enables DOI registration for grant-funded datasets | see CROSS Part XII, Scholarly Infrastructure section |
@@ -371,7 +371,7 @@ CROSS inherits requirements from four Suite standards by reference:
 - Adverse Signal Engagement Principle Core Standard: disclosure requirements for adverse signals
 - Information Asymmetry Classification Standard: omission asymmetry requirements for concurrent funding disclosure
 - Precision-First Design Standard: indicator sourcing requirements and the double-negation invariant
-- Regenerative Obligation Standard: direction of accountability (what the Suite addresses) as the structural complement to CROSS's destination (what CROSS addresses)
+- Regenerative Obligation Standard: direction of obligation (what the Suite addresses) as the structural complement to CROSS's destination (what CROSS addresses)
 
 Adoption of CROSS does not require adoption of the Suite. The inherited requirements are fully stated within CROSS.
 
@@ -381,6 +381,7 @@ Adoption of CROSS does not require adoption of the Suite. The inherited requirem
 
 | Version | Date | Summary |
 |---------|------|---------|
+| 0.4.8 | 2026-06-08 | Frame Language own-voice pass across the document. Own-voice watchlist terms were replaced with the structural act each names: accountability became obligation, reporting, or verification; "accountability standard/layer/structure" became obligation; "governs" and "enforce" became covers, structures, or require; compliance became conformance; mandatory became required; credible and legitimate replaced in kind. Framework names, named principles, GRI's named disclosures, government as a literal party, and the changelog rows were preserved as citation. Em-dash sweep clean. No content, coverage claim, or compatibility mapping changed; vocabulary only. |
 | 0.4.7 | 2026-05-19 | Part XII expanded to 95+ frameworks across five major research passes covering US federal domestic programs (Head Start, AmeriCorps, PCORI, Ryan White, WIOA, SNAP-Ed, Perkins V, IAF GDF), environment and human services (IUCN Global Standard for NbS, IMLS OBE, CSBG ROMA, HUD CoC, LIHEAP, UNTF), faith-based and democracy (CRS ProPack, World Vision LEAP, NED with CAR), Web3 (Optimism Retro Funding 2025 methodology), federal innovation (SBIR/STTR portfolio benchmarks), and global health (SAMHSA NOMs, HRSA UDS, HRSA Title V, Ryan White). Three new structural primitives identified: inter-cycle reflection stage (LEAP), multi-cycle retrospective assessment (NED CAR), portfolio-level continuation benchmark (SBIR/STTR). Beneficiary accountability gap documented as revision candidate. Ten program type bundles released in bundles/ directory. Audience map and primitives framework index published. |
 | 0.4.6 | 2026-05-18 | Part XII expanded: fourteen additional sections covering US federal domestic programs, workforce, education, conservation, human services, and gender-focused grantmaking. |
 | 0.4.5 | 2026-05-18 | Part XII expanded with eight sections: Walton SLED, SAMHSA NOMs, HRSA UDS, HRSA Title V, ARPA-H OT framework, Wellcome Trust, Arnold Ventures Open Science Guidelines, ESSA/WWC/EIR. |

@@ -1,12 +1,19 @@
 ---
 title: Verra Verified Carbon Standard (VCS) Compatibility - CROSS+WALKRI
-version: 0.1.0
-date: 2026-05-18
+version: 0.1.2
+date: 2026-06-08
 license: CC0
 standards: CROSS v0.4.4 (github.com/CrossWalkri/CROSS), WALKRI v0.1.7 (github.com/CrossWalkri/WALKRI)
 references:
   - https://verra.org/wp-content/uploads/2022/02/VCS-Standard_v4.2.pdf
   - https://verra.org/programs/verified-carbon-standard/vcs-program-details/
+lens_tags:
+  calibration_tier: independently_verified
+  authority_source: voluntary_published
+  cultural_methodological_lineage: western_institutional
+  funder_typology: corporate_csr
+  framework_scope_type: certification
+  # Verra Verified Carbon Standard; voluntary carbon market certification; primary funder typology corporate_csr (buyers); alternative pooled_fund_or_intermediary
 ---
 
 # Verra Verified Carbon Standard (VCS)
@@ -39,7 +46,7 @@ The VCS project cycle in full: a project developer designs the project using an 
 
 The VCS additionality requirement maps to the CROSS causality stance field combined with the additionality argument at the entry gate. Under CROSS, programs must declare their causal position before any application opens: the intervention produces measurable change beyond what would have occurred without it, and the counterfactual basis for that claim is specified. This is the structural equivalent of VCS additionality assessment conducted at entry: the claim is made and documented before any implementation commitment is made, not asserted post-hoc after results are in hand. The CROSS entry gate additionality documentation becomes the pre-commitment record against which the VVB validation review assesses the project's additionality argument.
 
-The VCS third-party VVB validation stage (pre-implementation) maps to the CROSS entry specification gate evidence quality combined with the pre-commitment record. Under CROSS, the entry gate requires that methodology selection, indicator specification, counterfactual baseline, and outcome targets be documented and made publicly available before any application is submitted. This is the same set of design-stage documentation that VVB validation reviews. A CROSS-compliant entry gate produces the documentation that VVB validation requires; the VVB validation is the independent assessment event that moves the entry gate documentation to the independent attestation tier of the CROSS evidence strength taxonomy.
+The VCS third-party VVB validation stage (pre-implementation) maps to the CROSS entry specification gate evidence quality combined with the pre-commitment record. Under CROSS, the entry gate requires that methodology selection, indicator specification, counterfactual baseline, and outcome targets be documented and made publicly available before any application is submitted. This is the same set of design-stage documentation that VVB validation reviews. A CROSS-conformant entry gate produces the documentation that VVB validation requires; the VVB validation is the independent assessment event that moves the entry gate documentation to the independent attestation tier of the CROSS evidence strength taxonomy.
 
 The VCS third-party VVB verification stage (post-monitoring) maps to the CROSS completion gate combined with the independent attestation pathway at the highest evidence strength tier. The completion gate requires structured documentation of what was monitored, against what baseline, using which methodology, with what evidence of results. The VVB verification review is the independent attestation event applied to that completion gate documentation. Together, CROSS completion gate plus VVB verification equals the highest evidence strength tier in CROSS: evidence produced by the program, reviewed and attested by an accredited independent body, with documentation retained in the Attestation Corpus.
 
@@ -60,10 +67,19 @@ The Verra registry-based VCU issuance maps to the CROSS Attestation Corpus. Both
 
 ## How WALKRI Complements This Alignment
 
-WALKRI ensures that intake instruments for VCS-linked programs establish monitoring methodology, counterfactual basis, and evidence access paths as operationally defined measurement instruments before any project enters the VCS registration pipeline. In a VCS context, this is consequential at the validation stage: VVB validators assess whether the project's monitoring plan specifies the methodology clearly enough that verification will be possible after monitoring. A WALKRI-compliant intake instrument does this systematically: for each outcome indicator, it specifies which VCS-approved methodology applies, what monitoring parameters are required, what data sources will be used, what chain of custody applies to monitoring data, and what verification pathway will be used.
+WALKRI ensures that intake instruments for VCS-linked programs establish monitoring methodology, counterfactual basis, and evidence access paths as operationally defined measurement instruments before any project enters the VCS registration pipeline. In a VCS context, this is consequential at the validation stage: VVB validators assess whether the project's monitoring plan specifies the methodology clearly enough that verification will be possible after monitoring. A WALKRI-conformant intake instrument does this systematically: for each outcome indicator, it specifies which VCS-approved methodology applies, what monitoring parameters are required, what data sources will be used, what chain of custody applies to monitoring data, and what verification pathway will be used.
 
-This prevents the common failure mode in which projects pass VVB validation with insufficiently specified monitoring plans, then fail VVB verification because the monitoring data produced does not match the methodology's requirements. WALKRI moves the methodology specification upstream, into the intake design stage, so that the gap between validation-approved design and verification-ready data is identified and closed before project registration, not discovered during the verification process when the costs of non-compliance are highest.
+This prevents the common failure mode in which projects pass VVB validation with insufficiently specified monitoring plans, then fail VVB verification because the monitoring data produced does not match the methodology's requirements. WALKRI moves the methodology specification upstream, into the intake design stage, so that the gap between validation-approved design and verification-ready data is identified and closed before project registration, not discovered during the verification process when the costs of non-conformance are highest.
 
 ---
 
 *Published under CC0. For the current version of CROSS and WALKRI, see github.com/CrossWalkri.*
+
+---
+
+## Changelog
+
+| Version | Date | Summary |
+|---|---|---|
+| 0.1.2 | 2026-06-08 | Frame Language own-voice pass applied as part of the corpus-wide 2026-06-08 sweep: own-voice watchlist terms (govern-family, accountability, mandatory, compliance, enforce, legitimate) recast to conformance and obligation vocabulary where they appeared in this document's own voice; citation use of source-framework terms preserved. Primitive-rename references aligned to current canon (Continuity Capacity, the Collective disbursement state, Affected Population Verification Gate). Em-dash- and watchlist-clean re-verified. No compatibility finding or mapping changed; vocabulary only. |
+| 0.1.1 | 2026-05-23 | Retroactive lens tagging: added calibration_tier, authority_source, cultural_methodological_lineage, funder_typology, framework_scope_type per Lenses Framework v0.1.0. |

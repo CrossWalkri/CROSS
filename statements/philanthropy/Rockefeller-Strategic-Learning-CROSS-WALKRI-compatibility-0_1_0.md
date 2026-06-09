@@ -1,12 +1,19 @@
 ---
 title: Rockefeller Foundation Strategic Learning Blueprint Compatibility - CROSS+WALKRI
-version: 0.1.0
-date: 2026-05-18
+version: 0.1.2
+date: 2026-06-08
 license: CC0
 standards: CROSS v0.4.1 (github.com/CrossWalkri/CROSS), WALKRI v0.1.6 (github.com/CrossWalkri/WALKRI)
 references:
   - https://www.rockefellerfoundation.org/perspective/deepening-impact-through-strategic-learning/
   - https://www.rockefellerfoundation.org/report/2024-impact-report/
+lens_tags:
+  calibration_tier: outcome_specified_self_reported
+  authority_source: voluntary_published
+  cultural_methodological_lineage: western_institutional
+  funder_typology: private_foundation
+  framework_scope_type: allocator_process
+  # Rockefeller Foundation Strategic Learning framework
 ---
 
 # Rockefeller Foundation Strategic Learning Blueprint Compatibility - CROSS+WALKRI
@@ -33,7 +40,7 @@ The 2024 Impact Report adds two learning principles from field practice: "Learn 
 
 ## CROSS Alignment in Detail
 
-CROSS addresses the "learning with grantees" principle at a structural level. The entry specification gate requires that all gate criteria, evidence type requirements, and milestone conditions be published before any application is submitted. A grantee applying to a CROSS-compliant round knows, before they invest time in an application, exactly what they will be required to demonstrate at each gate. They are not encountering evaluation criteria for the first time when they receive a mid-grant reporting request. This is the structural opposite of extractive evaluation: the burden of specifying what must be shown falls on the funder at round design time, not on the grantee at reporting time.
+CROSS addresses the "learning with grantees" principle at a structural level. The entry specification gate requires that all gate criteria, evidence type requirements, and milestone conditions be published before any application is submitted. A grantee applying to a CROSS-conformant round knows, before they invest time in an application, exactly what they will be required to demonstrate at each gate. They are not encountering evaluation criteria for the first time when they receive a mid-grant reporting request. This is the structural opposite of extractive evaluation: the burden of specifying what must be shown falls on the funder at round design time, not on the grantee at reporting time.
 
 CROSS's causality stance field implements the "asking good questions" and "humility" principles by requiring programs to declare at each gate whether they are claiming attribution (this outcome was caused by our work) or contribution (this outcome occurred in a context to which our work contributed). This distinction is not cosmetic. A program that declares a contribution stance has formally acknowledged that outcomes have multiple causes and that the evaluation question is how and whether the program played a role, not whether it single-handedly produced the result. CROSS makes this declaration a gate condition, not a reflection included in a narrative report at the end of the grant period.
 
@@ -51,4 +58,13 @@ WALKRI's requirement that evidence types be declared before collection (quantita
 
 ## Scope and Limitations
 
-The Rockefeller Foundation has not reviewed or endorsed this statement. This document describes structural alignment between the Blueprint's stated principles and the CROSS+WALKRI specification; it does not constitute certification that any specific program or portfolio meets the Foundation's learning standards. The Blueprint is a principles document, not a compliance framework; alignment is assessed at the level of structural correspondence, not rule satisfaction.
+The Rockefeller Foundation has not reviewed or endorsed this statement. This document describes structural alignment between the Blueprint's stated principles and the CROSS+WALKRI specification; it does not constitute certification that any specific program or portfolio meets the Foundation's learning standards. The Blueprint is a principles document, not a conformance framework; alignment is assessed at the level of structural correspondence, not rule satisfaction.
+
+---
+
+## Changelog
+
+| Version | Date | Summary |
+|---|---|---|
+| 0.1.2 | 2026-06-08 | Frame Language own-voice pass applied as part of the corpus-wide 2026-06-08 sweep: own-voice watchlist terms (govern-family, accountability, mandatory, compliance, enforce, legitimate) recast to conformance and obligation vocabulary where they appeared in this document's own voice; citation use of source-framework terms preserved. Primitive-rename references aligned to current canon (Continuity Capacity, the Collective disbursement state, Affected Population Verification Gate). Em-dash- and watchlist-clean re-verified. No compatibility finding or mapping changed; vocabulary only. |
+| 0.1.1 | 2026-05-23 | Retroactive lens tagging: added calibration_tier, authority_source, cultural_methodological_lineage, funder_typology, framework_scope_type per Lenses Framework v0.1.0. |

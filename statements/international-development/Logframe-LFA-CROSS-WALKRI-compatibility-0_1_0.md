@@ -1,7 +1,7 @@
 ---
 title: Logframe / LFA Compatibility - CROSS+WALKRI
-version: 0.1.0
-date: 2026-05-16
+version: 0.1.2
+date: 2026-06-08
 license: CC0
 standards: CROSS v0.3.7 (github.com/CrossWalkri/CROSS), WALKRI v0.1.6 (github.com/CrossWalkri/WALKRI)
 references:
@@ -9,6 +9,13 @@ references:
   - EC DEVCO Project Cycle Management Guidelines (2004)
   - DFID How To Note on Logframes (2011)
   - USAID ADS 203 Assessing and Learning
+lens_tags:
+  calibration_tier: process_conformant
+  authority_source: voluntary_published
+  cultural_methodological_lineage: western_institutional
+  funder_typology: bilateral_aid_agency
+  framework_scope_type: professional_practice_ethics
+  # Logical Framework Approach methodology; cross-cutting practitioner methodology used widely by bilaterals and multilaterals; alternative multilateral_bank_or_fund typology
 ---
 
 # Logframe / Logical Framework Approach Compatibility
@@ -58,8 +65,8 @@ The causal logic of the Logframe runs as follows: if inputs are available and ac
 | Goal | Long-term Outcome or Goal (ToC hierarchy, Part IX-B) | CROSS's program-level ToC declaration distinguishes Long-term Outcomes from the Goal; the Logframe typically collapses these into one row. Both are addressed. |
 | Purpose (Outcome) | Short-term Outcome or Intermediate Outcome (ToC hierarchy); Change-obligation entry specification (FROM state / TO state, Part IV) | Change-obligation grants are purpose-level interventions: they specify a measurable shift in a defined population. The FROM state is the Logframe's baseline OVI at the purpose row; the TO state is the target OVI. |
 | Outputs | Output (ToC hierarchy); Build-obligation mode (Part III) | Build-obligation grants are output-level interventions: they specify a deliverable with independently verifiable completion criteria. Logframe does not have a named mode for this distinction; CROSS makes it explicit. |
-| Activities | Process (ToC hierarchy) | Activities are outside CROSS's primary accountability scope; CROSS governs what must be demonstrated at each gate, not the internal process by which it is produced. |
-| Inputs | Outside CROSS scope | Inputs (budget, personnel, resources) are recorded in the sufficiency architecture declaration but are not governed by CROSS gate logic. |
+| Activities | Process (ToC hierarchy) | Activities are outside CROSS's primary verification scope; CROSS determines what must be demonstrated at each gate, not the internal process by which it is produced. |
+| Inputs | Outside CROSS scope | Inputs (budget, personnel, resources) are recorded in the sufficiency architecture declaration but are not covered by CROSS gate logic. |
 
 ### Column Mapping
 
@@ -100,7 +107,7 @@ A CROSS-conformant program produces OVI documentation at a level of rigor that s
 
 The Logframe's MoV column specifies where indicator data will come from and how it will be collected. In standard practice, MoV entries are brief: "project monitoring reports," "household surveys," "government statistics." These entries identify the source but do not specify the collection instrument.
 
-This is the Logframe's most significant accountability gap. A program that specifies "household survey" as its MoV has not specified: which questions the survey asks, how the questions are operationally defined, what response types are accepted, what evidence is required, or how the survey produces data that is comparable across rounds and reviewers. Two implementing partners using "household surveys" as their MoV may produce data that cannot be compared because their instruments were designed differently.
+This is the Logframe's most significant verification gap. A program that specifies "household survey" as its MoV has not specified: which questions the survey asks, how the questions are operationally defined, what response types are accepted, what evidence is required, or how the survey produces data that is comparable across rounds and reviewers. Two implementing partners using "household surveys" as their MoV may produce data that cannot be compared because their instruments were designed differently.
 
 WALKRI addresses this gap directly. WALKRI's five criterion specification requirements apply to every field in the data collection instrument, including fields collecting OVI data for Logframe reporting:
 
@@ -152,7 +159,7 @@ The Logframe was developed within the same OECD DAC framework that produced the 
 | Impact | Goal row: did the program contribute to the higher-level goal? | Long-term Outcome register in program-level ToC (Part IX-B) |
 | Sustainability | Assumptions at Purpose row: will the change persist? | Sustainability stance declaration at continuation gate |
 
-A program that uses the Logframe and declares OECD DAC alignment in CROSS is not doing additional work: the Logframe already captures the structural elements DAC maps to, and CROSS's gate architecture enforces them at each decision point.
+A program that uses the Logframe and declares OECD DAC alignment in CROSS is not doing additional work: the Logframe already captures the structural elements DAC maps to, and CROSS's gate architecture requires them at each decision point.
 
 ---
 
@@ -195,3 +202,12 @@ OECD DAC LFA Sourcebook: oecd.org/dac/evaluation/daccriteriaforevaluatingdevelop
 EC Project Cycle Management Guidelines: ec.europa.eu/europeaid/sites/devco/files/methodology-aid-delivery-methods-project-cycle-management-200403_en_2.pdf
 
 License: CC0
+
+---
+
+## Changelog
+
+| Version | Date | Summary |
+|---|---|---|
+| 0.1.2 | 2026-06-08 | Frame Language own-voice pass applied as part of the corpus-wide 2026-06-08 sweep: own-voice watchlist terms (govern-family, accountability, mandatory, compliance, enforce, legitimate) recast to conformance and obligation vocabulary where they appeared in this document's own voice; citation use of source-framework terms preserved. Primitive-rename references aligned to current canon (Continuity Capacity, the Collective disbursement state, Affected Population Verification Gate). Em-dash- and watchlist-clean re-verified. No compatibility finding or mapping changed; vocabulary only. |
+| 0.1.1 | 2026-05-23 | Retroactive lens tagging: added calibration_tier, authority_source, cultural_methodological_lineage, funder_typology, framework_scope_type per Lenses Framework v0.1.0. |

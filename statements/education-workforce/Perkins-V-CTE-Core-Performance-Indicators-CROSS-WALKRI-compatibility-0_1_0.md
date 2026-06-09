@@ -1,7 +1,7 @@
 ---
 title: Perkins V CTE Core Performance Indicators Compatibility - CROSS+WALKRI
-version: 0.1.0
-date: 2026-05-18
+version: 0.1.2
+date: 2026-06-08
 license: CC0
 standards: CROSS v0.4.5 (github.com/CrossWalkri/CROSS), WALKRI v0.1.7 (github.com/CrossWalkri/WALKRI)
 references:
@@ -9,6 +9,13 @@ references:
   - cte.ed.gov/accountability/core-indicators
   - 20 USC Chapter 44 (Carl D. Perkins Career and Technical Education Act)
   - State Determined Performance Level (SDPL) Guidance (ED/OCTAE)
+lens_tags:
+  calibration_tier: outcome_specified_self_reported
+  authority_source: statutory
+  cultural_methodological_lineage: western_institutional
+  funder_typology: government_non_aid
+  framework_scope_type: grantee_outcome_measurement
+  # Strengthening Career and Technical Education for the 21st Century Act (Perkins V) statutory authority
 ---
 
 # Perkins V Career and Technical Education Core Performance Indicators
@@ -35,7 +42,7 @@ The statute requires disaggregated reporting by gender, race and ethnicity, and 
 
 ## How CROSS Satisfies the Perkins V Performance Indicator Framework
 
-CROSS addresses Perkins V's core performance indicator requirements at the structural level, from the statutory indicator categories through the dual-tier accountability structure and the disaggregation requirements.
+CROSS addresses Perkins V's core performance indicator requirements at the structural level, from the statutory indicator categories through the dual-tier obligation structure and the disaggregation requirements.
 
 | Perkins V Accountability Element | CROSS Provision |
 |:--|:--|
@@ -45,7 +52,7 @@ CROSS addresses Perkins V's core performance indicator requirements at the struc
 | Secondary indicators (graduation, academic proficiency, postsecondary placement) | Fields 1-5 (name, definition, unit, baseline, target) for each statutory indicator |
 | Program quality indicators (credential attainment, dual enrollment, work-based learning) | Fields 1-5 + Field 6 (timing: during secondary enrollment for quality indicators) |
 | Postsecondary indicators (credential attainment, employment, earnings) | Fields 1-5 + Field 6 (timing: after exit for employment and earnings indicators) |
-| 90% threshold improvement plan trigger | Field 11 (evidence threshold): statutory performance threshold constitutes the accountability cycle's evidence threshold |
+| 90% threshold improvement plan trigger | Field 11 (evidence threshold): statutory performance threshold constitutes the reporting cycle's evidence threshold |
 | Disaggregation by gender, race/ethnicity, and eight special population categories | Disaggregation ratchet: all statutory demographic categories established at enrollment and maintained across all reporting periods |
 | Two-tier accountability (state and local recipient) | Portfolio aggregation: local recipient outcomes aggregate to state-level outcomes, with both tiers pre-specified |
 | Public comment on state-determined performance levels | Entry specification gate: public comment process occurs before performance levels are finalized, before any program year begins |
@@ -64,8 +71,17 @@ WALKRI's five pre-publication requirements address the data quality risk that Pe
 
 These determination gaps are resolved by WALKRI's operational definition and evidence form requirements, applied to CTE program intake instruments before any student is enrolled. A WALKRI-conformant CTE intake form for the economically disadvantaged category specifies exactly which income and program participation documentation qualifies, which verification method is required when a student self-reports without documentation, and how the intake worker codes a student whose documentation arrives after initial enrollment. Applied across all eight special population categories before any enrollment period opens, WALKRI's requirements produce intake instruments that generate Perkins V disaggregation data from a consistent evidentiary base.
 
-The program quality indicators raise a distinct WALKRI challenge. Work-based learning participation is a statutory indicator, but what qualifies as work-based learning ranges from job shadowing to paid internship to apprenticeship, and different CTE programs define the qualifying threshold differently. WALKRI's criterion intent requirement, applied before the program year opens, requires the program to specify which work-based learning modalities it is counting and what minimum participation constitutes a qualifying event. This pre-specification prevents post-hoc expansion of the definition to improve apparent performance, which is exactly the integrity protection that the evidence threshold and compliance threshold requirements in WALKRI are designed to provide.
+The program quality indicators raise a distinct WALKRI challenge. Work-based learning participation is a statutory indicator, but what qualifies as work-based learning ranges from job shadowing to paid internship to apprenticeship, and different CTE programs define the qualifying threshold differently. WALKRI's criterion intent requirement, applied before the program year opens, requires the program to specify which work-based learning modalities it is counting and what minimum participation constitutes a qualifying event. This pre-specification prevents post-hoc expansion of the definition to improve apparent performance, which is exactly the integrity protection that the evidence threshold and conformance threshold requirements in WALKRI are designed to provide.
 
 ---
 
 *Published under CC0. For the current version of CROSS and WALKRI, see github.com/CrossWalkri.*
+
+---
+
+## Changelog
+
+| Version | Date | Summary |
+|---|---|---|
+| 0.1.2 | 2026-06-08 | Frame Language own-voice pass applied as part of the corpus-wide 2026-06-08 sweep: own-voice watchlist terms (govern-family, accountability, mandatory, compliance, enforce, legitimate) recast to conformance and obligation vocabulary where they appeared in this document's own voice; citation use of source-framework terms preserved. Primitive-rename references aligned to current canon (Continuity Capacity, the Collective disbursement state, Affected Population Verification Gate). Em-dash- and watchlist-clean re-verified. No compatibility finding or mapping changed; vocabulary only. |
+| 0.1.1 | 2026-05-23 | Retroactive lens tagging: added calibration_tier, authority_source, cultural_methodological_lineage, funder_typology, framework_scope_type per Lenses Framework v0.1.0. |

@@ -1,7 +1,7 @@
 ---
 title: Attestation Landscape - CROSS+WALKRI
-version: 0.1.2
-date: 2026-05-18
+version: 0.1.3
+date: 2026-06-08
 license: CC0
 standards: CROSS v0.3.7 (github.com/CrossWalkri/CROSS), WALKRI v0.1.6 (github.com/CrossWalkri/WALKRI)
 ---
@@ -26,7 +26,7 @@ CROSS+WALKRI produces four types of verifiable records:
 
 **Gate records.** Funder-signed determinations at each gate: entry, progress, completion, continuation. A gate record confirms that a specific entity demonstrated specific obligations to a specific published standard at a specific point in time. Gate records are the cross-program track record infrastructure; when accumulated across rounds and programs, they constitute independently verifiable grantee history.
 
-**Conformance records.** WALKRI audit outcomes for each field specification before a round opens. A conformance record confirms that each application field was specified to WALKRI standard before any applicant saw it. Conformance records are the field quality accountability layer.
+**Conformance records.** WALKRI audit outcomes for each field specification before a round opens. A conformance record confirms that each application field was specified to WALKRI standard before any applicant saw it. Conformance records are the field quality verification layer.
 
 **Identity anchors.** Publicly queryable records linking a grantee's display name, legal entity, and prior work to a stable identifier. Identity anchors are the cross-program identity infrastructure; they are what makes the organizational identity declaration independently verifiable rather than self-reported.
 
@@ -72,7 +72,7 @@ W3C Verifiable Credentials (VCs) are JSON-LD signed documents issued by a creden
 - Cryptographically signed by the issuer (funder or auditor) using a DID-based key
 - Holder-sovereign: the grantee holds the credential and presents it selectively
 - No blockchain required; credentials can be stored anywhere and verified offline
-- Natively readable by any standards-compliant VC verifier
+- Natively readable by any standards-conformant VC verifier
 - Compatible with W3C DID infrastructure (did:web, did:key, did:ethr, and others)
 - No per-credential cost beyond the issuer's key infrastructure
 - Selective disclosure is possible with certain VC formats (SD-JWT)
@@ -105,7 +105,7 @@ Signed institutional documents include signed PDFs, notarized records, official 
 - Programs reporting to USAID, the Gates Foundation, World Bank, or comparable institutional funders who require official documentation
 - Legal contexts where digital-only records do not satisfy documentation requirements
 - Programs with no Web3 technical capacity
-- Jurisdictions where notarized documents are the standard of proof for accountability claims
+- Jurisdictions where notarized documents are the standard of proof for obligation verification claims
 
 **Not ideal for:**
 - Cross-program digital verification where a program needs to query records programmatically
@@ -168,7 +168,7 @@ The right mechanism for each record type depends on three factors: who the prima
 
 ## Layered Attestation
 
-Programs that bridge institutional and Web3 contexts may produce layered attestations: the same accountability event is recorded in multiple formats for different consumer audiences. A completion gate determination might produce both an EAS attestation (queryable by KarmaGAP and subsequent Web3 programs) and a signed institutional document (presentable to USAID or a foundation board). The two records are not redundant; they serve different verifier audiences with different infrastructure.
+Programs that bridge institutional and Web3 contexts may produce layered attestations: the same gate determination event is recorded in multiple formats for different consumer audiences. A completion gate determination might produce both an EAS attestation (queryable by KarmaGAP and subsequent Web3 programs) and a signed institutional document (presentable to USAID or a foundation board). The two records are not redundant; they serve different verifier audiences with different infrastructure.
 
 Layered attestation is not a conformance requirement. It is a practical option for programs operating across both ecosystems. The content requirements from CROSS and WALKRI apply equally to both records; the format is determined by the target audience for each.
 
@@ -194,6 +194,7 @@ License: CC0
 
 | Version | Date | Summary |
 |---|---|---|
+| 0.1.3 | 2026-06-08 | Frame Language own-voice pass applied as part of the corpus-wide 2026-06-08 sweep: own-voice watchlist terms (govern-family, accountability, mandatory, compliance, enforce, legitimate) recast to conformance and obligation vocabulary where they appeared in this document's own voice; citation use of source-framework terms preserved. Primitive-rename references aligned to current canon (Continuity Capacity, the Collective disbursement state, Affected Population Verification Gate). Em-dash- and watchlist-clean re-verified. No compatibility finding or mapping changed; vocabulary only. |
 | 0.1.2 | 2026-05-18 | Standards references updated to CROSS v0.3.7 and WALKRI v0.1.6. |
 | 0.1.1 | 2026-05-17 | Standards references updated to CROSS v0.3.3 and WALKRI v0.1.1. |
 | 0.1.0 | 2026-05-16 | Initial draft. Four record types (gate records, conformance records, identity anchors, pre-commitment records). Four mechanism options (on-chain EAS, W3C VCs, signed institutional documents, timestamping services) with properties, best-use, and not-ideal characterizations. Selection guidance table. Use case mapping to CROSS+WALKRI provisions. Layered attestation section. |

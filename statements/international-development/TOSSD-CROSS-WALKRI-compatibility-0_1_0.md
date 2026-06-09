@@ -1,7 +1,7 @@
 ---
 title: TOSSD Compatibility - CROSS+WALKRI
-version: 0.1.0
-date: 2026-05-18
+version: 0.1.2
+date: 2026-06-08
 license: CC0
 standards: CROSS v0.4.0 (github.com/CrossWalkri/CROSS), WALKRI v0.1.6 (github.com/CrossWalkri/WALKRI)
 references:
@@ -11,6 +11,13 @@ references:
   - IATI Standard v2.03, iatistandard.org
   - Bridging Data Systems for Financing for Development initiative, IATI/TOSSD co-development documentation
   - CROSS+WALKRI IATI Compatibility Statement v0.1.0
+lens_tags:
+  calibration_tier: process_conformant
+  authority_source: voluntary_published
+  cultural_methodological_lineage: western_institutional
+  funder_typology: multilateral_bank_or_fund
+  framework_scope_type: accounting_financial
+  # Total Official Support for Sustainable Development statistical framework; OECD-led but reporting universe includes multilaterals and non-DAC providers; accounting/disclosure scope
 ---
 
 # TOSSD Compatibility
@@ -45,7 +52,7 @@ Open-source software infrastructure, shared digital public goods, and Web3 proto
 
 This categorization has practical consequences. Pillar II activities must satisfy a public goods qualification test: the activity must be shown to produce benefits that are non-excludable in nature or are made non-excludable by design, and that contribute to one or more SDG targets. CROSS's Theory of Change architecture, applied to a Pillar II program, produces the documentation needed to satisfy this test: the goal level specifies the SDG contribution claim, the outcome level specifies the population-level change the activity enables, the output level specifies the deliverable, and the causal link and assumption documentation specifies why the output plausibly produces the outcome.
 
-CROSS's causality stance field (contribution versus attribution) is particularly relevant for Pillar II claims. TOSSD does not require programs to prove direct causation between their activity and an SDG outcome; it requires that the contribution pathway be documented and credible. CROSS's causality stance field encodes this methodological position formally, making the claim auditable.
+CROSS's causality stance field (contribution versus attribution) is particularly relevant for Pillar II claims. TOSSD does not require programs to prove direct causation between their activity and an SDG outcome; it requires that the contribution pathway be documented and verifiable. CROSS's causality stance field encodes this methodological position formally, making the claim auditable.
 
 ---
 
@@ -56,7 +63,7 @@ CROSS's causality stance field (contribution versus attribution) is particularly
 | Provider identification | On-chain identity anchor (Field 6); organizational identity declaration | CROSS requires a canonical organizational identity declaration. The on-chain identity anchor produces a stable, verifiable provider identifier. |
 | Activity description | Theory of Change declaration (goal, outcome, output, activity levels); obligation mode and entry specification narrative | The CROSS ToC produces a structured activity description that exceeds the depth of a standard TOSSD activity description. The goal and outcome levels correspond to the TOSSD activity description requirement. |
 | Sector classification (TOSSD vocabulary, CRS-aligned) | Indicator Field 10 (institutional framework alignment) | Programs declaring TOSSD sector category and CRS sector code alignment in Field 10 produce the sector classification TOSSD requires. The declaration is explicit, not inferred. |
-| Geographic coverage or scope designation | Population field (Indicator Field 6) | For Pillar II activities, the geographic scope designation is "global" or "international." Field 6 accommodates this: the population scope can specify a global beneficiary population without a country code. |
+| Geographic coverage or scope designation | Population field (Indicator Field 6) | For Pillar II activities, the geographic scope designation is "global" or "international." Field 6 accommodates this: the population scope can specify a global affected population without a country code. |
 | SDG alignment | Theory of Change (goal level SDG linkage); Indicator Field 10 (framework alignment including SDG targets) | CROSS programs that declare SDG target alignment in the ToC goal level and in Field 10 produce the SDG documentation TOSSD requires. |
 | Amount of support | No CROSS equivalent | Financial flow data. Outside CROSS scope; managed by the funding organization's financial systems. |
 | Pillar II public goods qualification | Theory of Change architecture; causality stance field; obligation mode | The ToC goal level specifies the public goods claim. The causality stance field specifies the contribution pathway. Build-obligation programs produce output-level deliverables that can be assessed for public goods qualifying criteria. |
@@ -126,3 +133,5 @@ License: CC0
 | Version | Date | Summary |
 |---|---|---|
 | 0.1.0 | 2026-05-18 | Initial draft. Pillar II frame established for Web3 public goods. CROSS field mapping to TOSSD required fields. IATI bridge pathway documented. Sector code and SDG alignment guidance. Adoption guidance for Pillar II programs. |
+| 0.1.1 | 2026-05-23 | Retroactive lens tagging: added calibration_tier, authority_source, cultural_methodological_lineage, funder_typology, framework_scope_type per Lenses Framework v0.1.0. |
+| 0.1.2 | 2026-06-08 | Frame Language own-voice pass applied as part of the corpus-wide 2026-06-08 sweep: own-voice watchlist terms (govern-family, accountability, mandatory, compliance, enforce, legitimate) recast to conformance and obligation vocabulary where they appeared in this document's own voice; citation use of source-framework terms preserved. Primitive-rename references aligned to current canon (Continuity Capacity, the Collective disbursement state, Affected Population Verification Gate). Em-dash- and watchlist-clean re-verified. No compatibility finding or mapping changed; vocabulary only. |

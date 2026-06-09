@@ -1,15 +1,22 @@
 ---
 title: CROSS Skill
-version: 0.6.0
-date: 2026-05-22
-status: Procedural encoding of CROSS v0.4.7 for AI-assisted grant evaluation and configuration.
+version: 0.5.3
+date: 2026-06-05
+status: Procedural encoding of CROSS v0.5.0 for AI-assisted grant evaluation and configuration. Aligned to Primitives Foundation v0.1.6 (50 primitives), Evolution Rules v0.1.2 (6 design commitments), Lenses Framework v0.1.0, Gap Map v0.1.4, Partial Coverage Map v0.1.1, Frame Language Replacement Table v0.1.0.
 related_documents:
-  - standards/CROSS-common-reporting-outcome-standards-schema-0_2_0.md
+  - standards/CROSS-common-reporting-outcome-standards-schema-0_5_0.md
   - standards/CROSS-grant-configurator-0_2_0.md
-  - standards/CROSS-canonical-round-configuration-schema-0_1_0.md
   - standards/CROSS-grantee-dashboard-0_2_0.md
   - standards/CROSS-reviewers-dashboard-0_1_0.md
   - standards/CROSS-runbooks-0_1_0.md
+  - CROSS-WALKRI-primitives-foundation-0_1_0.md (v0.1.6)
+  - CROSS-WALKRI-evolution-rules-and-design-commitments-0_1_0.md (v0.1.2)
+  - CROSS-WALKRI-frame-language-replacement-table-0_1_0.md (v0.1.0)
+  - CROSS-WALKRI-lenses-framework-0_1_0.md (v0.1.0)
+  - CROSS-WALKRI-research-extraction-plan-0_1_0.md (v0.1.0)
+  - CROSS-WALKRI-extraction-inventory-registry-0_1_0.md (v0.1.0)
+  - statements/meta/CROSS-WALKRI-coverage-gap-map-0_1_0.md (v0.1.4)
+  - statements/meta/CROSS-WALKRI-partial-coverage-map-0_1_0.md (v0.1.1)
 ---
 
 # CROSS Skill
@@ -56,19 +63,17 @@ When given an evaluation task, identify which operation is requested and run the
 
 18. **Recommendation generation.** Run after completing a gate assessment and dimension evaluation. Returns one of three canonical recommendation terms. See Part XV below.
 
-19. **Funder obligation compliance check.** Run when evaluating whether a funder has met its CROSS obligations: publishing gate configurations, maintaining records, providing redress mechanisms. See Part XVI below.
+19. **Funder obligation conformance check.** Run when evaluating whether a funder has met its CROSS obligations: publishing gate configurations, maintaining records, providing redress mechanisms. See Part XVI below.
 
 20. **Privacy-sensitive accommodation assessment.** Run when an applicant claims a privacy-sensitive accommodation. See Part XVII below.
 
-21. **Novel runbook configuration selection.** Run when a program type does not match the six standard runbooks from CROSS-runbooks-0_1_0.md. Assess whether the program implements one of seven new structural primitives: inter-cycle reflection stage (Runbook 7), multi-cycle retrospective assessment (Runbook 8), threshold-scaled independence (Runbook 9), participatory indicator selection (Runbook 10), computational retroactive allocation (Runbook 11), portfolio benchmark (Runbook 12), or beneficiary accountability gate (Runbook 13). See CROSS-runbooks-0_2_0.md.
+21. **Novel runbook configuration selection.** Run when a program type does not match the six standard runbooks from CROSS-runbooks-0_1_0.md. Assess whether the program implements one of seven new structural primitives: inter-cycle reflection stage (Runbook 7), multi-cycle retrospective assessment (Runbook 8), threshold-scaled independence (Runbook 9), participatory indicator selection (Runbook 10), computational retroactive allocation (Runbook 11), portfolio benchmark (Runbook 12), or affected population verification gate (Runbook 13). See CROSS-runbooks-0_2_0.md.
 
-22. **Portfolio benchmark compliance assessment.** Run when a program operates Runbook 12 or when a funder has published portfolio-level performance thresholds. Assesses funder-side accountability against the published benchmark rather than only individual grantee gate outcomes. See Part XVI and CROSS-runbooks-0_2_0.md.
+22. **Portfolio benchmark conformance assessment.** Run when a program operates Runbook 12 or when a funder has published portfolio-level performance thresholds. Assesses funder-side obligation against the published benchmark rather than only individual grantee gate outcomes. See Part XVI and CROSS-runbooks-0_2_0.md.
 
-23. **Beneficiary accountability mechanism assessment.** Run when a program operates Runbook 13 or when program MEAL requirements include community feedback and complaint response. Confirms that the mechanism is specified before any beneficiary is enrolled. The mechanism must name what it can receive, how it operates, who is responsible, the response timeline, and what records are maintained. A mechanism that names a channel without these specifications is a label, not a mechanism.
+23. **Beneficiary feedback-and-response mechanism assessment.** Run when a program operates Runbook 13 or when program MEAL requirements include community feedback and complaint response. Confirms that the mechanism is specified before any affected-population member is enrolled. The mechanism must name what it can receive, how it operates, who is responsible, the response timeline, and what records are maintained. A mechanism that names a channel without these specifications is a label, not a mechanism.
 
-25. **Compound obligation entry gate assessment.** Run when the declared obligation mode is compound: a program-level Change claim with multiple Build components as the causal pathway. Confirm that a complete change specification is present at the program level and that each component carries a contribution_to_change statement. See Part III, Section D below.
-
-24. **Primitive classification for new frameworks.** Run when asked how a new external framework aligns with CROSS+WALKRI. Identify which measurement primitive the framework exemplifies using the CROSS-WALKRI-primitives-framework-index-0_1_0.md. Report whether a full compatibility statement is warranted (structurally novel exemplar) or a Tier 2 index entry suffices (existing primitive with existing exemplars). The ten primary primitives are: pre-specification/entry gate, obligation mode (Build/Change/Retroactive), Theory of Change hierarchy, causality stance, disaggregation ratchet, independent verification pathway, portfolio aggregation, organizational identity anchor, evidence form specification (WALKRI), and coherence disclosure. Candidate new primitives from v0.4.7 research: inter-cycle reflection stage, multi-cycle retrospective assessment, portfolio-level continuation benchmark applied to funder, beneficiary accountability mechanism, regulatory approval pathway as terminal gate.
+24. **Primitive classification for new frameworks.** Run when asked how a new external framework aligns with CROSS+WALKRI. Identify which measurement primitive the framework exemplifies using the CROSS-WALKRI-primitives-framework-index-0_1_0.md. Report whether a full compatibility statement is warranted (structurally novel exemplar) or a Tier 2 index entry suffices (existing primitive with existing exemplars). The ten primary primitives are: pre-specification/entry gate, obligation mode (Build/Change/Retroactive), Theory of Change hierarchy, causality stance, disaggregation ratchet, independent verification pathway, portfolio aggregation, organizational identity anchor, evidence form specification (WALKRI), and coherence disclosure. Candidate new primitives from v0.4.7 research: inter-cycle reflection stage, multi-cycle retrospective assessment, portfolio-level continuation benchmark applied to funder, affected population verification mechanism, regulatory approval pathway as terminal gate.
 
 25. **Public benefit mechanism and access condition assessment.** Run as a pre-condition at all entry gates, alongside organizational identity and sufficiency architecture declarations. Classifies the declared mechanism type and confirms the access condition is stated with mechanism-appropriate specificity. See Part IVa below.
 
@@ -84,11 +89,13 @@ CROSS specifies what funded interventions are obligated to produce. It provides 
 
 CROSS is not a process standard. It does not specify how rounds are structured, how funds are distributed, or how round administration decisions are made. CROSS specifies the content of obligation: what applicants must demonstrate, what funders must evaluate, and what grantees must report.
 
+**CRAFT inheritance.** CROSS is a domain application of CRAFT (Chains Reveal Attested Falsifiable Truth), the meta-standard for evaluation chain legibility. CROSS inherits CRAFT's six conditions and adds the grant-domain requirements this skill encodes; the inheritance is structural, so a program operating CROSS satisfies CRAFT's conditions for its grant evaluations without separately implementing CRAFT. The full inheritance is declared in the CRAFT inheritance receipt at Part XIII of the CROSS standard: which CRAFT condition each CROSS part realizes, which Coordination Structural Integrity Suite standards CROSS rests on, and the declared inheritance gaps. When asked whether CROSS conforms to CRAFT, route to that receipt rather than re-deriving the mapping.
+
 **Suite standard references.** CROSS inherits requirements from four companion standards. When evaluating conformance, apply these inherited requirements:
 
 - Adverse-Signal Engagement Principle Core Standard: applicants must surface adverse signals (prior rejections from similar programs, contradictory technical findings, negative due diligence from other funders). Reviewers must not suppress adverse signals found during evaluation.
 - Information Asymmetry Classification Standard: undisclosed concurrent funding is an omission asymmetry. The concurrent funding disclosure requirement instantiates this standard's omission class in the grant application context.
-- Precision-First Design Standard: the double-negation invariant applies. Documentation requirements must not be so light that obligation is absent, and must not be so heavy that legitimate small-team applicants are excluded.
+- Precision-First Design Standard: the double-negation invariant applies. Documentation requirements must not be so light that obligation is absent, and must not be so heavy that genuine small-team applicants are excluded.
 - Coordination Scaling Standard: calibrates the rigor tier. Determined by scale indicators (funding amount, population claim scope), not by gate passage alone.
 
 The Regenerative Obligation Standard and CROSS are structurally paired but independent. Regenerative Obligation Standard addresses direction; CROSS addresses destination. Run both evaluations independently when both apply; do not merge them.
@@ -125,7 +132,7 @@ CROSS specifies multiple independent obligation dimensions. Each dimension has i
 
 **Trigger:** Any grant, investment, or revenue source related to the scope of the application in the prior 24 months. For retroactive rounds: also includes any prior award for the same or overlapping contribution.
 
-**Active requirements:** Disclosure of all related sources. Required fields: source name, source type, approximate amount, relationship to scope, ongoing obligations, governance rights.
+**Active requirements:** Disclosure of all related sources. Required fields: source name, source type, approximate amount, relationship to scope, ongoing obligations, decision rights.
 
 **Critical rule:** Non-disclosure is a disqualifier. Disclosure does not disqualify.
 
@@ -151,9 +158,11 @@ CROSS specifies multiple independent obligation dimensions. Each dimension has i
 
 **Active requirements (build obligation, if activated):** At least one named party outside the applicant's organization has confirmed the need for the deliverable.
 
+**Risk-bearer floor (all rounds where eligibility rests on serving a defined population):** The served population, the people a funded intervention is meant to serve, is a risk-bearer of the round's evaluation alongside the applicant and the funder. Name it as such and carry it through every gate, not only at entry validation. Each gate determination must account for the served population's exposure. At the completion verification gate, the determination and the unintended outcomes disclosure additionally consider exposure the round has not surfaced: work recorded as delivered that does not reach the population, or effects on the population the declared indicators do not capture. The determination record must show this consideration was applied, not only that the population was named at entry. The floor does not require a standing channel through which the population raises concerns during the grant period; that channel is the separate rich build (Runbook 13, the affected population verification gate), a funder configuration, not the floor.
+
 ### Dimension 8: Privacy and Data Sensitivity
 
-**Trigger:** The beneficiary population faces elevated risk from standard outcome measurement.
+**Trigger:** The affected population faces elevated risk from standard outcome measurement.
 
 **Active requirements:** Privacy-preserving measurement methodologies in lieu of standard analytics. Not an exemption from obligation; specifies which mechanisms are appropriate. See Part XVII.
 
@@ -261,32 +270,6 @@ Gate fails: "Entry specification gate fails: [describe which element is absent: 
 
 ---
 
-### Section D: Compound Obligation Entry Gate
-
-**The gate question:** Does the application present (1) a program-level Change specification that would pass the Change obligation entry gate, and (2) component-level Build specifications, each carrying a contribution_to_change statement explaining how that component's deliverable advances the causal chain toward the program-level Change?
-
-**What must be present:** A complete change_specification block at the program level: FROM state with source, TO state in the same units as FROM, named indicator with operational definition, causal mechanism with explicit assumptions, evidence threshold, evaluation timeline. A components array with at least two components. Each component must carry: a named deliverable, completion criteria specific enough for independent verification, and a contribution_to_change statement.
-
-**Pass criteria:** The program-level Change specification passes the Section B gate. Each component passes the Section A gate independently. Each component's contribution_to_change statement makes a specific causal claim, not a general connection to program goals.
-
-**Critical rule:** Completing all Build components does not automatically constitute achieving the program-level Change. The two evaluation tracks are separate. A compound grant that completes all Build components but does not produce the specified Change has met its Build obligations and failed its Change obligation. These are distinct findings and must be reported separately.
-
-**Fail criteria:**
-
-- Program-level Change specification fails the Section B gate: classify the failure using the FROM state classifications above.
-- Any component fails the Section A gate: "Component [name] entry specification gate fails: [failure description]."
-- A component's contribution_to_change statement does not make a specific causal claim: "Component [name] contribution_to_change is generic. The statement connects the deliverable to the program goal but does not state the mechanism by which the deliverable advances the causal chain."
-
-**Gate finding options:**
-
-Gate passes: "Compound entry specification gate passes: program-level Change specification [summary]; [N] components with passing deliverable specifications and contribution_to_change statements."
-
-Gate fails (program level): "Compound entry specification gate fails at program level: [Change obligation failure description]."
-
-Gate fails (component level): "Compound entry specification gate passes at program level. Component [name] fails: [Build obligation failure description]."
-
----
-
 ## Part IV: Organizational Identity Declaration Procedure
 
 The organizational identity declaration is a pre-condition for gate assessment at all entry gates, across all three obligation modes. It is not a scored criterion. An entry gate submission that does not include the organizational identity declaration is incomplete and is not assessed until the declaration is provided.
@@ -299,9 +282,9 @@ The four required fields derive from the Entity Boundary primitive (CROSS+WALKRI
 
 **What does not satisfy this field:** A project name, display name, or GitHub organization name, unless it is also the legal name.
 
-**Where no legal entity exists:** The applicant must state this explicitly and name the individual who assumes personal accountability for the obligation.
+**Where no legal entity exists:** The applicant must state this explicitly and name the individual who is personally bound to the obligation.
 
-**Assessment procedure:** Verify that the name provided is a legal name or that the applicant has explicitly declared no legal entity exists and named an accountable individual. A display name without the explicit no-legal-entity declaration does not satisfy this field.
+**Assessment procedure:** Verify that the name provided is a legal name or that the applicant has explicitly declared no legal entity exists and named a responsible individual. A display name without the explicit no-legal-entity declaration does not satisfy this field.
 
 ### Field 2: Parent Organization Declaration
 
@@ -347,11 +330,29 @@ The four required fields derive from the Entity Boundary primitive (CROSS+WALKRI
 
 **What is required:** Who receives and deploys the grant funds, in one of three states:
 
-- Individual: a named natural person who assumes personal accountability for fund deployment. Requires: full legal name, jurisdiction, and a statement of how deployment decisions will be made.
-- Governed: an organization or on-chain entity with a governance mechanism that authorizes fund deployment. Requires: the name of the entity, a description of the governance mechanism, and confirmation that the mechanism is documented and independently verifiable.
+- Individual: a named natural person who assumes personal responsibility for fund deployment. Requires: full legal name, jurisdiction, and a statement of how deployment decisions will be made.
+- Collective: an organization or on-chain entity with a decision-standing mechanism that authorizes fund deployment. Requires: the name of the entity, a description of the decision-standing mechanism, and confirmation that the mechanism is documented and independently verifiable.
 - Delegated: funds are received by one entity and partially or fully deployed by another entity. Requires: the identity of both the receiving entity and the deploying entity, the terms of the delegation, and whether the delegation is formally documented.
 
 **Assessment procedure:** Verify that the named entity or individual matches the organizational identity declaration (Field 1). A mismatch between the legal entity name in Field 1 and the entity receiving funds in Field 5 requires explicit reconciliation. The delegation state is not a disqualifier; undisclosed delegation is.
+
+### Field 6: On-Chain Identity Anchor
+
+**What is required:** The canonical wallet address by which the applying entity is identifiable across blockchain programs and grant databases. For entities with prior blockchain grant history, this is the address registered in those programs; for entities without it, the address that will serve as the identity root for this program's records. (Derived from the On-chain Identity Anchor primitive, CROSS+WALKRI Primitives Foundation, Layer 2.)
+
+**Relationship to disbursement authority:** The on-chain identity anchor is not a fund-receipt address unless it also serves as the disbursement authority (Field 5). Where the anchor and the disbursement authority are the same address, the applicant must state this explicitly.
+
+**Critical rule:** Non-disclosure of an on-chain address that is publicly associated with the applicant's identity in any grant database is a conformance failure, equivalent to non-disclosure in the affiliated entity field (Field 3).
+
+**Assessment procedure:** Use the anchor to perform cross-program identity matching and the Attestation Corpus query below. Where a publicly associated on-chain address is found that the applicant did not disclose, treat it as a material non-disclosure.
+
+### Attestation Corpus Query (Funder-Side)
+
+**Activation:** For each application that provides an on-chain identity anchor (Field 6). This is a funder-side procedure, not an applicant submission requirement. (Derived from the Attestation Corpus primitive, Layer 4, and the On-chain Identity Anchor primitive, Layer 2.)
+
+**Procedure:** Query the Attestation Corpus for the anchor address across named public sources before completing gate assessment: on-chain attestation registries (Ethereum Attestation Service deployments on Ethereum mainnet, Optimism, Base, and Arbitrum at minimum), the KarmaGAP grants and milestone interface, and any program-specific grant databases the round configuration names. Record total non-revoked attestations, attestations by known schema (KarmaGAP, RPGF, Gitcoin, and other named programs), and endorsement count and endorser identities where resolvable.
+
+**Critical rule:** Where the Attestation Corpus reveals prior grants, milestones, or obligations not disclosed in the applicant's Obligation Fulfillment Record, treat it as non-disclosure of a prior obligation and a material discrepancy under the adverse signal provisions.
 
 ---
 
@@ -369,7 +370,7 @@ Classify the applicant's declared mechanism into one of four types:
 
 **Condition change:** The public benefit is a measurable change in an external condition for a defined population. The mechanism is the intervention that produces the change. The access condition is the evidence required to verify the condition changed and that the claimed population experienced it.
 
-**Ecosystem shift:** The public benefit is a structural change in how a system, protocol, or practice operates, affecting multiple downstream participants. The mechanism is the protocol change, governance change, or standard adoption. The access condition specifies what triggers the shift and who is bound by or benefits from it.
+**Ecosystem shift:** The public benefit is a structural change in how a system, protocol, or practice operates, affecting multiple downstream participants. The mechanism is the protocol change, decision-rule change, or standard adoption. The access condition specifies what triggers the shift and who is bound by or benefits from it.
 
 ### Mechanism-Evidence Scope Alignment
 
@@ -395,7 +396,7 @@ Fail: "Public benefit mechanism declaration absent / access condition missing / 
 
 ---
 
-## Part IVb: Revenue Architecture, Governance Resilience, and Development Stage Procedures
+## Part IVb: Revenue Architecture, Continuity Capacity, and Development Stage Procedures
 
 These three procedures apply at entry gate. Each produces a classification that feeds into the additionality declaration assessment (Part XII) and the gate evidence configuration.
 
@@ -412,15 +413,15 @@ Classify the applicant's revenue architecture into one of four types:
 
 **Assessment procedure:** Search for: active token contracts (governance or utility), service agreements mentioned in the application, product pricing pages, treasury disclosures, prior round history showing commercial revenue, and any VC or institutional investment. Classification into grant-only when commercial signals exist is a material classification error.
 
-### Governance Resilience Check
+### Continuity Capacity Check
 
-Classify the applicant's governance resilience into one of three states:
+Classify the applicant's continuity capacity into one of three states:
 
 - Single: all material decisions (fund deployment, roadmap, publication) reside with one natural person, and that person is not substitutable within the grant period without a material change to the project.
 - Partial: multiple contributors exist but one person holds veto or exclusive control over the primary deliverable. The project would survive the loss of a secondary contributor but not the primary.
-- Resilient: no single person can unilaterally block delivery or fund deployment. At least two contributors have both the access and the mandate to continue the project independently.
+- Resilient: no single person can unilaterally block delivery or fund deployment. At least two contributors have both the access and the authority to continue the project independently.
 
-**How it affects assessment:** Single-contributor governance is not a gate failure but it is a risk factor that surfaces in the recommendation. At the "Fund with conditions" finding, single-contributor risk is a standard condition to name. At the "Do not fund" threshold, single-contributor governance combined with an unfulfilled prior obligation record elevates the adverse signal weight.
+**How it affects assessment:** Single-contributor continuity is not a gate failure but it is a risk factor that surfaces in the recommendation. At the "Fund with conditions" finding, single-contributor risk is a standard condition to name. At the "Do not fund" threshold, single-contributor continuity combined with an unfulfilled prior obligation record elevates the adverse signal weight.
 
 ### Development Stage Classification
 
@@ -493,7 +494,7 @@ For each piece of prior work cited, three questions must be answered:
 
 Under which legal entity or organizational context was the cited work performed?
 
-If the work was performed as an employee, contractor, or contributor to an organization that is not the applying entity, that organization must be named. If the work was performed under the applying entity's own resources and governance, that must be stated explicitly.
+If the work was performed as an employee, contractor, or contributor to an organization that is not the applying entity, that organization must be named. If the work was performed under the applying entity's own resources and control, that must be stated explicitly.
 
 **Assessment:** Verify that the entity named is specific. "Personal project" without a legal entity declaration, or silence on the organizational context, does not satisfy this question.
 
@@ -511,7 +512,7 @@ If the applying entity does not hold the IP, does not control the deployment, or
 
 **Critical rule:** A claim of prior contribution to a project does not confer the right to represent that project's user base or codebase as the applicant's own in a continuation or retroactive funding application.
 
-**Adverse signal implication:** An applicant who cannot truthfully complete the attribution statement for their cited prior work has surfaced a misrepresentation in the core evidential basis of their application. An application whose track record is built on work performed under a different entity, without that entity's knowledge or endorsement of the application, is claiming accountability for outcomes the applicant did not control and cannot warrant continuing. Treat this as an active adverse signal requiring disclosure and clarification before the gate assessment proceeds.
+**Adverse signal implication:** An applicant who cannot truthfully complete the attribution statement for their cited prior work has surfaced a misrepresentation in the core evidential basis of their application. An application whose track record is built on work performed under a different entity, without that entity's knowledge or endorsement of the application, is claiming to be answerable for outcomes the applicant did not control and cannot warrant continuing. Treat this as an active adverse signal requiring disclosure and clarification before the gate assessment proceeds.
 
 ---
 
@@ -529,7 +530,7 @@ The operational definition field must meet WALKRI requirements for inclusion cri
 
 ### Field 2: Rationale for Indicator
 
-**Mandatory. No waiver.** An indicator set with no rationale field passes no other field assessment until this one is complete.
+**Required. No waiver.** An indicator set with no rationale field passes no other field assessment until this one is complete.
 
 **Pass:** Names at least one alternative indicator considered and rejected, with a specific reason. Or names a methodological constraint making this the only feasible indicator.
 
@@ -642,31 +643,31 @@ For interventions where the primary deliverable is a smart contract, protocol, o
 
 **Failure surface:** At least one example of behavior that would constitute a failure to meet the invariant, and how such a failure would be detected by the chosen instrument.
 
-**Assessment rule:** Indicators that rely solely on applicant-controlled test suites or private monitoring dashboards, without any independent verification instrument, fail the integrity standard. They may appear as supplementary evidence but do not satisfy the minimum verification requirement at the completion gate for contract-centric deliverables.
+**Assessment rule:** Indicators that rely solely on applicant-controlled test suites or private monitoring dashboards, without any independent verification instrument, fail the data quality standard. They may appear as supplementary evidence but do not satisfy the minimum verification requirement at the completion gate for contract-centric deliverables.
 
 ### Field Clustering Rules
 
-Apply after completing the 11-field assessment. Each trigger independently activates additional mandatory fields.
+Apply after completing the 11-field assessment. Each trigger independently activates additional required fields.
 
-**If measurement form = composite/multi-component:** Component indicators, weightings, and aggregation rule become mandatory.
+**If measurement form = composite/multi-component:** Component indicators, weightings, and aggregation rule become required.
 
-**If privacy-sensitive accommodation is invoked (Part XVII):** Specific harm field and alternative methodology field become mandatory.
+**If privacy-sensitive accommodation is invoked (Part XVII):** Specific harm field and alternative methodology field become required.
 
-**If any venture capital or institutional investment is disclosed in Dimension 4:** Investor name, governance rights, and scope relationship fields become mandatory.
+**If any venture capital or institutional investment is disclosed in Dimension 4:** Investor name, decision rights, and scope relationship fields become required.
 
-**If Dimension 9 is active:** A/B/C classification is mandatory.
+**If Dimension 9 is active:** A/B/C classification is required.
 
-**If progress verification gates are configured:** Milestone or progress specification fields become mandatory for each tranche gate.
+**If progress verification gates are configured:** Milestone or progress specification fields become required for each tranche gate.
 
-**If Dimension 11 is active AND sub-contracting exceeds 20% of the award:** Sub-contractor disclosure fields are mandatory.
+**If Dimension 11 is active AND sub-contracting exceeds 20% of the award:** Sub-contractor disclosure fields are required.
 
-**If retroactive round:** Prior award disclosure is mandatory (all prior awards for the same or overlapping contribution).
+**If retroactive round:** Prior award disclosure is required (all prior awards for the same or overlapping contribution).
 
 ---
 
 ## Part VIII: Conflict of Interest Tier Classification
 
-**Governing standard:** The reasonable third-party test. A conflict of interest finding is warranted when a reasonable third party, examining the relationship, would question the objectivity of the reviewer or the independence of the applicant.
+**Applicable standard:** The reasonable third-party test. A conflict of interest finding is warranted when a reasonable third party, examining the relationship, would question the objectivity of the reviewer or the independence of the applicant.
 
 **Process requirements:** Pre-review declaration submitted to the named receiving function before any application is opened. Post-review certification after assessment. Bidirectionality: reviewers disclose to applicants, applicants disclose to reviewers and committee.
 
@@ -681,7 +682,7 @@ Apply the following in order. Stop at the first tier that applies.
 - Prior funded work in the same area from the same funder, where the reviewer's funded work is directly related to the applicant's scope.
 - Named on the applicant project's public materials (compensated or not, including advisory roles listed publicly).
 
-**Attestation integrity provision:** A Tier 1-conflicted party may not serve as the independent reviewer or sign an attestation confirming that applicant's gate evidence, regardless of the attestation format used. A Tier 1-conflicted party who signs an on-chain attestation, issues a signed document, or issues a credential confirming milestone completion has not satisfied the independent review requirement; the attestation does not meet the evidence strength standard regardless of its format.
+**Attestation independence provision:** A Tier 1-conflicted party may not serve as the independent reviewer or sign an attestation confirming that applicant's gate evidence, regardless of the attestation format used. A Tier 1-conflicted party who signs an on-chain attestation, issues a signed document, or issues a credential confirming milestone completion has not satisfied the independent review requirement; the attestation does not meet the evidence strength standard regardless of its format.
 
 **Tier 2 (disclosure required, qualified waiver possible):**
 
@@ -720,6 +721,14 @@ Where the consulting arrangement constitutes the primary mechanism through which
 - Core contributor or unpaid advisory status listed on public materials: Tier 1.
 - Investment from the same named investor: Tier 2.
 - Decentralized autonomous organization co-governance roles: Tier 2 or Tier 3 depending on nature.
+
+### Cohort Position Assessment (Round-Level Procedure)
+
+**Activation:** Before final gate determinations are issued for a round, performed across all applicants. (Derived from the Cohort Position primitive, CROSS+WALKRI Primitives Foundation, Layer 7.)
+
+**Procedure:** Check three overlaps across the round's applicants. Personnel overlap: whether any named team member, contact, or key contributor in one application also appears in another application under a different entity name. Wallet overlap: whether any on-chain identity anchor or disbursement authority address in one application appears as a recipient, controller, or named address in another. Endorser concentration: whether the same identifiable party has endorsed or attested to a disproportionate share of applicants using non-standard schemas.
+
+**Findings:** Personnel overlap does not disqualify either application; it triggers a Tier 2 conflict-of-interest disclosure for the overlapping individual. Wallet overlap requires explanation: the same address across multiple distinct legal entities applying separately is a material discrepancy requiring reconciliation before disbursement. Endorser concentration is informational and is recorded in the round record without disqualifying effect.
 
 ---
 
@@ -773,8 +782,6 @@ Apply the five WALKRI data quality standards in order to any indicator claim or 
 
 Run when a funder wants to generate a round specification. Ask questions in the following order. Compile the output into a round configuration document after all questions are answered.
 
-The Grant Configurator produces the Commit stage output of the CLEAR lifecycle (Commit, List, Evaluate, Attest, Register). The Commit stage output is a machine-readable round specification published before any application opens. It is the authoritative coordination instrument for that round: applicants interact with the round specification, not with the CROSS standard directly. The canonical format for this output is specified in CROSS-canonical-round-configuration-schema-0_1_0.md. Publishing the round specification in this format enables grantees to import it into Theory of Change tools and receive structured guidance toward a conformant application.
-
 Before publishing any round, verify that these pre-publication requirements are met: (1) a plain-language applicant-facing summary of the round's requirements is published before the round opens and remains publicly accessible for the full duration; (2) the full application question list is published before the round opens, publicly accessible without creating an account or contacting the funder, showing every question in order with the response form type and the criterion intent for each question; (3) all gate criteria meet WALKRI criterion specification requirements at Standard certification level or above before the round opens.
 
 **Q0: Program type and runbook selection.**
@@ -783,7 +790,7 @@ Does this program match any of the thirteen runbook configurations across CROSS-
 
 Original six (0_1_0): Discovery Sprint, Staged Development, Community Allocation with Build Obligation, Retroactive Impact, Graduated Evidence, Institutional Conformance.
 
-New seven (0_2_0): Adaptive Learning Cycle (inter-cycle reflection stage), Multi-Cycle Retrospective Program (multi-cycle retrospective assessment), Threshold-Scaled Independence (threshold-based independent evaluation), Participatory Indicator Selection (indicator menu with confirmation gate), Computational Retroactive Allocation (formula-based allocation with impact chain declaration), Portfolio Benchmark Program (funder-side portfolio accountability), Beneficiary Accountability Gate (community feedback mechanism as gate element).
+New seven (0_2_0): Adaptive Learning Cycle (inter-cycle reflection stage), Multi-Cycle Retrospective Program (multi-cycle retrospective assessment), Threshold-Scaled Independence (threshold-based independent evaluation), Participatory Indicator Selection (indicator menu with confirmation gate), Computational Retroactive Allocation (formula-based allocation with impact chain declaration), Portfolio Benchmark Program (funder-side portfolio obligation), Affected Population Verification Gate (community feedback mechanism as gate element).
 
 If yes, load the matching runbook as the starting configuration and surface its default gate configuration. Multiple runbooks may be combined per the combining guidance in CROSS-runbooks-0_2_0.md. If no match, proceed through the full sequence.
 
@@ -793,11 +800,9 @@ For program type bundle context: the ten program type bundles in the bundles/ di
 
 Round name, funding organization, opening date, closing date, stage number (if multi-stage), named conflict of interest receiving authority.
 
-**Q2: Accountability mode and program structure.**
+**Q2: Obligation mode and program structure.**
 
-Which obligation mode: build / change / retroactive / compound / multi-stage with different modes per stage? For retroactive rounds: is a forward commitment requirement configured?
-
-For compound rounds: the program declares a program-level Change obligation and a set of Build component obligations whose completion forms the causal pathway toward the Change. The canonical round configuration must carry both a complete change_specification block and a components array. Each component must carry a contribution_to_change statement. See Section D of Part III for the compound entry gate procedure.
+Which obligation mode: build / change / retroactive / multi-stage with different modes per stage? For retroactive rounds: is a forward commitment requirement configured?
 
 **Q3: Eligibility domain.**
 
@@ -833,9 +838,9 @@ Any indicators required of all applicants? If yes, provide the full measurement 
 
 **Q11: Round-level gate configuration.**
 
-For each active gate: evidence scope (output / usage / outcome / impact), evidence strength (self-report with documentation / third-party verifiable / independent review / independent evaluation), causality stance (attribution or contribution), infrastructure declaration if at independent review level or above. For build-obligation completion gates: confirm that the public accessibility requirement is active (mandatory; cannot be configured out). For retroactive rounds: publish the assessment rubric and name the review panel.
+For each active gate: evidence scope (output / usage / outcome / impact), evidence strength (self-report with documentation / third-party verifiable / independent review / independent evaluation), causality stance (attribution or contribution), infrastructure declaration if at independent review level or above. For build-obligation completion gates: confirm that the public accessibility requirement is active (required; cannot be configured out). For retroactive rounds: publish the assessment rubric and name the review panel.
 
-For gates configured at independent review level or above: confirm that reviewer calibration is included in the infrastructure declaration. The calibration exercise must present reviewers with the published gate criteria, criterion intents, and compliance thresholds, and must include at least two worked examples (one passing, one failing) with documented assessments. Inter-rater consistency must be checked for multi-institution review panels before live applications are assessed.
+For gates configured at independent review level or above: confirm that reviewer calibration is included in the infrastructure declaration. The calibration exercise must present reviewers with the published gate criteria, criterion intents, and conformance thresholds, and must include at least two worked examples (one passing, one failing) with documented assessments. Inter-rater consistency must be checked for multi-institution review panels before live applications are assessed.
 
 **Q12: Reporting frequency.**
 
@@ -843,7 +848,7 @@ How often must grantees report? Options: monthly, quarterly, semi-annual, milest
 
 **Q13: Pre-award indicator confirmation window.**
 
-Is a pre-award indicator confirmation window configured? If yes, specify the window duration. Confirm the funder understands the silence-as-confirmation rule: failure to respond within the window constitutes written confirmation; the confirmed indicator specification governs all subsequent gate assessments.
+Is a pre-award indicator confirmation window configured? If yes, specify the window duration. Confirm the funder understands the silence-as-confirmation rule: failure to respond within the window constitutes written confirmation; the confirmed indicator specification binds all subsequent gate assessments.
 
 **Q14: Concurrent funding presence and Part VI-A activation.**
 
@@ -851,11 +856,11 @@ Does the program anticipate concurrent funding disclosures? If yes, confirm that
 
 **Q15: External standard references.**
 
-For any gate that references an external standard: confirm that the reference includes the identifier, version anchor, scope, and compliance threshold. A reference without a compliance threshold delegates interpretation to reviewers and is a gate criterion specification failure.
+For any gate that references an external standard: confirm that the reference includes the identifier, version anchor, scope, and conformance threshold. A reference without a conformance threshold delegates interpretation to reviewers and is a gate criterion specification failure.
 
-**Q16: Round specification pre-commitment and canonical format.**
+**Q16: Round specification pre-commitment.**
 
-Will the program publish a verifiable commitment to the round specification before the application window opens? The canonical format for this commitment is specified in CROSS-canonical-round-configuration-schema-0_1_0.md. Publishing in this format enables grantees to import the specification into Theory of Change tools and receive structured guidance toward a conformant application. A pre-commitment record is also the evidentiary basis for applicant redress rights in procedural appeals alleging criteria changed after submission.
+Will the program publish a verifiable commitment to the round specification before the application window opens? Explain the benefit: a pre-commitment record is the evidentiary basis for applicant redress rights in procedural appeals alleging criteria changed after submission.
 
 ---
 
@@ -875,7 +880,7 @@ From the round specification, confirm: (a) the obligation mode; (b) the evidence
 
 ### Pre-Award Indicator Confirmation
 
-Where a pre-award indicator confirmation window was configured: confirm whether written confirmation of the indicator specification was issued. If yes, the confirmed specification governs this gate assessment; the funder may not impose requirements at the completion gate that were not visible in the confirmed specification. If the window elapsed without response, silence constitutes confirmation.
+Where a pre-award indicator confirmation window was configured: confirm whether written confirmation of the indicator specification was issued. If yes, the confirmed specification binds this gate assessment; the funder may not impose requirements at the completion gate that were not visible in the confirmed specification. If the window elapsed without response, silence constitutes confirmation.
 
 ### Evidence Scope Assessment
 
@@ -885,7 +890,7 @@ Where a pre-award indicator confirmation window was configured: confirm whether 
 
 **Outcome evidence:** Has a measurable change occurred in the specified population, documented against the baseline established at entry? Is the data current to the reporting period?
 
-**Impact evidence:** Is a credible causal link established between the funded work and the measured change, through methodology sufficient to support causal inference?
+**Impact evidence:** Is a supportable causal link established between the funded work and the measured change, through methodology sufficient to support causal inference?
 
 ### Evidence Strength Assessment
 
@@ -1037,9 +1042,9 @@ Configure the following registers, each with unique identifiers:
 
 **Long-term outcomes register (1-4 entries):** Each with a plain-language description and its relationship to the Goal. Long-term outcomes persist after the program's active intervention period ends. Attribution of any single project to a long-term outcome is an argued contribution, not a directly measured one. Evidence at long-term outcome level is appropriate for program-level evaluation, not for individual project completion verification.
 
-**Intermediate outcomes register:** Each with a plain-language description and its declared relationship to one or more long-term outcomes. The primary accountability level for most institutional funders operating within a multi-year program. Typically measurable within the program time horizon but not within a single project cycle.
+**Intermediate outcomes register:** Each with a plain-language description and its declared relationship to one or more long-term outcomes. The primary reporting level for most institutional funders operating within a multi-year program. Typically measurable within the program time horizon but not within a single project cycle.
 
-**Short-term outcomes register:** Each with its declared relationship to one or more intermediate outcomes. The primary accountability level for individual project completion gates in change-obligation rounds. The highest outcome level at which a completion gate can reasonably require outcome evidence rather than output evidence.
+**Short-term outcomes register:** Each with its declared relationship to one or more intermediate outcomes. The primary verification level for individual project completion gates in change-obligation rounds. The highest outcome level at which a completion gate can reasonably require outcome evidence rather than output evidence.
 
 **Critical distinction:** A project claiming to produce an intermediate or long-term outcome at completion, without a declared short-term outcome as the measurable step in that direction, is making an attribution claim that exceeds what a single-cycle completion gate can verify.
 
@@ -1094,7 +1099,7 @@ CROSS's eleven-field indicator specification is a strict superset of IRIS+ indic
 
 ### DAOIP-5 (DAOstar/Metagov)
 
-CROSS round configurations are expressible as DAOIP-5 GrantPool objects. Gate evidence and grantee reports are expressible as DAOIP-5 Attestation objects. Format agnosticism principle governs the record format. Complete interoperability specification in Part IX-A of the standard.
+CROSS round configurations are expressible as DAOIP-5 GrantPool objects. Gate evidence and grantee reports are expressible as DAOIP-5 Attestation objects. Format agnosticism principle sets the record format. Complete interoperability specification in Part IX-A of the standard.
 
 ### US Federal Education Evidence Framework (ESSA / WWC / EIR)
 
@@ -1106,11 +1111,11 @@ All five frameworks exemplify the pre-specification primitive: indicator sets es
 
 ### US Federal Health Programs (SAMHSA NOMs, HRSA UDS, Ryan White, LIHEAP)
 
-All four exemplify the pre-specification and disaggregation ratchet primitives at the federal health program level. SAMHSA NOMs' client-level baseline interview is the entry specification gate and disaggregation ratchet applied to behavioral health. HRSA UDS's 16 mandatory clinical quality measures are the pre-specified Change obligation indicator set for Federally Qualified Health Centers. Ryan White HIV/AIDS RSR's eUCI longitudinal linking is the disaggregation ratchet at its most granular. LIHEAP's three statutory measures include the only US human services statutory measure explicitly encoding a counterfactual element (Measure 2: energy crisis prevention), mapping directly to CROSS's causality stance field.
+All four exemplify the pre-specification and disaggregation ratchet primitives at the federal health program level. SAMHSA NOMs' client-level baseline interview is the entry specification gate and disaggregation ratchet applied to behavioral health. HRSA UDS's 16 required clinical quality measures are the pre-specified Change obligation indicator set for Federally Qualified Health Centers. Ryan White HIV/AIDS RSR's eUCI longitudinal linking is the disaggregation ratchet at its most granular. LIHEAP's three statutory measures include the only US human services statutory measure explicitly encoding a counterfactual element (Measure 2: energy crisis prevention), mapping directly to CROSS's causality stance field.
 
 ### Environmental and Carbon Finance (IUCN NbS, Verra VCS, REDD+, Gold Standard, GCF/GEF)
 
-All exemplify the causality stance primitive with a mandatory counterfactual baseline. Verra VCS additionality is CROSS's additionality argument applied to carbon credits. REDD+ FREL/FRL is CROSS's counterfactual baseline at national scale. IUCN Global Standard for NbS Criterion 2's biodiversity benchmark maps to CROSS's baseline field and counterfactual specification. Gold Standard's mandatory dual-track reporting (GHG outcomes and SDG co-benefits) maps to CROSS's multi-dimensional outcome declaration capability.
+All exemplify the causality stance primitive with a required counterfactual baseline. Verra VCS additionality is CROSS's additionality argument applied to carbon credits. REDD+ FREL/FRL is CROSS's counterfactual baseline at national scale. IUCN Global Standard for NbS Criterion 2's biodiversity benchmark maps to CROSS's baseline field and counterfactual specification. Gold Standard's required dual-track reporting (GHG outcomes and SDG co-benefits) maps to CROSS's multi-dimensional outcome declaration capability.
 
 ### Islamic and Endowment-Based Giving (AAOIFI, IsDB)
 
@@ -1118,11 +1123,11 @@ AAOIFI Zakat Standard 35's eight eligible recipient categories are the most hist
 
 ### European Philanthropy (ESIF/CPR, EVPA, PHINEO IOOI)
 
-ESIF's EU added value criterion is a regulatory form of CROSS's additionality argument with no equivalent elsewhere: it requires programs to demonstrate what EU-level investment produces beyond what member states would have achieved without EU funding. ESIF's mandatory common indicator sets are the most formally codified pre-specified indicator sets in any regional grant system. PHINEO IOOI (Input-Output-Outcome-Impact) maps directly to CROSS's Theory of Change hierarchy.
+ESIF's EU added value criterion is a regulatory form of CROSS's additionality argument with no equivalent elsewhere: it requires programs to demonstrate what EU-level investment produces beyond what member states would have achieved without EU funding. ESIF's required common indicator sets are the most formally codified pre-specified indicator sets in any regional grant system. PHINEO IOOI (Input-Output-Outcome-Impact) maps directly to CROSS's Theory of Change hierarchy.
 
 ### Faith-Based Development (CRS ProPack, World Vision LEAP, USCCB/CCHD)
 
-CRS ProPack's five-step MEAL system design embedded in project design is the functional equivalent of CROSS's entry specification gate at the sub-award partner level. World Vision LEAP's Reflect stage introduces the inter-cycle reflection stage primitive (Runbook 7 in CROSS-runbooks-0_2_0.md), a named programme cycle stage sitting between the completion gate of one cycle and the entry gate of the next. USCCB/CCHD's faith-mission alignment criterion is a WALKRI compliance threshold requirement with no secular parallel.
+CRS ProPack's five-step MEAL system design embedded in project design is the functional equivalent of CROSS's entry specification gate at the sub-award partner level. World Vision LEAP's Reflect stage introduces the inter-cycle reflection stage primitive (Runbook 7 in CROSS-runbooks-0_2_0.md), a named programme cycle stage sitting between the completion gate of one cycle and the entry gate of the next. USCCB/CCHD's faith-mission alignment criterion is a WALKRI conformance threshold requirement with no secular parallel.
 
 ### Kellogg Logic Model
 
@@ -1135,7 +1140,7 @@ Four new structural primitives were identified during the v0.4.7 compatibility r
 - Inter-cycle reflection stage: a formally required stage between programme cycles for learning institutionalization. Runbook 7.
 - Multi-cycle retrospective assessment: a formal evaluation spanning all prior cycles in a multi-year grantee relationship. Runbook 8. Source: NED Cumulative Assessment Report.
 - Portfolio-level continuation benchmark applied to funder: a published performance threshold applied to the funder's full program portfolio. Runbook 12. Source: SBIR/STTR statutory benchmarks.
-- Beneficiary accountability mechanism as gate element: community feedback and complaint response required as formal gate elements, not optional MEAL add-ons. Runbook 13. Source: CRS ProPack, World Vision LEAP.
+- Beneficiary feedback-and-response mechanism as gate element: community feedback and complaint response required as formal gate elements, not optional MEAL add-ons. Runbook 13. Source: CRS ProPack, World Vision LEAP.
 
 ---
 
@@ -1151,7 +1156,7 @@ After completing the gate assessment and all active dimension evaluations, gener
 
 **Recommendation logic:**
 
-**Fund:** Entry specification gate passes. Organizational identity declaration and sufficiency architecture declaration are complete and conformant. All active mandatory dimensions meet requirements. No categorical conflict of interest bars. No undisclosed concurrent funding. No adverse signal suppression. Data quality standards met or proportionate to the rigor tier. All mode-specific requirements are complete.
+**Fund:** Entry specification gate passes. Organizational identity declaration and sufficiency architecture declaration are complete and conformant. All active required dimensions meet requirements. No categorical conflict of interest bars. No undisclosed concurrent funding. No adverse signal suppression. Data quality standards met or proportionate to the rigor tier. All mode-specific requirements are complete.
 
 **Fund with conditions:** The entry specification gate passes. One or more of the following apply: (a) rigor-tier requirements are partially met, with specific named gaps addressable before disbursement; (b) a Tier 2 conflict of interest relationship requires a waiver decision; (c) a specific indicator field is absent but can be supplied; (d) concurrent funding was disclosed but the scope relationship requires clarification; (e) the disbursement structure should be conditioned on milestone delivery or phased disbursement; (f) the organizational identity declaration or sufficiency architecture declaration has a curable gap. Conditions must be specific: not "improve the indicator set" but "supply a named, independently accessible source for Indicator 1 Field 8 before disbursement, verified by [named method]."
 
@@ -1172,7 +1177,7 @@ After completing the gate assessment and all active dimension evaluations, gener
 
 ---
 
-## Part XVI: Funder Obligation Compliance Check
+## Part XVI: Funder Obligation Conformance Check
 
 Run when evaluating whether a funder has met its CROSS obligations.
 
@@ -1206,34 +1211,34 @@ An independent redress mechanism is optional for CROSS conformance. Where a prog
 
 **Funder obligation violation:** Failure to publish the plain-language summary or question list before the round opens. Applying gate criteria inconsistently with the published configuration. Failure to provide written responses through the internal clarification mechanism. These do not automatically invalidate individual awards but create an obligation to remediate where affected applicants or grantees are identified.
 
-**Gate criterion specification failure:** A gate criterion that does not meet WALKRI criterion specification requirements before the round opens. A gate criterion referencing an external standard without a compliance threshold.
+**Gate criterion specification failure:** A gate criterion that does not meet WALKRI criterion specification requirements before the round opens. A gate criterion referencing an external standard without a conformance threshold.
 
 ---
 
 ## Part XVII: Privacy-Sensitive Accommodation
 
-The privacy-sensitive accommodation applies when standard outcome measurement would compromise the safety of the beneficiary population. It is not a general privacy preference. It does not exempt the applicant from obligation.
+The privacy-sensitive accommodation applies when standard outcome measurement would compromise the safety of the affected population. It is not a general privacy preference. It does not exempt the applicant from obligation.
 
 ### Qualification Criteria
 
-**Qualifies:** The beneficiary population faces documented risk from standard data collection methods: populations under state surveillance, populations where participation data could be used for criminalization, populations in active conflict zones where identity disclosure creates physical safety risks.
+**Qualifies:** The affected population faces documented risk from standard data collection methods: populations under state surveillance, populations where participation data could be used for criminalization, populations in active conflict zones where identity disclosure creates physical safety risks.
 
 **Does not qualify:** General organizational preference for privacy. Absence of analytics infrastructure. Discomfort with standard measurement.
 
 ### What the Accommodation Requires
 
-When the accommodation applies, two fields are mandatory (clustering rule trigger from Part VII):
+When the accommodation applies, two fields are required (clustering rule trigger from Part VII):
 
 1. **Specific harm:** A named, specific harm that standard measurement would create for this population. Not "privacy risk" in general; the specific mechanism (for example: "collection of user location data would create a database that could be subpoenaed under [named legal regime] and used to identify participants in [specific activity]").
 
 2. **Alternative methodology:** A specific alternative measurement approach that provides obligation direction without creating the named harm. Must name an institutional partner or established methodology (for example: Open Observatory of Network Interference-style network measurement, ethics-reviewed study under institutional review board protocols, differential privacy techniques applied to aggregate reporting).
 
-The accommodation substitutes one obligation mechanism for another. It does not reduce obligation. An applicant who invokes it without supplying both mandatory fields has claimed an exemption that does not exist in CROSS.
+The accommodation substitutes one obligation mechanism for another. It does not reduce obligation. An applicant who invokes it without supplying both required fields has claimed an exemption that does not exist in CROSS.
 
 ### Procedure
 
 1. Verify that the qualification criteria are met. If not, standard measurement requirements apply.
-2. If qualified, require both mandatory fields before proceeding to indicator assessment.
+2. If qualified, require both required fields before proceeding to indicator assessment.
 3. Assess the alternative methodology against the five data quality standards in Part IX. The standards apply to the alternative methodology, not to a lower threshold.
 
 ---
@@ -1290,7 +1295,7 @@ Before generating any finding or recommendation:
 
 1. Confirm that both the organizational identity declaration and the sufficiency architecture declaration are present for any entry gate assessment. If either is absent, the submission is incomplete; do not proceed to gate assessment.
 
-2. Confirm the obligation mode from the round specification: build, change, retroactive, or compound. Apply the correct gate procedure from Part III (Section A for build, Section B for change, Section C for retroactive, Section D for compound).
+2. Confirm the obligation mode from the round specification. Apply the correct gate procedure from Part III.
 
 3. Confirm which task is requested and apply the correct procedure in full. Do not abbreviate the procedure because the application appears simple.
 
@@ -1302,11 +1307,13 @@ Before generating any finding or recommendation:
 
 7. Do not substitute the gate assessment for the rigor tier assessment, or the rigor tier assessment for the gate. They are sequential, not interchangeable.
 
-8. Do not apply change-obligation gate criteria to build-obligation applications, and do not apply build-obligation criteria to compound applications. The Theory of Build is not a failure mode in build-obligation rounds. For compound rounds, the program-level Change assessment and the component-level Build assessments are separate procedures; do not merge them.
+8. Do not apply change-obligation gate criteria to build-obligation applications. The Theory of Build is not a failure mode in build-obligation rounds.
 
 9. Apply the causality stance declared in the gate configuration. Do not default to attribution stance when contribution stance is appropriate to the program context.
 
 10. Where prior work is cited as evidence, run the prior work attribution assessment before completing the gate finding. An incomplete attribution statement is an adverse signal requiring resolution before proceeding.
+
+11. Where a round's eligibility rests on serving a defined population, treat the served population as a named risk-bearer carried through every gate (Dimension 7 risk-bearer floor). Confirm the gate determination record shows the served population's exposure was considered, not only that the population was named at entry.
 
 ---
 
@@ -1314,7 +1321,9 @@ Before generating any finding or recommendation:
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 0.6.0 | 2026-05-22 | Added compound obligation mode throughout. Part III: added Section D (Compound Obligation Entry Gate) covering program-level Change specification assessment, component-level Build specification assessment, contribution_to_change statement evaluation, and separate evaluation track rule. Runtime Sequence: added operation 25 (compound obligation entry gate assessment). Part X: added CLEAR lifecycle definition (Commit, List, Evaluate, Attest, Register) and canonical round configuration schema reference to Grant Configurator preamble; updated Q2 to include compound mode with component array requirement; updated Q16 to reference CROSS-canonical-round-configuration-schema-0_1_0.md as the canonical format for Commit stage output. Standing Obligations: updated obligation 2 to include compound mode; updated obligation 8 to include compound-specific non-merger rule. Frontmatter: added CROSS-canonical-round-configuration-schema-0_1_0.md to related_documents. |
+| 0.5.3 | 2026-06-08 | Frame Language own-voice pass across the skill body. Own-voice watchlist terms were replaced with the structural act each names (the govern family became covers, sets, binds, or determines; accountability became obligation, reporting, verification, or answerable; mandatory and the field-clustering "become mandatory" became required; compliance became conformance; the integrity standard became the data quality standard; credible, legitimate, and own-voice management replaced in kind). Naming updates kept the skill consistent with the spec: Operation 19 and Part XVI "Funder Obligation Compliance Check" became "Conformance Check"; Operation 22 "Accountability mode" question became "Obligation mode"; Operation 23 and the new-primitive bullet "Beneficiary accountability mechanism" became "feedback-and-response mechanism"; the "Governing standard" became "Applicable standard"; the "Attestation integrity provision" became "Attestation independence provision"; "beneficiary population" became "affected population". Framework names, named principles, the WALKRI Integrity data-quality standard, and governance tokens were preserved as citation. Em-dash sweep clean. No procedure, gate, or evidence tier changed; vocabulary and naming only. |
+| 0.5.2 | 2026-06-05 | Partial encoding of CROSS v0.5.0. Part I: CRAFT inheritance added, CROSS declared a domain application of CRAFT with the inheritance structural rather than an adoption burden, and the CRAFT Section 10 inheritance receipt (CROSS standard Part XIII) named as the route for CRAFT-conformance questions. Dimension 7: the served-population risk-bearer floor added, the served population named a risk-bearer of the round's evaluation and carried through every gate with the determination record required to show the consideration was applied, distinguished from the rich build (Runbook 13 affected population verification gate). Standing Obligations: risk-bearer floor item added. The v0.3.8 identity cluster, found unencoded during this edit despite the prior v0.4.7 coverage claim, was added: the on-chain identity anchor as Part IV Field 6, the Attestation Corpus query as a funder-side procedure in Part IV, and the Cohort Position assessment in Part VIII. The skill now encodes CROSS v0.5.0 in full. |
+| 0.5.1 | 2026-05-23 | Primitive rename cascade applied. Operation 21 (novel runbook selection) updated to reference "affected population verification gate (Runbook 13)". Operation 24 (primitive classification) updated to list "affected population verification mechanism" as candidate primitive. Part IVb header updated to "Revenue Architecture, Continuity Capacity, and Development Stage Procedures"; the Governance Resilience Check procedure is now the Continuity Capacity Check, with the three states (Single/Partial/Resilient) preserved. New seven runbooks listing updated to reference "Affected Population Verification Gate" (Runbook 13). Historical changelog entries below preserve the prior names as they were in effect at the time of those releases. |
 | 0.5.0 | 2026-05-19 | Major update to encode CROSS v0.4.7. Runtime Sequence: added operations 21-24 covering novel runbook selection (Runbooks 7-13 from CROSS-runbooks-0_2_0.md), portfolio benchmark compliance assessment, beneficiary accountability mechanism assessment, and primitive classification for new frameworks. Part X Q0: expanded to include all thirteen runbooks across both runbook documents, plus program type bundle reference. Part XIV (Institutional Framework Alignment): major expansion from four frameworks to organized coverage of 95+ frameworks organized by primitive; added sections for US federal education (ESSA/WWC/EIR), US federal workforce and human services (WIOA, SNAP-Ed, Head Start, AmeriCorps, CSBG ROMA), US federal health programs (SAMHSA, HRSA UDS, Ryan White, LIHEAP), environmental and carbon finance (IUCN NbS, Verra VCS, REDD+, Gold Standard), Islamic and endowment-based giving (AAOIFI), European philanthropy (ESIF, EVPA, PHINEO IOOI), faith-based development (CRS ProPack, World Vision LEAP, USCCB/CCHD), and new primitives documentation. Version reference updated from 0.3.7 to 0.4.7. |
 | 0.4.0 | 2026-05-18 | Major revision to encode CROSS v0.3.5 through v0.3.7. Added Part IVa (Public Benefit Mechanism and Access Condition Declaration Procedure) with four mechanism types, mechanism-evidence scope alignment table, and finding vocabulary. Added Part IVb (Revenue Architecture, Governance Resilience, and Development Stage Procedures) with four revenue architecture types, three governance resilience states, and five development stage classifications with stage-obligation mode and stage-round alignment consistency checks. Added Obligation Fulfillment Record section to Part IV for returning applicants, with three fulfillment states and corroboration note. Added Field 5 (Disbursement Authority Declaration) to Part IV with three disbursement states. Added corroborating evidence requirement to Part V Element 2 (Sufficiency Position) for rounds at independent review evidence strength or above. Added token event disclosure requirement to Part XII Section 1 covering IDOs, TGEs, ICOs, and pending tokenomics. Added IMP Contribution vocabulary to Part XII Section 1 as optional structured additionality framework with three positions and counterfactual requirement. Added operations 21, 22, 23 to Runtime Sequence. Updated Part III First Step preamble to include PBM declaration as third pre-condition. Updated version reference from 0.3.4 to 0.3.7. |
 | 0.3.0 | 2026-05-18 | Major revision to encode CROSS v0.3.4. Added Part IV (Organizational Identity Declaration Procedure) and Part V (Sufficiency Architecture Declaration Procedure) as pre-conditions for all entry gate assessments. Added Part VI (Prior Work Attribution Assessment). Added Part XII (Scope Attribution and Outcome Credit), encoding additionality declaration and outcome credit attribution requirements. Added Part XIII (Program-Level ToC Architecture Configuration), encoding the pathway registry, round linkage, and all pathway-level tags. Added Part XIV (Institutional Framework Alignment), encoding OECD DAC, IRIS+, USAID PIRS, and DAOIP-5 mappings including full PIRS field-by-field mapping. Added Part XVI (Funder Obligation Compliance Check), encoding funder publication requirements, record maintenance, structured dataset publication, and redress mechanisms. Expanded Part VIII (Conflict of Interest) to include organizational role conflict, funder-side consulting conflicts with tiered treatment, and attestation integrity provision for both Tier 1 and Tier 2 conflicts. Expanded Part XI (Gate Evidence Assessment) with developmental vs. summative gate function distinction, pre-award indicator confirmation, counterfactual verification procedure, attribution vs. contribution stance distinction, continuation gate procedure, and unintended outcomes disclosure requirement. Added sustainability and transition plan optional field to Part VII. Added on-chain execution and verification instruments sub-specification to Part VII. Added causality stance finding vocabulary to canonical vocabulary. Updated Runtime Sequence to list all 20 operations. Updated Part XV (Recommendation Generation) reasoning structure to include organizational identity, sufficiency architecture, and prior work attribution findings. Updated Standing Obligations to include new pre-conditions. |

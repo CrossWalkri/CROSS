@@ -1,7 +1,7 @@
 ---
 title: AmeriCorps State and National Performance Measurement Compatibility - CROSS+WALKRI
-version: 0.1.0
-date: 2026-05-18
+version: 0.1.2
+date: 2026-06-08
 license: CC0
 standards: CROSS v0.4.5 (github.com/CrossWalkri/CROSS), WALKRI v0.1.7 (github.com/CrossWalkri/WALKRI)
 references:
@@ -9,6 +9,13 @@ references:
   - AmeriCorps State and National Performance Measures Instructions 2025 (americorps.gov)
   - AmeriCorps Logic Model Requirements (americorps.gov/sites/default/files/document/LogicModelInstructions.pdf)
   - 45 CFR 2522.710 (Independent Evaluation Threshold)
+lens_tags:
+  calibration_tier: outcome_specified_self_reported
+  authority_source: statutory
+  cultural_methodological_lineage: western_institutional
+  funder_typology: government_non_aid
+  framework_scope_type: grantee_outcome_measurement
+  # AmeriCorps National Service Trust statutory authority
 ---
 
 # AmeriCorps State and National Performance Measurement
@@ -19,7 +26,7 @@ references:
 
 ## Summary
 
-AmeriCorps State and National grants, governed by 45 CFR Part 2522, operate under a performance measurement architecture that combines mandatory logic model development, a nationally prescribed output/outcome pairing menu, and a tiered independent evaluation obligation triggered by funding threshold. This architecture is structurally distinct from the general uniform guidance at 2 CFR 200 and from the open-ended performance measure designs permitted in many other federal programs. CROSS+WALKRI satisfies the Part 2522 performance measurement requirements structurally: the nationally prescribed output/outcome pairing menu is the regulatory form of CROSS's entry specification gate with a nationally pre-defined indicator set, and WALKRI's operational definition and evidence form requirements address the specification gap the national menu creates at the program level, where grantees must translate nationally defined pairings into local intake instruments without further specification guidance.
+AmeriCorps State and National grants, subject to 45 CFR Part 2522, operate under a performance measurement architecture that combines mandatory logic model development, a nationally prescribed output/outcome pairing menu, and a tiered independent evaluation obligation triggered by funding threshold. This architecture is structurally distinct from the general uniform guidance at 2 CFR 200 and from the open-ended performance measure designs permitted in many other federal programs. CROSS+WALKRI satisfies the Part 2522 performance measurement requirements structurally: the nationally prescribed output/outcome pairing menu is the regulatory form of CROSS's entry specification gate with a nationally pre-defined indicator set, and WALKRI's operational definition and evidence form requirements address the specification gap the national menu creates at the program level, where grantees must translate nationally defined pairings into local intake instruments without further specification guidance.
 
 ---
 
@@ -41,7 +48,7 @@ The AmeriCorps State and National performance measurement framework has four dis
 
 CROSS addresses the Part 2522 evaluation requirements at the structural level.
 
-**Entry specification gate and logic model requirement:** The mandatory pre-award logic model requirement is the regulatory form of CROSS's entry specification gate. CROSS's Theory of Change hierarchy (activities, outputs, outcomes, goals) maps directly to the AmeriCorps logic model structure. A CROSS-conformant program completes the logic model's structural requirements as a consequence of entry gate conformance, since CROSS requires each element of the hierarchy to be declared with specificity before any application is accepted. CROSS's eleven-field indicator specification applied to the logic model's output and outcome nodes produces entries that satisfy Part 2522's logic model requirements and provide the measurement precision the regulation requires.
+**Entry specification gate and logic model requirement:** The required pre-award logic model is the regulatory form of CROSS's entry specification gate. CROSS's Theory of Change hierarchy (activities, outputs, outcomes, goals) maps directly to the AmeriCorps logic model structure. A CROSS-conformant program completes the logic model's structural requirements as a consequence of entry gate conformance, since CROSS requires each element of the hierarchy to be declared with specificity before any application is accepted. CROSS's eleven-field indicator specification applied to the logic model's output and outcome nodes produces entries that satisfy Part 2522's logic model requirements and provide the measurement precision the regulation requires.
 
 **Prescribed output/outcome pairings and CROSS obligation types:** The AmeriCorps national output/outcome pairing menu corresponds to CROSS's Build and Change obligation architecture. Each menu pairing specifies a Build obligation (countable output) and the Change obligation (outcome) that must accompany it. Programs cannot select an output without committing to the corresponding outcome, which is the structural principle of CROSS's obligation pairing: a Build obligation alone is permissible only when the program is explicitly not claiming outcome-level change. The national menu prevents this gap by requiring paired commitment at application.
 
@@ -67,10 +74,19 @@ CROSS addresses the Part 2522 evaluation requirements at the structural level.
 
 The AmeriCorps national output/outcome pairing menu specifies what must be measured at the nationally defined category level but does not specify how individual programs must operationally define the measurement instruments at the local level. A program selecting the "education outcomes" pairing, for example, receives the national definition of the output and outcome categories but must translate those categories into local intake fields, data collection instruments, and evidence thresholds without further specification from the pairing menu. This translation step is where WALKRI's pre-publication requirements apply.
 
-WALKRI's operational definition requirement, applied to each local intake field before any member begins service, forces the program to specify what the nationally defined output or outcome means in terms of the program's specific local intervention. The evidence form requirement specifies what data source documents the output (attendance records, tutoring session logs, assessment scores) and what the collection method is. The compliance threshold requirement specifies what level of output or outcome at what point in the program year constitutes satisfactory progress against the declared logic model commitment. Without this specification, programs using the same national pairing menu produce results that appear comparable at the category level but reflect different local definitions, different assessment instruments, and different thresholds.
+WALKRI's operational definition requirement, applied to each local intake field before any member begins service, forces the program to specify what the nationally defined output or outcome means in terms of the program's specific local intervention. The evidence form requirement specifies what data source documents the output (attendance records, tutoring session logs, assessment scores) and what the collection method is. The conformance threshold requirement specifies what level of output or outcome at what point in the program year constitutes satisfactory progress against the declared logic model commitment. Without this specification, programs using the same national pairing menu produce results that appear comparable at the category level but reflect different local definitions, different assessment instruments, and different thresholds.
 
-For programs above the $500,000 independent evaluation threshold, the WALKRI pre-publication audit produces the instrument-level documentation that independent evaluators need to assess whether the program's local measurement practices correspond to the national pairing definitions. An independent evaluator reviewing a WALKRI-conformant program finds each local intake field pre-specified with its operational definition, evidence form, and compliance threshold documented before any data was collected. This reduces the evaluation burden and removes the most common source of evaluator-program disagreement: retrospective disputes about what the program intended to measure.
+For programs above the $500,000 independent evaluation threshold, the WALKRI pre-publication audit produces the instrument-level documentation that independent evaluators need to assess whether the program's local measurement practices correspond to the national pairing definitions. An independent evaluator reviewing a WALKRI-conformant program finds each local intake field pre-specified with its operational definition, evidence form, and conformance threshold documented before any data was collected. This reduces the evaluation burden and removes the most common source of evaluator-program disagreement: retrospective disputes about what the program intended to measure.
 
 ---
 
 *Published under CC0. For the current version of CROSS and WALKRI, see github.com/CrossWalkri.*
+
+---
+
+## Changelog
+
+| Version | Date | Summary |
+|---|---|---|
+| 0.1.2 | 2026-06-08 | Frame Language own-voice pass applied as part of the corpus-wide 2026-06-08 sweep: own-voice watchlist terms (govern-family, accountability, mandatory, compliance, enforce, legitimate) recast to conformance and obligation vocabulary where they appeared in this document's own voice; citation use of source-framework terms preserved. Primitive-rename references aligned to current canon (Continuity Capacity, the Collective disbursement state, Affected Population Verification Gate). Em-dash- and watchlist-clean re-verified. No compatibility finding or mapping changed; vocabulary only. |
+| 0.1.1 | 2026-05-23 | Retroactive lens tagging: added calibration_tier, authority_source, cultural_methodological_lineage, funder_typology, framework_scope_type per Lenses Framework v0.1.0. |

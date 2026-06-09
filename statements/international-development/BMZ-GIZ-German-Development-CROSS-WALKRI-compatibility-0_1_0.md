@@ -1,12 +1,19 @@
 ---
 title: German Bilateral Development Cooperation (BMZ/GIZ) Compatibility - CROSS+WALKRI
-version: 0.1.0
-date: 2026-05-18
+version: 0.1.2
+date: 2026-06-08
 license: CC0
 standards: CROSS v0.4.2 (github.com/CrossWalkri/CROSS), WALKRI v0.1.6 (github.com/CrossWalkri/WALKRI)
 references:
   - https://www.bmz.de/resource/blob/240112/evaluierungskriterien-en.pdf
   - https://www.giz.de/en/downloads/giz-2023-en-gizs-evaluation-system-basic-aspects.pdf
+lens_tags:
+  calibration_tier: independently_verified
+  authority_source: statutory
+  cultural_methodological_lineage: western_institutional
+  funder_typology: bilateral_aid_agency
+  framework_scope_type: grantee_outcome_measurement
+  # BMZ (Federal Ministry for Economic Cooperation and Development) and GIZ German bilateral aid
 ---
 
 # German Bilateral Development Cooperation (BMZ/GIZ) Compatibility
@@ -57,7 +64,7 @@ CROSS's gate architecture produces separate, independently verifiable determinat
 
 ### GIZ Participatory Evaluation Requirement
 
-GIZ requires that evaluation processes be participatory: affected populations must be included in the evaluation design, data collection, and sense-making process, not merely observed. This requirement addresses the legitimacy of evaluation findings: an evaluation conducted entirely by external evaluators without engagement with affected communities may produce technically accurate findings that miss the populations' own understanding of what changed and why.
+GIZ requires that evaluation processes be participatory: affected populations must be included in the evaluation design, data collection, and sense-making process, not merely observed. This requirement addresses the standing of evaluation findings: an evaluation conducted entirely by external evaluators without engagement with affected communities may produce technically accurate findings that miss the populations' own understanding of what changed and why.
 
 CROSS addresses this requirement at two points in its architecture. The population scope declaration at the program level and indicator level requires that the affected population be defined as a measurable construct, not a residual category. The evidence form requirement in WALKRI, applied to the indicators that capture change in the affected population, requires that the evidence form be independent of the grantee's self-report; one way to satisfy this requirement is through structured data collection directly from affected community members, which is the instrument-design equivalent of participatory evidence collection.
 
@@ -69,7 +76,7 @@ WALKRI's evidence form requirement does not mandate participatory data collectio
 
 GIZ applies DeGEval (German Evaluation Society) standards alongside BMZ criteria. DeGEval's standards include Usefulness, Feasibility, Fairness, and Accuracy. The Accuracy standards require that evaluation evidence be methodologically sound: valid, reliable, comprehensive, and based on instruments that are appropriate to the measurement task.
 
-WALKRI's five pre-publication field requirements directly implement the DeGEval Accuracy standards at the intake instrument design level. The criterion intent requirement ensures that every field collecting data for a CROSS gate has a stated, documented purpose that aligns with the measurement task. The operational definition requirement ensures that field boundaries are explicit and that different reviewers applying the definition to the same data will reach the same conclusion. The response form justification requirement ensures that the data collection method is appropriate to the measurement goal and that the appropriateness argument is documented. The evidence form requirement ensures that every indicator has an independent verification pathway. The compliance threshold requirement ensures that the standard for what counts as a valid response is stated before data collection begins.
+WALKRI's five pre-publication field requirements directly implement the DeGEval Accuracy standards at the intake instrument design level. The criterion intent requirement ensures that every field collecting data for a CROSS gate has a stated, documented purpose that aligns with the measurement task. The operational definition requirement ensures that field boundaries are explicit and that different reviewers applying the definition to the same data will reach the same conclusion. The response form justification requirement ensures that the data collection method is appropriate to the measurement goal and that the appropriateness argument is documented. The evidence form requirement ensures that every indicator has an independent verification pathway. The conformance threshold requirement ensures that the standard for what counts as a valid response is stated before data collection begins.
 
 These five requirements are the instrument-design implementation of what DeGEval means by Accuracy. Programs that have passed WALKRI's pre-publication audit are collecting data through instruments whose accuracy properties are documented, testable, and consistent across the measurement cycle. A GIZ evaluator assessing evidence quality can review the WALKRI audit record as documentation of the measurement system's Accuracy properties, rather than having to reconstruct instrument quality from the data itself.
 
@@ -98,3 +105,5 @@ License: CC0
 | Version | Date | Summary |
 |---|---|---|
 | 0.1.0 | 2026-05-18 | Initial draft. BMZ sixth criterion (coherence) mapped to CROSS coherence disclosure requirement. GIZ knock-out rule mapped to CROSS gate architecture producing independent criterion determinations at effectiveness, overarching development results, and sustainability levels. GIZ participatory evaluation requirement addressed through WALKRI evidence form independence. DeGEval Accuracy standards mapped to WALKRI five field requirements. |
+| 0.1.1 | 2026-05-23 | Retroactive lens tagging: added calibration_tier, authority_source, cultural_methodological_lineage, funder_typology, framework_scope_type per Lenses Framework v0.1.0. |
+| 0.1.2 | 2026-06-08 | Frame Language own-voice pass applied as part of the corpus-wide 2026-06-08 sweep: own-voice watchlist terms (govern-family, accountability, mandatory, compliance, enforce, legitimate) recast to conformance and obligation vocabulary where they appeared in this document's own voice; citation use of source-framework terms preserved. Primitive-rename references aligned to current canon (Continuity Capacity, the Collective disbursement state, Affected Population Verification Gate). Em-dash- and watchlist-clean re-verified. No compatibility finding or mapping changed; vocabulary only. |

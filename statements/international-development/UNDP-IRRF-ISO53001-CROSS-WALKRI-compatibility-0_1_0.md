@@ -1,13 +1,20 @@
 ---
 title: UNDP IRRF and ISO/UNDP 53001 Compatibility - CROSS+WALKRI
-version: 0.1.0
-date: 2026-05-18
+version: 0.1.2
+date: 2026-06-08
 license: CC0
 standards: CROSS v0.4.0 (github.com/CrossWalkri/CROSS), WALKRI v0.1.6 (github.com/CrossWalkri/WALKRI)
 references:
   - UNDP Integrated Results and Resources Framework (IRRF 2023, undp.org)
   - ISO/UNDP PAS 53002:2024 (free guidance document, iso.org/standard/53001)
   - ISO/UNDP 53001 Management Systems for SDG Contributions (forthcoming mid-2026)
+lens_tags:
+  calibration_tier: independently_verified
+  authority_source: voluntary_published
+  cultural_methodological_lineage: western_institutional
+  funder_typology: multilateral_bank_or_fund
+  framework_scope_type: grantee_outcome_measurement
+  # UNDP Integrated Results and Resources Framework with ISO 53001 coordination-structure crosswalk
 ---
 
 # UNDP IRRF and ISO/UNDP 53001 Compatibility
@@ -70,7 +77,7 @@ A program reporting to a UNDP-administered grant that implements CROSS does not 
 
 ## How CROSS Satisfies ISO/UNDP 53001 Requirements
 
-The ISO/UNDP PAS 53002:2024 guidance document specifies six demonstration requirements for a credible SDG contribution claim. CROSS's Change obligation mode satisfies all six.
+The ISO/UNDP PAS 53002:2024 guidance document specifies six demonstration requirements for a verifiable SDG contribution claim. CROSS's Change obligation mode satisfies all six.
 
 | ISO/UNDP 53001 requirement | CROSS provision |
 |:--|:--|
@@ -89,7 +96,7 @@ The causality stance field is the most critical alignment point. ISO/UNDP 53001 
 
 The IRRF and ISO/UNDP 53001 specify what indicators must document. Neither specifies what makes the intake fields collecting that documentation into measurement instruments. WALKRI addresses that gap.
 
-A WALKRI-conformant field collecting baseline data for an IRRF indicator must specify: the criterion intent (what the baseline field measures), the operational definition (the unit of analysis and qualifying counting rules), the response form (why the field type matches the criterion), the evidence form (the artifact type and access path proving the baseline value), and the compliance threshold (if the baseline draws from a defined external standard or registry).
+A WALKRI-conformant field collecting baseline data for an IRRF indicator must specify: the criterion intent (what the baseline field measures), the operational definition (the unit of analysis and qualifying counting rules), the response form (why the field type matches the criterion), the evidence form (the artifact type and access path proving the baseline value), and the conformance threshold (if the baseline draws from a defined external standard or registry).
 
 A label version of "baseline value" collects any number the applicant chooses to enter. A WALKRI-conformant version of the same field specifies the unit, the counting rule, the time period, the population, and the evidence the reviewer must verify before the baseline is accepted. The IRRF requires that baseline data be verifiable; WALKRI provides the field architecture that makes verifiability structural rather than aspirational.
 
@@ -104,3 +111,12 @@ The most material change between PAS 53002:2024 and the final ISO/UNDP 53001 sta
 ---
 
 *Published under CC0. For the current version of CROSS and WALKRI, see github.com/CrossWalkri.*
+
+---
+
+## Changelog
+
+| Version | Date | Summary |
+|---|---|---|
+| 0.1.2 | 2026-06-08 | Frame Language own-voice pass applied as part of the corpus-wide 2026-06-08 sweep: own-voice watchlist terms (govern-family, accountability, mandatory, compliance, enforce, legitimate) recast to conformance and obligation vocabulary where they appeared in this document's own voice; citation use of source-framework terms preserved. Primitive-rename references aligned to current canon (Continuity Capacity, the Collective disbursement state, Affected Population Verification Gate). Em-dash- and watchlist-clean re-verified. No compatibility finding or mapping changed; vocabulary only. |
+| 0.1.1 | 2026-05-23 | Retroactive lens tagging: added calibration_tier, authority_source, cultural_methodological_lineage, funder_typology, framework_scope_type per Lenses Framework v0.1.0. |

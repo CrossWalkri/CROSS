@@ -1,7 +1,7 @@
 ---
 title: Evaluation Methodologies (Outcome Harvesting, MSC, Developmental Evaluation, Realist Evaluation) Compatibility - CROSS+WALKRI
-version: 0.1.0
-date: 2026-05-18
+version: 0.1.2
+date: 2026-06-08
 license: CC0
 standards: CROSS v0.4.2 (github.com/CrossWalkri/CROSS), WALKRI v0.1.6 (github.com/CrossWalkri/WALKRI)
 references:
@@ -9,6 +9,13 @@ references:
   - Most Significant Change technique guide, https://www.betterevaluation.org/tools-resources/most-significant-change-technique-guide-its-use
   - Developmental Evaluation overview, https://www.intrac.org/app/uploads/2017/01/Developmental-evaluation.pdf
   - Realist Evaluation chapter, https://cnxus.org/wp-content/uploads/2022/04/RE_chapter.pdf
+lens_tags:
+  calibration_tier: UNCERTAIN_REQUIRES_AUTHOR_REVIEW
+  authority_source: professional_society_standard
+  cultural_methodological_lineage: western_institutional
+  funder_typology: UNCERTAIN_REQUIRES_AUTHOR_REVIEW
+  framework_scope_type: professional_practice_ethics
+  # General evaluation methodologies statement covering RCTs, QED, qualitative methods, mixed methods; spans multiple funder typologies and calibration tiers; flagged for author review because the statement is methodological rather than tied to a single source framework
 ---
 
 # Evaluation Methodologies (Outcome Harvesting, MSC, Developmental Evaluation, Realist Evaluation) Compatibility
@@ -50,7 +57,7 @@ The compatibility between CROSS and these four methodologies follows from a sing
 
 **Result:** All four methodologies are fully compatible with CROSS+WALKRI. The compatibility is not coincidental; it follows from CROSS's decision to specify what must be demonstrated rather than how evidence is produced. A grant program that specifies any of these methodologies in its evaluation plan and adopts CROSS+WALKRI as its documentation architecture does not face a conflict between the methodology and the standard.
 
-This compatibility also has implications for multi-method evaluation designs. Programs that combine Outcome Harvesting for complex pathway evidence with Most Significant Change for participatory legitimacy, or that use Developmental Evaluation during implementation and Realist Evaluation for cross-program synthesis, can accommodate the outputs of all methodologies within a single CROSS gate architecture. Each gate event draws on whichever methodology is most appropriate to the program's current stage and evidentiary needs.
+This compatibility also has implications for multi-method evaluation designs. Programs that combine Outcome Harvesting for complex pathway evidence with Most Significant Change for participatory standing, or that use Developmental Evaluation during implementation and Realist Evaluation for cross-program synthesis, can accommodate the outputs of all methodologies within a single CROSS gate architecture. Each gate event draws on whichever methodology is most appropriate to the program's current stage and evidentiary needs.
 
 ---
 
@@ -60,7 +67,7 @@ WALKRI's pre-publication specification requirement ensures that evaluators using
 
 The problem WALKRI addresses is consistent across methodologies: if the intake fields or gate criteria against which evidence is assessed are poorly specified, then the quality of evidence produced by even the most rigorous methodology is difficult to evaluate. An Outcome Harvesting process that produces outcome statements against a vague criterion produces outcome statements that are difficult to assess. An MSC process whose domain definitions are unclear produces stories that cannot be compared across domains. A Developmental Evaluation whose progress gate criteria are unspecified produces feedback that cannot be linked to a formal determination. A Realist Evaluation whose CMO scope is not bounded in the CROSS ToC produces configurations that cannot be mapped to gate requirements.
 
-WALKRI's five pre-publication field requirements address all of these problems at source. Criterion intent specifies what the measurement surface is trying to detect. Operational definition bounds the criterion so that evaluators and programs share a common understanding of its scope. Response form specifies the format in which evidence should be provided. Evidence form specifies what artifact constitutes acceptable evidence, accommodating the distinct artifact types that each methodology produces: outcome statement documents, MSC story collections, developmental feedback summaries, CMO configuration documents. Compliance threshold specifies the minimum standard.
+WALKRI's five pre-publication field requirements address all of these problems at source. Criterion intent specifies what the measurement surface is trying to detect. Operational definition bounds the criterion so that evaluators and programs share a common understanding of its scope. Response form specifies the format in which evidence should be provided. Evidence form specifies what artifact constitutes acceptable evidence, accommodating the distinct artifact types that each methodology produces: outcome statement documents, MSC story collections, developmental feedback summaries, CMO configuration documents. Conformance threshold specifies the minimum standard.
 
 For programs using any of these four methodologies, WALKRI conformance means that the measurement surfaces the methodology encounters are as well-specified as the methodology itself. The resulting evidence base is more reliable, more comparable across programs and periods, and more resistant to the retrospective redefinition of what would have counted as success.
 
@@ -89,3 +96,5 @@ License: CC0
 | Version | Date | Summary |
 |---|---|---|
 | 0.1.0 | 2026-05-18 | Initial draft. Four evaluation methodologies mapped to CROSS gate architecture and WALKRI measurement surface requirements. Compatibility grounded in CROSS's gate-deliverable specification rather than evidence production prescription. WALKRI positioned as measurement surface quality assurance across all four methodologies. |
+| 0.1.1 | 2026-05-23 | Retroactive lens tagging: added calibration_tier, authority_source, cultural_methodological_lineage, funder_typology, framework_scope_type per Lenses Framework v0.1.0. |
+| 0.1.2 | 2026-06-08 | Frame Language own-voice pass applied as part of the corpus-wide 2026-06-08 sweep: own-voice watchlist terms (govern-family, accountability, mandatory, compliance, enforce, legitimate) recast to conformance and obligation vocabulary where they appeared in this document's own voice; citation use of source-framework terms preserved. Primitive-rename references aligned to current canon (Continuity Capacity, the Collective disbursement state, Affected Population Verification Gate). Em-dash- and watchlist-clean re-verified. No compatibility finding or mapping changed; vocabulary only. |

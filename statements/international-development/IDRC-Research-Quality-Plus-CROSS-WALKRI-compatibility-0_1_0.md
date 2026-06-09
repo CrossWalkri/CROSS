@@ -1,12 +1,19 @@
 ---
 title: IDRC Research Quality Plus (RQ+) Compatibility - CROSS+WALKRI
-version: 0.1.0
-date: 2026-05-18
+version: 0.1.2
+date: 2026-06-08
 license: CC0
 standards: CROSS v0.4.2 (github.com/CrossWalkri/CROSS), WALKRI v0.1.6 (github.com/CrossWalkri/WALKRI)
 references:
   - https://idrc-crdi.ca/en/rqplus
   - https://idrc-crdi.ca/sites/default/files/sp/Documents%20EN/research-quality-plus-assessment-instrument.pdf
+lens_tags:
+  calibration_tier: outcome_specified_self_reported
+  authority_source: statutory
+  cultural_methodological_lineage: western_institutional
+  funder_typology: government_non_aid
+  framework_scope_type: professional_practice_ethics
+  # International Development Research Centre Research Quality Plus framework; IDRC is Canadian Crown corporation under IDRC Act; framework governs research practitioner conduct; alternative bilateral_aid_agency typology
 ---
 
 # IDRC Research Quality Plus (RQ+)
@@ -17,7 +24,7 @@ references:
 
 ## Summary
 
-Canada's IDRC developed Research Quality Plus (RQ+) as an evaluation framework for research-for-development programs that deliberately departs from bibliometric proxies and standard OECD DAC criteria in favor of four substantive dimensions: Research Integrity, Legitimacy, Importance, and Positioning for Use. Each dimension maps directly onto structural elements of CROSS gate architecture and WALKRI's field specification requirements. RQ+ is gaining adoption beyond IDRC, including uptake by CGIAR and other research-for-development funders, making this compatibility statement relevant to a growing category of research grant programs seeking a shared accountability infrastructure.
+Canada's IDRC developed Research Quality Plus (RQ+) as an evaluation framework for research-for-development programs that deliberately departs from bibliometric proxies and standard OECD DAC criteria in favor of four substantive dimensions: Research Integrity, Legitimacy, Importance, and Positioning for Use. Each dimension maps directly onto structural elements of CROSS gate architecture and WALKRI's field specification requirements. RQ+ is gaining adoption beyond IDRC, including uptake by CGIAR and other research-for-development funders, making this compatibility statement relevant to a growing category of research grant programs seeking a shared obligation and verification infrastructure.
 
 ---
 
@@ -41,9 +48,9 @@ RQ+ explicitly excludes bibliometric measures from its quality assessment. This 
 
 Each of RQ+'s four dimensions maps to a CROSS structural element, and in each case the mapping is functional rather than superficial: CROSS satisfies the structural requirement the RQ+ dimension is designed to assess.
 
-**Research Integrity (Dimension 1) and CROSS entry gate indicator specification.** RQ+ Dimension 1 asks whether research methods are appropriate, correctly applied, and evidentially sufficient. CROSS's entry gate requires eleven-field indicator specifications that include the methodological choices underlying each measurement: what is being measured, how it is being measured, with what instrument, and what verification pathway exists for the evidence produced. This specification requires program administrators to commit to methodological choices before data collection begins, creating the pre-commitment record that methodological rigor assessment requires. A CROSS-compliant program has documented its research design at instrument level before any application opens; RQ+ Dimension 1 assessment can examine that record against the evidence subsequently produced.
+**Research Integrity (Dimension 1) and CROSS entry gate indicator specification.** RQ+ Dimension 1 asks whether research methods are appropriate, correctly applied, and evidentially sufficient. CROSS's entry gate requires eleven-field indicator specifications that include the methodological choices underlying each measurement: what is being measured, how it is being measured, with what instrument, and what verification pathway exists for the evidence produced. This specification requires program administrators to commit to methodological choices before data collection begins, creating the pre-commitment record that methodological rigor assessment requires. A CROSS-conformant program has documented its research design at instrument level before any application opens; RQ+ Dimension 1 assessment can examine that record against the evidence subsequently produced.
 
-**Legitimacy (Dimension 2) and CROSS population scope and coherence disclosure.** RQ+ Dimension 2 asks whether affected communities were included and whether the research design respected community knowledge and priorities. CROSS's population scope declaration specifies who is affected by the program, with what granularity and by what evidence of community connection. CROSS's coherence disclosure, requiring documentation of how the program relates to the broader landscape of interventions in the same problem area, captures the multi-actor environment within which community knowledge is situated. Together these fields constitute the structural form of legitimacy evidence: who is affected is documented, how the program situates itself relative to other actors in that community's context is documented, and independent evidence sources that fall outside the grantee organization are specified in the evidence strength taxonomy.
+**Legitimacy (Dimension 2) and CROSS population scope and coherence disclosure.** RQ+ Dimension 2 asks whether affected communities were included and whether the research design respected community knowledge and priorities. CROSS's population scope declaration specifies who is affected by the program, with what granularity and by what evidence of community connection. CROSS's coherence disclosure, requiring documentation of how the program relates to the broader landscape of interventions in the same problem area, captures the multi-actor environment within which community knowledge is situated. Together these fields constitute the structural form of standing evidence for RQ+ Dimension 2: who is affected is documented, how the program situates itself relative to other actors in that community's context is documented, and independent evidence sources that fall outside the grantee organization are specified in the evidence strength taxonomy.
 
 **Importance (Dimension 3) and CROSS Theory of Change goal declaration.** RQ+ Dimension 3 asks what significance attaches to the research question relative to development needs. CROSS requires that every program declare its long-term goal: the condition in the world that the program is designed to contribute to achieving. This declaration must be made before applications open and must be specific enough to be evaluated against the development needs landscape. A program that cannot articulate a significant goal-level condition it is contributing to cannot satisfy CROSS's entry gate, and for the same reason it cannot satisfy RQ+ Dimension 3.
 
@@ -64,8 +71,17 @@ WALKRI's five pre-publication field requirements are the primary mechanism by wh
 
 WALKRI's evidence form requirement, specifying artifact type and access path for each evidence item, also supports RQ+ Dimension 4. Positioning for Use requires not only that findings be produced but that they be accessible to policy and practice audiences in usable forms. WALKRI's access path specification ensures that evidence artifacts are documented with sufficient specificity for a Dimension 4 assessor to evaluate whether findings are actually accessible to the intended audiences, or whether they exist only in formats or locations that functionally restrict access despite nominal availability.
 
-For programs being evaluated under RQ+, CROSS+WALKRI compliance provides a documentation infrastructure that satisfies all four dimensions by design, eliminating the need to construct RQ+ compliance evidence separately from program operations.
+For programs being evaluated under RQ+, CROSS+WALKRI conformance provides a documentation infrastructure that satisfies all four dimensions by design, eliminating the need to construct RQ+ conformance evidence separately from program operations.
 
 ---
 
 *Published under CC0. For the current version of CROSS and WALKRI, see github.com/CrossWalkri.*
+
+---
+
+## Changelog
+
+| Version | Date | Summary |
+|---|---|---|
+| 0.1.2 | 2026-06-08 | Frame Language own-voice pass applied as part of the corpus-wide 2026-06-08 sweep: own-voice watchlist terms (govern-family, accountability, mandatory, compliance, enforce, legitimate) recast to conformance and obligation vocabulary where they appeared in this document's own voice; citation use of source-framework terms preserved. Primitive-rename references aligned to current canon (Continuity Capacity, the Collective disbursement state, Affected Population Verification Gate). Em-dash- and watchlist-clean re-verified. No compatibility finding or mapping changed; vocabulary only. |
+| 0.1.1 | 2026-05-23 | Retroactive lens tagging: added calibration_tier, authority_source, cultural_methodological_lineage, funder_typology, framework_scope_type per Lenses Framework v0.1.0. |

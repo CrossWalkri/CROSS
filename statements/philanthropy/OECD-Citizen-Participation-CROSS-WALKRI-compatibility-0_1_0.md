@@ -1,12 +1,19 @@
 ---
 title: OECD Guidelines for Citizen Participation Processes (2022) Compatibility - CROSS+WALKRI
-version: 0.1.0
-date: 2026-05-18
+version: 0.1.2
+date: 2026-06-08
 license: CC0
 standards: CROSS v0.4.2 (github.com/CrossWalkri/CROSS), WALKRI v0.1.6 (github.com/CrossWalkri/WALKRI)
 references:
   - https://oecd.org/gov/open-government/oecd-guidelines-for-citizen-participation-processes-f765caf6-en.htm
   - https://www.oecd.org/tax/federalism/participatory-budgeting-note.pdf
+lens_tags:
+  calibration_tier: process_conformant
+  authority_source: voluntary_published
+  cultural_methodological_lineage: western_institutional
+  funder_typology: multilateral_bank_or_fund
+  framework_scope_type: government_accountability
+  # OECD Guidelines for Citizen and Stakeholder Participation; government accountability scope
 ---
 
 # OECD Guidelines for Citizen Participation Processes (2022)
@@ -17,7 +24,7 @@ references:
 
 ## Summary
 
-The OECD published "Guidelines for Citizen Participation Processes" in 2022 (OECD Publishing, DOI 10.1787/f765caf6-en), covering eight methods of citizen participation in public resource allocation, including participatory budgeting, deliberative processes, civic monitoring, and open innovation. These guidelines are formally distinct from OECD DAC evaluation criteria: they apply to participatory processes at the level of public institutions, municipalities, and community organizations rather than to development cooperation contexts. CROSS+WALKRI satisfies the guidelines' requirements for transparency, pre-specification of criteria, outcome reporting, and equity tracking through a set of structural provisions that make compliance independently verifiable rather than self-reported.
+The OECD published "Guidelines for Citizen Participation Processes" in 2022 (OECD Publishing, DOI 10.1787/f765caf6-en), covering eight methods of citizen participation in public resource allocation, including participatory budgeting, deliberative processes, civic monitoring, and open innovation. These guidelines are formally distinct from OECD DAC evaluation criteria: they apply to participatory processes at the level of public institutions, municipalities, and community organizations rather than to development cooperation contexts. CROSS+WALKRI satisfies the guidelines' requirements for transparency, pre-specification of criteria, outcome reporting, and equity tracking through a set of structural provisions that make conformance independently verifiable rather than self-reported.
 
 ---
 
@@ -43,7 +50,7 @@ The requirement that outcomes be reported against stated objectives maps to CROS
 
 The inclusion and equity tracking requirement maps to CROSS's population scope declaration and disaggregation ratchet. Once demographic categories are defined as within scope for a participation process, the ratchet provision ensures those categories cannot be dropped in subsequent rounds. Longitudinal equity tracking, which the guidelines identify as essential for evaluating whether participation processes have been genuinely inclusive over time, is structurally guaranteed rather than dependent on each round's program officers maintaining the practice voluntarily.
 
-The transparency requirement maps to CROSS's Attestation Corpus: a persistent record of gate determinations, pre-committed specifications, and organizational identity claims that supports public accountability over time. The Corpus is designed to persist across rounds and across program cycles, which is the accountability horizon the OECD guidelines specify for ongoing participation processes.
+The transparency requirement maps to CROSS's Attestation Corpus: a persistent record of gate determinations, pre-committed specifications, and organizational identity claims that supports public legibility of obligation fulfillment over time. The Corpus is designed to persist across rounds and across program cycles, which is the reporting horizon the OECD guidelines specify for ongoing participation processes.
 
 CROSS's Retroactive obligation mode is particularly compatible with the retrospective participation processes the guidelines explicitly recognize. In Retroactive mode, CROSS programs specify evaluation criteria for work already completed, using a pre-committed specification that participants can verify before submitting for evaluation. This is the structural form of the retrospective accountability the guidelines describe; it applies to Optimism Retro Funding, Octant's epoch-based grantmaking, and similar Web3 mechanisms that retrospectively allocate resources to demonstrated contributions.
 
@@ -66,3 +73,12 @@ WALKRI's pre-publication audit also supports the transparency requirement by ens
 ---
 
 *Published under CC0. For the current version of CROSS and WALKRI, see github.com/CrossWalkri.*
+
+---
+
+## Changelog
+
+| Version | Date | Summary |
+|---|---|---|
+| 0.1.2 | 2026-06-08 | Frame Language own-voice pass applied as part of the corpus-wide 2026-06-08 sweep: own-voice watchlist terms (govern-family, accountability, mandatory, compliance, enforce, legitimate) recast to conformance and obligation vocabulary where they appeared in this document's own voice; citation use of source-framework terms preserved. Primitive-rename references aligned to current canon (Continuity Capacity, the Collective disbursement state, Affected Population Verification Gate). Em-dash- and watchlist-clean re-verified. No compatibility finding or mapping changed; vocabulary only. |
+| 0.1.1 | 2026-05-23 | Retroactive lens tagging: added calibration_tier, authority_source, cultural_methodological_lineage, funder_typology, framework_scope_type per Lenses Framework v0.1.0. |

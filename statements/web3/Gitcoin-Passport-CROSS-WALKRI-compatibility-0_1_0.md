@@ -1,7 +1,7 @@
 ---
 title: Gitcoin Passport Compatibility - CROSS+WALKRI
-version: 0.1.0
-date: 2026-05-16
+version: 0.1.2
+date: 2026-06-08
 license: CC0
 standards: CROSS v0.3.7 (github.com/CrossWalkri/CROSS), WALKRI v0.1.6 (github.com/CrossWalkri/WALKRI)
 references:
@@ -10,6 +10,13 @@ references:
   - Ethereum Attestation Service on Optimism (attest.sh)
   - Gitcoin (gitcoin.co)
 programs: Gitcoin Grants, Octant, and any sybil-resistant Web3 grants program
+lens_tags:
+  calibration_tier: process_conformant
+  authority_source: voluntary_published
+  cultural_methodological_lineage: western_institutional
+  funder_typology: dao_or_protocol
+  framework_scope_type: certification
+  # Gitcoin Passport identity verification stamps; certification scope (sybil-resistance attestation)
 ---
 
 # Gitcoin Passport Compatibility
@@ -20,7 +27,7 @@ programs: Gitcoin Grants, Octant, and any sybil-resistant Web3 grants program
 
 ## Summary
 
-Gitcoin Passport and CROSS+WALKRI address different problems in the grants accountability stack. Passport is a sybil resistance and identity aggregation system: it aggregates verified credentials from multiple identity providers into a portable identity record and produces a score that programs use to gate participation. CROSS is an obligation architecture standard: it specifies what funded interventions must demonstrate and at which gate. WALKRI is a field specification quality standard: it specifies how collection instruments must be designed before applicants see them.
+Gitcoin Passport and CROSS+WALKRI address different problems in the grants obligation stack. Passport is a sybil resistance and identity aggregation system: it aggregates verified credentials from multiple identity providers into a portable identity record and produces a score that programs use to gate participation. CROSS is an obligation architecture standard: it specifies what funded interventions must demonstrate and at which gate. WALKRI is a field specification quality standard: it specifies how collection instruments must be designed before applicants see them.
 
 Passport and CROSS+WALKRI are complementary rather than overlapping. Passport answers the question of whether a participant is a unique, non-duplicate human with verifiable connections to real activity. CROSS answers the question of what that participant must demonstrate once they are accepted into a program. The two systems operate in sequence: Passport addresses the eligibility layer before obligation assessment begins; CROSS addresses the obligation layer once eligibility is established.
 
@@ -42,11 +49,11 @@ Gitcoin Passport is an identity aggregation system that allows any address-holde
 
 ## What Gitcoin Passport Does Not Provide
 
-Passport establishes that a participant is a likely unique, non-duplicate human with verifiable real-world connections. It does not specify what that participant must demonstrate once accepted into a program, what evidence standards govern those demonstrations, how reviewers must document their determinations, or what the accountability record of a funded cycle must contain.
+Passport establishes that a participant is a likely unique, non-duplicate human with verifiable real-world connections. It does not specify what that participant must demonstrate once accepted into a program, what evidence standards apply to those demonstrations, how reviewers must document their determinations, or what the obligation record of a funded cycle must contain.
 
-This is the boundary where CROSS begins. Passport governs the eligibility gate before obligation assessment. CROSS governs the obligation architecture once a participant is accepted as eligible. A program can run sybil-resistant QF using Passport scoring and simultaneously apply CROSS obligation architecture to the grants it funds. The two systems address consecutive questions rather than overlapping ones.
+This is the boundary where CROSS begins. Passport covers the eligibility gate before obligation assessment. CROSS covers the obligation architecture once a participant is accepted as eligible. A program can run sybil-resistant QF using Passport scoring and simultaneously apply CROSS obligation architecture to the grants it funds. The two systems address consecutive questions rather than overlapping ones.
 
-Passport also does not provide field specification quality for the forms that collect applicant data beyond the sybil resistance layer. The application fields that collect a grantee's proposed indicators, baselines, and evidence plans exist above the Passport layer and are not governed by Passport's stamp system. WALKRI addresses the specification quality of those fields.
+Passport also does not provide field specification quality for the forms that collect applicant data beyond the sybil resistance layer. The application fields that collect a grantee's proposed indicators, baselines, and evidence plans exist above the Passport layer and are not subject to Passport's stamp system. WALKRI addresses the specification quality of those fields.
 
 ---
 
@@ -58,7 +65,7 @@ CROSS's entry gate specifies the eligibility criteria an applicant must satisfy 
 
 A CROSS-conformant program incorporating Passport should declare the Passport score threshold in the round configuration as an explicit eligibility criterion: the threshold, the date at which it is measured, the scoring model version used, and the stamps that contribute to threshold eligibility. This makes the eligibility criterion independently verifiable rather than a black-box filter.
 
-Where Passport is used as an entry gate filter, it should be declared in the CROSS round configuration as a sybil-resistance eligibility criterion, not as a measure of impact or obligation fulfillment. Passport score is a proxy for unique humanity; it is not an accountability metric.
+Where Passport is used as an entry gate filter, it should be declared in the CROSS round configuration as a sybil-resistance eligibility criterion, not as a measure of impact or obligation fulfillment. Passport score is a proxy for unique humanity; it is not an obligation-verification metric.
 
 ### Passport Stamps as Organizational Identity Corroboration
 
@@ -86,19 +93,19 @@ Response form justification: why a numeric score with a binary threshold is the 
 
 Evidence form: how the program verifies the score (API query, on-chain attestation query, or self-reported with verification).
 
-Compliance threshold: the minimum score required and what happens at the boundary (do participants just below the threshold have any remediation path, and if so, what is it?).
+Conformance threshold: the minimum score required and what happens at the boundary (do participants just below the threshold have any remediation path, and if so, what is it?).
 
-Failure to specify these five elements for a Passport score field produces the same data quality problem as any other underspecified field: definitional variance across applications and reviewers, and an accountability record that cannot be independently verified.
+Failure to specify these five elements for a Passport score field produces the same data quality problem as any other underspecified field: definitional variance across applications and reviewers, and an obligation record that cannot be independently verified.
 
 ---
 
 ## The Threshold Logic Comparison
 
-Passport's score threshold mechanism and WALKRI's compliance threshold are structurally similar: both define a quantitative minimum that separates pass from fail. But they operate on different criteria and at different stages.
+Passport's score threshold mechanism and WALKRI's conformance threshold are structurally similar: both define a quantitative minimum that separates pass from fail. But they operate on different criteria and at different stages.
 
-Passport's threshold governs eligibility before obligation assessment: does this participant meet the sybil resistance bar to enter the program?
+Passport's threshold applies to eligibility before obligation assessment: does this participant meet the sybil resistance bar to enter the program?
 
-WALKRI's compliance threshold governs collection field design before data collection begins: does this criterion specification meet the quality bar to be presented to applicants?
+WALKRI's conformance threshold applies to collection field design before data collection begins: does this criterion specification meet the quality bar to be presented to applicants?
 
 Both are binary gates with a quantitative minimum, but they operate at different layers and should not be conflated. A high Passport score does not relax WALKRI field specification requirements, and a well-specified WALKRI field does not substitute for Passport sybil resistance.
 
@@ -106,11 +113,11 @@ Both are binary gates with a quantitative minimum, but they operate at different
 
 ## What This Integration Enables
 
-A program using Gitcoin Passport and CROSS+WALKRI together produces a layered eligibility and accountability record:
+A program using Gitcoin Passport and CROSS+WALKRI together produces a layered eligibility and obligation record:
 
 **Gitcoin Passport provides:** Sybil-resistant eligibility verification that the participant is a likely unique, non-duplicate human with verifiable real-world connections. This layer prevents gaming of participation-weighted allocation mechanisms and provides independently verifiable stamps that can corroborate organizational identity claims.
 
-**CROSS provides:** The obligation architecture governing what applicants must demonstrate once their eligibility is established, what evidence standards apply to those demonstrations, and what the accountability record of the funded cycle must contain. This layer makes funded grants accountable for stated outcomes, not merely eligible to participate.
+**CROSS provides:** The obligation architecture covering what applicants must demonstrate once their eligibility is established, what evidence standards apply to those demonstrations, and what the obligation record of the funded cycle must contain. This layer makes funded grants answerable for stated outcomes, not merely eligible to participate.
 
 **WALKRI provides:** The field specification quality layer ensuring that the application forms collecting CROSS-required demonstrations are precisely enough defined to produce reliable, comparable data across the applicant cohort.
 
@@ -122,11 +129,11 @@ Together: Passport establishes who is eligible to participate; CROSS specifies w
 
 Programs using Gitcoin Passport and adopting CROSS+WALKRI should:
 
-1. Declare the Passport eligibility threshold in the CROSS round configuration as an explicit entry gate criterion. Specify the scoring model version, the threshold value, and the measurement date. This makes the sybil resistance filter independently verifiable and documented in the accountability specification.
+1. Declare the Passport eligibility threshold in the CROSS round configuration as an explicit entry gate criterion. Specify the scoring model version, the threshold value, and the measurement date. This makes the sybil resistance filter independently verifiable and documented in the obligation specification.
 
 2. Do not treat Passport score as an obligation fulfillment metric. A high Passport score is a sybil resistance signal; it does not substitute for the evidence requirements at any CROSS gate. The organizational identity declaration, prior round history, and gate evidence requirements apply to all participants regardless of Passport score.
 
-3. Where the application form collects Passport score as a field, apply WALKRI calibration to that field. Specify criterion intent (sybil resistance, not impact), operational definition (scoring model and stamp composition), evidence form (API or on-chain query), and compliance threshold (minimum score with boundary policy).
+3. Where the application form collects Passport score as a field, apply WALKRI calibration to that field. Specify criterion intent (sybil resistance, not impact), operational definition (scoring model and stamp composition), evidence form (API or on-chain query), and conformance threshold (minimum score with boundary policy).
 
 4. Use relevant Passport stamps as corroborating sources for the organizational identity declaration. GitHub stamps, prior Gitcoin participation stamps, and ENS name stamps are verifiable independent records that can strengthen the independently verifiable basis for identity claims.
 
@@ -147,3 +154,12 @@ Passport API: api.scorer.gitcoin.co
 Gitcoin documentation: docs.gitcoin.co
 
 License: CC0
+
+---
+
+## Changelog
+
+| Version | Date | Summary |
+|---|---|---|
+| 0.1.2 | 2026-06-08 | Frame Language own-voice pass applied as part of the corpus-wide 2026-06-08 sweep: own-voice watchlist terms (govern-family, accountability, mandatory, compliance, enforce, legitimate) recast to conformance and obligation vocabulary where they appeared in this document's own voice; citation use of source-framework terms preserved. Primitive-rename references aligned to current canon (Continuity Capacity, the Collective disbursement state, Affected Population Verification Gate). Em-dash- and watchlist-clean re-verified. No compatibility finding or mapping changed; vocabulary only. |
+| 0.1.1 | 2026-05-23 | Retroactive lens tagging: added calibration_tier, authority_source, cultural_methodological_lineage, funder_typology, framework_scope_type per Lenses Framework v0.1.0. |

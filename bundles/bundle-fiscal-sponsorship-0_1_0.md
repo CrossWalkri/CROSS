@@ -108,7 +108,7 @@ For projects changing sponsors mid-program: an OFR continuity package must be as
 
 ## Part 2: WALKRI Field Specifications
 
-The following field specifications cover the intake fields most commonly required in fiscal sponsorship grant programs. Each specification satisfies WALKRI's five pre-publication requirements: criterion intent, operational definition, response form, evidence form, compliance threshold.
+The following field specifications cover the intake fields most commonly required in fiscal sponsorship grant programs. Each specification satisfies WALKRI's five pre-publication requirements: criterion intent, operational definition, response form, evidence form, conformance threshold.
 
 ---
 
@@ -122,7 +122,7 @@ The following field specifications cover the intake fields most commonly require
 
 **Evidence form:** The executed fiscal sponsorship agreement between sponsor and project, which names both parties, identifies the NNFS model, and establishes disbursement authority. For new projects without an executed agreement at the time of application: a draft agreement or letter of intent from the sponsor confirming the relationship and model, with a commitment to execute the agreement before any funds are disbursed. An application that names a fiscal sponsor without an executed or draft agreement does not satisfy this field.
 
-**Compliance threshold:** Both entities named, legal identities confirmed for both, NNFS model identified, disbursement authority established. An entity boundary declaration that names a fiscal sponsor but does not confirm the sponsor's agreement to sponsor this project does not satisfy this field. A declaration that identifies the wrong entity as the applying entity (for example, naming the sponsored project as the applying entity in a Model A arrangement) creates a structural inconsistency in the CROSS record that must be resolved before the grant is committed.
+**Conformance threshold:** Both entities named, legal identities confirmed for both, NNFS model identified, disbursement authority established. An entity boundary declaration that names a fiscal sponsor but does not confirm the sponsor's agreement to sponsor this project does not satisfy this field. A declaration that identifies the wrong entity as the applying entity (for example, naming the sponsored project as the applying entity in a Model A arrangement) creates a structural inconsistency in the CROSS record that must be resolved before the grant is committed.
 
 ---
 
@@ -136,7 +136,7 @@ The following field specifications cover the intake fields most commonly require
 
 **Evidence form:** The executed fiscal sponsorship agreement, which specifies the model and its key provisions. For Model A arrangements: the agreement should confirm that the project operates as a program of the sponsor, that all assets are held by the sponsor, and that the project staff are employees of the sponsor. For Model C arrangements: the agreement should confirm the pre-approval mechanism, the independence of the project, and the sponsor's certification process. For international fiscal sponsorship (Sub-type D): the agreement must also address the equivalency determination or expenditure responsibility pathway the sponsor will use.
 
-**Compliance threshold:** A named NNFS model (or described alternative) with an executed agreement that confirms the key features of the model. An arrangement described as a fiscal sponsorship that does not conform to any recognized model (and cannot be described with enough specificity to establish the accountability structure) does not satisfy this field. The agreement must be executed before funds are disbursed; a verbal or email-based arrangement without a written agreement does not satisfy this field regardless of the parties' good faith.
+**Conformance threshold:** A named NNFS model (or described alternative) with an executed agreement that confirms the key features of the model. An arrangement described as a fiscal sponsorship that does not conform to any recognized model (and cannot be described with enough specificity to establish the accountability structure) does not satisfy this field. The agreement must be executed before funds are disbursed; a verbal or email-based arrangement without a written agreement does not satisfy this field regardless of the parties' good faith.
 
 ---
 
@@ -150,7 +150,7 @@ The following field specifications cover the intake fields most commonly require
 
 **Evidence form:** The fiscal sponsorship agreement's financial provisions, the sponsor's financial authorization policies (for Model A), or the grant release schedule (for Model C). For federal pass-through grants: the sponsor's written notification to the sponsored project of the disbursement conditions and 2 CFR 200 requirements applicable to fund use.
 
-**Compliance threshold:** A named disbursement authority with a documented transfer mechanism. An arrangement in which funds flow from the sponsor to the project without a documented mechanism or approval process does not satisfy this field. For Model A: the sponsor's financial authorization policies must exist in writing before any funds are received from the funder. For international (Sub-type D): the IRS compliance pathway must be determined (expenditure responsibility vs. equivalency determination) and documented before any funds are transferred to the non-US project.
+**Conformance threshold:** A named disbursement authority with a documented transfer mechanism. An arrangement in which funds flow from the sponsor to the project without a documented mechanism or approval process does not satisfy this field. For Model A: the sponsor's financial authorization policies must exist in writing before any funds are received from the funder. For international (Sub-type D): the IRS compliance pathway must be determined (expenditure responsibility vs. equivalency determination) and documented before any funds are transferred to the non-US project.
 
 ---
 
@@ -164,7 +164,7 @@ The following field specifications cover the intake fields most commonly require
 
 **Evidence form:** At entry: the scope description in the grant application or fiscal sponsorship agreement. At completion: the final report addressing the scope as declared, with evidence that activities were confined to the declared scope and that the restricted fund account covered only the activities within the scope. Mid-grant scope changes must be disclosed to the funder and documented in the CROSS attestation corpus before additional work outside the original scope begins.
 
-**Compliance threshold:** A scope that is specific enough to distinguish the project's work from the sponsor's other activities, names a population and geography, and specifies at least one output or outcome. A scope described only as "general charitable activities within [sponsor's mission area]" does not satisfy this field because it cannot be distinguished from the sponsor's general operations. Scopes that expand mid-grant without funder approval and documentation do not satisfy this field at the completion gate.
+**Conformance threshold:** A scope that is specific enough to distinguish the project's work from the sponsor's other activities, names a population and geography, and specifies at least one output or outcome. A scope described only as "general charitable activities within [sponsor's mission area]" does not satisfy this field because it cannot be distinguished from the sponsor's general operations. Scopes that expand mid-grant without funder approval and documentation do not satisfy this field at the completion gate.
 
 ---
 
@@ -178,7 +178,7 @@ The following field specifications cover the intake fields most commonly require
 
 **Evidence form:** The disclosure itself is the evidence at the application gate. Funders may cross-reference grant databases and public financial filings (Form 990) to verify completeness. For federal grants: 2 CFR 200 requires disclosure of other federal awards; the concurrent sponsorship disclosure satisfies this requirement for the fiscal sponsorship dimension of the federal award.
 
-**Compliance threshold:** A disclosure that names all concurrent fiscal sponsors and overlapping grants for the declared scope. A disclosure that omits a known concurrent sponsorship arrangement is a material omission that triggers a completion gate review. "None" is a compliant response only when the project has no other fiscal sponsors and the sponsor holds no other grants covering the declared scope. For international fiscal sponsorship (Sub-type D): disclosure must cover US and non-US funding sources for the non-US project.
+**Conformance threshold:** A disclosure that names all concurrent fiscal sponsors and overlapping grants for the declared scope. A disclosure that omits a known concurrent sponsorship arrangement is a material omission that triggers a completion gate review. "None" is a compliant response only when the project has no other fiscal sponsors and the sponsor holds no other grants covering the declared scope. For international fiscal sponsorship (Sub-type D): disclosure must cover US and non-US funding sources for the non-US project.
 
 ---
 
@@ -192,7 +192,7 @@ The following field specifications cover the intake fields most commonly require
 
 **Evidence form:** The sponsor's written notification to the sponsored project of applicable federal requirements, typically in the subaward agreement or pass-through letter. For model A (comprehensive): the sponsor bears all federal compliance obligations internally and is not flowing requirements down to a separate entity; this field is marked as not applicable with an explanation that the project operates entirely within the sponsor's legal identity. For model C (pre-approved): the pass-through requirements must be communicated in writing before any project expenditure begins.
 
-**Compliance threshold:** For grants subject to 2 CFR 200: a written notification to the sponsored project of all applicable requirements, executed before any subaward funds are disbursed. An oral communication of federal requirements, or a communication that omits the audit threshold or cost principles, does not satisfy this field. For grants not subject to 2 CFR 200: a confirmation that this field does not apply with the grant source identified. A blank field without explanation does not satisfy this field.
+**Conformance threshold:** For grants subject to 2 CFR 200: a written notification to the sponsored project of all applicable requirements, executed before any subaward funds are disbursed. An oral communication of federal requirements, or a communication that omits the audit threshold or cost principles, does not satisfy this field. For grants not subject to 2 CFR 200: a confirmation that this field does not apply with the grant source identified. A blank field without explanation does not satisfy this field.
 
 ---
 
@@ -206,7 +206,7 @@ The following field specifications cover the intake fields most commonly require
 
 **Evidence form:** The OFR itself, maintained by the declared holding entity and available for review by the funder upon request. For Sub-type B (pre-approved): the project's OFR may be held in formats ranging from a formal CROSS-compliant record to a grant report archive; whatever format is used, the record must cover all prior grant periods and all gates completed. For projects changing sponsors: the outgoing sponsor's signed transfer confirmation and the incoming sponsor's signed receipt.
 
-**Compliance threshold:** A named holding entity, a current OFR status, and a transfer protocol for sponsor changes. An OFR ownership declaration that cannot identify the holding entity or cannot produce the OFR record upon request does not satisfy this field. For projects with prior grant history: the OFR must cover all prior periods; gaps in prior OFR coverage must be disclosed and explained. A project that has completed prior grant periods but has no OFR records (because prior funders did not require them) may establish a retrospective OFR summary, but must disclose that the prior periods were not recorded contemporaneously.
+**Conformance threshold:** A named holding entity, a current OFR status, and a transfer protocol for sponsor changes. An OFR ownership declaration that cannot identify the holding entity or cannot produce the OFR record upon request does not satisfy this field. For projects with prior grant history: the OFR must cover all prior periods; gaps in prior OFR coverage must be disclosed and explained. A project that has completed prior grant periods but has no OFR records (because prior funders did not require them) may establish a retrospective OFR summary, but must disclose that the prior periods were not recorded contemporaneously.
 
 ---
 
@@ -220,7 +220,7 @@ The following field specifications cover the intake fields most commonly require
 
 **Evidence form:** The grant agreement's terms (confirming the restriction purpose, period, and authority), the sponsor's chart of accounts showing the fund code established for this grant, and the sponsor's or project's financial statements for the grant period (confirming that restricted fund accounting was maintained and that the grant funds were not commingled with unrestricted funds). For federal grants: the restricted fund classification must also comply with 2 CFR 200 Subpart D financial management requirements (separate identification of federal funds).
 
-**Compliance threshold:** A restriction purpose matching the declared sponsored project scope, a restriction period matching the grant period, a named restriction authority (the grant agreement), and a fund code established in the financial system before funds are received. A grant treated as unrestricted revenue by the sponsor or project when the grant agreement contains purpose or period restrictions does not satisfy this field; it constitutes an INPAS classification error that must be corrected before the completion gate closes.
+**Conformance threshold:** A restriction purpose matching the declared sponsored project scope, a restriction period matching the grant period, a named restriction authority (the grant agreement), and a fund code established in the financial system before funds are received. A grant treated as unrestricted revenue by the sponsor or project when the grant agreement contains purpose or period restrictions does not satisfy this field; it constitutes an INPAS classification error that must be corrected before the completion gate closes.
 
 ---
 

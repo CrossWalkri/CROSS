@@ -1,7 +1,7 @@
 ---
 title: SNAP-Ed Evaluation Framework Compatibility - CROSS+WALKRI
-version: 0.1.0
-date: 2026-05-18
+version: 0.1.2
+date: 2026-06-08
 license: CC0
 standards: CROSS v0.4.5 (github.com/CrossWalkri/CROSS), WALKRI v0.1.7 (github.com/CrossWalkri/WALKRI)
 references:
@@ -10,6 +10,13 @@ references:
   - snaped.fns.usda.gov/administration/evaluation-framework
   - SNAP-Ed Behavior Outcome Measurement Toolkit (2024 update)
   - SNAP-Ed Plan Guidance (FNS annual)
+lens_tags:
+  calibration_tier: outcome_specified_self_reported
+  authority_source: statutory
+  cultural_methodological_lineage: western_institutional
+  funder_typology: government_non_aid
+  framework_scope_type: grantee_outcome_measurement
+  # USDA Food and Nutrition Service SNAP-Ed framework under Food and Nutrition Act
 ---
 
 # SNAP-Ed Evaluation Framework
@@ -63,10 +70,19 @@ The 2024 equity lens requirement operationalizes CROSS's disaggregation ratchet 
 
 WALKRI's pre-publication requirements address a structural gap that the SNAP-Ed framework creates by design. The framework specifies 51 indicator labels organized in a logic model structure, and FNS specifies which priority indicators states must measure. What the framework does not standardize is the operational definition of what evidence instrument will be used to measure each indicator, what response format is required, and what evidence threshold a data point must meet to count. These determinations are left to state implementing agencies, which means that MT1 data collected in California and MT1 data collected in Texas may reflect different operational definitions of the same indicator label.
 
-WALKRI's five pre-publication requirements, applied to state SNAP-Ed Plan development before FNS approval, resolve this at source. The criterion intent requirement ensures that the purpose of each priority indicator is stated in terms that connect the indicator to the ecological level it is designed to measure. The operational definition requirement specifies what an observed behavior or environmental condition must look like to qualify as a positive outcome for each indicator. The response form requirement specifies the format of the instrument through which data is collected: a direct observation protocol, a validated dietary recall instrument, or a policy environment scan form. The evidence form requirement specifies what documentation must accompany a positive outcome coding. The compliance threshold requirement specifies the minimum evidentiary standard a data point must meet before it is entered into state reporting.
+WALKRI's five pre-publication requirements, applied to state SNAP-Ed Plan development before FNS approval, resolve this at source. The criterion intent requirement ensures that the purpose of each priority indicator is stated in terms that connect the indicator to the ecological level it is designed to measure. The operational definition requirement specifies what an observed behavior or environmental condition must look like to qualify as a positive outcome for each indicator. The response form requirement specifies the format of the instrument through which data is collected: a direct observation protocol, a validated dietary recall instrument, or a policy environment scan form. The evidence form requirement specifies what documentation must accompany a positive outcome coding. The conformance threshold requirement specifies the minimum evidentiary standard a data point must meet before it is entered into state reporting.
 
 Applied to the Behavior Outcome Measurement Toolkit's validated instruments, WALKRI's requirements confirm that the toolkit instruments satisfy all five pre-publication requirements before a state adopts them. Applied to state-developed alternative instruments (which FNS permits where states demonstrate validity), WALKRI's requirements produce instrument specifications that are comparable across states at the definition level even where different data collection instruments are used. The result is a SNAP-Ed measurement system where the same indicator label reliably reflects the same underlying construct across state implementations.
 
 ---
 
 *Published under CC0. For the current version of CROSS and WALKRI, see github.com/CrossWalkri.*
+
+---
+
+## Changelog
+
+| Version | Date | Summary |
+|---|---|---|
+| 0.1.2 | 2026-06-08 | Frame Language own-voice pass applied as part of the corpus-wide 2026-06-08 sweep: own-voice watchlist terms (govern-family, accountability, mandatory, compliance, enforce, legitimate) recast to conformance and obligation vocabulary where they appeared in this document's own voice; citation use of source-framework terms preserved. Primitive-rename references aligned to current canon (Continuity Capacity, the Collective disbursement state, Affected Population Verification Gate). Em-dash- and watchlist-clean re-verified. No compatibility finding or mapping changed; vocabulary only. |
+| 0.1.1 | 2026-05-23 | Retroactive lens tagging: added calibration_tier, authority_source, cultural_methodological_lineage, funder_typology, framework_scope_type per Lenses Framework v0.1.0. |

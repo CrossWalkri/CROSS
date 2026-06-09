@@ -1,7 +1,7 @@
 ---
 title: Impact Management Norms Compatibility - CROSS+WALKRI
-version: 0.1.0
-date: 2026-05-16
+version: 0.1.2
+date: 2026-06-08
 license: CC0
 standards: CROSS v0.3.7 (github.com/CrossWalkri/CROSS), WALKRI v0.1.6 (github.com/CrossWalkri/WALKRI)
 references:
@@ -9,6 +9,13 @@ references:
   - Impact Management Project - Five Dimensions of Impact
   - GIIN IRIS+ v5.3c (iris.thegiin.org)
   - Impact Frontiers - Contribution Thesis
+lens_tags:
+  calibration_tier: outcome_specified_self_reported
+  authority_source: voluntary_published
+  cultural_methodological_lineage: western_institutional
+  funder_typology: pooled_fund_or_intermediary
+  framework_scope_type: grantee_outcome_measurement
+  # Impact Management Project / Norms is a coalition-built voluntary framework; pooled_fund_or_intermediary as primary; alternative: civil_society_advisory authority
 ---
 
 # Impact Management Norms Compatibility
@@ -64,8 +71,8 @@ The IMN "Who" dimension requires specifying: who the affected population is, how
 CROSS addresses the "Who" dimension through:
 
 - **FROM state population specification** (Part IV, change-obligation entry): the FROM state must name a specific measurable condition in a defined population. The population is a required element of the FROM state, not an optional qualifier.
-- **Disaggregation specification** (Field 7): specifies which population breakdowns are tracked and enforces a disaggregation ratchet so that reporting cannot become less specific over time.
-- **WALKRI operational definition** (Section 3.2): for fields collecting data about beneficiaries or affected populations, the operational definition specifies who counts as within the population and who does not.
+- **Disaggregation specification** (Field 7): specifies which population breakdowns are tracked and applies a disaggregation ratchet so that reporting cannot become less specific over time.
+- **WALKRI operational definition** (Section 3.2): for fields collecting data about affected-population members, the operational definition specifies who counts as within the population and who does not.
 - **Unintended outcomes disclosure** (Part IV): requires identification of populations affected by the intervention that were not specified in the entry gate, addressing the IMN's concern about affected parties beyond the intended beneficiaries.
 
 ### How Much
@@ -176,3 +183,12 @@ Impact Management Norms: impactmanagementnorms.com
 IRIS+: iris.thegiin.org
 
 License: CC0
+
+---
+
+## Changelog
+
+| Version | Date | Summary |
+|---|---|---|
+| 0.1.2 | 2026-06-08 | Frame Language own-voice pass applied as part of the corpus-wide 2026-06-08 sweep: own-voice watchlist terms (govern-family, accountability, mandatory, compliance, enforce, legitimate) recast to conformance and obligation vocabulary where they appeared in this document's own voice; citation use of source-framework terms preserved. Primitive-rename references aligned to current canon (Continuity Capacity, the Collective disbursement state, Affected Population Verification Gate). Em-dash- and watchlist-clean re-verified. No compatibility finding or mapping changed; vocabulary only. |
+| 0.1.1 | 2026-05-23 | Retroactive lens tagging: added calibration_tier, authority_source, cultural_methodological_lineage, funder_typology, framework_scope_type per Lenses Framework v0.1.0. |

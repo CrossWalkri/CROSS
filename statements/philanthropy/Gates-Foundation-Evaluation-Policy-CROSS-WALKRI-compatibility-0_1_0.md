@@ -1,18 +1,25 @@
 ---
 title: Gates Foundation Evaluation Policy Compatibility - CROSS+WALKRI
-version: 0.1.0
-date: 2026-05-18
+version: 0.1.2
+date: 2026-06-08
 license: CC0
 standards: CROSS v0.4.1 (github.com/CrossWalkri/CROSS), WALKRI v0.1.6 (github.com/CrossWalkri/WALKRI)
 references:
   - https://www.gatesfoundation.org/about/policies-and-resources/evaluation-policy
+lens_tags:
+  calibration_tier: outcome_specified_self_reported
+  authority_source: voluntary_published
+  cultural_methodological_lineage: western_institutional
+  funder_typology: private_foundation
+  framework_scope_type: allocator_process
+  # Bill and Melinda Gates Foundation Evaluation Policy
 ---
 
 # Gates Foundation Evaluation Policy Compatibility - CROSS+WALKRI
 
 ## Summary
 
-This statement documents structural alignment between the Gates Foundation's formal evaluation policy, "Learning for Impact," and the CROSS+WALKRI specification standards. This statement is distinct from a separate compatibility statement covering the Gates Open Access Policy, which governs data sharing obligations; that document should be consulted for questions about publication and data access requirements. This statement addresses only the evaluation policy's requirements for planning, execution, and institutional continuity of foundation-funded evaluations.
+This statement documents structural alignment between the Gates Foundation's formal evaluation policy, "Learning for Impact," and the CROSS+WALKRI specification standards. This statement is distinct from a separate compatibility statement covering the Gates Open Access Policy, which covers data sharing obligations; that document should be consulted for questions about publication and data access requirements. This statement addresses only the evaluation policy's requirements for planning, execution, and institutional continuity of foundation-funded evaluations.
 
 CROSS v0.4.1 and WALKRI v0.1.6 are both published under CC0 at github.com/CrossWalkri. The Gates Foundation Evaluation Policy is publicly available at gatesfoundation.org/about/policies-and-resources/evaluation-policy.
 
@@ -28,13 +35,13 @@ CROSS's entry specification gate directly implements the first requirement. No f
 
 CROSS's three obligation modes (Build, Change, and Retroactive) correspond structurally to the three-tier evaluation taxonomy. Build obligations apply to programs that are creating new outputs and infrastructure; this maps to Tier 1, where evaluation strengthens program effectiveness by testing whether outputs are being produced as planned. Change obligations apply to programs that are modifying conditions or practices in a system with multiple actors; this maps to Tier 2, where evaluation tests causal or contributory effects on outcomes that cannot be attributed to any single actor. Retroactive obligations apply to programs that are seeking recognition for change already demonstrated; this maps to Tier 3, where evaluation serves institutional learning and performance improvement by examining what has already occurred. The correspondence is structural, not definitional: CROSS does not use the tier language, but the obligation modes address the same underlying distinctions.
 
-CROSS's pre-commitment requirement, which mandates that the round specification be published before applications open, implements the third requirement. Partners, meaning applicants and the broader community, have access to the evaluation plan before they engage with the process. This is not a policy commitment to share evaluation plans; it is a gate condition that makes sharing the precondition for a round opening at all.
+CROSS's pre-commitment requirement, which requires that the round specification be published before applications open, implements the third requirement. Partners, meaning applicants and the broader community, have access to the evaluation plan before they engage with the process. This is not a policy commitment to share evaluation plans; it is a gate condition that makes sharing the precondition for a round opening at all.
 
 CROSS's Attestation Corpus implements the fourth requirement. Each round and each gate decision produces a structured record in the Attestation Corpus. Those records are persistent, referenced by round specification, and accessible across cycles. The Corpus functions as the central registry the policy requires, generated automatically by the gate process rather than maintained as a separate administrative task.
 
 ## WALKRI Alignment in Detail
 
-WALKRI's five field requirements implement the "actionable measurement" philosophy at the instrument level. The policy's rejection of adherence to any single method in favor of purpose-driven evaluation requires that measurement instruments be designed around the specific question a program is trying to answer. WALKRI's pre-publication audit enforces exactly this: every field in an intake or update instrument must be specified as a measurement instrument, with its construct, metric, and evidence type declared before data collection begins. A field that is not pre-specified as a measurement instrument is not an instrument; it is a label.
+WALKRI's five field requirements implement the "actionable measurement" philosophy at the instrument level. The policy's rejection of adherence to any single method in favor of purpose-driven evaluation requires that measurement instruments be designed around the specific question a program is trying to answer. WALKRI's pre-publication audit requires exactly this: every field in an intake or update instrument must be specified as a measurement instrument, with its construct, metric, and evidence type declared before data collection begins. A field that is not pre-specified as a measurement instrument is not an instrument; it is a label.
 
 WALKRI also supports the first requirement directly. Because WALKRI requires that measurement instruments be defined before any applicant encounters them, the measurable outcomes agreed at grant entry are operationalized in the intake fields themselves. The agreement is not a text commitment in a grant agreement; it is instantiated in the structure of the data collection instrument.
 
@@ -43,3 +50,12 @@ WALKRI also supports the first requirement directly. Because WALKRI requires tha
 This alignment is structural and analytical. The Gates Foundation has not reviewed or endorsed this statement. CROSS+WALKRI does not claim certification against the Gates Foundation Evaluation Policy; it documents how a funder or intermediary implementing CROSS+WALKRI would satisfy the policy's structural requirements. Programs operating under other evaluation frameworks may satisfy the same policy requirements through different mechanisms; this statement addresses only the CROSS+WALKRI pathway.
 
 Readers should not interpret this statement as covering data access, publication, or open-licensing requirements. Those are addressed separately in the Gates Open Access Policy compatibility statement.
+
+---
+
+## Changelog
+
+| Version | Date | Summary |
+|---|---|---|
+| 0.1.2 | 2026-06-08 | Frame Language own-voice pass applied as part of the corpus-wide 2026-06-08 sweep: own-voice watchlist terms (govern-family, accountability, mandatory, compliance, enforce, legitimate) recast to conformance and obligation vocabulary where they appeared in this document's own voice; citation use of source-framework terms preserved. Primitive-rename references aligned to current canon (Continuity Capacity, the Collective disbursement state, Affected Population Verification Gate). Em-dash- and watchlist-clean re-verified. No compatibility finding or mapping changed; vocabulary only. |
+| 0.1.1 | 2026-05-23 | Retroactive lens tagging: added calibration_tier, authority_source, cultural_methodological_lineage, funder_typology, framework_scope_type per Lenses Framework v0.1.0. |

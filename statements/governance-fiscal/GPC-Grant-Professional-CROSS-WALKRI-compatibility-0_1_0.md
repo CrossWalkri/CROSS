@@ -1,12 +1,19 @@
 ---
 title: Grant Professionals Certification (GPC) Competency Standards Compatibility - CROSS+WALKRI
-version: 0.1.0
-date: 2026-05-18
+version: 0.1.2
+date: 2026-06-08
 license: CC0
 standards: CROSS v0.4.3 (github.com/CrossWalkri/CROSS), WALKRI v0.1.7 (github.com/CrossWalkri/WALKRI)
 references:
   - https://www.grantcredential.org/the-exam/competencies-tested/
   - https://grantprofessionals.org/page/ethics
+lens_tags:
+  calibration_tier: process_conformant
+  authority_source: professional_society_standard
+  cultural_methodological_lineage: western_institutional
+  funder_typology: private_foundation
+  framework_scope_type: professional_practice_ethics
+  # Grant Professionals Certification Institute; practitioner credentialing; private_foundation primary funder typology as proxy
 ---
 
 # Grant Professionals Certification (GPC) Competency Standards
@@ -44,11 +51,11 @@ CROSS addresses GPC competency domains structurally rather than aspirationally. 
 | Post-award grant management (10%) | CROSS progress verification gate and completion gate. The gate records produced at each structured review interval are the performance reports a GPC-credentialed operator generates. |
 | Relationship cultivation (7%) | CROSS coherence disclosure and gate determination records create structured documentation of funder-grantee communication at each decision point throughout the grant lifecycle. |
 | Organizational development for grant-seeking (9%) | CROSS organizational identity declaration (legal structure, disbursement authority, jurisdiction) documents the organizational infrastructure relevant to grant-seeking capacity. |
-| Nationally recognized ethical practices (10%) | CROSS Part VII conflict of interest provisions + WALKRI evidence form requirement (separating evidence from beneficiary self-report implements accuracy and integrity standards structurally rather than relying on individual practitioner compliance). |
+| Nationally recognized ethical practices (10%) | CROSS Part VII conflict of interest provisions + WALKRI evidence form requirement (separating evidence from affected-population self-report implements accuracy and data quality standards structurally rather than relying on individual practitioner conformance). |
 
 The post-award grant management mapping deserves elaboration. A GPC-credentialed program operator is expected to produce structured performance reports at defined intervals during the grant period, documenting progress against agreed indicators. CROSS progress verification gate records are precisely those reports: they specify which indicators are being assessed, what evidence was reviewed, what determination was reached, and when. The gate record format is not an approximation of what a performance report should contain; it is a structured implementation of the GPC post-award competency.
 
-The ethics domain mapping is similarly direct. The GPA Code of Ethics prohibits misrepresentation and requires accuracy in reporting. CROSS Part VII addresses conflicts of interest at the organizational level. The structural separation of evidence from beneficiary self-report, required by WALKRI's evidence form specification, implements the accuracy requirement in the data collection phase rather than relying on retrospective review.
+The ethics domain mapping is similarly direct. The GPA Code of Ethics prohibits misrepresentation and requires accuracy in reporting. CROSS Part VII addresses conflicts of interest at the organizational level. The structural separation of evidence from affected-population self-report, required by WALKRI's evidence form specification, implements the accuracy requirement in the data collection phase rather than relying on retrospective review.
 
 ---
 
@@ -61,3 +68,12 @@ A WALKRI-conformant intake form is equally legible to a subject matter expert wi
 ---
 
 *Published under CC0. For the current version of CROSS and WALKRI, see github.com/CrossWalkri.*
+
+---
+
+## Changelog
+
+| Version | Date | Summary |
+|---|---|---|
+| 0.1.2 | 2026-06-08 | Frame Language own-voice pass applied as part of the corpus-wide 2026-06-08 sweep: own-voice watchlist terms (govern-family, accountability, mandatory, compliance, enforce, legitimate) recast to conformance and obligation vocabulary where they appeared in this document's own voice; citation use of source-framework terms preserved. Primitive-rename references aligned to current canon (Continuity Capacity, the Collective disbursement state, Affected Population Verification Gate). Em-dash- and watchlist-clean re-verified. No compatibility finding or mapping changed; vocabulary only. |
+| 0.1.1 | 2026-05-23 | Retroactive lens tagging: added calibration_tier, authority_source, cultural_methodological_lineage, funder_typology, framework_scope_type per Lenses Framework v0.1.0. |

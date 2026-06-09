@@ -1,13 +1,20 @@
 ---
 title: USCCB Catholic Campaign for Human Development (CCHD) Evaluation Criteria Compatibility - CROSS+WALKRI
-version: 0.1.0
-date: 2026-05-18
+version: 0.1.2
+date: 2026-06-08
 license: CC0
 standards: CROSS v0.4.4 (github.com/CrossWalkri/CROSS), WALKRI v0.1.7 (github.com/CrossWalkri/WALKRI)
 references:
   - https://www.usccb.org/committees/catholic-campaign-human-development/community-development-criteria-guidelines-and
   - https://www.usccb.org/committees/catholic-campaign-human-development/economic-development-criteria-and-guidelines
   - https://www.usccb.org/committees/catholic-campaign-human-development/grant-evaluation
+lens_tags:
+  calibration_tier: process_conformant
+  authority_source: voluntary_published
+  cultural_methodological_lineage: western_institutional
+  funder_typology: faith_based
+  framework_scope_type: allocator_process
+  # US Conference of Catholic Bishops Catholic Campaign for Human Development
 ---
 
 # USCCB Catholic Campaign for Human Development (CCHD) Evaluation Criteria Compatibility - CROSS+WALKRI
@@ -32,7 +39,7 @@ The Economic Development track funds organizations that create economic opportun
 
 The faith-mission alignment criterion is formally published and enforceable in both tracks. Organizations must demonstrate that their governance, policies, and activities are consistent with Catholic moral and social teaching. This criterion is not a general values alignment statement; it is a formally listed evaluation criterion with stated consequences for non-compliance: organizations whose activities are inconsistent with Catholic moral and social teaching are ineligible for CCHD funding regardless of their merits on other criteria. The enforcement mechanism is the diocesan director and bishop review process, which includes assessment of faith-mission alignment before applications proceed to the national subcommittee.
 
-No other framework in CROSS+WALKRI's current coverage includes a comparable faith-mission compliance criterion as a formally published, enforceable evaluation gate. The faith-mission criterion presents a distinctive operationalization challenge: unlike quantitative output or outcome criteria, faith-mission compliance requires that qualifying and non-qualifying examples be specified before the criterion can function as a measurement instrument rather than a post-hoc judgment.
+No other framework in CROSS+WALKRI's current coverage includes a comparable faith-mission conformance criterion as a formally published, enforceable evaluation gate. The faith-mission criterion presents a distinctive operationalization challenge: unlike quantitative output or outcome criteria, faith-mission conformance requires that qualifying and non-qualifying examples be specified before the criterion can function as a measurement instrument rather than a post-hoc judgment.
 
 ---
 
@@ -44,11 +51,11 @@ CCHD Community Development required criteria map to CROSS as follows. The organi
 
 The group self-sufficiency criterion, requiring evidence of movement toward independence from external funding, corresponds to CROSS's concurrent funding declarations and Theory of Change sustainability field. CROSS requires that other funding sources be disclosed; for CCHD purposes, the self-sufficiency criterion requires that the Theory of Change include a pathway from current grant dependence toward organizational sustainability. CROSS's sustainability field captures this as a pre-specified commitment rather than a reporting aspiration.
 
-The benefit to low-income populations criterion corresponds to CROSS's population scope declaration. CROSS requires that the population whose conditions the program is designed to affect be explicitly declared. For CCHD Community Development, the qualifying population is people experiencing poverty, and the population scope declaration must specify what income threshold defines the target population and what proportion of beneficiaries must fall within that threshold.
+The benefit to low-income populations criterion corresponds to CROSS's population scope declaration. CROSS requires that the population whose conditions the program is designed to affect be explicitly declared. For CCHD Community Development, the qualifying population is people experiencing poverty, and the population scope declaration must specify what income threshold defines the target population and what proportion of affected-population members must fall within that threshold.
 
 CCHD Economic Development criteria map to CROSS's Change obligation mode indicators at the employment and economic condition level. The job creation, wage level, and worker ownership criteria correspond to CROSS Fields 7-11: target condition (employment quality for low-income workers), baseline (current employment conditions), target threshold (number of jobs created, wage floor achieved, percentage of worker ownership), measurement timing, and comparison group if applicable. These fields operationalize the Economic Development criteria as pre-specified measurement commitments before any application is submitted.
 
-The faith-mission alignment criterion corresponds to CROSS's compliance threshold field, which is WALKRI's fifth requirement. The compliance threshold field requires that qualifying and non-qualifying examples be specified for any compliance criterion before any applicant encounters the intake form. For the CCHD faith-mission criterion, this means the round specification must declare what activities, governance decisions, or organizational positions constitute non-compliance with Catholic moral and social teaching, so that the criterion functions as an evaluable gate rather than a post-hoc judgment.
+The faith-mission alignment criterion corresponds to CROSS's conformance threshold field, which is WALKRI's fifth requirement. The conformance threshold field requires that qualifying and non-qualifying examples be specified for any conformance criterion before any applicant encounters the intake form. For the CCHD faith-mission criterion, this means the round specification must declare what activities, governance decisions, or organizational positions constitute non-compliance with Catholic moral and social teaching, so that the criterion functions as an evaluable gate rather than a post-hoc judgment.
 
 | CCHD Criterion | CROSS Mechanism |
 |---|---|
@@ -57,18 +64,27 @@ The faith-mission alignment criterion corresponds to CROSS's compliance threshol
 | Group self-sufficiency | Concurrent funding declarations; Theory of Change sustainability field |
 | Benefit to low-income populations | Population scope declaration; income threshold qualifying definition |
 | Economic Development: jobs, wages, ownership | Change obligation Fields 7-11: employment condition indicators, baselines, targets |
-| Faith-mission alignment with Catholic teaching | WALKRI compliance threshold field: qualifying/non-qualifying examples specified pre-publication |
+| Faith-mission alignment with Catholic teaching | WALKRI conformance threshold field: qualifying/non-qualifying examples specified pre-publication |
 
 ---
 
 ## How WALKRI Complements This Alignment
 
-WALKRI's pre-publication audit requirements are particularly important for the CCHD faith-mission alignment criterion. This criterion is structurally different from quantitative output and outcome criteria: it cannot be evaluated by counting outputs or measuring condition changes. It requires a judgment about organizational consistency with a normative framework. Without WALKRI's requirement that qualifying and non-qualifying examples be specified before any applicant encounters the criterion, the faith-mission criterion functions as a post-hoc judgment with no operationally defined standard, which makes it both unenforceably vague and vulnerable to inconsistent application across diocesan reviewers.
+WALKRI's pre-publication audit requirements are particularly important for the CCHD faith-mission alignment criterion. This criterion is structurally different from quantitative output and outcome criteria: it cannot be evaluated by counting outputs or measuring condition changes. It requires a judgment about organizational consistency with a normative framework. Without WALKRI's requirement that qualifying and non-qualifying examples be specified before any applicant encounters the criterion, the faith-mission criterion functions as a post-hoc judgment with no operationally defined standard, which makes it both operationally undefined and vulnerable to inconsistent application across diocesan reviewers.
 
-WALKRI's fifth requirement, the compliance threshold specification, requires that every compliance criterion specify before publication what evidence qualifies as compliance and what evidence disqualifies an applicant. For the CCHD faith-mission criterion, this means the diocesan director must, before opening the intake process, specify what categories of organizational activity or policy constitute non-compliance, what documentation the applicant must provide to demonstrate compliance, and what review procedure will be used to assess the documentation. When this specification is complete before any applicant encounters the form, the criterion becomes an auditable measurement instrument. When it is absent, it remains a values statement without operational definition.
+WALKRI's fifth requirement, the conformance threshold specification, requires that every conformance criterion specify before publication what evidence qualifies as meeting the criterion and what evidence disqualifies an applicant. For the CCHD faith-mission criterion, this means the diocesan director must, before opening the intake process, specify what categories of organizational activity or policy constitute non-compliance with Catholic moral and social teaching, what documentation the applicant must provide to demonstrate that the criterion is met, and what review procedure will be used to assess the documentation. When this specification is complete before any applicant encounters the form, the criterion becomes an auditable measurement instrument. When it is absent, it remains a values statement without operational definition.
 
 WALKRI applies the same logic to all other CCHD criteria. The democratic governance criterion cannot function as a measurement instrument unless the intake form specifies what proportion of decision-making roles must be held by low-income individuals, what documentation constitutes evidence of that proportion, and what counts as a decision-making role. The self-sufficiency criterion cannot function as a measurement instrument unless the form specifies what trend in external funding dependence counts as progress toward self-sufficiency. In each case, WALKRI's pre-publication audit converts the criterion from an evaluative standard into a measurement instrument, making the evaluation process more consistent, more defensible, and more useful to applicants who are trying to understand what they need to demonstrate.
 
 ---
 
 *Published under CC0. For the current version of CROSS and WALKRI, see github.com/CrossWalkri.*
+
+---
+
+## Changelog
+
+| Version | Date | Summary |
+|---|---|---|
+| 0.1.2 | 2026-06-08 | Frame Language own-voice pass applied as part of the corpus-wide 2026-06-08 sweep: own-voice watchlist terms (govern-family, accountability, mandatory, compliance, enforce, legitimate) recast to conformance and obligation vocabulary where they appeared in this document's own voice; citation use of source-framework terms preserved. Primitive-rename references aligned to current canon (Continuity Capacity, the Collective disbursement state, Affected Population Verification Gate). Em-dash- and watchlist-clean re-verified. No compatibility finding or mapping changed; vocabulary only. |
+| 0.1.1 | 2026-05-23 | Retroactive lens tagging: added calibration_tier, authority_source, cultural_methodological_lineage, funder_typology, framework_scope_type per Lenses Framework v0.1.0. |

@@ -1,12 +1,19 @@
 ---
 title: Good Financial Grant Practice (GFGP / ARS 1651) Compatibility - CROSS+WALKRI
-version: 0.1.0
-date: 2026-05-18
+version: 0.1.2
+date: 2026-06-08
 license: CC0
 standards: CROSS v0.4.4 (github.com/CrossWalkri/CROSS), WALKRI v0.1.7 (github.com/CrossWalkri/WALKRI)
 references:
   - https://www.globalgrantcommunity.com/standard
   - https://health-policy-systems.biomedcentral.com/articles/10.1186/s12961-025-01343-7
+lens_tags:
+  calibration_tier: independently_verified
+  authority_source: voluntary_published
+  cultural_methodological_lineage: western_institutional
+  funder_typology: multilateral_bank_or_fund
+  framework_scope_type: certification
+  # Good Financial Grant Practice (ARS 1651 African Regional Standard); certification scheme administered through African Organisation for Standardisation; primary funder typology multilateral; alternative bilateral_aid_agency
 ---
 
 # Good Financial Grant Practice (GFGP / ARS 1651)
@@ -17,7 +24,7 @@ references:
 
 ## Summary
 
-GFGP (ARS 1651), published by the African Organisation for Standardisation and managed by the Global Grant Community, is the only internationally recognized formal standard governing the grant management capacity of recipient organizations. CROSS+WALKRI and GFGP operate at different architectural layers: GFGP assesses organizational readiness to manage grants, while CROSS+WALKRI specifies the measurement architecture for what funded programs must demonstrate. The two standards are complementary and together address the full accountability chain from organizational systems quality through program evidence quality.
+GFGP (ARS 1651), published by the African Organisation for Standardisation and managed by the Global Grant Community, is the only internationally recognized formal standard governing the grant management capacity of recipient organizations. CROSS+WALKRI and GFGP operate at different architectural layers: GFGP assesses organizational readiness to manage grants, while CROSS+WALKRI specifies the measurement architecture for what funded programs must demonstrate. The two standards are complementary and together address the full verification chain from organizational systems quality through program evidence quality.
 
 ---
 
@@ -43,12 +50,12 @@ CROSS and GFGP do not map in a one-to-one provision-to-provision relationship, b
 | Governance: conflict of interest management | CROSS conflict of interest provisions (Part VII): board independence declaration, conflict management policy requirements |
 | Financial management: audit trail and record retention | CROSS completion gate evidence documentation + Attestation Corpus, retained indefinitely in verifiable form |
 | Financial management: budget management documentation and concurrent funding transparency | CROSS concurrent funding disclosure, documenting all active funding relationships for a given program |
-| Human resources management: personnel governance and named personnel accountability | CROSS organizational identity declaration, including named personnel fields for accountable individuals |
+| Human resources management: personnel governance and named personnel accountability | CROSS organizational identity declaration, including named personnel fields for named responsible individuals |
 | Procurement management: purchase documentation trail | CROSS Attestation Corpus, which retains evidence submitted at each gate and is independently verifiable |
 
 Three of these alignments warrant fuller explanation.
 
-The governance alignment is the tightest. GFGP Platinum tier requires extensive evidence of governance quality: board meeting records, conflict of interest declarations, organizational registration documents, and evidence that disbursement authority is clearly defined and exercised by appropriately authorized individuals. CROSS organizational identity fields collect exactly this data in structured form at entry, and CROSS Part VII conflict of interest provisions require documented conflict management as a condition of gate passage. An organization that has completed CROSS entry and passed Part VII review has produced, in structured and independently verifiable form, most of the governance documentation GFGP requires.
+The governance alignment is the tightest. GFGP Platinum tier requires extensive evidence of governance quality: board meeting records, conflict of interest declarations, organizational registration documents, and evidence that disbursement authority is clearly defined and exercised by appropriately authorized individuals. CROSS organizational identity fields collect exactly this data in structured form at entry, and CROSS Part VII conflict of interest provisions require documented conflict management as a condition of gate passage. An organization that has completed CROSS entry and passed Part VII review has produced, in structured and independently verifiable form, most of the decision-standing documentation GFGP requires.
 
 The financial management alignment centers on audit trail quality. GFGP financial management requirements emphasize that financial records must be complete, accurate, and independently verifiable. CROSS's Attestation Corpus, by retaining a timestamped record of every claim and every piece of evidence submitted at each gate, with independent attestation at each completion gate, provides exactly the audit trail structure that GFGP financial management auditors look for. The CROSS record is program-level rather than organizational-level, but it provides the program-specific financial documentation that a GFGP auditor would then integrate with the organizational financial records.
 
@@ -60,8 +67,17 @@ The procurement documentation alignment is partial and complementary. GFGP gover
 
 WALKRI's pre-publication audit requirement, which specifies that every intake field must define what it measures, how it measures it, and what evidence path an independent reviewer would follow, has a specific relationship to GFGP's financial documentation independence requirement. GFGP requires that financial records be independently verifiable, meaning that an auditor who did not participate in generating the record can trace it to source documentation without relying on the organization's own explanations. WALKRI's evidence form requirement imposes an equivalent discipline at the field level: every field in an intake instrument must specify an independent access path for its evidence before any applicant sees the form. An organization applying through a WALKRI-structured instrument submits data whose evidentiary basis has already been defined independently of the applicant, which is the field-level expression of the same independence principle that GFGP's financial documentation requirements embody.
 
-More broadly, GFGP certification represents a claim about organizational systems quality. WALKRI represents a claim about measurement instrument quality. An organization with GFGP certification operating programs assessed through WALKRI-structured instruments provides funders with two independent quality signals at different levels of the accountability chain: the organizational systems are sound and the measurement instruments are specified to professional standards. Neither signal substitutes for the other; together they address the two most common failure modes in grant accountability, which are poor organizational financial controls and poorly specified program measurement. The combination of GFGP certification with CROSS+WALKRI compliance represents the most complete accountability architecture currently available for grant-funded programs operating in the African civil society and research institution context where GFGP is most widely deployed.
+More broadly, GFGP certification represents a claim about organizational systems quality. WALKRI represents a claim about measurement instrument quality. An organization with GFGP certification operating programs assessed through WALKRI-structured instruments provides funders with two independent quality signals at different levels of the verification chain: the organizational systems are sound and the measurement instruments are specified to professional standards. Neither signal substitutes for the other; together they address the two most common failure modes in grant-funded programs, which are poor organizational financial controls and poorly specified program measurement. The combination of GFGP certification with CROSS+WALKRI conformance represents the most complete verification architecture currently available for grant-funded programs operating in the African civil society and research institution context where GFGP is most widely deployed.
 
 ---
 
 *Published under CC0. For the current version of CROSS and WALKRI, see github.com/CrossWalkri.*
+
+---
+
+## Changelog
+
+| Version | Date | Summary |
+|---|---|---|
+| 0.1.2 | 2026-06-08 | Frame Language own-voice pass applied as part of the corpus-wide 2026-06-08 sweep: own-voice watchlist terms (govern-family, accountability, mandatory, compliance, enforce, legitimate) recast to conformance and obligation vocabulary where they appeared in this document's own voice; citation use of source-framework terms preserved. Primitive-rename references aligned to current canon (Continuity Capacity, the Collective disbursement state, Affected Population Verification Gate). Em-dash- and watchlist-clean re-verified. No compatibility finding or mapping changed; vocabulary only. |
+| 0.1.1 | 2026-05-23 | Retroactive lens tagging: added calibration_tier, authority_source, cultural_methodological_lineage, funder_typology, framework_scope_type per Lenses Framework v0.1.0. |

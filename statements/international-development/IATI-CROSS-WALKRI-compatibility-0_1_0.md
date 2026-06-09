@@ -1,7 +1,7 @@
 ---
 title: IATI v2.03 Compatibility - CROSS+WALKRI
-version: 0.1.0
-date: 2026-05-16
+version: 0.1.2
+date: 2026-06-08
 license: CC0
 standards: CROSS v0.3.7 (github.com/CrossWalkri/CROSS), WALKRI v0.1.6 (github.com/CrossWalkri/WALKRI)
 references:
@@ -9,6 +9,13 @@ references:
   - IATI Activity Standard (iatistandard.org/en/iati-standard/203/activity-standard/)
   - IATI Organisation Standard (iatistandard.org/en/iati-standard/203/organisation-standard/)
   - IATI Codelists v2.03
+lens_tags:
+  calibration_tier: process_conformant
+  authority_source: voluntary_published
+  cultural_methodological_lineage: western_institutional
+  funder_typology: bilateral_aid_agency
+  framework_scope_type: accounting_financial
+  # International Aid Transparency Initiative; aid transparency data standard; primary funder typology bilateral_aid_agency for the publishing organizations; alternative multilateral_bank_or_fund
 ---
 
 # IATI v2.03 Compatibility
@@ -64,7 +71,7 @@ The Activity Standard organizes activity data into hierarchical XML elements. Th
 
 ### Result and Indicator Mapping
 
-The IATI `result` element and its nested `indicator` element are the most analytically significant for grants accountability. IATI's result element maps to CROSS's indicator specification as follows:
+The IATI `result` element and its nested `indicator` element are the most analytically significant for grants reporting and verification. IATI's result element maps to CROSS's indicator specification as follows:
 
 | IATI Element | CROSS Equivalent | Notes |
 | :-- | :-- | :-- |
@@ -173,3 +180,12 @@ IATI Standard v2.03: iatistandard.org/en/iati-standard/203/
 IATI Datastore: datastore.iatistandard.org
 
 License: CC0
+
+---
+
+## Changelog
+
+| Version | Date | Summary |
+|---|---|---|
+| 0.1.2 | 2026-06-08 | Frame Language own-voice pass applied as part of the corpus-wide 2026-06-08 sweep: own-voice watchlist terms (govern-family, accountability, mandatory, compliance, enforce, legitimate) recast to conformance and obligation vocabulary where they appeared in this document's own voice; citation use of source-framework terms preserved. Primitive-rename references aligned to current canon (Continuity Capacity, the Collective disbursement state, Affected Population Verification Gate). Em-dash- and watchlist-clean re-verified. No compatibility finding or mapping changed; vocabulary only. |
+| 0.1.1 | 2026-05-23 | Retroactive lens tagging: added calibration_tier, authority_source, cultural_methodological_lineage, funder_typology, framework_scope_type per Lenses Framework v0.1.0. |

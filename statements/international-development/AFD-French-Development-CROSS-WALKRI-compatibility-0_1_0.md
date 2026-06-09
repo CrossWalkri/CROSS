@@ -1,12 +1,19 @@
 ---
 title: AFD French Development Cooperation Compatibility - CROSS+WALKRI
-version: 0.1.0
-date: 2026-05-18
+version: 0.1.2
+date: 2026-06-08
 license: CC0
 standards: CROSS v0.4.2 (github.com/CrossWalkri/CROSS), WALKRI v0.1.6 (github.com/CrossWalkri/WALKRI)
 references:
   - https://www.afd.fr/en/ressources/afd-group-monitoring-and-evaluation-policy
   - https://www.oecd.org/derec/france/AFD-evaluation-policy-eng.pdf
+lens_tags:
+  calibration_tier: independently_verified
+  authority_source: statutory
+  cultural_methodological_lineage: western_institutional
+  funder_typology: bilateral_aid_agency
+  framework_scope_type: grantee_outcome_measurement
+  # Agence Francaise de Developpement French bilateral aid agency; statutory establishment under French law
 ---
 
 # AFD French Development Cooperation
@@ -39,9 +46,9 @@ The third addition is the group-wide learning loop mechanism. AFD's 2024 policy 
 
 Because CROSS Part XII covers OECD DAC compatibility, this statement focuses on the three structural additions in AFD's 2024 policy: design-stage M+E integration, Impact Portal transparency, and the learning loop mechanism.
 
-**Design-stage M+E integration and the CROSS entry gate.** The CROSS entry specification gate requires that indicator specifications, gate criteria, and Theory of Change be fully documented before any applications open. This is structurally identical to AFD's design-stage M+E integration requirement: the measurement system is not developed after projects are selected but is constitutive of the program design to which applicants respond. A CROSS-compliant program has its M+E architecture in place before any funding decision is made. AFD's policy requirement is satisfied at the system level: programs built on CROSS architecture cannot, by design, defer M+E system development until after project approval.
+**Design-stage M+E integration and the CROSS entry gate.** The CROSS entry specification gate requires that indicator specifications, gate criteria, and Theory of Change be fully documented before any applications open. This is structurally identical to AFD's design-stage M+E integration requirement: the measurement system is not developed after projects are selected but is constitutive of the program design to which applicants respond. A CROSS-conformant program has its M+E architecture in place before any funding decision is made. AFD's policy requirement is satisfied at the system level: programs built on CROSS architecture cannot, by design, defer M+E system development until after project approval.
 
-**Impact Portal transparency and the CROSS Attestation Corpus.** AFD's Impact Portal commitment requires that impact data be published across the full AFD Group portfolio in a coherent, aggregable form. The CROSS Attestation Corpus serves the same architectural function: it is a publication-ready record of gate documentation across all CROSS-compliant programs and rounds, structured consistently by the CROSS gate schema. Programs that satisfy CROSS gate documentation requirements automatically produce impact evidence in the consistent format that portfolio-level publication demands. The Attestation Corpus is CROSS's structural equivalent of AFD's Impact Portal from the program-side documentation perspective.
+**Impact Portal transparency and the CROSS Attestation Corpus.** AFD's Impact Portal commitment requires that impact data be published across the full AFD Group portfolio in a coherent, aggregable form. The CROSS Attestation Corpus serves the same architectural function: it is a publication-ready record of gate documentation across all CROSS-conformant programs and rounds, structured consistently by the CROSS gate schema. Programs that satisfy CROSS gate documentation requirements automatically produce impact evidence in the consistent format that portfolio-level publication demands. The Attestation Corpus is CROSS's structural equivalent of AFD's Impact Portal from the program-side documentation perspective.
 
 **Learning loop mechanism and the CROSS continuation gate.** The CROSS continuation gate is the direct structural equivalent of AFD's learning loop requirement. The continuation gate requires that programs document what was learned in a completed cycle and specify how that learning changes the next round's obligations before a new round opens. This creates exactly the documented, trackable pathway from evaluation findings to programming decisions that AFD requires. The continuation gate record is not a narrative summary; it is a structured gate document that must specify which findings informed which obligation changes, creating the traceable learning-to-decision record AFD's policy demands.
 
@@ -52,7 +59,7 @@ Because CROSS Part XII covers OECD DAC compatibility, this statement focuses on 
 | Learning loop (findings feed back into programming, documented and trackable) | Continuation gate (learning documented before next round opens) |
 | OECD DAC criteria (baseline) | CROSS Part XII coverage (addressed separately) |
 
-The relationship between AFD's three additions and CROSS gate architecture is direct and functional at each point. This is not a case where CROSS satisfies a framework's requirements through adjacent documentation; each AFD addition corresponds to a gate function designed to address the same underlying problem: that measurement systems designed too late produce evidence that cannot inform the decisions that matter, and that learning loops without structural enforcement remain aspirational rather than operational.
+The relationship between AFD's three additions and CROSS gate architecture is direct and functional at each point. This is not a case where CROSS satisfies a framework's requirements through adjacent documentation; each AFD addition corresponds to a gate function designed to address the same underlying problem: that measurement systems designed too late produce evidence that cannot inform the decisions that matter, and that learning loops without a named response to non-conformance remain aspirational rather than operational.
 
 ---
 
@@ -67,3 +74,12 @@ Programs operating within AFD-funded contexts that adopt CROSS+WALKRI standards 
 ---
 
 *Published under CC0. For the current version of CROSS and WALKRI, see github.com/CrossWalkri.*
+
+---
+
+## Changelog
+
+| Version | Date | Summary |
+|---|---|---|
+| 0.1.2 | 2026-06-08 | Frame Language own-voice pass applied as part of the corpus-wide 2026-06-08 sweep: own-voice watchlist terms (govern-family, accountability, mandatory, compliance, enforce, legitimate) recast to conformance and obligation vocabulary where they appeared in this document's own voice; citation use of source-framework terms preserved. Primitive-rename references aligned to current canon (Continuity Capacity, the Collective disbursement state, Affected Population Verification Gate). Em-dash- and watchlist-clean re-verified. No compatibility finding or mapping changed; vocabulary only. |
+| 0.1.1 | 2026-05-23 | Retroactive lens tagging: added calibration_tier, authority_source, cultural_methodological_lineage, funder_typology, framework_scope_type per Lenses Framework v0.1.0. |

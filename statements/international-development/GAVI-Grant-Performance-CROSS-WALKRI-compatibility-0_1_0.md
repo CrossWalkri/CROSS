@@ -1,13 +1,20 @@
 ---
 title: GAVI Alliance Grant Performance Framework Compatibility - CROSS+WALKRI
-version: 0.1.0
-date: 2026-05-18
+version: 0.1.2
+date: 2026-06-08
 license: CC0
 standards: CROSS v0.4.0 (github.com/CrossWalkri/CROSS), WALKRI v0.1.6 (github.com/CrossWalkri/WALKRI)
 references:
   - GAVI Alliance Grant Performance Framework (2015, revised 2018), https://www.gavi.org/our-support/grant-performance-frameworks
   - GAVI Results Framework and Indicator Guidance
   - GAVI Country Grant Portfolio Review Documentation
+lens_tags:
+  calibration_tier: independently_verified
+  authority_source: voluntary_published
+  cultural_methodological_lineage: western_institutional
+  funder_typology: multilateral_bank_or_fund
+  framework_scope_type: grantee_outcome_measurement
+  # Gavi the Vaccine Alliance grant performance framework; multilateral health fund
 ---
 
 # GAVI Alliance Grant Performance Framework Compatibility
@@ -79,7 +86,7 @@ CROSS's gate architecture enforces this sequencing mechanically. The activation 
 
 ## WALKRI and Data Quality at Country Review Points
 
-GAVI's country portfolio reviews assess not only whether targets were met but whether the data used to measure progress were of sufficient quality. WALKRI's five pre-publication field requirements (criterion intent, operational definition, response form, evidence form, compliance threshold) ensure that every intake field is a calibrated measurement instrument before it is deployed in a grant round.
+GAVI's country portfolio reviews assess not only whether targets were met but whether the data used to measure progress were of sufficient quality. WALKRI's five pre-publication field requirements (criterion intent, operational definition, response form, evidence form, conformance threshold) ensure that every intake field is a calibrated measurement instrument before it is deployed in a grant round.
 
 WALKRI's five data quality standards match the five criteria GAVI reviewers apply when examining indicator data: validity, reliability, precision, integrity, and timeliness. A WALKRI-conformant field specification is audit-ready by design, which means country portfolio review data quality assessments confirm design quality rather than investigate collection failures after the fact.
 
@@ -116,3 +123,5 @@ License: CC0
 | Version | Date | Summary |
 |---|---|---|
 | 0.1.0 | 2026-05-18 | Initial draft. GAVI two-tier indicator structure mapped to CROSS obligation dimensions. GAVI indicator documentation requirements mapped to CROSS eleven-field specification. Pre-implementation definition requirement mapped to CROSS entry specification gate. WALKRI data quality standards mapped to GAVI country review requirements. |
+| 0.1.1 | 2026-05-23 | Retroactive lens tagging: added calibration_tier, authority_source, cultural_methodological_lineage, funder_typology, framework_scope_type per Lenses Framework v0.1.0. |
+| 0.1.2 | 2026-06-08 | Frame Language own-voice pass applied as part of the corpus-wide 2026-06-08 sweep: own-voice watchlist terms (govern-family, accountability, mandatory, compliance, enforce, legitimate) recast to conformance and obligation vocabulary where they appeared in this document's own voice; citation use of source-framework terms preserved. Primitive-rename references aligned to current canon (Continuity Capacity, the Collective disbursement state, Affected Population Verification Gate). Em-dash- and watchlist-clean re-verified. No compatibility finding or mapping changed; vocabulary only. |

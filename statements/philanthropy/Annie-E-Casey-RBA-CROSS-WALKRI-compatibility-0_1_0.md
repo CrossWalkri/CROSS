@@ -1,12 +1,19 @@
 ---
 title: Annie E. Casey Foundation and Results-Based Accountability (RBA) Compatibility - CROSS+WALKRI
-version: 0.1.0
-date: 2026-05-18
+version: 0.1.2
+date: 2026-06-08
 license: CC0
 standards: CROSS v0.4.4 (github.com/CrossWalkri/CROSS), WALKRI v0.1.7 (github.com/CrossWalkri/WALKRI)
 references:
   - https://www.aecf.org/resources/a-road-to-results-a-performance-measurement-guidebook
   - https://www.aecf.org/resources/a-road-to-results-results-based-accountability-in-the-annie-e-casey-founda/
+lens_tags:
+  calibration_tier: outcome_specified_self_reported
+  authority_source: voluntary_published
+  cultural_methodological_lineage: western_institutional
+  funder_typology: private_foundation
+  framework_scope_type: grantee_outcome_measurement
+  # Annie E. Casey Foundation Results-Based Accountability
 ---
 
 # Annie E. Casey Foundation and Results-Based Accountability (RBA) Compatibility - CROSS+WALKRI
@@ -37,9 +44,9 @@ RBA is widely adopted beyond AECF. Local governments in the United States and th
 
 ## How CROSS Satisfies the RBA Framework
 
-CROSS's Theory of Change hierarchy and obligation modes implement the full RBA accountability structure. The mapping is detailed below.
+CROSS's Theory of Change hierarchy and obligation modes implement the full RBA obligation-and-verification structure. The mapping is detailed below.
 
-The RBA quantity metric corresponds to CROSS's output tier. Outputs are the activities conducted and the deliverables produced: sessions held, participants served, materials distributed, systems deployed. CROSS's Build obligation mode is the operative mode for programs where quantity measurement is the primary accountability requirement. The completion gate in Build mode requires deliverable specification: what outputs were committed, what evidence constitutes output completion, and what counts as a served participant. This is precisely what the RBA quantity metric requires to be answerable.
+The RBA quantity metric corresponds to CROSS's output tier. Outputs are the activities conducted and the deliverables produced: sessions held, participants served, materials distributed, systems deployed. CROSS's Build obligation mode is the operative mode for programs where quantity measurement is the primary reporting obligation. The completion gate in Build mode requires deliverable specification: what outputs were committed, what evidence constitutes output completion, and what counts as a served participant. This is precisely what the RBA quantity metric requires to be answerable.
 
 The RBA quality metric corresponds to CROSS's completion gate evidence quality specifications and CROSS's evidence strength taxonomy. Quality in RBA is about how well the output was produced, which requires evidence that goes beyond counting outputs; it requires evidence that the delivery met specified standards. CROSS's completion gate requires that evidence type and evidence strength be declared before applications open, and it requires that the evidence specification distinguish between delivery completion (quantity) and delivery quality. The evidence strength taxonomy provides the vocabulary for distinguishing anecdotal quality reports from systematic quality monitoring.
 
@@ -67,3 +74,12 @@ WALKRI also ensures that the population accountability frame is implemented as a
 ---
 
 *Published under CC0. For the current version of CROSS and WALKRI, see github.com/CrossWalkri.*
+
+---
+
+## Changelog
+
+| Version | Date | Summary |
+|---|---|---|
+| 0.1.2 | 2026-06-08 | Frame Language own-voice pass applied as part of the corpus-wide 2026-06-08 sweep: own-voice watchlist terms (govern-family, accountability, mandatory, compliance, enforce, legitimate) recast to conformance and obligation vocabulary where they appeared in this document's own voice; citation use of source-framework terms preserved. Primitive-rename references aligned to current canon (Continuity Capacity, the Collective disbursement state, Affected Population Verification Gate). Em-dash- and watchlist-clean re-verified. No compatibility finding or mapping changed; vocabulary only. |
+| 0.1.1 | 2026-05-23 | Retroactive lens tagging: added calibration_tier, authority_source, cultural_methodological_lineage, funder_typology, framework_scope_type per Lenses Framework v0.1.0. |

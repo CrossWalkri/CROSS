@@ -1,7 +1,7 @@
 ---
 title: IMLS Outcome-Based Evaluation Compatibility - CROSS+WALKRI
-version: 0.1.0
-date: 2026-05-18
+version: 0.1.2
+date: 2026-06-08
 license: CC0
 standards: CROSS v0.4.5 (github.com/CrossWalkri/CROSS), WALKRI v0.1.7 (github.com/CrossWalkri/WALKRI)
 references:
@@ -9,6 +9,13 @@ references:
   - Government Performance and Results Act, Pub. L. 103-62 (1993)
   - Museum and Library Services Act, 20 U.S.C. § 9101 et seq.
   - IMLS Shaping Outcomes curriculum (shapingoutcomes.org)
+lens_tags:
+  calibration_tier: outcome_specified_self_reported
+  authority_source: statutory
+  cultural_methodological_lineage: western_institutional
+  funder_typology: government_non_aid
+  framework_scope_type: grantee_outcome_measurement
+  # Institute of Museum and Library Services Outcome-Based Evaluation; statutory under Museum and Library Services Act
 ---
 
 # IMLS Outcome-Based Evaluation
@@ -19,7 +26,7 @@ references:
 
 ## Summary
 
-The Institute of Museum and Library Services Outcome-Based Evaluation (IMLS OBE) framework, mandated under the Government Performance and Results Act (GPRA) for all IMLS grantees, requires five structural elements for every grant: intended outcomes, indicators, data sources, targets for change, and timing. These five elements map directly to CROSS's eleven-field indicator specification. IMLS OBE's definition of outcomes as "benefits to people" explicitly excludes activities and outputs, producing the same structural distinction that CROSS enforces through the Theory of Build gate. WALKRI's pre-publication requirements apply to IMLS intake instruments to ensure that the five structural elements are specified before any applicant submits a proposal, converting the OBE framework from a post-application documentation requirement into a pre-specified commitment architecture.
+The Institute of Museum and Library Services Outcome-Based Evaluation (IMLS OBE) framework, mandated under the Government Performance and Results Act (GPRA) for all IMLS grantees, requires five structural elements for every grant: intended outcomes, indicators, data sources, targets for change, and timing. These five elements map directly to CROSS's eleven-field indicator specification. IMLS OBE's definition of outcomes as "benefits to people" explicitly excludes activities and outputs, producing the same structural distinction that CROSS applies through the Theory of Build gate. WALKRI's pre-publication requirements apply to IMLS intake instruments to ensure that the five structural elements are specified before any applicant submits a proposal, converting the OBE framework from a post-application documentation requirement into a pre-specified commitment architecture.
 
 ---
 
@@ -59,8 +66,17 @@ CROSS's eleven-field indicator specification satisfies the five IMLS OBE structu
 
 WALKRI's five pre-publication field requirements apply to IMLS intake instruments to ensure that the five OBE structural elements are fully specified before any applicant encounters the form. Without WALKRI-level pre-publication specification, the most common failure mode is that OBE elements are nominally present in the application template but insufficiently defined to constrain applicant responses. An IMLS intake field that asks for "intended outcomes" without specifying what counts as an observable, measurable change in participant skill, knowledge, or behavior leaves the specification problem to the applicant and guarantees heterogeneous outcome claims that cannot be compared across a grant cohort.
 
-WALKRI's operational definition requirement, applied before any intake field is deployed, resolves this at source. For an IMLS library program, the operational definition field specifies what counts as "demonstrated increased understanding" before any applicant writes their proposal: what assessment instrument, what score threshold, what administration timing. WALKRI's evidence form requirement specifies what documentation type satisfies the data source element: observation protocol, pre/post survey, skill demonstration, or administrative record. WALKRI's compliance threshold requirement specifies the minimum target for change that the program will accept as evidence of outcome achievement, converting the OBE Targets for Change element from a grantee-defined variable into a pre-specified program commitment.
+WALKRI's operational definition requirement, applied before any intake field is deployed, resolves this at source. For an IMLS library program, the operational definition field specifies what counts as "demonstrated increased understanding" before any applicant writes their proposal: what assessment instrument, what score threshold, what administration timing. WALKRI's evidence form requirement specifies what documentation type satisfies the data source element: observation protocol, pre/post survey, skill demonstration, or administrative record. WALKRI's conformance threshold requirement specifies the minimum target for change that the program will accept as evidence of outcome achievement, converting the OBE Targets for Change element from a grantee-defined variable into a pre-specified program commitment.
 
 ---
 
 *Published under CC0. For the current version of CROSS and WALKRI, see github.com/CrossWalkri.*
+
+---
+
+## Changelog
+
+| Version | Date | Summary |
+|---|---|---|
+| 0.1.2 | 2026-06-08 | Frame Language own-voice pass applied as part of the corpus-wide 2026-06-08 sweep: own-voice watchlist terms (govern-family, accountability, mandatory, compliance, enforce, legitimate) recast to conformance and obligation vocabulary where they appeared in this document's own voice; citation use of source-framework terms preserved. Primitive-rename references aligned to current canon (Continuity Capacity, the Collective disbursement state, Affected Population Verification Gate). Em-dash- and watchlist-clean re-verified. No compatibility finding or mapping changed; vocabulary only. |
+| 0.1.1 | 2026-05-23 | Retroactive lens tagging: added calibration_tier, authority_source, cultural_methodological_lineage, funder_typology, framework_scope_type per Lenses Framework v0.1.0. |

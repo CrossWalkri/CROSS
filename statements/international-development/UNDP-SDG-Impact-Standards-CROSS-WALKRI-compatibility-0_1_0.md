@@ -1,13 +1,20 @@
 ---
 title: UN SDG Impact Standards for Financing Sustainable Development (IS-FSD) Compatibility - CROSS+WALKRI
-version: 0.1.0
-date: 2026-05-18
+version: 0.1.2
+date: 2026-06-08
 license: CC0
 standards: CROSS v0.4.4 (github.com/CrossWalkri/CROSS), WALKRI v0.1.7 (github.com/CrossWalkri/WALKRI)
 references:
   - https://sdgprivatefinance.undp.org/sites/default/files/resource-documents/SDG-Impact-Standards-for-Enterprises-Version1-EN.pdf
   - https://www.oecd.org/content/dam/oecd/en/publications/reports/2021/05/oecd-undp-impact-standards-for-financing-sustainable-development_e3aa446a/744f982e-en.pdf
   - https://sdgimpact.undp.org/about-the-sdg-impact-standards.html
+lens_tags:
+  calibration_tier: outcome_specified_self_reported
+  authority_source: voluntary_published
+  cultural_methodological_lineage: western_institutional
+  funder_typology: multilateral_bank_or_fund
+  framework_scope_type: grantee_outcome_measurement
+  # UNDP SDG Impact Standards for Enterprises, Bond Issuers, and Private Equity Funds; framework primarily for corporate and investor reporting; primary funder typology multilateral_bank_or_fund as authoring body; alternative corporate_csr for adopters
 ---
 
 # UN SDG Impact Standards for Financing Sustainable Development (IS-FSD)
@@ -28,7 +35,7 @@ The IS-FSD represents a conceptually distinct category of accountability standar
 
 This distinction matters because IS-FSD compliance requires organizational architecture, not just program design. An organization can have excellent program-level measurement and reporting while having no coherent organizational strategy for SDG alignment, no management processes that systematically use evidence to adapt that strategy, no transparency about how it allocates resources across SDG priorities, and no governance structures ensuring accountability for SDG-aligned decision-making. IS-FSD addresses all four of these dimensions: Strategy, Management, Transparency, and Governance.
 
-The IS-FSD was developed jointly by the OECD and UNDP to provide a framework for how private finance actors, development finance institutions, and public funders can credibly align their portfolios with the SDGs. Three versions of the standard exist: for enterprises, for bond issuers, and for financing sustainable development specifically. The IS-FSD version addresses the accountability architecture of organizations that deploy financing for development purposes, including grant-making organizations, blended finance vehicles, and development finance institutions. The standard operates within the broader SDG Impact ecosystem at UNDP, which includes the SDG Impact Seal and a growing assurance infrastructure.
+The IS-FSD was developed jointly by the OECD and UNDP to provide a framework for how private finance actors, development finance institutions, and public funders can reliably align their portfolios with the SDGs. Three versions of the standard exist: for enterprises, for bond issuers, and for financing sustainable development specifically. The IS-FSD version addresses the accountability architecture of organizations that deploy financing for development purposes, including grant-making organizations, blended finance vehicles, and development finance institutions. The standard operates within the broader SDG Impact ecosystem at UNDP, which includes the SDG Impact Seal and a growing assurance infrastructure.
 
 Critically, IS-FSD does not prescribe which SDGs an organization must prioritize, or what specific program models it must use. It prescribes how organizations should structure the processes by which they make those choices. This makes IS-FSD a process standard at the organizational level, analogous to the way ISO quality management standards govern process without prescribing product specifications.
 
@@ -40,7 +47,7 @@ The IS-FSD Strategy dimension requires that organizations articulate a clear the
 
 The IS-FSD Management dimension requires that organizations use evidence to make decisions, have processes for monitoring performance against SDG-aligned objectives, and adapt their strategies and operations based on what they learn. The CROSS gate sequence satisfies all three requirements: the gate architecture is a structured, evidence-based decision process applied at each program cycle. Gate decisions are not discretionary; they require specified evidence at each transition point. The continuation gate specifically requires that prior-period evidence be examined and that its implications for next-period design be documented. This is the adaptive management process IS-FSD requires, made into a structural condition of program continuation.
 
-The IS-FSD Transparency dimension requires that organizations publicly disclose how they integrate the SDGs into their strategy and operations, using credible and verifiable evidence. The CROSS pre-commitment requirement satisfies the credibility dimension: criteria, Theory of Change, and expected outcomes are published before any application is submitted, making them independently verifiable before results are claimed. The CROSS Attestation Corpus satisfies the persistence and verifiability requirements: gate records are held as a persistent, publicly queryable record of design commitments and gate determinations, enabling any stakeholder to verify the organization's stated approach against its actual decisions.
+The IS-FSD Transparency dimension requires that organizations publicly disclose how they integrate the SDGs into their strategy and operations, using credible and verifiable evidence. The CROSS pre-commitment requirement satisfies the independent verifiability requirement: criteria, Theory of Change, and expected outcomes are published before any application is submitted, making them independently verifiable before results are claimed. The CROSS Attestation Corpus satisfies the persistence and verifiability requirements: gate records are held as a persistent, publicly queryable record of design commitments and gate determinations, enabling any stakeholder to verify the organization's stated approach against its actual decisions.
 
 The IS-FSD Governance dimension requires that organizations have governance structures ensuring accountability for SDG-aligned decision-making, including management of conflicts of interest that could undermine SDG alignment. CROSS Part VII conflict of interest provisions satisfy this directly: programs must document governance-level conflicts and demonstrate that disbursement decisions are insulated from them.
 
@@ -65,3 +72,12 @@ This is consequential for IS-FSD's Transparency dimension in particular. If inta
 ---
 
 *Published under CC0. For the current version of CROSS and WALKRI, see github.com/CrossWalkri.*
+
+---
+
+## Changelog
+
+| Version | Date | Summary |
+|---|---|---|
+| 0.1.2 | 2026-06-08 | Frame Language own-voice pass applied as part of the corpus-wide 2026-06-08 sweep: own-voice watchlist terms (govern-family, accountability, mandatory, compliance, enforce, legitimate) recast to conformance and obligation vocabulary where they appeared in this document's own voice; citation use of source-framework terms preserved. Primitive-rename references aligned to current canon (Continuity Capacity, the Collective disbursement state, Affected Population Verification Gate). Em-dash- and watchlist-clean re-verified. No compatibility finding or mapping changed; vocabulary only. |
+| 0.1.1 | 2026-05-23 | Retroactive lens tagging: added calibration_tier, authority_source, cultural_methodological_lineage, funder_typology, framework_scope_type per Lenses Framework v0.1.0. |

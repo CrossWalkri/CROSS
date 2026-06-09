@@ -1,7 +1,7 @@
 ---
 title: National Lottery Community Fund and Lottery-Funded Grantmaking Compatibility - CROSS+WALKRI
-version: 0.1.0
-date: 2026-05-18
+version: 0.1.2
+date: 2026-06-08
 license: CC0
 standards: CROSS v0.4.2 (github.com/CrossWalkri/CROSS), WALKRI v0.1.6 (github.com/CrossWalkri/WALKRI)
 references:
@@ -10,6 +10,13 @@ references:
   - https://otf.ca/our-grants/grant-investment-framework
   - https://www.toteboard.gov.sg/impact/impact-measurement/
   - https://www.communitymatters.govt.nz/lottery-outcomes-framework
+lens_tags:
+  calibration_tier: outcome_specified_self_reported
+  authority_source: statutory
+  cultural_methodological_lineage: western_institutional
+  funder_typology: government_non_aid
+  framework_scope_type: allocator_process
+  # National Lottery Community Fund grantmaking; statutory authority under National Lottery etc. Act 1993
 ---
 
 # National Lottery Community Fund and Lottery-Funded Grantmaking
@@ -40,9 +47,9 @@ Across these bodies, several structural requirements recur: grantees must specif
 
 ## How CROSS Satisfies Lottery-Funded Grantmaking Frameworks
 
-CROSS satisfies the outcome specification, progress reporting, and evidence accountability requirements of lottery-funded grantmaking through its gate architecture and indicator specification system.
+CROSS satisfies the outcome specification, progress reporting, and obligation verification requirements of lottery-funded grantmaking through its gate architecture and indicator specification system.
 
-The NLCF four Thriving Communities missions function as goal-level declarations in CROSS terms. A grantee applying through an NLCF-aligned CROSS program declares at intake which mission their work contributes to, specifies the outcome indicators they will use to measure that contribution, and documents their Theory of Change connecting activities to outcomes to the mission goal. This is the CROSS Theory of Change hierarchy: activities produce outputs, outputs contribute to outcomes, outcomes contribute to goals. When NLCF's mission is the declared goal, the entire CROSS indicator specification structure is anchored to that goal-level accountability.
+The NLCF four Thriving Communities missions function as goal-level declarations in CROSS terms. A grantee applying through an NLCF-aligned CROSS program declares at intake which mission their work contributes to, specifies the outcome indicators they will use to measure that contribution, and documents their Theory of Change connecting activities to outcomes to the mission goal. This is the CROSS Theory of Change hierarchy: activities produce outputs, outputs contribute to outcomes, outcomes contribute to goals. When NLCF's mission is the declared goal, the entire CROSS indicator specification structure is anchored to that goal-level obligation direction.
 
 NLCF's annual progress and learning reports correspond to CROSS's progress verification gate records. At each gate, the grantee documents progress against the outcome indicators specified at intake, using whatever evidence form the NLCF evidence guidance permits (qualitative or quantitative). The gate record is structured documentation: it references the pre-committed specification, records what was achieved against what was stated, and preserves the determination rationale. This is more structured than NLCF's current progress report format, but it satisfies all the same accountability requirements while adding the independently verifiable pre-commitment that CROSS provides.
 
@@ -75,3 +82,12 @@ WALKRI also addresses a specific risk in lottery-funded programs with flexible e
 ---
 
 *Published under CC0. For the current version of CROSS and WALKRI, see github.com/CrossWalkri.*
+
+---
+
+## Changelog
+
+| Version | Date | Summary |
+|---|---|---|
+| 0.1.2 | 2026-06-08 | Frame Language own-voice pass applied as part of the corpus-wide 2026-06-08 sweep: own-voice watchlist terms (govern-family, accountability, mandatory, compliance, enforce, legitimate) recast to conformance and obligation vocabulary where they appeared in this document's own voice; citation use of source-framework terms preserved. Primitive-rename references aligned to current canon (Continuity Capacity, the Collective disbursement state, Affected Population Verification Gate). Em-dash- and watchlist-clean re-verified. No compatibility finding or mapping changed; vocabulary only. |
+| 0.1.1 | 2026-05-23 | Retroactive lens tagging: added calibration_tier, authority_source, cultural_methodological_lineage, funder_typology, framework_scope_type per Lenses Framework v0.1.0. |

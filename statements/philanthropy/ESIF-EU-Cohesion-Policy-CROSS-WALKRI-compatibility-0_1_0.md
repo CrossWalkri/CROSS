@@ -1,7 +1,7 @@
 ---
 title: EU Structural and Investment Funds (ESIF) and Cohesion Policy Compatibility - CROSS+WALKRI
-version: 0.1.0
-date: 2026-05-18
+version: 0.1.2
+date: 2026-06-08
 license: CC0
 standards: CROSS v0.4.3 (github.com/CrossWalkri/CROSS), WALKRI v0.1.7 (github.com/CrossWalkri/WALKRI)
 references:
@@ -9,6 +9,13 @@ references:
   - SWD(2021) 198 Performance Framework Guidance (ec.europa.eu/regional_policy)
   - ESF+ Common Indicators Toolbox (sfc.ec.europa.eu)
   - Cohesion data registry (cohesiondata.ec.europa.eu)
+lens_tags:
+  calibration_tier: independently_verified
+  authority_source: regulatory
+  cultural_methodological_lineage: western_institutional
+  funder_typology: multilateral_bank_or_fund
+  framework_scope_type: grantee_outcome_measurement
+  # European Structural and Investment Funds under EU Cohesion Policy regulations
 ---
 
 # EU Structural and Investment Funds (ESIF) and Cohesion Policy (CPR)
@@ -19,13 +26,13 @@ references:
 
 ## Summary
 
-The EU Structural and Investment Funds (ESIF), governed by the Common Provisions Regulation (CPR) 2021/1060, constitute one of the world's largest grant programs by volume, covering regional development, employment, and social inclusion across EU member states. The CPR operates under a formally distinct European regulatory evaluation architecture that is not covered by the EU Global Europe Results Framework (EU GERF), which governs only external development aid. CROSS+WALKRI satisfies the CPR's evaluation requirements structurally: the five CPR evaluation criteria map to CROSS's core architecture, and the mandatory common indicator sets required by each fund's regulation are satisfied by CROSS's eleven-field indicator specification.
+The EU Structural and Investment Funds (ESIF), subject to the Common Provisions Regulation (CPR) 2021/1060, constitute one of the world's largest grant programs by volume, covering regional development, employment, and social inclusion across EU member states. The CPR operates under a formally distinct European regulatory evaluation architecture that is not covered by the EU Global Europe Results Framework (EU GERF), which governs only external development aid. CROSS+WALKRI satisfies the CPR's evaluation requirements structurally: the five CPR evaluation criteria map to CROSS's core architecture, and the mandatory common indicator sets required by each fund's regulation are satisfied by CROSS's eleven-field indicator specification.
 
 ---
 
 ## The EU Cohesion Policy Evaluation Framework
 
-The EU Cohesion Policy 2021-2027, governed by the Common Provisions Regulation (Regulation (EU) 2021/1060), is the primary framework for EU structural funding covering the European Regional Development Fund (ERDF), the Cohesion Fund, the European Social Fund+ (ESF+), the Just Transition Fund (JTF), and related instruments. The CPR establishes formal evaluation requirements that differ structurally from the EU Global Europe Results Framework (EU GERF), which covers only EU external development cooperation (DG INTPA). ESIF and EU GERF are parallel EU regulatory frameworks for different contexts: ESIF governs internal EU cohesion spending; GERF governs external aid.
+The EU Cohesion Policy 2021-2027, subject to the Common Provisions Regulation (Regulation (EU) 2021/1060), is the primary framework for EU structural funding covering the European Regional Development Fund (ERDF), the Cohesion Fund, the European Social Fund+ (ESF+), the Just Transition Fund (JTF), and related instruments. The CPR establishes formal evaluation requirements that differ structurally from the EU Global Europe Results Framework (EU GERF), which covers only EU external development cooperation (DG INTPA). ESIF and EU GERF are parallel EU regulatory frameworks for different contexts: ESIF covers internal EU cohesion spending; GERF covers external aid.
 
 The CPR evaluation framework has four distinctive elements not found in OECD DAC or other covered frameworks:
 
@@ -35,7 +42,7 @@ The CPR evaluation framework has four distinctive elements not found in OECD DAC
 
 **Programme-level evaluation plans:** CPR Article 45 requires Managing Authorities to produce evaluation plans at programme start, specifying what evaluations will be conducted and when. This ex-ante evaluation planning requirement is mandatory and published.
 
-**Performance framework:** The CPR's performance framework (SWD(2021) 198) requires milestones and targets for each programme's output and result indicators, assessed at mid-term (2025) with potential reprogramming consequences. This creates a mandatory mid-term accountability gate with financial consequences for underperformance.
+**Performance framework:** The CPR's performance framework (SWD(2021) 198) requires milestones and targets for each programme's output and result indicators, assessed at mid-term (2025) with potential reprogramming consequences. This creates a required mid-term verification gate with financial consequences for underperformance.
 
 ---
 
@@ -73,10 +80,19 @@ CROSS addresses all five CPR evaluation criteria and the mandatory indicator inf
 
 ## How WALKRI Complements This Alignment
 
-The CPR's mandatory common indicator sets create a specific challenge for WALKRI compliance: the indicators are pre-specified by regulation and cannot be redesigned by individual Managing Authorities. For mandatory indicators, the WALKRI pre-publication audit confirms that the operational definitions, response forms, and evidence requirements from the regulatory annexes are faithfully reproduced in the programme's intake instruments before any beneficiary sees the form. For programme-specific additional indicators (which Managing Authorities may add beyond the mandatory common set), WALKRI's full five-requirement audit applies.
+The CPR's mandatory common indicator sets create a specific challenge for WALKRI conformance: the indicators are pre-specified by regulation and cannot be redesigned by individual Managing Authorities. For mandatory indicators, the WALKRI pre-publication audit confirms that the operational definitions, response forms, and evidence requirements from the regulatory annexes are faithfully reproduced in the programme's intake instruments before any affected-population member sees the form. For programme-specific additional indicators (which Managing Authorities may add beyond the mandatory common set), WALKRI's full five-requirement audit applies.
 
 The ESF+ participant-level common indicators require particularly precise field specification. An ESF+ intake field for "employment status at entry" must specify exactly which employment states qualify, how mixed-status households are classified, and what documentary evidence is required. Without WALKRI-level specification, reviewers across managing authorities interpret the same regulatory indicator differently, producing data that appears comparable (it uses the same mandatory indicator) but is not in practice. WALKRI's operational definition requirement, applied before any participant registers, resolves this at source.
 
 ---
 
 *Published under CC0. For the current version of CROSS and WALKRI, see github.com/CrossWalkri.*
+
+---
+
+## Changelog
+
+| Version | Date | Summary |
+|---|---|---|
+| 0.1.2 | 2026-06-08 | Frame Language own-voice pass applied as part of the corpus-wide 2026-06-08 sweep: own-voice watchlist terms (govern-family, accountability, mandatory, compliance, enforce, legitimate) recast to conformance and obligation vocabulary where they appeared in this document's own voice; citation use of source-framework terms preserved. Primitive-rename references aligned to current canon (Continuity Capacity, the Collective disbursement state, Affected Population Verification Gate). Em-dash- and watchlist-clean re-verified. No compatibility finding or mapping changed; vocabulary only. |
+| 0.1.1 | 2026-05-23 | Retroactive lens tagging: added calibration_tier, authority_source, cultural_methodological_lineage, funder_typology, framework_scope_type per Lenses Framework v0.1.0. |

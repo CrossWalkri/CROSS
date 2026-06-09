@@ -1,13 +1,20 @@
 ---
 title: DCED Standard for Results Measurement Compatibility - CROSS+WALKRI
-version: 0.1.0
-date: 2026-05-18
+version: 0.1.2
+date: 2026-06-08
 license: CC0
 standards: CROSS v0.4.0 (github.com/CrossWalkri/CROSS), WALKRI v0.1.6 (github.com/CrossWalkri/WALKRI)
 references:
   - DCED Standard for Results Measurement, https://www.enterprise-development.org/dced-standard-results-measurement/
   - IRIS+ and DCED Interoperability, https://iris.thegiin.org/document/iris-and-the-donor-committee-for-enterprise-development/
   - CROSS+WALKRI IRIS+ Compatibility Statement v0.1.0
+lens_tags:
+  calibration_tier: independently_verified
+  authority_source: voluntary_published
+  cultural_methodological_lineage: western_institutional
+  funder_typology: bilateral_aid_agency
+  framework_scope_type: grantee_outcome_measurement
+  # Donor Committee for Enterprise Development Standard for Results Measurement; bilateral_aid_agency primary because DCED members are donor agencies; alternative pooled_fund_or_intermediary
 ---
 
 # DCED Standard for Results Measurement Compatibility
@@ -45,14 +52,14 @@ These elements are particularly relevant for programs operating at ecosystem or 
 | DCED Element | CROSS/WALKRI Provision | Assessment |
 | :-- | :-- | :-- |
 | 1. Articulate the Theory of Change | Program-level ToC declaration (Goal, Outcome, Output, Activity hierarchy; CROSS Part IX-B) | Full satisfaction. CROSS requires an explicit ToC declaration at the program level with pathway registry. The four-level hierarchy (Goal, Outcome, Output, Activity) corresponds to the DCED's ToC requirements. |
-| 2. Plan data collection on changes in target group | Eleven-field indicator specification, particularly Fields 6 (population), 8 (data source), 9 (frequency), and 10 (responsible party) | Full satisfaction. CROSS Fields 6 through 10 collectively specify who will collect data on which population, using which method, at which intervals, with which organizational accountability. |
-| 3. Measure changes in the wider market or system | ToC pathway registry and Output-level indicators for systemic change | Partial satisfaction. CROSS's ToC architecture accommodates systemic and market-level indicators, but programs must explicitly declare system-level pathways in their ToC and design Output-level indicators that capture systemic change. CROSS enables this design; it does not mandate it. |
+| 2. Plan data collection on changes in target group | Eleven-field indicator specification, particularly Fields 6 (population), 8 (data source), 9 (frequency), and 10 (responsible party) | Full satisfaction. CROSS Fields 6 through 10 collectively specify who will collect data on which population, using which method, at which intervals, with which organizational reporting obligation. |
+| 3. Measure changes in the wider market or system | ToC pathway registry and Output-level indicators for systemic change | Partial satisfaction. CROSS's ToC architecture accommodates systemic and market-level indicators, but programs must explicitly declare system-level pathways in their ToC and design Output-level indicators that capture systemic change. CROSS enables this design; it does not require it. |
 | 4. Collect data on the program's contribution | Causality stance (Indicator Field 11); gate evidence requirements | Full satisfaction. CROSS Field 11 (causality stance) requires programs to declare whether they are claiming attribution or contribution for each indicator. The contribution stance configures evidence requirements to capture the program's role relative to co-factors, which is the core of DCED Element 4. |
-| 5. Measure poverty and socioeconomic impacts | Population field (Indicator Field 6); IRIS+ alignment in Field 10 | Partial satisfaction. CROSS requires population specification and supports IRIS+ socioeconomic indicator categories. Programs must design indicators at the poverty and socioeconomic level explicitly; CROSS provides the architecture but does not mandate poverty measurement. |
+| 5. Measure poverty and socioeconomic impacts | Population field (Indicator Field 6); IRIS+ alignment in Field 10 | Partial satisfaction. CROSS requires population specification and supports IRIS+ socioeconomic indicator categories. Programs must design indicators at the poverty and socioeconomic level explicitly; CROSS provides the architecture but does not require poverty measurement. |
 | 6. Manage the complexity of attributing results | Causality stance (Indicator Field 11); gate character (developmental vs. summative) | Full satisfaction. CROSS's causality stance field directly addresses attribution complexity. Contribution stance acknowledges co-factors; attribution stance requires counterfactual evidence. The developmental gate character supports adaptive inference as evidence accumulates. This is the most direct structural match between CROSS and the DCED Standard. |
 | 7. Use performance data to improve program delivery | Developmental gate character; progress verification gate outputs; continuation gate sustainability stance | Full satisfaction. CROSS's developmental gate architecture requires that progress verification gates surface what needs to change, not merely whether targets were met. The continuation gate's three-position sustainability stance (sustained, conditional, dependent) generates adaptive evidence for program improvement decisions. |
 
-**Result:** CROSS fully satisfies DCED Elements 1, 2, 4, 6, and 7 as structural consequences of conformance. CROSS partially satisfies Elements 3 and 5; these require deliberate program design choices that CROSS supports but does not mandate.
+**Result:** CROSS fully satisfies DCED Elements 1, 2, 4, 6, and 7 as structural consequences of conformance. CROSS partially satisfies Elements 3 and 5; these require deliberate program design choices that CROSS supports but does not require.
 
 ---
 
@@ -80,7 +87,7 @@ Programs using the DCED Standard that adopt CROSS+WALKRI should:
 
 1. Declare IRIS+ alignment in Indicator Field 10 for all indicators that correspond to IRIS+ metric categories. This activates the IRIS+/DCED interoperability pathway and ensures that CROSS indicator specifications satisfy DCED data collection requirements under the joint interoperability framework.
 
-2. Explicitly design system-level indicators in the ToC pathway registry. DCED Element 3 requires measurement of change in the wider market or system, not only in the target group. These indicators should appear at the Outcome level of the CROSS ToC with Field 6 (population) scoped to the system level rather than the direct beneficiary population.
+2. Explicitly design system-level indicators in the ToC pathway registry. DCED Element 3 requires measurement of change in the wider market or system, not only in the target group. These indicators should appear at the Outcome level of the CROSS ToC with Field 6 (population) scoped to the system level rather than the directly affected population.
 
 3. Declare contribution stance in Indicator Field 11 for all program indicators unless the program has a randomized or quasi-experimental design that justifies attribution stance. Contribution stance is the default appropriate to DCED's element 6 requirements for most enterprise development and ecosystem programs.
 
@@ -109,3 +116,5 @@ License: CC0
 | Version | Date | Summary |
 |---|---|---|
 | 0.1.0 | 2026-05-18 | Initial draft. Seven DCED Standard elements mapped to CROSS and WALKRI provisions. IRIS+/DCED interoperability bridge documented. Ecosystem-scale application guidance. Full satisfaction for Elements 1, 2, 4, 6, 7; partial satisfaction for Elements 3 and 5 with design guidance. |
+| 0.1.1 | 2026-05-23 | Retroactive lens tagging: added calibration_tier, authority_source, cultural_methodological_lineage, funder_typology, framework_scope_type per Lenses Framework v0.1.0. |
+| 0.1.2 | 2026-06-08 | Frame Language own-voice pass applied as part of the corpus-wide 2026-06-08 sweep: own-voice watchlist terms (govern-family, accountability, mandatory, compliance, enforce, legitimate) recast to conformance and obligation vocabulary where they appeared in this document's own voice; citation use of source-framework terms preserved. Primitive-rename references aligned to current canon (Continuity Capacity, the Collective disbursement state, Affected Population Verification Gate). Em-dash- and watchlist-clean re-verified. No compatibility finding or mapping changed; vocabulary only. |

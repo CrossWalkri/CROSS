@@ -1,13 +1,20 @@
 ---
 title: New Development Bank (NDB) Evaluation Policy and Manual (2024) Compatibility - CROSS+WALKRI
-version: 0.1.0
-date: 2026-05-18
+version: 0.1.2
+date: 2026-06-08
 license: CC0
 standards: CROSS v0.4.4 (github.com/CrossWalkri/CROSS), WALKRI v0.1.7 (github.com/CrossWalkri/WALKRI)
 references:
   - https://www.ndb.int/wp-content/uploads/2024/04/NDB_IEO_Evaluation-Policy-.pdf
   - https://www.ndb.int/wp-content/uploads/2024/11/1_Nidhi-Chaudhary_-Evaluation-Manual.pdf
   - https://www.ndb.int/wp-content/uploads/2024/10/IEO-CLE-PolicyFramework.pdf
+lens_tags:
+  calibration_tier: outcome_specified_self_reported
+  authority_source: statutory
+  cultural_methodological_lineage: western_institutional
+  funder_typology: multilateral_bank_or_fund
+  framework_scope_type: grantee_outcome_measurement
+  # New Development Bank (BRICS) treaty-based multilateral
 ---
 
 # New Development Bank (NDB) Evaluation Policy and Manual (2024) Compatibility - CROSS+WALKRI
@@ -63,3 +70,12 @@ NDB's freshly published 2024 documentation suite represents the most current ite
 ---
 
 *Published under CC0. For the current version of CROSS and WALKRI, see github.com/CrossWalkri.*
+
+---
+
+## Changelog
+
+| Version | Date | Summary |
+|---|---|---|
+| 0.1.2 | 2026-06-08 | Frame Language own-voice pass applied as part of the corpus-wide 2026-06-08 sweep: own-voice watchlist terms (govern-family, accountability, mandatory, compliance, enforce, legitimate) recast to conformance and obligation vocabulary where they appeared in this document's own voice; citation use of source-framework terms preserved. Primitive-rename references aligned to current canon (Continuity Capacity, the Collective disbursement state, Affected Population Verification Gate). Em-dash- and watchlist-clean re-verified. No compatibility finding or mapping changed; vocabulary only. |
+| 0.1.1 | 2026-05-23 | Retroactive lens tagging: added calibration_tier, authority_source, cultural_methodological_lineage, funder_typology, framework_scope_type per Lenses Framework v0.1.0. |

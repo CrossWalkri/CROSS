@@ -111,7 +111,7 @@ A continuing program operator must demonstrate: the entry specification gate for
 
 ## Part 2: WALKRI Field Specifications
 
-The following field specifications cover the intake fields most commonly required in international development grant programs. Each specification satisfies WALKRI's five pre-publication requirements: criterion intent, operational definition, response form, evidence form, compliance threshold.
+The following field specifications cover the intake fields most commonly required in international development grant programs. Each specification satisfies WALKRI's five pre-publication requirements: criterion intent, operational definition, response form, evidence form, conformance threshold.
 
 ---
 
@@ -125,7 +125,7 @@ The following field specifications cover the intake fields most commonly require
 
 **Evidence form:** For baseline disaggregation: the data source for demographic estimates (national census, household survey, administrative registry, or community mapping). For direct count targets: the targeting methodology that explains how the stated number will be reached. For indirect or systems-level beneficiaries: the theory by which the population count is estimated, with the assumptions made explicit.
 
-**Compliance threshold:** A population scope declaration that specifies all required disaggregation categories with baseline estimates. A declaration that states only total beneficiary counts without the required gender or geographic breakdown does not satisfy this field. Estimates without a stated data source do not satisfy the evidence form requirement.
+**Conformance threshold:** A population scope declaration that specifies all required disaggregation categories with baseline estimates. A declaration that states only total beneficiary counts without the required gender or geographic breakdown does not satisfy this field. Estimates without a stated data source do not satisfy the evidence form requirement.
 
 ---
 
@@ -139,7 +139,7 @@ The following field specifications cover the intake fields most commonly require
 
 **Evidence form:** The baseline values for output and outcome indicators must be sourced from an identified data source cited in Field 7. Where no existing data source covers the baseline, the program must describe the data collection activity that will establish the baseline before the first implementation reporting period. For goal-level indicators: the data source is typically a national or international statistical system (DHS, MICS, World Bank WDI, or equivalent); the program should reference the most recent available estimate.
 
-**Compliance threshold:** A results framework that covers all four levels of the Theory of Change hierarchy, with at least one indicator per level specified to all eleven fields. A framework that specifies activities and outputs but presents outcomes only narratively without indicators does not satisfy this field. A framework whose indicators were specified after the application window opened does not satisfy the entry specification gate requirement.
+**Conformance threshold:** A results framework that covers all four levels of the Theory of Change hierarchy, with at least one indicator per level specified to all eleven fields. A framework that specifies activities and outputs but presents outcomes only narratively without indicators does not satisfy this field. A framework whose indicators were specified after the application window opened does not satisfy the entry specification gate requirement.
 
 ---
 
@@ -153,7 +153,7 @@ The following field specifications cover the intake fields most commonly require
 
 **Evidence form:** For attribution stance: documentation of the comparison group selection process, including the data source for baseline similarity assessment. For contribution stance: the contribution analysis framework, naming the other actors and their estimated contribution shares. For both: the counterfactual baseline value for each primary outcome indicator, with the data source and collection date.
 
-**Compliance threshold:** A causality stance declaration that covers all primary outcome indicators, with a counterfactual baseline established from a named data source before activities begin. A completion report that claims attribution without a comparison group, or that claims contribution without a contribution analysis, does not satisfy the completion gate evidence requirement. Programs that change their causality stance during implementation (shifting from attribution to contribution or vice versa) must file a specification change before the new stance applies.
+**Conformance threshold:** A causality stance declaration that covers all primary outcome indicators, with a counterfactual baseline established from a named data source before activities begin. A completion report that claims attribution without a comparison group, or that claims contribution without a contribution analysis, does not satisfy the completion gate evidence requirement. Programs that change their causality stance during implementation (shifting from attribution to contribution or vice versa) must file a specification change before the new stance applies.
 
 ---
 
@@ -167,7 +167,7 @@ The following field specifications cover the intake fields most commonly require
 
 **Evidence form:** The data collection instruments (survey questionnaires, monitoring forms, registration systems) must include the fields required to capture the disaggregation categories stated in the plan. Instruments that do not include these fields do not satisfy the evidence form requirement, even if the plan states the intent to disaggregate. Where instruments are under development, the specification of required fields constitutes provisional compliance pending instrument finalization.
 
-**Compliance threshold:** A disaggregation plan that covers all indicators subject to the funder's disaggregation requirements, with data collection instruments that include the required category fields. The ratchet applies: the disaggregation plan may add categories beyond the minimum required but may not reduce below the minimum. A program that reports only aggregate figures at completion when disaggregated figures were required does not satisfy the completion gate.
+**Conformance threshold:** A disaggregation plan that covers all indicators subject to the funder's disaggregation requirements, with data collection instruments that include the required category fields. The ratchet applies: the disaggregation plan may add categories beyond the minimum required but may not reduce below the minimum. A program that reports only aggregate figures at completion when disaggregated figures were required does not satisfy the completion gate.
 
 ---
 
@@ -181,7 +181,7 @@ The following field specifications cover the intake fields most commonly require
 
 **Evidence form:** For co-financing: the co-financing agreement or letter of commitment. For parallel funding: the funder's program documentation establishing the geographic and sectoral overlap. For government counterpart contributions: the government budget allocation or official letter of commitment. The disclosure table is the applicant's declaration; the cited documents are the supporting evidence. Non-disclosure discovered after award is treated as a material omission requiring a corrective action process.
 
-**Compliance threshold:** A disclosure that covers all concurrent funding sources active during the program period. A table that omits a co-financing arrangement the applicant is party to does not satisfy this field. "None" is a compliant response only when the implementing organization has no other funding covering the declared scope during the declared period.
+**Conformance threshold:** A disclosure that covers all concurrent funding sources active during the program period. A table that omits a co-financing arrangement the applicant is party to does not satisfy this field. "None" is a compliant response only when the implementing organization has no other funding covering the declared scope during the declared period.
 
 ---
 

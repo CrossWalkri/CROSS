@@ -1,13 +1,20 @@
 ---
 title: Nordic Bilateral Aid Frameworks (Sida, Norad, Danida) Compatibility - CROSS+WALKRI
-version: 0.1.0
-date: 2026-05-18
+version: 0.1.2
+date: 2026-06-08
 license: CC0
 standards: CROSS v0.4.2 (github.com/CrossWalkri/CROSS), WALKRI v0.1.6 (github.com/CrossWalkri/WALKRI)
 references:
   - https://www.sida.se/en/for-partners/guidance-for-sidas-partner-organisations/evaluation-of-swedish-development-cooperation
   - https://www.norad.no/globalassets/filer/partner/utlysninger/guidelines-for-applicants-on-results-and-knowledge-management--ny.pdf
   - https://um.dk/en/-/media/websites/umen/danida/results/evaluation-of-development-assistance/relevant-documents/evaluationpolicy2020.ashx
+lens_tags:
+  calibration_tier: independently_verified
+  authority_source: statutory
+  cultural_methodological_lineage: western_institutional
+  funder_typology: bilateral_aid_agency
+  framework_scope_type: grantee_outcome_measurement
+  # Nordic bilateral aid agencies (Sida, Norad, Danida, Finnida)
 ---
 
 # Nordic Bilateral Aid Frameworks (Sida, Norad, Danida) Compatibility
@@ -67,7 +74,7 @@ Danida's Evaluation Policy 2020 and Evaluation Guidelines (April 2024) apply the
 
 CROSS's compatibility with the Core Humanitarian Standard (CHS), documented in a separate statement, is the primary structural pathway for Danida's ALNAP extension. The CHS is the sector's primary humanitarian accountability framework; programs that satisfy CHS Commitments 7, 8, and 9 through CROSS+WALKRI are operating at the humanitarian accountability level that ALNAP criteria assess. The CHS-CROSS compatibility statement documents this alignment in detail.
 
-For Danida's evaluation quality requirements specifically, WALKRI's five field requirements satisfy the Accuracy standard that all three Nordic agencies apply in their evaluations. Danida's Evaluation Guidelines require that evaluation evidence be collected through instruments that are valid, reliable, and independent of program self-reporting. These are precisely the requirements that WALKRI's criterion intent, operational definition, response form justification, evidence form, and compliance threshold requirements address at the intake instrument design level.
+For Danida's evaluation quality requirements specifically, WALKRI's five field requirements satisfy the Accuracy standard that all three Nordic agencies apply in their evaluations. Danida's Evaluation Guidelines require that evaluation evidence be collected through instruments that are valid, reliable, and independent of program self-reporting. These are precisely the requirements that WALKRI's criterion intent, operational definition, response form justification, evidence form, and conformance threshold requirements address at the intake instrument design level.
 
 ---
 
@@ -75,7 +82,7 @@ For Danida's evaluation quality requirements specifically, WALKRI's five field r
 
 All three Nordic agencies apply evaluation Accuracy standards drawn from the OECD EvalNet norms and, in the case of Sida and Norad, from their own published quality criteria for decentralized evaluations. Accuracy at the evaluation stage depends on Accuracy at the data collection stage: an evaluation can only be as accurate as the instruments that generated the evidence it relies on.
 
-WALKRI's pre-publication audit applies before CROSS's entry specification gate opens. This means that by the time any applicant submits data, the instruments collecting that data have been reviewed for criterion intent clarity, operational definition precision, response form appropriateness, evidence form independence, and compliance threshold explicitness. Programs passing WALKRI's audit before activation are producing evidence that meets Nordic bilateral Accuracy standards by design, not by post-hoc quality review.
+WALKRI's pre-publication audit applies before CROSS's entry specification gate opens. This means that by the time any applicant submits data, the instruments collecting that data have been reviewed for criterion intent clarity, operational definition precision, response form appropriateness, evidence form independence, and conformance threshold explicitness. Programs passing WALKRI's audit before activation are producing evidence that meets Nordic bilateral Accuracy standards by design, not by post-hoc quality review.
 
 For Sida specifically, this matters because Sida conducts decentralized evaluations using partner-collected data. If that data was collected through instruments that were not validated before deployment, the evaluation cannot meet Sida's quality threshold regardless of how well the evaluation itself is designed. WALKRI is the specification-layer quality assurance step that makes Sida-quality evaluations possible.
 
@@ -106,3 +113,5 @@ License: CC0
 | Version | Date | Summary |
 |---|---|---|
 | 0.1.0 | 2026-05-18 | Initial draft. OECD DAC baseline established by reference to DAC compatibility statement. Sida theory-of-change validation requirement mapped to CROSS ToC pathway registry and Attestation Corpus. Norad dual-level results reporting mapped to CROSS gate architecture and portfolio aggregation via Attestation Corpus. Danida ALNAP extension addressed via CHS compatibility statement reference. WALKRI Accuracy standards role documented. |
+| 0.1.1 | 2026-05-23 | Retroactive lens tagging: added calibration_tier, authority_source, cultural_methodological_lineage, funder_typology, framework_scope_type per Lenses Framework v0.1.0. |
+| 0.1.2 | 2026-06-08 | Frame Language own-voice pass applied as part of the corpus-wide 2026-06-08 sweep: own-voice watchlist terms (govern-family, accountability, mandatory, compliance, enforce, legitimate) recast to conformance and obligation vocabulary where they appeared in this document's own voice; citation use of source-framework terms preserved. Primitive-rename references aligned to current canon (Continuity Capacity, the Collective disbursement state, Affected Population Verification Gate). Em-dash- and watchlist-clean re-verified. No compatibility finding or mapping changed; vocabulary only. |

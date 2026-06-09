@@ -1,7 +1,7 @@
 ---
 title: EU Global Europe Results Framework Compatibility - CROSS+WALKRI
-version: 0.1.0
-date: 2026-05-18
+version: 0.1.2
+date: 2026-06-08
 license: CC0
 standards: CROSS v0.4.0 (github.com/CrossWalkri/CROSS), WALKRI v0.1.6 (github.com/CrossWalkri/WALKRI)
 references:
@@ -9,6 +9,13 @@ references:
   - NDICI-Global Europe, EU External Assistance Regulation
   - EU Capacity4Dev Results and Indicators Library, https://capacity4dev.europa.eu/resources/results-indicators_en
   - OECD DAC Creditor Reporting System (CRS)
+lens_tags:
+  calibration_tier: outcome_specified_self_reported
+  authority_source: regulatory
+  cultural_methodological_lineage: western_institutional
+  funder_typology: multilateral_bank_or_fund
+  framework_scope_type: grantee_outcome_measurement
+  # EU Global Europe Results Framework; EU institutions treated as multilateral funder typology; alternative bilateral_aid_agency
 ---
 
 # EU Global Europe Results Framework Compatibility
@@ -45,7 +52,7 @@ The EU Capacity4dev platform publishes sector-specific results chains that progr
 
 CROSS's Theory of Change architecture specifies four levels: goal, outcome, output, and activity. The GERF results chain specifies five levels: impact, outcome, output, activity, and input.
 
-The mapping between these levels is direct at three of the four levels CROSS governs.
+The mapping between these levels is direct at three of the four levels CROSS covers.
 
 | GERF Results Chain Level | CROSS Theory of Change Level | Notes |
 | :-- | :-- | :-- |
@@ -55,7 +62,7 @@ The mapping between these levels is direct at three of the four levels CROSS gov
 | Activity | Activity | Direct correspondence |
 | Input | No CROSS equivalent | Input specification is outside CROSS scope. GERF inputs are managed by the grantee's financial and procurement systems |
 
-**Result:** Four of the five GERF results chain levels have direct CROSS equivalents. The input level is outside CROSS scope and is managed by financial and procurement systems. A CROSS-conformant program's Theory of Change declaration produces the GERF results chain documentation for the four levels CROSS governs.
+**Result:** Four of the five GERF results chain levels have direct CROSS equivalents. The input level is outside CROSS scope and is managed by financial and procurement systems. A CROSS-conformant program's Theory of Change declaration produces the GERF results chain documentation for the four levels CROSS covers.
 
 ---
 
@@ -124,3 +131,5 @@ License: CC0
 | Version | Date | Summary |
 |---|---|---|
 | 0.1.0 | 2026-05-18 | Initial draft. GERF results chain mapped to CROSS Theory of Change architecture. Core indicator and sector code alignment documented. OECD DAC CRS bridge documented. OPSYS reporting interval alignment mapped to gate schedule. WALKRI data quality standards mapped to GERF indicator quality expectations. |
+| 0.1.1 | 2026-05-23 | Retroactive lens tagging: added calibration_tier, authority_source, cultural_methodological_lineage, funder_typology, framework_scope_type per Lenses Framework v0.1.0. |
+| 0.1.2 | 2026-06-08 | Frame Language own-voice pass applied as part of the corpus-wide 2026-06-08 sweep: own-voice watchlist terms (govern-family, accountability, mandatory, compliance, enforce, legitimate) recast to conformance and obligation vocabulary where they appeared in this document's own voice; citation use of source-framework terms preserved. Primitive-rename references aligned to current canon (Continuity Capacity, the Collective disbursement state, Affected Population Verification Gate). Em-dash- and watchlist-clean re-verified. No compatibility finding or mapping changed; vocabulary only. |

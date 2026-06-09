@@ -1,7 +1,7 @@
 ---
 title: Inter-American Foundation Grassroots Development Framework Compatibility - CROSS+WALKRI
-version: 0.1.0
-date: 2026-05-18
+version: 0.1.2
+date: 2026-06-08
 license: CC0
 standards: CROSS v0.4.5 (github.com/CrossWalkri/CROSS), WALKRI v0.1.7 (github.com/CrossWalkri/WALKRI)
 references:
@@ -10,6 +10,13 @@ references:
   - archive.iaf.gov/our-work/results/grassroots-development-framework.html
   - GPRA Modernization Act of 2010 (5 USC 306)
   - Note: IAF operational status should be verified given 2025 federal agency reorganizations
+lens_tags:
+  calibration_tier: outcome_specified_self_reported
+  authority_source: statutory
+  cultural_methodological_lineage: western_institutional
+  funder_typology: government_non_aid
+  framework_scope_type: grantee_outcome_measurement
+  # Inter-American Foundation Grassroots Development Framework; US government independent foundation; alternative bilateral_aid_agency typology
 ---
 
 # Inter-American Foundation Grassroots Development Framework
@@ -64,10 +71,19 @@ The GDF's baseline data requirement is the framework's most direct operationaliz
 
 WALKRI's pre-publication requirements address the GDF's primary data quality risk, which the participatory selection model creates by design. The 41-indicator menu provides indicator labels and brief definitions for each indicator, but it does not standardize the operational definition of what evidence a field worker must observe before coding a positive outcome for any given indicator. Different grantees interpreting the same indicator label may use different observation protocols, different documentation standards, and different threshold criteria, producing indicator data that appears comparable across the IAF portfolio (because the same indicator labels are reported) but is not commensurable in practice.
 
-WALKRI's five requirements, applied to GDF intake and data collection instruments before the grant start date, resolve this at source. The criterion intent requirement ensures that the grantee articulates, in writing and before data collection begins, what the selected indicator is designed to detect and at what level of the GDF's three-tier hierarchy it operates. This prevents scope drift in which an organizational capacity indicator is operationalized to capture individual behavior change, or a community outcome indicator is measured through a single household survey. The operational definition requirement specifies precisely what an observed condition must look like to qualify as a positive data point: not the indicator's general label but the specific observable characteristics the field instrument is designed to detect. The response form requirement specifies the format of the instrument through which data is collected: a structured interview guide, a participatory self-assessment form, a community mapping protocol, or a financial record review checklist. The evidence form requirement specifies what documentation must accompany a positive outcome record. The compliance threshold specifies the minimum standard a data point must meet before it is entered into the six-month GDF report.
+WALKRI's five requirements, applied to GDF intake and data collection instruments before the grant start date, resolve this at source. The criterion intent requirement ensures that the grantee articulates, in writing and before data collection begins, what the selected indicator is designed to detect and at what level of the GDF's three-tier hierarchy it operates. This prevents scope drift in which an organizational capacity indicator is operationalized to capture individual behavior change, or a community outcome indicator is measured through a single household survey. The operational definition requirement specifies precisely what an observed condition must look like to qualify as a positive data point: not the indicator's general label but the specific observable characteristics the field instrument is designed to detect. The response form requirement specifies the format of the instrument through which data is collected: a structured interview guide, a participatory self-assessment form, a community mapping protocol, or a financial record review checklist. The evidence form requirement specifies what documentation must accompany a positive outcome record. The conformance threshold specifies the minimum standard a data point must meet before it is entered into the six-month GDF report.
 
 Applied to the GDF's intangible indicators, WALKRI's requirements are especially consequential. Social cohesion and policy influence indicators are the most contextually variable in the framework: what constitutes evidence of improved social cohesion in a rural Andean cooperative differs from what constitutes evidence of improved social cohesion in an urban Caribbean neighborhood organization. WALKRI's pre-publication requirements do not eliminate this contextual variation; they ensure that the contextually appropriate definition is committed to in writing before data collection begins, which is the minimum condition for the evidence to be auditable, comparable within the grantee's own reporting, and useful to the IAF's portfolio-level aggregation.
 
 ---
 
 *Published under CC0. For the current version of CROSS and WALKRI, see github.com/CrossWalkri.*
+
+---
+
+## Changelog
+
+| Version | Date | Summary |
+|---|---|---|
+| 0.1.2 | 2026-06-08 | Frame Language own-voice pass applied as part of the corpus-wide 2026-06-08 sweep: own-voice watchlist terms (govern-family, accountability, mandatory, compliance, enforce, legitimate) recast to conformance and obligation vocabulary where they appeared in this document's own voice; citation use of source-framework terms preserved. Primitive-rename references aligned to current canon (Continuity Capacity, the Collective disbursement state, Affected Population Verification Gate). Em-dash- and watchlist-clean re-verified. No compatibility finding or mapping changed; vocabulary only. |
+| 0.1.1 | 2026-05-23 | Retroactive lens tagging: added calibration_tier, authority_source, cultural_methodological_lineage, funder_typology, framework_scope_type per Lenses Framework v0.1.0. |

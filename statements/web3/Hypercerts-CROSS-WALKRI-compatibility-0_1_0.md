@@ -1,13 +1,20 @@
 ---
 title: Hypercerts Compatibility - CROSS+WALKRI
-version: 0.1.0
-date: 2026-05-16
+version: 0.1.2
+date: 2026-06-08
 license: CC0
 standards: CROSS v0.3.7 (github.com/CrossWalkri/CROSS), WALKRI v0.1.6 (github.com/CrossWalkri/WALKRI)
 references:
   - Hypercerts ERC-1155 Standard (hypercerts.org)
   - Hypercerts Metadata Schema (github.com/hypercerts-org/hypercerts)
   - ERC-1155 Multi-Token Standard
+lens_tags:
+  calibration_tier: outcome_specified_self_reported
+  authority_source: voluntary_published
+  cultural_methodological_lineage: western_institutional
+  funder_typology: dao_or_protocol
+  framework_scope_type: accounting_financial
+  # Hypercerts impact claim token standard; accounting_financial scope (impact disclosure); alternative grantee_outcome_measurement
 ---
 
 # Hypercerts Compatibility
@@ -18,7 +25,7 @@ references:
 
 ## Summary
 
-CROSS and Hypercerts address adjacent and complementary problems in impact accountability: CROSS specifies the obligation architecture that governs what funded interventions must demonstrate and at which gate; Hypercerts provides the on-chain token mechanism for representing and attributing past impact contributions. Together they close the loop between prospective obligation and retrospective verification.
+CROSS and Hypercerts address adjacent and complementary problems in obligation and verification: CROSS specifies the obligation architecture that covers what funded interventions must demonstrate and at which gate; Hypercerts provides the on-chain token mechanism for representing and attributing past impact contributions. Together they close the loop between prospective obligation and retrospective verification.
 
 CROSS's retroactive obligation mode is the most natural integration point, but the compatibility extends to all three modes. A CROSS completion gate attestation can reference a Hypercert as its primary evidence artifact; a Hypercert's impact scope metadata can be populated from CROSS's indicator specification to produce a more structured and auditable impact claim than the Hypercert standard alone specifies.
 
@@ -92,31 +99,31 @@ This pattern enables programs like Optimism RetroPGF, Gitcoin Retroactive, and c
 
 ### Pattern 3: Hypercert Impact Scope Enriched with CROSS Metadata
 
-For programs that mint Hypercerts as their primary accountability artifact, CROSS+WALKRI provide the indicator specification layer that makes the Hypercert's impact scope claim auditable.
+For programs that mint Hypercerts as their primary obligation-record artifact, CROSS+WALKRI provide the indicator specification layer that makes the Hypercert's impact scope claim auditable.
 
 The Hypercert's work scope and impact scope tag fields can reference CROSS indicator IDs and WALKRI field specification versions, enabling data consumers to retrieve the full specification metadata from the CROSS+WALKRI-conformant program's published round configuration. This transforms freeform impact scope tags into structured references to documented measurement methodologies.
 
 ---
 
-## Structured Gate Records and Hypercerts: Complementary Accountability Layers
+## Structured Gate Records and Hypercerts: Complementary Verification Layers
 
 Hypercerts and CROSS gate attestation records are complementary mechanisms serving different functions:
 
 **Hypercerts** represent impact claims as transferable, fractional on-chain tokens. They are designed for impact markets, retroactive funding, and contribution attribution. They do not carry structured specification metadata by design; their value is in their transferability and on-chain verifiability.
 
-**CROSS gate attestation records** are signed, structured accountability records carrying the obligation metadata (indicator specification, gate evidence, funder determination) that Hypercerts cannot. These records may be expressed in any verifiable format appropriate to the program's infrastructure: W3C Verifiable Credentials, EAS attestations, DAOIP-3 VCs for programs operating within the DAOIP ecosystem, signed institutional documents, or comparable mechanisms.
+**CROSS gate attestation records** are signed, structured obligation records carrying the obligation metadata (indicator specification, gate evidence, funder determination) that Hypercerts cannot. These records may be expressed in any verifiable format appropriate to the program's infrastructure: W3C Verifiable Credentials, EAS attestations, DAOIP-3 VCs for programs operating within the DAOIP ecosystem, signed institutional documents, or comparable mechanisms.
 
-A CROSS+WALKRI-conformant program produces both: structured gate records for the accountability layer and Hypercerts as the on-chain representation of the same contribution where Hypercerts are used. Neither layer replaces the other; they address different consumer needs. Retroactive funding programs and impact markets consume Hypercerts. Institutional evaluators and data analysts consume CROSS indicator specifications and gate records.
+A CROSS+WALKRI-conformant program produces both: structured gate records for the obligation-record layer and Hypercerts as the on-chain representation of the same contribution where Hypercerts are used. Neither layer replaces the other; they address different consumer needs. Retroactive funding programs and impact markets consume Hypercerts. Institutional evaluators and data analysts consume CROSS indicator specifications and gate records.
 
 ---
 
 ## What This Enables
 
-The CROSS+WALKRI + Hypercerts integration enables a contribution accountability infrastructure that neither system can provide alone:
+The CROSS+WALKRI + Hypercerts integration enables a contribution verification infrastructure that neither system can provide alone:
 
 A Hypercert backed by a CROSS completion gate record is not merely a self-certified impact claim. It is an obligation-architecture-backed claim: the grantee specified a FROM state and TO state at the entry gate, worked toward the stated change, submitted evidence at the completion gate, and received a signed funder determination confirming the evidence met the published criteria. The Hypercert represents that entire process in a transferable on-chain token.
 
-This makes Hypercerts-based impact markets and retroactive funding mechanisms substantially more reliable for buyers and evaluators, because the Hypercert now carries a structured, auditable accountability history rather than a freeform impact scope claim.
+This makes Hypercerts-based impact markets and retroactive funding mechanisms substantially more reliable for buyers and evaluators, because the Hypercert now carries a structured, auditable obligation history rather than a freeform impact scope claim.
 
 ---
 
@@ -147,3 +154,12 @@ Hypercerts: hypercerts.org
 Hypercerts GitHub: github.com/hypercerts-org/hypercerts
 
 License: CC0
+
+---
+
+## Changelog
+
+| Version | Date | Summary |
+|---|---|---|
+| 0.1.2 | 2026-06-08 | Frame Language own-voice pass applied as part of the corpus-wide 2026-06-08 sweep: own-voice watchlist terms (govern-family, accountability, mandatory, compliance, enforce, legitimate) recast to conformance and obligation vocabulary where they appeared in this document's own voice; citation use of source-framework terms preserved. Primitive-rename references aligned to current canon (Continuity Capacity, the Collective disbursement state, Affected Population Verification Gate). Em-dash- and watchlist-clean re-verified. No compatibility finding or mapping changed; vocabulary only. |
+| 0.1.1 | 2026-05-23 | Retroactive lens tagging: added calibration_tier, authority_source, cultural_methodological_lineage, funder_typology, framework_scope_type per Lenses Framework v0.1.0. |

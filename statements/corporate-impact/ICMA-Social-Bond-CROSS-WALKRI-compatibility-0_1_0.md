@@ -1,11 +1,18 @@
 ---
 title: ICMA Harmonised Framework for Impact Reporting for Social Bonds Compatibility - CROSS+WALKRI
-version: 0.1.0
-date: 2026-05-18
+version: 0.1.2
+date: 2026-06-08
 license: CC0
 standards: CROSS v0.4.0 (github.com/CrossWalkri/CROSS), WALKRI v0.1.6 (github.com/CrossWalkri/WALKRI)
 references:
   - ICMA Harmonised Framework for Impact Reporting for Social Bonds, updated June 2025, https://www.icmagroup.org/sustainable-finance/impact-reporting/
+lens_tags:
+  calibration_tier: outcome_specified_self_reported
+  authority_source: voluntary_published
+  cultural_methodological_lineage: western_institutional
+  funder_typology: corporate_csr
+  framework_scope_type: accounting_financial
+  # ICMA Social Bond Principles are voluntary published market standards; corporate_csr captures the issuer typology; framework scope is accounting_financial (bond reporting) with grantee_outcome_measurement secondary
 ---
 
 # ICMA Harmonised Framework for Impact Reporting for Social Bonds Compatibility
@@ -36,7 +43,7 @@ ICMA's framework requires impact indicators to be documented with sufficient spe
 
 Field 1 (indicator name) and Field 2 (indicator definition) satisfy the name and definition requirement. Field 3 (unit of measurement) satisfies the unit requirement. Field 4 (baseline) and Field 5 (target) satisfy the baseline and target requirements. Field 6 (population scope) satisfies the target population requirement: it specifies what population the indicator measures, which is the ICMA framework's primary organizing category for social bond impact.
 
-A CROSS-compliant program within a social bond financing structure has these six fields documented at the entry specification gate before implementation begins. The ICMA reporting obligation, which arises annually after bond issuance, draws directly on the Field 1-6 data without requiring additional specification work. The indicator documentation is already done; the annual report draws on it and supplements it with actuals.
+A CROSS-conformant program within a social bond financing structure has these six fields documented at the entry specification gate before implementation begins. The ICMA reporting obligation, which arises annually after bond issuance, draws directly on the Field 1-6 data without requiring additional specification work. The indicator documentation is already done; the annual report draws on it and supplements it with actuals.
 
 WALKRI's criterion intent and operational definition requirements strengthen Fields 2 and 3: the criterion intent field in WALKRI ensures that the purpose of the measurement is stated explicitly, and the operational definition requirement ensures that Field 2 is specific enough that two independent collectors would apply it consistently. These requirements address a recurring failure mode in social bond impact reporting: indicators whose definitions are ambiguous enough that year-over-year comparisons are unreliable even when the nominal indicator name is unchanged.
 
@@ -46,7 +53,7 @@ WALKRI's criterion intent and operational definition requirements strengthen Fie
 
 ICMA's year-over-year comparability requirement is one of the more operationally demanding elements of the framework. Comparability requires that the indicator, its definition, its unit, and its population scope remain stable across reporting cycles. It also requires that disaggregation be applied consistently: a report that disaggregates by gender in year two but not year one is not comparable, even if the aggregate numbers are both present.
 
-CROSS's disaggregation ratchet is the mechanism that enforces this consistency. Once a disaggregation dimension is introduced in an indicator's Field 8 specification, it cannot be removed in subsequent reporting cycles without a formal gate record of the change and its rationale. This ratchet prevents the common reporting practice of introducing favorable disaggregations in good performance years and quietly dropping them in poor performance years. For ICMA compliance, the ratchet ensures that disaggregation applied in the first annual report persists in all subsequent reports, satisfying the framework's consistency requirement structurally.
+CROSS's disaggregation ratchet is the mechanism that requires this consistency. Once a disaggregation dimension is introduced in an indicator's Field 8 specification, it cannot be removed in subsequent reporting cycles without a formal gate record of the change and its rationale. This ratchet prevents the common reporting practice of introducing favorable disaggregations in good performance years and quietly dropping them in poor performance years. For ICMA conformance, the ratchet ensures that disaggregation applied in the first annual report persists in all subsequent reports, satisfying the framework's consistency requirement structurally.
 
 The ratchet also prevents definition drift: changes to Fields 1 through 6 during implementation require a gate record, which is a formal documentation event rather than a quiet edit. ICMA-aligned programs that use CROSS produce a version history of their indicator specifications, enabling investors to assess whether changes occurred and what their rationale was.
 
@@ -54,9 +61,9 @@ The ratchet also prevents definition drift: changes to Fields 1 through 6 during
 
 ## CROSS as ICMA Impact Report Data Source
 
-A program within a social bond financing structure that uses CROSS for its grant cycle management produces, as a by-product of gate compliance, the data that the ICMA annual impact report requires. Gate evidence records contain actuals against pre-specified indicators; the compliance threshold records contain pass/fail assessments against Field 11; the ToC architecture contains the causal logic connecting use of proceeds to social outcomes.
+A program within a social bond financing structure that uses CROSS for its grant cycle management produces, as a by-product of gate conformance, the data that the ICMA annual impact report requires. Gate evidence records contain actuals against pre-specified indicators; the conformance threshold records contain pass/fail assessments against Field 11; the ToC architecture contains the causal logic connecting use of proceeds to social outcomes.
 
-The ICMA annual impact report for a social bond draws on these records directly. The issuer does not need a separate measurement and reporting system for ICMA compliance; CROSS gate records, combined with Field 1-6 indicator documentation, are sufficient to populate the ICMA template. Programs should review ICMA's current sector-specific indicator guidance (available through the ICMA Social Bond Principles secretariat) to confirm that their Field 2 definitions align with recommended indicator wordings for their use-of-proceeds category.
+The ICMA annual impact report for a social bond draws on these records directly. The issuer does not need a separate measurement and reporting system for ICMA conformance; CROSS gate records, combined with Field 1-6 indicator documentation, are sufficient to populate the ICMA template. Programs should review ICMA's current sector-specific indicator guidance (available through the ICMA Social Bond Principles secretariat) to confirm that their Field 2 definitions align with recommended indicator wordings for their use-of-proceeds category.
 
 ---
 
@@ -69,7 +76,7 @@ The ICMA annual impact report for a social bond draws on these records directly.
 | Baseline and target | Fields 4-5 | No direct provision | Structural |
 | Target population scope | Field 6 | No direct provision | Structural |
 | Year-over-year comparability | Disaggregation ratchet (Field 8); version-controlled indicator specification | No direct provision | Structural: ratchet prevents disaggregation drift across reporting cycles |
-| Measurement methodology | Collection methodology (Field 9) | Evidence form and compliance threshold requirements | Structural: methodology documented in indicator specification |
+| Measurement methodology | Collection methodology (Field 9) | Evidence form and conformance threshold requirements | Structural: methodology documented in indicator specification |
 | Annual impact reporting | Gate evidence records as primary data source for ICMA template | No direct provision | Structural: gate records satisfy annual reporting data requirements |
 
 ---
@@ -91,3 +98,5 @@ License: CC0
 | Version | Date | Summary |
 |---|---|---|
 | 0.1.0 | 2026-05-18 | Initial draft. Fields 1-6 mapping, disaggregation ratchet, and CROSS-as-data-source claims documented. WALKRI criterion intent and operational definition contributions analyzed. |
+| 0.1.1 | 2026-05-23 | Retroactive lens tagging: added calibration_tier, authority_source, cultural_methodological_lineage, funder_typology, framework_scope_type per Lenses Framework v0.1.0. |
+| 0.1.2 | 2026-06-08 | Frame Language own-voice pass applied as part of the corpus-wide 2026-06-08 sweep: own-voice watchlist terms (govern-family, accountability, mandatory, compliance, enforce, legitimate) recast to conformance and obligation vocabulary where they appeared in this document's own voice; citation use of source-framework terms preserved. Primitive-rename references aligned to current canon (Continuity Capacity, the Collective disbursement state, Affected Population Verification Gate). Em-dash- and watchlist-clean re-verified. No compatibility finding or mapping changed; vocabulary only. |

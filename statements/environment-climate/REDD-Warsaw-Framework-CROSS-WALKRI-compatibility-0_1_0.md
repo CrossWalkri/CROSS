@@ -1,13 +1,20 @@
 ---
 title: REDD+ Warsaw Framework for Forest Carbon MRV Compatibility - CROSS+WALKRI
-version: 0.1.0
-date: 2026-05-18
+version: 0.1.2
+date: 2026-06-08
 license: CC0
 standards: CROSS v0.4.4 (github.com/CrossWalkri/CROSS), WALKRI v0.1.7 (github.com/CrossWalkri/WALKRI)
 references:
   - https://redd.unfccc.int/fact-sheets/warsaw-framework-for-redd.html
   - https://redd.unfccc.int/fact-sheets/redd-mrv-and-results-based-payments.html
   - https://www.un-redd.org/sites/default/files/2021-10/MRV%20Framework%20Document_V1_Draft2.pdf
+lens_tags:
+  calibration_tier: independently_verified
+  authority_source: statutory
+  cultural_methodological_lineage: western_institutional
+  funder_typology: multilateral_bank_or_fund
+  framework_scope_type: grantee_outcome_measurement
+  # UNFCCC Warsaw Framework for REDD+ treaty-based; statutory in the international-law sense; multilateral funder typology covers GCF and FCPF as principal financing mechanisms
 ---
 
 # REDD+ Warsaw Framework for Forest Carbon MRV
@@ -38,7 +45,7 @@ The Green Climate Fund adopted REDD+ results-based payments as a permanent finan
 
 ## How CROSS Satisfies the Warsaw Framework
 
-The FREL/FRL mandatory counterfactual baseline corresponds directly to the CROSS counterfactual baseline requirement. Under CROSS, programs must declare a pre-intervention baseline before any implementation begins, against which measured changes will be assessed. The FREL/FRL is the sovereign-scale implementation of exactly this requirement: deforestation emissions are measured against the documented counterfactual trajectory, not against an arbitrary reduction target. A CROSS-compliant program operating within a national REDD+ framework would establish the relevant portion of the national FREL/FRL as its counterfactual baseline at the entry gate, making the relationship between the program's measurement approach and the sovereign-level reference transparent before any implementation begins.
+The FREL/FRL mandatory counterfactual baseline corresponds directly to the CROSS counterfactual baseline requirement. Under CROSS, programs must declare a pre-intervention baseline before any implementation begins, against which measured changes will be assessed. The FREL/FRL is the sovereign-scale implementation of exactly this requirement: deforestation emissions are measured against the documented counterfactual trajectory, not against an arbitrary reduction target. A CROSS-conformant program operating within a national REDD+ framework would establish the relevant portion of the national FREL/FRL as its counterfactual baseline at the entry gate, making the relationship between the program's measurement approach and the sovereign-level reference transparent before any implementation begins.
 
 The two-step technical assessment process corresponds to the CROSS evidence strength taxonomy at the independent attestation tier. In the CROSS taxonomy, the highest evidence strength tier requires that claims be assessed by a party independent from the program, using documented methodology, with the assessment record retained in the Attestation Corpus. The REDD+ two-step is the sovereign-scale implementation of this pathway: the Results Report (submission) corresponds to CROSS's completion gate documentation, and the UNFCCC technical review (separate assessment) corresponds to the independent attestation event. The separation between submission and assessment is not merely procedural; it is the mechanism by which independent attestation is structurally enforced.
 
@@ -60,8 +67,17 @@ The national forest monitoring system precondition maps to the CROSS entry gate 
 
 WALKRI ensures that intake instruments for REDD+-linked programs specify forest type, monitoring methodology, reference period, and evidence access path before any project registers. In a REDD+ context, these are not optional metadata fields; they are the parameters that determine whether a project's monitoring data can be aggregated with or compared against the national FREL/FRL. A project monitoring tropical peat swamp forest using one set of emission factors cannot be meaningfully compared with a project monitoring dryland tropical forest using different factors unless both projects' intake instruments have specified their monitoring methodology in operationally defined terms.
 
-WALKRI's requirement that evidence access paths be specified at the intake stage also addresses a common failure mode in REDD+ project registration: projects are registered with references to future data that does not yet exist in accessible form, and verification bodies subsequently find that the evidence required for the technical review cannot be produced in the format required. A WALKRI-compliant intake instrument for a REDD+-linked program would specify, for each outcome indicator, which monitoring system will produce the data, in what format, at what frequency, with what chain of custody, making the evidence access path verifiable before any implementation commitment is made.
+WALKRI's requirement that evidence access paths be specified at the intake stage also addresses a common failure mode in REDD+ project registration: projects are registered with references to future data that does not yet exist in accessible form, and verification bodies subsequently find that the evidence required for the technical review cannot be produced in the format required. A WALKRI-conformant intake instrument for a REDD+-linked program would specify, for each outcome indicator, which monitoring system will produce the data, in what format, at what frequency, with what chain of custody, making the evidence access path verifiable before any implementation commitment is made.
 
 ---
 
 *Published under CC0. For the current version of CROSS and WALKRI, see github.com/CrossWalkri.*
+
+---
+
+## Changelog
+
+| Version | Date | Summary |
+|---|---|---|
+| 0.1.2 | 2026-06-08 | Frame Language own-voice pass applied as part of the corpus-wide 2026-06-08 sweep: own-voice watchlist terms (govern-family, accountability, mandatory, compliance, enforce, legitimate) recast to conformance and obligation vocabulary where they appeared in this document's own voice; citation use of source-framework terms preserved. Primitive-rename references aligned to current canon (Continuity Capacity, the Collective disbursement state, Affected Population Verification Gate). Em-dash- and watchlist-clean re-verified. No compatibility finding or mapping changed; vocabulary only. |
+| 0.1.1 | 2026-05-23 | Retroactive lens tagging: added calibration_tier, authority_source, cultural_methodological_lineage, funder_typology, framework_scope_type per Lenses Framework v0.1.0. |

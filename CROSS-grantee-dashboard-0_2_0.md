@@ -1,17 +1,21 @@
 ---
 title: CROSS Grantee Dashboard
-version: 0.2.0
-date: 2026-05-14
+version: 0.3.1
+date: 2026-06-08
 license: CC0
-status: Working draft. Implementation specification inheriting from CROSS-common-reporting-outcome-standards-schema-0_2_0.md. Supersedes version 0.1.0.
+status: Working draft. Companion implementation specification synced to CROSS-common-reporting-outcome-standards-schema-0_5_0.md. Supersedes version 0.2.0.
 related_documents:
-  - standards/CROSS-common-reporting-outcome-standards-schema-0_2_0.md
+  - standards/CROSS-common-reporting-outcome-standards-schema-0_5_0.md
   - standards/CROSS-grant-configurator-0_2_0.md
+changelog:
+  - "0.3.1 (2026-06-08): Frame Language own-voice pass. Own-voice watchlist terms were replaced with the structural act each names (enforce became applies or requires; governs became determines; the integrity of the attestation record became its independence). Data-model field names were aligned with the spec vocabulary: accountability_mode became obligation_mode, and the build_accountability and change_accountability sub-fields became build_obligation and change_obligation. Framework names, the WALKRI Part VIII dimension names, and the changelog rows were preserved. Em-dash sweep clean. No data captured, gate behavior, or requirement changed; vocabulary and field naming only."
+  - "0.3.0 (2026-06-05): Synced to the 0.5.0 CROSS specification. Carried the new entry-gate declarations into the live obligation record (organizational identity, sufficiency architecture, public benefit mechanism and access condition, development stage, continuity resilience, and obligation fulfillment record). Added the unintended outcomes disclosure to the completion-gate record and the served-population risk-bearer floor to the completion-gate determination record (spec Part II). Added the sustainability stance to the continuation-gate record. Added the structured dataset fields the program publishes at round close (spec Part XI). Noted CRAFT inheritance where relevant (spec Part XIII). Data model extended for each addition."
+  - "0.2.0 (2026-05-14): Mode-aware obligation registry, gate evidence submission tracking, measurement_form data model. Superseded version 0.1.0."
 ---
 
 # CROSS Grantee Dashboard
 
-Version 0.2.0 | 2026-05-14 | CC0
+Version 0.3.1 | 2026-06-08 | CC0
 
 ---
 
@@ -19,7 +23,7 @@ Version 0.2.0 | 2026-05-14 | CC0
 
 The CROSS (Common Reporting Outcome Standards Schema) Grantee Dashboard is a post-award obligation tool. It takes the structured commitments from an approved grant application and converts them into a persistent, live record that accumulates over the full duration of the grant. The Dashboard is the operational home for everything a grantee committed to at award time: the indicator targets, the gate configuration, the reporting schedule, the disbursement conditions, and the methodology declarations that make those commitments verifiable.
 
-The Dashboard is not a reporting form. A reporting form is filled out at each reporting milestone and submitted for review. The Dashboard is the record in which each submission lands and accumulates. It persists between reporting periods, displays running progress, enforces schema conformance at submission time, tracks gate evidence packages, and produces the signed attestations that constitute the onchain obligation record.
+The Dashboard is not a reporting form. A reporting form is filled out at each reporting milestone and submitted for review. The Dashboard is the record in which each submission lands and accumulates. It persists between reporting periods, displays running progress, applies schema conformance at submission time, tracks gate evidence packages, and produces the signed attestations that constitute the onchain obligation record.
 
 The Dashboard is schema-driven rather than freeform. Because field definitions, measurement form declarations, operational definitions, construction methodologies, disaggregation categories, and gate configurations were specified before the award in the round specification produced by the CROSS Grant Configurator, subsequent reporting is structured input against a declared schema. Grantees do not choose what to report at each period; they submit values against the commitments they already made and evidence against the gate requirements that were published before the round opened.
 
@@ -41,13 +45,27 @@ Each obligation registry entry contains the following elements.
 
 **Obligation mode.** The declared obligation mode for this round: build, change, or retroactive. The mode determines which indicator tracking behavior applies (Section 3), which gate evidence requirements are active (Section 6), and which progress display logic is used.
 
-**Gate configuration reference.** The evidence scope, evidence strength, and infrastructure declaration for each active gate in this round, as specified in the round specification. The Grantee Dashboard uses this configuration to structure gate submission forms, display gate status, and enforce the disbursement logic that connects gate verification to payment.
+**Gate configuration reference.** The evidence scope, evidence strength, and infrastructure declaration for each active gate in this round, as specified in the round specification. The Grantee Dashboard uses this configuration to structure gate submission forms, display gate status, and apply the disbursement logic that connects gate verification to payment.
 
 **Indicator commitments.** For every outcome indicator the grantee committed to in their approved application, the registry records all fields from Part V of the CROSS standard: indicator name, rationale, measurement form description with three-axis classification (source type, measurement form, aggregation type), operational definition, construction and aggregation methodology, cumulative or non-cumulative designation, disaggregation categories, data source and collection method, data cost attestation, baseline, and target. These fields are recorded exactly as submitted and approved. They are not paraphrased or reformatted.
 
 For build-obligation applications: the registry records the deliverable specification and completion criteria from Template 1A in place of the change-obligation FROM/TO indicator fields. The completion criteria are what the completion verification gate assesses.
 
 For retroactive applications with a configured forward commitment: the forward commitment is recorded as a build-obligation indicator commitment alongside the prior contribution evidence summary.
+
+**Entry-gate declaration snapshots.** Several declarations the applicant makes to pass the entry specification gate (CROSS Part IV) are pre-conditions for gate assessment rather than scored indicators. Because they constrain what subsequent gates require, they are carried into the obligation registry as immutable snapshots at award and surfaced on the live record. The registry records each of the following exactly as submitted and approved.
+
+The **organizational identity declaration**: the legal entity name and jurisdiction, the parent organization declaration, the affiliated entity disclosure, the prior round history, the disbursement authority (one of individual, collective, or delegated, with the supporting detail the spec requires for each), and the on-chain identity anchor. These four-plus-two fields are derived from the Entity Boundary primitive and the On-chain Identity Anchor primitive (CROSS+WALKRI Primitives Foundation, Layer 2). The registry retains them so that any later gate, amendment, or cross-program identity match works from the identity the applicant declared at entry.
+
+The **sufficiency architecture declaration**: the scope declaration, the sufficiency position (one of critical gap, partial, approaching, or surplus, declared at the declared scope), the portfolio context statement, the grant contribution statement, and the revenue architecture type (grant-only, fee-for-service, commercial, or hybrid). The registry also retains the reference to the corroborating evidence the sufficiency position rested on and the evidence strength at which it was accepted. The sufficiency position carried here is the value the structured dataset publishes at round close (Section 9) and the value the continuation-gate record reads when assessing the next stage.
+
+The **public benefit mechanism and access condition declaration**: where the application's eligibility includes a public goods claim, the registry records the declared mechanism type (one of output production, access provision, condition change, or ecosystem shift) and the access condition statement whose required content the mechanism type determines (for output production, the SPDX license identifier and license file location). The mechanism type declared at entry constrains the evidence scope the completion gate requires (Section 6); the registry retains it so that constraint holds at completion rather than being re-negotiated.
+
+The **development stage declaration**: the declared stage number (1 through 5), the applicant's description of why the work is at that stage, and a reference to the outside-control evidence that confirmed it. The declared stage constrains which obligation modes and evidence scopes are coherent; carrying it lets the completion gate check submitted evidence against the stage declared at entry.
+
+The **continuity resilience declaration**: the declared resilience state (one of single, partial, or resilient) with its supporting evidence reference. Where the applicant declared a single point of continuity (one named person on whom continuation depends, with no documented backup), the registry records the named person and the stated effect on active deliverables if that person became unavailable. This is a disclosed material fact, not a disqualifier; it affects the sustainability assessment at the continuation gate and may be a condition the funder attaches to the completion gate. CROSS Part II specifies this dimension; the live record names the carried field continuity resilience.
+
+The **obligation fulfillment record**: where the applicant received prior grants from this funder, cited prior work as evidence of capability, or carried unresolved prior milestones or open gate conditions, the registry records, for each prior grant from this funder, what was committed at that prior entry gate, what was produced (with a publicly accessible link), and whether the commitment was fulfilled, partially fulfilled, or unfulfilled, with the applicant's explanation where fulfillment was not complete. An unfulfilled prior obligation is a disclosed fact that affects the track record assessment at the continuation gate, not an automatic bar.
 
 **Concurrent funding disclosure snapshot.** The full concurrent funding disclosure as submitted at the time of application. This snapshot is taken at award and does not update automatically. Subsequent changes to the grantee's funding relationships that are material to the scope of the award must be disclosed through the amendment process.
 
@@ -83,7 +101,7 @@ For indicators designated as cumulative, the Dashboard displays: the running tot
 
 For indicators designated as non-cumulative, the Dashboard displays the most recent period's status value, the life-of-grant target status (the target status to be achieved by grant end, not a sum of period targets), and the trend across periods (a time-series display of reported values by period).
 
-The Dashboard must not sum non-cumulative indicator values across periods and must not display a "total" for a non-cumulative indicator. A non-cumulative indicator measures a status at a point in time; summing status measurements is a data construction error. This prohibition is enforced by design: the Dashboard's aggregation logic must distinguish the two types and apply the correct display accordingly.
+The Dashboard must not sum non-cumulative indicator values across periods and must not display a "total" for a non-cumulative indicator. A non-cumulative indicator measures a status at a point in time; summing status measurements is a data construction error. This prohibition is required by design: the Dashboard's aggregation logic must distinguish the two types and apply the correct display accordingly.
 
 ### Retroactive obligation progress tracking
 
@@ -95,7 +113,7 @@ For retroactive applications with a configured forward commitment, the forward c
 
 When a grantee submits a change-obligation indicator value that differs substantially from the prior period's value, the Dashboard requires a methodology note before accepting the submission. The threshold for "differs substantially" is a change exceeding 20% of the prior period's value, or a direction reversal, unless the indicator is explicitly designed to fluctuate. The threshold may be configured by the funder at the round level.
 
-This mechanism enforces the reliability standard from Part VIII of the CROSS standard. It does not reject the submission; it holds it pending the note. Once a methodology note is attached, the submission proceeds.
+This mechanism applies the reliability standard from Part VIII of the CROSS standard. It does not reject the submission; it holds it pending the note. Once a methodology note is attached, the submission proceeds.
 
 ---
 
@@ -103,7 +121,7 @@ This mechanism enforces the reliability standard from Part VIII of the CROSS sta
 
 The disaggregation ratchet is established in Part V of the CROSS standard. Disaggregation categories committed to in the application may be supplemented in subsequent reporting periods but may not be removed without committee approval and documented rationale.
 
-The Dashboard enforces the disaggregation ratchet through two mechanisms.
+The Dashboard applies the disaggregation ratchet through two mechanisms.
 
 First, committed disaggregation categories appear as required fields in every subsequent report. The Dashboard's report submission interface generates required fields from the obligation registry at the start of each reporting period.
 
@@ -141,17 +159,23 @@ For change-obligation progress gates: the submission must include the indicator 
 
 **Completion verification gate.** This gate determines whether final payment is released. The Dashboard makes the completion verification gate submission form available after the final reporting period has closed. The grantee submits their completion evidence package using Template 10. The completion gate cannot be bypassed or self-attested; grantee self-report alone does not satisfy the completion verification gate at any evidence strength level.
 
-For build-obligation rounds: the completion gate submission must include a publicly accessible link demonstrating that the specified deliverable is publicly available, plus confirmation that each completion criterion is met. The Dashboard enforces the public accessibility requirement: the submission cannot be marked complete unless a publicly accessible URL is provided. Final payment is blocked until this field is confirmed.
+For build-obligation rounds: the completion gate submission must include a publicly accessible link demonstrating that the specified deliverable is publicly available, plus confirmation that each completion criterion is met. The Dashboard applies the public accessibility requirement: the submission cannot be marked complete unless a publicly accessible URL is provided. Final payment is blocked until this field is confirmed.
 
 For change-obligation rounds: the completion gate submission must include outcome data against the baseline established at entry, at the evidence scope and strength configured for the round.
 
+The completion gate submission must additionally include an **unintended outcomes disclosure** alongside the primary outcome evidence (CROSS Part IV). The Dashboard surfaces this as a required field on the completion gate submission form: the grantee identifies any effects, positive or negative, that occurred during the grant period that were not specified at the entry gate and are plausibly connected to the funded work. The field cannot be left blank. A grantee who reports no unintended outcomes must state this explicitly and, in a complex intervention context, record why that determination was reached; silence does not satisfy the requirement. The Dashboard records each disclosed outcome with a positive-or-negative marker. A disclosed negative outcome is recorded as an adverse signal and is carried into the continuation-gate assessment under the Adverse-Signal Engagement Principle. The disclosure is a record, not a disqualifier.
+
+The completion gate determination record must show that the **served-population risk-bearer floor** was applied (CROSS Part II). Where the round's eligibility rests on serving a defined population, the people that population comprises are risk-bearers of the round's evaluation, not only the applicant and the funder. The Dashboard records, as part of the completion determination, that the served population's exposure was considered: specifically, whether work recorded as delivered does not reach that population, and whether effects on that population fall outside what the declared indicators capture. This is a named consideration the determination must show it applied, not a value the grantee self-reports. The completion determination cannot be marked complete unless this consideration is recorded. The floor does not, on its own, create a standing channel through which the served population raises concerns during the grant period; such a channel is a separate configuration a funder may add.
+
 **Continuation specification gate.** For programs with a program-level continuation gate, the Dashboard surfaces a continuation gate submission interface when the grantee is preparing to apply for the next stage. The continuation gate submission records: evidence at the required scope and strength for the configured continuation gate, and any cost-effectiveness assessment if the continuation gate requires it (applicable to Stage 2-to-Stage 3 transitions in Graduated Evidence programs). The continuation gate submission is linked to the next stage's application, not to the current award.
+
+Where a continuation gate is configured, the continuation submission must also include a **sustainability stance** on the outcomes produced in prior rounds (CROSS Part IV). The sustainability stance answers a question the cost-effectiveness assessment does not: are the outcomes already produced continuing under their own momentum, or do they require continued intervention to persist? The Dashboard surfaces it as a required single-select field with three declared positions. Sustained: the outcomes are self-sustaining and require no additional intervention to continue. Conditional: the outcomes persist under specified conditions that are independent of this program's funding. Dependent: the outcomes will not persist without continued intervention, so the continuation request is in part a request to sustain existing outcomes rather than solely to advance new ones. A dependent stance is a disclosure, not a bar. The Dashboard records the declared position so the continuation decision visibly reflects whether the funder is choosing to sustain prior outcomes or only to advance new ones. This stance is among the fields the structured dataset publishes at round close (Section 9).
 
 ### Gate verification workflow
 
 Gate submissions received from grantees are routed to the configured verification contact for the gate. The verification contact reviews the submitted evidence against the published gate criteria and marks the gate as verified or failed.
 
-Grantees cannot mark their own gate submissions as verified. Self-attestation is not sufficient for any gate at progress verification level or above. The role restriction is enforced at the interface level: the verification status field is not editable by grantee users.
+Grantees cannot mark their own gate submissions as verified. Self-attestation is not sufficient for any gate at progress verification level or above. The role restriction is required at the interface level: the verification status field is not editable by grantee users.
 
 Where a gate is configured at independent review level or above, the named reviewer from the infrastructure declaration is the verification contact. The Dashboard records the reviewer's identity, the date of verification, and any notes. This record is part of the onchain obligation record for the grant.
 
@@ -231,6 +255,14 @@ The onchain record is append-only. Corrections are recorded as correction attest
 
 A complete CROSS obligation ledger entry consists of: the round schema (published by the funder at round open, immutable), the application commitments (published onchain at award), and the periodic attestations plus gate attestations (published at each submission). Together, these allow any external party to verify what the round required, what the grantee committed to, and what the grantee actually reported, period by period and gate by gate.
 
+### Structured dataset at round close
+
+At the close of each round, a CROSS-conformant program must publish a machine-readable structured dataset covering every funded grant (CROSS Part XI). The dataset is not new collection: it is an export of fields the Dashboard already holds in the obligation registry and gate records. The Dashboard produces it so the program's close-of-round publication obligation is met from the live record rather than by hand.
+
+For each funded grant, the dataset row carries: the full indicator specification (all Part V fields from the indicator commitment), the obligation mode, the gate configuration applied, the evidence scope and strength at each gate, the causality stance declared (where the round declared one), the sufficiency position declared (from the sufficiency architecture snapshot in Section 2), the sustainability stance at continuation where a continuation gate applied (from Section 6), and the unintended outcomes disclosed at completion (from Section 6). The dataset must not carry personally identifying information beyond what the grantee consented to make public; the privacy-sensitive accommodation in Section 12 determines which fields are withheld or replaced with a commitment.
+
+The dataset is published in a form a data analysis pipeline can ingest without manual transformation, with field-level schema documentation and each field's operational definition available as dataset metadata. Where the program has adopted WALKRI, the conformant fields already carry this metadata; where it has not, the program supplies equivalent metadata describing how each indicator field was constructed. This dataset serves analysts and portfolio strategists who need cross-program comparable data, and it is the raw data underlying any institutional-funder portfolio summary the program produces. The two outputs address different audiences and are not interchangeable.
+
 ---
 
 ## Section 10: Funder View (Cross-Grantee)
@@ -247,7 +279,7 @@ For rounds with configured round-level common indicators, the funder view shows 
 
 Funders can view all grantee data, mark conditions as verified (subject to the verification role restriction), approve methodology change notices, approve committee-level amendments, and verify gate submissions where the funder is the named verification contact.
 
-Funders cannot modify submitted attestations. If the funder believes a submitted value is erroneous, the correction path is the correction attestation process, which the grantee submits. This division maintains the integrity of the attestation record: the grantee is the signatory, and only the grantee can sign a correction.
+Funders cannot modify submitted attestations. If the funder believes a submitted value is erroneous, the correction path is the correction attestation process, which the grantee submits. This division maintains the independence of the attestation record: the grantee is the signatory, and only the grantee can sign a correction.
 
 ---
 
@@ -260,7 +292,7 @@ Round {
   round_id:            string (unique identifier)
   funder_id:           string
   round_schema:        reference (published round schema document, immutable once published)
-  accountability_mode: enum (build | change | retroactive)
+  obligation_mode: enum (build | change | retroactive)
   gate_configuration:  object {
     entry_specification: {
       evidence_scope:    enum (output | usage | outcome | impact),
@@ -296,7 +328,7 @@ Obligation_Registry {
   registry_id:              string (unique identifier)
   round_id:                 string (foreign key to Round)
   grantee_id:               string
-  accountability_mode:      enum (build | change | retroactive)
+  obligation_mode:          enum (build | change | retroactive)
   indicator_commitments:    array of Indicator_Commitment
   conditions:               array of Condition
   reporting_schedule:       array of {period_start, period_end, deadline, tranche_id or null}
@@ -304,6 +336,51 @@ Obligation_Registry {
                             depends_on_gate: gate_submission_id or null,
                             depends_on_conditions: array of condition_id}
   concurrent_funding_snapshot: object (as submitted at award)
+
+  // Entry-gate declaration snapshots, immutable at award (CROSS Part IV; Part II)
+  organizational_identity: {
+    legal_entity_name:       string
+    jurisdiction:            string
+    parent_organization:     text or null
+    affiliated_entities:     array of string
+    prior_round_history:     text
+    disbursement_authority: {state: enum (individual | collective | delegated), detail: text}
+    on_chain_identity_anchor: string
+  }
+  sufficiency_architecture: {
+    scope_declaration:       text
+    sufficiency_position:    enum (critical_gap | partial | approaching | surplus)
+    portfolio_context:       text
+    grant_contribution:      text
+    revenue_architecture:    enum (grant_only | fee_for_service | commercial | hybrid)
+    corroborating_evidence_reference: text or null
+    accepted_evidence_strength: enum (self_report | third_party_verifiable |
+                             independent_review | independent_evaluation)
+  }
+  public_benefit_mechanism: {
+    mechanism_type:          enum (output_production | access_provision |
+                             condition_change | ecosystem_shift) or null
+    access_condition:        text or null
+  } or null (null where eligibility includes no public goods claim)
+  development_stage: {
+    stage_number:            integer (1 through 5)
+    stage_rationale:         text
+    confirming_evidence_reference: text
+  }
+  continuity_resilience: {
+    state:                   enum (single | partial | resilient)
+    supporting_evidence_reference: text or null
+    single_point_named_person: string or null (where state = single)
+    single_point_effect:     text or null (where state = single)
+  }
+  obligation_fulfillment_record: array of {
+    prior_grant_reference:   text
+    committed_at_entry:      text
+    produced:                {description: text, public_link: string}
+    fulfillment_status:      enum (fulfilled | partially_fulfilled | unfulfilled)
+    explanation:             text or null
+  } or null (null where no prior-grant or prior-work-citation trigger applies)
+
   created_at:               timestamp (award timestamp)
 }
 
@@ -329,9 +406,9 @@ Indicator_Commitment {
   baseline:                   {value, unit, source, date} or null (null for build-obligation
                               where coordinating party engagement dimension not activated)
   target: {
-    build_accountability:     {completion_criteria: array of string,
+    build_obligation:         {completion_criteria: array of string,
                               verifying_party: string or null} or null
-    change_accountability:    {value, unit, type: cumulative_total or target_status} or null
+    change_obligation:        {value, unit, type: cumulative_total or target_status} or null
     retroactive_commitment:   {description: text, completion_criteria: array of string} or null
   }
 }
@@ -352,6 +429,21 @@ Gate_Submission {
     indicator_values:     array of {indicator_id: string, value, data_source_reference: text}
     or null (for build-obligation submissions)
   }
+
+  // Completion verification gate, required fields (CROSS Part IV; Part II)
+  unintended_outcomes_disclosure: array of {effect: text, marker: enum (positive | negative)}
+                          or {none_occurred: boolean, determination_basis: text}
+                          or null (null for gate types other than completion_verification)
+  served_population_floor_considered: {
+    applicable:          boolean (true where eligibility rests on a defined served population)
+    delivered_work_not_reaching_population: text or null
+    effects_outside_declared_indicators: text or null
+  } or null (null for gate types other than completion_verification)
+
+  // Continuation specification gate, required field (CROSS Part IV)
+  sustainability_stance:  enum (sustained | conditional | dependent) or null
+                          (null for gate types other than continuation_specification)
+
   verification_status:    enum (pending | verified | failed | waived)
   verification_contact:   string or null
   verification_timestamp: timestamp or null
@@ -426,6 +518,27 @@ Onchain_Attestation {
   corrected_value:          number or string or null
   correction_reason:        text or null
 }
+
+Structured_Dataset_Row {
+  // One row per funded grant, published at round close (CROSS Part XI).
+  // Exported from the obligation registry and gate records; not new collection.
+  round_id:                 string
+  grantee_id:               string
+  indicator_specification:  array of Indicator_Commitment (all Part V fields)
+  obligation_mode:          enum (build | change | retroactive)
+  gate_configuration:       object (the gate configuration applied, from Round)
+  gate_evidence_levels:     array of {gate_type: enum, evidence_scope: enum,
+                            evidence_strength: enum}
+  causality_stance:         enum (attribution | contribution) or null
+                            (null where the round declared none)
+  sufficiency_position:     enum (critical_gap | partial | approaching | surplus)
+  sustainability_stance:    enum (sustained | conditional | dependent) or null
+                            (null where no continuation gate applied)
+  unintended_outcomes:      array of {effect: text, marker: enum (positive | negative)}
+                            or {none_occurred: boolean}
+  field_metadata:           object (field-level schema documentation and per-field
+                            operational definitions; WALKRI-carried where adopted)
+}
 ```
 
 ---
@@ -448,7 +561,7 @@ The CROSS Reviewers Dashboard (specification forthcoming) is a stage-gated revie
 
 ## Appendix: Relationship to CROSS Standard Parts
 
-Section 2 (Obligation Registry) implements CROSS Part V (all indicator fields), Part VI (concurrent funding disclosure), and Part VII (conflict of interest documentation at award time).
+Section 2 (Obligation Registry) implements CROSS Part V (all indicator fields), Part VI (concurrent funding disclosure), and Part VII (conflict of interest documentation at award time). The entry-gate declaration snapshots implement the Part IV entry specification gate declarations carried into the live record: the organizational identity declaration, the sufficiency architecture declaration (including the Part II revenue architecture element), the public benefit mechanism and access condition declaration, the development stage declaration, the Continuity Capacity declaration (the Part II dimension), and the obligation fulfillment record. The organizational identity and on-chain identity anchor fields derive from the Entity Boundary and On-chain Identity Anchor primitives (CROSS+WALKRI Primitives Foundation, Layer 2), which the spec's CRAFT inheritance receipt (Part XIII, Condition 1) names as carrying the round's risk-bearer and adversarial-threat structure.
 
 Section 3 (Indicator Progress Tracking) implements CROSS Part III (obligation modes) and Part VIII (reliability standard for the methodology consistency check).
 
@@ -456,13 +569,13 @@ Section 4 (Disaggregation Ratchet Handling) implements the disaggregation ratche
 
 Section 5 (Reporting Schedule and Timeline) implements the reporting frequency as set in the round specification per Part IX.
 
-Section 6 (Gate Evidence Submission Tracking) implements CROSS Part IV (gate architecture: progress verification gates and completion verification gate). The completion gate's public accessibility requirement for build-obligation rounds is a CROSS Part IV minimum that the Dashboard enforces at the disbursement interface.
+Section 6 (Gate Evidence Submission Tracking) implements CROSS Part IV (gate architecture: progress verification gates and completion verification gate). The completion gate's public accessibility requirement for build-obligation rounds is a CROSS Part IV minimum that the Dashboard applies at the disbursement interface. The unintended outcomes disclosure and the sustainability stance at continuation implement the Part IV completion and continuation gate requirements. The served-population risk-bearer floor on the completion determination implements CROSS Part II (the served population as a named risk-bearer carried through every gate). The spec's CRAFT inheritance receipt (Part XIII, Condition 6) records the unintended-outcomes disclosure and continuation gate as the feedback-with-propagation surface, and names the served-population direction-origin validation as an obligation owed rather than fully installed.
 
 Section 7 (Disbursement Condition Tracking) implements CROSS Part II (institutional capacity dimension, disbursement conditions tier) and the "Fund with conditions" recommendation type from the assessment rubric.
 
 Section 8 (Attestation Format and Signing) implements CROSS Part VIII (reliability, validity, integrity) and the methodology consistency requirements throughout Part V.
 
-Section 9 (Onchain Publication Protocol) implements CROSS Part IX (the Grantee Dashboard produces structured attestations suitable for onchain publication).
+Section 9 (Onchain Publication Protocol) implements CROSS Part IX (the Grantee Dashboard produces structured attestations suitable for onchain publication). The structured dataset at round close implements the CROSS Part XI structured dataset publication obligation: the machine-readable per-grant export of indicator specification, obligation mode, gate configuration and evidence levels, causality stance, sufficiency position, sustainability stance, and unintended outcomes, with field-level metadata. The spec's CRAFT inheritance receipt (Part XIII, Condition 6) names this dataset as part of the specification-layer legibility surface.
 
 Section 10 (Funder View) implements CROSS Part IX and the round-level common indicators option noted in the CROSS standard Appendix.
 

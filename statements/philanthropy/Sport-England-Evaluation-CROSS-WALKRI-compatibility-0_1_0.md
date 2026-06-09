@@ -1,12 +1,19 @@
 ---
 title: Sport England Evaluation Framework Compatibility - CROSS+WALKRI
-version: 0.1.0
-date: 2026-05-18
+version: 0.1.2
+date: 2026-06-08
 license: CC0
 standards: CROSS v0.4.4 (github.com/CrossWalkri/CROSS), WALKRI v0.1.7 (github.com/CrossWalkri/WALKRI)
 references:
   - https://evaluationframework.sportengland.org
   - https://www.sportengland.org/guidance-and-support/evaluation-and-learning
+lens_tags:
+  calibration_tier: outcome_specified_self_reported
+  authority_source: statutory
+  cultural_methodological_lineage: western_institutional
+  funder_typology: government_non_aid
+  framework_scope_type: grantee_outcome_measurement
+  # Sport England Evaluation Framework; arms-length body under Royal Charter and Lottery distributor
 ---
 
 # Sport England Evaluation Framework Compatibility - CROSS+WALKRI
@@ -39,7 +46,7 @@ Sport England integrates the Active Lives survey as the sector's primary populat
 
 CROSS's obligation modes and evidence strength tiers map directly to the three Sport England evaluation levels. The correspondence is structural: CROSS's gate architecture implements the same proportionality logic the Sport England Framework uses, calibrating evidence requirements to the scale and complexity of the program.
 
-Level 1 (activities and basic outputs) corresponds to CROSS Build obligation mode plus the completion gate deliverable specification. Under Build obligation, CROSS requires that the outputs to be delivered be specified before the round opens, including what activities will be conducted, what counts as a participating individual, and what evidence verifies output completion. This is the structural equivalent of Level 1's activity description and basic output reporting requirements. The completion gate provides the verifiable evidence base that Level 1 accountability requires.
+Level 1 (activities and basic outputs) corresponds to CROSS Build obligation mode plus the completion gate deliverable specification. Under Build obligation, CROSS requires that the outputs to be delivered be specified before the round opens, including what activities will be conducted, what counts as a participating individual, and what evidence verifies output completion. This is the structural equivalent of Level 1's activity description and basic output reporting requirements. The completion gate provides the verifiable evidence base that Level 1 activity verification requires.
 
 Level 2 (outcomes with pre-post comparisons) corresponds to CROSS Change obligation mode plus the counterfactual baseline requirement plus completion gate evidence at the pre-post measurement tier. Under Change obligation, CROSS requires that target condition, baseline measurement, target threshold, measurement timing, and the type of comparison be declared before the round opens. For programs equivalent to Level 2, the comparison type is pre-post within participant, and CROSS's evidence strength taxonomy explicitly identifies pre-post measurement as a distinct evidence tier, appropriate for programs where a comparison group is not feasible. The progress verification gate captures the pre-program baseline; the completion gate captures the post-program measurement. Theory of change is a required element of the CROSS entry specification gate for any round operating under Change obligation, satisfying Level 2's mandatory theory of change requirement.
 
@@ -66,3 +73,12 @@ At Level 3, WALKRI's audit requirements apply to comparison group specification 
 ---
 
 *Published under CC0. For the current version of CROSS and WALKRI, see github.com/CrossWalkri.*
+
+---
+
+## Changelog
+
+| Version | Date | Summary |
+|---|---|---|
+| 0.1.2 | 2026-06-08 | Frame Language own-voice pass applied as part of the corpus-wide 2026-06-08 sweep: own-voice watchlist terms (govern-family, accountability, mandatory, compliance, enforce, legitimate) recast to conformance and obligation vocabulary where they appeared in this document's own voice; citation use of source-framework terms preserved. Primitive-rename references aligned to current canon (Continuity Capacity, the Collective disbursement state, Affected Population Verification Gate). Em-dash- and watchlist-clean re-verified. No compatibility finding or mapping changed; vocabulary only. |
+| 0.1.1 | 2026-05-23 | Retroactive lens tagging: added calibration_tier, authority_source, cultural_methodological_lineage, funder_typology, framework_scope_type per Lenses Framework v0.1.0. |

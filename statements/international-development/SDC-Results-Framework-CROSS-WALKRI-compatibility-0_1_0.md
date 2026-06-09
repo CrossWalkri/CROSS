@@ -1,13 +1,20 @@
 ---
 title: SDC Results Framework Compatibility - CROSS+WALKRI
-version: 0.1.0
-date: 2026-05-18
+version: 0.1.2
+date: 2026-06-08
 license: CC0
 standards: CROSS v0.4.0 (github.com/CrossWalkri/CROSS), WALKRI v0.1.6 (github.com/CrossWalkri/WALKRI)
 references:
   - Swiss Agency for Development and Cooperation (SDC), International Cooperation Strategy 2025-2028
   - SDC Aggregated Reference Indicators and Thematic Reference Indicators
   - SDC Policy Markers and Rio Convention Alignment Guidance, https://www.sdc-cde.ch/en/guidance-and-indicators
+lens_tags:
+  calibration_tier: independently_verified
+  authority_source: statutory
+  cultural_methodological_lineage: western_institutional
+  funder_typology: bilateral_aid_agency
+  framework_scope_type: grantee_outcome_measurement
+  # Swiss Agency for Development and Cooperation Results Framework
 ---
 
 # SDC Results Framework Compatibility
@@ -26,7 +33,7 @@ CROSS's Change obligation mode, combined with the entry specification gate, prod
 
 ## What SDC Requires
 
-The SDC Results Framework, operating under the International Cooperation Strategy 2025-2028, mandates the following at program design stage:
+The SDC Results Framework, operating under the International Cooperation Strategy 2025-2028, requires the following at program design stage:
 
 1. An outcome statement declaring the expected change in the target population's condition
 2. An impact hypothesis (the causal argument for why the program's activities will produce the expected outcome)
@@ -43,7 +50,7 @@ SDC is a significant bilateral funder with high evidence standards and documente
 
 ## Change Obligation Mode and the Impact Hypothesis
 
-CROSS's three obligation modes govern how a program's accountability architecture is framed. The Change obligation mode is the structural equivalent of SDC's outcome statement plus impact hypothesis requirement.
+CROSS's three obligation modes determine how a program's obligation architecture is framed. The Change obligation mode is the structural equivalent of SDC's outcome statement plus impact hypothesis requirement.
 
 In Change mode, the program must declare:
 
@@ -87,7 +94,7 @@ CROSS Field 10 (institutional framework alignment) is designed to accommodate ex
 
 ## WALKRI and SDC Evidence Standards
 
-SDC's high evidence standards require that data collection instruments be capable of producing reliable, valid data under field conditions in often-challenging operating environments. WALKRI's five pre-publication field requirements (criterion intent, operational definition, response form, evidence form, compliance threshold) ensure that each intake field is a calibrated measurement instrument before it is deployed. WALKRI's five data quality standards (validity, reliability, precision, integrity, timeliness) correspond to the criteria SDC applies when assessing data quality at annual review.
+SDC's high evidence standards require that data collection instruments be capable of producing reliable, valid data under field conditions in often-challenging operating environments. WALKRI's five pre-publication field requirements (criterion intent, operational definition, response form, evidence form, conformance threshold) ensure that each intake field is a calibrated measurement instrument before it is deployed. WALKRI's five data quality standards (validity, reliability, precision, integrity, timeliness) correspond to the criteria SDC applies when assessing data quality at annual review.
 
 ---
 
@@ -122,3 +129,5 @@ License: CC0
 | Version | Date | Summary |
 |---|---|---|
 | 0.1.0 | 2026-05-18 | Initial draft. SDC outcome statement and impact hypothesis requirement mapped to CROSS Change obligation mode and entry specification gate. ARI and TRI two-tier indicator architecture mapped to CROSS obligation dimensions. Policy Markers mapped to Field 10 declarations. WALKRI data quality standards mapped to SDC evidence requirements. |
+| 0.1.1 | 2026-05-23 | Retroactive lens tagging: added calibration_tier, authority_source, cultural_methodological_lineage, funder_typology, framework_scope_type per Lenses Framework v0.1.0. |
+| 0.1.2 | 2026-06-08 | Frame Language own-voice pass applied as part of the corpus-wide 2026-06-08 sweep: own-voice watchlist terms (govern-family, accountability, mandatory, compliance, enforce, legitimate) recast to conformance and obligation vocabulary where they appeared in this document's own voice; citation use of source-framework terms preserved. Primitive-rename references aligned to current canon (Continuity Capacity, the Collective disbursement state, Affected Population Verification Gate). Em-dash- and watchlist-clean re-verified. No compatibility finding or mapping changed; vocabulary only. |

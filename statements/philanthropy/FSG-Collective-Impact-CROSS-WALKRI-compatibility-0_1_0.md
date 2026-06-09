@@ -1,11 +1,18 @@
 ---
 title: FSG Collective Impact Compatibility - CROSS+WALKRI
-version: 0.1.0
-date: 2026-05-18
+version: 0.1.2
+date: 2026-06-08
 license: CC0
 standards: CROSS v0.4.0 (github.com/CrossWalkri/CROSS), WALKRI v0.1.6 (github.com/CrossWalkri/WALKRI)
 references:
   - FSG Guide to Evaluating Collective Impact, 2014, with Aspen Institute, https://www.fsg.org/resource/guide-evaluating-collective-impact/
+lens_tags:
+  calibration_tier: process_conformant
+  authority_source: civil_society_advisory
+  cultural_methodological_lineage: western_institutional
+  funder_typology: private_foundation
+  framework_scope_type: professional_practice_ethics
+  # FSG Collective Impact framework; consulting-published civil society guidance; private_foundation primary typology for adopters; alternative pooled_fund_or_intermediary
 ---
 
 # FSG Collective Impact Compatibility
@@ -34,7 +41,7 @@ The shared measurement condition is the one most directly relevant to CROSS and 
 
 ## Shared Measurement Requirement: WALKRI Instrument Consistency
 
-WALKRI's five pre-publication field requirements are the instrument-specification mechanism that addresses the shared measurement problem directly. When multiple programs within a collective impact initiative apply WALKRI to their collection instruments, the result is a set of instruments whose criterion intent, operational definitions, response forms, evidence forms, and compliance thresholds are all explicitly documented and comparable across programs.
+WALKRI's five pre-publication field requirements are the instrument-specification mechanism that addresses the shared measurement problem directly. When multiple programs within a collective impact initiative apply WALKRI to their collection instruments, the result is a set of instruments whose criterion intent, operational definitions, response forms, evidence forms, and conformance thresholds are all explicitly documented and comparable across programs.
 
 The operational definition requirement is particularly significant for shared measurement. Shared measurement fails most often not because programs use different indicator names but because they use the same indicator name with different operational definitions. "Student chronically absent" can mean absent more than 10% of days in one program and absent more than 15% in another; without explicit operational definitions, the same label produces incomparable data. WALKRI's operational definition requirement forces each program to state its definition explicitly and document it before collection begins. When a backbone organization reviews operational definitions across programs, divergences are visible and can be resolved before data is collected, not discovered after aggregation produces implausible results.
 
@@ -63,7 +70,7 @@ Field 10 (institutional framework alignment) can record the collective impact in
 | Collective Impact Condition | CROSS Provision | WALKRI Provision | Coverage |
 | :-- | :-- | :-- | :-- |
 | Shared measurement systems | Coherence disclosure; Cohort Position situates program in portfolio context | Five pre-publication field requirements ensure instrument consistency across programs | Structural: WALKRI is the specification-layer mechanism for shared measurement |
-| Common agenda | ToC architecture with named causal links; Field 10 records initiative framework alignment | No direct provision | Partial: ToC alignment documented, agenda governance outside scope |
+| Common agenda | ToC architecture with named causal links; Field 10 records initiative framework alignment | No direct provision | Partial: ToC alignment documented, agenda decision-standing rules outside scope |
 | Mutually reinforcing activities | Coherence disclosure structures cross-program coordination data | No direct provision | Structural: coordination relationships formally documented |
 | Continuous communication | No direct provision | No direct provision | Outside specification scope |
 | Backbone support | Cohort Position assessment produces portfolio-level data for backbone review | Operational definition and response form consistency enables backbone aggregation | Structural: backbone aggregation preconditions satisfied at instrument layer |
@@ -88,3 +95,5 @@ License: CC0
 | Version | Date | Summary |
 |---|---|---|
 | 0.1.0 | 2026-05-18 | Initial draft. Shared measurement, Cohort Position, and coherence disclosure mappings documented. Continuous communication and 27 backbone effectiveness indicators identified as outside specification scope. |
+| 0.1.1 | 2026-05-23 | Retroactive lens tagging: added calibration_tier, authority_source, cultural_methodological_lineage, funder_typology, framework_scope_type per Lenses Framework v0.1.0. |
+| 0.1.2 | 2026-06-08 | Frame Language own-voice pass applied as part of the corpus-wide 2026-06-08 sweep: own-voice watchlist terms (govern-family, accountability, mandatory, compliance, enforce, legitimate) recast to conformance and obligation vocabulary where they appeared in this document's own voice; citation use of source-framework terms preserved. Primitive-rename references aligned to current canon (Continuity Capacity, the Collective disbursement state, Affected Population Verification Gate). Em-dash- and watchlist-clean re-verified. No compatibility finding or mapping changed; vocabulary only. |

@@ -38,7 +38,7 @@ People evaluating applications and gate evidence at any stage of a grant program
 
 **What CROSS delivers:** Reviewers assess submissions against criteria that existed before the round opened. They are not asked to construct standards mid-review or apply standards that were not disclosed to applicants. The calibration requirement (Part VII) mandates a calibration exercise with worked examples and an inter-rater consistency check before reviewers assess live applications at independent review level or above. The conflict-of-interest framework specifies exactly what must be disclosed and what constitutes a categorical bar, protecting reviewers from reputational exposure and ensuring grantees are assessed by unconflicted parties.
 
-**What WALKRI delivers:** WALKRI-conformant intake forms carry pre-specified compliance thresholds for every field. Reviewers assess responses against those thresholds rather than determining thresholds independently during review. Consistency across reviewers improves as a structural consequence, because the threshold is embedded in the form specification, not left to individual judgment.
+**What WALKRI delivers:** WALKRI-conformant intake forms carry pre-specified conformance thresholds for every field. Reviewers assess responses against those thresholds rather than determining thresholds independently during review. Consistency across reviewers improves as a structural consequence, because the threshold is embedded in the form specification, not left to individual judgment.
 
 **Primary CROSS provisions:** Part IV (entry gate specification), Part VII (calibration requirement, conflict-of-interest framework), Part VIII (completion gate evidence standards and evidence strength taxonomy).
 
@@ -101,7 +101,7 @@ Foundations, government agencies, DAOs, and multilateral bodies making strategic
 | Cohort | Primary CROSS Value | Primary WALKRI Value |
 |:--|:--|:--|
 | 1. Grantees | Obligation clarity before applying; redress rights if criteria shift | Legible intake forms with specified thresholds eliminating interpretation risk |
-| 2. Reviewers | Pre-specified criteria; calibration requirement; conflict framework | Compliance thresholds that replace reviewer-level threshold determination |
+| 2. Reviewers | Pre-specified criteria; calibration requirement; conflict framework | Conformance thresholds that replace reviewer-level threshold determination |
 | 3. Program Operators | Structured four-gate lifecycle; round specification architecture | Pre-publication audit as an operational conformance procedure |
 | 4. Platform Providers | Machine-readable obligation architecture mapping to a data model and workflow | Field-level metadata specification enabling WALKRI-conformant form builders |
 | 5. Analysts | Commensurably specified indicators; mandatory structured dataset at round close; public Attestation Corpus | Operational definitions and evidence form requirements as the basis for cross-program comparability |

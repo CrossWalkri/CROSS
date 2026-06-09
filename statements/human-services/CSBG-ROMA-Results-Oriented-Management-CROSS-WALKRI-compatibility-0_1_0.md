@@ -1,7 +1,7 @@
 ---
 title: CSBG Results Oriented Management and Accountability (ROMA) Compatibility - CROSS+WALKRI
-version: 0.1.0
-date: 2026-05-18
+version: 0.1.2
+date: 2026-06-08
 license: CC0
 standards: CROSS v0.4.5 (github.com/CrossWalkri/CROSS), WALKRI v0.1.7 (github.com/CrossWalkri/WALKRI)
 references:
@@ -9,6 +9,13 @@ references:
   - CSBG Reauthorization Act of 1998, Pub. L. 105-285
   - National Community Action Partnership ROMA Implementation Guide (communityactionpartnership.com)
   - nascsp.org/csbg/csbg-resources/roma/
+lens_tags:
+  calibration_tier: outcome_specified_self_reported
+  authority_source: statutory
+  cultural_methodological_lineage: western_institutional
+  funder_typology: government_non_aid
+  framework_scope_type: grantee_outcome_measurement
+  # Community Services Block Grant Results Oriented Management and Accountability framework; CSBG Act statutory authority
 ---
 
 # CSBG Results Oriented Management and Accountability (ROMA)
@@ -19,17 +26,17 @@ references:
 
 ## Summary
 
-The Results Oriented Management and Accountability (ROMA) framework, made mandatory for all Community Services Block Grant (CSBG) recipients under the 1998 CSBG Reauthorization Act (42 U.S.C. § 9908(b)(1)(B)) and created in 1994 by the federal-state-local Monitoring and Assessment Task Force, governs performance measurement for approximately 1,000 Community Action Agencies nationwide. ROMA's Six National Goals constitute the pre-specified outcome framework against which all CSBG-funded programs must document their services and results. CROSS's four-gate sequence is structurally compatible with ROMA at the statutory level: the Six Goals establish the entry specification gate nationally, CAA service documentation corresponds to the completion gate, and the federal reporting cycle constitutes a structured attestation requirement. WALKRI's pre-publication requirements address ROMA's primary implementation gap: the Six National Goals define outcome domains without specifying operational definitions for what constitutes a documented change within each domain, producing data that is non-comparable across CAAs in the same CSBG network.
+The Results Oriented Management and Accountability (ROMA) framework, required for all Community Services Block Grant (CSBG) recipients under the 1998 CSBG Reauthorization Act (42 U.S.C. § 9908(b)(1)(B)) and created in 1994 by the federal-state-local Monitoring and Assessment Task Force, covers performance measurement for approximately 1,000 Community Action Agencies nationwide. ROMA's Six National Goals constitute the pre-specified outcome framework against which all CSBG-funded programs must document their services and results. CROSS's four-gate sequence is structurally compatible with ROMA at the statutory level: the Six Goals establish the entry specification gate nationally, CAA service documentation corresponds to the completion gate, and the federal reporting cycle constitutes a structured attestation requirement. WALKRI's pre-publication requirements address ROMA's primary implementation gap: the Six National Goals define outcome domains without specifying operational definitions for what constitutes a documented change within each domain, producing data that is non-comparable across CAAs in the same CSBG network.
 
 ---
 
 ## The CSBG ROMA Framework
 
-The Community Services Block Grant provides federal funding to states, which distribute it to approximately 1,000 Community Action Agencies serving low-income individuals and families in every state and territory. CSBG is authorized under 42 U.S.C. § 9901 et seq. and requires, under 42 U.S.C. § 9908(b)(1)(B), that state plans include a results accountability framework. The ROMA system was created in 1994 by the Monitoring and Assessment Task Force (MATF), a collaboration of federal, state, and local partners, and made mandatory by the 1998 CSBG Reauthorization Act. It is administered nationally through the National Community Action Partnership (NCAP) with state-level implementation support provided by State Community Action Associations.
+The Community Services Block Grant provides federal funding to states, which distribute it to approximately 1,000 Community Action Agencies serving low-income individuals and families in every state and territory. CSBG is authorized under 42 U.S.C. § 9901 et seq. and requires, under 42 U.S.C. § 9908(b)(1)(B), that state plans include a results obligation framework. The ROMA system was created in 1994 by the Monitoring and Assessment Task Force (MATF), a collaboration of federal, state, and local partners, and required by the 1998 CSBG Reauthorization Act. It is administered nationally through the National Community Action Partnership (NCAP) with state-level implementation support provided by State Community Action Associations.
 
 ROMA is organized around Six National Goals. Goal 1 addresses low-income individuals and families who achieve economic self-sufficiency. Goal 2 addresses low-income people who are healthy. Goal 3 addresses children who are ready to succeed in school. Goal 4 addresses people with low income who are stable and housed. Goal 5 addresses community organizations strengthened to achieve family and community outcomes. Goal 6 addresses partnerships that address the causes and conditions of poverty. These six goals are established nationally before any program year begins and function as the outer framework within which all CSBG-funded service delivery is documented and evaluated.
 
-CAAs must align their service delivery and outcome documentation with the Six Goals and report their results annually through the CSBG Annual Report submitted to states, which aggregate to federal reporting through HHS's Office of Community Services. The federal annual reporting cycle creates a mandatory completion gate: agencies that cannot document outcomes within the Six Goals framework face compliance findings and potential funding consequences.
+CAAs must align their service delivery and outcome documentation with the Six Goals and report their results annually through the CSBG Annual Report submitted to states, which aggregate to federal reporting through HHS's Office of Community Services. The federal annual reporting cycle creates a required completion gate: agencies that cannot document outcomes within the Six Goals framework face compliance findings and potential funding consequences.
 
 ---
 
@@ -59,8 +66,17 @@ ROMA's Six National Goals are pre-specified at the statutory level before any gr
 
 ROMA's Six National Goals define outcome domains but do not specify the operational definitions that determine what documented evidence constitutes a change within each domain. This is ROMA's primary and well-documented implementation challenge: the same statutory goal (economic self-sufficiency, housing stability) can be operationalized at dozens of different thresholds by different CAAs, making the resulting data non-comparable across agencies in the same CSBG network even when they are reporting against the same national goal. WALKRI's five pre-publication field requirements address this gap at the intake instrument level.
 
-WALKRI's criterion intent requirement, applied to a CAA intake field that records economic self-sufficiency outcomes, specifies what the Six Goals framework intends the field to capture and why: not merely that a household moved above a certain income level, but that the change is durable, documented, and attributable to CSBG-funded services within the reporting period. WALKRI's operational definition requirement specifies the precise income threshold (as a percentage of the federal poverty level, or as attainment of a specific benefit cliff threshold) that constitutes self-sufficiency for this CAA's reporting purposes, before any client is enrolled in the service. WALKRI's compliance threshold requirement specifies the minimum documentation level, whether a single-point income verification or a multi-point change record, that satisfies the CSBG Annual Report's outcome field. Applied before any client intake form is deployed, these requirements produce measurement instruments that generate ROMA data commensurable across the CAA network, making the Six Goals function as genuine national indicators rather than nominal categories filled with incomparable agency-level data.
+WALKRI's criterion intent requirement, applied to a CAA intake field that records economic self-sufficiency outcomes, specifies what the Six Goals framework intends the field to capture and why: not merely that a household moved above a certain income level, but that the change is durable, documented, and attributable to CSBG-funded services within the reporting period. WALKRI's operational definition requirement specifies the precise income threshold (as a percentage of the federal poverty level, or as attainment of a specific benefit cliff threshold) that constitutes self-sufficiency for this CAA's reporting purposes, before any client is enrolled in the service. WALKRI's conformance threshold requirement specifies the minimum documentation level, whether a single-point income verification or a multi-point change record, that satisfies the CSBG Annual Report's outcome field. Applied before any client intake form is deployed, these requirements produce measurement instruments that generate ROMA data commensurable across the CAA network, making the Six Goals function as genuine national indicators rather than nominal categories filled with incomparable agency-level data.
 
 ---
 
 *Published under CC0. For the current version of CROSS and WALKRI, see github.com/CrossWalkri.*
+
+---
+
+## Changelog
+
+| Version | Date | Summary |
+|---|---|---|
+| 0.1.2 | 2026-06-08 | Frame Language own-voice pass applied as part of the corpus-wide 2026-06-08 sweep: own-voice watchlist terms (govern-family, accountability, mandatory, compliance, enforce, legitimate) recast to conformance and obligation vocabulary where they appeared in this document's own voice; citation use of source-framework terms preserved. Primitive-rename references aligned to current canon (Continuity Capacity, the Collective disbursement state, Affected Population Verification Gate). Em-dash- and watchlist-clean re-verified. No compatibility finding or mapping changed; vocabulary only. |
+| 0.1.1 | 2026-05-23 | Retroactive lens tagging: added calibration_tier, authority_source, cultural_methodological_lineage, funder_typology, framework_scope_type per Lenses Framework v0.1.0. |

@@ -1,7 +1,7 @@
 ---
 title: LIHEAP Performance Measures Compatibility - CROSS+WALKRI
-version: 0.1.0
-date: 2026-05-18
+version: 0.1.2
+date: 2026-06-08
 license: CC0
 standards: CROSS v0.4.5 (github.com/CrossWalkri/CROSS), WALKRI v0.1.7 (github.com/CrossWalkri/WALKRI)
 references:
@@ -10,6 +10,13 @@ references:
   - Federal Register, June 2013 (LIHEAP performance measures formal establishment)
   - liheappm.acf.hhs.gov (LIHEAP Performance Management system)
   - Administration for Children and Families, HHS (acf.hhs.gov)
+lens_tags:
+  calibration_tier: outcome_specified_self_reported
+  authority_source: statutory
+  cultural_methodological_lineage: western_institutional
+  funder_typology: government_non_aid
+  framework_scope_type: grantee_outcome_measurement
+  # Low Income Home Energy Assistance Program statutory authority
 ---
 
 # LIHEAP Performance Measures
@@ -20,7 +27,7 @@ references:
 
 ## Summary
 
-The Low Income Home Energy Assistance Program (LIHEAP), authorized under 42 U.S.C. § 8621 et seq. and administered by the Administration for Children and Families (ACF) within HHS, requires all state grantees to report annually on three statutory outcome measures established under 42 U.S.C. § 8629(b) and formally published in a June 2013 Federal Register notice: average reduction in energy burden for households receiving fuel assistance, percent of households where LIHEAP prevented a potential energy crisis, and percent of households where LIHEAP restored home energy after a crisis or disconnection. These three measures are the most compact pre-specified indicator set in the federal human services grant landscape: three indicators, established by statute and Federal Register notice, mandatory for all 50 states and DC before any program year begins. CROSS's four-gate sequence is structurally compatible with this framework, and WALKRI's pre-publication requirements address LIHEAP's primary data quality challenge: the statutory terms "energy crisis" and "energy burden" lack field-level operational definitions, producing non-comparable data across states in the national LIHEAP dataset.
+The Low Income Home Energy Assistance Program (LIHEAP), authorized under 42 U.S.C. § 8621 et seq. and administered by the Administration for Children and Families (ACF) within HHS, requires all state grantees to report annually on three statutory outcome measures established under 42 U.S.C. § 8629(b) and formally published in a June 2013 Federal Register notice: average reduction in energy burden for households receiving fuel assistance, percent of households where LIHEAP prevented a potential energy crisis, and percent of households where LIHEAP restored home energy after a crisis or disconnection. These three measures are the most compact pre-specified indicator set in the federal human services grant landscape: three indicators, established by statute and Federal Register notice, required for all 50 states and DC before any program year begins. CROSS's four-gate sequence is structurally compatible with this framework, and WALKRI's pre-publication requirements address LIHEAP's primary data quality challenge: the statutory terms "energy crisis" and "energy burden" lack field-level operational definitions, producing non-comparable data across states in the national LIHEAP dataset.
 
 ---
 
@@ -40,7 +47,7 @@ The three LIHEAP statutory performance measures are pre-specified by statute and
 
 **Change obligation mode indicators:** All three measures are Change obligation mode indicators, each requiring a documented change in a household's energy status or condition. Measure 1 requires a before-and-after measurement of energy burden, corresponding to CROSS Fields 4 and 5 (baseline and target) applied at the household level. Measure 2 requires a counterfactual determination, corresponding to CROSS's causality stance field: what would have happened without the intervention? This is one of the few instances in federal human services grant reporting where a statutory performance measure explicitly requires a counterfactual element. Measure 3 requires a documented status change from crisis to resolution, corresponding to CROSS's completion gate outcome evidence requirement: verified change in a binary household energy access condition.
 
-**Attestation gate and federal reporting:** The LIHEAP Performance Data Form submitted annually by all states to ACF constitutes the attestation gate. State grantees must document their performance on all three measures and submit data to the national LIHEAP Performance Management system, creating a persistent, nationally queryable record of verified performance claims. CROSS's attestation gate requirement is satisfied by this formal annual submission, which is publicly accessible and used by ACF for program oversight and Congressional reporting.
+**Attestation gate and federal reporting:** The LIHEAP Performance Data Form submitted annually by all states to ACF constitutes the attestation gate. State grantees must document their performance on all three measures and submit data to the national LIHEAP Performance Management system, creating a persistent, nationally queryable record of verified performance claims. CROSS's attestation gate requirement is satisfied by this formal annual submission, which is publicly accessible and used by ACF for program verification and Congressional reporting.
 
 | LIHEAP Performance Measure | CROSS Provision |
 |:--|:--|
@@ -63,3 +70,12 @@ WALKRI's five pre-publication field requirements, applied to LIHEAP intake instr
 ---
 
 *Published under CC0. For the current version of CROSS and WALKRI, see github.com/CrossWalkri.*
+
+---
+
+## Changelog
+
+| Version | Date | Summary |
+|---|---|---|
+| 0.1.2 | 2026-06-08 | Frame Language own-voice pass applied as part of the corpus-wide 2026-06-08 sweep: own-voice watchlist terms (govern-family, accountability, mandatory, compliance, enforce, legitimate) recast to conformance and obligation vocabulary where they appeared in this document's own voice; citation use of source-framework terms preserved. Primitive-rename references aligned to current canon (Continuity Capacity, the Collective disbursement state, Affected Population Verification Gate). Em-dash- and watchlist-clean re-verified. No compatibility finding or mapping changed; vocabulary only. |
+| 0.1.1 | 2026-05-23 | Retroactive lens tagging: added calibration_tier, authority_source, cultural_methodological_lineage, funder_typology, framework_scope_type per Lenses Framework v0.1.0. |

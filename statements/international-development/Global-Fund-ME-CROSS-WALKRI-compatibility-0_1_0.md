@@ -1,13 +1,20 @@
 ---
 title: Global Fund M&E Framework Compatibility - CROSS+WALKRI
-version: 0.1.0
-date: 2026-05-18
+version: 0.1.2
+date: 2026-06-08
 license: CC0
 standards: CROSS v0.4.0 (github.com/CrossWalkri/CROSS), WALKRI v0.1.6 (github.com/CrossWalkri/WALKRI)
 references:
   - Global Fund Monitoring and Evaluation Framework, https://www.theglobalfund.org/en/monitoring-evaluation/
   - Global Fund Modular Framework for HIV, TB, and Malaria Programs
   - Global Fund Performance Framework, Grant Cycle Requirements
+lens_tags:
+  calibration_tier: independently_verified
+  authority_source: voluntary_published
+  cultural_methodological_lineage: western_institutional
+  funder_typology: multilateral_bank_or_fund
+  framework_scope_type: grantee_outcome_measurement
+  # Global Fund to Fight AIDS, Tuberculosis and Malaria Monitoring and Evaluation framework
 ---
 
 # Global Fund M&E Framework Compatibility
@@ -20,7 +27,7 @@ references:
 
 A CROSS+WALKRI-conformant grant program satisfies the Global Fund's Monitoring and Evaluation Framework documentation requirements as a structural consequence of conformance. The Global Fund's Modular Framework and Performance Framework govern grants across HIV, tuberculosis, and malaria programs in more than 100 countries. These frameworks require that monitoring and evaluation activities, performance indicators, baselines, and targets be defined before grants are disbursed.
 
-CROSS's pre-round obligation specification architecture is structurally identical to this requirement. CROSS requires grantors to declare what grantees must demonstrate at each gate before any application is submitted. The Global Fund requires that monitoring and evaluation design be complete before disbursement begins. Both standards enforce the same sequencing principle: accountability infrastructure is specified before funding moves.
+CROSS's pre-round obligation specification architecture is structurally identical to this requirement. CROSS requires grantors to declare what grantees must demonstrate at each gate before any application is submitted. The Global Fund requires that monitoring and evaluation design be complete before disbursement begins. Both standards require the same sequencing principle: obligation infrastructure is specified before funding moves.
 
 ---
 
@@ -64,7 +71,7 @@ CROSS's eight obligation dimensions allow grant programs to configure which indi
 | Limitations and notes | Field 5 (Construction and aggregation methodology) | CROSS requires this to be stated as a construction rule rather than a retrospective caveat |
 | Data quality assessment | WALKRI five data quality standards | Applied at field specification stage, before data collection begins |
 
-**Result:** Every element of the Global Fund Performance Indicator documentation requirement has a corresponding CROSS or WALKRI provision. A program that implements CROSS's eleven-field indicator specification and WALKRI's five data quality standards produces Global Fund-compliant indicator documentation without separate documentation work.
+**Result:** Every element of the Global Fund Performance Indicator documentation requirement has a corresponding CROSS or WALKRI provision. A program that implements CROSS's eleven-field indicator specification and WALKRI's five data quality standards produces Global Fund-conformant indicator documentation without separate documentation work.
 
 ---
 
@@ -78,7 +85,7 @@ Programs operating under CROSS cannot reach the activation gate (the point at wh
 
 ## WALKRI and Data Quality
 
-The Global Fund expects grantees to follow rigorous data quality practices throughout the grant lifecycle. WALKRI's five pre-publication field requirements (criterion intent, operational definition, response form, evidence form, compliance threshold) ensure that each data collection instrument is measurement-ready before it is deployed. WALKRI's five data quality standards match the five criteria the Global Fund applies when assessing indicator data quality: validity, reliability, precision, integrity, and timeliness.
+The Global Fund expects grantees to follow rigorous data quality practices throughout the grant lifecycle. WALKRI's five pre-publication field requirements (criterion intent, operational definition, response form, evidence form, conformance threshold) ensure that each data collection instrument is measurement-ready before it is deployed. WALKRI's five data quality standards match the five criteria the Global Fund applies when assessing indicator data quality: validity, reliability, precision, integrity, and timeliness.
 
 A WALKRI-conformant field specification is a measurement instrument, not a data collection template. This distinction matters for Global Fund grant management: when data quality is built into the instrument at design time, retrospective Data Quality Assessments confirm design quality rather than remediate collection failures.
 
@@ -115,3 +122,5 @@ License: CC0
 | Version | Date | Summary |
 |---|---|---|
 | 0.1.0 | 2026-05-18 | Initial draft. Global Fund Performance Indicator requirements mapped against CROSS eleven-field specification and WALKRI five data quality standards. Core and Tailored indicator tier structure mapped to CROSS obligation dimensions. Pre-disbursement design requirement mapped to CROSS gate architecture. |
+| 0.1.1 | 2026-05-23 | Retroactive lens tagging: added calibration_tier, authority_source, cultural_methodological_lineage, funder_typology, framework_scope_type per Lenses Framework v0.1.0. |
+| 0.1.2 | 2026-06-08 | Frame Language own-voice pass applied as part of the corpus-wide 2026-06-08 sweep: own-voice watchlist terms (govern-family, accountability, mandatory, compliance, enforce, legitimate) recast to conformance and obligation vocabulary where they appeared in this document's own voice; citation use of source-framework terms preserved. Primitive-rename references aligned to current canon (Continuity Capacity, the Collective disbursement state, Affected Population Verification Gate). Em-dash- and watchlist-clean re-verified. No compatibility finding or mapping changed; vocabulary only. |

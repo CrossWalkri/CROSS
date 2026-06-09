@@ -106,7 +106,7 @@ A continuing program operator must demonstrate: the entry specification gate for
 
 ## Part 2: WALKRI Field Specifications
 
-The following field specifications cover the intake fields most commonly required in challenge prize and innovation grant programs. Each specification satisfies WALKRI's five pre-publication requirements: criterion intent, operational definition, response form, evidence form, compliance threshold.
+The following field specifications cover the intake fields most commonly required in challenge prize and innovation grant programs. Each specification satisfies WALKRI's five pre-publication requirements: criterion intent, operational definition, response form, evidence form, conformance threshold.
 
 ---
 
@@ -120,7 +120,7 @@ The following field specifications cover the intake fields most commonly require
 
 **Evidence form:** The problem statement is itself the evidence form for this field; it is published before the competition opens. At completion: the test protocol used to assess each submitted solution against the primary success criterion, with the results for each submission scored against the stated threshold. The test protocol must be the one described in the problem statement; deviation requires disclosure.
 
-**Compliance threshold:** A primary success criterion stated with a unit, a target value, and a named measurement method. A problem statement without a measurable threshold (for example, "the best solution to X" without a definition of "best" in measurable terms) does not satisfy this field. Rubric weights for secondary criteria must be stated as percentages or point allocations summing to 100% of the total evaluation score. Unstated weights, or weights stated as ranges rather than fixed values, do not satisfy this field.
+**Conformance threshold:** A primary success criterion stated with a unit, a target value, and a named measurement method. A problem statement without a measurable threshold (for example, "the best solution to X" without a definition of "best" in measurable terms) does not satisfy this field. Rubric weights for secondary criteria must be stated as percentages or point allocations summing to 100% of the total evaluation score. Unstated weights, or weights stated as ranges rather than fixed values, do not satisfy this field.
 
 ---
 
@@ -134,7 +134,7 @@ The following field specifications cover the intake fields most commonly require
 
 **Evidence form:** At submission or at the milestone confirmation stage: the demonstration documentation in the stated format. For programs requiring independent testing: the independent test report signed by the testing entity named in the program specification. For programs accepting applicant-provided documentation: the documentation with sufficient technical detail that an independent expert reviewer can assess the claimed mechanism. Self-assertions that a solution "works" without supporting documentation do not satisfy this field.
 
-**Compliance threshold:** A named TRL level with a named demonstration environment. A proof of concept requirement that accepts "early-stage" or "promising concept" without a TRL level does not satisfy this field. Programs with staged TRL requirements (e.g., TRL 3 at phase one, TRL 6 at phase two) must state the TRL requirement for each phase in the relevant phase's entry specification gate.
+**Conformance threshold:** A named TRL level with a named demonstration environment. A proof of concept requirement that accepts "early-stage" or "promising concept" without a TRL level does not satisfy this field. Programs with staged TRL requirements (e.g., TRL 3 at phase one, TRL 6 at phase two) must state the TRL requirement for each phase in the relevant phase's entry specification gate.
 
 ---
 
@@ -148,7 +148,7 @@ The following field specifications cover the intake fields most commonly require
 
 **Evidence form:** The published rubric document with a timestamp predating the submission window opening. At completion: the score sheet for each submission assessed, showing scores by criterion, the weight applied, and the total score. For challenge prizes: the ranking of all assessed submissions with scores. For milestone-based grants: the milestone achievement determination with the completion criterion it is assessed against.
 
-**Compliance threshold:** Every criterion must have a stated weight summing to 100% of the total. Rubrics with unstated weights, relative weights (e.g., "technical feasibility is the most important criterion"), or criteria described but not weighted do not satisfy this field. Weights that change after submissions open constitute a material change requiring the human-in-the-loop override mechanism (if pre-specified) or full redisclosure and re-opening of the submission window.
+**Conformance threshold:** Every criterion must have a stated weight summing to 100% of the total. Rubrics with unstated weights, relative weights (e.g., "technical feasibility is the most important criterion"), or criteria described but not weighted do not satisfy this field. Weights that change after submissions open constitute a material change requiring the human-in-the-loop override mechanism (if pre-specified) or full redisclosure and re-opening of the submission window.
 
 ---
 
@@ -162,7 +162,7 @@ The following field specifications cover the intake fields most commonly require
 
 **Evidence form:** The IP and commercialization terms document published as part of the program specification before submissions open. For Federal programs: the relevant FAR or DFARS clauses governing IP rights, cited by clause number. At completion (for commercialization-required programs): the commercialization progress report from the grantee covering the period specified in the program documentation.
 
-**Compliance threshold:** A named owner for each IP category, a named license grant to the funder (or an explicit statement that the funder receives no license), and commercialization terms stated at sufficient specificity that a participant could obtain legal counsel on the terms before deciding to enter. Terms stating only that "IP ownership will be negotiated" after award do not satisfy this field. The IP terms must be final and non-negotiable before the competition opens; post-award negotiation of IP terms is a material change requiring the specification change disclosure process.
+**Conformance threshold:** A named owner for each IP category, a named license grant to the funder (or an explicit statement that the funder receives no license), and commercialization terms stated at sufficient specificity that a participant could obtain legal counsel on the terms before deciding to enter. Terms stating only that "IP ownership will be negotiated" after award do not satisfy this field. The IP terms must be final and non-negotiable before the competition opens; post-award negotiation of IP terms is a material change requiring the specification change disclosure process.
 
 ---
 
@@ -176,7 +176,7 @@ The following field specifications cover the intake fields most commonly require
 
 **Evidence form:** The milestone completion specification document, published before the performer begins work on the milestone. At completion: the confirming authority's written determination that the milestone was or was not achieved, with the specific completion criterion it is assessed against, the test results or documentation reviewed, and the date of determination. A determination that is not written, or that does not reference the specific completion criterion, does not constitute a CROSS attestation corpus record for the milestone gate.
 
-**Compliance threshold:** Every milestone must have a named confirming authority, a named confirmation method, and a binary completion criterion. Milestones with criteria stated as "significant progress toward X" or "a promising approach to Y" do not satisfy this field. The confirming authority must be identified by name or role before the performer begins work; changing the confirming authority mid-program requires disclosure.
+**Conformance threshold:** Every milestone must have a named confirming authority, a named confirmation method, and a binary completion criterion. Milestones with criteria stated as "significant progress toward X" or "a promising approach to Y" do not satisfy this field. The confirming authority must be identified by name or role before the performer begins work; changing the confirming authority mid-program requires disclosure.
 
 ---
 
@@ -190,7 +190,7 @@ The following field specifications cover the intake fields most commonly require
 
 **Evidence form:** For challenge prizes: the evaluation panel members' names and affiliations, disclosed at or before the winner announcement, with a statement of any conflicts reviewed. For milestone-based grants: the test report or determination memo from the confirming authority, with the tester's or laboratory's name and accreditation. For staged programs (EIR): the independent evaluation report with the evaluator's name, institutional affiliation, and the evaluation methodology used.
 
-**Compliance threshold:** A named verification entity or a specified selection process for identifying the verification entity. Programs that state "an independent panel will review submissions" without specifying the selection process, qualification criteria, or conflict of interest policy do not satisfy this field. For programs requiring ESSA or WWC-equivalent evidence standards: the independent evaluator must be unaffiliated with the program developer and must use a study design meeting the specified tier (ESSA Tier 1, 2, or 3) as declared in the program specification.
+**Conformance threshold:** A named verification entity or a specified selection process for identifying the verification entity. Programs that state "an independent panel will review submissions" without specifying the selection process, qualification criteria, or conflict of interest policy do not satisfy this field. For programs requiring ESSA or WWC-equivalent evidence standards: the independent evaluator must be unaffiliated with the program developer and must use a study design meeting the specified tier (ESSA Tier 1, 2, or 3) as declared in the program specification.
 
 ---
 
@@ -204,7 +204,7 @@ The following field specifications cover the intake fields most commonly require
 
 **Evidence form:** At each phase transition application: the evaluation report or evidence portfolio submitted by the grantee, with the evaluator's name and methodology. The program's phase transition determination record, confirming that the evidence meets the stated tier requirement. For EIR: the IES-aligned assessment of the submitted evidence against the ESSA tier criteria.
 
-**Compliance threshold:** Every phase transition must have a named evidence framework and a named tier within that framework. Phase transition requirements stated only as "strong evidence of effectiveness" or "promising results" without a named framework and tier do not satisfy this field. The evidence standard must be the same framework and tier for all grantees in the same program cohort; applying different standards to different grantees in the same phase cohort without disclosure constitutes a specification change.
+**Conformance threshold:** Every phase transition must have a named evidence framework and a named tier within that framework. Phase transition requirements stated only as "strong evidence of effectiveness" or "promising results" without a named framework and tier do not satisfy this field. The evidence standard must be the same framework and tier for all grantees in the same program cohort; applying different standards to different grantees in the same phase cohort without disclosure constitutes a specification change.
 
 ---
 

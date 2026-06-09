@@ -1,12 +1,19 @@
 ---
 title: National Endowment for Democracy Evaluation Framework Compatibility - CROSS+WALKRI
-version: 0.1.0
-date: 2026-05-18
+version: 0.1.2
+date: 2026-06-08
 license: CC0
 standards: CROSS v0.4.5 (github.com/CrossWalkri/CROSS), WALKRI v0.1.7 (github.com/CrossWalkri/WALKRI)
 references:
   - NED 2023 Grantmaking Standard Provisions and Appendices (ned.org/publications/2023-grantmaking-standard-provisions-and-appendices/)
   - NED Evaluation Plan requirements (ned.org)
+lens_tags:
+  calibration_tier: outcome_specified_self_reported
+  authority_source: statutory
+  cultural_methodological_lineage: western_institutional
+  funder_typology: government_non_aid
+  framework_scope_type: grantee_outcome_measurement
+  # National Endowment for Democracy; statutory authority under International Security and Development Cooperation Act; alternative bilateral_aid_agency typology
 ---
 
 # National Endowment for Democracy Evaluation Framework
@@ -62,10 +69,19 @@ CROSS addresses NED's evaluation requirements through its Theory of Change hiera
 
 WALKRI's pre-publication requirements apply to NED's Evaluation Plan at the plan-drafting stage, not at the reporting stage. NED's requirement that grantees specify outcomes rather than activities means that by the time an Evaluation Plan is submitted, the grantee must already know what evidence will constitute proof of the outcomes claimed. WALKRI requires exactly this specification, field by field, before any program activity begins.
 
-For each outcome indicator in an NED Evaluation Plan, WALKRI requires: criterion intent (what the indicator is designed to measure within the democracy-support Theory of Change), operational definition (exactly what counts as evidence of the outcome), response form (how outcome data is collected and recorded), evidence form (what documentation is required to substantiate each data point), and compliance threshold (the minimum standard a data point must meet to count toward the outcome assessment). Without this level of specification at the plan-drafting stage, NED's rejection of activity completion as evaluation evidence cannot be enforced: grantees can claim outcome evidence while collecting data that does not rise to the standard the Evaluation Plan implies.
+For each outcome indicator in an NED Evaluation Plan, WALKRI requires: criterion intent (what the indicator is designed to measure within the democracy-support Theory of Change), operational definition (exactly what counts as evidence of the outcome), response form (how outcome data is collected and recorded), evidence form (what documentation is required to substantiate each data point), and conformance threshold (the minimum standard a data point must meet to count toward the outcome assessment). Without this level of specification at the plan-drafting stage, NED's rejection of activity completion as evaluation evidence cannot be enforced: grantees can claim outcome evidence while collecting data that does not rise to the standard the Evaluation Plan implies.
 
 The Cumulative Assessment Report creates an additional WALKRI obligation for multi-year grantees: indicator specifications from earlier grant cycles must be preserved in sufficient detail to allow cross-cycle comparability. If the operational definition of a key indicator changes between cycles without documentation, the CAR cannot validly aggregate impact data across those cycles. WALKRI's pre-publication audit creates the archival record needed for a valid CAR, because each cycle's indicator specifications are committed to before data collection begins and preserved as part of the cycle's conformance record.
 
 ---
 
 *Published under CC0. For the current version of CROSS and WALKRI, see github.com/CrossWalkri.*
+
+---
+
+## Changelog
+
+| Version | Date | Summary |
+|---|---|---|
+| 0.1.2 | 2026-06-08 | Frame Language own-voice pass applied as part of the corpus-wide 2026-06-08 sweep: own-voice watchlist terms (govern-family, accountability, mandatory, compliance, enforce, legitimate) recast to conformance and obligation vocabulary where they appeared in this document's own voice; citation use of source-framework terms preserved. Primitive-rename references aligned to current canon (Continuity Capacity, the Collective disbursement state, Affected Population Verification Gate). Em-dash- and watchlist-clean re-verified. No compatibility finding or mapping changed; vocabulary only. |
+| 0.1.1 | 2026-05-23 | Retroactive lens tagging: added calibration_tier, authority_source, cultural_methodological_lineage, funder_typology, framework_scope_type per Lenses Framework v0.1.0. |

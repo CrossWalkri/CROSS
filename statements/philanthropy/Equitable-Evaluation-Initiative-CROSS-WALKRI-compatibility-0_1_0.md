@@ -1,12 +1,19 @@
 ---
 title: Equitable Evaluation Initiative (EEF) Compatibility - CROSS+WALKRI
-version: 0.1.0
-date: 2026-05-18
+version: 0.1.2
+date: 2026-06-08
 license: CC0
 standards: CROSS v0.4.2 (github.com/CrossWalkri/CROSS), WALKRI v0.1.6 (github.com/CrossWalkri/WALKRI)
 references:
   - Equitable Evaluation Framework, https://www.equitableeval.org/framework
   - EEF Framing Paper, https://static1.squarespace.com/static/5a73584b8fd4d2dbcaa08405/t/5fbdb0633c02f22b9dc97d37/1606266980696/Equitable+Evaluation+Framework+Framing+Paper_200904.pdf
+lens_tags:
+  calibration_tier: process_conformant
+  authority_source: civil_society_advisory
+  cultural_methodological_lineage: western_institutional
+  funder_typology: private_foundation
+  framework_scope_type: professional_practice_ethics
+  # Equitable Evaluation Initiative Framework; civil_society_advisory authority; framework guides evaluation practitioner conduct
 ---
 
 # Equitable Evaluation Initiative (EEF) Compatibility
@@ -54,9 +61,9 @@ This distinction is important. The EEF is a normative framework that describes h
 
 ## How WALKRI Complements This Alignment
 
-WALKRI's pre-publication audit requirement is the structural implementation of the EEF's core principle that affected communities should participate in defining what counts as evidence before data collection begins. The pre-publication audit creates a mandatory pause between evidence design and evidence collection. During that pause, WALKRI requires that five elements be specified for each intake field: what the field is measuring, how the criterion is bounded, what response format is expected, what artifact constitutes evidence, and what the minimum threshold for compliance is.
+WALKRI's pre-publication audit requirement is the structural implementation of the EEF's core principle that affected communities should participate in defining what counts as evidence before data collection begins. The pre-publication audit creates a required pause between evidence design and evidence collection. During that pause, WALKRI requires that five elements be specified for each intake field: what the field is measuring, how the criterion is bounded, what response format is expected, what artifact constitutes evidence, and what the minimum conformance threshold is.
 
-This pause is the structural opportunity for community co-design. If a program commits to community participation in evidence design during the WALKRI pre-publication audit stage, then every field an applicant encounters has been through both a measurement specification review and a community legitimacy review. The resulting intake form is not a funder's unilateral statement of what success looks like; it is a co-produced measurement instrument that communities helped design.
+This pause is the structural opportunity for community co-design. If a program commits to community participation in evidence design during the WALKRI pre-publication audit stage, then every field an applicant encounters has been through both a measurement specification review and a community standing review. The resulting intake form is not a funder's unilateral statement of what success looks like; it is a co-produced measurement instrument that communities helped design.
 
 WALKRI also addresses the EEF's concern about retrospective evidence decisions. Because WALKRI requires evidence form specification before the form is published, reviewers cannot decide after submissions arrive that a different kind of evidence would have been more appropriate. The evidence criteria are locked before data collection begins. This is the structural analog of the EEF's call to pre-define evidence standards: not as a procedural nicety but as a protection against the retrospective rationalization that allows funder preferences to masquerade as methodological rigor.
 
@@ -83,3 +90,5 @@ License: CC0
 | Version | Date | Summary |
 |---|---|---|
 | 0.1.0 | 2026-05-18 | Initial draft. Four core EEF structural principles mapped to CROSS and WALKRI provisions. WALKRI pre-publication audit positioned as structural implementation of EEF's community evidence co-design principle. Distinction between CROSS structural conditions and EEF conduct expectations clarified. |
+| 0.1.1 | 2026-05-23 | Retroactive lens tagging: added calibration_tier, authority_source, cultural_methodological_lineage, funder_typology, framework_scope_type per Lenses Framework v0.1.0. |
+| 0.1.2 | 2026-06-08 | Frame Language own-voice pass applied as part of the corpus-wide 2026-06-08 sweep: own-voice watchlist terms (govern-family, accountability, mandatory, compliance, enforce, legitimate) recast to conformance and obligation vocabulary where they appeared in this document's own voice; citation use of source-framework terms preserved. Primitive-rename references aligned to current canon (Continuity Capacity, the Collective disbursement state, Affected Population Verification Gate). Em-dash- and watchlist-clean re-verified. No compatibility finding or mapping changed; vocabulary only. |

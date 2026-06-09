@@ -56,7 +56,7 @@ Before any application window opens, the following must be committed to in writi
 
 **Population scope declaration:** The eight eligible Zakat categories constitute the most historically precedented pre-specified population constraint in any giving tradition. For Zakat distribution programs, the population scope declaration maps to a Zakat category eligibility declaration. Each category included in the program scope must be named at the entry gate with its operational definition for this program context.
 
-**Nisab threshold verification method:** Before any recipient is enrolled, the program must declare what documentation confirms recipient eligibility below the nisab threshold. This is a WALKRI compliance threshold that must be specified at the entry gate; post-hoc verification methods are not acceptable under CROSS's entry specification gate requirement.
+**Nisab threshold verification method:** Before any recipient is enrolled, the program must declare what documentation confirms recipient eligibility below the nisab threshold. This is a WALKRI conformance threshold that must be specified at the entry gate; post-hoc verification methods are not acceptable under CROSS's entry specification gate requirement.
 
 **Shariah compliance as an evaluation criterion:** Faith-mission alignment in Islamic programs is a formal evaluation criterion with no secular parallel. The program must specify at the entry gate what evidence constitutes Shariah compliance verification, which body or scholar certifies compliance, and what the certification scope covers. This is not a procedural formality; it is a substantive evaluation criterion that governs the completion gate.
 
@@ -108,7 +108,7 @@ A continuing Waqf endowment program must demonstrate: corpus principal preservat
 
 ## Part 2: WALKRI Field Specifications
 
-The following field specifications cover the intake fields most commonly required in Islamic and endowment-based grant programs. Each specification satisfies WALKRI's five pre-publication requirements: criterion intent, operational definition, response form, evidence form, compliance threshold.
+The following field specifications cover the intake fields most commonly required in Islamic and endowment-based grant programs. Each specification satisfies WALKRI's five pre-publication requirements: criterion intent, operational definition, response form, evidence form, conformance threshold.
 
 ---
 
@@ -122,7 +122,7 @@ The following field specifications cover the intake fields most commonly require
 
 **Evidence form:** For Zakat programs: documentation of recipient condition consistent with the category definition (income documentation, debt records, or equivalent as appropriate to the category). For Waqf programs: a copy of or citation to the relevant waqfiyya deed provision, confirmed by the Waqf administrator. The institutional Shariah board may specify additional evidence requirements; those requirements must be incorporated into the entry specification gate if they apply universally.
 
-**Compliance threshold:** The recipient's documented condition must match the definition of the declared eligible category. A recipient who does not fall within any of the eight Quranic categories does not satisfy this field for Zakat programs, regardless of financial need. For Waqf programs: a proposed use that falls outside the waqfiyya deed's beneficiary class does not satisfy this field, regardless of merit.
+**Conformance threshold:** The recipient's documented condition must match the definition of the declared eligible category. A recipient who does not fall within any of the eight Quranic categories does not satisfy this field for Zakat programs, regardless of financial need. For Waqf programs: a proposed use that falls outside the waqfiyya deed's beneficiary class does not satisfy this field, regardless of merit.
 
 ---
 
@@ -136,7 +136,7 @@ The following field specifications cover the intake fields most commonly require
 
 **Evidence form:** Income and asset documentation appropriate to the jurisdiction and program context: tax records, bank statements, income declarations, or institutional needs assessment records. For programs operating in low-documentation contexts, the institution's Shariah board may authorize alternative verification methods; those methods must be specified at the entry gate. Self-declaration is not sufficient as the sole evidence form for programs holding AAOIFI Standard 35 compliance.
 
-**Compliance threshold:** The recipient's documented net assets must fall below the nisab threshold as calculated by the declared methodology as of the distribution date. Recipients whose assets exceed the nisab threshold are not eligible for Zakat distribution; no exceptions are recognized by AAOIFI Standard 35. Programs using the silver nisab (typically lower) must apply that threshold consistently throughout the distribution period.
+**Conformance threshold:** The recipient's documented net assets must fall below the nisab threshold as calculated by the declared methodology as of the distribution date. Recipients whose assets exceed the nisab threshold are not eligible for Zakat distribution; no exceptions are recognized by AAOIFI Standard 35. Programs using the silver nisab (typically lower) must apply that threshold consistently throughout the distribution period.
 
 ---
 
@@ -150,7 +150,7 @@ The following field specifications cover the intake fields most commonly require
 
 **Evidence form:** A written certification or fatwa from the named authority, or the institutional Shariah board's published resolution covering this program type. For AAOIFI-member institutions: the annual Shariah audit report covering the relevant program. The certification document must predate the program opening; a certification issued after a distribution period opens does not satisfy the entry specification gate requirement.
 
-**Compliance threshold:** A named certifying authority, a defined certification scope, and a dated certification document that predates the program opening. An unnamed "Shariah board" without institutional identification does not satisfy this field. A certification covering only the fund sourcing (not the distribution methodology) does not satisfy this field for Zakat distribution programs. Programs that cannot identify a certifying authority before the program opens must defer the program opening until certification is obtained.
+**Conformance threshold:** A named certifying authority, a defined certification scope, and a dated certification document that predates the program opening. An unnamed "Shariah board" without institutional identification does not satisfy this field. A certification covering only the fund sourcing (not the distribution methodology) does not satisfy this field for Zakat distribution programs. Programs that cannot identify a certifying authority before the program opens must defer the program opening until certification is obtained.
 
 ---
 
@@ -164,7 +164,7 @@ The following field specifications cover the intake fields most commonly require
 
 **Evidence form:** Audited financial statements covering the grant period, specifically addressing corpus balance. For AAOIFI-member institutions: the Waqf-specific financial reporting under AAOIFI Financial Accounting Standard 33. For smaller Waqf programs: a letter from the Waqf administrator attesting to corpus integrity, supported by account statements or property records. Self-reported corpus preservation without independent confirmation does not satisfy this field.
 
-**Compliance threshold:** The corpus balance at the end of the grant period must equal or exceed the balance at the beginning of the period, adjusted for documented income reinvestment (where the waqfiyya deed permits reinvestment). A corpus that has decreased in value due to distributions from principal does not satisfy this field regardless of the beneficial use to which the distributed funds were put. Programs that discover mid-grant corpus depletion must report this to the relevant oversight authority immediately and disclose it at the completion gate.
+**Conformance threshold:** The corpus balance at the end of the grant period must equal or exceed the balance at the beginning of the period, adjusted for documented income reinvestment (where the waqfiyya deed permits reinvestment). A corpus that has decreased in value due to distributions from principal does not satisfy this field regardless of the beneficial use to which the distributed funds were put. Programs that discover mid-grant corpus depletion must report this to the relevant oversight authority immediately and disclose it at the completion gate.
 
 ---
 
@@ -178,7 +178,7 @@ The following field specifications cover the intake fields most commonly require
 
 **Evidence form:** At completion: outcome data linked to the measures declared in the Maqasid outcome mapping. For IsDB-affiliated programs: the IEvD impact evaluation addressing the declared Maqasid objectives. The evidence form for Maqasid outcomes does not require Shariah-specific documentation; standard social program outcome measurement methods (surveys, administrative records, third-party assessments) are appropriate.
 
-**Compliance threshold:** Each addressed Maqasid objective must have at least one specified measure with a baseline value (or a plan to establish a baseline at program entry) and a target value or direction of change. An outcome mapping that names a Maqasid objective without a specified measure does not satisfy this field. Programs that claim to address all five objectives must specify measures for each; a general claim of comprehensive Islamic benefit without objective-specific measures does not satisfy this field.
+**Conformance threshold:** Each addressed Maqasid objective must have at least one specified measure with a baseline value (or a plan to establish a baseline at program entry) and a target value or direction of change. An outcome mapping that names a Maqasid objective without a specified measure does not satisfy this field. Programs that claim to address all five objectives must specify measures for each; a general claim of comprehensive Islamic benefit without objective-specific measures does not satisfy this field.
 
 ---
 
@@ -192,7 +192,7 @@ The following field specifications cover the intake fields most commonly require
 
 **Evidence form:** At completion: evidence that the declared population was served and that the intended change was pursued. The evidence standard for Sadaqah programs is the same as for other Change mode programs; the voluntary nature of the gift does not reduce the evidence standard. Programs choosing not to specify outcomes at the entry gate do not satisfy CROSS's entry specification gate requirement and cannot be entered into the CROSS Obligation Fulfillment Record.
 
-**Compliance threshold:** A stated condition, a defined population, and an intended change, each specific enough to assess at the completion gate. "Helping the poor" is not a sufficient purpose declaration; it lacks population specificity and does not name the intended change. "Reducing food insecurity among households below the poverty line in [specified geography] by providing monthly food packages to [specified number] households" satisfies this field.
+**Conformance threshold:** A stated condition, a defined population, and an intended change, each specific enough to assess at the completion gate. "Helping the poor" is not a sufficient purpose declaration; it lacks population specificity and does not name the intended change. "Reducing food insecurity among households below the poverty line in [specified geography] by providing monthly food packages to [specified number] households" satisfies this field.
 
 ---
 
@@ -206,7 +206,7 @@ The following field specifications cover the intake fields most commonly require
 
 **Evidence form:** For AAOIFI-member institutions: the current membership status and the annual Shariah audit report referencing compliance with the applicable standard. For voluntary adopters: the institution's governing board or Shariah supervisory board resolution declaring adoption of the standard as a reference.
 
-**Compliance threshold:** A named AAOIFI standard with a membership or adoption statement. Programs that claim AAOIFI compliance without an identified standard and a membership or adoption statement do not satisfy this field. Divergences from the applicable standard that are not disclosed at the entry gate constitute a completion gate failure if discovered during assessment.
+**Conformance threshold:** A named AAOIFI standard with a membership or adoption statement. Programs that claim AAOIFI compliance without an identified standard and a membership or adoption statement do not satisfy this field. Divergences from the applicable standard that are not disclosed at the entry gate constitute a completion gate failure if discovered during assessment.
 
 ---
 
@@ -253,11 +253,11 @@ Compatibility statements: AAOIFI Standard 33 (Waqf perpetuity), IsDB IEvD Guidel
 
 ---
 
-### Faith-Mission Compliance Threshold Primitive
+### Faith-Mission Conformance Threshold Primitive
 
-The faith-mission compliance threshold primitive requires programs anchored in religious identity to specify what evidence constitutes compliance with that identity:
+The faith-mission conformance threshold primitive requires programs anchored in religious identity to specify what evidence constitutes compliance with that identity:
 
-- **AAOIFI Shariah certification**: the most formally institutionalized faith-mission compliance threshold in the grant corpus, with published standards, membership obligations, and annual audit requirements.
+- **AAOIFI Shariah certification**: the most formally institutionalized faith-mission conformance threshold in the grant corpus, with published standards, membership obligations, and annual audit requirements.
 - **IsDB Shariah governance**: multilateral institutional Shariah compliance with IDB Group Shariah Board oversight.
 - **USCCB/CCHD faith-mission alignment**: the closest parallel in Catholic-identity philanthropy; specifies what organizational alignment with Catholic social teaching constitutes.
 

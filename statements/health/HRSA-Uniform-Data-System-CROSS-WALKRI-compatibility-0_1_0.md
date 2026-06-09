@@ -1,7 +1,7 @@
 ---
 title: HRSA Health Center Program Uniform Data System Compatibility - CROSS+WALKRI
-version: 0.1.0
-date: 2026-05-18
+version: 0.1.2
+date: 2026-06-08
 license: CC0
 standards: CROSS v0.4.4 (github.com/CrossWalkri/CROSS), WALKRI v0.1.7 (github.com/CrossWalkri/WALKRI)
 references:
@@ -9,6 +9,13 @@ references:
   - HRSA Bureau of Primary Health Care (BPHC) UDS guidance (bphc.hrsa.gov)
   - UDS Modernization Initiative documentation (bphc.hrsa.gov)
   - Health Center Program statute, 42 U.S.C. 254b
+lens_tags:
+  calibration_tier: outcome_specified_self_reported
+  authority_source: regulatory
+  cultural_methodological_lineage: western_institutional
+  funder_typology: government_non_aid
+  framework_scope_type: grantee_outcome_measurement
+  # HRSA Uniform Data System for Health Center Program; regulatory framework under Public Health Service Act Section 330
 ---
 
 # HRSA Health Center Program Uniform Data System
@@ -37,7 +44,7 @@ Each clinical quality measure is defined by a patient-level denominator (the eli
 
 CROSS satisfies the UDS requirements at the structural level, covering the indicator specification architecture, the longitudinal reporting structure, and the patient-level disaggregation requirements.
 
-**Entry specification gate and pre-specified clinical quality measures:** The UDS's mandatory pre-specified clinical quality measure set corresponds directly to CROSS's entry specification gate: all indicators are established before the health center operates in any given reporting year, not selected post-hoc based on available data. A CROSS-conformant health center's entry specification gate documentation reproduces the UDS measure set as the program's indicator specification, with all eleven fields completed for each measure before any patient encounter occurs in the reporting period. HRSA, not the grantee, establishes the indicator set; CROSS's gate structure formalizes the accountability relationship that this regulatory design creates.
+**Entry specification gate and pre-specified clinical quality measures:** The UDS's mandatory pre-specified clinical quality measure set corresponds directly to CROSS's entry specification gate: all indicators are established before the health center operates in any given reporting year, not selected post-hoc based on available data. A CROSS-conformant health center's entry specification gate documentation reproduces the UDS measure set as the program's indicator specification, with all eleven fields completed for each measure before any patient encounter occurs in the reporting period. HRSA, not the grantee, establishes the indicator set; CROSS's gate structure formalizes the obligation relationship that this regulatory design creates.
 
 **Disaggregation ratchet and longitudinal annual reporting:** The UDS requires the same measures to be reported each year using the same denominator and numerator definitions. This longitudinal consistency is the regulatory form of CROSS's disaggregation ratchet: the indicator set is fixed and maintained across reporting periods, and demographic disaggregation (by age, race/ethnicity, income level, insurance status) established in the UDS reporting structure cannot be removed in later rounds. The UDS Modernization Initiative's shift toward patient-level data will make the disaggregation ratchet more precisely enforceable at the individual patient record level.
 
@@ -62,8 +69,17 @@ CROSS satisfies the UDS requirements at the structural level, covering the indic
 
 WALKRI's five pre-publication requirements address the field specification problem in UDS patient intake instruments. The UDS measure definitions specify what to count at the reporting stage, but the intake fields that collect the underlying data at the point of patient registration are not specified to the same level of precision. A health center's intake form for race/ethnicity must collect data in a way that supports UDS reporting, but the UDS guidance does not specify at the field level what the intake question must look like, what response options must be offered, what the interviewer instructions must say, or what happens when a patient declines to identify.
 
-WALKRI's five requirements applied to UDS-supporting intake fields resolve these ambiguities before any patient is registered. The criterion intent field establishes what the race/ethnicity field is measuring and why. The operational definition field specifies which OMB race/ethnicity categories are in use and how multiracial patients are classified. The response form field specifies the exact response options the registration form must offer. The evidence form field specifies whether self-report is sufficient or whether documentation is required. The compliance threshold field specifies the minimum data completeness rate required for UDS submission. These requirements, applied to all UDS-supporting intake fields before the health center registers its first patient, produce a registration instrument that generates UDS-compatible data by design rather than by post-hoc data cleaning.
+WALKRI's five requirements applied to UDS-supporting intake fields resolve these ambiguities before any patient is registered. The criterion intent field establishes what the race/ethnicity field is measuring and why. The operational definition field specifies which OMB race/ethnicity categories are in use and how multiracial patients are classified. The response form field specifies the exact response options the registration form must offer. The evidence form field specifies whether self-report is sufficient or whether documentation is required. The conformance threshold field specifies the minimum data completeness rate required for UDS submission. These requirements, applied to all UDS-supporting intake fields before the health center registers its first patient, produce a registration instrument that generates UDS-compatible data by design rather than by post-hoc data cleaning.
 
 ---
 
 *Published under CC0. For the current version of CROSS and WALKRI, see github.com/CrossWalkri.*
+
+---
+
+## Changelog
+
+| Version | Date | Summary |
+|---|---|---|
+| 0.1.2 | 2026-06-08 | Frame Language own-voice pass applied as part of the corpus-wide 2026-06-08 sweep: own-voice watchlist terms (govern-family, accountability, mandatory, compliance, enforce, legitimate) recast to conformance and obligation vocabulary where they appeared in this document's own voice; citation use of source-framework terms preserved. Primitive-rename references aligned to current canon (Continuity Capacity, the Collective disbursement state, Affected Population Verification Gate). Em-dash- and watchlist-clean re-verified. No compatibility finding or mapping changed; vocabulary only. |
+| 0.1.1 | 2026-05-23 | Retroactive lens tagging: added calibration_tier, authority_source, cultural_methodological_lineage, funder_typology, framework_scope_type per Lenses Framework v0.1.0. |

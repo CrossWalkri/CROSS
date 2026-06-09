@@ -96,7 +96,7 @@ A continuing program must demonstrate: the geographic scope and community outcom
 
 ## Part 2: WALKRI Field Specifications
 
-The following field specifications cover the intake fields most commonly required in community foundation grant programs. Each specification satisfies WALKRI's five pre-publication requirements: criterion intent, operational definition, response form, evidence form, compliance threshold.
+The following field specifications cover the intake fields most commonly required in community foundation grant programs. Each specification satisfies WALKRI's five pre-publication requirements: criterion intent, operational definition, response form, evidence form, conformance threshold.
 
 ---
 
@@ -110,7 +110,7 @@ The following field specifications cover the intake fields most commonly require
 
 **Evidence form:** For standard administrative boundaries (city, county): the boundary is self-defining and no additional evidence is required. For sub-county geographies: a map with labeled boundaries or a census tract list. For organizations serving a mobile or dispersed population (e.g., people experiencing homelessness): a description of the service catchment area and the basis for the population count estimate within the funder's geographic mandate.
 
-**Compliance threshold:** A geographic scope declaration that is specific enough for the funder to determine whether the organization's work falls within the program's geographic mandate. A declaration of "the greater metropolitan region" when the funder's mandate is the city limits does not satisfy this field. A declaration that names specific neighborhoods or zip codes satisfies this field even where the organization also works outside those areas, as long as the in-scope and out-of-scope activities are distinguished.
+**Conformance threshold:** A geographic scope declaration that is specific enough for the funder to determine whether the organization's work falls within the program's geographic mandate. A declaration of "the greater metropolitan region" when the funder's mandate is the city limits does not satisfy this field. A declaration that names specific neighborhoods or zip codes satisfies this field even where the organization also works outside those areas, as long as the in-scope and out-of-scope activities are distinguished.
 
 ---
 
@@ -124,7 +124,7 @@ The following field specifications cover the intake fields most commonly require
 
 **Evidence form:** The baseline demographic data must come from an identified source: the organization's most recent program year data, a community needs assessment, census data (American Community Survey or Decennial Census), or a local data intermediary report. The data source and date must be cited. Where the organization's own program data is the source: the data collection instrument (intake form, registration system, or equivalent) must capture the required demographic fields.
 
-**Compliance threshold:** A target population declaration that specifies all required disaggregation categories with baseline data from a named source. A declaration that states only total beneficiary counts without the required racial or income breakdown does not satisfy this field. A declaration that states demographic targets without baseline data (stating a target without knowing the current composition) does not satisfy the baseline requirement.
+**Conformance threshold:** A target population declaration that specifies all required disaggregation categories with baseline data from a named source. A declaration that states only total beneficiary counts without the required racial or income breakdown does not satisfy this field. A declaration that states demographic targets without baseline data (stating a target without knowing the current composition) does not satisfy the baseline requirement.
 
 ---
 
@@ -138,7 +138,7 @@ The following field specifications cover the intake fields most commonly require
 
 **Evidence form:** For the baseline: the data source for the current power-building or equity measure (local civic participation survey, organizational membership records, voter registration data, leadership composition audit, or administrative data on the outcome condition by race). For the target: a rationale for the target value referencing either prior program performance, peer organization benchmarks, or a community-defined goal. For policy change indicators: documentation of the policy target being pursued and the advocacy activities that will produce it.
 
-**Compliance threshold:** At least one power-building or equity outcome indicator specified to Fields 1 through 5, with a baseline from a named data source and a target with a stated rationale. Indicators that measure only service delivery outputs (number of workshops held, number of participants attending) without any indicator of changed community capacity or reduced disparity do not satisfy this field for programs explicitly operating in the racial equity or power-building domain.
+**Conformance threshold:** At least one power-building or equity outcome indicator specified to Fields 1 through 5, with a baseline from a named data source and a target with a stated rationale. Indicators that measure only service delivery outputs (number of workshops held, number of participants attending) without any indicator of changed community capacity or reduced disparity do not satisfy this field for programs explicitly operating in the racial equity or power-building domain.
 
 ---
 
@@ -152,7 +152,7 @@ The following field specifications cover the intake fields most commonly require
 
 **Evidence form:** The review panel composition with reviewer names or demographic profiles, the signed agreements or commitments from community reviewers, the scoring rubric showing how community reviewer scores are weighted in the final award calculation, and for completed cycles, the record of reviewer participation and the grant award outcomes. Claimed participation structures that are not documented with panel compositions and scoring rubrics do not satisfy the operational definition of community decision-making authority.
 
-**Compliance threshold:** A participation structure declaration that names the specific decision authority held by community reviewers (not advisory roles), the weighting in the scoring process, and the selection criteria. A program that consults with community members during program design but retains all award authority with foundation staff does not satisfy this field for programs claiming participatory grantmaking. The weighting must be quantitatively stated; "community voice is central to our process" without a stated percentage or decision rule does not satisfy the operational definition.
+**Conformance threshold:** A participation structure declaration that names the specific decision authority held by community reviewers (not advisory roles), the weighting in the scoring process, and the selection criteria. A program that consults with community members during program design but retains all award authority with foundation staff does not satisfy this field for programs claiming participatory grantmaking. The weighting must be quantitatively stated; "community voice is central to our process" without a stated percentage or decision rule does not satisfy the operational definition.
 
 ---
 
@@ -166,7 +166,7 @@ The following field specifications cover the intake fields most commonly require
 
 **Evidence form:** For the disparity baseline: administrative data, census data (ACS), or a local needs assessment with race-disaggregated figures, cited with source and date. For the structural analysis: a literature citation, a community-generated analysis, or documentation from a prior assessment. For the theory of change: a logic model or narrative that traces the connection from program activities to structural change. The analysis may be co-produced with community members and partner organizations; co-production should be noted.
 
-**Compliance threshold:** A racial equity analysis that provides a quantified disparity baseline from a named data source, identifies at least one structural factor that the program is designed to address, and specifies at least one equity indicator that will be tracked during the grant period. An analysis that states "we serve communities of color" without quantifying disparities or naming structural factors does not satisfy this field. An analysis that names racial disparities but presents only service delivery outputs as the pathway to addressing them (without a theory connecting services to structural change) does not satisfy the theory of change element.
+**Conformance threshold:** A racial equity analysis that provides a quantified disparity baseline from a named data source, identifies at least one structural factor that the program is designed to address, and specifies at least one equity indicator that will be tracked during the grant period. An analysis that states "we serve communities of color" without quantifying disparities or naming structural factors does not satisfy this field. An analysis that names racial disparities but presents only service delivery outputs as the pathway to addressing them (without a theory connecting services to structural change) does not satisfy the theory of change element.
 
 ---
 

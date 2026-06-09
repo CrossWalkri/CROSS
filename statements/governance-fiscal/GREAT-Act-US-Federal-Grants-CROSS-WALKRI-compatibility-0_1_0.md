@@ -1,7 +1,7 @@
 ---
 title: GREAT Act - US Federal Grants Data Standards Compatibility - CROSS+WALKRI
-version: 0.1.0
-date: 2026-05-18
+version: 0.1.2
+date: 2026-06-08
 license: CC0
 standards: CROSS v0.4.0 (github.com/CrossWalkri/CROSS), WALKRI v0.1.6 (github.com/CrossWalkri/WALKRI)
 references:
@@ -9,6 +9,13 @@ references:
   - OMB M-24-11 (April 2024), Grants Standard Data Elements Implementation
   - Grants Standard Data Elements v2.1 (August 2025), grants.gov/data-standards
   - 2 CFR Part 200 (2024 revision), Uniform Guidance for Federal Awards
+lens_tags:
+  calibration_tier: process_conformant
+  authority_source: statutory
+  cultural_methodological_lineage: western_institutional
+  funder_typology: government_non_aid
+  framework_scope_type: government_accountability
+  # Grant Reporting Efficiency and Agreements Transparency Act of 2019; statutory authority over federal grant data standards
 ---
 
 # GREAT Act - US Federal Grants Data Standards Compatibility
@@ -83,7 +90,7 @@ This distinction is not a gap in CROSS coverage; it reflects CROSS's deliberate 
 | Federal action obligation | No CROSS equivalent | Financial transaction data. Outside CROSS scope. |
 | Total federal investment | No CROSS equivalent | Financial transaction data. Outside CROSS scope. |
 
-**Result:** Six of the fifteen GREAT Act data elements have direct or functional CROSS equivalents. The remaining nine are transactional metadata that CROSS intentionally does not govern. A GREAT Act-reporting program using CROSS produces the programmatic elements of GREAT Act compliance through its standard obligation architecture. The transactional elements are satisfied by the awarding agency's grants management system.
+**Result:** Six of the fifteen GREAT Act data elements have direct or functional CROSS equivalents. The remaining nine are transactional metadata that CROSS intentionally does not govern. A GREAT Act-reporting program using CROSS produces the programmatic elements of GREAT Act conformance through its standard obligation architecture. The transactional elements are satisfied by the awarding agency's grants management system.
 
 ---
 
@@ -91,9 +98,9 @@ This distinction is not a gap in CROSS coverage; it reflects CROSS's deliberate 
 
 The 2024 revision of 2 CFR Part 200 includes a plain-language performance reporting requirement: recipients must report results in terms that non-specialist readers can interpret. This requirement gestures toward data quality and communicability but does not specify how indicators should be constructed to make results interpretable.
 
-WALKRI's five pre-publication field requirements address this gap at the instrument design level. The criterion intent field requires that the evaluative purpose of each indicator be stated explicitly. The operational definition field requires that the indicator's measurement logic be unambiguous. The response form field requires that the evidence collection method be specified in advance. The evidence form field requires that the acceptable evidence types be identified. The compliance threshold field requires that the pass/fail boundary be stated before evidence is collected.
+WALKRI's five pre-publication field requirements address this gap at the instrument design level. The criterion intent field requires that the evaluative purpose of each indicator be stated explicitly. The operational definition field requires that the indicator's measurement logic be unambiguous. The response form field requires that the evidence collection method be specified in advance. The evidence form field requires that the acceptable evidence types be identified. The conformance threshold field requires that the pass/fail boundary be stated before evidence is collected.
 
-A WALKRI-conformant indicator specification produces a result that is interpretable by non-specialist readers because the operational definition and compliance threshold are explicit. The plain-language reporting requirement of 2 CFR Part 200 is satisfied as a structural consequence of WALKRI conformance, not as a post-hoc writing exercise.
+A WALKRI-conformant indicator specification produces a result that is interpretable by non-specialist readers because the operational definition and conformance threshold are explicit. The plain-language reporting requirement of 2 CFR Part 200 is satisfied as a structural consequence of WALKRI conformance, not as a post-hoc writing exercise.
 
 ---
 
@@ -134,3 +141,5 @@ License: CC0
 | Version | Date | Summary |
 |---|---|---|
 | 0.1.0 | 2026-05-18 | Initial draft. Fifteen GREAT Act data elements mapped against CROSS fields. Transactional vs. programmatic layer distinction articulated. WALKRI mapping to plain-language reporting requirement of 2 CFR Part 200. Adoption guidance for US federal grant recipients. |
+| 0.1.1 | 2026-05-23 | Retroactive lens tagging: added calibration_tier, authority_source, cultural_methodological_lineage, funder_typology, framework_scope_type per Lenses Framework v0.1.0. |
+| 0.1.2 | 2026-06-08 | Frame Language own-voice pass applied as part of the corpus-wide 2026-06-08 sweep: own-voice watchlist terms (govern-family, accountability, mandatory, compliance, enforce, legitimate) recast to conformance and obligation vocabulary where they appeared in this document's own voice; citation use of source-framework terms preserved. Primitive-rename references aligned to current canon (Continuity Capacity, the Collective disbursement state, Affected Population Verification Gate). Em-dash- and watchlist-clean re-verified. No compatibility finding or mapping changed; vocabulary only. |

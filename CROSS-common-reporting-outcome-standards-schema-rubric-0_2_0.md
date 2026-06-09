@@ -1,24 +1,24 @@
 ---
 title: CROSS - Common Reporting Outcome Standards Schema - Assessment Rubric
-version: 0.2.0
-date: 2026-05-14
+version: 0.3.1
+date: 2026-06-08
 license: CC0
-status: Working draft. Companion rubric to CROSS-common-reporting-outcome-standards-schema-0_2_0.md. Supersedes version 0.1.0.
+status: Working draft. Companion rubric synced to CROSS-common-reporting-outcome-standards-schema-0_5_0.md. Supersedes version 0.2.0.
 ---
 
 # CROSS: Common Reporting Outcome Standards Schema - Assessment Rubric
 
-Version 0.2.0 | 2026-05-14 | CC0
+Version 0.3.1 | 2026-06-08 | CC0
 
 ---
 
 ## How to Use This Document
 
-This rubric is the reviewer-facing evaluation tool for applications assessed against the Common Reporting Outcome Standards Schema (CROSS) version 0.2.0. It is designed to be used during an active review without cross-referencing the full standard. Reviewers who have not read the standard should still be able to complete a well-grounded evaluation using this document alone.
+This rubric is the reviewer-facing evaluation tool for applications assessed against the Common Reporting Outcome Standards Schema (CROSS). It is designed to be used during an active review without cross-referencing the full standard. Reviewers who have not read the standard should still be able to complete a well-grounded evaluation using this document alone. This version of the rubric is synced to CROSS version 0.5.0, in which CROSS is declared a domain application of CRAFT (Chains Reveal Attested Falsifiable Truth), the meta-standard for evaluation chain legibility (spec Part XIII receipt). A program that uses this rubric to assess applications against CROSS thereby satisfies CRAFT's conditions for those grant evaluations; the reviewer does not separately apply CRAFT. Where a check below realizes a specific CRAFT requirement, that connection is noted; the note is orientation for a researcher, not an additional step the reviewer performs.
 
-This version covers three obligation modes: build obligation, change obligation, and retroactive obligation. Before applying any scored criteria, a reviewer must determine which mode the round operates in and navigate to the correct entry specification gate in Section 2. The mode is declared in the published round specification; it is not determined by the reviewer and is not open to interpretation during review.
+This rubric covers three obligation modes: build obligation, change obligation, and retroactive obligation. Before applying any scored criteria, a reviewer must determine which mode the round operates in and navigate to the correct entry specification gate in Section 2. The mode is declared in the published round specification; it is not determined by the reviewer and is not open to interpretation during review.
 
-The rubric is organized into six sections. Section 1 is a pre-assessment configuration step: the reviewer confirms the mode and active gates. Section 2 contains the mode-specific entry specification gate, which is binary. Sections 3 and 4 contain the scored rubric criteria: indicator specification (11 fields) and data quality standards (5 standards). Section 5 covers three binary conformance checks that run parallel to scoring. Section 6 specifies the recommendation vocabulary.
+The rubric is organized into six sections. Section 1 is a pre-assessment configuration step: the reviewer confirms the mode, the active gates, and the assessment preconditions (including reviewer calibration). Section 2 contains the entry specification gate. Section 2 opens with the entry-gate preconditions (the declarations that must be present before any gate assessment proceeds) and then the mode-specific gate, which is binary. Sections 3 and 4 contain the scored rubric criteria: indicator specification (11 fields) and data quality standards (5 standards). Section 5 covers binary conformance checks that run parallel to scoring. Section 6 specifies the recommendation vocabulary.
 
 All three recommendation categories (Fund, Fund with conditions, Do not fund) depend on the complete evaluation record. A strong indicator score does not override a conformance check failure. A gate failure in Section 2 terminates evaluation before scoring begins.
 
@@ -51,11 +51,179 @@ Evidence strength: _______________ (self-report with documentation / third-party
 
 > [Note any missing infrastructure declarations, or write "Not applicable" if no gates require independent review]
 
+**5. Reviewer calibration (assessment precondition).** For any gate configured at independent review level or above, confirm that a reviewer calibration exercise was completed before the review window opened and before you, the reviewer, assess any live application. The calibration must have presented the published gate criteria, their criterion intents, and the conformance threshold for each criterion, and must have included at least two worked examples: one application that clearly satisfies the gate criteria and one that clearly does not, each with a documented assessment. Where the panel includes reviewers from more than one institution or context, confirm that calibration included an inter-rater consistency check on the worked examples. Confirm that a calibration record exists naming the reviewers present, the date, and the gate criteria reviewed.
+
+This is a precondition, not a scored criterion. A gate assessment conducted by a reviewer who did not complete calibration does not satisfy the infrastructure declaration for that gate, and the assessment should not proceed until calibration is complete. (This realizes the pre-specified-criteria condition of CRAFT, by keeping the criteria from collapsing into reviewer judgment.)
+
+> [Confirm calibration completed for each gate at independent review level or above, or write "Not applicable" if no gates require independent review]
+
 ---
 
 ## Section 2: Entry Specification Gate
 
-Navigate to the sub-section that matches the obligation mode confirmed in Section 1. Complete the gate assessment before opening any scored rubric sections. A gate failure terminates evaluation; do not apply the indicator rubric to a gate failure.
+### Section 2-0: Entry-Gate Preconditions
+
+Before navigating to the mode-specific gate, confirm that the entry-gate preconditions are present. A precondition is not a scored criterion. An entry gate submission that is missing a required declaration is incomplete and is not assessed until the declaration is provided. Where a precondition assessment surfaces a discrepancy (a declared fact that contradicts other evidence in the submission), record it; the spec routes such discrepancies to a structured discrepancy investigation (the spec calls this Block J under a conformant evaluation process).
+
+These preconditions are the declarations the entry specification gate requires of every applicant regardless of mode, plus the conditional declarations that activate for some applicants. Confirm each that applies before proceeding to the mode-specific gate.
+
+**Precondition A: Organizational identity completeness.**
+
+**Reviewer Question:** Are all six required fields of the organizational identity declaration present and complete? The six fields are: legal entity name and jurisdiction; parent organization declaration; affiliated entity disclosure; prior round history; disbursement authority; on-chain identity anchor.
+
+Confirm each field as follows.
+
+- *Legal entity name and jurisdiction:* the name of the natural person or registered organization exactly as it appears in the jurisdiction of registration, plus that jurisdiction. A project name, display name, or code-repository organization name does not satisfy this field unless it is also the legal name. Where no legal entity exists, confirm the applicant states this explicitly and names the individual who assumes personal responsibility for the obligation.
+- *Parent organization declaration:* whether the applicant operates under or is affiliated with a larger organization, network, or chapter structure, with the parent named where one exists, and the relationship described. Silence is not acceptable where an affiliation is publicly documented or where the applicant's name, brand, or personnel overlaps a known larger organization.
+- *Affiliated entity disclosure:* any other organization, project, or entity sharing the applicant's name, brand, domain, key personnel, or codebase. Non-disclosure of a publicly documentable affiliation is a conformance failure; disclosure is not.
+- *Prior round history:* whether the applicant or any substantially overlapping entity has applied to this program in prior rounds, under what name, and with what outcome. This field catches serial rebranding after a prior rejection.
+- *Disbursement authority:* see Precondition B.
+- *On-chain identity anchor:* the canonical wallet address by which the applying entity is identifiable across blockchain programs and grant databases. Non-disclosure of an on-chain address publicly associated with the applicant's identity in any grant database is a conformance failure equivalent to non-disclosure in the affiliated entity field.
+
+| Finding | Action |
+|---|---|
+| All six fields present and complete | Precondition met. Proceed. |
+| One or more required fields absent | Submission incomplete. Do not assess. Record which fields are missing. |
+| A declared field is contradicted by other evidence in the submission or by independent evidence (for example, an undisclosed affiliation that is publicly documented) | Record as a material discrepancy and route to structured discrepancy investigation. Non-disclosure of a publicly documentable fact is treated more seriously than the fact itself. |
+
+**Precondition B: Disbursement authority.**
+
+**Reviewer Question:** Does the organizational identity declaration name the person or persons with legal authority to receive grant funds on behalf of the applying entity and approve their deployment, in one of the three recognized states?
+
+The three states are: individual (one named person with full authority); collective (shared authority through a named mechanism, with current key holders named and the quorum threshold stated); and delegated (authority by role, with the current holder named and the transfer mechanism stated). For a decentralized autonomous organization applicant without a legal wrapper, confirm that the declaration names the controlling wallet address and the decision-standing mechanism, with current token holders above the materiality threshold named where possible.
+
+| Finding | Action |
+|---|---|
+| Disbursement authority declared in one of the three states with the required supporting detail | Precondition met. |
+| Declaration absent | Entry gate submission is incomplete. Do not assess until provided. |
+| State declared but required detail absent (for example, "collective" without named key holders or quorum threshold) | Record the gap. The declaration is incomplete until the detail is provided. |
+
+**Precondition C: Sufficiency architecture coherence.**
+
+**Reviewer Question:** Are all five elements of the sufficiency architecture declaration present, and do they form a coherent account of where this grant fits in the applicant's resource position? The five elements are: scope declaration, sufficiency position, portfolio context statement, grant contribution statement, and revenue architecture declaration.
+
+Confirm each.
+
+- *Scope declaration:* the specific program, sub-entity, or aspect of the applicant's work this application covers, stated clearly enough that a reviewer could determine what falls within it and what falls outside. Where the application covers the entire operation, confirm this is stated explicitly.
+- *Sufficiency position:* one of four declared positions at the declared scope (not at the entity level overall): critical gap, partial, approaching, or surplus.
+- *Portfolio context statement:* how other funding sources address other scopes of the entity's work. This is not concurrent funding disclosure (which covers other funding for the same scope). Silence about other funding sources in an entity with multiple programs requires explicit explanation.
+- *Grant contribution statement:* what specific gap at the declared scope this grant would close, and the sufficiency position at that scope after the grant.
+- *Revenue architecture declaration:* one of four types (grant-only, fee-for-service, commercial, or hybrid). For grant-only, the declaration confirms no commercial revenue model exists. For fee-for-service, commercial, and hybrid, the declaration activates the additionality delineation requirement assessed in Check 1-A: the applicant must identify which portion of the work or budget commercial revenue does not cover.
+
+**Corroborating evidence.** The sufficiency position declaration requires at least one piece of corroborating evidence from a source outside the applicant's control (publicly accessible treasury data, grant history from a named external database, or disclosed revenue figures from a named independent source). A declaration with no corroborating evidence is accepted at self-report evidence strength only. Where the program configures the sufficiency architecture declaration at independent review evidence strength or above, corroborating evidence is required before assessment proceeds. Where no public corroborating evidence exists (for example, a recently formed entity with no funding history), confirm the applicant states this explicitly and explains why the declared position is reasonable.
+
+| Finding | Action |
+|---|---|
+| All five elements present; coherent; corroborating evidence present where required | Precondition met. The declaration supports additionality, attribution, and the assessment of how this grant fits the broader funding architecture. |
+| One or more elements absent | Submission incomplete. Do not assess until provided. |
+| Elements present but internally incoherent (for example, a surplus sufficiency position paired with a critical-gap grant contribution statement) | Record the incoherence; request clarification before proceeding to scoring. |
+| Sufficiency position declared but no corroborating evidence where the program requires it at independent review strength or above | Assessment does not proceed until corroborating evidence is provided. |
+
+**Precondition D: Public benefit mechanism and access condition.**
+
+This precondition applies in every program where the eligibility criteria include any public goods basis. Where a public goods claim appears in the eligibility section but no public benefit mechanism and access condition declaration is present, the submission is incomplete and is not assessed until the declaration is provided.
+
+**Reviewer Question:** Does the applicant declare (1) which of the four mechanism types the public benefit claim rests on, (2) the access conditions under which that mechanism delivers benefit to the stated population, specified precisely enough that an independent reviewer could confirm them without contacting the applicant, and (3) whether the access conditions are current at application, will be achieved at the completion gate, or both?
+
+The four mechanism types and their required access-condition content are:
+
+- *Output production:* an SPDX license identifier and the location of the license file. A copyright notice that permits free viewing without granting modification or redistribution rights does not satisfy this access condition. A "source available" or "fair code" license restricting commercial use does not satisfy it unless the program's published round configuration explicitly accepts such licenses and states the accepted SPDX identifiers. A future licensing commitment without a current license does not satisfy the access condition at the entry gate; the applicant must specify when the license will be applied and confirm this at the completion gate.
+- *Access provision:* an access mechanism, a cost structure, and a non-excludability mechanism.
+- *Condition change:* a FROM state and a population definition.
+- *Ecosystem shift:* a named causal pathway and a co-factor list.
+
+The mechanism type declared at entry constrains the evidence scope required at the completion gate: output production commits to output evidence at minimum; access provision commits to usage evidence; condition change commits to outcome evidence; ecosystem shift commits to a documented impact contribution argument. A declared mechanism that the evidence scope available at the completion gate cannot support is a misrepresentation in the entry specification.
+
+| Finding | Action |
+|---|---|
+| Mechanism type, access condition content (matching the type), and currency status all present | Precondition met. |
+| Public goods claim present in eligibility but declaration absent | Submission incomplete. Do not assess until provided. |
+| Mechanism type declared but the access condition content does not match the type (for example, output production declared with no SPDX identifier) | Record the gap; the declaration is incomplete until corrected. |
+| Mechanism type contradicts the applicant's own description of the work (most commonly: output production claimed while the work is described as standard all-rights-reserved copyright) | Material discrepancy. Route to structured discrepancy investigation. This contradiction cannot be resolved by reviewer judgment; the applicant must address it before assessment proceeds. |
+
+**Precondition E: Development stage consistency.**
+
+The development stage dimension is active in all rounds. Confirm the development stage declaration is present and consistent with the evidence elsewhere in the submission.
+
+**Reviewer Question:** Does the applicant declare one of five development stages, explain why the work is at that stage rather than an adjacent one, and provide at least one piece of evidence from a source outside their control confirming the declared stage? Is the declared stage consistent with the evidence provided and with the round's stage-targeting configuration?
+
+Stage evidence expectations: Stage 1 (proof of concept) provides output evidence of the existing artifact; Stage 2 (early adoption) provides usage evidence from at least one named external user; Stage 3 (growth) provides independently verifiable adoption data with a trend; Stage 4 (established infrastructure) provides 12 months of sustained usage data from sources outside the team; Stage 5 (retroactive recognition) provides prior contribution evidence in the entry submission.
+
+Confirm two consistency relationships. First, the declared stage must match the evidence: a Stage 1 declaration paired with independent usage evidence is either a misrepresentation of stage or an understatement to investigate; a Stage 3 or higher declaration with no independently verifiable adoption data is a discrepancy to investigate. Second, the declared stage constrains the obligation mode: a Stage 1 applicant committing to a change obligation must provide a FROM state and a population baseline at entry, coherent only if the Stage 1 artifact is specifically designed to measure against an existing condition; a Stage 4 applicant selecting a build obligation must specify what new functionality is added beyond sustained operation, and declaring Stage 4 with a build obligation for what amounts to continued maintenance is a framing misrepresentation.
+
+| Finding | Action |
+|---|---|
+| Stage declared, justified, evidenced from outside the applicant's control, consistent with both the provided evidence and the obligation mode; within the round's stage-targeting scope | Precondition met. |
+| Declaration absent | Submission incomplete. Do not assess until provided. |
+| Declared stage not supported by the provided evidence, or inconsistent with the obligation mode | Material discrepancy. Route to structured discrepancy investigation. |
+| Declared stage outside the round's published stage-targeting scope | Record; stage targeting is a published program design decision, so a stage outside scope is an eligibility matter for the program, not a reviewer judgment. |
+
+**Precondition F: Decision-standing structure and Continuity Capacity.**
+
+This precondition is active for grants above a funder-defined size threshold, grants producing ongoing infrastructure with continuing operational requirements, and any application where the applying entity has a single named primary contributor with no documented backup capacity. For programs funding infrastructure maintenance or sustained service delivery, it is always active.
+
+**Reviewer Question:** Where this precondition is active, does the applicant declare one of three continuity-resilience states (single, partial, or resilient) with supporting evidence? For a single-point-of-failure (single) state, does the declaration name the person on whom continuation depends and state what would happen to active grants and funded deliverables if that person became unavailable?
+
+| Finding | Action |
+|---|---|
+| Resilience state declared with supporting evidence; single-point-of-failure declarations name the person and state the continuity consequence | Precondition met. A single-point-of-failure disclosure is not a disqualifier; it is a material fact affecting the sustainability assessment at the continuation gate and the funder's configuration of completion gate conditions. |
+| Precondition active but declaration absent | Submission incomplete for this dimension. Record. |
+| Single state declared but the person is not named or the continuity consequence is not stated | Declaration incomplete until provided. |
+
+**Precondition G: Obligation fulfillment record.**
+
+This precondition activates where any of the following apply: the applicant has received prior grants from this funder in any prior round; the applicant cites prior work as evidence of capability at the entry gate; or the applicant's prior round history includes unresolved external milestones or open gate conditions.
+
+**Reviewer Question:** Where this precondition is active, does the obligation fulfillment record document, for each prior grant from this funder: what was committed at the entry gate of that prior round (the deliverable specification, the FROM-TO state, or the contribution evidence, as appropriate to that round's mode); what was produced during the grant period (the artifact, the measured change, or the verified contribution, with a publicly accessible link); and whether the commitment was fulfilled, partially fulfilled, or unfulfilled, with the applicant's explanation where fulfillment was not complete?
+
+| Finding | Action |
+|---|---|
+| Record present and complete for each prior grant from this funder | Precondition met. An unfulfilled prior obligation is not automatically disqualifying; it is a disclosed fact affecting the track record assessment at the continuation gate and may be addressed by a written explanation. |
+| Precondition active but record absent | Submission incomplete. Do not assess until provided. |
+| A prior grant, milestone, or unresolved obligation is discovered through research (including the funder-side query of public attestation sources) but is not disclosed in the record | Material discrepancy. Non-disclosure of a prior failure is treated more seriously than the failure itself. |
+
+**Precondition H: Prior work attribution.**
+
+This precondition activates for any applicant in any mode who cites prior work as evidence of capability, track record, or past contribution: build-obligation applicants citing prior deliverables, change-obligation applicants citing prior outcomes as a baseline or established methodology, and retroactive-obligation applicants whose entire submission consists of prior work.
+
+**Reviewer Question:** For each piece of prior work cited, does the prior work attribution statement address all three questions?
+
+- *Entity of performance:* under which legal entity or organizational context was the cited work performed? If performed as an employee, contractor, or contributor to an organization that is not the applying entity, that organization must be named. If performed under the applying entity's own resources, that must be stated explicitly.
+- *Applicant's relationship at the time:* what was the applicant's role in the entity under which the work was performed, and what is the current status of that relationship? Both the relationship at the time of creation and the relationship at the time of application must be stated.
+- *Current ownership and access:* who currently holds the intellectual property rights, who controls the deployment or codebase, and who has the relationship with any users cited as evidence of impact? If the applying entity does not hold the rights, control the deployment, or have the user relationship, this must be stated.
+
+The prior work attribution statement is an adverse signal disclosure requirement. An applicant who cannot truthfully complete it for cited prior work has surfaced a misrepresentation in the core evidential basis of the application.
+
+| Finding | Action |
+|---|---|
+| Statement present and addresses all three questions for each piece of cited prior work | Precondition met. |
+| Prior work cited but no attribution statement, or the statement omits one of the three questions for any cited work | Submission incomplete for this evidence. Do not rely on the cited work as track record until the statement is complete. |
+| The completed statement reveals that the track record rests on work performed under a different entity without that entity's knowledge or endorsement of the application | Adverse signal. The applicant is claiming responsibility for outcomes they did not control. Record and route to the adverse signal provisions (Check 2). |
+
+---
+
+### Section 2-1: Mode-Specific Entry Specification Gate
+
+Confirm the entry-gate preconditions in Section 2-0 are met, then navigate to the sub-section that matches the obligation mode confirmed in Section 1. Complete the gate assessment before opening any scored rubric sections. A gate failure terminates evaluation; do not apply the indicator rubric to a gate failure.
+
+The mode-specific gate also incorporates the served-population check below, which applies wherever the round's eligibility rests on serving a defined population.
+
+**Served-population risk-bearer floor (apply at this gate and at every subsequent gate where the round's eligibility rests on serving a defined population).**
+
+The parties who bear loss when a round's evaluation misjudges are the applicant whose work may be misclassified, the funder whose resources may be misdirected, and the served population: the people a funded intervention is meant to serve, who bear loss when the round funds work that does not reach them or excludes work that would have served them. The spec names the served population a risk-bearer carried through every gate, not validated only at entry (spec Part II beneficiary dimension; this realizes CRAFT Condition 1 risk-bearer identification as a carried requirement).
+
+**Reviewer Question:** Where the round's eligibility rests on serving a defined population, does the gate determination record show that the served population's exposure was considered, not only that the population was named at entry?
+
+At the entry gate, the beneficiary engagement and beneficiary validation dimension performs part of this: in change-obligation rounds the claimed FROM state must be validated by parties outside the applicant's control, and in build-obligation rounds the claimed need for the deliverable must be validated by at least one party outside the applicant's organization who would use or benefit from it. Confirm that this outside-the-applicant validation is present where the dimension is active.
+
+At the completion verification gate, confirm that the determination and the unintended outcomes disclosure additionally consider whether the served population bears exposure the round has not surfaced: work recorded as delivered that does not reach them, or effects on them that the declared indicators do not capture.
+
+| Finding | Action |
+|---|---|
+| The gate determination record shows the served population's exposure was applied as a consideration (the claimed need validated from outside the applicant at entry; at completion, exposure beyond what the declared indicators capture considered) | Floor met. Record the consideration in the determination. |
+| The served population was named at entry but the determination record does not show its exposure was considered | Floor not met. The determination record must show the consideration was applied, not merely that the population was named. Return the determination for the consideration to be applied and recorded. |
+
+Note: this floor is a named consideration each gate is checked against. It does not, on its own, require a standing channel through which the served population raises concerns during the grant period; such a channel is a separate configuration a funder may add.
 
 ---
 
@@ -162,7 +330,7 @@ In retroactive obligation rounds where no indicator specification is required by
 
 **Reviewer Question:** Does the applicant explain why this indicator was chosen over available alternatives? Is the diagnostic reasoning that preceded tool selection visible?
 
-Rationale is mandatory. An applicant who cannot articulate why they selected a particular indicator over obvious alternatives has not engaged seriously with whether the measurement instrument is valid.
+Rationale is required. An applicant who cannot articulate why they selected a particular indicator over obvious alternatives has not engaged seriously with whether the measurement instrument is valid.
 
 | Score | Criterion |
 |---|---|
@@ -430,6 +598,35 @@ For all obligation modes: data must be current to the reporting period. Annual d
 
 ---
 
+### Causality Stance and Counterfactual Reference (apply at gates configured at usage, outcome, or impact evidence scope)
+
+This assessment applies where outcome or usage evidence is required and the round's gate configuration declares a causality stance. It is not part of the 1-4 indicator scoring; it confirms that the evidence presented matches the stance the funder declared. The reviewer does not choose the stance; the funder declares it in the published gate configuration. The reviewer confirms the evidence corresponds to it.
+
+**The two stances.** CROSS requires the causality stance to be declared explicitly in the gate configuration. There are two positions on a causality spectrum.
+
+*Attribution stance.* The gate requires evidence that the intervention caused the observed change. Counterfactual reference (below) is the standard methodology for attribution stance claims. Attribution stance is appropriate where the funder must defend a causal claim to an institutional body, where the intervention is the primary or only active change effort in the target population, or where future funding depends on causal proof rather than plausible contribution.
+
+*Contribution stance.* The gate requires evidence that the intervention plausibly contributed to the observed outcome, with co-factors named and the contribution mechanism stated. Contribution stance does not require a counterfactual. It requires a named causal pathway from the funded activity to the observed change; a list of other interventions, conditions, or actors that also contributed; and a written account of why the funded intervention's contribution was material rather than incidental. Contribution stance is appropriate for most public goods and Web3 grants contexts, where multiple funders, tools, and community actors contribute to the same ecosystem outcomes and exclusive attribution is neither verifiable nor necessary.
+
+**Reviewer Question (stance match):** Does the evidence presented match the stance the funder declared for this gate? Evidence that asserts exclusive causation where contribution stance was declared overstates; evidence that offers only plausible contribution where attribution stance was declared understates.
+
+**Finding Options:** Pass (the evidence form matches the declared stance), Conditional (the evidence is close to the declared stance but a specific element is missing, for example a contribution-stance submission that names the pathway but omits the co-factor list), or Fail (the evidence form is structurally mismatched to the declared stance and cannot be corrected without redoing the outcome analysis).
+
+**Counterfactual reference (apply only where the funder has configured the gate at counterfactual reference level).** This is an additional layer activated explicitly; it is not implied by selecting outcome evidence scope. Where it is configured, the funder must have specified the acceptable counterfactual methods before the round opened.
+
+**Reviewer Question:** Does the submission include all four required contract elements?
+
+- *Counterfactual baseline:* a documented estimate of what the indicator value would have been during the grant period without the intervention, derived from historical trend extrapolation from pre-intervention data, a matched comparison group not exposed to the intervention, or a modeled counterfactual with stated assumptions and sensitivity ranges.
+- *Attribution argument:* a written account of why the observed change is attributable to the intervention rather than to confounding factors, naming the main alternative explanations and explaining why they are insufficient.
+- *Comparison period or group:* a defined period or population serving as the counterfactual reference, described specifically enough that a reviewer can assess whether it is an appropriate comparison for the intervention context.
+- *Independent attestation:* confirmation from a party outside the grantee organization that the counterfactual method and comparison group are reasonable given the intervention context and available data.
+
+Where a comparison group cannot be defined because the intervention affects an entire ecosystem or operates at a protocol level with universal effects, confirm the grantee documents why a comparison group approach is not feasible and provides a modeled counterfactual with stated assumptions. Absence of a comparison group is not itself a gate failure; absence of a counterfactual estimate and attribution argument is.
+
+**Finding Options:** Pass (all four elements present, or the comparison-group exception is documented with a modeled counterfactual), Conditional (a specific element can be completed before disbursement), or Fail (the counterfactual estimate and attribution argument are absent and cannot be supplied from the available data).
+
+---
+
 ## Section 5: Conformance Checks
 
 The three conformance checks are binary: each either passes or fails. They are not part of the scored rubric. A conformance check failure is not a rigor-tier finding; it is a disqualifying or process-requiring finding that operates independently of indicator scores. A conformance check failure produces a Do not fund recommendation regardless of indicator scores.
@@ -441,6 +638,8 @@ The three conformance checks are binary: each either passes or fails. They are n
 **Test:** Is the concurrent funding disclosure complete? Are all grants, investments, or revenue sources from the prior 24 months related to the scope of this application disclosed, including approximate amounts, relationship to the application's scope, ongoing reporting obligations, and any coordinating or decision-making rights held by funders?
 
 For retroactive obligation rounds: the disclosure must cover prior awards for the same or overlapping work, as well as active grants and investments related to the application's scope.
+
+**Token generation event disclosure (part of this check).** Token generation events, planned or executed within the prior 24 months, are required disclosure items alongside grants and investments. A token generation event is any mechanism by which the applying entity or its principals generate, allocate, or vest tokens to themselves, investors, or the public in a manner that represents or may represent economic value. This includes initial decentralized exchange offerings, token generation events, initial coin offerings, liquidity bootstrapping pool launches, and continuous founder or contributor vesting schedules releasing tokens during the disclosure window. The disclosed amount is the approximate United States dollar value at the time of the event, or for pending events, the planned allocation value based on the most recent publicly stated or implied valuation. A token that has not yet launched but for which a whitepaper, tokenomics document, or allocation schedule exists is a pending token generation event and must be disclosed. The existence of a token or planned token is not a disqualifier; non-disclosure of a material token event is treated as a concurrent funding omission under the same rules as undisclosed grants or investments, and fails this check.
 
 **Independent Evidence:** If the reviewer has independent evidence of a funding relationship not disclosed in the form (public announcements, on-chain treasury flows, prior evaluations from other funders), the application fails this check. The finding must be documented with the source of the independent evidence.
 
@@ -489,13 +688,43 @@ If attribution fractions change between reporting periods for the same indicator
 
 ### Check 3: Conflict of Interest
 
-**Test:** Has each reviewer completed a conflict of interest declaration before review began? Was the declaration submitted to the named receiving function? Has a post-participation certification been completed?
+**Test:** Has each reviewer completed a conflict of interest declaration covering all three tiers before review began? Was the declaration submitted to a named receiving function separate from the person making the funding decision? Has a post-participation certification been completed confirming no new conflicts arose during review? The conflict of interest framework runs in both directions: reviewers disclose relationships to applicants, and applicants disclose relationships to committee members and reviewers. The applicable test is the reasonable third party standard: would an informed observer with knowledge of the relevant facts conclude that the person cannot maintain independence and is therefore not capable of objective and impartial judgment? The tier lists below illustrate the standard; a novel relationship type not listed that meets the reasonable third party standard still requires disclosure.
 
-**Tier 1 Violations (categorical Bar, No Waiver):** Any Tier 1 conflict discovered after a review has been completed disqualifies the entire evaluation. The review must be restarted with a non-conflicted panel.
+**Tier 1: categorical bar, no waiver.** Any Tier 1 conflict discovered after a review has been completed disqualifies the entire evaluation; the review must be restarted with a non-conflicted panel. Tier 1 relationships:
 
-**Tier 2 Violations (disclosure Required, Qualified Waiver Possible):** Tier 2 violations discovered during or after review require remediation: retroactive recusal, review restart, or award cancellation, depending on the degree of influence the conflicted party had.
+- Direct financial interest in the applicant entity, including equity, revenue share, or token holdings above the materiality threshold (default: greater than 1 percent of circulating supply, or greater than 5,000 United States dollars in value at the time of review)
+- Family relationship with any principal, director, officer, or owner of the applicant project
+- Prior receipt of funding from this funder in the same program area where the reviewer's funded work is directly related to the applicant's scope
+- Being named as a team member, advisor, or contributor on the applicant project's public materials, whether compensated or not
 
-**Finding Options:** Pass (all declarations on file, submitted before review began, post-participation certifications complete, no Tier 1 or undisclosed Tier 2 conflicts identified), or Violation (document the tier, the relationship, and the remediation determination).
+A funder-side consulting arrangement that is the primary mechanism through which the reviewer receives income from the ecosystem being evaluated is also a categorical bar: structural income dependency on the funder's continued operation and on favorable award decisions is itself the conflict, with no need for a direct relationship to any specific applicant.
+
+**Tier 2: disclosure required, qualified waiver possible.** A qualified waiver requires written justification submitted to a named authority other than the conflicted party, approval granted before participation (not after), and documentation in the review record. A waiver is not available where the relationship creates a financial interest. Tier 2 violations discovered during or after review require remediation: retroactive recusal, review restart, or award cancellation, depending on the degree of influence the conflicted party had. Tier 2 relationships include: employment with the applicant organization in the past 36 months; co-authorship or active project collaboration with applicant principals in the past 48 months; mentor or student relationship with applicant principals (no expiration); having received an honorarium, award, or gift from the applicant entity in the past 12 months; active negotiations or arrangements for future employment with the applicant organization; an organizational conflict where the reviewer's employer has a material financial relationship with the applicant; and an organizational role conflict, where the reviewer holds a paid or unpaid leadership, advisory, or operational role in another organization applying to this round or recently funded by this funder in the same program area (disclosure required even where no direct financial relationship exists, because the structural position across multiple funding relationships is itself the conflict). A funder-side consulting arrangement covering the same program area as the applications under review is a Tier 2 conflict with the qualified waiver procedure.
+
+**Tier 3: disclosure encouraged, reasonable third party standard applies.** Social and community relationships (conference co-speakers, forum co-membership, shared group chats); prior interactions across grant rounds in different program areas; informal mentorship or advisory conversations without ongoing engagement.
+
+**Attestation independence.** The conflict tiers apply not only to reviewers but to any party who signs an attestation confirming an applicant's gate evidence at any gate configured at independent review level or above. A party who holds a Tier 1 conflict with an applicant may not serve as the independent reviewer or sign an attestation confirming that applicant's gate evidence, regardless of the attestation format used. A Tier 1-conflicted party who signs an on-chain attestation, issues a signed document, or issues a credential confirming milestone completion has not satisfied the independent review requirement; the attestation does not meet the evidence strength standard regardless of its format. A party who holds a Tier 2 conflict requires a qualified waiver before serving as attestor, using the same procedure as the reviewer waiver requirement. Confirm reviewer and attestor conflict status before accepting any attestation as satisfying independent review evidence strength. (This is the attestation-independence element of CRAFT's non-self-adjudication requirement.)
+
+**Finding Options:** Pass (all declarations on file, submitted before review began, post-participation certifications complete, no Tier 1 or undisclosed Tier 2 conflicts identified among reviewers or attestors), or Violation (document the tier, the relationship, and the remediation determination). Non-disclosure of a Tier 1 conflict is a disqualifying violation; non-disclosure of a Tier 2 conflict is a process violation requiring remediation.
+
+---
+
+### Check 3-A: Cohort Position Assessment (round-level procedure)
+
+This check is performed across all applicants in a round, before final gate determinations are issued, not within a single application's review. It is recorded in the round record. A reviewer assessing one application contributes the data (named personnel, the on-chain identity anchor, the disbursement authority address, and named endorsers) that the program uses to run this assessment.
+
+**Test:** Across all applications in the round, does the program check for three overlap patterns?
+
+- *Personnel overlap:* does any named team member, contact, or key contributor in one application also appear in another application in the same round under a different entity name?
+- *Wallet overlap:* does any on-chain identity anchor or disbursement authority address in one application appear as a recipient, controller, or named address in another application in the same round?
+- *Endorser concentration:* has the same identifiable party endorsed or attested to a disproportionate share of applicants in the same round using non-standard schemas?
+
+| Finding | Action |
+|---|---|
+| No overlap across applications | Recorded in the round record. No action. |
+| Personnel overlap | Does not disqualify either application; triggers a Tier 2 conflict of interest disclosure requirement for the overlapping individual (handled under Check 3). |
+| Wallet overlap | Requires explanation. The same address appearing across multiple distinct legal entities applying separately is a material discrepancy requiring reconciliation before disbursement. |
+| Endorser concentration | Informational. Recorded in the round record without disqualifying effect. |
 
 ---
 
@@ -580,4 +809,14 @@ For retroactive obligation gate failures: the applicant has not provided the req
 
 ---
 
-*End of CROSS Assessment Rubric v0.2.0*
+## Changelog
+
+| Version | Date | Summary |
+|---|---|---|
+| 0.3.1 | 2026-06-08 | Frame Language own-voice pass. Own-voice watchlist terms were replaced with the structural act each names (mandatory became required; credible became verifiable; the Governing test became the Applicable test). Two naming updates aligned the rubric with the spec: Precondition F "Governance and continuity resilience" became "Decision-standing structure and Continuity Capacity", and the "Attestation integrity" check became "Attestation independence". The WALKRI Integrity data-quality standard, the canonical beneficiary dimension name, framework names, and the changelog rows were preserved as citation. Em-dash sweep clean. No scoring or recommendation vocabulary changed; vocabulary and naming only. |
+| 0.3.0 | 2026-06-05 | Synced to CROSS spec 0.5.0. Added reviewer calibration as an assessment precondition in Section 1. Added Section 2-0 entry-gate preconditions: organizational identity completeness, disbursement authority, sufficiency architecture coherence, public benefit mechanism and access condition, development stage consistency, governance and continuity resilience, obligation fulfillment record, and prior work attribution. Added the served-population risk-bearer floor check to the entry and subsequent gates (spec Part II beneficiary dimension). Added the causality stance distinction (attribution versus contribution) and the counterfactual reference assessment to Section 4. Added token generation event disclosure to Check 1. Expanded Check 3 with the three conflict-of-interest tiers and the attestation-integrity provision, and added Check 3-A Cohort Position assessment. Noted the CRAFT framing where relevant: CROSS is a domain application of CRAFT (spec Part XIII receipt). No change to the 1-4 indicator field scoring or the recommendation vocabulary. |
+| 0.2.0 | 2026-05-14 | Companion rubric to CROSS spec 0.2.0. Three obligation modes, mode-specific entry specification gates, eleven-field indicator rubric, five data quality standards, three conformance checks, recommendation framework. |
+
+---
+
+*End of CROSS Assessment Rubric v0.3.0*

@@ -1,11 +1,18 @@
 ---
 title: OCHA Country-Based Pooled Funds Compatibility - CROSS+WALKRI
-version: 0.1.0
-date: 2026-05-18
+version: 0.1.2
+date: 2026-06-08
 license: CC0
 standards: CROSS v0.4.0 (github.com/CrossWalkri/CROSS), WALKRI v0.1.6 (github.com/CrossWalkri/WALKRI)
 references:
   - OCHA Country-Based Pooled Funds Global Guidelines, December 2022, https://www.unocha.org/publications/report/world/country-based-pooled-funds-global-guidelines
+lens_tags:
+  calibration_tier: independently_verified
+  authority_source: voluntary_published
+  cultural_methodological_lineage: western_institutional
+  funder_typology: pooled_fund_or_intermediary
+  framework_scope_type: grantee_outcome_measurement
+  # OCHA Country-Based Pooled Funds; pooled_fund_or_intermediary primary; alternative multilateral_bank_or_fund
 ---
 
 # OCHA Country-Based Pooled Funds Compatibility
@@ -36,7 +43,7 @@ Results monitoring under CBPF requires grantees to submit progress reports again
 
 CBPF results monitoring templates require grantees to report against output indicators (activities completed, people reached) and outcome indicators (conditions changed) at specified reporting intervals. These two layers correspond directly to CROSS's output and outcome gate architecture. CROSS requires separate gate evidence submissions at the output layer and the outcome layer; a grantee using CROSS for a CBPF grant produces gate evidence at the intervals CBPF reporting requires, structured against pre-specified indicators that match the template fields.
 
-CROSS's eleven-field indicator specification (Fields 1-11) is more detailed than CBPF's standard template fields, but is fully compatible: a CROSS-compliant indicator specification satisfies CBPF template requirements and provides additional specificity (operational definition, evidence form, compliance threshold) that CBPF does not require but does not prohibit. Programs using CROSS for CBPF grants can use their CROSS indicator records as the primary specification source for populating CBPF template fields.
+CROSS's eleven-field indicator specification (Fields 1-11) is more detailed than CBPF's standard template fields, but is fully compatible: a CROSS-conformant indicator specification satisfies CBPF template requirements and provides additional specificity (operational definition, evidence form, conformance threshold) that CBPF does not require but does not prohibit. Programs using CROSS for CBPF grants can use their CROSS indicator records as the primary specification source for populating CBPF template fields.
 
 ---
 
@@ -60,7 +67,7 @@ WALKRI's integrity requirement addresses the accountability principle at the ins
 
 CROSS Field 10 (institutional framework alignment) is the field in the eleven-field indicator specification that records what external classification systems, codes, or frameworks the indicator is aligned with. CBPF grants are categorized by humanitarian sector (food security, health, shelter, WASH, protection, and others) and reported against sector-specific templates that use CBPF sector codes as organizing categories.
 
-Field 10 accommodates CBPF sector codes by design. A CROSS-compliant grantee records the relevant CBPF sector code in Field 10 for each indicator, establishing a formal, documented link between the CROSS indicator record and the CBPF reporting category. This is not a translation step at reporting time but a specification-layer alignment recorded before data collection begins.
+Field 10 accommodates CBPF sector codes by design. A CROSS-conformant grantee records the relevant CBPF sector code in Field 10 for each indicator, establishing a formal, documented link between the CROSS indicator record and the CBPF reporting category. This is not a translation step at reporting time but a specification-layer alignment recorded before data collection begins.
 
 ---
 
@@ -97,3 +104,5 @@ License: CC0
 | Version | Date | Summary |
 |---|---|---|
 | 0.1.0 | 2026-05-18 | Initial draft. Results chain, timeliness, accountability, and sector code mappings documented. Inclusiveness and flexibility principles assessed as partial scope. CERF applicability noted. |
+| 0.1.1 | 2026-05-23 | Retroactive lens tagging: added calibration_tier, authority_source, cultural_methodological_lineage, funder_typology, framework_scope_type per Lenses Framework v0.1.0. |
+| 0.1.2 | 2026-06-08 | Frame Language own-voice pass applied as part of the corpus-wide 2026-06-08 sweep: own-voice watchlist terms (govern-family, accountability, mandatory, compliance, enforce, legitimate) recast to conformance and obligation vocabulary where they appeared in this document's own voice; citation use of source-framework terms preserved. Primitive-rename references aligned to current canon (Continuity Capacity, the Collective disbursement state, Affected Population Verification Gate). Em-dash- and watchlist-clean re-verified. No compatibility finding or mapping changed; vocabulary only. |

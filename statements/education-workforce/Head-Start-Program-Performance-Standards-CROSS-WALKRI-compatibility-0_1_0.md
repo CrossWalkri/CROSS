@@ -1,7 +1,7 @@
 ---
 title: Head Start Program Performance Standards Compatibility - CROSS+WALKRI
-version: 0.1.0
-date: 2026-05-18
+version: 0.1.2
+date: 2026-06-08
 license: CC0
 standards: CROSS v0.4.5 (github.com/CrossWalkri/CROSS), WALKRI v0.1.7 (github.com/CrossWalkri/WALKRI)
 references:
@@ -9,6 +9,13 @@ references:
   - Head Start Early Learning Outcomes Framework (headstart.gov/school-readiness/article/head-start-early-learning-outcomes-framework)
   - Program Information Report (headstart.gov/program-data/article/program-information-report-pir)
   - Head Start Enterprise System (hses.ohs.acf.hhs.gov)
+lens_tags:
+  calibration_tier: independently_verified
+  authority_source: regulatory
+  cultural_methodological_lineage: western_institutional
+  funder_typology: government_non_aid
+  framework_scope_type: grantee_outcome_measurement
+  # 45 CFR Chapter XIII regulatory standards administered by HHS Office of Head Start
 ---
 
 # Head Start and Early Head Start Program Performance Standards
@@ -45,9 +52,9 @@ CROSS addresses the Part 1302 evaluation requirements at the structural level.
 
 **Entry specification gate and school readiness goals:** The ELOF's five developmental domains, and the requirement that programs establish school readiness goals aligned to those domains before enrollment begins, constitute the institutional form of CROSS's entry specification gate applied to child outcome indicators. Programs must specify which ELOF-aligned outcomes they are working toward, for which children, before any child is served. CROSS's eleven-field indicator specification (Fields 1-5: name, definition, unit, baseline, target) applied to ELOF-domain school readiness goals produces entries that satisfy Part 1302's goal specification requirement and provide the measurement precision the regulation requires but does not itself mandate.
 
-**Tri-annual aggregation and CROSS progress verification:** The mandatory tri-annual data aggregation cycle corresponds to CROSS's completion gate structure, which requires evidence review at defined intervals rather than only at program end. Programs operating under CROSS and Part 1302 simultaneously use the three required aggregation points as natural completion gate checkpoints, comparing aggregated child outcome data against the school readiness goals declared at program year start.
+**Tri-annual aggregation and CROSS progress verification:** The required tri-annual data aggregation cycle corresponds to CROSS's completion gate structure, which requires evidence review at defined intervals rather than only at program end. Programs operating under CROSS and Part 1302 simultaneously use the three required aggregation points as natural completion gate checkpoints, comparing aggregated child outcome data against the school readiness goals declared at program year start.
 
-**PIR and disaggregation ratchet:** The PIR's mandatory demographic fields (race, ethnicity, age, disability status) correspond to CROSS's disaggregation ratchet requirement: once demographic disaggregation is established at program enrollment, it cannot be removed in later reporting periods. Programs reporting through the PIR satisfy CROSS's disaggregation ratchet as a structural consequence of HSES system requirements, since the PIR's field definitions are fixed nationally.
+**PIR and disaggregation ratchet:** The PIR's required demographic fields (race, ethnicity, age, disability status) correspond to CROSS's disaggregation ratchet requirement: once demographic disaggregation is established at program enrollment, it cannot be removed in later reporting periods. Programs reporting through the PIR satisfy CROSS's disaggregation ratchet as a structural consequence of HSES system requirements, since the PIR's field definitions are fixed nationally.
 
 **Causality stance and school readiness attribution:** Part 1302's school readiness framework requires programs to connect their services to child developmental outcomes across five ELOF domains. CROSS's causality stance field (Field 10) documents whether the program claims attribution or contribution for each domain-level outcome, and what comparison group informs that claim. For Head Start programs, the appropriate causality stance is typically contribution with a program-to-comparison-community reference: Head Start's program evaluation literature includes large-scale impact studies that can serve as the comparison basis CROSS's Field 9 (comparison group) requires.
 
@@ -69,10 +76,19 @@ CROSS addresses the Part 1302 evaluation requirements at the structural level.
 
 The Part 1302 framework specifies what must be measured across the five ELOF domains but does not specify, at the intake field level, how assessment instruments must define proficiency, what score on a given domain measure constitutes the evidence threshold, or what documentary form the measurement must take. This specification gap is precisely where WALKRI's pre-publication requirements operate.
 
-WALKRI's five pre-publication requirements applied to child assessment intake fields resolve the most common source of incomparable data across Head Start programs: two programs may both report measuring "language and literacy development" using ELOF-aligned goals while using different instruments, different scoring conventions, and different thresholds for what counts as "on track." WALKRI's operational definition requirement forces each program to specify, before any intake field is published, what the outcome means in measurable terms. The evidence form requirement specifies what assessment instrument is used, how it is scored, and what score constitutes the evidence threshold. The compliance threshold requirement specifies what level of outcome at what point in the program year constitutes satisfactory progress against the declared school readiness goal.
+WALKRI's five pre-publication requirements applied to child assessment intake fields resolve the most common source of incomparable data across Head Start programs: two programs may both report measuring "language and literacy development" using ELOF-aligned goals while using different instruments, different scoring conventions, and different thresholds for what counts as "on track." WALKRI's operational definition requirement forces each program to specify, before any intake field is published, what the outcome means in measurable terms. The evidence form requirement specifies what assessment instrument is used, how it is scored, and what score constitutes the evidence threshold. The conformance threshold requirement specifies what level of outcome at what point in the program year constitutes satisfactory progress against the declared school readiness goal.
 
 For the PIR's demographic fields, WALKRI's pre-publication audit confirms that the field definitions from the HSES national specification are faithfully reproduced in the program's own intake instruments, so that what the program collects locally matches what it reports through HSES. The response form requirement, applied to PIR-specified demographic fields before any family completes enrollment paperwork, ensures that the options presented to families map correctly to the PIR's national category definitions. Programs that complete this audit before the program year opens eliminate the reconciliation burden that otherwise arises when locally collected categories do not align with HSES submission requirements.
 
 ---
 
 *Published under CC0. For the current version of CROSS and WALKRI, see github.com/CrossWalkri.*
+
+---
+
+## Changelog
+
+| Version | Date | Summary |
+|---|---|---|
+| 0.1.2 | 2026-06-08 | Frame Language own-voice pass applied as part of the corpus-wide 2026-06-08 sweep: own-voice watchlist terms (govern-family, accountability, mandatory, compliance, enforce, legitimate) recast to conformance and obligation vocabulary where they appeared in this document's own voice; citation use of source-framework terms preserved. Primitive-rename references aligned to current canon (Continuity Capacity, the Collective disbursement state, Affected Population Verification Gate). Em-dash- and watchlist-clean re-verified. No compatibility finding or mapping changed; vocabulary only. |
+| 0.1.1 | 2026-05-23 | Retroactive lens tagging: added calibration_tier, authority_source, cultural_methodological_lineage, funder_typology, framework_scope_type per Lenses Framework v0.1.0. |

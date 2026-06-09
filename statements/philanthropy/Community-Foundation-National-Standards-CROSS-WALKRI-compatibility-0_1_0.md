@@ -1,12 +1,19 @@
 ---
 title: Community Foundation National Standards (US) Compatibility - CROSS+WALKRI
-version: 0.1.0
-date: 2026-05-18
+version: 0.1.2
+date: 2026-06-08
 license: CC0
 standards: CROSS v0.4.2 (github.com/CrossWalkri/CROSS), WALKRI v0.1.6 (github.com/CrossWalkri/WALKRI)
 references:
   - https://www.cfstandards.org/getting-accredited/national-standards
   - https://cof.org/community-foundation-standards
+lens_tags:
+  calibration_tier: process_conformant
+  authority_source: civil_society_advisory
+  cultural_methodological_lineage: western_institutional
+  funder_typology: pooled_fund_or_intermediary
+  framework_scope_type: certification
+  # Community Foundation National Standards for US Community Foundations; civil_society_advisory authority via Council on Foundations; pooled_fund_or_intermediary captures community foundation typology
 ---
 
 # Community Foundation National Standards (US)
@@ -17,19 +24,19 @@ references:
 
 ## Summary
 
-The Community Foundation National Standards Board (cfstandards.org), supported by the Council on Foundations, administers the primary accreditation standard for US community foundations: 26 standards across five domains covering governance, resource development, stewardship, grantmaking, and donor relations. Over 900 accredited US community foundations collectively manage more than one hundred billion USD in assets, and reaccreditation is required every three years. CROSS+WALKRI satisfies the grantmaking, stewardship, and accountability requirements of the National Standards by providing the structured gate architecture and persistent attestation record the standards require.
+The Community Foundation National Standards Board (cfstandards.org), supported by the Council on Foundations, administers the primary accreditation standard for US community foundations: 26 standards across five domains covering governance, resource development, stewardship, grantmaking, and donor relations. Over 900 accredited US community foundations collectively manage more than one hundred billion USD in assets, and reaccreditation is required every three years. CROSS+WALKRI satisfies the grantmaking, stewardship, and reporting obligations of the National Standards by providing the structured gate architecture and persistent attestation record the standards require.
 
 ---
 
 ## The Community Foundation National Standards' Approach
 
-The National Standards exist to provide donor confidence and community trust in community foundations operating across the United States. Because community foundations hold and deploy donor funds toward charitable purposes, they face accountability requirements that private foundations and corporate grantmakers do not: they must demonstrate that funds are deployed only for qualified charitable purposes, that due diligence processes are documented and followed consistently, and that grantmaking decisions are responsive to the specific community the foundation serves.
+The National Standards exist to provide donor confidence and community trust in community foundations operating across the United States. Because community foundations hold and deploy donor funds toward charitable purposes, they face answerability obligations that private foundations and corporate grantmakers do not: they must demonstrate that funds are deployed only for qualified charitable purposes, that due diligence processes are documented and followed consistently, and that grantmaking decisions are responsive to the specific community the foundation serves.
 
 The Grantmaking domain is the most operationally demanding from an evidence standpoint. Standards in this domain require that community foundations: respond to documented community needs (not only funder priorities); apply due diligence policies including expenditure responsibility for grants to non-public charities; and use grant funds only for qualified charitable purposes. These are not aspirational principles; they are conditions for accreditation reviewed during the three-year reaccreditation cycle.
 
 The Stewardship and Accountability domain requires that foundation operations be documented in ways that support independent review. Grantmaking decisions must be traceable to stated policies. Conflicts of interest must be managed through documented procedures. Financial management must meet independent audit standards. These requirements collectively define a transparency and traceability standard that applies not only to financial records but to the grant decision-making process itself.
 
-The Community Needs Responsiveness requirement addresses a specific accountability gap: community foundations may not simply deploy donor funds toward donor preferences if those preferences are not connected to documented community needs. This requirement distinguishes community foundations from donor-advised funds and private foundations: the "community" in community foundation implies an obligation to serve a defined geographic or demographic community's needs, and that connection must be demonstrable.
+The Community Needs Responsiveness requirement addresses a specific obligation gap: community foundations may not simply deploy donor funds toward donor preferences if those preferences are not connected to documented community needs. This requirement distinguishes community foundations from donor-advised funds and private foundations: the "community" in community foundation implies an obligation to serve a defined geographic or demographic community's needs, and that connection must be demonstrable.
 
 ---
 
@@ -66,3 +73,12 @@ For reaccreditation purposes, this matters because the National Standards review
 ---
 
 *Published under CC0. For the current version of CROSS and WALKRI, see github.com/CrossWalkri.*
+
+---
+
+## Changelog
+
+| Version | Date | Summary |
+|---|---|---|
+| 0.1.2 | 2026-06-08 | Frame Language own-voice pass applied as part of the corpus-wide 2026-06-08 sweep: own-voice watchlist terms (govern-family, accountability, mandatory, compliance, enforce, legitimate) recast to conformance and obligation vocabulary where they appeared in this document's own voice; citation use of source-framework terms preserved. Primitive-rename references aligned to current canon (Continuity Capacity, the Collective disbursement state, Affected Population Verification Gate). Em-dash- and watchlist-clean re-verified. No compatibility finding or mapping changed; vocabulary only. |
+| 0.1.1 | 2026-05-23 | Retroactive lens tagging: added calibration_tier, authority_source, cultural_methodological_lineage, funder_typology, framework_scope_type per Lenses Framework v0.1.0. |

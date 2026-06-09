@@ -1,7 +1,7 @@
 ---
 title: HRSA Title V Maternal and Child Health National Performance Measures Compatibility - CROSS+WALKRI
-version: 0.1.0
-date: 2026-05-18
+version: 0.1.2
+date: 2026-06-08
 license: CC0
 standards: CROSS v0.4.4 (github.com/CrossWalkri/CROSS), WALKRI v0.1.7 (github.com/CrossWalkri/WALKRI)
 references:
@@ -9,6 +9,13 @@ references:
   - Title V Information System (TVIS) (mchb.tvisdata.hrsa.gov)
   - National Performance Measures (NPMs) 2024 update (mchb.hrsa.gov)
   - HRSA Maternal and Child Health Bureau (MCHB) documentation (mchb.hrsa.gov)
+lens_tags:
+  calibration_tier: outcome_specified_self_reported
+  authority_source: statutory
+  cultural_methodological_lineage: western_institutional
+  funder_typology: government_non_aid
+  framework_scope_type: grantee_outcome_measurement
+  # HRSA Title V Maternal and Child Health Services Block Grant; Social Security Act Title V statutory authority
 ---
 
 # HRSA Title V Maternal and Child Health National Performance Measures
@@ -25,7 +32,7 @@ The Title V Maternal and Child Health (MCH) Services Block Grant, administered b
 
 ## The Title V NPM and ESM Framework
 
-The Title V MCH Services Block Grant is structurally distinct from most federal grant programs in that it is a block grant: states have substantial discretion over how they deploy funds within the maternal and child health domain. The NPM framework is the mechanism by which HRSA introduces accountability into this discretionary structure. Rather than mandating specific programmatic interventions, HRSA mandates accountability for outcomes drawn from a pre-specified menu of population health measures, requiring states to choose their priorities before the grant period begins.
+The Title V MCH Services Block Grant is structurally distinct from most federal grant programs in that it is a block grant: states have substantial discretion over how they deploy funds within the maternal and child health domain. The NPM framework is the mechanism by which HRSA introduces outcome obligations into this discretionary structure. Rather than mandating specific programmatic interventions, HRSA requires reporting against outcomes drawn from a pre-specified menu of population health measures, requiring states to choose their priorities before the grant period begins.
 
 The NPM framework has been periodically updated, with the 2024 revision adjusting the measure set to reflect current MCH evidence and priorities. The five population health domains from which states select include: Women/Maternal Health, Perinatal/Infant Health, Child Health, Adolescent Health, and Children with Special Health Care Needs. The two Universal NPMs (Postpartum Visit and Medical Home) reflect HRSA's determination that these outcomes are sufficiently central to MCH that all states must be accountable for them regardless of their other priority selections.
 
@@ -46,7 +53,7 @@ CROSS satisfies the Title V NPM and ESM requirements at the structural level, co
 | Title V NPM and ESM Element | CROSS Provision |
 |:--|:--|
 | NPM selection from published menu before grant period begins | Entry specification gate (indicator selection pre-committed and publicly declared) |
-| Two Universal NPMs required of all states | Mandatory indicator fields in entry specification gate |
+| Two Universal NPMs required of all states | Required indicator fields in entry specification gate |
 | NPM pre-selection documented in Block Grant Application | Entry gate documentation published before any state expenditure |
 | ESM requirement for each selected NPM | Theory of Change architecture (activities and outputs specified in relation to the outcome they are designed to produce) |
 | ESM evidence-based or evidence-informed strategy requirement | Causality stance field (Field 10) + evidence threshold field (Field 11) |
@@ -59,10 +66,19 @@ CROSS satisfies the Title V NPM and ESM requirements at the structural level, co
 
 ## How WALKRI Complements This Alignment
 
-WALKRI's five pre-publication requirements address the ESM specification problem that is the primary accountability weakness in the current Title V framework. The NPM menu items are well-specified by HRSA: their definitions, data sources, and measurement methodologies are documented in the Block Grant Guidance. The ESMs, however, are state-generated and vary substantially in specificity. A state may commit to an ESM described as "increasing access to postpartum care in rural communities" without specifying what intervention is being implemented, what data will be collected to track implementation, or what constitutes successful implementation as distinct from partial or failed implementation.
+WALKRI's five pre-publication requirements address the ESM specification problem that is the primary specification weakness in the current Title V framework. The NPM menu items are well-specified by HRSA: their definitions, data sources, and measurement methodologies are documented in the Block Grant Guidance. The ESMs, however, are state-generated and vary substantially in specificity. A state may commit to an ESM described as "increasing access to postpartum care in rural communities" without specifying what intervention is being implemented, what data will be collected to track implementation, or what constitutes successful implementation as distinct from partial or failed implementation.
 
-WALKRI's five requirements applied to ESM development resolve this at the point of pre-publication specification. The criterion intent field establishes what the ESM strategy is designed to achieve and why it is expected to produce the NPM outcome. The operational definition field specifies exactly what the evidence-based or evidence-informed intervention consists of: which components, delivered to which population, in what sequence. The response form field specifies what implementation data is collected and how. The evidence form field specifies what documentation is required to confirm that the intervention was delivered (enrollment records, visit logs, program attendance data). The compliance threshold field specifies what implementation rate constitutes successful delivery of the strategy, producing an ESM that is a substantive commitment rather than a nominal declaration. Applied before any Title V funds are deployed, these requirements produce ESMs that are commensurable across states and auditable by HRSA, resolving the variability that the ESM requirement currently tolerates.
+WALKRI's five requirements applied to ESM development resolve this at the point of pre-publication specification. The criterion intent field establishes what the ESM strategy is designed to achieve and why it is expected to produce the NPM outcome. The operational definition field specifies exactly what the evidence-based or evidence-informed intervention consists of: which components, delivered to which population, in what sequence. The response form field specifies what implementation data is collected and how. The evidence form field specifies what documentation is required to confirm that the intervention was delivered (enrollment records, visit logs, program attendance data). The conformance threshold field specifies what implementation rate constitutes successful delivery of the strategy, producing an ESM that is a substantive commitment rather than a nominal declaration. Applied before any Title V funds are deployed, these requirements produce ESMs that are commensurable across states and auditable by HRSA, resolving the variability that the ESM requirement currently tolerates.
 
 ---
 
 *Published under CC0. For the current version of CROSS and WALKRI, see github.com/CrossWalkri.*
+
+---
+
+## Changelog
+
+| Version | Date | Summary |
+|---|---|---|
+| 0.1.2 | 2026-06-08 | Frame Language own-voice pass applied as part of the corpus-wide 2026-06-08 sweep: own-voice watchlist terms (govern-family, accountability, mandatory, compliance, enforce, legitimate) recast to conformance and obligation vocabulary where they appeared in this document's own voice; citation use of source-framework terms preserved. Primitive-rename references aligned to current canon (Continuity Capacity, the Collective disbursement state, Affected Population Verification Gate). Em-dash- and watchlist-clean re-verified. No compatibility finding or mapping changed; vocabulary only. |
+| 0.1.1 | 2026-05-23 | Retroactive lens tagging: added calibration_tier, authority_source, cultural_methodological_lineage, funder_typology, framework_scope_type per Lenses Framework v0.1.0. |

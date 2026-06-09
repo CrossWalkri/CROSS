@@ -1,20 +1,32 @@
 ---
 title: CROSS - Common Reporting Outcome Standards Schema - Templates
-version: 0.2.0
-date: 2026-05-14
+version: 0.3.1
+date: 2026-06-05
 license: CC0
-status: Working draft. Companion templates document to CROSS-common-reporting-outcome-standards-schema-0_2_0.md. Supersedes version 0.1.0.
+status: Working draft. Companion templates document synced to the CROSS specification at CROSS-common-reporting-outcome-standards-schema-0_5_0.md. Supersedes version 0.2.0.
 ---
 
 # CROSS: Common Reporting Outcome Standards Schema - Templates
 
-Version 0.2.0 | 2026-05-14 | CC0
+Version 0.3.1 | 2026-06-08 | CC0
+
+---
+
+## Changelog
+
+**0.3.1 (2026-06-08).** Frame Language own-voice pass. Own-voice watchlist terms were replaced with the structural act each names (accountability became obligation; the integrity standard became the data quality standard; mandatory became required; "name the individual who assumes personal accountability" became "who is personally answerable"; own-voice beneficiary safety became affected-population safety). Two naming updates aligned the templates with the spec: the Template 1A/1B/1C/2 titles "Build/Retroactive/Change Accountability" became "Build/Retroactive/Change Obligation", and Template 15 "Governance and Continuity Resilience Declaration" became "Continuity Capacity Declaration". Form-field labels, framework names, governance tokens, and the changelog rows were preserved as citation. Em-dash sweep clean. No template was restructured; vocabulary and naming only.
+
+**0.3.0 (2026-06-05).** Synced to the CROSS specification version 0.5.0. Added seven entry-gate declaration templates: Organizational Identity (Template 11), Sufficiency Architecture (Template 12), Public Benefit Mechanism and Access Condition (Template 13), Development Stage (Template 14), Governance and Continuity Resilience (Template 15), Obligation Fulfillment Record for returning applicants (Template 16), and Prior Work Attribution Statement (Template 17). Added a token generation event disclosure section to the Concurrent Funding Disclosure Form (Template 4). Added the served-population risk-bearer floor as a noted consideration in the beneficiary and population sections of the build and change entry templates (Templates 1A, 1C, and 2). Added a CRAFT-inheritance note to the How-to-Use section. No existing template was restructured or rewritten.
+
+**0.2.0 (2026-05-14).** Prior version. Templates 1A through 10.
 
 ---
 
 ## How to Use This Document
 
-This document contains the fillable forms that applicants, reviewers, and grantees use to implement CROSS version 0.2.0. Each template is self-contained. Brief inline instructions explain what each field requires. Completion checklists appear at the end of each template.
+This document contains the fillable forms that applicants, reviewers, and grantees use to implement CROSS. Each template is self-contained. Brief inline instructions explain what each field requires. Completion checklists appear at the end of each template.
+
+**CRAFT inheritance.** CROSS is a domain application of CRAFT (Chains Reveal Attested Falsifiable Truth) for the grants domain. The forms in this document are the applicant-facing surface of that application; the full inheritance, including which of CRAFT's six conditions CROSS realizes and how, is declared in the spec (Part XIII, CRAFT Inheritance Receipt). Applicants do not need to read the receipt to complete these forms, but the fields below are shaped by it: the entry declarations, the disclosure forms, and the gate evidence requirements all exist because CROSS commits to producing an attested, falsifiable record that an independent party can check.
 
 **Which entry specification template to use.** The obligation mode for a round is declared by the funder in the published round specification before the round opens. Applicants do not choose the mode.
 
@@ -23,13 +35,15 @@ This document contains the fillable forms that applicants, reviewers, and grante
 - Change obligation round, Standard scale: use Template 2 (FROM/TO Specification with Theory of Change)
 - Retroactive obligation round: use Template 1B (Retroactive Contribution Form)
 
+All applications also require, at the entry specification gate, a set of declarations that are pre-conditions for gate assessment: Template 11 (Organizational Identity Declaration), Template 12 (Sufficiency Architecture Declaration), Template 14 (Development Stage Declaration), and, where the application rests on a public goods claim, Template 13 (Public Benefit Mechanism and Access Condition Declaration). Where the application produces ongoing infrastructure or names a single primary contributor, Template 15 (Continuity Capacity Declaration) also applies. Returning applicants who have received prior grants from this funder, or who cite prior work as evidence of capability, complete Template 16 (Obligation Fulfillment Record). Any applicant who cites prior work as evidence of capability, track record, or past contribution completes Template 17 (Prior Work Attribution Statement).
+
 All applications also require: Template 3 (Indicator Registration Form, one per indicator), Template 4 (Concurrent Funding Disclosure), and Template 5 (Adverse Signal Disclosure). Reviewers complete Templates 6, 7, and 8 (conflict of interest forms). Template 9 is for privacy-sensitive accommodation requests. Template 10 (Gate Evidence Submission) is used at progress verification and completion verification gates, not at application.
 
 The distinction between Standard and Small Team scale in change-obligation rounds is determined by the granting committee's configuration based on funding amount and the scope of the public impact claim. When in doubt, use the Standard version.
 
 ---
 
-## Template 1A: Build Accountability - Deliverable Specification Form
+## Template 1A: Build Obligation - Deliverable Specification Form
 
 *Use this form when the round operates in build obligation mode. The entry specification asks what the applicant will produce and how a reviewer could verify it is complete. Attach this form to the main application.*
 
@@ -98,6 +112,8 @@ The distinction between Standard and Small Team scale in change-obligation round
 
 > [Enter named beneficiary or user, and briefly describe how the need was expressed]
 
+*Served-population risk-bearer floor (noted consideration).* The served population (the people this deliverable is meant to serve) bears loss when funded work does not reach them. The spec names the served population as a risk-bearer carried through every gate, not validated only at entry. You name them here at entry; at the completion verification gate the funder additionally considers whether work recorded as delivered actually reached them. Naming the served population precisely now (not only an immediate user) makes that later consideration possible.
+
 ---
 
 ### Coordinating Party Engagement Dimension (if activated by the funder)
@@ -125,7 +141,7 @@ The distinction between Standard and Small Team scale in change-obligation round
 
 ---
 
-## Template 1B: Retroactive Accountability - Prior Contribution Form
+## Template 1B: Retroactive Obligation - Prior Contribution Form
 
 *Use this form when the round operates in retroactive obligation mode. The entry specification asks what prior contribution was produced, when, and with what evidence of use. Attach this form to the main application.*
 
@@ -229,7 +245,7 @@ The distinction between Standard and Small Team scale in change-obligation round
 
 ---
 
-## Template 1C: Change Accountability - FROM/TO Specification (Small Team Version)
+## Template 1C: Change Obligation - FROM/TO Specification (Small Team Version)
 
 *Use this form when the round operates in change obligation mode and the committee has determined that Small Team scale applies. It captures the essential FROM state and TO state. Attach this form to the main application.*
 
@@ -259,9 +275,11 @@ The distinction between Standard and Small Team scale in change-obligation round
 
 > [Enter the defined population]
 
+*Served-population risk-bearer floor (noted consideration).* The population named here is a risk-bearer of the round's evaluation, not only the subject of a baseline measurement. The spec carries the served population through every gate: it bears loss when the round funds work that does not serve it. Name it precisely enough that, at the completion verification gate, the funder can consider whether the change you report actually reached this population or whether effects on it fall outside your declared indicators.*
+
 **Source of evidence for the FROM state**
 
-*Name the source. It must be accessible to an independent reviewer. Applicant-controlled sources without independent corroboration do not satisfy the integrity standard.*
+*Name the source. It must be accessible to an independent reviewer. Applicant-controlled sources without independent corroboration do not satisfy the data quality standard.*
 
 > [Enter the named source]
 
@@ -320,7 +338,7 @@ The distinction between Standard and Small Team scale in change-obligation round
 
 ---
 
-## Template 2: Change Accountability - FROM/TO Specification with Theory of Change (Standard Version)
+## Template 2: Change Obligation - FROM/TO Specification with Theory of Change (Standard Version)
 
 *Use this form for Standard scale change-obligation applications. It captures the full FROM state, a formalized theory of change with named assumptions at each step, the TO state, and an adaptive management mechanism. Attach this form to the main application.*
 
@@ -341,6 +359,8 @@ The distinction between Standard and Small Team scale in change-obligation round
 **Population**
 
 > [Enter the defined population]
+
+*Served-population risk-bearer floor (noted consideration).* The population named here is a risk-bearer of the round's evaluation, carried through every gate, not validated only at entry. The spec records that it bears loss when the round funds work that does not serve it. Name it precisely enough that, at the completion verification gate, the funder can consider whether the change you report actually reached this population, and whether effects on it fall outside your declared indicators.*
 
 **Source of evidence for the FROM state**
 
@@ -489,7 +509,7 @@ The distinction between Standard and Small Team scale in change-obligation round
 
 ### Field 2: Rationale for Indicator
 
-*Explain why you selected this indicator over available alternatives. What other indicators did you consider? Why does this one best capture the outcome or deliverable you are claiming? Name at least one alternative considered. This field is mandatory, not optional.*
+*Explain why you selected this indicator over available alternatives. What other indicators did you consider? Why does this one best capture the outcome or deliverable you are claiming? Name at least one alternative considered. This field is required, not optional.*
 
 > [Enter rationale, including alternatives considered and why this indicator was chosen]
 
@@ -770,7 +790,7 @@ Select the version that applies:
 | Field | Entry |
 |---|---|
 | **Source name** | [Name of investor, foundation, decentralized autonomous organization, protocol, or other funder] |
-| **Source type** | [ ] Grant / [ ] Investment / [ ] Revenue / [ ] Prior retroactive award / [ ] Other: [specify] |
+| **Source type** | [ ] Grant / [ ] Investment / [ ] Revenue / [ ] Prior retroactive award / [ ] Token generation event / [ ] Other: [specify] |
 | **Approximate amount** | \$[amount] or [describe if non-monetary] |
 | **Grant period or investment date** | [Start date to end date, or date] |
 | **Relationship to this application's scope** | [Describe how this funding source relates to the work described in this application. If the scopes are non-overlapping, explain why. If they overlap, describe the boundary.] |
@@ -781,9 +801,30 @@ Select the version that applies:
 
 ---
 
+### Token Generation Event Disclosure
+
+*Token generation events, planned or executed within the prior 24 months, are required disclosure items alongside grants and investments. A token generation event is any mechanism by which the applying entity or its principals generate, allocate, or vest tokens to themselves, investors, or the public in a manner that represents or may represent economic value. This includes initial decentralized exchange offerings (IDOs), token generation events (TGEs), initial coin offerings (ICOs), liquidity bootstrapping pool launches, and continuous founder or contributor vesting schedules releasing tokens during the disclosure window. A token that has not yet launched but for which a whitepaper, tokenomics document, or allocation schedule exists is a pending token generation event and must be disclosed. The existence of a token or planned token is not a disqualifier; non-disclosure of a material token event is treated as a concurrent funding omission under the same rules as undisclosed grants or investments.*
+
+- [ ] No token generation event, executed or planned, exists for the applying entity or its principals within the prior 24 months.
+
+- [ ] One or more token generation events, executed or planned, exist. Complete one table per event below.
+
+| Field | Entry |
+|---|---|
+| **Event type** | [ ] IDO / [ ] TGE / [ ] ICO / [ ] Liquidity bootstrapping pool launch / [ ] Founder or contributor vesting schedule / [ ] Other: [specify] |
+| **Status** | [ ] Executed / [ ] Planned (pending) |
+| **Date or planned date** | [Date executed, or planned date if pending] |
+| **Approximate value** | \$[USD value at time of event; for pending events, the planned allocation value based on the most recent publicly stated or implied valuation] |
+| **Allocation summary** | [Who receives the tokens: entity, principals, investors, public, or a combination] |
+| **Supporting document** | [Name the whitepaper, tokenomics document, or allocation schedule, with a publicly accessible location where available] |
+
+*Copy this table for each additional token generation event.*
+
+---
+
 ### Attestation
 
-I confirm that the above is a complete and accurate disclosure of all active funding sources related to the scope of this application from the prior 24 months, and (for retroactive applications) all prior awards for the same or overlapping contribution. I understand that non-disclosure of concurrent funding is a disqualifier under CROSS, and that disclosure itself is not a disqualifier.
+I confirm that the above is a complete and accurate disclosure of all active funding sources related to the scope of this application from the prior 24 months, all token generation events (executed or planned) within that window, and (for retroactive applications) all prior awards for the same or overlapping contribution. I understand that non-disclosure of concurrent funding or of a material token generation event is a disqualifier under CROSS, and that disclosure itself is not a disqualifier.
 
 **Applicant Signature (or Equivalent Attestation):** ___________________________
 
@@ -800,6 +841,7 @@ I confirm that the above is a complete and accurate disclosure of all active fun
 - [ ] Relationship to application scope is explained in free text for each entry
 - [ ] Ongoing obligations are noted (yes/no with detail) for each entry
 - [ ] Decision-making rights are noted (yes/no with detail) for each entry
+- [ ] Token generation event disclosure is complete: either the "none" attestation is checked or one table per executed or planned event is provided
 - [ ] If no sources: "None" is stated explicitly and attestation is signed
 - [ ] Attestation is signed and dated
 
@@ -1166,7 +1208,7 @@ The relationships and declarations in my pre-review conflict of interest declara
 
 ## Template 9: Privacy-Sensitive Context Accommodation Request
 
-*For applications invoking the privacy-sensitive accommodation for indicator sourcing. The accommodation specifies which obligation mechanisms are appropriate to a context where standard measurement would compromise beneficiary safety; it is not an exemption from obligation. Submit with the Indicator Registration Form for the affected indicator(s).*
+*For applications invoking the privacy-sensitive accommodation for indicator sourcing. The accommodation specifies which obligation mechanisms are appropriate to a context where standard measurement would compromise the safety of affected-population members; it is not an exemption from obligation. Submit with the Indicator Registration Form for the affected indicator(s).*
 
 ---
 
@@ -1196,7 +1238,7 @@ The relationships and declarations in my pre-review conflict of interest declara
 
 ### Field 2: Specific Harm the Standard Methodology Would Create
 
-*Name the specific harm, concretely: the population, the mechanism of harm (legal exposure, identification by state actors, retaliation risk), and why this harm is credible in the specific context. Generic references to "privacy" do not satisfy this field.*
+*Name the specific harm, concretely: the population, the mechanism of harm (legal exposure, identification by state actors, retaliation risk), and why this harm is supportable in the specific context. Generic references to "privacy" do not satisfy this field.*
 
 > [Enter the specific harm, population, and harm mechanism]
 
@@ -1210,7 +1252,7 @@ The relationships and declarations in my pre-review conflict of interest declara
 
 **How this methodology produces verifiable outcome evidence**
 
-*Explain how an independent reviewer could confirm, without access to beneficiary-identifying information, that the claimed outcome was produced.*
+*Explain how an independent reviewer could confirm, without access to affected-population-identifying information, that the claimed outcome was produced.*
 
 > [Enter explanation of verifiability]
 
@@ -1232,7 +1274,7 @@ The relationships and declarations in my pre-review conflict of interest declara
 
 ### Field 5: Confirmation of Verifiable Outcome Evidence
 
-- [ ] I confirm that the alternative methodology will produce verifiable outcome evidence that an independent reviewer can assess without requiring access to beneficiary-identifying information.
+- [ ] I confirm that the alternative methodology will produce verifiable outcome evidence that an independent reviewer can assess without requiring access to affected-population-identifying information.
 
 > [Enter confirmation, or describe which condition is not met and what alternative assurance mechanism you propose]
 
@@ -1305,7 +1347,7 @@ The relationships and declarations in my pre-review conflict of interest declara
 
 ---
 
-**Build Accountability Evidence**
+**Build Obligation Evidence**
 
 **Deliverable status**
 
@@ -1336,7 +1378,7 @@ The relationships and declarations in my pre-review conflict of interest declara
 
 ---
 
-**Change Accountability Evidence**
+**Change Obligation Evidence**
 
 **Indicator and reporting period**
 
@@ -1410,4 +1452,524 @@ I confirm that the evidence submitted in this form is accurate and complete to t
 
 ---
 
-*End of CROSS Templates, version 0.2.0.*
+## Template 11: Organizational Identity Declaration
+
+*Required at the entry specification gate in all obligation modes. The organizational identity declaration is a pre-condition for gate assessment, not a scored criterion: an entry submission that omits it is incomplete and is not assessed until it is provided. Complete all six fields. Disclosure is not a disqualifier; non-disclosure of a publicly documentable fact is. Submit with your application.*
+
+---
+
+### Project Name
+
+> [Enter project name]
+
+---
+
+### Field 1: Legal Entity Name and Jurisdiction
+
+*The name of the natural person or registered organization exactly as it appears in the relevant jurisdiction of registration, and the jurisdiction itself. A project name, display name, or code-hosting organization name does not satisfy this field unless it is also the legal name. Where no legal entity exists, state this explicitly and name the individual who is personally answerable for the obligation.*
+
+**Legal entity name**
+
+> [Enter legal name, or state "No legal entity exists" and name the responsible individual]
+
+**Jurisdiction of registration**
+
+> [Enter jurisdiction, or write "Not applicable" with explanation]
+
+---
+
+### Field 2: Parent Organization Declaration
+
+*Whether the applicant operates under or is affiliated with a larger organization, network, or chapter structure. Where a parent organization exists, state its name. Where the applicant is a chapter, working group, or sub-entity, describe the relationship: does the parent know about this application, does it share the applicant's brand or personnel, and is it separately applying to this or a concurrent round of the same program? Silence is not acceptable where an affiliation is publicly documented or where the applicant's name, brand, or personnel overlaps with a known larger organization.*
+
+- [ ] No parent organization exists. The applicant is independent.
+
+- [ ] A parent organization exists. Name and relationship:
+
+> [Enter parent organization name; state whether it knows of this application, whether brand or personnel are shared, and whether it is separately applying to this or a concurrent round]
+
+---
+
+### Field 3: Affiliated Entity Disclosure
+
+*Any other organization, project, or entity that shares the applicant's name, brand, domain, key personnel, or codebase, whether or not a formal legal relationship exists. This field surfaces name collisions, internal fragmentation, and personnel overlap. Disclosure is not a disqualifier; non-disclosure of a publicly documentable affiliation is.*
+
+- [ ] No affiliated entities exist.
+
+- [ ] Affiliated entities exist. List each below.
+
+| Entity name | What is shared (name, brand, domain, personnel, codebase) | Nature of the relationship |
+|---|---|---|
+| [Entity name] | [What is shared] | [Description] |
+| [Add rows as needed] | | |
+
+---
+
+### Field 4: Prior Round History
+
+*Whether the applicant, or any substantially overlapping entity (same personnel, same codebase, same project name, or same legal entity under a different display name), has applied to this program in prior rounds, under what name, and with what outcome. This field catches serial rebranding.*
+
+- [ ] No prior application history with this program exists for the applicant or any overlapping entity.
+
+- [ ] Prior application history exists. Complete the table below.
+
+| Round or period | Name applied under | Outcome |
+|---|---|---|
+| [Round] | [Name] | [Funded / rejected / withdrawn / other] |
+| [Add rows as needed] | | |
+
+*Where a prior funder's gate determination exists as a publicly verifiable signed record, you may cite it here as corroboration, and the reviewing program may query it as independent verification of the claimed history.*
+
+> [Enter any signed gate record reference, or write "None available"]
+
+---
+
+### Field 5: Disbursement Authority
+
+*The named person or persons with legal authority to receive grant funds on behalf of the applying entity and approve their deployment. An entry submission without this declaration is incomplete.*
+
+Select the state that applies:
+
+- [ ] **Individual.** One named person with full authority.
+
+> Name: ___________________________
+
+- [ ] **Collective.** Shared authority through a named mechanism.
+
+> Mechanism: ___________________________
+> Current key holders: ___________________________
+> Quorum threshold: ___________________________
+
+- [ ] **Delegated.** Authority by role.
+
+> Role: ___________________________
+> Current holder: ___________________________
+> Transfer mechanism: ___________________________
+
+*For a decentralized autonomous organization applicant without a legal wrapper, name the controlling wallet address and the coordinating mechanism, with current token holders above the materiality threshold named where possible.*
+
+> [Enter controlling wallet address and coordinating mechanism, where applicable]
+
+---
+
+### Field 6: On-Chain Identity Anchor
+
+*The canonical wallet address by which the applying entity is identifiable across blockchain programs and grant databases. For entities with prior blockchain grant history, this is the address registered in those programs. For entities without prior history, this is the address that will serve as the identity root for this program's records. The anchor is used by the funder for cross-program identity matching and Attestation Corpus queries; it is not a fund receipt address unless it also serves as the disbursement authority. Non-disclosure of an on-chain address publicly associated with the applicant in any grant database is a conformance failure equivalent to non-disclosure in Field 3.*
+
+**On-chain identity anchor address**
+
+> [Enter wallet address]
+
+**Is this address the same as the disbursement authority address?**
+
+- [ ] Yes, the on-chain identity anchor and the disbursement authority are the same address.
+- [ ] No, they are different addresses.
+
+---
+
+### Completion Checklist - Template 11
+
+- [ ] Legal entity name and jurisdiction are provided, or absence of a legal entity is stated with a named responsible individual
+- [ ] Parent organization declaration is complete (either "none" or named with relationship described)
+- [ ] Affiliated entity disclosure is complete (either "none" or each entity listed)
+- [ ] Prior round history is complete (either "none" or table provided)
+- [ ] Disbursement authority state is selected and the matching fields are filled
+- [ ] On-chain identity anchor is provided and its relationship to the disbursement authority address is stated
+- [ ] No fields left blank
+
+---
+
+## Template 12: Sufficiency Architecture Declaration
+
+*Required at the entry specification gate in all obligation modes, alongside the organizational identity declaration. It is a pre-condition for gate assessment. The declaration collects five elements: a scope declaration, a sufficiency position, a portfolio context statement, a grant contribution statement, and the revenue architecture declaration (the last applies to all applicants). Submit with your application.*
+
+---
+
+### Project Name
+
+> [Enter project name]
+
+---
+
+### Element 1: Scope Declaration
+
+*The specific program, sub-entity, or aspect of your work that this application covers, stated clearly enough that an independent reviewer could determine what falls within it and what falls outside it. Where the application covers your entire operation, state this explicitly. Declaring the scope is what allows evaluators to assess additionality and attribute outcomes.*
+
+> [Enter the scope this application covers, and what falls outside it]
+
+---
+
+### Element 2: Sufficiency Position
+
+*Your current resource position at the declared scope, not at the entity level overall. Select one.*
+
+- [ ] **Critical gap.** Resources cover less than half of full scope requirements, and the program's viability depends on closing this gap.
+- [ ] **Partial.** Resources cover more than half, but the program operates below intended capacity.
+- [ ] **Approaching.** Resources are sufficient for current operations but not for the next intended scope expansion.
+- [ ] **Surplus.** Resources exceed current scope requirements in the current period.
+
+**Corroborating evidence (required)**
+
+*The sufficiency position requires at least one piece of corroborating evidence from a source outside your control. Acceptable evidence: publicly accessible treasury data (on-chain balance, Open Collective balance, or equivalent); grant history records from a named external database (KarmaGAP, Gitcoin Explorer, RPGF recipient lists, or equivalent); or disclosed revenue figures from a named independent source. A declaration with no corroborating evidence is accepted at self-report strength only. Where no publicly accessible corroborating evidence exists (for example, a recently formed entity with no prior funding history), state this explicitly and explain why the declared position is reasonable given the absence of verifiable evidence.*
+
+> [Enter the named corroborating source and what it confirms, or state the absence of evidence with explanation]
+
+---
+
+### Element 3: Portfolio Context Statement
+
+*How other funding sources in your funding architecture address other scopes or aspects of your work. This is not concurrent funding disclosure (which asks about other funding for the same scope); it asks how you have organized your pursuit of sufficiency across all your programs, so this application can be evaluated as part of a coherent architecture. Other funding sources for other scopes are expected and are not a disqualifier. Silence about other funding sources in an entity with multiple programs requires explicit explanation.*
+
+> [Enter the portfolio context, or explain the absence of other funding sources]
+
+*Where co-funding is documented in a publicly verifiable coordination record before any work begins, name that record here; it constitutes independently verifiable evidence of this statement.*
+
+> [Enter coordination record reference, or write "None"]
+
+---
+
+### Element 4: Grant Contribution Statement
+
+*What specific gap at the declared scope this grant would close, and what the sufficiency position at that scope would be after the grant's contribution. This is a declaration of where in the sufficiency architecture the grant fits, not a promise about what will be achieved.*
+
+> [Enter the gap this grant closes and the resulting sufficiency position at the declared scope]
+
+---
+
+### Element 5: Revenue Architecture Declaration
+
+*Required for all applicants. Declare your revenue architecture type. For grant-only applicants, this confirms that no commercial revenue model exists. For fee-for-service, commercial, and hybrid applicants, this activates the additionality delineation requirement: you must identify which portion of your work or budget the commercial revenue does not cover, and the grant must be scoped to that non-commercial portion.*
+
+- [ ] **Grant-only.** No commercial revenue model exists.
+- [ ] **Fee-for-service.**
+- [ ] **Commercial.**
+- [ ] **Hybrid.**
+
+*If fee-for-service, commercial, or hybrid: identify the portion of your work or budget the commercial revenue does not cover, to which this grant is scoped.*
+
+> [Enter the non-commercial portion the grant is scoped to, or write "Not applicable: grant-only"]
+
+---
+
+### Completion Checklist - Template 12
+
+- [ ] Scope declaration states what is in and out of scope
+- [ ] Sufficiency position is selected (one of four)
+- [ ] Corroborating evidence from a source outside the applicant's control is named, or its absence is explained
+- [ ] Portfolio context statement is provided, or absence of other funding is explained
+- [ ] Grant contribution statement names the gap closed and the resulting position
+- [ ] Revenue architecture type is selected
+- [ ] For fee-for-service, commercial, or hybrid: the non-commercial portion the grant is scoped to is identified
+- [ ] No fields left blank
+
+---
+
+## Template 13: Public Benefit Mechanism and Access Condition Declaration
+
+*Required at the entry specification gate for any application whose eligibility is assessed against a public goods claim. Where active, it is a pre-condition for gate assessment alongside Templates 11 and 12: an entry submission that includes a public goods claim but omits this declaration is incomplete. The declaration collects two elements: a mechanism type statement and an access condition statement. The mechanism type declared at entry constrains the evidence scope required at the completion gate. Submit with your application.*
+
+---
+
+### Project Name
+
+> [Enter project name]
+
+---
+
+### Element 1: Mechanism Type Statement
+
+*Which of the four mechanism types your public goods claim rests on. Each commits you to a minimum evidence scope at the completion gate. A declared mechanism that cannot be supported by the evidence scope available at the completion gate is a misrepresentation in the entry specification. If the program's round configuration accepts only certain mechanism types, select only from those accepted.*
+
+- [ ] **Output production.** Benefit arises from producing an artifact and releasing it openly. Commits to output evidence at minimum.
+- [ ] **Access provision.** Benefit arises from providing access to a resource. Commits to usage evidence.
+- [ ] **Condition change.** Benefit arises from changing a condition in a defined population. Commits to outcome evidence.
+- [ ] **Ecosystem shift.** Benefit arises from shifting an ecosystem-level condition. Commits to a documented impact contribution argument.
+
+---
+
+### Element 2: Access Condition Statement
+
+*The specific terms under which the declared mechanism delivers benefit to the stated population, specified with enough precision that an independent reviewer could confirm them without contacting you. The required content is determined by the mechanism type. Complete the block matching your selection above.*
+
+**For output production**
+
+*Provide the SPDX license identifier and the location of the license file. A copyright notice that permits free viewing without granting modification or redistribution rights does not satisfy this condition. A "source available" or "fair code" license that restricts commercial use does not satisfy it unless the program's published round configuration explicitly accepts such licenses and states the accepted SPDX identifiers. The license must be present in the artifact at the completion gate; a future licensing commitment without a current license does not satisfy the condition at entry.*
+
+> SPDX license identifier: ___________________________
+> License file location: ___________________________
+
+*Is the license applied to the outputs now, or committed for the completion gate?*
+
+- [ ] Applied now.
+- [ ] Will be applied by the completion gate. Date or condition: ___________________________
+
+**For access provision**
+
+> Access mechanism: ___________________________
+> Cost structure: ___________________________
+> Non-excludability mechanism: ___________________________
+
+**For condition change**
+
+> FROM state: ___________________________
+> Population definition: ___________________________
+
+**For ecosystem shift**
+
+> Named causal pathway: ___________________________
+> Co-factor list: ___________________________
+
+---
+
+### Element 3: Timing of the Access Condition
+
+*State whether the access conditions are current at the time of application, will be achieved at the completion gate, or both.*
+
+- [ ] Current at the time of application.
+- [ ] Will be achieved at the completion gate.
+- [ ] Both.
+
+---
+
+### Completion Checklist - Template 13
+
+- [ ] Mechanism type is selected (one of four), and is among the types the program accepts
+- [ ] The access condition block matching the selected mechanism type is complete
+- [ ] For output production: an SPDX license identifier and license file location are provided, and license timing is stated
+- [ ] Timing of the access condition is stated (current, at completion gate, or both)
+- [ ] The declared mechanism is consistent with the evidence scope available at the completion gate
+- [ ] No fields left blank
+
+---
+
+## Template 14: Development Stage Declaration
+
+*Required at the entry specification gate in all rounds. Universal. The declared stage constrains which obligation modes are coherent and which evidence scopes are achievable at the completion gate. Funders declare in their round configuration which stages are within scope; check the published configuration before completing this form. A declared stage not supported by the provided evidence is a material discrepancy requiring investigation. Submit with your application.*
+
+---
+
+### Project Name
+
+> [Enter project name]
+
+---
+
+### Field 1: Declared Stage
+
+*Select one. Each stage carries a minimum evidence requirement, stated in the field.*
+
+- [ ] **Stage 1: Proof of concept.** Provide output evidence of the existing artifact.
+- [ ] **Stage 2: Early adoption.** Provide usage evidence from at least one named external user.
+- [ ] **Stage 3: Growth.** Provide independently verifiable adoption data with a trend.
+- [ ] **Stage 4: Established infrastructure.** Provide 12 months of sustained usage data from sources outside the team.
+- [ ] **Stage 5: Retroactive recognition.** Provide prior contribution evidence in the entry submission.
+
+---
+
+### Field 2: Why This Stage Rather Than an Adjacent One
+
+*Describe why your work is at the declared stage and not the stage below or above it. A Stage 1 declaration paired with independent usage evidence, or a Stage 3-or-higher declaration paired with no independently verifiable adoption data, is a discrepancy a reviewer will investigate.*
+
+> [Enter the description]
+
+---
+
+### Field 3: Evidence Confirming the Declared Stage
+
+*At least one piece of evidence from a source outside your control, matching the minimum for your declared stage above.*
+
+| Evidence | Source (outside applicant control) | What it confirms about the stage |
+|---|---|---|
+| [Describe the evidence] | [Named source] | [What it confirms] |
+| [Add rows as needed] | | |
+
+---
+
+### Field 4: Consistency With Obligation Mode
+
+*The declared stage constrains obligation mode selection. A Stage 1 applicant committing to a change obligation must provide a FROM state and population baseline at entry, coherent only if the Stage 1 artifact is specifically designed to measure against an existing condition. A Stage 4 applicant selecting a build obligation must specify what new functionality is added beyond sustained operation. Confirm consistency or explain it.*
+
+> [Enter confirmation of consistency between declared stage and obligation mode, or the explanation]
+
+---
+
+### Completion Checklist - Template 14
+
+- [ ] Declared stage is selected (one of five) and is within the round's published scope
+- [ ] Explanation of why this stage rather than an adjacent one is provided
+- [ ] At least one piece of evidence from a source outside the applicant's control is provided, matching the stage minimum
+- [ ] Consistency between the declared stage and the chosen obligation mode is confirmed or explained
+- [ ] No fields left blank
+
+---
+
+## Template 15: Continuity Capacity Declaration
+
+*Required where the Continuity Capacity dimension is active: grants above a funder-defined size threshold, grants producing ongoing infrastructure with continuing operational requirements, and any application where the applying entity has a single named primary contributor and no documented backup capacity. For programs that fund infrastructure maintenance or sustained service delivery, this dimension is always active. The declaration of a single point of failure is not a disqualifier; it is a material fact affecting the sustainability assessment at the continuation gate. Submit with your application where the dimension is active.*
+
+---
+
+### Project Name
+
+> [Enter project name]
+
+---
+
+### Field 1: Resilience State
+
+*Declare one of three states, with supporting evidence.*
+
+- [ ] **Single.** Continuation depends on one named person, with no documented backup capacity.
+- [ ] **Partial.** Some continuity capacity exists beyond a single person, but it is incomplete.
+- [ ] **Resilient.** Continuity does not depend on any single person; documented backup capacity exists.
+
+---
+
+### Field 2: Supporting Evidence
+
+> [Enter the evidence supporting the declared state: named roles, documented backup arrangements, key-holder lists, or equivalent]
+
+---
+
+### Field 3: Single Point of Failure Detail (complete if "Single" or "Partial" is declared)
+
+*For single-point-of-failure continuity, name the person on whom continuation depends and state what would happen to active grants and funded deliverables if that person became unavailable.*
+
+**Person on whom continuation depends**
+
+> [Enter name or role]
+
+**What would happen to active grants and funded deliverables if that person became unavailable**
+
+> [Enter the description]
+
+---
+
+### Field 4: Acknowledgement of Completion Gate Conditions
+
+*A funder may configure the completion gate to require evidence of partial or resilient continuity as a condition of final disbursement for grants above the threshold. Confirm you have reviewed the published round configuration for any such condition.*
+
+- [ ] I have reviewed the round configuration and understand whether evidence of partial or resilient continuity is a condition of final disbursement for this grant.
+
+---
+
+### Completion Checklist - Template 15
+
+- [ ] Resilience state is declared (one of three)
+- [ ] Supporting evidence for the declared state is provided
+- [ ] For single or partial states: the person depended upon is named and the consequence of their unavailability is stated
+- [ ] The completion gate condition acknowledgement is checked
+- [ ] No fields left blank
+
+---
+
+## Template 16: Obligation Fulfillment Record (Returning Applicants)
+
+*Required at the entry specification gate, before gate assessment proceeds, where any of these apply: you have received prior grants from this funder in any prior round; you cite prior work as evidence of capability at the entry gate; or your prior round history includes unresolved KarmaGAP milestones or open gate conditions. An unfulfilled prior obligation is not automatically disqualifying; it is a disclosed fact affecting the track record assessment. An unfulfilled obligation that is not disclosed here but is discovered through research is a material discrepancy: non-disclosure of a prior failure is treated more seriously than the failure itself. Submit with your application where applicable.*
+
+---
+
+### Project Name
+
+> [Enter project name]
+
+---
+
+### Prior Grant Record (one table per prior grant from this funder)
+
+| Field | Entry |
+|---|---|
+| **Prior round or grant reference** | [Round name or grant identifier] |
+| **Obligation mode of that round** | [ ] Build / [ ] Change / [ ] Retroactive |
+| **What was committed at the entry gate** | [The deliverable specification, the FROM-TO state, or the contribution evidence, as appropriate to the mode] |
+| **What was produced during the grant period** | [The artifact, the measured change, or the verified contribution, with a publicly accessible link] |
+| **Fulfillment status** | [ ] Fulfilled / [ ] Partially fulfilled / [ ] Unfulfilled |
+| **Explanation where fulfillment was not complete** | [What prevented fulfillment and what has changed since; required where status is partial or unfulfilled] |
+
+*Copy this table for each additional prior grant from this funder.*
+
+---
+
+### Attestation
+
+I confirm that this record is a complete and accurate account of my prior obligations to this funder and of the prior work I cite as evidence of capability. I understand that non-disclosure of a prior obligation that is later discovered through research is treated more seriously than the underlying failure itself.
+
+**Applicant Signature (or Equivalent Attestation):** ___________________________
+
+**Date:** ___________________________
+
+---
+
+### Completion Checklist - Template 16
+
+- [ ] One table per prior grant from this funder
+- [ ] Obligation mode of each prior round is stated
+- [ ] What was committed at the entry gate is recorded for each
+- [ ] What was produced is recorded for each, with a publicly accessible link
+- [ ] Fulfillment status is stated for each
+- [ ] Where status is partial or unfulfilled: an explanation is provided
+- [ ] Attestation is signed and dated
+
+---
+
+## Template 17: Prior Work Attribution Statement
+
+*Required wherever an applicant cites prior work as evidence of capability, track record, or past contribution in any entry gate submission. This activates for all three obligation modes: build-obligation applicants citing prior deliverables; change-obligation applicants citing prior outcomes as a baseline or established methodology; and retroactive-obligation applicants whose entire entry submission consists of prior work. The statement is an adverse signal disclosure requirement: an applicant who cannot truthfully complete it for cited prior work has surfaced a misrepresentation in the core evidential basis of the application. Submit with your application where applicable.*
+
+---
+
+### Project Name
+
+> [Enter project name]
+
+---
+
+### Prior Work Attribution (one block per piece of prior work cited)
+
+**Cited prior work**
+
+> [Name and briefly describe the prior work cited]
+
+**Question 1: Entity of performance**
+
+*Under which legal entity or organizational context was the cited work performed? If it was performed as an employee, contractor, or contributor to an organization that is not the applying entity, name that organization. If it was performed under the applying entity's own resources, state that explicitly.*
+
+> [Enter the entity of performance]
+
+**Question 2: Applicant's relationship at the time and now**
+
+*What was your role in the entity under which the work was performed, and what is the current status of that relationship? State both the relationship at the time of creation and the relationship at the time of application. An individual who founded a project within an organization and has since departed is in a materially different position from one who founded and has controlled an independent project throughout.*
+
+> [Enter relationship at the time of creation and at the time of application]
+
+**Question 3: Current ownership and access**
+
+*Who currently holds the intellectual property rights to the cited work, who controls the deployment or codebase, and who has the user relationship with any users cited as evidence of impact? If the applying entity does not hold the rights, does not control the deployment, or does not have the relationship with the cited users, state this.*
+
+> [Enter current ownership, control of deployment, and user relationship]
+
+*Copy this block for each additional piece of prior work cited.*
+
+---
+
+### Attestation
+
+I confirm that this attribution statement is complete and accurate for each piece of prior work I cite. I understand that citing work performed under a different entity, without that entity's knowledge or endorsement of this application, claims responsibility for outcomes I did not control.
+
+**Applicant Signature (or Equivalent Attestation):** ___________________________
+
+**Date:** ___________________________
+
+---
+
+### Completion Checklist - Template 17
+
+- [ ] One block per piece of prior work cited
+- [ ] Entity of performance is named for each
+- [ ] Relationship at the time of creation and at the time of application is stated for each
+- [ ] Current ownership, control of deployment, and user relationship are stated for each
+- [ ] Attestation is signed and dated
+
+---
+
+*End of CROSS Templates, version 0.3.0.*

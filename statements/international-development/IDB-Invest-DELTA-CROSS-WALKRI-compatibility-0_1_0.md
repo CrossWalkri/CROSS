@@ -1,12 +1,19 @@
 ---
 title: IDB Invest DELTA Impact Rating System Compatibility - CROSS+WALKRI
-version: 0.1.0
-date: 2026-05-18
+version: 0.1.2
+date: 2026-06-08
 license: CC0
 standards: CROSS v0.4.2 (github.com/CrossWalkri/CROSS), WALKRI v0.1.6 (github.com/CrossWalkri/WALKRI)
 references:
   - IDB Invest Impact Management Framework (idbinvest.org/en/impact-management-framework)
   - IDB Invest Development Effectiveness Overview DEO 2023 (publications.iadb.org/publications/english/document/Development-Effectiveness-Overview-DEO-2023.pdf)
+lens_tags:
+  calibration_tier: independently_verified
+  authority_source: voluntary_published
+  cultural_methodological_lineage: hybrid
+  funder_typology: multilateral_bank_or_fund
+  framework_scope_type: grantee_outcome_measurement
+  # IDB Invest DELTA framework; hybrid Latin American institutional plus multilateral development bank lineage per Lenses Framework
 ---
 
 # IDB Invest DELTA Impact Rating System Compatibility
@@ -19,7 +26,7 @@ references:
 
 IDB Invest, the Inter-American Development Bank's private sector window, applies its DELTA impact rating system to every investment in its portfolio, scoring each on a 0-10 scale across four analytical components: stakeholder analysis, additionality assessment, sustainability assessment, and economic and social rate-of-return approximation. CROSS's structural fields satisfy each DELTA component as a consequence of conformance, and the gate architecture produces annually updatable evidence that corresponds to DELTA's annual supervision requirement. WALKRI ensures that the indicator data feeding DELTA's rate-of-return approximation meets the specification standards that IDB Invest evaluators require.
 
-DELTA is the primary impact measurement instrument for private sector development finance in Latin America and the Caribbean, applied across a portfolio exceeding fifteen billion USD. This compatibility statement is relevant for programs and funds seeking IDB Invest co-investment or technical assistance, and for regional grantmakers seeking credibility with IDB Invest's standards.
+DELTA is the primary impact measurement instrument for private sector development finance in Latin America and the Caribbean, applied across a portfolio exceeding fifteen billion USD. This compatibility statement is relevant for programs and funds seeking IDB Invest co-investment or technical assistance, and for regional grantmakers seeking standing against IDB Invest's standards.
 
 ---
 
@@ -68,12 +75,21 @@ CROSS's structural architecture addresses each of the four DELTA components thro
 
 ## How WALKRI Complements This Alignment
 
-IDB Invest's DELTA rate-of-return approximation depends critically on the quality of indicator data: specifically, on whether baseline and target values were defined using the same operational methodology, whether reported actuals are comparable to baseline values, and whether the indicator's counting rule is sufficiently precise that different data collectors would produce consistent results. When indicator specifications are ambiguous, the rate-of-return approximation becomes unreliable, and DELTA's analytical credibility is undermined.
+IDB Invest's DELTA rate-of-return approximation depends critically on the quality of indicator data: specifically, on whether baseline and target values were defined using the same operational methodology, whether reported actuals are comparable to baseline values, and whether the indicator's counting rule is sufficiently precise that different data collectors would produce consistent results. When indicator specifications are ambiguous, the rate-of-return approximation becomes unreliable, and DELTA's analytical verifiability is undermined.
 
-WALKRI addresses this at the collection instrument level. By requiring each data collection field to specify its criterion intent, operational definition, construction methodology, and evidence form before any program operator or beneficiary submits data, WALKRI ensures that the values feeding DELTA's rate-of-return calculation are produced by pre-specified methodologies that a DELTA evaluator can verify. The WALKRI Accuracy criterion directly addresses the measurement comparability problem that rate-of-return calculations require: it specifies whether the field measures what it claims to measure, using a methodology that would produce consistent results across different data collectors and time periods.
+WALKRI addresses this at the collection instrument level. By requiring each data collection field to specify its criterion intent, operational definition, construction methodology, and evidence form before any program operator or affected-population member submits data, WALKRI ensures that the values feeding DELTA's rate-of-return calculation are produced by pre-specified methodologies that a DELTA evaluator can verify. The WALKRI Accuracy criterion directly addresses the measurement comparability problem that rate-of-return calculations require: it specifies whether the field measures what it claims to measure, using a methodology that would produce consistent results across different data collectors and time periods.
 
 For programs seeking IDB Invest co-investment or technical assistance in the Latin America and Caribbean region, WALKRI conformance provides a competitive advantage in the pre-investment DELTA assessment: the program can demonstrate, through its WALKRI field specifications, that its impact data meets the specification quality standards that IDB Invest evaluators require. This shifts the DELTA pre-investment review from a data quality investigation to a structured specification verification, which is faster and more likely to produce a high DELTA score.
 
 ---
 
 *Published under CC0. For the current version of CROSS and WALKRI, see github.com/CrossWalkri.*
+
+---
+
+## Changelog
+
+| Version | Date | Summary |
+|---|---|---|
+| 0.1.2 | 2026-06-08 | Frame Language own-voice pass applied as part of the corpus-wide 2026-06-08 sweep: own-voice watchlist terms (govern-family, accountability, mandatory, compliance, enforce, legitimate) recast to conformance and obligation vocabulary where they appeared in this document's own voice; citation use of source-framework terms preserved. Primitive-rename references aligned to current canon (Continuity Capacity, the Collective disbursement state, Affected Population Verification Gate). Em-dash- and watchlist-clean re-verified. No compatibility finding or mapping changed; vocabulary only. |
+| 0.1.1 | 2026-05-23 | Retroactive lens tagging: added calibration_tier, authority_source, cultural_methodological_lineage, funder_typology, framework_scope_type per Lenses Framework v0.1.0. |

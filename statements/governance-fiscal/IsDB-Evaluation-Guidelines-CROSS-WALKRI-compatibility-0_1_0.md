@@ -1,13 +1,20 @@
 ---
 title: IsDB Independent Evaluation Guidelines Compatibility - CROSS+WALKRI
-version: 0.1.0
-date: 2026-05-18
+version: 0.1.2
+date: 2026-06-08
 license: CC0
 standards: CROSS v0.4.2 (github.com/CrossWalkri/CROSS), WALKRI v0.1.6 (github.com/CrossWalkri/WALKRI)
 references:
   - IsDB Independent Evaluation Guidelines for Public Sector Project Evaluation, September 2024 (isdb.org/sites/default/files/media/documents/2024-09/Independent%20Evaluation%20Guidelines%20for%20Public%20Sector%20Project%20Evaluation.pdf)
   - IsDB Guidelines for Preparing Project Performance Evaluation Reports, 2024 (isdb.org/publications/independent-evaluation-guidelines-for-project-completion-report)
   - IsDB Evaluation Typology and Nomenclature, September 2024
+lens_tags:
+  calibration_tier: independently_verified
+  authority_source: voluntary_published
+  cultural_methodological_lineage: islamic_finance_jurisprudence
+  funder_typology: multilateral_bank_or_fund
+  framework_scope_type: grantee_outcome_measurement
+  # Islamic Development Bank Evaluation Guidelines; multilateral bank with Islamic finance jurisprudential framing
 ---
 
 # IsDB Independent Evaluation Guidelines Compatibility
@@ -18,7 +25,7 @@ references:
 
 ## Summary
 
-The Islamic Development Bank's Independent Evaluation Department (IEvD) publishes formal evaluation guidelines specifying what project-level evidence is required at completion and performance evaluation. CROSS's gate architecture satisfies these requirements as a consequence of its compliance with OECD DAC evaluation criteria, which the IsDB RBMF explicitly adopts. A CROSS+WALKRI-conformant program produces, as a structural byproduct of conformance, the gate evidence records that IsDB's IEvD requires for project completion evaluation and performance supervision.
+The Islamic Development Bank's Independent Evaluation Department (IEvD) publishes formal evaluation guidelines specifying what project-level evidence is required at completion and performance evaluation. CROSS's gate architecture satisfies these requirements as a consequence of its conformance with OECD DAC evaluation criteria, which the IsDB RBMF explicitly adopts. A CROSS+WALKRI-conformant program produces, as a structural byproduct of conformance, the gate evidence records that IsDB's IEvD requires for project completion evaluation and performance supervision.
 
 The IsDB Results-Based Management Framework (RBMF) operates across four tiers, and CROSS's layered obligation architecture maps to each tier without additional adaptation. WALKRI ensures that the data feeding IsDB's consolidated results indicators meets the specification quality standards that independent evaluators apply when verifying reported values.
 
@@ -46,7 +53,7 @@ The Guidelines for Preparing Project Performance Evaluation Reports (2024) speci
 
 ## How CROSS Satisfies the IsDB Evaluation Guidelines
 
-CROSS satisfies IsDB evaluation requirements as a consequence of its OECD DAC compliance. Because IsDB's RBMF is built on the same six OECD DAC criteria that CROSS's obligation architecture addresses, conformance with CROSS produces project-level evidence records that satisfy IsDB's completion and performance evaluation requirements without any additional documentation effort.
+CROSS satisfies IsDB evaluation requirements as a consequence of its OECD DAC conformance. Because IsDB's RBMF is built on the same six OECD DAC criteria that CROSS's obligation architecture addresses, conformance with CROSS produces project-level evidence records that satisfy IsDB's completion and performance evaluation requirements without any additional documentation effort.
 
 The four-tier RBMF architecture maps to CROSS's layered obligation architecture as follows:
 
@@ -79,10 +86,19 @@ The project completion report format that IsDB's IEvD requires is satisfied by t
 
 IsDB's IEvD evaluators, when assessing Tier 2 consolidated results indicators, must determine whether the values reported by individual projects were produced by comparable measurement methodologies. When projects define their indicators differently, use different counting rules, or apply inconsistent disaggregation specifications, the roll-up to Tier 2 becomes analytically unreliable. This is a known limitation in multi-project portfolio evaluation, and it is a primary source of the "results washing" risk that independent evaluators are trained to detect.
 
-WALKRI addresses this limitation at the collection instrument level. By requiring each data field to specify its criterion intent, operational definition, construction methodology, and evidence form before any program operator or beneficiary submits data, WALKRI ensures that the values feeding into IsDB's consolidated results indicators are produced by pre-specified, documented methodologies. This makes the IEvD evaluator's job significantly more tractable: rather than reconstructing measurement intent from ambiguous field labels, the evaluator can read the WALKRI field specification and determine directly whether the reported value is comparable with values from other projects in the same sector.
+WALKRI addresses this limitation at the collection instrument level. By requiring each data field to specify its criterion intent, operational definition, construction methodology, and evidence form before any program operator or affected-population member submits data, WALKRI ensures that the values feeding into IsDB's consolidated results indicators are produced by pre-specified, documented methodologies. This makes the IEvD evaluator's job significantly more tractable: rather than reconstructing measurement intent from ambiguous field labels, the evaluator can read the WALKRI field specification and determine directly whether the reported value is comparable with values from other projects in the same sector.
 
 For programs operating under IsDB co-financing or technical assistance mandates, WALKRI conformance also satisfies the data quality documentation requirement that IsDB project appraisal documents typically impose on implementing partners.
 
 ---
 
 *Published under CC0. For the current version of CROSS and WALKRI, see github.com/CrossWalkri.*
+
+---
+
+## Changelog
+
+| Version | Date | Summary |
+|---|---|---|
+| 0.1.2 | 2026-06-08 | Frame Language own-voice pass applied as part of the corpus-wide 2026-06-08 sweep: own-voice watchlist terms (govern-family, accountability, mandatory, compliance, enforce, legitimate) recast to conformance and obligation vocabulary where they appeared in this document's own voice; citation use of source-framework terms preserved. Primitive-rename references aligned to current canon (Continuity Capacity, the Collective disbursement state, Affected Population Verification Gate). Em-dash- and watchlist-clean re-verified. No compatibility finding or mapping changed; vocabulary only. |
+| 0.1.1 | 2026-05-23 | Retroactive lens tagging: added calibration_tier, authority_source, cultural_methodological_lineage, funder_typology, framework_scope_type per Lenses Framework v0.1.0. |

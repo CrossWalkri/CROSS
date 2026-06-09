@@ -1,7 +1,7 @@
 ---
 title: Ryan White HIV/AIDS Program Services Report and HAB Performance Measures Compatibility - CROSS+WALKRI
-version: 0.1.0
-date: 2026-05-18
+version: 0.1.2
+date: 2026-06-08
 license: CC0
 standards: CROSS v0.4.5 (github.com/CrossWalkri/CROSS), WALKRI v0.1.7 (github.com/CrossWalkri/WALKRI)
 references:
@@ -10,6 +10,13 @@ references:
   - HAB Performance Measures (hab.hrsa.gov/clinical-quality-management/performance-measures)
   - Electronic Handbook (EHB) (grants.hrsa.gov/grantee)
   - HHS HIV Clinical Guidelines (hivinfo.nih.gov/understanding-hiv/fact-sheets/hhs-guidelines)
+lens_tags:
+  calibration_tier: outcome_specified_self_reported
+  authority_source: statutory
+  cultural_methodological_lineage: western_institutional
+  funder_typology: government_non_aid
+  framework_scope_type: grantee_outcome_measurement
+  # Ryan White HIV/AIDS Treatment Extension Act statutory authority
 ---
 
 # Ryan White HIV/AIDS Program Services Report and HAB Performance Measures
@@ -32,11 +39,11 @@ The Ryan White HIV/AIDS Program reporting framework has five structural features
 
 **HIV-specific clinical performance measures:** HAB publishes a Performance Measures set organized around HIV-specific clinical outcomes. The core measures include viral suppression rate (percentage of clients with the most recent viral load below the detectability threshold), engagement in care (percentage of newly diagnosed clients who initiate HIV medical care within 90 days of diagnosis), retention in care (percentage of clients receiving at least two HIV medical visits in a 12-month period with a gap of no more than 90 days), and antiretroviral therapy prescription rate. These measures are established by HAB and aligned to HHS HIV Clinical Guidelines before any program year begins. They are not grantee-designed; they are the national pre-specified indicator set against which all Ryan White programs are evaluated.
 
-**Mandatory annual RSR submission through EHB:** All Parts A, B, C, and D grantees and their subrecipients submit the RSR annually, with a deadline of the last Monday in March each year. Submission is through HRSA's Electronic Handbook, not through the UDS system used by Health Center Program grantees. The EHB submission system enforces field definitions, allowable value ranges, and eUCI encryption at the point of data entry. This enforced standardization at the data submission level functions as a system-implemented form of WALKRI's compliance threshold requirement: data that does not conform to the EHB field specifications cannot be submitted.
+**Mandatory annual RSR submission through EHB:** All Parts A, B, C, and D grantees and their subrecipients submit the RSR annually, with a deadline of the last Monday in March each year. Submission is through HRSA's Electronic Handbook, not through the UDS system used by Health Center Program grantees. The EHB submission system enforces field definitions, allowable value ranges, and eUCI encryption at the point of data entry. This enforced standardization at the data submission level functions as a system-implemented form of WALKRI's conformance threshold requirement: data that does not conform to the EHB field specifications cannot be submitted.
 
 **Population restricted to HIV-positive clients:** Unlike the UDS, which covers all patients served by a Health Center Program grantee regardless of condition, the RSR covers only clients who are HIV-positive and receiving Ryan White-funded services. This population restriction means that the RSR's disaggregation data (race, ethnicity, age, gender, HIV transmission category, insurance status) reflects the HIV-positive client population specifically. CROSS's population scope declaration for a Ryan White program must explicitly define this population boundary; a Ryan White program that declares a population scope without specifying the HIV-positive restriction produces a declaration that does not correspond to what the RSR captures.
 
-**Separate HAB Clinical Quality Management requirements:** In addition to the RSR, Ryan White grantees must maintain a Clinical Quality Management (CQM) program as a statutory requirement. The CQM program must assess the quality of HIV-related health care provided, identify ways to improve outcomes, and implement quality improvement activities. The CQM requirement creates a mandatory internal improvement cycle that corresponds to CROSS's completion gate structure: grantees must periodically review evidence of clinical outcomes against the HAB Performance Measures and implement changes when performance falls below acceptable thresholds.
+**Separate HAB Clinical Quality Management requirements:** In addition to the RSR, Ryan White grantees must maintain a Clinical Quality Management (CQM) program as a statutory requirement. The CQM program must assess the quality of HIV-related health care provided, identify ways to improve outcomes, and implement quality improvement activities. The CQM requirement creates a required internal improvement cycle that corresponds to CROSS's completion gate structure: grantees must periodically review evidence of clinical outcomes against the HAB Performance Measures and implement changes when performance falls below acceptable thresholds.
 
 ---
 
@@ -63,7 +70,7 @@ CROSS addresses the RSR and HAB Performance Measures requirements at the structu
 | HAB national data publication | Attestation corpus (independently accessible program performance data) |
 | CQM periodic clinical outcome review | Completion gate checkpoints (evidence reviewed against pre-specified indicators at intervals) |
 | CQM quality improvement implementation | Change obligation follow-through (improvement actions documented when performance falls below threshold) |
-| EHB field validation at submission | Compliance threshold enforcement (non-conforming data cannot be submitted) |
+| EHB field validation at submission | Conformance threshold enforcement (non-conforming data cannot be submitted) |
 | Detectability threshold for viral load | Field 11 (evidence threshold: specific viral copies/mL below which suppression is confirmed) |
 
 ---
@@ -72,10 +79,19 @@ CROSS addresses the RSR and HAB Performance Measures requirements at the structu
 
 The HAB Performance Measures define what must be measured at the clinical indicator level but do not specify, at the intake field level, how Ryan White grantees and subrecipients must design the forms and instruments that collect the underlying data. A program measuring viral suppression rate must collect viral load results from laboratory reports and link them to client identifiers in its own data system before uploading through the EHB. The specification of what qualifies as a valid laboratory report, what the measurement interval is (how recently the lab draw must have occurred to count toward the current program year measure), and what documentation the program must retain in the client record are not specified in the HAB Performance Measures themselves. These are the decisions that WALKRI's pre-publication requirements address.
 
-WALKRI's five pre-publication requirements applied to Ryan White intake fields and data collection instruments resolve the most common sources of inconsistency in HAB Performance Measure data across Ryan White subrecipients: different programs use different definitions of "most recent" viral load, different conventions for handling clients with viral loads measured at non-Ryan White facilities, and different thresholds for what documentation is required to confirm antiretroviral therapy prescription. WALKRI's criterion intent requirement forces each intake field to specify which HAB Performance Measure it feeds and what role it plays in that measure's calculation. The operational definition requirement specifies exactly what qualifies as a valid data entry for that field in the context of this program's client population and data system. The evidence form requirement specifies what source document (lab report, pharmacy record, encounter note) is required, what elements of that document must be present, and how it is recorded in the client's file. The compliance threshold requirement specifies the minimum documentation standard below which a client's data is treated as incomplete for RSR submission purposes.
+WALKRI's five pre-publication requirements applied to Ryan White intake fields and data collection instruments resolve the most common sources of inconsistency in HAB Performance Measure data across Ryan White subrecipients: different programs use different definitions of "most recent" viral load, different conventions for handling clients with viral loads measured at non-Ryan White facilities, and different thresholds for what documentation is required to confirm antiretroviral therapy prescription. WALKRI's criterion intent requirement forces each intake field to specify which HAB Performance Measure it feeds and what role it plays in that measure's calculation. The operational definition requirement specifies exactly what qualifies as a valid data entry for that field in the context of this program's client population and data system. The evidence form requirement specifies what source document (lab report, pharmacy record, encounter note) is required, what elements of that document must be present, and how it is recorded in the client's file. The conformance threshold requirement specifies the minimum documentation standard below which a client's data is treated as incomplete for RSR submission purposes.
 
 For subrecipient networks, where a Parts A or B grantee passes Ryan White funding to multiple subrecipients, the WALKRI pre-publication audit conducted across all subrecipients' intake instruments ensures that each subrecipient is collecting the underlying data in a way that corresponds to the same HAB Performance Measure definitions. Without this standardization, a network's aggregate RSR data reflects not only clinical variation but also measurement variation across subrecipients. WALKRI's pre-publication requirement applied before any subrecipient opens enrollment eliminates measurement variation as a source of performance data inconsistency, leaving clinical variation as the only remaining explanation for differences across the network.
 
 ---
 
 *Published under CC0. For the current version of CROSS and WALKRI, see github.com/CrossWalkri.*
+
+---
+
+## Changelog
+
+| Version | Date | Summary |
+|---|---|---|
+| 0.1.2 | 2026-06-08 | Frame Language own-voice pass applied as part of the corpus-wide 2026-06-08 sweep: own-voice watchlist terms (govern-family, accountability, mandatory, compliance, enforce, legitimate) recast to conformance and obligation vocabulary where they appeared in this document's own voice; citation use of source-framework terms preserved. Primitive-rename references aligned to current canon (Continuity Capacity, the Collective disbursement state, Affected Population Verification Gate). Em-dash- and watchlist-clean re-verified. No compatibility finding or mapping changed; vocabulary only. |
+| 0.1.1 | 2026-05-23 | Retroactive lens tagging: added calibration_tier, authority_source, cultural_methodological_lineage, funder_typology, framework_scope_type per Lenses Framework v0.1.0. |

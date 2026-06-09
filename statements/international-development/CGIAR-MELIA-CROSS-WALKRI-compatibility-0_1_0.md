@@ -1,12 +1,19 @@
 ---
 title: CGIAR MELIA (Monitoring, Evaluation, Learning, and Impact Assessment) Framework (2022) Compatibility - CROSS+WALKRI
-version: 0.1.0
-date: 2026-05-18
+version: 0.1.2
+date: 2026-06-08
 license: CC0
 standards: CROSS v0.4.4 (github.com/CrossWalkri/CROSS), WALKRI v0.1.7 (github.com/CrossWalkri/WALKRI)
 references:
   - https://www.cgiar.org/sites/g/files/fvypus371/files/uploads/files-cgiar-meeting-docs/SC15-06a_New-CGIAR-Evaluation-Framework.pdf
   - https://iaes.cgiar.org/evaluation/cgiar-evaluation-framework-and-policy
+lens_tags:
+  calibration_tier: independently_verified
+  authority_source: voluntary_published
+  cultural_methodological_lineage: western_institutional
+  funder_typology: multilateral_bank_or_fund
+  framework_scope_type: grantee_outcome_measurement
+  # CGIAR Monitoring, Evaluation, Learning and Impact Assessment framework; CGIAR System Organization treated as multilateral consortium
 ---
 
 # CGIAR MELIA (Monitoring, Evaluation, Learning, and Impact Assessment) Framework (2022)
@@ -23,13 +30,13 @@ CGIAR's 2022 MELIA framework, governing MEL practice across 15 international agr
 
 ## The Framework's Approach
 
-CGIAR (Consultative Group on International Agricultural Research) is a global research network of 15 centers conducting agricultural, food, and environmental research with significant scale and long program cycles. The 2022 MELIA framework reflects sustained institutional learning about what makes evaluation useful rather than merely compliant. The framework is administered through the Independent Advisory and Evaluation Services (IAES) at iaes.cgiar.org.
+CGIAR (Consultative Group on International Agricultural Research) is a global research network of 15 centers conducting agricultural, food, and environmental research with significant scale and long program cycles. The 2022 MELIA framework reflects sustained institutional learning about what makes evaluation useful rather than merely conformant. The framework is administered through the Independent Advisory and Evaluation Services (IAES) at iaes.cgiar.org.
 
 Two elements distinguish MELIA from the majority of donor and funder MEL frameworks. The first is mandatory evaluability assessment. Before evaluation design begins, any program subject to MELIA requirements must assess its own evaluability across six defined domains: (a) intervention logic, meaning whether the theory of change is articulated and testable; (b) MEL systems and resources, meaning whether data collection capacity is in place; (c) gender, diversity, and inclusion, meaning whether the framework disaggregates by gender and other relevant dimensions; (d) long-term evaluability, meaning whether impact can be assessed after the research cycle ends; (e) context and environment, meaning whether external factors have been identified and are being monitored; and (f) management and stakeholder engagement, meaning whether there is organizational commitment to use evaluation findings rather than merely produce them.
 
 The evaluability assessment requirement reflects an important institutional insight: evaluation quality is not primarily a function of evaluator skill applied at the end of a program. It is a function of the design choices made at the beginning. A program with an untestable theory of change, poorly specified measurement instruments, and no disaggregation plan cannot be well-evaluated regardless of the evaluator's competence; the evaluability was foreclosed at design. By requiring that programs assess these design conditions before evaluation begins, MELIA forces programs to surface and address problems while they can still be corrected.
 
-The second distinctive element is the scaling preparedness and action (SPA) component. Agricultural research programs at CGIAR scale are typically designed with eventual scaling in mind. MELIA requires that scaling readiness be assessed and scaling pathways be documented within the MEL plan, not deferred until a post-evaluation scaling discussion. This means the MEL cycle must include evidence of what was achieved in terms relevant to scaling decisions, not merely in terms relevant to accountability reporting.
+The second distinctive element is the scaling preparedness and action (SPA) component. Agricultural research programs at CGIAR scale are typically designed with eventual scaling in mind. MELIA requires that scaling readiness be assessed and scaling pathways be documented within the MEL plan, not deferred until a post-evaluation scaling discussion. This means the MEL cycle must include evidence of what was achieved in terms relevant to scaling decisions, not merely in terms relevant to obligation reporting.
 
 ---
 
@@ -44,7 +51,7 @@ CROSS provisions address all six evaluability assessment domains and the SPA com
 | (c) Gender, diversity, and inclusion: does the framework disaggregate by gender and other dimensions? | Disaggregation ratchet requirement (once disaggregation categories are established, they cannot be dropped in subsequent gates; the ratchet ensures continuity across the program cycle) |
 | (d) Long-term evaluability: can impact be assessed after the research cycle ends? | Continuation gate + Attestation Corpus (gate records are retained indefinitely in independently verifiable form, creating the data substrate for post-program impact assessment) |
 | (e) Context and environment: are external factors identified and monitored? | Coherence disclosure requirement (the program must declare how it relates to other interventions operating in the same area; this disclosure documents the program's environmental positioning) |
-| (f) Management and stakeholder engagement: is there organizational commitment to use evaluation findings? | Conflict of interest provisions (Part VII) + population scope declaration (the declared population and the commitment to review findings are tied to the organizational accountability structure) |
+| (f) Management and stakeholder engagement: is there organizational commitment to use evaluation findings? | Conflict of interest provisions (Part VII) + population scope declaration (the declared population and the commitment to review findings are tied to the organizational obligation structure) |
 | Scaling preparedness and action (SPA) | Continuation gate (evidence of what was achieved at each gate informs the next round's obligations; this incremental evidence accumulation documents scaling readiness as a natural output of the gate cycle) |
 
 The ToC architecture alignment with domain (a) requires elaboration. MELIA's evaluability assessment asks whether the theory of change is testable, not merely articulated. A theory of change that names a goal and a set of activities without specifying the logical pathway from activities to outcomes is articulated but not testable. CROSS's entry gate requires declaration at goal, outcome, output, and activity levels with the relationships between these levels specified, which creates a testable structure rather than a narrative description. The CROSS theory of change architecture produces exactly the form of ToC that MELIA's domain (a) evaluability assessment is checking for.
@@ -66,3 +73,12 @@ The deeper alignment between WALKRI and MELIA is architectural. MELIA's mandator
 ---
 
 *Published under CC0. For the current version of CROSS and WALKRI, see github.com/CrossWalkri.*
+
+---
+
+## Changelog
+
+| Version | Date | Summary |
+|---|---|---|
+| 0.1.2 | 2026-06-08 | Frame Language own-voice pass applied as part of the corpus-wide 2026-06-08 sweep: own-voice watchlist terms (govern-family, accountability, mandatory, compliance, enforce, legitimate) recast to conformance and obligation vocabulary where they appeared in this document's own voice; citation use of source-framework terms preserved. Primitive-rename references aligned to current canon (Continuity Capacity, the Collective disbursement state, Affected Population Verification Gate). Em-dash- and watchlist-clean re-verified. No compatibility finding or mapping changed; vocabulary only. |
+| 0.1.1 | 2026-05-23 | Retroactive lens tagging: added calibration_tier, authority_source, cultural_methodological_lineage, funder_typology, framework_scope_type per Lenses Framework v0.1.0. |

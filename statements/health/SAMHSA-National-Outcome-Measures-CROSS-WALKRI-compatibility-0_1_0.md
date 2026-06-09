@@ -1,7 +1,7 @@
 ---
 title: SAMHSA National Outcome Measures and GPRA Measurement Tools Compatibility - CROSS+WALKRI
-version: 0.1.0
-date: 2026-05-18
+version: 0.1.2
+date: 2026-06-08
 license: CC0
 standards: CROSS v0.4.4 (github.com/CrossWalkri/CROSS), WALKRI v0.1.7 (github.com/CrossWalkri/WALKRI)
 references:
@@ -9,6 +9,13 @@ references:
   - GPRA Measurement Tools: CMHS, CSAP, CSAT tracks (samhsa.gov)
   - SPARS Performance Accountability and Reporting System (spars.samhsa.gov)
   - SAMHSA Programmatic Progress Report guidance (samhsa.gov)
+lens_tags:
+  calibration_tier: outcome_specified_self_reported
+  authority_source: statutory
+  cultural_methodological_lineage: western_institutional
+  funder_typology: government_non_aid
+  framework_scope_type: grantee_outcome_measurement
+  # SAMHSA National Outcome Measures under Public Health Service Act and SAMHSA reauthorization legislation
 ---
 
 # SAMHSA National Outcome Measures and GPRA Measurement Tools
@@ -35,7 +42,7 @@ The framework creates a mandatory pre-specified indicator set: SAMHSA establishe
 
 ## How CROSS Satisfies the NOMs and GPRA Framework
 
-CROSS satisfies the NOMs and GPRA requirements at the structural level, addressing both the indicator specification architecture and the accountability gate structure.
+CROSS satisfies the NOMs and GPRA requirements at the structural level, addressing both the indicator specification architecture and the verification gate structure.
 
 **Disaggregation ratchet and baseline interview:** The mandatory GPRA baseline interview establishes each client's demographic status (age, gender, race/ethnicity, veteran status, housing status, employment status) at program entry. CROSS's disaggregation ratchet requirement directly maps to this structure: demographic and status disaggregation established at program entry must be maintained across all subsequent reporting periods. For SAMHSA grantees, the GPRA baseline interview is the operational form of the entry specification gate's disaggregation declaration. Once a client is enrolled and baselined, that client's demographic record anchors all subsequent outcome measurement, exactly as CROSS requires that disaggregation categories established at the entry gate cannot be removed in later rounds.
 
@@ -60,8 +67,17 @@ CROSS satisfies the NOMs and GPRA requirements at the structural level, addressi
 
 WALKRI's five pre-publication requirements address a structural gap in the NOMs framework that CROSS alone cannot resolve. The GPRA instruments specify which domains must be measured, but the operational definitions for key status categories are left to grantee interpretation or stated at a level of generality that produces non-comparable data across programs. What counts as "housed" for the housing stability domain? Does a client staying temporarily with family while awaiting a housing voucher count as stably housed, precariously housed, or homeless? The GPRA Question-by-Question codebooks provide guidance, but the guidance is not always operationally complete at the field level.
 
-WALKRI's five requirements applied to NOMs intake instruments produce the specificity the framework currently lacks. The criterion intent field establishes what the housing stability measure is designed to assess. The operational definition field specifies exactly which housing arrangements qualify under each status category. The response form field specifies what the interviewer actually records. The evidence form field specifies what documentation is required to corroborate the client's self-report (a lease, a shelter intake form, a statement from a case manager). The compliance threshold field specifies what change in housing status constitutes a positive program outcome. These five requirements, applied before any client is enrolled, produce NOMs data that is commensurable across grantees in the way the SPARS system assumes it to be, but which the current framework does not structurally guarantee.
+WALKRI's five requirements applied to NOMs intake instruments produce the specificity the framework currently lacks. The criterion intent field establishes what the housing stability measure is designed to assess. The operational definition field specifies exactly which housing arrangements qualify under each status category. The response form field specifies what the interviewer actually records. The evidence form field specifies what documentation is required to corroborate the client's self-report (a lease, a shelter intake form, a statement from a case manager). The conformance threshold field specifies what change in housing status constitutes a positive program outcome. These five requirements, applied before any client is enrolled, produce NOMs data that is commensurable across grantees in the way the SPARS system assumes it to be, but which the current framework does not structurally guarantee.
 
 ---
 
 *Published under CC0. For the current version of CROSS and WALKRI, see github.com/CrossWalkri.*
+
+---
+
+## Changelog
+
+| Version | Date | Summary |
+|---|---|---|
+| 0.1.2 | 2026-06-08 | Frame Language own-voice pass applied as part of the corpus-wide 2026-06-08 sweep: own-voice watchlist terms (govern-family, accountability, mandatory, compliance, enforce, legitimate) recast to conformance and obligation vocabulary where they appeared in this document's own voice; citation use of source-framework terms preserved. Primitive-rename references aligned to current canon (Continuity Capacity, the Collective disbursement state, Affected Population Verification Gate). Em-dash- and watchlist-clean re-verified. No compatibility finding or mapping changed; vocabulary only. |
+| 0.1.1 | 2026-05-23 | Retroactive lens tagging: added calibration_tier, authority_source, cultural_methodological_lineage, funder_typology, framework_scope_type per Lenses Framework v0.1.0. |

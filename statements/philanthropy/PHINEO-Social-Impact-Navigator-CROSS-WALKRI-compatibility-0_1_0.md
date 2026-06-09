@@ -1,12 +1,19 @@
 ---
 title: PHINEO Social Impact Navigator (Kursbuch Wirkung) Compatibility - CROSS+WALKRI
-version: 0.1.0
-date: 2026-05-18
+version: 0.1.2
+date: 2026-06-08
 license: CC0
 standards: CROSS v0.4.2 (github.com/CrossWalkri/CROSS), WALKRI v0.1.6 (github.com/CrossWalkri/WALKRI)
 references:
   - https://www.phineo.org/downloads/PHINEO_Social_Impact_Navigator_HQ.pdf
   - https://www.phineo.org/en/social-impact-navigator
+lens_tags:
+  calibration_tier: outcome_specified_self_reported
+  authority_source: voluntary_published
+  cultural_methodological_lineage: western_institutional
+  funder_typology: pooled_fund_or_intermediary
+  framework_scope_type: grantee_outcome_measurement
+  # PHINEO Social Impact Navigator; German impact-focused intermediary; alternative civil_society_advisory authority
 ---
 
 # PHINEO Social Impact Navigator (Kursbuch Wirkung) Compatibility
@@ -70,7 +77,7 @@ The Social Impact Navigator treats needs assessment and target group definition 
 
 CROSS's population scope field, applied at the program level and at the indicator level, is the structural mechanism for the target group definition the Navigator requires. CROSS requires that population scope be declared as a field with an operational definition, not a narrative description. The specificity of the population scope declaration determines whether outcome indicators are measurable; a population scope that admits any applicant who self-identifies cannot anchor outcome change claims.
 
-WALKRI addresses this requirement directly. WALKRI's operational definition requirement ensures that the population scope field has explicit inclusion and exclusion criteria before any applicant encounters it. WALKRI's compliance threshold requirement ensures that the standard for what counts as a qualifying member of the target group is stated in advance. These two WALKRI requirements implement the Navigator's target group definition guidance at the instrument design level.
+WALKRI addresses this requirement directly. WALKRI's operational definition requirement ensures that the population scope field has explicit inclusion and exclusion criteria before any applicant encounters it. WALKRI's conformance threshold requirement ensures that the standard for what counts as a qualifying member of the target group is stated in advance. These two WALKRI requirements implement the Navigator's target group definition guidance at the instrument design level.
 
 ---
 
@@ -78,7 +85,7 @@ WALKRI addresses this requirement directly. WALKRI's operational definition requ
 
 WALKRI's most significant contribution to Social Impact Navigator alignment is at the target group definition stage. The Navigator's warning about imprecise target group definitions is an instrument design warning: the field collecting target group information must be designed to elicit precise, verifiable data, not self-assessments that resist external validation.
 
-WALKRI's five pre-publication field requirements, applied to the population scope and needs evidence fields, ensure that these fields function as measurement instruments. The criterion intent requirement states what the field is measuring and why. The operational definition requirement gives the field explicit boundaries. The response form justification requirement ensures that the data collection method (categorical, quantitative, open text, structured attestation) is appropriate to the measurement goal. The evidence form requirement ensures that target group membership can be verified independently. The compliance threshold requirement states the minimum standard for what counts as a qualifying response.
+WALKRI's five pre-publication field requirements, applied to the population scope and needs evidence fields, ensure that these fields function as measurement instruments. The criterion intent requirement states what the field is measuring and why. The operational definition requirement gives the field explicit boundaries. The response form justification requirement ensures that the data collection method (categorical, quantitative, open text, structured attestation) is appropriate to the measurement goal. The evidence form requirement ensures that target group membership can be verified independently. The conformance threshold requirement states the minimum standard for what counts as a qualifying response.
 
 This is the instrument-level implementation of the Social Impact Navigator's needs assessment and target group definition best practices. Programs that have passed WALKRI's pre-publication audit before activating CROSS's entry specification gate are operating at the measurement quality level the Navigator recommends as foundational to credible impact work.
 
@@ -107,3 +114,5 @@ License: CC0
 | Version | Date | Summary |
 |---|---|---|
 | 0.1.0 | 2026-05-18 | Initial draft. All four IOOI levels mapped to CROSS ToC hierarchy provisions. CROSS eleven-field indicator specification aligned to Navigator indicator design guidance. WALKRI role at needs assessment and target group definition stages documented. Full satisfaction for all IOOI levels and indicator design requirements. |
+| 0.1.1 | 2026-05-23 | Retroactive lens tagging: added calibration_tier, authority_source, cultural_methodological_lineage, funder_typology, framework_scope_type per Lenses Framework v0.1.0. |
+| 0.1.2 | 2026-06-08 | Frame Language own-voice pass applied as part of the corpus-wide 2026-06-08 sweep: own-voice watchlist terms (govern-family, accountability, mandatory, compliance, enforce, legitimate) recast to conformance and obligation vocabulary where they appeared in this document's own voice; citation use of source-framework terms preserved. Primitive-rename references aligned to current canon (Continuity Capacity, the Collective disbursement state, Affected Population Verification Gate). Em-dash- and watchlist-clean re-verified. No compatibility finding or mapping changed; vocabulary only. |

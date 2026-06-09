@@ -1,7 +1,7 @@
 ---
 title: WIOA Workforce Performance Accountability Compatibility - CROSS+WALKRI
-version: 0.1.0
-date: 2026-05-18
+version: 0.1.2
+date: 2026-06-08
 license: CC0
 standards: CROSS v0.4.5 (github.com/CrossWalkri/CROSS), WALKRI v0.1.7 (github.com/CrossWalkri/WALKRI)
 references:
@@ -10,6 +10,13 @@ references:
   - DOL/ED Joint Performance Accountability Rule (February 2024 Federal Register)
   - dol.gov/agencies/eta/performance/wioa-performance
   - ecfr.gov/current/title-20/chapter-V/part-677
+lens_tags:
+  calibration_tier: independently_verified
+  authority_source: statutory
+  cultural_methodological_lineage: western_institutional
+  funder_typology: government_non_aid
+  framework_scope_type: grantee_outcome_measurement
+  # Workforce Innovation and Opportunity Act statutory accountability; DOL/Education joint regulations
 ---
 
 # WIOA Workforce Performance Accountability
@@ -68,8 +75,17 @@ WALKRI's five pre-publication field requirements address a structural gap in how
 
 Consider the credential attainment indicator: 20 CFR 677.155 specifies that a recognized postsecondary credential qualifies, but the operational definition of what documentation a program staff member must examine before marking a participant as having attained a credential, what constitutes verification of a secondary school diploma obtained abroad, and how concurrent enrollment in a credential program is classified at exit are all left to local interpretation. WALKRI's operational definition requirement and evidence form requirement, applied to the intake and exit survey instruments used at local workforce development boards before any participant is enrolled, resolve this at source by specifying what evidence qualifies for each status category before any case is opened.
 
-The same logic applies to the measurable skill gains indicator, which has the most complex definitional structure of the six: it covers multiple gain types (educational functioning level advancement, attainment of a secondary school diploma, passage of a postsecondary licensure examination, and documented measurable skill gain in a training program). WALKRI's criterion intent and response form requirements ensure that the intake instrument specifies which gain type is being measured, what evidence constitutes each type, and what the compliance threshold is, before any participant begins receiving services. Applied across a state workforce system, WALKRI-conformant intake instruments produce participant-level data that is commensurable across local boards within the state and, where state specifications align, across states.
+The same logic applies to the measurable skill gains indicator, which has the most complex definitional structure of the six: it covers multiple gain types (educational functioning level advancement, attainment of a secondary school diploma, passage of a postsecondary licensure examination, and documented measurable skill gain in a training program). WALKRI's criterion intent and response form requirements ensure that the intake instrument specifies which gain type is being measured, what evidence constitutes each type, and what the conformance threshold is, before any participant begins receiving services. Applied across a state workforce system, WALKRI-conformant intake instruments produce participant-level data that is commensurable across local boards within the state and, where state specifications align, across states.
 
 ---
 
 *Published under CC0. For the current version of CROSS and WALKRI, see github.com/CrossWalkri.*
+
+---
+
+## Changelog
+
+| Version | Date | Summary |
+|---|---|---|
+| 0.1.2 | 2026-06-08 | Frame Language own-voice pass applied as part of the corpus-wide 2026-06-08 sweep: own-voice watchlist terms (govern-family, accountability, mandatory, compliance, enforce, legitimate) recast to conformance and obligation vocabulary where they appeared in this document's own voice; citation use of source-framework terms preserved. Primitive-rename references aligned to current canon (Continuity Capacity, the Collective disbursement state, Affected Population Verification Gate). Em-dash- and watchlist-clean re-verified. No compatibility finding or mapping changed; vocabulary only. |
+| 0.1.1 | 2026-05-23 | Retroactive lens tagging: added calibration_tier, authority_source, cultural_methodological_lineage, funder_typology, framework_scope_type per Lenses Framework v0.1.0. |

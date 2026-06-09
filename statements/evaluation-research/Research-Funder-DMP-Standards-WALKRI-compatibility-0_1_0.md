@@ -1,7 +1,7 @@
 ---
 title: Research Funder Data Management Plan Standards Compatibility - WALKRI
-version: 0.1.0
-date: 2026-05-18
+version: 0.1.2
+date: 2026-06-08
 license: CC0
 standards: CROSS v0.4.0 (github.com/CrossWalkri/CROSS), WALKRI v0.1.6 (github.com/CrossWalkri/WALKRI)
 references:
@@ -9,6 +9,13 @@ references:
   - NSF Data Management Plan Requirements (nsf.gov/funding/data-management-plan)
   - Horizon Europe Open Science Requirements (erc.europa.eu/manage-your-project/open-science)
   - Wellcome Trust Data and Materials Policy (wellcome.org/research-funding/guidance/policies-grant-conditions/data-software-materials-management-and-sharing-policy)
+lens_tags:
+  calibration_tier: process_conformant
+  authority_source: voluntary_published
+  cultural_methodological_lineage: western_institutional
+  funder_typology: government_non_aid
+  framework_scope_type: professional_practice_ethics
+  # Research Funder Data Management Plan standards; primarily government research funders; framework guides researcher practitioner conduct on data management
 ---
 
 # Research Funder Data Management Plan Standards Compatibility
@@ -45,7 +52,7 @@ All four frameworks converge on the same set of structural DMP elements. The tab
 | Metadata standard and counting rule: how data will be described and categorized | Operational definition: specifies the unit of analysis, qualifying and non-qualifying examples, and the rule governing how responses are counted |
 | Data format justification: why the chosen data form matches the data type | Response form justification: specifies why the field type (free text, structured enumeration, file upload, etc.) matches the criterion |
 | Repository and access path: where data will be deposited and how it can be retrieved | Evidence form: specifies the artifact type that counts as evidence and the access path through which it can be retrieved |
-| External standard reference: applicable data classification, vocabulary, or identifier scheme | Compliance threshold: specifies what external standard applies to the field, which becomes the data classification, vocabulary, or identifier reference in the DMP |
+| External standard reference: applicable data classification, vocabulary, or identifier scheme | Conformance threshold: specifies what external standard applies to the field, which becomes the data classification, vocabulary, or identifier reference in the DMP |
 
 WALKRI's five requirements collectively produce a field-level DMP: one row in the table above is satisfied for every intake field in a conformant form, applied before data collection begins.
 
@@ -61,15 +68,15 @@ Accessible: field specifications are published as JSON Schema with open, machine
 
 Interoperable: JSON Schema with x-walkri- extensions is parseable by any JSON Schema tool. WALKRI-conformant data from different programs is structurally comparable because the same five field specification requirements were applied to each.
 
-Reusable: the provenance envelope provides the field-specification version, form version, collection timestamp, and certification level required for a downstream consumer to assess reusability and determine which version of each field definition governed the data.
+Reusable: the provenance envelope provides the field-specification version, form version, collection timestamp, and certification level required for a downstream consumer to assess reusability and determine which version of each field definition applied to the data.
 
 ---
 
 ## Framework-Specific Considerations
 
-**NIH.** The NIH DMS Policy specifies that the DMP must address oversight responsibilities, including who is accountable for data management. WALKRI's certification levels (Provisional, Standard, Enhanced) provide a structured accountability record: the certification level documents the degree of audited conformance and the certifying party. NIH also requires specifying whether data preservation will be in a repository that assigns a persistent identifier; this maps to WALKRI's evidence form requirement to specify a stable access path.
+**NIH.** The NIH DMS Policy specifies that the DMP must address oversight responsibilities, including who is accountable for data management. WALKRI's certification levels (Provisional, Standard, Enhanced) provide a structured verification record: the certification level documents the degree of audited conformance and the certifying party. NIH also requires specifying whether data preservation will be in a repository that assigns a persistent identifier; this maps to WALKRI's evidence form requirement to specify a stable access path.
 
-**NSF.** NSF directorate-specific requirements may impose vocabulary standards, identifier schemes, or repository mandates beyond the base DMP. WALKRI's compliance threshold field is the correct place to record these directorate-level obligations: the field specifies what external standard applies, and a directorate's repository mandate or metadata vocabulary qualifies as such a standard. Programs in directorates with additional requirements should populate the compliance threshold accordingly.
+**NSF.** NSF directorate-specific requirements may impose vocabulary standards, identifier schemes, or repository mandates beyond the base DMP. WALKRI's conformance threshold field is the correct place to record these directorate-level obligations: the field specifies what external standard applies, and a directorate's repository mandate or metadata vocabulary qualifies as such a standard. Programs in directorates with additional requirements should populate the conformance threshold accordingly.
 
 **Horizon Europe.** The six-month post-signature DMP submission timeline and the midpoint update requirement mean that WALKRI audit should be completed before form publication (its normal stage) and that form revisions should be re-audited before the midpoint DMP update is submitted. WALKRI's versioned field specifications support this: each version of the form is a separate auditable artifact.
 
@@ -84,3 +91,12 @@ This statement covers WALKRI's contribution to the data management planning elem
 ---
 
 *Published under CC0. For the current version of CROSS and WALKRI, see github.com/CrossWalkri.*
+
+---
+
+## Changelog
+
+| Version | Date | Summary |
+|---|---|---|
+| 0.1.2 | 2026-06-08 | Frame Language own-voice pass applied as part of the corpus-wide 2026-06-08 sweep: own-voice watchlist terms (govern-family, accountability, mandatory, compliance, enforce, legitimate) recast to conformance and obligation vocabulary where they appeared in this document's own voice; citation use of source-framework terms preserved. Primitive-rename references aligned to current canon (Continuity Capacity, the Collective disbursement state, Affected Population Verification Gate). Em-dash- and watchlist-clean re-verified. No compatibility finding or mapping changed; vocabulary only. |
+| 0.1.1 | 2026-05-23 | Retroactive lens tagging: added calibration_tier, authority_source, cultural_methodological_lineage, funder_typology, framework_scope_type per Lenses Framework v0.1.0. |

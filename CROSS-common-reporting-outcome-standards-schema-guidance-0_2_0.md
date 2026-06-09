@@ -1,20 +1,22 @@
 ---
 title: CROSS - Common Reporting Outcome Standards Schema - Guidance
-version: 0.2.0
-date: 2026-05-14
+version: 0.3.1
+date: 2026-06-08
 license: CC0
-status: Working draft. Companion guidance document to CROSS-common-reporting-outcome-standards-schema-0_2_0.md. Supersedes version 0.1.0.
+status: Working draft. Companion guidance document synced to CROSS-common-reporting-outcome-standards-schema-0_5_0.md. Supersedes version 0.2.0.
 ---
 
 # CROSS: Common Reporting Outcome Standards Schema - Guidance
 
-Version 0.2.0 | 2026-05-14 | CC0
+Version 0.3.1 | 2026-06-08 | CC0
 
 ---
 
-This document is the practitioner companion to CROSS (Common Reporting Outcome Standards Schema) version 0.2.0. It does not restate the standard. It explains how to apply the standard's criteria, what qualifies and what does not at each decision point, and what the most common failure modes look like. It is written for two audiences: applicants completing a CROSS-conformant grant application, and reviewers evaluating one.
+This document is the practitioner companion to CROSS (Common Reporting Outcome Standards Schema) version 0.5.0. It does not restate the standard. It explains how to apply the standard's criteria, what qualifies and what does not at each decision point, and what the most common failure modes look like. It is written for two audiences: applicants completing a CROSS-conformant grant application, and reviewers evaluating one.
 
-This version of the guidance covers three obligation modes: build obligation, change obligation, and retroactive obligation. Part 1 covers the entry specification for each mode. Part 2 covers the gate architecture. Parts 3 through 9 cover indicator specification and conformance requirements that apply across modes, with mode-specific notes where the application differs.
+This version of the guidance covers three obligation modes: build obligation, change obligation, and retroactive obligation. Part 1 covers the entry specification for each mode. Part 2 covers the gate architecture. Part 2-A covers the entry-gate declarations the standard requires before any gate assessment proceeds. Parts 3 through 9 cover indicator specification and conformance requirements that apply across modes, with mode-specific notes where the application differs.
+
+**A note on what CROSS inherits.** CROSS is a domain application of CRAFT (Chains Reveal Attested Falsifiable Truth), the meta-standard for evaluation chain legibility. A program that adopts CROSS thereby satisfies CRAFT's six conditions for its grant evaluations; there is no separate CRAFT implementation step. Practitioners do not need to read CRAFT to apply this guidance. The full record of which CRAFT conditions CROSS realizes, which upstream standards it rests on, and where named gaps remain open is the CRAFT inheritance receipt in Part XIII of the standard. The practical consequence for a reviewer is that the entry-gate declarations, the gate determinations, and the indicator fields described in this guidance are not local preferences of one program: they are how CROSS makes a grant evaluation a chain that an independent party can rely on.
 
 ---
 
@@ -82,7 +84,7 @@ What does not qualify on its own: the applicant's description of their own work,
 
 **The forward commitment option.** Programs may configure a forward commitment as a condition of the retroactive award. If activated, the awardee commits to a named forward action (a specified deliverable, a continuation commitment, a public-access maintenance obligation) as a condition of receiving the award. The forward commitment is assessed under build-obligation criteria: it must name a falsifiable deliverable with verifiable completion criteria. If a program has activated a forward commitment and the applicant's forward commitment fails the build-obligation entry specification, that is a rigor-tier finding, not a gate failure for the retroactive application itself.
 
-**What reviewers are assessing.** The program's published rubric governs the substantive scoring of retroactive applications; it is not the same as the CROSS indicator specification rubric. The CROSS conformance checks (concurrent funding disclosure, adverse signal disclosure, conflict of interest) apply in full. The indicator specification rubric in Section 3 of the assessment rubric applies only if the program has configured indicator-based forward reporting alongside the retroactive award.
+**What reviewers are assessing.** The program's published rubric covers the substantive scoring of retroactive applications; it is not the same as the CROSS indicator specification rubric. The CROSS conformance checks (concurrent funding disclosure, adverse signal disclosure, conflict of interest) apply in full. The indicator specification rubric in Section 3 of the assessment rubric applies only if the program has configured indicator-based forward reporting alongside the retroactive award.
 
 ---
 
@@ -102,7 +104,7 @@ For build-obligation rounds: the completion gate must additionally confirm that 
 
 For change-obligation rounds: the completion gate requires outcome evidence against the baseline established at entry, assessed by the named mechanism in the infrastructure declaration.
 
-The continuation specification gate governs progression across rounds or stages. It is configured at the program level, not the round level, and it must be published before any round in the program opens. It is the primary mechanism for escalating evidentiary pressure as a project matures.
+The continuation specification gate covers progression across rounds or stages. It is configured at the program level, not the round level, and it must be published before any round in the program opens. It is the primary mechanism for escalating evidentiary pressure as a project matures.
 
 ### What applicants need to know about gate configuration
 
@@ -112,11 +114,113 @@ The gate configuration cannot be retrospectively tightened against applicants wh
 
 ### Evidence scope and strength
 
-Evidence scope describes what kind of evidence the gate accepts: output evidence (the deliverable exists), usage evidence (the deliverable is being used by external parties), outcome evidence (a measurable change has occurred in the specified population), or impact evidence (a credible causal link is established between the funded work and the measured change).
+Evidence scope describes what kind of evidence the gate accepts: output evidence (the deliverable exists), usage evidence (the deliverable is being used by external parties), outcome evidence (a measurable change has occurred in the specified population), or impact evidence (a supportable causal link is established between the funded work and the measured change).
 
 Evidence strength describes the verification mechanism: self-report with documentation (grantee narrative reviewed by funder staff), third-party verifiable (publicly accessible from sources outside the applicant's control), independent review (a named party outside the funder-grantee relationship confirms the evidence), or independent evaluation (a qualified evaluator conducts a structured assessment).
 
 Applicants who understand these two dimensions can calibrate their evidence preparation to the gate requirements. A progress verification gate configured at output scope and self-report strength needs a publicly linkable artifact and a brief narrative. A completion verification gate configured at outcome scope and independent review strength needs a structured outcome report with data at the operational definition level and a named reviewer who has agreed to conduct the assessment.
+
+### The served-population risk-bearer floor
+
+The standard names three parties who bear loss when a round's evaluation misjudges: the applicant whose work may be misclassified, the funder whose resources may be misdirected, and the served population, the people a funded intervention is meant to serve. The served population bears loss when the round funds work that does not reach them, or excludes work that would have served them. The standard treats this population as a risk-bearer of the evaluation itself, carried through every gate, not confirmed once at entry and then set aside.
+
+**What the floor requires of a reviewer.** Where a round's eligibility rests on serving a defined population, each gate determination must account for that population's exposure, not only the applicant's claim about it. The entry-gate affected-population validation (Part 9 of this guidance) performs part of this work by confirming the claimed need from outside the applicant's control. The floor extends the same consideration to the completion verification gate. At completion, the reviewer additionally asks two questions: is there work recorded as delivered that does not actually reach the served population, and are there effects on that population that the declared indicators do not capture? The unintended outcomes disclosure is where the second question surfaces.
+
+**How a reviewer confirms the determination record shows the consideration was applied.** This is the test, and it is specific. It is not enough that the served population was named in the application or validated at entry. The determination record at each gate must show that the population's exposure was considered at that gate. A completion determination that records only whether the deliverable exists or whether the indicator moved, with no statement about whether the result reached the served population and no engagement with the unintended outcomes disclosure on that point, has not applied the consideration. A determination that records the reviewer's finding on reach and on uncaptured effects, even a brief finding that no exposure was identified, has applied it. The qualifying difference is a visible consideration in the record, not a named population at entry.
+
+**What the floor does not require.** The floor is a named consideration each gate is checked against. It does not, on its own, require a standing channel through which the served population raises concerns during the grant period. A program may add such a channel as a separate configuration, but a program without one is not non-conformant with the floor. A reviewer assessing floor conformance is checking for the applied consideration in the determination record, not for a participation mechanism.
+
+---
+
+## Part 2-A: Entry-Gate Declarations
+
+Before any gate is assessed, the entry submission must carry a set of declarations. These are pre-conditions for gate assessment, not scored criteria: an entry submission missing a required declaration is incomplete and is not assessed until the declaration is provided. This Part gives the what-qualifies and what-does-not guidance for each declaration the standard requires at entry.
+
+### Organizational identity declaration
+
+Every entry submission, in all three obligation modes, must include an organizational identity declaration with six required fields.
+
+**Legal entity name and jurisdiction.** Qualifies: the name of the natural person or registered organization exactly as it appears in the jurisdiction of registration, plus the jurisdiction itself. Where no legal entity exists, an explicit statement that none exists, naming the individual who assumes personal responsibility for the obligation. Does not qualify: a project name, display name, or code-repository organization name offered in place of the legal name, where these are not themselves the legal name. The test a reviewer applies is whether the named entity could be located in a registry, or, for an unregistered applicant, whether a specific named person stands behind the obligation.
+
+**Parent organization declaration.** Qualifies: a statement of whether the applicant operates under or is affiliated with a larger organization, network, or chapter structure, and where one exists, the parent's name and the relationship (whether the parent knows of this application, shares brand or personnel, and is separately applying to this or a concurrent round). Does not qualify: silence where an affiliation is publicly documented, or where the applicant's name, brand, or personnel overlap with a known larger organization. Silence in that situation is the specific failure this field exists to catch.
+
+**Affiliated entity disclosure.** Qualifies: disclosure of any other organization, project, or entity sharing the applicant's name, brand, domain, key personnel, or codebase, whether or not a formal legal relationship exists. The field is built to surface three things a reviewer should watch for: a new applicant using a name associated with an established organization (name collision), a sub-entity applying separately from a parent that may also apply (internal fragmentation), and team members holding funded roles in other organizations applying to the same round (personnel overlap). Disclosure is not a disqualifier; non-disclosure of a publicly documentable affiliation is.
+
+**Prior round history.** Qualifies: a statement of whether the applicant, or any substantially overlapping entity (same personnel, same codebase, same project name, or same legal entity under a different display name), has applied to this program before, under what name, and with what outcome. Does not qualify: a clean "no prior history" from an entity whose personnel or codebase carry a prior application under another name. This field catches serial rebranding, where an applicant who received a prior rejection returns under a new name claiming no history. Where a prior funder's gate determination exists as a publicly verifiable signed record, the applicant may cite it and the reviewer may query it as independent corroboration, which is stronger than the applicant's own account of the same outcome.
+
+**Disbursement authority.** Qualifies: the named person or persons with legal authority to receive grant funds on behalf of the applying entity and approve their deployment, in one of three declared states. Individual: one named person with full authority. Collective: shared authority through a named mechanism, with current key holders named and the quorum threshold stated. Delegated: authority by role, with the current holder named and the transfer mechanism stated. For a decentralized autonomous organization applicant without a legal wrapper, the declaration must name the controlling wallet address and the decision mechanism, with current token holders above the materiality threshold named where possible. Does not qualify: an entry submission with no disbursement authority declaration, which is incomplete.
+
+**On-chain identity anchor.** Qualifies: the canonical wallet address by which the applying entity is identifiable across blockchain programs and grant databases. For an entity that has applied to or received funding from any blockchain-based grant program, this is the address registered in those programs. For an entity with no prior blockchain grant history, this is the address that will serve as the identity root for this program's records. The anchor is what the funder uses to perform cross-program identity matching and Attestation Corpus queries. It is not a fund-receipt address unless it also serves as the disbursement authority; where the two are the same address, the applicant must state this explicitly. Does not qualify: non-disclosure of an on-chain address publicly associated with the applicant's identity in any grant database. That non-disclosure is a conformance failure equivalent to non-disclosure in the affiliated entity field.
+
+**The funder-side query that pairs with the anchor.** For each application that provides an on-chain identity anchor, the program queries the Attestation Corpus for that address across named public sources (on-chain attestation registries, the KarmaGAP grants and milestone interface, and any program-specific databases the round names) before gate assessment is complete. This is a funder-side procedure, not an applicant submission. Where the query reveals prior grants, milestones, or obligations the applicant did not disclose in the obligation fulfillment record below, that is non-disclosure of a prior obligation and is treated as a material discrepancy.
+
+### Sufficiency architecture declaration
+
+Every entry submission must include a sufficiency architecture declaration alongside the organizational identity declaration. It collects five elements: the four below plus the revenue architecture declaration, which is described in its own subsection.
+
+**Scope declaration.** Qualifies: the specific program, sub-entity, or aspect of the applying entity's work this application covers, stated clearly enough that an independent reviewer could determine what falls inside it and what falls outside. Where the application covers the entity's entire operation, an explicit statement to that effect. Does not qualify: a scope so general the reviewer cannot place a given activity inside or outside it. The scope declaration is what later allows the reviewer to assess additionality and attribute outcomes; an unbounded scope defeats both.
+
+**Sufficiency position.** Qualifies: one of four declared positions at the declared scope. Critical gap: resources cover less than half of full scope requirements and viability depends on closing the gap. Partial: resources cover more than half but the program operates below intended scope. Approaching: resources are sufficient for current operations but not for the next intended scope expansion. Surplus: resources exceed current scope requirements in the current period. The position is declared at the declared scope, not at the entity level; an entity may be approaching on one program and at critical gap on another. Does not qualify: a position declared for the whole entity where the application covers one scope within it.
+
+**The corroborating-evidence requirement on the sufficiency position.** The sufficiency position must carry at least one piece of corroborating evidence from a source outside the applicant's control. Qualifies: publicly accessible treasury data (on-chain balance, Open Collective balance, or equivalent) showing the scale of current resources at the declared scope; grant-history records from a named external database (KarmaGAP, Gitcoin Explorer, retroactive-funding recipient lists, or equivalent) confirming the number and scale of active grants; or disclosed revenue figures from a named independent source. A declaration with no corroboration is accepted at self-report strength only and must be labeled as such. Where the program configures this declaration at independent review strength or above, corroboration is required before assessment proceeds. Where no public corroboration exists (a recently formed entity with no funding history), the applicant must state this explicitly and explain why the declared position is reasonable given the absence. The corroboration need not precisely match the declared position; it provides the factual basis against which the declaration is assessed.
+
+**Portfolio context statement.** Qualifies: an account of how other funding sources in the entity's funding architecture address other scopes or aspects of its work. This is distinct from concurrent funding disclosure, which asks about other funding for the same scope; the portfolio context asks how the entity has organized its pursuit of sufficiency across all its programs. The presence of other funding sources for other scopes is expected and is not a disqualifier. Does not qualify: silence about other funding sources in an entity that plainly runs multiple programs, absent an explicit explanation. Where co-funding is documented in a publicly verifiable coordination record dated before any work begins, that record is independently verifiable evidence of this statement and is stronger than a self-reported account.
+
+**Grant contribution statement.** Qualifies: a statement of the specific gap at the declared scope this grant would close, and what the sufficiency position at that scope would be after the grant's contribution. Does not qualify: a promise about outcomes in place of a statement of where in the sufficiency architecture the grant fits. This is a declaration of fit, not an outcome commitment.
+
+### Revenue architecture declaration
+
+The revenue architecture declaration is the fifth element of the sufficiency architecture declaration and is universal: every applicant declares it regardless of obligation mode.
+
+**What qualifies.** A declaration of one of four revenue architecture types. Grant-only: no commercial revenue model exists, and the declaration confirms this; additionality requires no further delineation. Fee-for-service, commercial, or hybrid: the declaration names the type and activates the additionality delineation requirement, under which the applicant must identify which portion of their work or budget the commercial revenue does not cover, with the grant scoped to that non-commercial portion.
+
+**What does not qualify.** A fee-for-service, commercial, or hybrid applicant who declares the type but does not delineate which portion of the work the commercial revenue leaves uncovered. For these three types the type declaration alone is incomplete; the delineation is the substance. The reason the revenue architecture sits inside the sufficiency architecture declaration rather than standing alone is that the revenue type and the sufficiency position are the two parameters that together determine whether an additionality argument is coherent. A reviewer reads them together.
+
+### Public benefit mechanism and access condition declaration
+
+Where eligibility is assessed against a public goods claim, which is the case in every public goods grant program, the entry submission must include a public benefit mechanism and access condition declaration. This is a pre-condition for assessment alongside the two declarations above. An entry submission that makes a public goods claim in its eligibility section but omits this declaration is incomplete.
+
+**Mechanism type statement.** Qualifies: a statement of which of four mechanism types the public goods claim rests on, using the declared vocabulary. Output production: the benefit is the produced artifact made openly available. Access provision: the benefit is access to a service or resource. Condition change: the benefit is a measured change in a population's condition. Ecosystem shift: the benefit is a contribution to a broader change. Where the program accepts only certain types, the field must say which are accepted and what evidence scope each requires. Does not qualify: a benefit claim that does not name which of the four mechanisms it rests on, since the mechanism type is what binds the evidence scope at completion.
+
+**The mechanism type constrains the completion evidence.** A reviewer should read the declared mechanism as a commitment about the completion gate. Output production commits the applicant to output evidence at minimum. Access provision commits to usage evidence. Condition change commits to outcome evidence. Ecosystem shift commits to a documented impact-contribution argument. A mechanism declared at entry that the available completion-gate evidence cannot support is a misrepresentation in the entry specification, not a late surprise at completion.
+
+**Access condition statement.** Qualifies: the specific terms under which the declared mechanism delivers benefit to the stated population, with the required content set by the mechanism type. For output production: an SPDX license identifier and the location of the license file. For access provision: an access mechanism, a cost structure, and a non-excludability mechanism. For condition change: a FROM state and a population definition. For ecosystem shift: a named causal pathway and a co-factor list. Does not qualify, specifically for output production: a copyright notice that permits free viewing without granting modification or redistribution rights; a "source available" or "fair code" license restricting commercial use, unless the program's published round configuration explicitly accepts such licenses and names the accepted SPDX identifiers; or a future licensing commitment with no current license, which does not satisfy the access condition at entry. The license must be present in the artifact at the time of the completion gate.
+
+**The contradiction a reviewer must surface.** The most common failure pattern is an applicant who describes work produced under standard all-rights-reserved copyright while claiming an output production mechanism. The output production access condition requires an open license; all-rights-reserved is its opposite. This contradiction cannot be resolved by reviewer judgment. It must be surfaced as a discrepancy, and the applicant must address it before assessment proceeds.
+
+### Development stage declaration
+
+The development stage dimension is active in all rounds, so every entry submission includes a development stage declaration.
+
+**What qualifies.** A declared stage number from one to five, the applicant's account of why the work sits at that stage rather than an adjacent one, and at least one piece of evidence from a source outside the applicant's control confirming the stage. The stage-specific evidence the standard expects: Stage 1 (proof of concept) provides output evidence of the existing artifact; Stage 2 (early adoption) provides usage evidence from at least one named external user; Stage 3 (growth) provides independently verifiable adoption data with a trend; Stage 4 (established infrastructure) provides twelve months of sustained usage data from sources outside the team; Stage 5 (retroactive recognition) provides prior contribution evidence in the entry submission.
+
+**What does not qualify, and what a reviewer investigates.** A declared stage not supported by the provided evidence is a material discrepancy requiring investigation, not a passing declaration. Two patterns recur. A Stage 1 declaration paired with usage evidence from independent users is either a misstatement of stage or an understatement the reviewer should probe. A Stage 3 or higher declaration paired with no independently verifiable adoption data is a discrepancy to investigate. The reviewer's task is to check the declared stage against the rest of the entry submission, not to accept the number on its own.
+
+**The stage constrains the obligation mode.** The declared stage limits which obligation modes are coherent. A Stage 1 applicant committing to a change obligation must supply a FROM state and a population baseline at entry; this is coherent only if the Stage 1 artifact is specifically designed to measure against an existing condition. A Stage 4 applicant selecting a build obligation must specify what new functionality is being added beyond sustained operation; declaring Stage 4 with a build obligation for what amounts to continued maintenance of existing function is a framing misrepresentation. Funders declare in the round configuration which stages are within scope; a round accepting all stages must say so explicitly, and a round targeting specific stages must name them and say why others are excluded.
+
+### Continuity and resilience declaration (the Continuity Capacity dimension)
+
+This dimension is triggered by grants above a funder-defined size threshold, grants producing ongoing infrastructure with continuing operational requirements, and any application where the applying entity has a single named primary contributor and no documented backup function. For programs that fund infrastructure maintenance or sustained service delivery, it is always active regardless of threshold.
+
+**What qualifies.** A declaration of one of three resilience states with supporting evidence. Single: continuation depends on one person. Partial: some backup function exists but coverage is incomplete. Resilient: continuation does not depend on any single person. For a single-point declaration, the evidence must name the person on whom continuation depends and state what would happen to active grants and funded deliverables if that person became unavailable.
+
+**What does not qualify, and why disclosure is the point.** A single-point-of-failure declaration is not a disqualifier, so an applicant should not conceal one to pass. What does not qualify is silence where the trigger applies, or a resilient or partial claim with no evidence of the backup function it asserts. The disclosed single-point state is a material fact that affects the sustainability assessment at the continuation gate and the funder's configuration of completion-gate conditions; a funder may configure the completion gate to require evidence of partial or resilient continuity as a condition of final disbursement for grants above the threshold. A reviewer treats the honest single-point disclosure as conformant and the concealed one as the failure.
+
+### Obligation fulfillment record
+
+The obligation fulfillment record is required, before assessment proceeds, where any of three conditions apply: the applicant has received prior grants from this funder in any prior round; the applicant cites prior work as evidence of capability at entry; or the applicant's prior round history includes unresolved KarmaGAP milestones or open gate conditions.
+
+**What qualifies.** For each prior grant from this funder, a record of three things: what was committed at the entry gate of that prior round (the deliverable specification, the FROM-TO state, or the contribution evidence, as fits that round's mode); what was produced during the grant period (the artifact, the measured change, or the verified contribution, with a publicly accessible link); and whether the commitment was fulfilled, partially fulfilled, or unfulfilled, with the applicant's explanation where fulfillment was not complete.
+
+**What does not qualify, and the asymmetry a reviewer should hold.** An unfulfilled prior obligation is not automatically disqualifying. It is a disclosed fact that affects the track-record assessment at the continuation gate and may be addressed by a written account of what prevented fulfillment and what has changed since. What does not qualify is non-disclosure: an unfulfilled prior obligation omitted from the record but discovered through research, including through the Attestation Corpus query, is a material discrepancy. The standard treats the non-disclosure of a prior failure more seriously than the failure itself. A reviewer assesses the disclosed shortfall on its explanation and the undisclosed one as a conformance discrepancy.
+
+### Prior work attribution statement
+
+Where an applicant cites prior work as evidence of capability, track record, or past contribution in any entry submission, a prior work attribution statement is required. It activates in all three modes: build-obligation applicants citing prior deliverables, change-obligation applicants citing prior outcomes as a baseline or established methodology, and retroactive-obligation applicants whose entire submission consists of prior work.
+
+**What qualifies.** For each piece of cited prior work, an answer to three questions. Entity of performance: under which legal entity or organizational context the work was performed; if it was done as an employee, contractor, or contributor to an organization that is not the applying entity, that organization must be named; if it was done under the applying entity's own resources, that must be stated. Applicant's relationship at the time: the applicant's role in the entity under which the work was performed, and the current status of that relationship, with both the relationship at creation and the relationship at application stated. Current ownership and access: who currently holds the intellectual property rights, who controls the deployment or codebase, and who holds the user relationship with any users cited as evidence of impact; if the applying entity does not hold the rights, control the deployment, or hold the user relationship, that must be stated.
+
+**What does not qualify, and why this is an adverse signal field.** The statement is an adverse signal disclosure requirement, not a procedural form. What does not qualify is a track record built on work performed under a different entity, presented as the applicant's own without that entity's knowledge or endorsement of the application. An applicant who cannot truthfully complete the attribution statement for their cited work has surfaced a misrepresentation in the core evidential basis of the application: a claim of responsibility for outcomes the applicant did not control and cannot warrant continuing. A reviewer reads a clean attribution statement as the applicant's own track record, and a contributor-to-another-entity's-work pattern, presented as ownership, as the misrepresentation the field exists to surface.
 
 ---
 
@@ -130,7 +234,7 @@ A short descriptive label. Not the operational definition. Keep names short and 
 
 ### Field 2: Rationale for indicator
 
-Rationale is mandatory. It documents the diagnostic thinking that preceded tool selection. A weak rationale restates the claim without defending the choice ("this indicator measures our core outcome"). A strong rationale names at least one alternative indicator considered and explains why the chosen indicator better matches the intervention's causal claim. The rationale should also note what the indicator does not capture; an applicant who describes the indicator's limitations demonstrates a more mature understanding of the measurement problem than one who describes only its strengths.
+Rationale is required. It documents the diagnostic thinking that preceded tool selection. A weak rationale restates the claim without defending the choice ("this indicator measures our core outcome"). A strong rationale names at least one alternative indicator considered and explains why the chosen indicator better matches the intervention's causal claim. The rationale should also note what the indicator does not capture; an applicant who describes the indicator's limitations demonstrates a more mature understanding of the measurement problem than one who describes only its strengths.
 
 ### Field 3: Measurement form and evidence classification
 
@@ -194,7 +298,7 @@ When requesting approval to remove a category, the applicant must document the r
 
 The named source must be accessible to an independent reviewer. Named on-chain contract addresses, named public application programming interface endpoints, named third-party platforms with documented methodology, named institutional partners, and named survey instruments administered by third parties satisfy this requirement.
 
-Sources that do not satisfy the integrity standard on their own: applicant-controlled dashboards with no external corroboration, internal databases accessible only to the applicant, and self-reported results without a named external verification mechanism. These may be supplementary evidence; an indicator whose sole evidence originates from applicant-controlled systems fails the integrity standard.
+Sources that do not satisfy the data quality standard on their own: applicant-controlled dashboards with no external corroboration, internal databases accessible only to the applicant, and self-reported results without a named external verification mechanism. These may be supplementary evidence; an indicator whose sole evidence originates from applicant-controlled systems fails the data quality standard.
 
 Naming the source is not the same as describing the collection method. "Google Analytics" is not a collection method. "Monthly unique visitor count exported from Google Analytics property [named ID] using the standard unique users metric, with bot filtering enabled, covering the date range [specified]" is a collection method.
 
@@ -244,7 +348,7 @@ Class D1 (canonical vocabulary without structural grounding) passes the entry sp
 
 ### What "related to the scope of this application" means
 
-The disclosure requirement covers all active grants, investments, or revenue sources from the prior 24 months that are related to the scope of the application. "Related" is interpreted broadly: it covers funding that supports the same work, the same product, the same team's capacity to do this work, or the same beneficiary population through an overlapping mechanism.
+The disclosure requirement covers all active grants, investments, or revenue sources from the prior 24 months that are related to the scope of the application. "Related" is interpreted broadly: it covers funding that supports the same work, the same product, the same team's function to deliver this work, or the same affected population through an overlapping mechanism.
 
 ### What must be disclosed
 
@@ -252,15 +356,23 @@ Venture capital investment in the same product or platform the grant work extend
 
 For retroactive applications: all prior awards for the same or substantially overlapping contribution, from this or any other program, in any period.
 
+### Token generation events
+
+Token generation events, whether planned or already executed within the prior 24 months, are required disclosure items alongside grants and investments. A token generation event is any mechanism by which the applying entity or its principals generate, allocate, or vest tokens to themselves, to investors, or to the public in a manner that represents or may represent economic value.
+
+**What qualifies as a token generation event to disclose.** Initial decentralized exchange offerings, token generation events, initial coin offerings, liquidity bootstrapping pool launches, and continuous founder or contributor vesting schedules that release tokens during the disclosure window. A token that has not yet launched but for which a whitepaper, tokenomics document, or allocation schedule already exists is a pending token generation event and must be disclosed. The disclosed amount is the approximate United States dollar value at the time of the event; for a pending event, the planned allocation value based on the most recent publicly stated or implied valuation.
+
+**What does not qualify as an excuse for omission.** The existence of a token, or a planned token, is not a disqualifier, so it should not be concealed to avoid scrutiny. What does not qualify is non-disclosure of a material token event: a reviewer treats it as a concurrent funding omission under the same rules as an undisclosed grant or investment, which is to say a disqualifying conformance failure rather than a remediable paperwork gap. The diagnostic for a reviewer is the same asymmetry that applies to the rest of this Part: the disclosed token event is assessed on its relationship to the grant scope; the discovered-but-undisclosed one is a conformance failure.
+
 ### What need not be disclosed
 
-Unrelated work by team members that does not overlap with the grant scope. Personal income from employment unrelated to the grant scope. Prior grants in different program areas with no overlap with the current application's scope or beneficiary population.
+Unrelated work by team members that does not overlap with the grant scope. Personal income from employment unrelated to the grant scope. Prior grants in different program areas with no overlap with the current application's scope or affected population.
 
 ### Non-disclosure versus disclosure
 
 Disclosure is not a disqualifier. A project with venture capital backing can receive public goods grant funding if the relationship between commercial financing and the public goods ask is clearly articulated and the grant is specifically scoped to work the commercial funding does not cover.
 
-Non-disclosure is a disqualifier. It is not treated as an error that can be remediated. An applicant who fails to disclose a material concurrent funding relationship, where that relationship is subsequently discovered by reviewers, faces disqualification. The asymmetry is deliberate: non-disclosure is an integrity failure, not a paperwork failure.
+Non-disclosure is a disqualifier. It is not treated as an error that can be remediated. An applicant who fails to disclose a material concurrent funding relationship, where that relationship is subsequently discovered by reviewers, faces disqualification. The asymmetry is deliberate: non-disclosure is a conformance failure, not a paperwork failure.
 
 ---
 
@@ -332,7 +444,7 @@ Reviewers who find adverse signals during evaluation must not suppress them. If 
 
 ### How to apply the standard to novel relationship types
 
-The conflict of interest framework's checklist covers common relationship types, but the governing standard is the reasonable third party test, not the checklist. Novel relationship types not on the checklist that meet the standard require the same treatment.
+The conflict of interest framework's checklist covers common relationship types, but the applicable standard is the reasonable third party test, not the checklist. Novel relationship types not on the checklist that meet the standard require the same treatment.
 
 The test: would an informed observer with knowledge of the relevant facts conclude that this person cannot maintain independence and is therefore not capable of exercising objective and impartial judgment on this application?
 
@@ -360,9 +472,9 @@ If the program is small enough that all available staff have potential conflicts
 
 ### When the accommodation applies
 
-The privacy-sensitive accommodation applies when standard outcome measurement would compromise the safety of the beneficiary population. The harm must be specific and credible, not hypothetical. The population must face elevated risk from the act of measurement itself, not merely from the subject matter of the intervention.
+The privacy-sensitive accommodation applies when standard outcome measurement would compromise the safety of the affected population. The harm must be specific and supportable, not hypothetical. The population must face elevated risk from the act of measurement itself, not merely from the subject matter of the intervention.
 
-The paradigm case: an application for a censorship-circumvention tool serving users in jurisdictions where use of such tools is criminalized. Standard outcome measurement (device identifiers, IP addresses, user accounts) would create a data trail that could be used to identify and prosecute users. The harm from measurement is specific: identification by state actors. The harm is credible: documented cases of user identification leading to prosecution exist in the relevant jurisdiction.
+The paradigm case: an application for a censorship-circumvention tool serving users in jurisdictions where use of such tools is criminalized. Standard outcome measurement (device identifiers, IP addresses, user accounts) would create a data trail that could be used to identify and prosecute users. The harm from measurement is specific: identification by state actors. The harm is supportable: documented cases of user identification leading to prosecution exist in the relevant jurisdiction.
 
 ### What the accommodation requires
 
@@ -374,11 +486,11 @@ The alternative methodology must be specific enough that a reviewer can evaluate
 
 ### What does not qualify as an accommodation invocation
 
-A general preference for privacy is not a harm statement. Absence of analytics infrastructure is not a harm statement. Discomfort with data collection is not a harm statement. The accommodation exists to protect beneficiaries, not to relieve applicants of measurement obligations they find burdensome.
+A general preference for privacy is not a harm statement. Absence of analytics infrastructure is not a harm statement. Discomfort with data collection is not a harm statement. The accommodation exists to protect affected-population members, not to relieve applicants of measurement obligations they find burdensome.
 
 ---
 
-## Part 9: Beneficiary Validation
+## Part 9: Affected-Population Validation
 
 ### What "validated by parties outside the applicant's control" means
 
@@ -386,15 +498,15 @@ For change-obligation rounds: the FROM state must be confirmed as real by source
 
 "Validated by parties outside the applicant's control" means that at least one of the following is true: the baseline data comes from a named independent data source (Open Observatory of Network Interference, a government statistical agency, a peer-reviewed study, a third-party audit), or the problem is documented in a named source (journalism, non-governmental organization reports, independent technical analyses) that the applicant did not produce and does not control.
 
-An applicant who cites only their own assessments, their own user feedback, and their own network as evidence that the problem exists has not demonstrated beneficiary validation. They have demonstrated that they believe the problem exists.
+An applicant who cites only their own assessments, their own user feedback, and their own network as evidence that the problem exists has not demonstrated affected-population validation. They have demonstrated that they believe the problem exists.
 
 For build-obligation rounds where the coordinating party engagement dimension is activated: the claimed need for the deliverable must be validated by at least one party outside the applicant's organization who would use or benefit from it. A named person or organization who has expressed a specific need for this deliverable satisfies the requirement. A general claim that the ecosystem needs better tooling does not.
 
 ### The alternative-tool check
 
-For change-obligation rounds: applicants who cannot name existing alternatives to their proposed solution for the stated beneficiary population have not diagnosed a problem; they have proposed a solution in search of one. The check does not ask applicants to demonstrate that no competition exists; it asks them to demonstrate awareness of the landscape and to explain why existing approaches are insufficient for the stated population.
+For change-obligation rounds: applicants who cannot name existing alternatives to their proposed solution for the stated affected population have not diagnosed a problem; they have proposed a solution in search of one. The check does not ask applicants to demonstrate that no competition exists; it asks them to demonstrate awareness of the landscape and to explain why existing approaches are insufficient for the stated population.
 
-An applicant who names existing alternatives and explains specifically why those alternatives do not serve the stated population under the stated conditions has completed the beneficiary validation exercise. An applicant who asserts that nothing comparable exists without evidence of having looked has not. When existing tools address the stated FROM state for the stated population, the applicant must explain what additional value their intervention provides.
+An applicant who names existing alternatives and explains specifically why those alternatives do not serve the stated population under the stated conditions has completed the affected-population validation exercise. An applicant who asserts that nothing comparable exists without evidence of having looked has not. When existing tools address the stated FROM state for the stated population, the applicant must explain what additional value their intervention provides.
 
 ---
 
@@ -428,7 +540,7 @@ The failure surface serves two purposes. It demonstrates that the applicant has 
 
 ### Common mistakes
 
-The most common mistake is naming a test suite the applicant controls as the sole verification instrument. A test suite run by the same team that wrote the contract and benefits from a passing result does not satisfy the integrity standard, because the reviewer cannot independently confirm the result. Test suites may appear as supplementary evidence alongside an independent verification instrument. They do not replace one.
+The most common mistake is naming a test suite the applicant controls as the sole verification instrument. A test suite run by the same team that wrote the contract and benefits from a passing result does not satisfy the data quality standard, because the reviewer cannot independently confirm the result. Test suites may appear as supplementary evidence alongside an independent verification instrument. They do not replace one.
 
 A second common mistake is confusing the invariant specification with a description of what the contract does. What the contract does is its functionality. What the contract must always do or never do regardless of conditions is its invariants. A contract's purpose is to allow users to deposit and withdraw tokens; that is its functionality. Its invariant is that any sequence of deposits and withdrawals must leave the user no worse off than the stated fee schedule allows; that is what must be verified.
 
@@ -469,3 +581,13 @@ Not appealable: a reviewer scored an indicator field differently than the applic
 Programs at Stage 1 of their development, or below a funder-defined threshold for program scale, may designate a single board member or an external advisor who did not participate in the original decision as the appeals body. The requirement is structural separation from the original decision-making panel, not organizational independence from the funder. A co-director who reviewed no applications in the round and has no conflict with the appellant satisfies this requirement.
 
 Programs at Stage 2 or above in their Grant Configurator progression should consider whether a single board member or advisor provides adequate structural separation given the volume and complexity of decisions being appealed. At this scale, the program may benefit from a standing advisory panel or a named external arbitrator. The independent redress mechanism referenced in Part XI of the standard is a more formal version of this for large-scale programs. It is optional under the standard but serves a function that becomes harder to discharge through informal channels as programs grow.
+
+---
+
+## Changelog
+
+| Version | Date | Summary |
+|---|---|---|
+| 0.3.1 | 2026-06-08 | Frame Language own-voice pass. Own-voice watchlist terms replaced with the structural act each names (the govern family became covers or applies to; accountability became obligation or verification; mandatory became required; the integrity standard became the data quality standard; credible became supportable; the Governing standard became the Applicable standard). Part 9 heading Beneficiary Validation became Affected-Population Validation and own-voice beneficiary population became affected population; backup capacity was read as backup function where it named a delivery capability. Framework names and citations preserved. Em-dash sweep clean. No guidance content or requirement changed; vocabulary and naming only. |
+| 0.3.0 | 2026-06-05 | Synced to the 0.5.0 standard. Added Part 2-A (Entry-Gate Declarations) with what-qualifies and what-does-not guidance for the organizational identity declaration's six fields including the on-chain identity anchor, the sufficiency architecture declaration's five elements including revenue architecture, the public benefit mechanism and access condition declaration, the development stage declaration, the governance and continuity resilience declaration, the obligation fulfillment record, and the prior work attribution statement. Added the served-population risk-bearer floor guidance to Part 2, with the reviewer test for confirming the determination record shows the consideration was applied. Added token generation event disclosure guidance to Part 5. Added a CRAFT-inheritance note to the introduction. No existing guidance restructured. |
+| 0.2.0 | 2026-05-14 | Companion guidance covering three obligation modes (build, change, retroactive), the four-gate architecture, and the eleven indicator fields, with mode-specific notes. Superseded version 0.1.0. |

@@ -1,11 +1,18 @@
 ---
 title: INDIGO Data Specification Compatibility - CROSS+WALKRI
-version: 0.1.0
-date: 2026-05-18
+version: 0.1.2
+date: 2026-06-08
 license: CC0
 standards: CROSS v0.4.0 (github.com/CrossWalkri/CROSS), WALKRI v0.1.6 (github.com/CrossWalkri/WALKRI)
 references:
   - INDIGO Data Specification v0.1, Government Outcomes Lab, Blavatnik School of Government, University of Oxford, https://indigo-standard.readthedocs.io/en/latest/
+lens_tags:
+  calibration_tier: outcome_specified_self_reported
+  authority_source: civil_society_advisory
+  cultural_methodological_lineage: western_institutional
+  funder_typology: pooled_fund_or_intermediary
+  framework_scope_type: grantee_outcome_measurement
+  # INDIGO is an Oxford-based data initiative cataloguing outcomes-based contracting; pooled_fund_or_intermediary chosen as primary because INDIGO documents intermediary-administered programs; civil_society_advisory captures the academic-coalition authoring role
 ---
 
 # INDIGO Data Specification Compatibility
@@ -46,7 +53,7 @@ CROSS requires both output and outcome gates in its four-gate sequence, meaning 
 
 INDIGO payment triggers are the contractual events at which outcomes payments are released. They are defined by outcome metric attainment thresholds and verification requirements. The CROSS gate architecture maps to payment trigger logic structurally: each gate is a formal verification event at which evidence is submitted against pre-specified criteria, and gate passage or failure is a binary determination.
 
-CROSS's compliance threshold (Field 11 in the eleven-field indicator specification) is the CROSS equivalent of the payment trigger threshold: it specifies the level of attainment that constitutes satisfactory performance for that indicator. When a CROSS-compliant program uses an outcomes-based contract structure, Field 11 values and payment trigger thresholds should be identical; any divergence between them is a specification inconsistency that the entry gate process surfaces before implementation begins.
+CROSS's conformance threshold (Field 11 in the eleven-field indicator specification) is the CROSS equivalent of the payment trigger threshold: it specifies the level of attainment that constitutes satisfactory performance for that indicator. When a CROSS-conformant program uses an outcomes-based contract structure, Field 11 values and payment trigger thresholds should be identical; any divergence between them is a specification inconsistency that the entry gate process surfaces before implementation begins.
 
 CROSS's gate date fields address the timing dimension of payment triggers: each gate has a scheduled date, and late gate submission or evidence insufficiency at a gate creates a formal record of the deviation. INDIGO records payment trigger dates as part of the contract structure; CROSS gate records are the instrument-level evidence base for those payment events.
 
@@ -64,7 +71,7 @@ For INDIGO data quality purposes, the causality stance field ensures that the at
 
 INDIGO's reproducibility requirement extends to result data: a reviewer of an INDIGO record should be able to understand how outcome data was collected and verified, not merely what numbers were reported. WALKRI's evidence form requirement addresses this directly. The evidence form field in WALKRI specifies, for every measurement field, what independent verification pathway exists and how a reviewer could access or replicate the verification. Evidence forms must be independent of the reporting party's self-assessment; they must reference a verifiable artifact.
 
-For INDIGO-aligned programs, WALKRI's evidence form entries are the instrument-level documentation that supports the reproducibility of result data fields in the INDIGO record. A WALKRI-compliant measurement instrument produces evidence that is traceable to its source, independently verifiable, and documented before data collection begins. This is the specification-layer precondition for INDIGO data quality.
+For INDIGO-aligned programs, WALKRI's evidence form entries are the instrument-level documentation that supports the reproducibility of result data fields in the INDIGO record. A WALKRI-conformant measurement instrument produces evidence that is traceable to its source, independently verifiable, and documented before data collection begins. This is the specification-layer precondition for INDIGO data quality.
 
 ---
 
@@ -74,7 +81,7 @@ For INDIGO-aligned programs, WALKRI's evidence form entries are the instrument-l
 | :-- | :-- | :-- | :-- |
 | Results chain (outputs, outcomes) | ToC architecture with named causal links; output and outcome gate layers | No direct provision | Structural: two-tier results chain with named causal mechanisms |
 | Outcome metrics with units and baseline | Fields 1-5 (name, definition, unit, baseline, target) | Criterion intent and operational definition requirements | Structural: eleven-field indicator specification |
-| Payment triggers | Gate compliance threshold (Field 11); gate date fields | No direct provision | Structural: threshold and timing logic matches payment trigger structure |
+| Payment triggers | Gate conformance threshold (Field 11); gate date fields | No direct provision | Structural: threshold and timing logic matches payment trigger structure |
 | Attribution claim | Causality stance field | No direct provision | Structural: explicit, gate-locked attribution declaration |
 | Reproducibility of result data | Evidence form (Field 10) in indicator specification | Evidence form requirement: independent verification pathway documented pre-collection | Structural: traceable, independent evidence for all measurement fields |
 | Stakeholder roles | No direct provision | No direct provision | Outside specification scope |
@@ -101,3 +108,5 @@ License: CC0
 | Version | Date | Summary |
 |---|---|---|
 | 0.1.0 | 2026-05-18 | Initial draft. Results chain, payment trigger, attribution, and evidence reproducibility mappings documented. Stakeholder roles and financial structure identified as outside specification scope. |
+| 0.1.1 | 2026-05-23 | Retroactive lens tagging: added calibration_tier, authority_source, cultural_methodological_lineage, funder_typology, framework_scope_type per Lenses Framework v0.1.0. |
+| 0.1.2 | 2026-06-08 | Frame Language own-voice pass applied as part of the corpus-wide 2026-06-08 sweep: own-voice watchlist terms (govern-family, accountability, mandatory, compliance, enforce, legitimate) recast to conformance and obligation vocabulary where they appeared in this document's own voice; citation use of source-framework terms preserved. Primitive-rename references aligned to current canon (Continuity Capacity, the Collective disbursement state, Affected Population Verification Gate). Em-dash- and watchlist-clean re-verified. No compatibility finding or mapping changed; vocabulary only. |

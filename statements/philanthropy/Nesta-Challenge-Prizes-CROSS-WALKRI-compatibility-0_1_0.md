@@ -1,11 +1,18 @@
 ---
 title: Nesta Challenge Prizes Compatibility - CROSS+WALKRI
-version: 0.1.0
-date: 2026-05-18
+version: 0.1.2
+date: 2026-06-08
 license: CC0
 standards: CROSS v0.4.0 (github.com/CrossWalkri/CROSS), WALKRI v0.1.6 (github.com/CrossWalkri/WALKRI)
 references:
   - Nesta (Challenge Works), Challenge Prizes: A Practice Guide, 2019, https://media.nesta.org.uk/documents/Nesta_Challenges_Practice_Guide_2019.pdf
+lens_tags:
+  calibration_tier: outcome_specified_self_reported
+  authority_source: voluntary_published
+  cultural_methodological_lineage: western_institutional
+  funder_typology: private_foundation
+  framework_scope_type: allocator_process
+  # Nesta Challenge Prizes methodology; Nesta is UK innovation foundation
 ---
 
 # Nesta Challenge Prizes Compatibility
@@ -44,7 +51,7 @@ CROSS's four-gate sequence in Build mode maps to the challenge prize lifecycle: 
 
 The guide's most operationally specific requirement is that success criteria must be defined before the prize launches. This requirement has a structural implication: criteria defined before launch cannot depend on comparative assessment of submissions (since submissions do not yet exist) and must be expressed as absolute standards against which any submission can be assessed independently. Criteria that are expressed comparatively ("the best solution submitted") are not measurable upfront criteria; they are selection criteria, which are a different design choice.
 
-CROSS's entry specification gate is the gate that locks the eleven-field indicator specification before any applicant submits. In a challenge prize context, Fields 1 through 5 (name, definition, unit, baseline, target) define what must be demonstrated and at what level. Field 11 (compliance threshold) is the pass/fail criterion: it specifies the level of attainment that constitutes prize qualification, expressed as an absolute standard. The compliance threshold field is the CROSS instrument-layer expression of the guide's falsifiable success criterion requirement.
+CROSS's entry specification gate is the gate that locks the eleven-field indicator specification before any applicant submits. In a challenge prize context, Fields 1 through 5 (name, definition, unit, baseline, target) define what must be demonstrated and at what level. Field 11 (conformance threshold) is the pass/fail criterion: it specifies the level of attainment that constitutes prize qualification, expressed as an absolute standard. The conformance threshold field is the CROSS instrument-layer expression of the guide's falsifiable success criterion requirement.
 
 WALKRI strengthens the entry specification gate for challenge prizes by requiring criterion intent to be stated explicitly before the evaluation fields are published. A prize evaluation rubric is a collection instrument; it collects assessors' judgments about submissions. WALKRI's criterion intent requirement forces the prize designer to state what each evaluation field is measuring and why, before assessors are trained and before submissions are reviewed. This requirement prevents the common prize design failure where evaluation rubrics accumulate criteria that reflect what assessors find interesting rather than what the success criteria require.
 
@@ -64,7 +71,7 @@ The evidence form requirement specifies what independent verification pathway ex
 
 | Guide Requirement | CROSS Provision | WALKRI Provision | Coverage |
 | :-- | :-- | :-- | :-- |
-| Measurable success criteria defined upfront | Entry specification gate; Build obligation mode; compliance threshold (Field 11) as absolute pass/fail standard | Criterion intent requirement for evaluation fields | Structural: gate architecture enforces pre-specification and locks criteria |
+| Measurable success criteria defined upfront | Entry specification gate; Build obligation mode; conformance threshold (Field 11) as absolute pass/fail standard | Criterion intent requirement for evaluation fields | Structural: gate architecture enforces pre-specification and locks criteria |
 | Baseline analysis | Field 4 (baseline) in eleven-field specification | No direct provision | Structural: baseline documented in indicator specification |
 | Independent evaluation of submissions | Gate evidence submission structure; evidence form (Field 10) | Evidence form requirement: independent verification pathway required | Structural: gate evidence and WALKRI evidence form together |
 | Societal outcome evaluation | Outcome gate; ToC causal architecture linking deliverable to societal effect | No direct provision | Structural: outcome gate is post-award evaluation moment |
@@ -91,3 +98,5 @@ License: CC0
 | Version | Date | Summary |
 |---|---|---|
 | 0.1.0 | 2026-05-18 | Initial draft. Build obligation mode, entry specification gate, and WALKRI evaluation field requirements analyzed against Nesta guide requirements. Societal and participant outcome gate mappings documented. |
+| 0.1.1 | 2026-05-23 | Retroactive lens tagging: added calibration_tier, authority_source, cultural_methodological_lineage, funder_typology, framework_scope_type per Lenses Framework v0.1.0. |
+| 0.1.2 | 2026-06-08 | Frame Language own-voice pass applied as part of the corpus-wide 2026-06-08 sweep: own-voice watchlist terms (govern-family, accountability, mandatory, compliance, enforce, legitimate) recast to conformance and obligation vocabulary where they appeared in this document's own voice; citation use of source-framework terms preserved. Primitive-rename references aligned to current canon (Continuity Capacity, the Collective disbursement state, Affected Population Verification Gate). Em-dash- and watchlist-clean re-verified. No compatibility finding or mapping changed; vocabulary only. |

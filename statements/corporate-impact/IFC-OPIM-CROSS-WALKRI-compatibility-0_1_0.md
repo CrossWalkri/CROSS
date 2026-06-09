@@ -1,7 +1,7 @@
 ---
 title: IFC Operating Principles for Impact Management Compatibility - CROSS+WALKRI
-version: 0.1.0
-date: 2026-05-18
+version: 0.1.2
+date: 2026-06-08
 license: CC0
 standards: CROSS v0.4.0 (github.com/CrossWalkri/CROSS), WALKRI v0.1.6 (github.com/CrossWalkri/WALKRI)
 references:
@@ -9,6 +9,13 @@ references:
   - IFC Impact Investing Principles, 2019
   - GIIN IRIS+ v5.3c (iris.thegiin.org)
   - Impact Management Norms (impactmanagementnorms.com)
+lens_tags:
+  calibration_tier: independently_verified
+  authority_source: voluntary_published
+  cultural_methodological_lineage: western_institutional
+  funder_typology: multilateral_bank_or_fund
+  framework_scope_type: allocator_process
+  # IFC Operating Principles for Impact Management; IFC is multilateral bank; OPIM is allocator-process oriented with independent verification of signatory disclosures
 ---
 
 # IFC Operating Principles for Impact Management Compatibility
@@ -19,7 +26,7 @@ references:
 
 ## Summary
 
-A grant program running CROSS+WALKRI produces compliance with IFC Operating Principles for Impact Management (OPIM) Principles 4 and 6 as a structural consequence of conformance. CROSS's pre-application obligation specification directly implements Principle 4's requirement that expected impact be assessed systematically before commitment. WALKRI ensures the intake fields collecting indicator data are measurement instruments rather than labels, satisfying the evidentiary quality that Principle 6's monitoring requirement depends on.
+A grant program running CROSS+WALKRI produces conformance with IFC Operating Principles for Impact Management (OPIM) Principles 4 and 6 as a structural consequence of conformance. CROSS's pre-application obligation specification directly implements Principle 4's requirement that expected impact be assessed systematically before commitment. WALKRI ensures the intake fields collecting indicator data are measurement instruments rather than labels, satisfying the evidentiary quality that Principle 6's monitoring requirement depends on.
 
 The nine OPIM principles span the full asset management lifecycle: from strategy and allocation through investment assessment, monitoring, exit, review, and public disclosure. Principles 1 through 3 address portfolio-level strategy and asset allocation; Principle 7 addresses exit decisions based on impact; and Principle 9 addresses public reporting on alignment. These four principles address relationships between an asset manager, its portfolio, and its investors that lie outside the scope of a single grants round. CROSS+WALKRI addresses the principles that operate at the level of a grant program: assessment before commitment (Principle 4), monitoring throughout (Principle 6), and documentation practices that support review and disclosure (Principles 8 and 9 partially).
 
@@ -49,13 +56,13 @@ WALKRI is not directly engaged at this principle: strategic intent is a program-
 
 Principle 2 requires the manager to consider impact characteristics when making allocation decisions, so that the portfolio as a whole advances the strategic intent declared under Principle 1.
 
-This principle operates at the portfolio level, above the scope of an individual grants round. CROSS's cohort position assessment (Part X) provides relevant support: it situates each applicant relative to others in the cohort, surfacing concentration risks and portfolio gaps. A program operator using the cohort position assessment alongside the ToC declaration can make allocation decisions that reflect impact distribution across the round. Full portfolio-level OPIM compliance, however, requires practices that span multiple rounds and involve capital allocation decisions beyond what CROSS governs.
+This principle operates at the portfolio level, above the scope of an individual grants round. CROSS's cohort position assessment (Part X) provides relevant support: it situates each applicant relative to others in the cohort, surfacing concentration risks and portfolio gaps. A program operator using the cohort position assessment alongside the ToC declaration can make allocation decisions that reflect impact distribution across the round. Full portfolio-level OPIM conformance, however, requires practices that span multiple rounds and involve capital allocation decisions beyond what CROSS covers.
 
 ### Principle 3: Establish Manager Requirements
 
 Principle 3 requires that managers working on behalf of the signatory be required to adopt impact management practices consistent with the OPIM.
 
-This principle addresses the manager relationship: it applies when an asset owner delegates impact management authority to a third-party manager. For grants programs, this maps to the relationship between a funder and a grants administrator. CROSS+WALKRI provides the framework an administrator can implement to demonstrate that the program they operate meets OPIM-compatible standards. A funder requiring OPIM compliance from its grants administrator can specify CROSS+WALKRI conformance as the implementation vehicle.
+This principle addresses the manager relationship: it applies when an asset owner delegates impact management authority to a third-party manager. For grants programs, this maps to the relationship between a funder and a grants administrator. CROSS+WALKRI provides the framework an administrator can implement to demonstrate that the program they operate meets OPIM-compatible standards. A funder requiring OPIM conformance from its grants administrator can specify CROSS+WALKRI conformance as the implementation vehicle.
 
 ### Principle 4: Assess Expected Impact Systematically Before Commitment
 
@@ -85,11 +92,11 @@ The critical assumptions list in the pathway registry (Part IX-B, Section 3) is 
 
 Principle 6 requires tracking actual impact against pre-defined indicators throughout the investment period. The monitoring methodology must be documented, consistent, and applied to each investment in the portfolio.
 
-CROSS directly implements Principle 6 through its gate architecture. Progress verification gates (Part IV, Section 4.2) require the program to collect evidence against the indicators specified in Part V at defined intervals during the grant period. Because the indicators are pre-specified, the monitoring is structured rather than improvised. Because the gate architecture is mandatory for CROSS-conformant programs, the monitoring is applied consistently across all grantees in the round.
+CROSS directly implements Principle 6 through its gate architecture. Progress verification gates (Part IV, Section 4.2) require the program to collect evidence against the indicators specified in Part V at defined intervals during the grant period. Because the indicators are pre-specified, the monitoring is structured rather than improvised. Because the gate architecture is required for CROSS-conformant programs, the monitoring is applied consistently across all grantees in the round.
 
 The data source and collection frequency fields (Part V, Fields 7 and 8) specify where monitoring data comes from and how often it is collected. These fields are declared before the round opens, satisfying Principle 6's requirement that the monitoring methodology be established in advance.
 
-WALKRI contributes to Principle 6 compliance at the field level. A WALKRI-conformant progress reporting field specifies the evidence form required for each indicator value submitted: not just the number, but the artifact type and access path that proves the number. This makes progress monitoring verifiable rather than self-reported.
+WALKRI contributes to Principle 6 conformance at the field level. A WALKRI-conformant progress reporting field specifies the evidence form required for each indicator value submitted: not just the number, but the artifact type and access path that proves the number. This makes progress monitoring verifiable rather than self-reported.
 
 ### Principle 7: Conduct Exits Based on Impact
 
@@ -133,7 +140,7 @@ CROSS and WALKRI are not a disclosure format; they are an obligation architectur
 
 ## Who Should Reference This Compatibility Statement
 
-Development finance institutions, foundations, and asset managers that are OPIM signatories and operate grants programs alongside their investment portfolios. Adopting CROSS+WALKRI for the grants program satisfies Principle 4 and Principle 6 requirements structurally for the grants instrument, producing compliant documentation without additional process overhead.
+Development finance institutions, foundations, and asset managers that are OPIM signatories and operate grants programs alongside their investment portfolios. Adopting CROSS+WALKRI for the grants program satisfies Principle 4 and Principle 6 requirements structurally for the grants instrument, producing conformant documentation without additional process overhead.
 
 Program operators seeking OPIM signatory status who use grants as a primary delivery mechanism. CROSS+WALKRI provides the systematic methodology and monitoring documentation that OPIM signatory verification requires.
 
@@ -142,3 +149,12 @@ Co-financing programs between OPIM signatories and other funders. When a CROSS+W
 ---
 
 *Published under CC0. For the current version of CROSS and WALKRI, see github.com/CrossWalkri.*
+
+---
+
+## Changelog
+
+| Version | Date | Summary |
+|---|---|---|
+| 0.1.2 | 2026-06-08 | Frame Language own-voice pass applied as part of the corpus-wide 2026-06-08 sweep: own-voice watchlist terms (govern-family, accountability, mandatory, compliance, enforce, legitimate) recast to conformance and obligation vocabulary where they appeared in this document's own voice; citation use of source-framework terms preserved. Primitive-rename references aligned to current canon (Continuity Capacity, the Collective disbursement state, Affected Population Verification Gate). Em-dash- and watchlist-clean re-verified. No compatibility finding or mapping changed; vocabulary only. |
+| 0.1.1 | 2026-05-23 | Retroactive lens tagging: added calibration_tier, authority_source, cultural_methodological_lineage, funder_typology, framework_scope_type per Lenses Framework v0.1.0. |

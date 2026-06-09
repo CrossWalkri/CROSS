@@ -5,7 +5,7 @@ date: 2026-05-14
 license: CC0
 status: First edition. Companion document to CROSS Common Reporting Outcome Standards Schema version 0.2.0.
 related_documents:
-  - standards/CROSS-common-reporting-outcome-standards-schema-0_2_0.md
+  - standards/CROSS-common-reporting-outcome-standards-schema-0_5_0.md
   - standards/CROSS-grant-configurator-0_1_0.md
 ---
 
@@ -26,8 +26,6 @@ Selecting a runbook does not waive any requirement of the CROSS Common Reporting
 Conflict of interest requirements from Part VII of the standard apply to all runbooks. Runbooks do not reduce conflict of interest obligations. A runbook may specify how conflict of interest declarations are operationally implemented for the program type; it may not lower the standard.
 
 Concurrent funding disclosure from Part VI applies to all runbooks without exception.
-
-The gate architecture in these runbooks maps to the CLEAR round lifecycle (Commit, List, Evaluate, Attest, Register). The Entry Specification gate corresponds to the Commit and List stages: publishing the obligation architecture before applications open, then collecting applications against it. The Completion Verification gate corresponds to the Attest stage. The institutional memory produced at round close corresponds to the Register stage.
 
 ---
 
@@ -52,7 +50,7 @@ The deliverable is a document, specification, dataset, assessment, or design art
 
 **Conflict of interest.** Standard three-tier declaration applies. Because discovery sprint grants are small and the time commitment for reviewers is brief, the conflict of interest declaration may be administered through a concise form covering all three tiers. No waiver process is available for Tier 1 conflicts regardless of grant size.
 
-**Infrastructure declaration requirements.** No gate in this runbook requires independent review. The infrastructure declaration for the completion verification gate specifies the named staff member and the timeline for artifact review after submission. This must be published before the round opens (the Commit stage).
+**Infrastructure declaration requirements.** No gate in this runbook requires independent review. The infrastructure declaration for the completion verification gate specifies the named staff member and the timeline for artifact review after submission. This must be published before the round opens.
 
 **Optional dimension activation.** For discovery sprint grants, the environmental and social impact, gender equity, and procurement integrity dimensions are typically not activated. The funder may activate them if the program area warrants.
 
@@ -292,7 +290,7 @@ No customization may reduce the minimum evidence requirements from Part IV of th
 
 The following requirements apply to every CROSS-conformant round regardless of which runbook is selected. They are not repeated within individual runbooks; they apply by default across all six.
 
-**Gate criterion specification (WALKRI).** All gate criteria must satisfy WALKRI criterion specification requirements (criterion intent, operational definition, response form justification, evidence form, compliance threshold) before the round opens. The field clarity gate must be cleared for every application field before applicants see the form. A gate criterion that does not pass WALKRI audit before the round opens is a funder-side conformance failure, not a grantee-side deficiency.
+**Gate criterion specification (WALKRI).** All gate criteria must satisfy WALKRI criterion specification requirements (criterion intent, operational definition, response form justification, evidence form, conformance threshold) before the round opens. The field clarity gate must be cleared for every application field before applicants see the form. A gate criterion that does not pass WALKRI audit before the round opens is a funder-side conformance failure, not a grantee-side deficiency.
 
 **Organizational identity declaration.** Every entry gate submission must include the organizational identity declaration regardless of obligation mode or grant size: the legal entity name and jurisdiction, the parent organization if any, affiliated entities sharing the applicant's name, brand, personnel, or codebase, and prior round history in this and comparable programs under all names and substantially overlapping entities.
 

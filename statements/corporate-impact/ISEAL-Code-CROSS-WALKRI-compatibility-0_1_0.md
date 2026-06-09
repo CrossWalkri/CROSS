@@ -1,11 +1,18 @@
 ---
 title: ISEAL Code of Good Practice Compatibility - CROSS+WALKRI
-version: 0.1.0
-date: 2026-05-18
+version: 0.1.2
+date: 2026-06-08
 license: CC0
 standards: CROSS v0.4.0 (github.com/CrossWalkri/CROSS), WALKRI v0.1.6 (github.com/CrossWalkri/WALKRI)
 references:
   - ISEAL Alliance Code of Good Practice for Sustainability Systems, v1.0 effective March 2024, v1.1 September 2025, https://isealcode.org/
+lens_tags:
+  calibration_tier: independently_verified
+  authority_source: voluntary_published
+  cultural_methodological_lineage: western_institutional
+  funder_typology: corporate_csr
+  framework_scope_type: certification
+  # ISEAL Codes of Good Practice for sustainability standards systems; certification scope; corporate_csr as primary funder typology covering certified actors; alternative civil_society_advisory authority
 ---
 
 # ISEAL Code of Good Practice Compatibility
@@ -38,17 +45,17 @@ Part 5 of the ISEAL Code governs how standards systems monitor their own perform
 
 ## Part 5 Requirement 1: Define Indicators Before Implementation
 
-ISEAL Part 5 requires that indicators for monitoring system performance be defined before the monitoring cycle begins, not selected post-hoc to match available data. This requirement is the precondition for all subsequent monitoring credibility: if indicators are selected after data is collected, the monitoring system cannot distinguish between genuine performance and reporting optimized for available data.
+ISEAL Part 5 requires that indicators for monitoring system performance be defined before the monitoring cycle begins, not selected post-hoc to match available data. This requirement is the precondition for all subsequent monitoring verifiability: if indicators are selected after data is collected, the monitoring system cannot distinguish between genuine performance and reporting optimized for available data.
 
 CROSS's entry specification gate is the structural implementation of this requirement at the grant program level. The gate locks the eleven-field indicator specification before any applicant submits work. No indicator can be added, removed, or redefined after the entry gate closes without a formal gate record of the change and its rationale. For a sustainability standards system using CROSS to manage its grant programs (or to structure its own performance monitoring), the entry specification gate provides a verifiable, time-stamped record that indicators were defined before implementation, satisfying Part 5's pre-specification requirement with a formal gate artifact rather than a self-declaration.
 
-WALKRI strengthens this requirement by ensuring that the indicators defined at the entry gate are measurement instruments: they have explicit criterion intent, operational definitions, response forms, evidence forms, and compliance thresholds. ISEAL Part 5 does not specify the internal quality of indicators beyond requiring that they be defined before implementation; WALKRI adds the instrument quality layer that ensures the pre-specified indicators are capable of producing reliable monitoring data.
+WALKRI strengthens this requirement by ensuring that the indicators defined at the entry gate are measurement instruments: they have explicit criterion intent, operational definitions, response forms, evidence forms, and conformance thresholds. ISEAL Part 5 does not specify the internal quality of indicators beyond requiring that they be defined before implementation; WALKRI adds the instrument quality layer that ensures the pre-specified indicators are capable of producing reliable monitoring data.
 
 ---
 
 ## Part 5 Requirement 2: Collect Data Systematically
 
-ISEAL Part 5 requires that data collection be systematic: it should occur at defined intervals, against the pre-specified indicators, and with documented methodology. Systematic collection distinguishes credible monitoring from anecdotal or opportunistic data gathering.
+ISEAL Part 5 requires that data collection be systematic: it should occur at defined intervals, against the pre-specified indicators, and with documented methodology. Systematic collection distinguishes verifiable monitoring from anecdotal or opportunistic data gathering.
 
 CROSS's gate architecture provides the structural mechanism for systematic data collection. Each gate in the four-gate sequence has a scheduled date and a defined evidence submission requirement. Gate evidence is collected against the pre-specified indicators (Fields 1-11) at the gate intervals, not on an ad hoc basis. The gate record documents what evidence was submitted, when, and against which indicators. Late submission or evidence insufficiency creates a formal record of the deviation.
 
@@ -70,7 +77,7 @@ A standards system seeking ISEAL recognition would publish its CROSS gate record
 
 ## Parts Outside Scope
 
-ISEAL Code Parts 1 through 4 address governance and accountability, standard setting, conformity assessment, and impacts. These parts govern how a sustainability standards system is governed, how its standards are developed, how certification bodies are accredited, and how broader societal impacts are assessed. These are organizational and governance questions that are outside the specification layer addressed by CROSS and WALKRI. This statement addresses only Part 5, where the structural alignment is direct and documentable.
+ISEAL Code Parts 1 through 4 address governance and accountability, standard setting, conformity assessment, and impacts. These parts cover how a sustainability standards system is structured, how its standards are developed, how certification bodies are accredited, and how broader societal impacts are assessed. These are organizational and decision-standing questions that are outside the specification layer addressed by CROSS and WALKRI. This statement addresses only Part 5, where the structural alignment is direct and documentable.
 
 ---
 
@@ -103,3 +110,5 @@ License: CC0
 | Version | Date | Summary |
 |---|---|---|
 | 0.1.0 | 2026-05-18 | Initial draft. Part 5 three requirements analyzed in full. Parts 1-4 identified as outside specification scope. Non-membership note included prominently. Structural alignment documented as pathway for potential future recognition. |
+| 0.1.1 | 2026-05-23 | Retroactive lens tagging: added calibration_tier, authority_source, cultural_methodological_lineage, funder_typology, framework_scope_type per Lenses Framework v0.1.0. |
+| 0.1.2 | 2026-06-08 | Frame Language own-voice pass applied as part of the corpus-wide 2026-06-08 sweep: own-voice watchlist terms (govern-family, accountability, mandatory, compliance, enforce, legitimate) recast to conformance and obligation vocabulary where they appeared in this document's own voice; citation use of source-framework terms preserved. Primitive-rename references aligned to current canon (Continuity Capacity, the Collective disbursement state, Affected Population Verification Gate). Em-dash- and watchlist-clean re-verified. No compatibility finding or mapping changed; vocabulary only. |

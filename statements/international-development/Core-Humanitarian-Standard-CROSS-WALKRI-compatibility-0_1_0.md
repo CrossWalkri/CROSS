@@ -1,13 +1,20 @@
 ---
 title: Core Humanitarian Standard Compatibility - CROSS+WALKRI
-version: 0.1.0
-date: 2026-05-18
+version: 0.1.2
+date: 2026-06-08
 license: CC0
 standards: CROSS v0.4.0 (github.com/CrossWalkri/CROSS), WALKRI v0.1.6 (github.com/CrossWalkri/WALKRI)
 references:
   - Core Humanitarian Standard on Quality and Accountability, 2024 edition, https://www.corehumanitarianstandard.org/the-standard
   - CHS Alliance Verification Scheme documentation
   - Sphere Standards, 2018 edition
+lens_tags:
+  calibration_tier: independently_verified
+  authority_source: voluntary_published
+  cultural_methodological_lineage: western_institutional
+  funder_typology: pooled_fund_or_intermediary
+  framework_scope_type: certification
+  # Core Humanitarian Standard on Quality and Accountability; CHS Alliance certification scheme; pooled_fund_or_intermediary captures the humanitarian network typology; alternative civil_society_advisory authority
 ---
 
 # Core Humanitarian Standard Compatibility
@@ -20,7 +27,7 @@ references:
 
 CROSS and WALKRI together address Core Humanitarian Standard (CHS) Commitments 7, 8, and 9 structurally, at the specification layer. These three commitments concern measurement and adaptation (7), effective resource management (8), and continuous improvement through organizational quality systems (9). The remaining six commitments concern operational aspects of humanitarian response delivery that are outside the specification layer and therefore outside the scope of this statement.
 
-The CHS is a foundational accountability framework used by UN agencies, ICRC, and hundreds of NGOs worldwide. It establishes nine commitments from the perspective of affected communities, each with accompanying quality criteria and organizational responsibilities. CROSS and WALKRI do not govern humanitarian operations; they govern how funded interventions are specified, measured, and disclosed. Where those activities intersect with CHS requirements, the intersection is structural and documentable.
+The CHS is a foundational accountability framework used by UN agencies, ICRC, and hundreds of NGOs worldwide. It establishes nine commitments from the perspective of affected communities, each with accompanying quality criteria and organizational responsibilities. CROSS and WALKRI do not cover humanitarian operations; they cover how funded interventions are specified, measured, and disclosed. Where those activities intersect with CHS requirements, the intersection is structural and documentable.
 
 This compatibility matters for humanitarian grant operators using CROSS, for institutional donors applying the CHS as a due diligence standard, and for organizations seeking CHS verification that include grant programs in their verification scope.
 
@@ -54,7 +61,7 @@ CROSS addresses Commitment 7 at the structural precondition level. Adaptation re
 
 Progress gates, in the CROSS architecture, are the structural mechanism for Commitment 7's adaptation loop. Each gate requires evidence submission against pre-specified indicators, enabling a direct comparison between expected and actual states. This comparison is the data layer for the "learn from experience" action that Commitment 7 requires.
 
-WALKRI's five field requirements strengthen Commitment 7 compliance by ensuring that the measurement instruments producing gate actuals are specified, valid, and reliable. Learning from poorly designed instruments produces systematically misleading signals. WALKRI's validity requirement ensures that fields measure what they claim to measure, which is the precondition for evidence-informed adaptation.
+WALKRI's five field requirements strengthen Commitment 7 conformance by ensuring that the measurement instruments producing gate actuals are specified, valid, and reliable. Learning from poorly designed instruments produces systematically misleading signals. WALKRI's validity requirement ensures that fields measure what they claim to measure, which is the precondition for evidence-informed adaptation.
 
 ---
 
@@ -62,11 +69,11 @@ WALKRI's five field requirements strengthen Commitment 7 compliance by ensuring 
 
 Commitment 8 requires organizations to manage resources efficiently, to minimize waste, and to prevent fraud and corruption. Its organizational responsibilities include: transparent financial reporting, concurrent funding disclosure, separation of financial management from programme delivery, and ethical procurement.
 
-CROSS addresses two aspects of Commitment 8 structurally. The concurrent funding disclosure requirement in the CROSS obligation architecture requires programs to declare co-financing and other funding relationships at the entry gate. This produces the transparent financial reporting layer that Commitment 8 requires. CROSS does not govern financial management systems; it governs what must be disclosed at the specification layer, and concurrent funding disclosure is within that scope.
+CROSS addresses two aspects of Commitment 8 structurally. The concurrent funding disclosure requirement in the CROSS obligation architecture requires programs to declare co-financing and other funding relationships at the entry gate. This produces the transparent financial reporting layer that Commitment 8 requires. CROSS does not cover financial management systems; it covers what must be disclosed at the specification layer, and concurrent funding disclosure is within that scope.
 
 CROSS's financial transparency obligation dimension is one of eight obligation dimensions in the obligation architecture. This dimension requires that the funding relationship and any co-financing arrangements be documented in the obligation record, not merely reported separately. The obligation record is the disclosure artifact; the gate evidence record is the verification artifact.
 
-WALKRI addresses Commitment 8 at the evidence integrity level. WALKRI's integrity requirement specifies that every evidence form must be independent of the beneficiary's self-report: evidence cannot be an artifact produced and controlled by the entity whose performance is being assessed. This separation is the instrument-level expression of the conflict-of-interest prevention that Commitment 8's ethical management requirement addresses. When grantee-reported outcomes are verified by an evidence form that the grantee does not control, the integrity of the measurement record is structurally protected.
+WALKRI addresses Commitment 8 at the evidence verification level. WALKRI's integrity requirement specifies that every evidence form must be independent of the affected party's self-report: evidence cannot be an artifact produced and controlled by the entity whose performance is being assessed. This separation is the instrument-level expression of the conflict-of-interest prevention that Commitment 8's ethical management requirement addresses. When grantee-reported outcomes are verified by an evidence form that the grantee does not control, the verifiability of the measurement record is structurally protected.
 
 ---
 
@@ -74,11 +81,11 @@ WALKRI addresses Commitment 8 at the evidence integrity level. WALKRI's integrit
 
 Commitment 9 requires organizations to maintain systems for organizational learning, feedback processing, staff capacity development, and improvement of policies and procedures. Its organizational responsibilities include: a commitment to learning, regular reviews of performance, use of feedback to improve systems, and transparent reporting on performance.
 
-WALKRI directly addresses Commitment 9 at the quality management system level. WALKRI's five pre-publication field requirements, applied to collection instruments, constitute a quality management system for intake instrument design. The criterion intent requirement ensures that measurement purpose is stated before instruments are deployed. The operational definition requirement ensures that field boundaries are explicit and documented. The response form justification requirement ensures that collection methods are matched to measurement goals and that the match is explained. The evidence form requirement ensures that every measurement has an independent verification pathway. The compliance threshold requirement ensures that sufficiency standards are explicit rather than left to reviewer judgment.
+WALKRI directly addresses Commitment 9 at the quality assurance system level. WALKRI's five pre-publication field requirements, applied to collection instruments, constitute a quality assurance system for intake instrument design. The criterion intent requirement ensures that measurement purpose is stated before instruments are deployed. The operational definition requirement ensures that field boundaries are explicit and documented. The response form justification requirement ensures that collection methods are matched to measurement goals and that the match is explained. The evidence form requirement ensures that every measurement has an independent verification pathway. The conformance threshold requirement ensures that sufficiency standards are explicit rather than left to reviewer judgment.
 
 These five requirements, taken together, are an intake quality control protocol. When applied systematically across an organization's grant programs, they implement the "improve policies and procedures" action that Commitment 9's organizational responsibilities require. Each new grant cycle is an opportunity to apply WALKRI to the collection instruments, review what field specifications from prior cycles produced data quality failures, and update the instrument design accordingly. This is the operational expression of continuous improvement logic applied to measurement infrastructure.
 
-WALKRI's three-stage audit process (criterion intent review, operational definition review, evidence form review) is the quality assurance mechanism. It is not a one-time check; it is a repeatable process that an organization applies to each instrument before publication, building institutional knowledge of what specification failures look like and how to prevent them. This repeatable process is the quality management system that Commitment 9 requires at the instrument layer.
+WALKRI's three-stage audit process (criterion intent review, operational definition review, evidence form review) is the quality assurance mechanism. It is not a one-time check; it is a repeatable process that an organization applies to each instrument before publication, building institutional knowledge of what specification failures look like and how to prevent them. This repeatable process is the quality assurance system that Commitment 9 requires at the instrument layer.
 
 ---
 
@@ -111,14 +118,14 @@ Six of the nine CHS commitments address operational aspects of humanitarian resp
 | 5. Complaint mechanisms | No direct provision | No direct provision | Outside specification scope |
 | 6. Coordinated assistance | Field 10 captures formal coordination framework alignment; coherence disclosure requirement | No direct provision | Partial: framework alignment only, not coordination operations |
 | 7. Learning and adaptation | Entry specification gate (pre-specified measurement); progress gates (evidence-based adaptation loop); ToC causal architecture | Validity and reliability requirements ensure measurement instruments produce trustworthy actuals | Structural: specification precondition for evidence-based learning |
-| 8. Resource management | Concurrent funding disclosure; financial transparency obligation dimension | Integrity requirement (evidence independent of beneficiary self-report) | Structural: disclosure and evidence integrity dimensions |
-| 9. Continuous improvement | Obligation record as a formal, versioned specification subject to improvement across cycles | Five field requirements as intake quality control protocol; three-stage audit process as repeatable quality management system | Structural: instrument-level quality management system |
+| 8. Resource management | Concurrent funding disclosure; financial transparency obligation dimension | Integrity requirement (evidence independent of affected party self-report) | Structural: disclosure and evidence verification dimensions |
+| 9. Continuous improvement | Obligation record as a formal, versioned specification subject to improvement across cycles | Five field requirements as intake quality control protocol; three-stage audit process as repeatable quality assurance system | Structural: instrument-level quality assurance system |
 
 ---
 
 ## Adoption Guidance
 
-Humanitarian grant operators using CROSS+WALKRI who are subject to CHS accountability should:
+Humanitarian grant operators using CROSS+WALKRI who are subject to CHS obligation requirements should:
 
 1. Treat CROSS's entry specification gate as the measurement system design stage for Commitment 7. Lock the indicator specification, ToC, and evidence plan before implementation begins; do not allow indicator drift during implementation without a formal gate record of the change and its rationale.
 
@@ -126,7 +133,7 @@ Humanitarian grant operators using CROSS+WALKRI who are subject to CHS accountab
 
 3. Apply WALKRI's five field requirements to all collection instruments before each grant cycle begins. Treat each WALKRI audit as the organizational quality review moment for Commitment 9: review what instrument specification failures occurred in prior cycles and update design guidelines accordingly.
 
-4. Use WALKRI's integrity requirement as the instrument-design equivalent of the conflict-of-interest prevention that Commitment 8 requires operationally. Every field whose evidence form is controlled by the reporting grantee is a potential integrity gap; the integrity requirement makes these gaps explicit and forces design choices that address them.
+4. Use WALKRI's integrity requirement as the instrument-design equivalent of the conflict-of-interest prevention that Commitment 8 requires operationally. Every field whose evidence form is controlled by the reporting grantee is a potential verification gap; the integrity requirement makes these gaps explicit and forces design choices that address them.
 
 5. Document the alignment between CROSS gate records and CHS Commitment 7 key actions in the program's CHS verification submission. The gate architecture is the structural evidence that the organization has measurement and adaptation systems in place, not merely measurement intentions.
 
@@ -151,3 +158,5 @@ License: CC0
 | Version | Date | Summary |
 |---|---|---|
 | 0.1.0 | 2026-05-18 | Initial draft. Commitments 7, 8, and 9 analyzed in full. Commitments outside scope identified and explained. Full nine-commitment mapping table. Adoption guidance for CHS-verified humanitarian grant operators. |
+| 0.1.1 | 2026-05-23 | Retroactive lens tagging: added calibration_tier, authority_source, cultural_methodological_lineage, funder_typology, framework_scope_type per Lenses Framework v0.1.0. |
+| 0.1.2 | 2026-06-08 | Frame Language own-voice pass applied as part of the corpus-wide 2026-06-08 sweep: own-voice watchlist terms (govern-family, accountability, mandatory, compliance, enforce, legitimate) recast to conformance and obligation vocabulary where they appeared in this document's own voice; citation use of source-framework terms preserved. Primitive-rename references aligned to current canon (Continuity Capacity, the Collective disbursement state, Affected Population Verification Gate). Em-dash- and watchlist-clean re-verified. No compatibility finding or mapping changed; vocabulary only. |

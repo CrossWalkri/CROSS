@@ -1,11 +1,18 @@
 ---
 title: Packard Foundation MEL Guiding Principles Compatibility - CROSS+WALKRI
-version: 0.1.0
-date: 2026-05-18
+version: 0.1.2
+date: 2026-06-08
 license: CC0
 standards: CROSS v0.4.0 (github.com/CrossWalkri/CROSS), WALKRI v0.1.6 (github.com/CrossWalkri/WALKRI)
 references:
   - Packard Foundation Guiding Principles and Practices for Monitoring, Evaluation and Learning, 2019 revision, https://www.packard.org/wp-content/uploads/2019/01/MELGuidingPrinciples.pdf
+lens_tags:
+  calibration_tier: outcome_specified_self_reported
+  authority_source: voluntary_published
+  cultural_methodological_lineage: western_institutional
+  funder_typology: private_foundation
+  framework_scope_type: grantee_outcome_measurement
+  # David and Lucile Packard Foundation Monitoring, Evaluation, and Learning
 ---
 
 # Packard Foundation MEL Guiding Principles Compatibility
@@ -62,7 +69,7 @@ This configuration mechanism is the structural expression of the proportionality
 
 Packard's MEL principles do not address instrument specification in detail, but the use of evidence principle implies that the instruments collecting monitoring data must be capable of producing reliable evidence. An indicator that is ambiguously defined, a response form that conflates self-report with administrative data, or an evidence form that cannot be independently verified produces data that cannot support evidence-based adaptation. WALKRI addresses this gap at the instrument specification layer.
 
-WALKRI's five field requirements applied to Packard grantee monitoring instruments ensure that: the purpose of each field is stated (criterion intent), the boundaries of each measurement are explicit (operational definition), the collection method is matched to the measurement goal (response form), every field has an independent verification pathway (evidence form), and the standard for acceptable data quality is explicit (compliance threshold). These five requirements are the quality management system for intake instrument design that the use of evidence and learning culture principles implicitly require.
+WALKRI's five field requirements applied to Packard grantee monitoring instruments ensure that: the purpose of each field is stated (criterion intent), the boundaries of each measurement are explicit (operational definition), the collection method is matched to the measurement goal (response form), every field has an independent verification pathway (evidence form), and the standard for acceptable data quality is explicit (conformance threshold). These five requirements are the quality management system for intake instrument design that the use of evidence and learning culture principles implicitly require.
 
 ---
 
@@ -95,3 +102,5 @@ License: CC0
 | Version | Date | Summary |
 |---|---|---|
 | 0.1.0 | 2026-05-18 | Initial draft. Use of evidence, learning loop, proportionality, and WALKRI instrument quality mappings documented. Grantee participation identified as outside specification scope. Prior evidence review assessed as partial. |
+| 0.1.1 | 2026-05-23 | Retroactive lens tagging: added calibration_tier, authority_source, cultural_methodological_lineage, funder_typology, framework_scope_type per Lenses Framework v0.1.0. |
+| 0.1.2 | 2026-06-08 | Frame Language own-voice pass applied as part of the corpus-wide 2026-06-08 sweep: own-voice watchlist terms (govern-family, accountability, mandatory, compliance, enforce, legitimate) recast to conformance and obligation vocabulary where they appeared in this document's own voice; citation use of source-framework terms preserved. Primitive-rename references aligned to current canon (Continuity Capacity, the Collective disbursement state, Affected Population Verification Gate). Em-dash- and watchlist-clean re-verified. No compatibility finding or mapping changed; vocabulary only. |

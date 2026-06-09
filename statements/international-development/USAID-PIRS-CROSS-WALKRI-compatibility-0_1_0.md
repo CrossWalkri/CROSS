@@ -1,13 +1,20 @@
 ---
 title: USAID PIRS Compatibility - CROSS+WALKRI
-version: 0.1.1
-date: 2026-05-18
+version: 0.1.5
+date: 2026-06-08
 license: CC0
 standards: CROSS v0.3.7 (github.com/CrossWalkri/CROSS), WALKRI v0.1.6 (github.com/CrossWalkri/WALKRI)
 references:
   - USAID ADS 201 (Automated Directives System Chapter 201, Program Cycle Policy)
   - USAID Performance Indicator Reference Sheet (PIRS) Requirements
   - USAID Performance Management and Evaluation Policy (2016)
+lens_tags:
+  calibration_tier: outcome_specified_self_reported
+  authority_source: regulatory
+  cultural_methodological_lineage: western_institutional
+  funder_typology: bilateral_aid_agency
+  framework_scope_type: grantee_outcome_measurement
+  # USAID Performance Indicator Reference Sheet requirements under ADS 201
 ---
 
 # USAID PIRS Compatibility
@@ -18,7 +25,7 @@ references:
 
 ## Summary
 
-A CROSS+WALKRI-conformant program satisfies USAID Performance Indicator Reference Sheet (PIRS) documentation requirements as a structural consequence of conformance. Programs that implement CROSS for obligation architecture and WALKRI for field specification quality produce PIRS-compliant indicator documentation without additional work.
+A CROSS+WALKRI-conformant program satisfies USAID Performance Indicator Reference Sheet (PIRS) documentation requirements as a structural consequence of conformance. Programs that implement CROSS for obligation architecture and WALKRI for field specification quality produce PIRS-conformant indicator documentation without additional work.
 
 This document maps each PIRS required element to the CROSS and WALKRI provisions that produce it.
 
@@ -56,7 +63,7 @@ CROSS Part V specifies eleven fields per applicant-declared indicator. These ele
 | Targets | Target / TO state (Field 11) | Direct correspondence. CROSS additionally requires an indicator specification (data source, collection methodology) for the TO state, which PIRS does not explicitly require |
 | Limitations | Construction and aggregation methodology (Field 5) | CROSS's methodology field captures the same information as PIRS's limitations note, but requires it to be stated as a construction rule rather than a caveat |
 
-**Result:** A program operating under CROSS produces PIRS-compliant indicator documentation for every applicant-declared indicator. No additional documentation work is required to satisfy PIRS. The CROSS specification fields produce the PIRS fields as a subset of their output.
+**Result:** A program operating under CROSS produces PIRS-conformant indicator documentation for every applicant-declared indicator. No additional documentation work is required to satisfy PIRS. The CROSS specification fields produce the PIRS fields as a subset of their output.
 
 ---
 
@@ -132,7 +139,7 @@ Programs reporting to USAID that adopt CROSS+WALKRI should:
 
 3. Declare causality stance at each gate: contribution stance for standard program performance reporting, attribution stance for designated impact evaluations.
 
-4. Use WALKRI's calibration record requirement (Part V Section 5.4) to document reviewer calibration for each compliance-threshold field. This produces the inter-rater reliability documentation USAID Data Quality Assessments examine.
+4. Use WALKRI's calibration record requirement (Part V Section 5.4) to document reviewer calibration for each conformance-threshold field. This produces the inter-rater reliability documentation USAID Data Quality Assessments examine.
 
 Programs reporting to USAID do not need to produce separate PIRS documentation for indicators that have been specified through CROSS's 11-field indicator specification. The CROSS specification is PIRS-compatible and satisfies PIRS requirements directly.
 
@@ -156,7 +163,9 @@ License: CC0
 
 | Version | Date | Summary |
 |---|---|---|
-| 0.1.1 | 2026-05-17 | Standards references updated to CROSS v0.3.2 and WALKRI v0.1.1. |
+| 0.1.5 | 2026-06-08 | Frame Language own-voice pass applied as part of the corpus-wide 2026-06-08 sweep: own-voice watchlist terms (govern-family, accountability, mandatory, compliance, enforce, legitimate) recast to conformance and obligation vocabulary where they appeared in this document's own voice; citation use of source-framework terms preserved. Primitive-rename references aligned to current canon (Continuity Capacity, the Collective disbursement state, Affected Population Verification Gate). Em-dash- and watchlist-clean re-verified. No compatibility finding or mapping changed; vocabulary only. |
+| 0.1.4 | 2026-05-23 | Retroactive lens tagging: added calibration_tier, authority_source, cultural_methodological_lineage, funder_typology, framework_scope_type per Lenses Framework v0.1.0. |
 | 0.1.3 | 2026-05-18 | Standards references updated to CROSS v0.3.7 and WALKRI v0.1.6. |
 | 0.1.2 | 2026-05-18 | Standards references updated to CROSS v0.3.4 and WALKRI v0.1.2. |
+| 0.1.1 | 2026-05-17 | Standards references updated to CROSS v0.3.2 and WALKRI v0.1.1. |
 | 0.1.0 | 2026-05-16 | Initial draft. Nine-element PIRS mapping to CROSS eleven-field specification. Five USAID data quality standards mapped to WALKRI five standards. PMP alignment with Results Framework, gate architecture, and data quality plan. Causality stance mapped to performance vs. impact evaluation distinction. CLA framework mapped to developmental gate character. Adoption guidance for USAID-reporting programs. |

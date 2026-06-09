@@ -1,13 +1,20 @@
 ---
 title: India Corporate Social Responsibility Mandate (Companies Act 2013, Section 135) Compatibility - CROSS+WALKRI
-version: 0.1.0
-date: 2026-05-18
+version: 0.1.2
+date: 2026-06-08
 license: CC0
 standards: CROSS v0.4.2 (github.com/CrossWalkri/CROSS), WALKRI v0.1.6 (github.com/CrossWalkri/WALKRI)
 references:
   - MCA FAQ on CSR (mca.gov.in/Ministry/pdf/FAQ_CSR.pdf)
   - Companies (CSR Policy) Amendment Rules 2021, gazetted January 22, 2021
   - KPMG analysis of MCA CSR Amendment Rules (assets.kpmg.com/content/dam/kpmg/in/pdf/2022/10/first-notes-mca-amends-certain-rules-relating-to-corporate-social-responsibility.pdf)
+lens_tags:
+  calibration_tier: process_conformant
+  authority_source: statutory
+  cultural_methodological_lineage: western_institutional
+  funder_typology: corporate_csr
+  framework_scope_type: jurisprudential
+  # Companies Act 2013 Schedule VII statutory CSR mandate
 ---
 
 # India Corporate Social Responsibility Mandate (Companies Act 2013, Section 135) Compatibility
@@ -42,16 +49,16 @@ The MCA has published FAQ guidance clarifying how these requirements apply acros
 
 ## How CROSS Satisfies the India CSR Mandate
 
-The Section 135 mandate creates three distinct accountability obligations: pre-intervention outcome specification (which is implicit in the impact assessment baseline requirement), during-intervention progress documentation, and post-intervention impact assessment. CROSS's gate architecture satisfies all three.
+The Section 135 mandate creates three distinct reporting obligations: pre-intervention outcome specification (which is implicit in the impact assessment baseline requirement), during-intervention progress documentation, and post-intervention impact assessment. CROSS's gate architecture satisfies all three.
 
-**Independent third-party impact assessment.** The 2021 Amendment Rules require impact assessment by an independent agency, placed before the Board, and annexed to the annual report. The CROSS independent attestation pathway is the highest-evidence-strength option in CROSS's evidence taxonomy. A completion gate evidence record produced by an independent attestor, following CROSS's gate determination structure, constitutes exactly the evidence form that Section 135 impact assessment requires. Critically, CROSS's entry specification gate produces the pre-specified, baseline-anchored indicator documentation against which impact assessment is measured. Without a pre-specified baseline, third-party assessors must reconstruct the counterfactual, which introduces ambiguity and weakens the assessment's regulatory credibility. CROSS eliminates this problem by requiring baseline specification before disbursement.
+**Independent third-party impact assessment.** The 2021 Amendment Rules require impact assessment by an independent agency, placed before the Board, and annexed to the annual report. The CROSS independent attestation pathway is the highest-evidence-strength option in CROSS's evidence taxonomy. A completion gate evidence record produced by an independent attestor, following CROSS's gate determination structure, constitutes exactly the evidence form that Section 135 impact assessment requires. Critically, CROSS's entry specification gate produces the pre-specified, baseline-anchored indicator documentation against which impact assessment is measured. Without a pre-specified baseline, third-party assessors must reconstruct the counterfactual, which introduces ambiguity and weakens the assessment's regulatory standing. CROSS eliminates this problem by requiring baseline specification before disbursement.
 
 **Form CSR-2 outcome documentation.** The CSR-2 form requires companies to document CSR project outcomes in a standardized format, including the project's objectives, the population served, the activities undertaken, the amounts spent, and the outcomes achieved. This maps to CROSS's obligation architecture as follows:
 
 | CSR-2 Required Element | CROSS Provision |
 |:--|:--|
 | Project objectives | Theory of Change entry specification: FROM state, TO state, goal-level declaration |
-| Population served | Population scope declaration (Fields covering beneficiary identity, geography, and scale) |
+| Population served | Population scope declaration (Fields covering affected-population identity, geography, and scale) |
 | Activities undertaken | Build-obligation activity specification or change-obligation intervention description |
 | Amounts spent | Disbursement records across gate milestones |
 | Outcomes achieved | Completion gate evidence record; eleven-field indicator actuals against baseline and target |
@@ -70,10 +77,19 @@ A CROSS-conformant program produces all CSR-2 required elements as structural by
 
 Third-party impact assessors working under Section 135 routinely encounter a common failure mode: the CSR program collected data during implementation, but the data collection instruments were designed ambiguously, and the assessor cannot determine whether reported values were produced by a methodology comparable to the baseline measurement. This forces the assessor either to discount the reported values or to substitute their own measurement, which increases assessment cost and reduces the reliability of the regulatory disclosure.
 
-WALKRI addresses this at the source. By requiring that every intake field specify its criterion intent, operational definition, construction methodology, and evidence form before any employee, implementing agency partner, or beneficiary submits data, WALKRI ensures that the measurement methodology is documented and locked before data collection begins. When the third-party assessor arrives, they can read the WALKRI field specification and verify directly whether the reported values are methodologically sound. This shifts impact assessment from interpretive reconstruction to structured verification, which is faster, cheaper, and more defensible in the Board disclosure context.
+WALKRI addresses this at the source. By requiring that every intake field specify its criterion intent, operational definition, construction methodology, and evidence form before any employee, implementing agency partner, or affected-population member submits data, WALKRI ensures that the measurement methodology is documented and locked before data collection begins. When the third-party assessor arrives, they can read the WALKRI field specification and verify directly whether the reported values are methodologically sound. This shifts impact assessment from interpretive reconstruction to structured verification, which is faster, cheaper, and more defensible in the Board disclosure context.
 
 For companies operating CSR programs through implementing agencies (a common structure under Section 135), WALKRI conformance provides an additional benefit: the implementing agency's data collection instruments are specified to a standard that the company's CSR Committee can evaluate before disbursement, rather than after. This supports the Board's fiduciary obligation to oversee how CSR funds are spent, which Section 135 and the Amendment Rules explicitly assign to the CSR Committee.
 
 ---
 
 *Published under CC0. For the current version of CROSS and WALKRI, see github.com/CrossWalkri.*
+
+---
+
+## Changelog
+
+| Version | Date | Summary |
+|---|---|---|
+| 0.1.2 | 2026-06-08 | Frame Language own-voice pass applied as part of the corpus-wide 2026-06-08 sweep: own-voice watchlist terms (govern-family, accountability, mandatory, compliance, enforce, legitimate) recast to conformance and obligation vocabulary where they appeared in this document's own voice; citation use of source-framework terms preserved. Primitive-rename references aligned to current canon (Continuity Capacity, the Collective disbursement state, Affected Population Verification Gate). Em-dash- and watchlist-clean re-verified. No compatibility finding or mapping changed; vocabulary only. |
+| 0.1.1 | 2026-05-23 | Retroactive lens tagging: added calibration_tier, authority_source, cultural_methodological_lineage, funder_typology, framework_scope_type per Lenses Framework v0.1.0. |

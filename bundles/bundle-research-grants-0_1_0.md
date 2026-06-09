@@ -103,7 +103,7 @@ A continuing program operator (SBIR/STTR program office, NIH study section) must
 
 ## Part 2: WALKRI Field Specifications
 
-The following field specifications cover the intake fields most commonly required in research grant programs. Each specification satisfies WALKRI's five pre-publication requirements: criterion intent, operational definition, response form, evidence form, compliance threshold.
+The following field specifications cover the intake fields most commonly required in research grant programs. Each specification satisfies WALKRI's five pre-publication requirements: criterion intent, operational definition, response form, evidence form, conformance threshold.
 
 ---
 
@@ -117,7 +117,7 @@ The following field specifications cover the intake fields most commonly require
 
 **Evidence form:** The preregistration record at the named registry, which must include the primary outcome measure specification consistent with the application. Where the registration was filed before the application, the registration identifier is the evidence. Where the registration is a condition to be completed before data collection, the commitment to register constitutes provisional compliance.
 
-**Compliance threshold:** A primary outcome measure declaration that specifies the instrument, scoring convention, and assessment timing with enough precision that an independent reviewer can confirm at completion whether the study analyzed the declared measure. A declaration of "patient health outcomes" without a named instrument does not satisfy this field. A study that analyzed a different primary outcome than declared at registration does not satisfy the completion gate unless a pre-specified deviation procedure was followed and documented.
+**Conformance threshold:** A primary outcome measure declaration that specifies the instrument, scoring convention, and assessment timing with enough precision that an independent reviewer can confirm at completion whether the study analyzed the declared measure. A declaration of "patient health outcomes" without a named instrument does not satisfy this field. A study that analyzed a different primary outcome than declared at registration does not satisfy the completion gate unless a pre-specified deviation procedure was followed and documented.
 
 ---
 
@@ -131,7 +131,7 @@ The following field specifications cover the intake fields most commonly require
 
 **Evidence form:** The registration record at the named registry, publicly accessible by the identifier. The record must include at minimum: the primary outcome measure, the study design, the sample size, and the planned analysis. The timestamp on the registration (showing it predates data collection) is the critical evidence element for the entry specification gate.
 
-**Compliance threshold:** A valid registration identifier at an approved registry, with a timestamp that predates data collection. A registration filed after data collection has begun does not satisfy the entry specification gate requirement. A registration that omits the primary outcome measure does not satisfy the field. For studies where human subjects participation occurs in design and protocol development (PCORI community engagement studies), the registration must at minimum be filed before the intervention data collection begins.
+**Conformance threshold:** A valid registration identifier at an approved registry, with a timestamp that predates data collection. A registration filed after data collection has begun does not satisfy the entry specification gate requirement. A registration that omits the primary outcome measure does not satisfy the field. For studies where human subjects participation occurs in design and protocol development (PCORI community engagement studies), the registration must at minimum be filed before the intervention data collection begins.
 
 ---
 
@@ -145,7 +145,7 @@ The following field specifications cover the intake fields most commonly require
 
 **Evidence form:** The PAP document at the stated location, with a timestamp predating data analysis. For registered reports, the accepted protocol serves as the PAP; the acceptance letter date is the relevant timestamp. Where the PAP was submitted to the funder as part of the grant application and the funder provided approval, the approval date and grant number constitute the timestamp evidence.
 
-**Compliance threshold:** A PAP that covers the primary hypothesis test with a named test statistic and alpha level, filed before data analysis begins. A PAP that specifies only "we will analyze the primary outcome using regression" without naming the covariates, the comparison condition, and the decision rule does not satisfy this field. A PAP filed after the researcher has accessed unblinded outcome data does not satisfy the pre-commitment requirement.
+**Conformance threshold:** A PAP that covers the primary hypothesis test with a named test statistic and alpha level, filed before data analysis begins. A PAP that specifies only "we will analyze the primary outcome using regression" without naming the covariates, the comparison condition, and the decision rule does not satisfy this field. A PAP filed after the researcher has accessed unblinded outcome data does not satisfy the pre-commitment requirement.
 
 ---
 
@@ -159,7 +159,7 @@ The following field specifications cover the intake fields most commonly require
 
 **Evidence form:** A power calculation output from a named software tool (G*Power, Stata, R's pwr package, or equivalent) or an analytical derivation with the formula stated. The assumed effect size and variability parameters must cite their source (a specific publication, a pilot study report, or a regulatory guidance document). Where the funder requires a specific effect size benchmark (as in PCORI's clinically meaningful difference requirement), the benchmark must be cited.
 
-**Compliance threshold:** A power calculation that specifies the assumed effect size with a cited rationale, the variability parameters, and the resulting sample size. A power calculation that assumes an effect size without citing a source does not satisfy the evidence form. A study that enrolls substantially fewer participants than the stated sample size without a protocol amendment does not satisfy the completion gate at the declared power level.
+**Conformance threshold:** A power calculation that specifies the assumed effect size with a cited rationale, the variability parameters, and the resulting sample size. A power calculation that assumes an effect size without citing a source does not satisfy the evidence form. A study that enrolls substantially fewer participants than the stated sample size without a protocol amendment does not satisfy the completion gate at the declared power level.
 
 ---
 
@@ -173,7 +173,7 @@ The following field specifications cover the intake fields most commonly require
 
 **Evidence form:** At completion: the repository DOI or accession number for the deposited dataset, with the deposit date confirming the timeline commitment was met. For registered reports: the data deposit is often required simultaneously with acceptance for publication; the journal's confirmation of receipt serves as the evidence. For NIH-funded studies: the submission to the NIH-designated repository and the confirmation of data acceptance.
 
-**Compliance threshold:** A data sharing plan that names a specific repository, states a specific access condition, and commits to a specific deposit timeline. A plan that states only a general intention to share data does not satisfy this field. At completion: a dataset deposited at the named repository with the access condition matching the declaration. A publication whose supplementary materials link to a data file hosted on a personal or institutional website (without DOI or persistent identifier) does not satisfy the repository deposit requirement.
+**Conformance threshold:** A data sharing plan that names a specific repository, states a specific access condition, and commits to a specific deposit timeline. A plan that states only a general intention to share data does not satisfy this field. At completion: a dataset deposited at the named repository with the access condition matching the declaration. A publication whose supplementary materials link to a data file hosted on a personal or institutional website (without DOI or persistent identifier) does not satisfy the repository deposit requirement.
 
 ---
 

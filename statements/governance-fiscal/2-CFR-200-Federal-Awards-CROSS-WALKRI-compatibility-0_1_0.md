@@ -1,12 +1,19 @@
 ---
 title: 2 CFR 200 (OMB Uniform Guidance for Federal Awards) Compatibility - CROSS+WALKRI
-version: 0.1.0
-date: 2026-05-18
+version: 0.1.2
+date: 2026-06-08
 license: CC0
 standards: CROSS v0.4.4 (github.com/CrossWalkri/CROSS), WALKRI v0.1.7 (github.com/CrossWalkri/WALKRI)
 references:
   - https://www.ecfr.gov/current/title-2/subtitle-A/chapter-II/part-200
   - https://www.epa.gov/grants/whats-new-2024-revision-2-cfr-part-200
+lens_tags:
+  calibration_tier: independently_verified
+  authority_source: regulatory
+  cultural_methodological_lineage: western_institutional
+  funder_typology: government_non_aid
+  framework_scope_type: government_accountability
+  # 2 CFR Part 200 Uniform Administrative Requirements; regulatory framework governing US federal grantmaking accountability
 ---
 
 # 2 CFR Part 200 (OMB Uniform Guidance for Federal Awards)
@@ -55,10 +62,19 @@ The subrecipient monitoring mapping is equally direct. When a prime award recipi
 
 ## How WALKRI Complements This Alignment
 
-WALKRI operates at the field specification layer, before any applicant submits data. Its relevance to 2 CFR 200 compliance concentrates in Subpart E cost classification. WALKRI's pre-publication audit requires that every intake field specify what it measures, how that measure is operationalized, and what evidence path an independent reviewer would follow to verify the field's value. When applied to cost-related fields in a grant application, this requirement forces program operators to define what qualifies as a direct cost versus an indirect cost before applicants self-classify their budgets. This upstream specification reduces the ambiguity that produces misclassification findings.
+WALKRI operates at the field specification layer, before any applicant submits data. Its relevance to 2 CFR 200 conformance concentrates in Subpart E cost classification. WALKRI's pre-publication audit requires that every intake field specify what it measures, how that measure is operationalized, and what evidence path an independent reviewer would follow to verify the field's value. When applied to cost-related fields in a grant application, this requirement forces program operators to define what qualifies as a direct cost versus an indirect cost before applicants self-classify their budgets. This upstream specification reduces the ambiguity that produces misclassification findings.
 
-WALKRI's evidence form requirement, which specifies that every field identify an independent access path for its evidence, also aligns with the 2 CFR 200 requirement that financial documentation be accessible to auditors. A grant application that has been structured through WALKRI's pre-publication audit will have field-level evidence paths defined in advance; this makes the Single Audit reviewer's work of tracing reported amounts to source documentation a structured task rather than an open-ended search. Taken together, CROSS's gate architecture and WALKRI's field specification discipline make the financial accountability requirements of 2 CFR 200 easier to satisfy not by adding parallel compliance machinery but by structuring the underlying documentation in a form that audit processes can directly use.
+WALKRI's evidence form requirement, which specifies that every field identify an independent access path for its evidence, also aligns with the 2 CFR 200 requirement that financial documentation be accessible to auditors. A grant application that has been structured through WALKRI's pre-publication audit will have field-level evidence paths defined in advance; this makes the Single Audit reviewer's work of tracing reported amounts to source documentation a structured task rather than an open-ended search. Taken together, CROSS's gate architecture and WALKRI's field specification discipline make the financial accountability requirements of 2 CFR 200 easier to satisfy not by adding parallel conformance machinery but by structuring the underlying documentation in a form that audit processes can directly use.
 
 ---
 
 *Published under CC0. For the current version of CROSS and WALKRI, see github.com/CrossWalkri.*
+
+---
+
+## Changelog
+
+| Version | Date | Summary |
+|---|---|---|
+| 0.1.2 | 2026-06-08 | Frame Language own-voice pass applied as part of the corpus-wide 2026-06-08 sweep: own-voice watchlist terms (govern-family, accountability, mandatory, compliance, enforce, legitimate) recast to conformance and obligation vocabulary where they appeared in this document's own voice; citation use of source-framework terms preserved. Primitive-rename references aligned to current canon (Continuity Capacity, the Collective disbursement state, Affected Population Verification Gate). Em-dash- and watchlist-clean re-verified. No compatibility finding or mapping changed; vocabulary only. |
+| 0.1.1 | 2026-05-23 | Retroactive lens tagging: added calibration_tier, authority_source, cultural_methodological_lineage, funder_typology, framework_scope_type per Lenses Framework v0.1.0. |

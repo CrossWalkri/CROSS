@@ -1,11 +1,18 @@
 ---
 title: World Vision LEAP Programme Cycle Compatibility - CROSS+WALKRI
-version: 0.1.0
-date: 2026-05-18
+version: 0.1.2
+date: 2026-06-08
 license: CC0
 standards: CROSS v0.4.5 (github.com/CrossWalkri/CROSS), WALKRI v0.1.7 (github.com/CrossWalkri/WALKRI)
 references:
   - World Vision International LEAP 2nd Edition (wvi.org/publications)
+lens_tags:
+  calibration_tier: outcome_specified_self_reported
+  authority_source: voluntary_published
+  cultural_methodological_lineage: western_institutional
+  funder_typology: faith_based
+  framework_scope_type: grantee_outcome_measurement
+  # World Vision Learning through Evaluation with Accountability and Planning programme cycle
 ---
 
 # World Vision LEAP Programme Cycle
@@ -63,10 +70,19 @@ CROSS addresses LEAP's Design, Monitor, and Evaluate requirements directly throu
 
 WALKRI's five pre-publication field requirements apply at the intake instrument level for LEAP programmes. The LEAP Design stage requires that intake instruments be developed as part of the baseline and MEAL plan before programme activities begin. The WALKRI audit must therefore occur at the Design stage, before any baseline data collection instrument is shared with programme participants or implementing partners.
 
-For each intake field in a LEAP programme's data collection tools, WALKRI requires: criterion intent (what the field is designed to measure within the Theory of Change), operational definition (exactly what qualifies and does not qualify for that field), response form (how a valid response is structured), evidence form (what documentation is required to support the response), and compliance threshold (the minimum standard that constitutes a valid data point). In the LEAP context, these requirements apply across all six programme cycle components that use intake instruments, including the Community Based Feedback and Response Mechanism.
+For each intake field in a LEAP programme's data collection tools, WALKRI requires: criterion intent (what the field is designed to measure within the Theory of Change), operational definition (exactly what qualifies and does not qualify for that field), response form (how a valid response is structured), evidence form (what documentation is required to support the response), and conformance threshold (the minimum standard that constitutes a valid data point). In the LEAP context, these requirements apply across all six programme cycle components that use intake instruments, including the Community Based Feedback and Response Mechanism.
 
-The CBFRM creates a specific WALKRI application: feedback and complaint intake fields must specify what constitutes a valid complaint (operational definition), how a complaint is documented (response form), what evidence is required to close the complaint (evidence form), and what the resolution timeline and standard is (compliance threshold). Without this level of specification, CBFRM data across different programme contexts cannot be compared and the mechanism cannot be audited. WALKRI's pre-publication audit applied to the CBFRM intake instruments before any programme opens makes this comparability possible.
+The CBFRM creates a specific WALKRI application: feedback and complaint intake fields must specify what constitutes a valid complaint (operational definition), how a complaint is documented (response form), what evidence is required to close the complaint (evidence form), and what the resolution timeline and standard is (conformance threshold). Without this level of specification, CBFRM data across different programme contexts cannot be compared and the mechanism cannot be audited. WALKRI's pre-publication audit applied to the CBFRM intake instruments before any programme opens makes this comparability possible.
 
 ---
 
 *Published under CC0. For the current version of CROSS and WALKRI, see github.com/CrossWalkri.*
+
+---
+
+## Changelog
+
+| Version | Date | Summary |
+|---|---|---|
+| 0.1.2 | 2026-06-08 | Frame Language own-voice pass applied as part of the corpus-wide 2026-06-08 sweep: own-voice watchlist terms (govern-family, accountability, mandatory, compliance, enforce, legitimate) recast to conformance and obligation vocabulary where they appeared in this document's own voice; citation use of source-framework terms preserved. Primitive-rename references aligned to current canon (Continuity Capacity, the Collective disbursement state, Affected Population Verification Gate). Em-dash- and watchlist-clean re-verified. No compatibility finding or mapping changed; vocabulary only. |
+| 0.1.1 | 2026-05-23 | Retroactive lens tagging: added calibration_tier, authority_source, cultural_methodological_lineage, funder_typology, framework_scope_type per Lenses Framework v0.1.0. |

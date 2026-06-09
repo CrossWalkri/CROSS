@@ -1,13 +1,20 @@
 ---
 title: OECD DAC CRS Compatibility - CROSS+WALKRI
-version: 0.1.0
-date: 2026-05-18
+version: 0.1.2
+date: 2026-06-08
 license: CC0
 standards: CROSS v0.4.0 (github.com/CrossWalkri/CROSS), WALKRI v0.1.6 (github.com/CrossWalkri/WALKRI)
 references:
   - OECD DAC Creditor Reporting System (CRS), https://www.oecd.org/en/data/insights/data-explainers/2024/10/resources-for-reporting-development-finance-statistics.html
   - IATI Standard v2.03, iatistandard.org
   - CROSS+WALKRI IATI Compatibility Statement v0.1.0
+lens_tags:
+  calibration_tier: process_conformant
+  authority_source: voluntary_published
+  cultural_methodological_lineage: western_institutional
+  funder_typology: bilateral_aid_agency
+  framework_scope_type: accounting_financial
+  # OECD DAC Creditor Reporting System; bilateral_aid_agency primary funder typology because DAC members are donor governments; framework is accounting/disclosure (statistical reporting) with allocator_process secondary; alternative multilateral_bank_or_fund typology
 ---
 
 # OECD DAC CRS Compatibility
@@ -18,7 +25,7 @@ references:
 
 ## Summary
 
-CROSS produces CRS-compatible programmatic metadata structurally. The OECD DAC Creditor Reporting System (CRS) is a statistical reporting framework that all 30-plus bilateral DAC donor countries use to track development finance flows. CRS mandatory fields divide into two categories relative to CROSS scope: programmatic metadata, which CROSS governs and produces, and financial flow data, which CROSS intentionally does not govern.
+CROSS produces CRS-compatible programmatic metadata structurally. The OECD DAC Creditor Reporting System (CRS) is a statistical reporting framework that all 30-plus bilateral DAC donor countries use to track development finance flows. CRS mandatory fields divide into two categories relative to CROSS scope: programmatic metadata, which CROSS covers and produces, and financial flow data, which CROSS intentionally does not cover.
 
 This statement addresses CRS specifically, not OECD DAC Evaluation Criteria. The DAC Evaluation Criteria (relevance, coherence, effectiveness, efficiency, impact, sustainability) are covered separately. CRS is a statistical reporting obligation about development finance transactions; its compatibility with CROSS rests on the structural overlap between CRS programmatic fields and CROSS's obligation architecture.
 
@@ -54,7 +61,7 @@ CRS compliance is required for sub-recipient reporting in USAID and FCDO program
 
 CRS mandatory fields fall into two categories relative to CROSS scope.
 
-Programmatic fields (inside CROSS scope) describe the funded activity: what it is, where it operates, what sector it addresses, and over what timeframe. CROSS governs obligation architecture and indicator specification at this level. Fields in this category: project title, project description, recipient country or region code, sector code, expected start date, expected end date, channel code.
+Programmatic fields (inside CROSS scope) describe the funded activity: what it is, where it operates, what sector it addresses, and over what timeframe. CROSS covers obligation architecture and indicator specification at this level. Fields in this category: project title, project description, recipient country or region code, sector code, expected start date, expected end date, channel code.
 
 Financial flow and statistical fields (outside CROSS scope) record the transaction, the funding relationship, and the amounts committed and disbursed. These are statistical inputs for DAC aggregate reporting and are managed by the donor agency's financial systems rather than by the recipient program. Fields in this category: reporting country, donor agency code, CRS ID, aid type code, flow type, finance type, commitment amount, disbursement amount.
 
@@ -80,13 +87,13 @@ Financial flow and statistical fields (outside CROSS scope) record the transacti
 | Commitment amount | No CROSS equivalent | Financial transaction data. Outside CROSS scope. |
 | Disbursement amount | No CROSS equivalent | Financial transaction data. Outside CROSS scope. |
 
-**Result:** Seven of the fifteen CRS mandatory fields have direct or functional CROSS equivalents. The remaining eight are financial flow and statistical fields that CROSS does not govern. A CRS-reporting program using CROSS produces the programmatic fields of CRS compliance through its standard obligation architecture.
+**Result:** Seven of the fifteen CRS mandatory fields have direct or functional CROSS equivalents. The remaining eight are financial flow and statistical fields that CROSS does not cover. A CRS-reporting program using CROSS produces the programmatic fields of CRS conformance through its standard obligation architecture.
 
 ---
 
 ## The IATI Bridge
 
-IATI v2.03 was designed to produce CRS-compatible output. The IATI standard includes a CRS++ extension that maps IATI fields to CRS mandatory fields directly. DAC donor countries including USAID, FCDO, and the Netherlands have endorsed IATI as the preferred reporting pathway for CRS-compliant sub-recipient reporting.
+IATI v2.03 was designed to produce CRS-compatible output. The IATI standard includes a CRS++ extension that maps IATI fields to CRS mandatory fields directly. DAC donor countries including USAID, FCDO, and the Netherlands have endorsed IATI as the preferred reporting pathway for CRS-conformant sub-recipient reporting.
 
 CROSS's IATI compatibility is separately documented in the CROSS+WALKRI IATI Compatibility Statement. Programs that have implemented CROSS under the IATI alignment pathway produce CRS-compatible programmatic metadata through that pathway. The CRS compatibility established in this statement reinforces that existing alignment and covers programs that report to CRS directly without routing through IATI.
 
@@ -112,7 +119,7 @@ Programs reporting to DAC donors through CRS that adopt CROSS+WALKRI should:
 
 2. Use the program-level ToC declaration to produce the project description required by CRS. The Goal level corresponds to the CRS project description; the Outcome level produces the more detailed narrative that USAID and FCDO sub-recipient reports typically require.
 
-3. Configure activation and continuation gates with explicit dates. These dates produce the expected start and end date documentation CRS mandates.
+3. Configure activation and continuation gates with explicit dates. These dates produce the expected start and end date documentation CRS requires.
 
 4. If the program already reports to IATI under the CROSS alignment pathway, no additional CRS-specific steps are required for the programmatic fields. The IATI workflow produces CRS-compatible output for those fields through the IATI/CRS bridge.
 
@@ -139,3 +146,5 @@ License: CC0
 | Version | Date | Summary |
 |---|---|---|
 | 0.1.0 | 2026-05-18 | Initial draft. Fifteen CRS mandatory fields mapped against CROSS fields. Programmatic vs. financial flow layer distinction articulated. IATI bridge pathway documented. Sector code alignment guidance. Adoption guidance for DAC-reporting programs. |
+| 0.1.1 | 2026-05-23 | Retroactive lens tagging: added calibration_tier, authority_source, cultural_methodological_lineage, funder_typology, framework_scope_type per Lenses Framework v0.1.0. |
+| 0.1.2 | 2026-06-08 | Frame Language own-voice pass applied as part of the corpus-wide 2026-06-08 sweep: own-voice watchlist terms (govern-family, accountability, mandatory, compliance, enforce, legitimate) recast to conformance and obligation vocabulary where they appeared in this document's own voice; citation use of source-framework terms preserved. Primitive-rename references aligned to current canon (Continuity Capacity, the Collective disbursement state, Affected Population Verification Gate). Em-dash- and watchlist-clean re-verified. No compatibility finding or mapping changed; vocabulary only. |

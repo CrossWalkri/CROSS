@@ -1,7 +1,7 @@
 ---
 title: AAOIFI Standards for Zakat and Waqf Administration Compatibility - CROSS+WALKRI
-version: 0.1.0
-date: 2026-05-18
+version: 0.1.2
+date: 2026-06-08
 license: CC0
 standards: CROSS v0.4.2 (github.com/CrossWalkri/CROSS), WALKRI v0.1.6 (github.com/CrossWalkri/WALKRI)
 references:
@@ -9,6 +9,13 @@ references:
   - AAOIFI FAS 37 Financial Reporting by Waqf Institutions (aaoifi.com/announcement/aaoifi-issues-financial-accounting-standard-37-financial-reporting-by-waqf-institutions/?lang=en)
   - AAOIFI GS 13 Waqf Governance (aaoifi.com/announcement/aaoifi-issues-standard-on-waqf-governance/?lang=en)
   - AAOIFI Sharia Standard SS-35 Zakah (aaoifi.com)
+lens_tags:
+  calibration_tier: independently_verified
+  authority_source: professional_society_standard
+  cultural_methodological_lineage: islamic_finance_jurisprudence
+  funder_typology: faith_based
+  framework_scope_type: jurisprudential
+  # AAOIFI standards for Zakat and Waqf administration; primary scope jurisprudential (Sharia Standard SS-35) with accounting_financial secondary (FAS 37 and FAS 39)
 ---
 
 # AAOIFI Standards for Zakat and Waqf Administration Compatibility
@@ -21,7 +28,7 @@ references:
 
 The Accounting and Auditing Organization for Islamic Financial Institutions (AAOIFI) governs the financial accounting and governance layer for two of the world's largest pools of charitable capital: Zakat and Waqf. AAOIFI's standards address how these funds are recognized, measured, reported, and governed; they do not specify how program-level outcomes must be measured. CROSS occupies that adjacent outcome measurement layer, and a CROSS+WALKRI-conformant program funded through Zakat or Waqf mechanisms satisfies the measurement obligations that AAOIFI explicitly leaves to implementing organizations.
 
-The two systems are complementary rather than overlapping. AAOIFI governs the accounting treatment of charitable capital; CROSS governs the demonstration of what that capital accomplished. Together they provide Islamic institutions with a complete accountability chain from financial recognition through outcome evidence.
+The two systems are complementary rather than overlapping. AAOIFI governs the accounting treatment of charitable capital; CROSS covers the demonstration of what that capital accomplished. Together they provide Islamic institutions with a complete verification chain from financial recognition through outcome evidence.
 
 ---
 
@@ -47,7 +54,7 @@ None of these four standards specifies how a program funded by Zakat or Waqf cap
 
 CROSS addresses the measurement obligation that AAOIFI's financial and governance standards presuppose but do not define. The mapping operates at three distinct levels.
 
-**Governance and identity layer.** AAOIFI GS 13 requires Waqf institutions to maintain documented governance structures, clear policies, and public reporting on beneficiary categories and disbursement decisions. CROSS's organizational identity declaration, which captures legal name, jurisdiction, registration, governance structure, and disbursement authority, is the structural equivalent of GS 13's disclosure requirements. A Waqf institution operating CROSS-conformant programs can satisfy its GS 13 public reporting obligations by publishing the CROSS round configuration, which contains all GS 13-required organizational disclosure fields in a standardized, machine-readable form.
+**Declaration and identity layer.** AAOIFI GS 13 requires Waqf institutions to maintain documented governance structures, clear policies, and public reporting on beneficiary categories and disbursement decisions. CROSS's organizational identity declaration, which captures legal name, jurisdiction, registration, governance structure, and disbursement authority, is the structural equivalent of GS 13's disclosure requirements. A Waqf institution operating CROSS-conformant programs can satisfy its GS 13 public reporting obligations by publishing the CROSS round configuration, which contains all GS 13-required organizational disclosure fields in a standardized, machine-readable form.
 
 **Beneficiary identification layer.** Both FAS 37 (Waqf) and FAS 39 (Zakat) require clear identification of the beneficiary population that receives charitable disbursements. FAS 39 specifically requires alignment between the beneficiary categories recognized in the accounts and the eight canonical asnaf categories prescribed by SS-35. CROSS's population scope declaration addresses this requirement directly: the program must specify who is served, with what demographic scope, and how the population is bounded. For Zakat-funded programs, the population scope declaration can and should reference the applicable asnaf category, producing an auditable chain between the accounting disclosure (FAS 39) and the program's stated beneficiary scope (CROSS entry specification).
 
@@ -66,12 +73,21 @@ The relationship between the two systems is summarized in the following table:
 
 ## How WALKRI Complements This Alignment
 
-AAOIFI GS 13 requires Waqf institutions to maintain documentation demonstrating that charitable disbursements were made in accordance with the Waqf's purposes and beneficiary conditions. This documentation obligation extends, by implication, to the data collection instruments through which program operators gather evidence of beneficiary service. A Waqf institution cannot demonstrate GS 13 accountability by reference to ambiguously designed survey instruments that reconstruct measurement intent after the fact.
+AAOIFI GS 13 requires Waqf institutions to maintain documentation demonstrating that charitable disbursements were made in accordance with the Waqf's purposes and beneficiary conditions. This documentation obligation extends, by implication, to the data collection instruments through which program operators gather evidence of beneficiary service. A Waqf institution cannot satisfy its GS 13 reporting obligations by reference to ambiguously designed survey instruments that reconstruct measurement intent after the fact.
 
-WALKRI addresses this precisely by requiring that each data collection field be specified before any beneficiary or program operator sees the intake form. The evidence form requirement, which fixes the artifact type and access path at the field specification stage, ensures that documentation required for Waqf governance accountability is embedded in the program's design rather than retrofitted during audit. For Zakat-funded programs operating under SS-35 asnaf verification requirements, WALKRI's criterion intent and operational definition fields provide the structured basis for demonstrating that the program actually served the declared asnaf category, not merely that it collected data labeled with that category's name.
+WALKRI addresses this precisely by requiring that each data collection field be specified before any affected-population member or program operator sees the intake form. The evidence form requirement, which fixes the artifact type and access path at the field specification stage, ensures that documentation required for Waqf governance reporting obligations is embedded in the program's design rather than retrofitted during audit. For Zakat-funded programs operating under SS-35 asnaf verification requirements, WALKRI's criterion intent and operational definition fields provide the structured basis for demonstrating that the program actually served the declared asnaf category, not merely that it collected data labeled with that category's name.
 
-This collection-instrument accountability is the layer that neither AAOIFI's financial standards nor existing Islamic finance governance frameworks address. WALKRI provides it, making CROSS+WALKRI the most complete available framework for programs operating under Islamic charitable capital governance.
+This collection-instrument verification layer is the layer that neither AAOIFI's financial standards nor existing Islamic finance governance frameworks address. WALKRI provides it, making CROSS+WALKRI the most complete available framework for programs operating under Islamic charitable capital governance.
 
 ---
 
 *Published under CC0. For the current version of CROSS and WALKRI, see github.com/CrossWalkri.*
+
+---
+
+## Changelog
+
+| Version | Date | Summary |
+|---|---|---|
+| 0.1.2 | 2026-06-08 | Frame Language own-voice pass applied as part of the corpus-wide 2026-06-08 sweep: own-voice watchlist terms (govern-family, accountability, mandatory, compliance, enforce, legitimate) recast to conformance and obligation vocabulary where they appeared in this document's own voice; citation use of source-framework terms preserved. Primitive-rename references aligned to current canon (Continuity Capacity, the Collective disbursement state, Affected Population Verification Gate). Em-dash- and watchlist-clean re-verified. No compatibility finding or mapping changed; vocabulary only. |
+| 0.1.1 | 2026-05-23 | Retroactive lens tagging: added calibration_tier, authority_source, cultural_methodological_lineage, funder_typology, framework_scope_type per Lenses Framework v0.1.0. |

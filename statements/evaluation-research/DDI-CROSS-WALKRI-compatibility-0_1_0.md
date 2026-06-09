@@ -1,13 +1,20 @@
 ---
 title: DDI Compatibility - CROSS+WALKRI
-version: 0.1.0
-date: 2026-05-16
+version: 0.1.2
+date: 2026-06-08
 license: CC0
 standards: CROSS v0.3.7 (github.com/CrossWalkri/CROSS), WALKRI v0.1.6 (github.com/CrossWalkri/WALKRI)
 references:
   - DDI Codebook 2.5 (ddialliance.org/Specification/DDI-Codebook/2.5/)
   - DDI Lifecycle 3.3 (ddialliance.org/Specification/DDI-Lifecycle/3.3/)
   - DDI-CDI 1.0 (ddialliance.org/Specification/DDI-CDI/)
+lens_tags:
+  calibration_tier: process_conformant
+  authority_source: professional_society_standard
+  cultural_methodological_lineage: western_institutional
+  funder_typology: pooled_fund_or_intermediary
+  framework_scope_type: accounting_financial
+  # Data Documentation Initiative metadata standard for research data; professional society DDI Alliance; data documentation framework treated as accounting/disclosure analog; alternative framework_scope_type professional_practice_ethics
 ---
 
 # DDI Compatibility
@@ -49,7 +56,7 @@ The DDI Codebook `var` element specifies the documentation required for each var
 | `var/catgry` (categories) | Operational definition options (Section 3.2) | For categorical variables, DDI documents each category. WALKRI requires each option to be defined with qualifying and non-qualifying examples. |
 | `var/varFormat` (format) | Response form (Section 3.3) | DDI specifies the data type. WALKRI requires the response form with a justification for why that type is appropriate. |
 | `var/sumStat` (summary statistics) | Evidence form (Section 3.4) | DDI documents summary statistics for archiving. WALKRI documents the evidence artifact that validates the collected value. These are complementary: DDI describes the data; WALKRI describes the evidence. |
-| `var/notes` (notes) | Compliance threshold (Section 3.5) | DDI's notes field captures supplementary documentation. WALKRI's compliance threshold specifies the minimum evidence requirement for external standard references. |
+| `var/notes` (notes) | Conformance threshold (Section 3.5) | DDI's notes field captures supplementary documentation. WALKRI's conformance threshold specifies the minimum evidence requirement for external standard references. |
 | (not in DDI `var`) | Criterion specification version | WALKRI's provenance fields (Part VII) include the field specification version and the specification timestamp. DDI's dataset-level metadata tracks data collection dates; WALKRI tracks the instrument specification dates separately. |
 
 ### Provenance Mapping
@@ -93,7 +100,7 @@ Both DDI and WALKRI are designed to produce FAIR-compliant (Findable, Accessible
 
 **Accessibility**: DDI specifies access conditions at the dataset level. WALKRI's access model for external standards (open/free, open/registration, paid/licensed, government/regulatory) specifies access conditions at the field level. Combined, they document access at both levels without duplication.
 
-**Interoperability**: DDI uses XML as its primary format. WALKRI uses JSON Schema as its native format, which underlies all major form tools. The two formats are complementary: JSON Schema governs data collection; DDI XML governs archival documentation. A WALKRI field specification can be transformed to DDI variable documentation programmatically.
+**Interoperability**: DDI uses XML as its primary format. WALKRI uses JSON Schema as its native format, which underlies all major form tools. The two formats are complementary: JSON Schema covers data collection; DDI XML covers archival documentation. A WALKRI field specification can be transformed to DDI variable documentation programmatically.
 
 **Reusability**: DDI's concept and universe elements make variables reusable by other researchers. WALKRI's criterion intent and operational definition produce the same reusability guarantee at the field level, with the additional requirement that qualifying and non-qualifying examples be documented.
 
@@ -123,7 +130,7 @@ Programs in the following contexts will find DDI compatibility most valuable:
 
 Programs that currently use DDI documentation and are adopting CROSS+WALKRI should:
 
-1. Map existing DDI `var` elements to WALKRI field specifications. The DDI concept, universe, and category elements contain the same information as WALKRI's criterion intent, operational definition, and operational definition options respectively. Completing the WALKRI specification fills the DDI gaps (evidence form, compliance threshold) while the DDI documentation fills the WALKRI gaps (summary statistics, archival notes).
+1. Map existing DDI `var` elements to WALKRI field specifications. The DDI concept, universe, and category elements contain the same information as WALKRI's criterion intent, operational definition, and operational definition options respectively. Completing the WALKRI specification fills the DDI gaps (evidence form, conformance threshold) while the DDI documentation fills the WALKRI gaps (summary statistics, archival notes).
 
 2. Use WALKRI's JSON Schema output as the source of truth for field specifications. Generate DDI XML from the JSON Schema using the mapping table in this document. This maintains a single source of truth rather than maintaining parallel DDI and WALKRI documentation.
 
@@ -142,3 +149,12 @@ DDI Alliance: ddialliance.org
 DDI Codebook 2.5: ddialliance.org/Specification/DDI-Codebook/2.5/
 
 License: CC0
+
+---
+
+## Changelog
+
+| Version | Date | Summary |
+|---|---|---|
+| 0.1.2 | 2026-06-08 | Frame Language own-voice pass applied as part of the corpus-wide 2026-06-08 sweep: own-voice watchlist terms (govern-family, accountability, mandatory, compliance, enforce, legitimate) recast to conformance and obligation vocabulary where they appeared in this document's own voice; citation use of source-framework terms preserved. Primitive-rename references aligned to current canon (Continuity Capacity, the Collective disbursement state, Affected Population Verification Gate). Em-dash- and watchlist-clean re-verified. No compatibility finding or mapping changed; vocabulary only. |
+| 0.1.1 | 2026-05-23 | Retroactive lens tagging: added calibration_tier, authority_source, cultural_methodological_lineage, funder_typology, framework_scope_type per Lenses Framework v0.1.0. |

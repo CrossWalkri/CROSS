@@ -1,13 +1,20 @@
 ---
 title: USAID Collaborating, Learning, and Adapting (CLA) Framework Compatibility - CROSS+WALKRI
-version: 0.1.0
-date: 2026-05-18
+version: 0.1.2
+date: 2026-06-08
 license: CC0
 standards: CROSS v0.4.4 (github.com/CrossWalkri/CROSS), WALKRI v0.1.7 (github.com/CrossWalkri/WALKRI)
 references:
   - https://usaidlearninglab.org/faq/collaborating,-learning,-and-adapting-cla
   - https://www.workwithusaid.gov/resource-library/collaborating-learning-and-adapting-cla-toolkit
   - https://www.thepolicypractice.com/sites/default/files/2025-03/508c_cla_framework_two-pager_a4_ip_v1_2022-07-28_1.pdf
+lens_tags:
+  calibration_tier: outcome_specified_self_reported
+  authority_source: regulatory
+  cultural_methodological_lineage: western_institutional
+  funder_typology: bilateral_aid_agency
+  framework_scope_type: professional_practice_ethics
+  # USAID Collaborating, Learning, and Adapting framework under ADS 201; regulatory authority
 ---
 
 # USAID Collaborating, Learning, and Adapting (CLA) Framework
@@ -58,8 +65,17 @@ CROSS's pre-commitment requirement also serves CLA's underlying transparency asp
 
 WALKRI ensures that the intake fields used to collect learning cycle evidence for CLA-aligned programs function as measurement instruments, not open-ended reflection prompts. In a CLA context, this is consequential: if a program's application asks implementing partners to describe their adaptive management practices, a free-text response field does not generate cross-period comparable data. WALKRI requires that such fields specify what counts as a valid response, what evidence form is acceptable, and what threshold of documentation qualifies as demonstrating an adaptive management process.
 
-This means that a WALKRI-compliant intake process for a CLA-aligned program would specify, for each learning-related intake field, the operational definition of the practice being assessed. "Describe your learning cycle" becomes a structured field with defined response criteria: What documentation of prior-period evidence is required? What forum or deliberation process must be described? What documentation of a resulting program adjustment is required? WALKRI converts CLA's qualitative organizational practice requirements into structured data collection, enabling structured cross-period comparison and making the learning cycle evidence auditable.
+This means that a WALKRI-conformant intake process for a CLA-aligned program would specify, for each learning-related intake field, the operational definition of the practice being assessed. "Describe your learning cycle" becomes a structured field with defined response criteria: What documentation of prior-period evidence is required? What forum or deliberation process must be described? What documentation of a resulting program adjustment is required? WALKRI converts CLA's qualitative organizational practice requirements into structured data collection, enabling structured cross-period comparison and making the learning cycle evidence auditable.
 
 ---
 
 *Published under CC0. For the current version of CROSS and WALKRI, see github.com/CrossWalkri.*
+
+---
+
+## Changelog
+
+| Version | Date | Summary |
+|---|---|---|
+| 0.1.2 | 2026-06-08 | Frame Language own-voice pass applied as part of the corpus-wide 2026-06-08 sweep: own-voice watchlist terms (govern-family, accountability, mandatory, compliance, enforce, legitimate) recast to conformance and obligation vocabulary where they appeared in this document's own voice; citation use of source-framework terms preserved. Primitive-rename references aligned to current canon (Continuity Capacity, the Collective disbursement state, Affected Population Verification Gate). Em-dash- and watchlist-clean re-verified. No compatibility finding or mapping changed; vocabulary only. |
+| 0.1.1 | 2026-05-23 | Retroactive lens tagging: added calibration_tier, authority_source, cultural_methodological_lineage, funder_typology, framework_scope_type per Lenses Framework v0.1.0. |

@@ -1,12 +1,19 @@
 ---
 title: LBG / B4SI Corporate Community Investment Standard Compatibility - CROSS+WALKRI
-version: 0.1.0
-date: 2026-05-18
+version: 0.1.2
+date: 2026-06-08
 license: CC0
 standards: CROSS v0.4.2 (github.com/CrossWalkri/CROSS), WALKRI v0.1.6 (github.com/CrossWalkri/WALKRI)
 references:
   - https://b4si.net/wp-content/uploads/2018/10/LBG-Public-Guidance-Manual_2018.pdf
   - https://onlbg.com/en/the-methodological-framework/
+lens_tags:
+  calibration_tier: outcome_specified_self_reported
+  authority_source: voluntary_published
+  cultural_methodological_lineage: western_institutional
+  funder_typology: corporate_csr
+  framework_scope_type: grantee_outcome_measurement
+  # Business for Societal Impact (formerly London Benchmarking Group) corporate community investment measurement framework
 ---
 
 # LBG / B4SI Corporate Community Investment Standard
@@ -62,10 +69,19 @@ LBG management costs documentation maps to CROSS's organizational identity effic
 
 ## How WALKRI Complements This Alignment
 
-WALKRI ensures that the intake fields corporate grantmaking programs use to collect LBG measurement data are specified as measurement instruments before any grantee or community partner engages with them. For LBG compliance, this matters because the standard requires that outputs and outcomes be measured consistently across programs and across years. Inconsistent operational definitions, which produce incomparable data, are the most common failure mode in corporate community investment reporting.
+WALKRI ensures that the intake fields corporate grantmaking programs use to collect LBG measurement data are specified as measurement instruments before any grantee or community partner engages with them. For LBG conformance, this matters because the standard requires that outputs and outcomes be measured consistently across programs and across years. Inconsistent operational definitions, which produce incomparable data, are the most common failure mode in corporate community investment reporting.
 
 WALKRI's pre-publication audit specifies what each field collects, what measurement purpose it serves, and what evidence the respondent must provide. For an LBG-aligned corporate grantmaking program, this means that intake fields collecting output data, outcome data, and population specification data each have operational definitions that make the resulting dataset comparable across program cycles. WALKRI also flags fields that conflate outputs and outcomes, which is a significant risk in corporate community investment reporting: programs frequently state community change aspirations as if they were directly produced deliverables, which inflates the output measurement and obscures the causal pathway the LBG model requires.
 
 ---
 
 *Published under CC0. For the current version of CROSS and WALKRI, see github.com/CrossWalkri.*
+
+---
+
+## Changelog
+
+| Version | Date | Summary |
+|---|---|---|
+| 0.1.2 | 2026-06-08 | Frame Language own-voice pass applied as part of the corpus-wide 2026-06-08 sweep: own-voice watchlist terms (govern-family, accountability, mandatory, compliance, enforce, legitimate) recast to conformance and obligation vocabulary where they appeared in this document's own voice; citation use of source-framework terms preserved. Primitive-rename references aligned to current canon (Continuity Capacity, the Collective disbursement state, Affected Population Verification Gate). Em-dash- and watchlist-clean re-verified. No compatibility finding or mapping changed; vocabulary only. |
+| 0.1.1 | 2026-05-23 | Retroactive lens tagging: added calibration_tier, authority_source, cultural_methodological_lineage, funder_typology, framework_scope_type per Lenses Framework v0.1.0. |

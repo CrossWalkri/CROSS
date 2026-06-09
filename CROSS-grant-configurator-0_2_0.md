@@ -1,18 +1,48 @@
 ---
 title: CROSS Grant Configurator
-version: 0.2.0
-date: 2026-05-14
+version: 0.3.1
+date: 2026-06-08
 license: CC0
-status: Working draft. Implementation specification inheriting from CROSS-common-reporting-outcome-standards-schema-0_2_0.md. Supersedes version 0.1.0.
+status: Working draft. Companion implementation specification synced to CROSS-common-reporting-outcome-standards-schema-0_5_0.md. Inherits all field definitions, tier logic, and gate requirements from that standard. Supersedes version 0.2.0.
 related_documents:
-  - standards/CROSS-common-reporting-outcome-standards-schema-0_2_0.md
+  - standards/CROSS-common-reporting-outcome-standards-schema-0_5_0.md
   - standards/CROSS-runbooks-0_1_0.md
   - standards/CROSS-grantee-dashboard-0_1_0.md
+changelog:
+  - version: 0.3.1
+    date: 2026-06-08
+    summary: >
+      Frame Language own-voice pass. Own-voice watchlist terms were replaced with
+      the structural act each names (the govern family became covers, applies to,
+      or subject to; mandatory and the "become mandatory" field-clustering language
+      became required; the concurrent-funding field governance rights became
+      decision rights; own-voice beneficiary populations became affected
+      populations). Framework names, the Procurement Integrity dimension name,
+      the Continuity Capacity and Collective names already in place, and the
+      changelog rows were preserved. Em-dash sweep clean. No configuration step,
+      question, or requirement changed; vocabulary and naming only.
+  - version: 0.3.0
+    date: 2026-06-05
+    summary: >
+      Synced to the 0.5.0 standard. Added the entry-gate declarations a funder must
+      collect (organizational identity, sufficiency architecture, public benefit
+      mechanism, development stage, continuity resilience, obligation
+      fulfillment record) as configuration steps in Q3A. Added reviewer calibration
+      (Q11.6), the round specification pre-commitment (Q13), structured dataset
+      publication and the funder-side Attestation Corpus query procedure (Q14),
+      measurement framework declarations (Q3B), the continuation gate causality
+      stance and counterfactual reference option (Q5 and Q11), and the
+      infrastructure declaration requirement extended to reviewer calibration at
+      independent-review level or above. Added a CRAFT-inheritance note recording
+      that CROSS is a domain application of CRAFT (standard Part XIII receipt).
+  - version: 0.2.0
+    date: 2026-05-14
+    summary: Runbook selection, per-stage obligation mode, program-level continuation gates, four-gate configuration sequence.
 ---
 
 # CROSS Grant Configurator
 
-Version 0.2.0 | 2026-05-14 | CC0
+Version 0.3.1 | 2026-06-08 | CC0
 
 ---
 
@@ -24,9 +54,13 @@ The Configurator serves funders, not applicants. A program officer, grants commi
 
 The Configurator does not evaluate applications. It does not score, rank, filter, or recommend funding decisions. Those functions belong to reviewers applying the assessment rubric (CROSS-common-reporting-outcome-standards-schema-rubric-0_2_0.md). The Configurator's job is to establish, before any application arrives, exactly what applicants must demonstrate, which obligation dimensions are active, what gates are in effect, and what the reviewer rubric will look like for this round.
 
-This version of the Configurator (0.2.0) extends version 0.1.0 in four structural ways. First, the Configurator now supports runbook selection as a starting configuration: funders may select one of the standard runbook configurations (CROSS-runbooks-0_1_0.md) and customize from there. Second, the Configurator explicitly asks funders to declare the obligation mode (build, change, or retroactive) for each round or stage. Third, the Configurator now supports program-level configuration: multi-stage programs configure continuation gates separately from round-level gates, and mode assignments are configurable per stage. Fourth, the disbursement structure question sequence has been replaced with an explicit gate configuration sequence covering all four gate types from the CROSS standard: entry specification, progress verification, completion verification, and continuation specification.
+Version 0.2.0 of the Configurator extended version 0.1.0 in four structural ways. First, the Configurator supports runbook selection as a starting configuration: funders may select one of the standard runbook configurations (CROSS-runbooks-0_1_0.md) and customize from there. Second, the Configurator explicitly asks funders to declare the obligation mode (build, change, or retroactive) for each round or stage. Third, the Configurator supports program-level configuration: multi-stage programs configure continuation gates separately from round-level gates, and mode assignments are configurable per stage. Fourth, the disbursement structure question sequence was replaced with an explicit gate configuration sequence covering all four gate types from the CROSS standard: entry specification, progress verification, completion verification, and continuation specification.
+
+This version (0.3.0) syncs the Configurator to the 0.5.0 standard. It adds configuration steps for the entry-gate declarations a funder must collect from every applicant (organizational identity, sufficiency architecture, public benefit mechanism, development stage, continuity resilience, and the obligation fulfillment record); for measurement framework declarations; for reviewer calibration at gates set to independent review or above; for the round specification pre-commitment; for structured dataset publication and the funder-side Attestation Corpus query procedure; and for the causality stance (attribution versus contribution) and its counterfactual reference option at outcome-bearing gates. These additions do not restructure the existing question sequence; they extend it. Each new step names the CROSS standard Part it encodes so the inheritance is traceable.
 
 The Configurator produces one kind of output: a round specification. A round specification is a complete, self-contained obligation schema that instantiates the CROSS standard for a specific funder, round, and set of eligibility criteria.
+
+**CRAFT inheritance.** CROSS is a domain application of CRAFT (Chains Reveal Attested Falsifiable Truth), the meta-standard for evaluation chain legibility. The Configurator is the funder-facing instrument through which several of CRAFT's six conditions are realized for a grants round: pre-specifying the decision before any application is received, publishing the criteria before the round opens, and recording the verification infrastructure the funder will operate. An implementer does not configure CRAFT separately. A round specification produced by a conformant Configurator satisfies CRAFT's conditions for that round's evaluations through the CROSS requirements encoded here. The full inheritance is declared in the CROSS standard's CRAFT inheritance receipt (Part XIII); this companion document does not restate it.
 
 ---
 
@@ -64,7 +98,7 @@ Any standing common indicators required across all rounds.
 
 **Rubric history log.** The base configuration maintains a chronological log of every confirmed rubric from every prior round this funder has run. Each entry contains: the round identifier, the obligation mode, the runbook used (if any), the full confirmed rubric text, the confirmation timestamp, and a brief summary of any reviewer feedback on rubric clarity or scoring consistency from the lessons-learned register for that round. When a funder opens a new round, the Configurator offers the rubric history log as an alternative starting point to the generated preview.
 
-**Program-level continuation gate configuration.** For funders operating multi-stage programs, the base configuration also records the program-level continuation gate structure: the evidence scope and strength required for progression from one stage to the next, and the infrastructure declaration for any gate at independent review level or above. Program-level continuation gates are set once for the program and apply across all rounds in the program. They are distinct from round-level gates, which govern progress within a single round.
+**Program-level continuation gate configuration.** For funders operating multi-stage programs, the base configuration also records the program-level continuation gate structure: the evidence scope and strength required for progression from one stage to the next, and the infrastructure declaration for any gate at independent review level or above. Program-level continuation gates are set once for the program and apply across all rounds in the program. They are distinct from round-level gates, which cover progress within a single round.
 
 **Base configuration onboarding (for new funders).** When a funder adopts CROSS for the first time, the Configurator runs a one-time base configuration setup step before any round is opened. This step establishes the base configuration that all subsequent rounds inherit from. The funder selects a starting profile from the following options, or selects Custom to build the base configuration from scratch.
 
@@ -139,7 +173,7 @@ An implementer building the Configurator must implement each question as a discr
 - [ ] Retroactive obligation: the application presents evidence of prior demonstrated contribution
 - [ ] Multi-stage program with different modes per stage (proceed to Q2.3)
 
-2.2 If a single mode is selected: confirm whether this is the same mode as the program's prior rounds, or whether this round represents a mode transition. Mode transitions in a multi-stage program must be governed by a configured continuation gate (see Q5 below).
+2.2 If a single mode is selected: confirm whether this is the same mode as the program's prior rounds, or whether this round represents a mode transition. Mode transitions in a multi-stage program must be subject to a configured continuation gate (see Q5 below).
 
 2.3 If multi-stage: for each stage in the program, specify:
 - Stage number
@@ -166,6 +200,34 @@ The mode assignment per stage is recorded in the program-level configuration and
 
 ---
 
+**Q3A. Entry-gate applicant declarations (always collected).**
+
+The CROSS standard (Part IV and Part II) requires that every entry specification gate, in every obligation mode, collect a fixed set of applicant declarations before gate assessment proceeds. These are pre-conditions for assessment, not scored criteria: an entry submission missing any required declaration is incomplete and is not assessed until the declaration is provided. The Configurator does not let a funder switch these declarations off. This question block configures how each declaration appears in the application form and at what evidence strength the funder will hold it. The declarations themselves become locked sections of every application form generated for this round.
+
+3A.1 Organizational identity declaration (required of all applicants, all modes; Part IV). Confirm that the application form collects the six required fields: legal entity name and jurisdiction; parent organization declaration; affiliated entity disclosure; prior round history; disbursement authority (individual, collective, or delegated, with the named holder or mechanism); and on-chain identity anchor (the canonical wallet address used for cross-program identity matching and the Attestation Corpus query in Q14). This declaration is not configurable off. Confirm only the form labels and help text the funder wishes to show.
+
+3A.2 Sufficiency architecture declaration (required of all applicants, all modes; Part IV). Confirm that the form collects the scope declaration, the sufficiency position (one of: critical gap, partial, approaching, surplus, declared at the stated scope), the portfolio context statement, the grant contribution statement, and the revenue architecture declaration (one of: grant-only, fee-for-service, commercial, hybrid; Part II). Set the evidence strength for the sufficiency position: self-report (corroborating evidence accepted but not required) or independent review or above (at least one piece of corroborating evidence from a source outside the applicant's control is required before gate assessment proceeds). Acceptable corroborating sources to name: publicly accessible treasury data, grant history records from a named external database (KarmaGAP, Gitcoin Explorer, RPGF recipient lists, or equivalent), or disclosed revenue figures from a named independent source.
+
+3A.3 Public benefit mechanism and access condition declaration (required wherever eligibility includes any public goods claim; Part II and Part IV). Where Q3 admits any public goods basis, this declaration is active and cannot be configured off. Confirm that the form collects the mechanism type statement (one of: output production, access provision, condition change, ecosystem shift) and the access condition statement, whose required content follows the mechanism type: for output production, the SPDX license identifier and license file location; for access provision, the access mechanism, cost structure, and non-excludability mechanism; for condition change, a FROM state and population definition; for ecosystem shift, a named causal pathway and co-factor list. Specify which mechanism types this round accepts and the evidence scope each requires. The declared mechanism type constrains the evidence scope required at the completion gate (output production commits to output evidence at minimum, access provision to usage evidence, condition change to outcome evidence, ecosystem shift to a documented contribution argument).
+
+3A.4 Development stage declaration (required of all applicants, all modes; Part II and Part IV). Confirm that the form collects the declared stage number (1 through 5), the applicant's account of why their work is at that stage rather than adjacent stages, and at least one piece of evidence from a source outside the applicant's control confirming the declared stage. Declare which stages are within scope for this round. A round that accepts all stages must state this explicitly; a round targeting specific stages must name them and state why other stages are excluded. Stage targeting is published before any applicant submits. The declared stage constrains the coherent obligation mode selections (Part IV).
+
+3A.5 Continuity Capacity declaration (Part II). Confirm the trigger: grants above a funder-defined size threshold, grants producing ongoing infrastructure with continuing operational requirements, and any application where the applying entity has a single named primary contributor with no documented backup capacity. For programs that fund infrastructure maintenance or sustained service delivery, this declaration is always active regardless of threshold. The applicant declares one of three states (single, partial, or resilient) with supporting evidence; a single-point-of-continuity declaration must name the person on whom continuation depends and state what would happen to active grants and funded deliverables if that person became unavailable. Specify whether the completion gate for this round requires evidence of partial or resilient continuity as a condition of final disbursement above the threshold.
+
+3A.6 Obligation fulfillment record (Part IV). Confirm that the form requires an obligation fulfillment record where any of the following hold: the applicant has received prior grants from this funder in any prior round; the applicant cites prior work as evidence of capability at the entry gate; or the applicant's prior round history includes unresolved KarmaGAP milestones or open gate conditions. For each prior grant from this funder, the record documents what was committed at that round's entry gate, what was produced (with a publicly accessible link), and whether the commitment was fulfilled, partially fulfilled, or unfulfilled, with the applicant's explanation where fulfillment was not complete. An undisclosed prior obligation that research surfaces is a material discrepancy under Block J. The funder verifies this record against the Attestation Corpus query configured in Q14.
+
+3A.7 Prior work attribution statement (Part IV). Confirm that the form requires a prior work attribution statement wherever an applicant cites prior work as evidence of capability, track record, or past contribution in any mode. For each cited piece of prior work it asks: the entity of performance (under which legal entity or organizational context the work was performed); the applicant's relationship at the time and its current status; and current ownership and access (who holds the intellectual property rights, who controls the deployment or codebase, and who holds the relationship with any users cited as evidence). This is an adverse signal disclosure requirement, not a scored field.
+
+---
+
+**Q3B. Measurement framework declaration (optional; Part IX).**
+
+3B.1 Does this round declare alignment with an institutional measurement framework? Options: no; yes (select one or more). Recognized declarations: IRIS+ Core Metrics Set (with sub-selection of thematic set), OECD DAC criteria (DCD/DAC(2019)58/FINAL), Logic Model (W.K. Kellogg Foundation), Grant Maturity Index (Biedermann and Gibrel, arXiv:2410.19828), DAOIP-5 (DAOstar/Metagov), and custom.
+
+3B.2 If a framework is declared: the Configurator publishes the framework name and version alongside the gate configuration and pre-populates the external standards section with the framework's canonical reference and a template conformance threshold. A measurement framework declaration does not modify the gate or indicator requirements; it adds a named vocabulary expectation the Configurator exposes to applicants and reviewers. Where OECD DAC alignment is declared, coherence disclosure (Part IX-A) is required at both the entry gate and the progress gate; confirm that the application form carries the coherence disclosure field naming known interventions in the same problem area and characterizing their relationship as complementary, parallel without coordination, duplicative, or in tension.
+
+---
+
 **Q4. Funding amount range for this round.**
 
 4.1 What is the minimum award amount for this round?
@@ -180,7 +242,7 @@ The Configurator uses Q4 answers to calibrate the Coordination Scaling Standard 
 
 **Q5. Program-level continuation gate configuration (for multi-stage programs).**
 
-This question block applies only to programs with more than one stage. It configures the continuation gates that govern progression between stages. These gates are set at the program level, not the round level, and must be published before any round in the program opens.
+This question block applies only to programs with more than one stage. It configures the continuation gates that apply to progression between stages. These gates are set at the program level, not the round level, and must be published before any round in the program opens.
 
 5.1 Does this program have a program-level continuation gate? Options: yes (multi-stage program with defined progression requirements); no (single-stage or no continuation requirement).
 
@@ -194,6 +256,10 @@ For each stage transition:
 
 5.3 For programs configuring Stage 3 or above using the Graduated Evidence runbook: confirm that the cost-effectiveness consideration is active at the Stage 2 to Stage 3 continuation gate. Options: required (the review panel must assess cost-effectiveness before committing Stage 3 funding); advisory (the review panel may consider cost-effectiveness).
 
+5.3a Sustainability assessment at continuation (Part IV). The cost-effectiveness question (whether further investment is worthwhile) and the sustainability question (whether outcomes from prior rounds persist without continued intervention) are different questions and must not be collapsed into one. Confirm that, where a continuation gate is configured, the grantee's continuation submission includes a sustainability stance on outcomes produced in prior rounds, declared as one of three positions: sustained (self-sustaining, no additional intervention required), conditional (persists under specified conditions independent of this program's funding), or dependent (will not persist without continued intervention). A dependent stance is a disclosure, not a disqualifier; a funder continuing a program with a dependent stance is choosing to sustain outcomes rather than only to advance them, and that choice is recorded in the continuation record.
+
+5.3b Causality stance for each continuation pathway (Part IV). For change-obligation continuation gates, declare the causality stance the gate requires: attribution stance (evidence that the intervention caused the observed change; counterfactual reference, configured in Q11, is the standard methodology) or contribution stance (evidence that the intervention plausibly contributed, with a named causal pathway, a list of co-factors, and a written account of why the contribution was material rather than incidental). Contribution stance is appropriate for most public goods and Web3 contexts where multiple funders and community actors contribute to the same ecosystem outcomes. Attribution stance is appropriate where the funder must defend a causal claim to an institutional body, where the intervention is the primary or only active change effort in the target population, or where future funding depends on causal proof. The causality stance is a gate-level configuration: a program may set progress gates at contribution stance and continuation gates at attribution stance as evidence accumulates.
+
 5.4 Record all continuation gate configurations in the program-level configuration block of the round specification. This block is separate from the round-level gate configuration in Q9.
 
 ---
@@ -202,7 +268,7 @@ For each stage transition:
 
 6.1 What is the geographic or network scope of the public impact claims expected in this round? Select one: local (a specific city, region, or named community), regional (multi-country or continental), global, protocol-level (impact claimed at the level of a named protocol or network).
 
-6.2 For change-obligation rounds: does this round require that beneficiary populations be explicitly named and validated? Options: yes, required; yes, required only above a named funding threshold; no, not required for all applicant types.
+6.2 For change-obligation rounds: does this round require that affected populations be explicitly named and validated? Options: yes, required; yes, required only above a named funding threshold; no, not required for all applicant types.
 
 6.3 For build-obligation rounds: does this round activate the coordinating party engagement dimension? If yes, applicants must document the current absence or inadequacy of the deliverable with named independent evidence, and name at least one external coordinating party who has confirmed the need.
 
@@ -278,7 +344,7 @@ For retroactive obligation rounds: specify the contribution threshold the progra
 Are there progress verification gates for this round (mid-funding disbursement tranches contingent on demonstrated progress)?
 
 If yes, for each progress verification gate:
-- Which tranche does this gate govern (tranche 1, tranche 2, etc.)?
+- Which tranche does this gate cover (tranche 1, tranche 2, etc.)?
 - Evidence scope: output / usage / outcome / impact
 - Evidence strength: self-report with documentation / third-party verifiable / independent review / independent evaluation
 - Infrastructure declaration: if independent review or above, name the reviewer, their qualifications, the review process, and the timeline
@@ -295,15 +361,33 @@ For build-obligation rounds: confirm that the completion gate requires verificat
 
 For completion gates at self-report with documentation level: name the staff member who will review the submission and the timeline for review before final payment.
 
+For all completion gates: confirm that the gate cannot be satisfied by grantee self-report alone at any evidence strength level (Part IV). The funder must review the submission against the published completion criteria and make a documented determination. Confirm that the completion submission requires an unintended outcomes disclosure alongside the primary outcome evidence: any effects, positive or negative, that occurred during the grant period that were not specified at entry and are plausibly connected to the funded work. A grantee who states that no unintended outcomes occurred must state this explicitly; silence does not satisfy the field. An unintended negative outcome is recorded as an adverse signal and triggers the Adverse-Signal Engagement Principle path at the continuation gate.
+
+11.3a Causality stance and counterfactual reference (change-obligation rounds; Part IV).
+
+For change-obligation completion gates, declare the causality stance the gate requires (the same two options as Q5.3b): attribution stance or contribution stance. CROSS requires the stance to be declared explicitly; a gate that leaves it undeclared is operating somewhere between the two positions without saying which.
+
+A gate set to contribution stance requires the grantee to supply a named causal pathway from the funded activity to the observed change, a list of other interventions or actors that also contributed, and a written account of why the funded intervention's contribution was material. It does not require a counterfactual.
+
+A gate set to attribution stance may additionally be configured at counterfactual reference level. Where so configured, name the acceptable counterfactual methods before the round opens (historical trend extrapolation from pre-intervention data, a matched comparison group not exposed to the intervention, or a modeled counterfactual with stated assumptions and sensitivity ranges). A grantee submitting at counterfactual reference level must include a counterfactual baseline, an attribution argument naming the main alternative explanations and why they are insufficient, a defined comparison period or group, and an independent attestation that the method and comparison group are reasonable given the context. Counterfactual reference applies only when explicitly configured here and declared in the infrastructure declaration; it is not implied by selecting outcome evidence scope.
+
 11.4 Continuation specification gate for this round (if applicable).
 
-For rounds that are the final round in a program stage: does a continuation specification gate govern whether the grantee may apply to the next stage? If yes, reference the program-level continuation gate configuration set in Q5 (the program-level gate governs; this question confirms the linkage).
+For rounds that are the final round in a program stage: does a continuation specification gate cover whether the grantee may apply to the next stage? If yes, reference the program-level continuation gate configuration set in Q5 (the program-level gate applies; this question confirms the linkage).
 
 For rounds not at a stage boundary: this gate is not active; record "Not applicable."
 
 11.5 Reporting frequency.
 
 How often must grantees report during the grant period? Options: monthly, quarterly, semi-annually, at milestone completion only, at grant end only, or a named custom schedule.
+
+11.6 Reviewer calibration (required for any gate configured at independent review level or above; Part IV).
+
+For any gate set in this question block to independent review or independent evaluation, the funder must conduct a reviewer calibration exercise before the review window opens, completed before any reviewer assesses any live application. Reviewer calibration is part of the infrastructure declaration for those gates: a gate assessment conducted by a reviewer who did not complete calibration does not satisfy the infrastructure declaration.
+
+Configure the calibration exercise. It must present reviewers with the published gate criteria, their criterion intents, and the conformance threshold for each criterion, and must include at least two worked examples: one application that clearly satisfies the gate criteria and one that clearly does not, each with a documented assessment. Where the review panel includes reviewers from multiple institutions or contexts, the exercise must include a check for inter-rater consistency on the worked examples before live applications are assessed.
+
+Record the calibration plan in the round specification: the gate criteria to be reviewed, the two worked examples, and the named reviewers expected to participate. The calibration record produced at run time (reviewers present, date, gate criteria reviewed, confirmation that calibration was completed) is retained as part of the gate's evidence record.
 
 ---
 
@@ -327,7 +411,7 @@ For change-obligation rounds: the pre-generated rubric contains the entry specif
 
 For retroactive obligation rounds: the pre-generated rubric is a framework placeholder that the funder must complete in full in 12.4 below. The Configurator does not pre-populate the substantive scoring criteria for retroactive obligation rounds because the assessment is program-specific.
 
-12.2 Round-specific scoring guidance. Does the funder want to add guidance to any rubric section? If yes, for each addition: name the section, provide the guidance text, and specify whether it is advisory (reviewers read it before scoring but it does not change the scoring scale) or mandatory (reviewers must address it explicitly in their finding). Funder additions may supplement CROSS rubric criteria; they may not lower minimum evidence requirements or waive conformance checks.
+12.2 Round-specific scoring guidance. Does the funder want to add guidance to any rubric section? If yes, for each addition: name the section, provide the guidance text, and specify whether it is advisory (reviewers read it before scoring but it does not change the scoring scale) or required (reviewers must address it explicitly in their finding). Funder additions may supplement CROSS rubric criteria; they may not lower minimum evidence requirements or waive conformance checks.
 
 12.3 Common indicator rubric criteria. If round-level common indicators were designated in Q10, assessment criteria for each common indicator appear in the rubric automatically. The funder may add specific guidance for how reviewers should score each common indicator against the round's stated goals. If no guidance is added, reviewers apply the standard indicator field rubric to the common indicators.
 
@@ -339,31 +423,53 @@ For retroactive obligation rounds: the pre-generated rubric is a framework place
 
 ---
 
+**Q13. Round specification pre-commitment (optional; Part IV).**
+
+A round specification pre-commitment is a publicly queryable record, derived from the complete published round specification before any applicant sees the form, that an independent party can use to confirm the specification existed at a specific point in time before submissions were received. It is the evidentiary basis for applicant redress: an applicant asserting that criteria changed after submission can demonstrate the discrepancy by comparing the committed specification to the criteria as applied. Without a pre-commitment, such a claim is an assertion; with one, it is a documentable discrepancy. Programs whose gate architecture includes summative completion gates with declared redress rights are strongly advised to publish a pre-commitment.
+
+13.1 Does this round publish a pre-commitment to the round specification? Options: yes; no.
+
+13.2 If yes: select the mechanism. The pre-commitment must satisfy two conditions: it must be derivable from the specification document so that any party can verify the match between the commitment and the specification in force, and it must carry a timestamp from a source outside the program's own control. On-chain transactions, signed timestamps from recognized timestamping authorities, and equivalent mechanisms all satisfy these conditions. The Configurator does not require any specific mechanism; it records which one the funder uses.
+
+13.3 Record the commitment reference in the published round specification so that any party can verify the match between the committed document and the specification applied.
+
+---
+
+**Q14. Structured dataset publication and Attestation Corpus query (Part IV and Part IX).**
+
+14.1 Funder-side Attestation Corpus query. The CROSS standard requires that, for each application providing an on-chain identity anchor (collected in Q3A.1), the reviewing program query the Attestation Corpus for that address across named public sources before gate assessment is complete. This is a funder-side procedure, not an applicant submission requirement. Confirm the query is part of this round's evaluation process and configure its sources. Required query sources: on-chain attestation registries (EAS deployments on Ethereum mainnet, Optimism, Base, and Arbitrum at minimum), the KarmaGAP grants and milestone API, and any program-specific grant databases this round names. The query returns total non-revoked attestations, attestations by known schema (KarmaGAP, RPGF, Gitcoin, and other named programs), and endorsement count and endorser identities where resolvable.
+
+14.2 Reconciliation with the obligation fulfillment record. Confirm that the query result is recorded in the evaluation record alongside the obligation fulfillment record collected in Q3A.6. Where the Attestation Corpus reveals prior grants, milestones, or obligations not disclosed in the applicant's obligation fulfillment record, this is non-disclosure of a prior obligation and is treated as a material discrepancy under the adverse signal provisions of Part IV.
+
+14.3 Structured dataset publication. The conformant configuration records and publishes, before the round opens, the round-level data the standard requires be legible (Part IX): whether concurrent funding is present and the resulting additionality requirements; external standard references for each gate, each with an identifier, version anchor, scope, and conformance threshold; the program's funder-side obligation configuration (internal clarification mechanism, structured appeals procedure, and independent redress mechanism status); and the field clarity gate outcome for each application field. Confirm the publication format the program uses (the Configurator does not require a specific one; structured JSON, an on-chain schema record, or any tabular format that carries these elements is conformant). The field clarity gate requires that each application field carry a criterion specification meeting Part IV requirements before the round opens; fields that do not are flagged and must be resolved or overridden with documented justification before publication.
+
+---
+
 ## Section 5: Field Clustering Structural Conditions
 
-Field clustering structural conditions specify when a particular answer to the question sequence triggers additional required fields automatically. Clustering is deterministic: if the trigger condition is met, the additional fields become mandatory in the round specification. Funders cannot override clustering structural conditions; they are inherited from the CROSS standard.
+Field clustering structural conditions specify when a particular answer to the question sequence triggers additional required fields automatically. Clustering is deterministic: if the trigger condition is met, the additional fields become required in the round specification. Funders cannot override clustering structural conditions; they are inherited from the CROSS standard.
 
-**Condition 1.** If measurement form classification = quantitative with composite construction (multiple weighted components) for any common indicator: the component specification, weighting, and aggregation rule fields for that indicator become mandatory. A composite indicator without these three fields is unverifiable and does not satisfy the CROSS data quality standard.
+**Condition 1.** If measurement form classification = quantitative with composite construction (multiple weighted components) for any common indicator: the component specification, weighting, and aggregation rule fields for that indicator become required. A composite indicator without these three fields is unverifiable and does not satisfy the CROSS data quality standard.
 
-**Condition 2.** If any applicant invokes the privacy-sensitive accommodation: the specific harm field and the alternative methodology field both become mandatory. The accommodation is not an exemption from obligation; it substitutes an appropriate methodology.
+**Condition 2.** If any applicant invokes the privacy-sensitive accommodation: the specific harm field and the alternative methodology field both become required. The accommodation is not an exemption from obligation; it substitutes an appropriate methodology.
 
-**Condition 3.** If any venture capital or institutional investment is disclosed in the concurrent funding disclosure: the expanded concurrent funding fields become mandatory for that applicant: investor name, approximate investment amount, governance rights held by the investor, and the documented relationship between the commercial investment scope and the public goods scope of this application.
+**Condition 3.** If any venture capital or institutional investment is disclosed in the concurrent funding disclosure: the expanded concurrent funding fields become required for that applicant: investor name, approximate investment amount, decision rights held by the investor, and the documented relationship between the commercial investment scope and the public goods scope of this application.
 
-**Condition 4.** If the environmental and social impact dimension is activated (Q9.1): the classification field (Category A, B, or C under the International Finance Corporation Performance Standards derived classification) becomes mandatory for all applicants within scope. Applicants self-classify; the named party with funder standing reviews and may reclassify.
+**Condition 4.** If the environmental and social impact dimension is activated (Q9.1): the classification field (Category A, B, or C under the International Finance Corporation Performance Standards derived classification) becomes required for all applicants within scope. Applicants self-classify; the named party with funder standing reviews and may reclassify.
 
 **Condition 5.** If round-level common indicators are designated (Q10.1 = yes): those indicators are pre-populated in all application forms with their measurement form descriptions, operational definitions, construction methodologies, and disaggregation categories. These fields are locked for applicants; applicants complete the baseline and target fields only.
 
-**Condition 6.** If progress verification gates are configured (Q11.2): milestone or progress specification fields become mandatory for every application in the round. Required fields for each milestone: milestone name, description, evidence type (artifact, deployed system, published report, outcome data, or other), verification method, expected completion date, and disbursement amount contingent on this milestone. At least one milestone must be designated as a verification milestone where an independent party confirms the deliverable.
+**Condition 6.** If progress verification gates are configured (Q11.2): milestone or progress specification fields become required for every application in the round. Required fields for each milestone: milestone name, description, evidence type (artifact, deployed system, published report, outcome data, or other), verification method, expected completion date, and disbursement amount contingent on this milestone. At least one milestone must be designated as a verification milestone where an independent party confirms the deliverable.
 
-**Condition 7.** If the procurement integrity dimension is activated (Q9.3) and an applicant's proposed budget includes sub-contracting, sub-granting, or re-granting exceeding 20% of the total award: sub-contractor disclosure fields become mandatory for that applicant.
+**Condition 7.** If the procurement integrity dimension is activated (Q9.3) and an applicant's proposed budget includes sub-contracting, sub-granting, or re-granting exceeding 20% of the total award: sub-contractor disclosure fields become required for that applicant.
 
 **Condition 8.** If the adverse signal disclosure field reveals a prior rejection from a program with substantially similar eligibility criteria: the applicant must complete the adverse signal response field naming the program, the stated rejection reason, and what has changed since that is material to this application.
 
 **Condition 9.** If the track record requirement in Q7.2 requires independent verification and an applicant claims prior funded work: all claimed prior work must include a verifiable public link or named third-party source.
 
-**Condition 10.** If the gender equity dimension is activated (Q9.2) and an applicant claims population-level impact: gender-disaggregated reporting fields become mandatory for all impact indicators measured at the individual or household unit of analysis.
+**Condition 10.** If the gender equity dimension is activated (Q9.2) and an applicant claims population-level impact: gender-disaggregated reporting fields become required for all impact indicators measured at the individual or household unit of analysis.
 
-**Condition 11.** If obligation mode = retroactive (Q2.1): the prior award disclosure field becomes mandatory for all applicants. All prior awards for the same or substantially overlapping contribution must be disclosed. This disclosure is in addition to the standard concurrent funding disclosure (Template 4).
+**Condition 11.** If obligation mode = retroactive (Q2.1): the prior award disclosure field becomes required for all applicants. All prior awards for the same or substantially overlapping contribution must be disclosed. This disclosure is in addition to the standard concurrent funding disclosure (Template 4).
 
 **Condition 12.** If a program-level continuation gate is configured (Q5.1 = yes) and this round is at a stage boundary: the continuation gate evidence requirements are surfaced in the application form as a forward-looking section.
 
@@ -390,6 +496,18 @@ The round specification is the output of the Configurator. An implementer must g
 **Program-level continuation gate block.** For multi-stage programs: the continuation gate configuration for each stage transition, including evidence scope, evidence strength, mode of the next stage, and infrastructure declaration. This block is separate from the round-level gate configuration block and is reproduced from the program-level base configuration.
 
 **Required application fields.** A complete list of all fields applicants must complete, including: core CROSS fields, entry specification fields (mode-specific: deliverable specification form for build-obligation, FROM/TO specification for change-obligation, prior contribution form for retroactive), dimension-specific fields, clustering-condition-triggered fields, and common indicator fields if any.
+
+**Entry-gate applicant declaration blocks.** The locked declaration sections every application form carries, configured in Q3A: the organizational identity declaration (six fields), the sufficiency architecture declaration (five elements with the configured evidence strength for the sufficiency position), the public benefit mechanism and access condition declaration where a public goods claim is in scope (mechanism type and access condition, with the accepted mechanism types named), the development stage declaration with the round's in-scope stages and the published exclusion rationale, the Continuity Capacity declaration with its trigger and any completion-gate continuity condition, the obligation fulfillment record with its triggering conditions, and the prior work attribution statement. Each block names the field set and the evidence strength at which the funder holds it.
+
+**Measurement framework declaration.** If declared in Q3B: the framework name and version, the pre-populated external standards reference and template conformance threshold, and, where OECD DAC alignment is declared, the coherence disclosure field at both the entry and progress gates.
+
+**Causality stance block.** For change-obligation rounds: the declared causality stance (attribution or contribution) for each outcome-bearing gate, and, where attribution stance is configured at counterfactual reference level, the acceptable counterfactual methods named before the round opens.
+
+**Reviewer calibration plan.** For any gate configured at independent review level or above: the calibration plan from Q11.6, comprising the gate criteria to be reviewed, the two worked examples, and the named reviewers expected to participate. This plan is part of the infrastructure declaration for those gates.
+
+**Round specification pre-commitment reference.** If a pre-commitment is published (Q13): the commitment reference and the mechanism used, recorded so any party can verify the match between the committed document and the specification applied.
+
+**Structured dataset and Attestation Corpus query configuration.** The published round-level dataset elements from Q14.3 (concurrent funding presence and additionality requirements, external standard references, funder-side obligation configuration, and field clarity gate outcomes), the configured Attestation Corpus query sources from Q14.1, and the reconciliation procedure from Q14.2.
 
 **Conflict of interest configuration for this round.** Which tier treatment applies, the token holdings materiality threshold, the named receiving authority, the pre-round declaration requirement and deadline, and the post-participation certification requirement.
 

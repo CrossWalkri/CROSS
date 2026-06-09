@@ -1,13 +1,20 @@
 ---
 title: SROI / Social Value International Principles Compatibility - CROSS+WALKRI
-version: 0.1.0
-date: 2026-05-18
+version: 0.1.2
+date: 2026-06-08
 license: CC0
 standards: CROSS v0.4.0 (github.com/CrossWalkri/CROSS), WALKRI v0.1.6 (github.com/CrossWalkri/WALKRI)
 references:
   - Social Value International, SROI Principles and Standards, socialvalueint.org
   - Social Return on Investment methodology overview, https://www.betterevaluation.org/methods-approaches/approaches/social-return-investment
   - Social Value International, A Guide to Social Return on Investment, 2nd edition
+lens_tags:
+  calibration_tier: outcome_specified_self_reported
+  authority_source: voluntary_published
+  cultural_methodological_lineage: western_institutional
+  funder_typology: pooled_fund_or_intermediary
+  framework_scope_type: grantee_outcome_measurement
+  # Social Return on Investment methodology; pooled_fund_or_intermediary chosen for the intermediary networks publishing SROI guidance; alternative civil_society_advisory
 ---
 
 # SROI / Social Value International Principles Compatibility
@@ -20,7 +27,7 @@ references:
 
 WALKRI's five pre-publication field requirements address Social Return on Investment (SROI) Principles 2, 4, 5, 6, and 7 structurally, at the collection instrument specification layer. CROSS's obligation architecture, particularly the causality stance field and Theory of Change architecture, addresses Principles 3, 5, and 6 at the program design layer. Together, CROSS and WALKRI provide a specification foundation for SROI-aligned programs that is more rigorous than SROI's own methodology requires at the instrument level.
 
-SROI is a methodology and principles framework for accounting for social value; it was developed by Social Value International and is used by development organizations, impact investors, corporate ESG programs, and nonprofit grant programs. CROSS is an obligation architecture specifying what funded interventions must demonstrate. WALKRI is a specification quality layer governing how collection instruments must be designed. The three are complementary at different layers of the measurement stack: SROI establishes what principles a social value account must satisfy; CROSS and WALKRI determine whether the data underlying that account was produced by a sufficiently specified, auditable process.
+SROI is a methodology and principles framework for accounting for social value; it was developed by Social Value International and is used by development organizations, impact investors, corporate ESG programs, and nonprofit grant programs. CROSS is an obligation architecture specifying what funded interventions must demonstrate. WALKRI is a specification quality layer covering how collection instruments must be designed. The three are complementary at different layers of the measurement stack: SROI establishes what principles a social value account must satisfy; CROSS and WALKRI determine whether the data underlying that account was produced by a sufficiently specified, auditable process.
 
 ---
 
@@ -60,17 +67,17 @@ WALKRI's operational definition requirement implements materiality at the field 
 
 Principle 5 requires that social value accounts claim only the value that the organization's activities are responsible for creating. It has two operational dimensions: counterfactual reasoning (what would have happened without the intervention) and scope of attribution (what share of the observed change can be attributed to this specific activity, given other contributing factors).
 
-WALKRI's compliance threshold requirement addresses the over-claiming problem at the measurement level. The compliance threshold specifies when a response is sufficient: it is the minimum standard a measured outcome must meet to count as a valid instance. A compliance threshold that requires a documented, verified change rather than a self-reported intention prevents the inflation of outcome counts that produces over-claiming at the data layer.
+WALKRI's conformance threshold requirement addresses the over-claiming problem at the measurement level. The conformance threshold specifies when a response is sufficient: it is the minimum standard a measured outcome must meet to count as a valid instance. A conformance threshold that requires a documented, verified change rather than a self-reported intention prevents the inflation of outcome counts that produces over-claiming at the data layer.
 
 CROSS's causality stance field (contribution versus attribution) addresses Principle 5 at the program design level. Programs that declare a contribution stance acknowledge that the observed outcome was produced by multiple factors and that the program contributed to rather than solely caused the change. This declaration, encoded in the obligation record before implementation, bounds the scope of the value claim the program can make in an SROI analysis. It prevents attribution of the full observed change to the program's activity when the causal structure is contributory rather than deterministic.
 
-Together, the compliance threshold (bounding what counts as a valid measurement instance) and the causality stance field (bounding the share of the outcome the program can claim) create a two-layer protection against the over-claiming that Principle 5 prohibits.
+Together, the conformance threshold (bounding what counts as a valid measurement instance) and the causality stance field (bounding the share of the outcome the program can claim) create a two-layer protection against the over-claiming that Principle 5 prohibits.
 
 ### Principle 6: Be Transparent
 
 Principle 6 requires that social value accounts demonstrate the basis on which analysis may be considered accurate and honest. It covers transparency about methods, assumptions, stakeholder involvement, and the limitations of the analysis.
 
-WALKRI's pre-publication audit and conformance record address Principle 6 at the specification layer. A WALKRI-conformant instrument has been through a three-stage review process before any data is collected: criterion intent has been reviewed for clarity and alignment with the measured change, operational definitions have been reviewed for boundary clarity and internal consistency, and evidence forms have been reviewed for independence from beneficiary self-report. The conformance record documents that this review occurred, when, and with what findings.
+WALKRI's pre-publication audit and conformance record address Principle 6 at the specification layer. A WALKRI-conformant instrument has been through a three-stage review process before any data is collected: criterion intent has been reviewed for clarity and alignment with the measured change, operational definitions have been reviewed for boundary clarity and internal consistency, and evidence forms have been reviewed for independence from affected-population member self-report. The conformance record documents that this review occurred, when, and with what findings.
 
 This is transparency at the instrument design level, before data collection begins. An SROI analysis that references WALKRI conformance records for its collection instruments provides decision-makers with a specification-layer transparency artifact that SROI's own methodology does not require but that Principle 6's intent clearly encompasses.
 
@@ -90,7 +97,7 @@ The independence logic of WALKRI's evidence form requirement and the independenc
 
 SROI's Principle 3 requires that things which matter to stakeholders be given value, using financial proxies where outcomes do not have market prices. This is the monetization principle that distinguishes SROI from other social value frameworks.
 
-CROSS does not govern monetization; it governs obligation architecture and indicator specification. However, CROSS's Theory of Change architecture at the outcome level produces the structured outcome claims that financial proxy valuation requires as input. An SROI analysis can only monetize an outcome that has been specified precisely enough to identify an appropriate financial proxy. CROSS's eleven-field indicator specification, applied at the outcome level of the ToC, produces outcome specifications with defined populations (Field 6, population scope), defined baselines (Field 4 in CROSS v0.4.0 numbering), and defined measurement methodologies. These specifications are the inputs that outcome-level SROI financial proxy valuation requires.
+CROSS does not cover monetization; it covers obligation architecture and indicator specification. However, CROSS's Theory of Change architecture at the outcome level produces the structured outcome claims that financial proxy valuation requires as input. An SROI analysis can only monetize an outcome that has been specified precisely enough to identify an appropriate financial proxy. CROSS's eleven-field indicator specification, applied at the outcome level of the ToC, produces outcome specifications with defined populations (Field 6, population scope), defined baselines (Field 4 in CROSS v0.4.0 numbering), and defined measurement methodologies. These specifications are the inputs that outcome-level SROI financial proxy valuation requires.
 
 ---
 
@@ -98,11 +105,11 @@ CROSS does not govern monetization; it governs obligation architecture and indic
 
 | SROI Principle | CROSS Provision | WALKRI Provision | Coverage |
 | :-- | :-- | :-- | :-- |
-| 1. Involve stakeholders | No direct provision; stakeholder identification is an operational process outside specification scope | No direct provision | Outside specification scope |
+| 1. Involve stakeholders | No direct provision; affected-party identification is an operational process outside specification scope | No direct provision | Outside specification scope |
 | 2. Understand what changes | Theory of Change architecture (causal links and assumptions make change theory explicit) | Criterion intent requirement (every field states what change it tracks) | Structural: specification precondition for understanding change |
 | 3. Value the things that matter | Eleven-field indicator specification at outcome level provides inputs for financial proxy valuation; no monetization provision | No direct provision | Partial: specification inputs only, not monetization methodology |
 | 4. Only include what is material | Obligation mode and ToC scope constrain which outcomes are within program scope | Operational definition requirement (qualifying and non-qualifying examples implement materiality at field level) | Structural: materiality implemented at instrument design level |
-| 5. Do not over-claim | Causality stance field (contribution vs attribution) bounds the share of outcome the program can claim | Compliance threshold requirement bounds what counts as a valid measurement instance | Structural: two-layer protection at program design and instrument levels |
+| 5. Do not over-claim | Causality stance field (contribution vs attribution) bounds the share of outcome the program can claim | Conformance threshold requirement bounds what counts as a valid measurement instance | Structural: two-layer protection at program design and instrument levels |
 | 6. Be transparent | Obligation record as a formally versioned, pre-specified commitment; coherence disclosure requirement | Pre-publication audit and conformance record; three-stage review process | Structural: specification-layer transparency artifacts |
 | 7. Verify the result | On-chain identity anchor provides a verifiable program identity for independent assessors; gate evidence record provides a structured evidence base | Evidence form requirement (every field has an independent verification pathway not controlled by the reporting entity) | Structural: independence architecture built into instrument design |
 
@@ -112,7 +119,7 @@ CROSS does not govern monetization; it governs obligation architecture and indic
 
 Organizations conducting SROI analyses or producing social value accounts under Social Value International principles that adopt CROSS+WALKRI should:
 
-1. Apply WALKRI's five field requirements to all collection instruments before beginning data collection for the SROI analysis. The criterion intent, operational definition, and compliance threshold requirements implement Principles 2, 4, and 5 at the instrument level; this substantially reduces the methodological review work required during independent verification.
+1. Apply WALKRI's five field requirements to all collection instruments before beginning data collection for the SROI analysis. The criterion intent, operational definition, and conformance threshold requirements implement Principles 2, 4, and 5 at the instrument level; this substantially reduces the methodological review work required during independent verification.
 
 2. Use CROSS's causality stance field to declare the contribution or attribution stance before implementation. This bounds the scope of the social value claim and makes the Principle 5 counterfactual position explicit in a formally versioned, pre-specified record rather than in a post-hoc analytical memo.
 
@@ -143,3 +150,5 @@ License: CC0
 | Version | Date | Summary |
 |---|---|---|
 | 0.1.0 | 2026-05-18 | Initial draft. WALKRI analysis for Principles 2, 4, 5, 6, and 7. CROSS analysis for Principles 3, 5, and 6. Principle 1 and Principle 3 monetization scope boundaries established. Full seven-principle mapping table. Adoption guidance. |
+| 0.1.1 | 2026-05-23 | Retroactive lens tagging: added calibration_tier, authority_source, cultural_methodological_lineage, funder_typology, framework_scope_type per Lenses Framework v0.1.0. |
+| 0.1.2 | 2026-06-08 | Frame Language own-voice pass applied as part of the corpus-wide 2026-06-08 sweep: own-voice watchlist terms (govern-family, accountability, mandatory, compliance, enforce, legitimate) recast to conformance and obligation vocabulary where they appeared in this document's own voice; citation use of source-framework terms preserved. Primitive-rename references aligned to current canon (Continuity Capacity, the Collective disbursement state, Affected Population Verification Gate). Em-dash- and watchlist-clean re-verified. No compatibility finding or mapping changed; vocabulary only. |

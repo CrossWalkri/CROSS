@@ -1,10 +1,10 @@
 ---
 title: CROSS+WALKRI Primitives Framework Index
-version: 0.1.0
-date: 2026-05-19
+version: 0.2.0
+date: 2026-06-07
 license: CC0
 standards: CROSS v0.4.7 (github.com/CrossWalkri/CROSS), WALKRI v0.1.7 (github.com/CrossWalkri/WALKRI)
-foundation: CROSS-WALKRI-primitives-foundation-0_1_3.md
+foundation: CROSS-WALKRI-primitives-foundation-0_1_0.md (internal version 0.2.0, the 146-primitive basis)
 ---
 
 # CROSS+WALKRI Primitives Framework Index
@@ -19,7 +19,7 @@ First, classification: when a new external framework is encountered, locate the 
 
 Second, architecture: the index shows that CROSS+WALKRI's compatibility claims are not an accumulation of framework-by-framework agreements but a consequence of underlying structural alignment. All 95+ covered frameworks exemplify some combination of the primitives listed here. New frameworks will do the same.
 
-Primitives from the Foundation's methodological layer (Bidirectional Precision, Transclusion, Frame Language) and most identity-layer primitives (Entity Boundary, Scope, Sufficiency, Revenue Architecture, Disbursement Authority, Governance Resilience, Development Stage, On-chain Identity Anchor) generate CROSS+WALKRI provisions but do not produce distinctive framework exemplars at the level of external compatibility claims. This index covers the primitives that generate the most significant external framework alignments: obligation primitives, gate primitives, measurement primitives, and the cohort-facing WALKRI primitive.
+Primitives from the Foundation's methodological layer (Bidirectional Precision, Transclusion, Frame Language) and most identity-layer primitives (Entity Boundary, Scope, Sufficiency, Revenue Architecture, Disbursement Authority, Continuity Capacity, Development Stage, On-chain Identity Anchor) generate CROSS+WALKRI provisions but do not produce distinctive framework exemplars at the level of external compatibility claims. This index covers the primitives that generate the most significant external framework alignments: obligation primitives, gate primitives, measurement primitives, and the cohort-facing WALKRI primitive.
 
 A separate section at the end documents primitives identified during the framework research that are not yet in the Primitives Foundation and are candidates for the next foundation revision.
 
@@ -59,9 +59,65 @@ A separate section at the end documents primitives identified during the framewo
 
 ---
 
+### Allocation Rule
+
+**Definition reference:** Primitives Foundation Layer 3 (Allocation Rule).
+
+**What it identifies:** The combinatory act by which a round resolves its assessment into a distribution of the pool: the function that maps evaluated applications to amounts. It was the basis's one systematic gap, surfaced by an unprimed compose-back over real programs and recomposition-validated across all eight of its configuration values. The configuration a program declares is what distinguishes a quadratic-funding round from a peer-review panel from a lottery, even when the upstream evaluation looks similar.
+
+**Framework exemplars by configuration value:**
+
+*Quadratic funding (matching scaled by breadth of support):*
+- Gitcoin Grants (quadratic matching of many small contributions into a matching pool)
+
+*Weighted-metric vote tally:*
+- Optimism Retro Funding (badgeholder votes resolved by a published weighted-metric formula)
+
+*Collective decision rule:*
+- Participatory grantmaking programs (community panels resolving allocation by consensus or vote)
+- Co-Impact (core partners resolving allocation jointly under a declared decision rule)
+
+*Performance-weighted formula:*
+- Global Fund allocation methodology (disease burden and national income as the formula inputs)
+
+*Peer-review score with discretion:*
+- NSF and traditional research councils (panel scores combined with program-officer discretion)
+
+*Winner-take-pool:*
+- MacArthur 100&Change and challenge prizes (one or a few winners take the pool)
+
+*Outcome-contingent function:*
+- Social Impact Bonds and Pay for Success (the amount paid is a function of measured outcomes against a locked counterfactual baseline)
+
+*Random draw:*
+- New Zealand Health Research Council Explorer Grants (lottery among applicants who clear a quality bar)
+- Volkswagen Foundation Experiment! (randomized selection among eligible proposals)
+
+---
+
+### Financing Instrument Type
+
+**Definition reference:** Primitives Foundation Layer 3 (Financing Instrument Type).
+
+**What it identifies:** The declared financial form of the transfer, the property that determines whether and on what terms capital flows back to the funder: a pure grant, a repayable grant, a concessional loan, or a blend. It is selected among by an instrument-selection assessment but exists wherever a program declares its instrument, including programs that offer only grants.
+
+**Framework exemplars:**
+
+*Risk-graded instrument selection (form set by an independent debt analysis):*
+- African Development Fund (one hundred percent grants, a fifty-fifty grant and concessional-loan blend, or concessional loans only, by debt-distress risk)
+- World Bank International Development Association grant-loan blend under the joint IMF and World Bank Debt Sustainability Framework
+
+*Concessional instrument families:*
+- International Development Association concessional instruments (Investment Project Financing, Development Policy Financing, Program-for-Results)
+
+*Repayable-grant form:*
+- Recoverable-grant and repayable-grant structures (a grant returned to the funder on a triggering condition rather than on a fixed loan schedule)
+
+---
+
 ### Theory of Change Hierarchy
 
-**Definition reference:** Primitives Foundation Layer 3 (Theory Layer, Pathway).
+**Definition reference:** Primitives Foundation Layer 6 (Theory of Change Hierarchy, Pathway; the former Theory Layer is folded into Theory of Change Hierarchy as of v0.2.0).
 
 **What it identifies:** The structured causal chain from activities through outputs through outcomes through goals, with each layer requiring distinct evidence.
 
@@ -114,7 +170,7 @@ A separate section at the end documents primitives identified during the framewo
 
 ### Sustainability Stance
 
-**Definition reference:** Primitives Foundation Layer 3 (Sustainability Stance, Pathway).
+**Definition reference:** Primitives Foundation Layer 6 (Sustainability Stance, Pathway).
 
 **What it identifies:** Whether outcomes are sustained independently, conditional on continued inputs, or dependent on continued grant funding after the grant period ends.
 
@@ -288,7 +344,7 @@ A separate section at the end documents primitives identified during the framewo
 - GFGP ARS 1651 (organization-level financial and governance documentation)
 - INPAS (grant restriction documentation at recognition)
 
-*Self-report with compliance threshold:*
+*Self-report with conformance threshold:*
 - LIHEAP (energy burden documentation; utility disconnection notice)
 - SAMHSA NOMs (structured client interview; QxQ codebooks)
 - IAF Grassroots Development Framework (field observation; documentation to be specified at indicator selection)
@@ -345,11 +401,11 @@ A separate section at the end documents primitives identified during the framewo
 
 ---
 
-### Beneficiary Accountability
+### Affected Population Verification
 
-*Note: this primitive is not yet in the Primitives Foundation. It was identified during the CRS ProPack and World Vision LEAP compatibility statement work and is a candidate for the next Foundation revision.*
+*Note: this concept is now in the Primitives Foundation as the Affected Population Verification Gate, a configuration of Evidence Strength (Layer 4) as of v0.2.0. It was first added as a standing primitive (the Beneficiary Accountability Gate, renamed Affected Population Verification Gate at v0.1.7) and folded to a configuration in the v0.2.0 demotion pass; the mechanism it names is unchanged.*
 
-**What it identifies:** A formally structured mechanism through which grant program beneficiaries can provide feedback, raise complaints, and receive responses, with the mechanism's design and operation specified before the program begins. This is distinct from outcome measurement (which measures what happened to beneficiaries) and from stakeholder engagement in research design (which includes beneficiaries in designing the program). Beneficiary accountability is the ongoing channel through which beneficiaries can influence the program in real time.
+**What it identifies:** A formally structured mechanism through which the affected population of a grant program can provide feedback, raise complaints, and receive responses, with the mechanism's design and operation specified before the program begins. This is distinct from outcome measurement (which measures what happened to the affected population) and from stakeholder engagement in research design (which includes the affected population in designing the program). Affected population verification is the ongoing channel through which the affected population can influence the program in real time.
 
 **Framework exemplars:**
 
@@ -364,21 +420,25 @@ A separate section at the end documents primitives identified during the framewo
 
 ---
 
-## Primitives Identified as New - Candidates for Foundation Revision
+## Primitives Identified as New - Disposition in the v0.2.0 Reduction
 
-The following structural concepts were identified during the framework compatibility research and do not correspond to existing named primitives in the Foundation. Each is exemplified by at least one covered framework and may be exemplified by future ones. They are documented here as candidates for the next Foundation revision.
+These structural concepts were identified during the framework compatibility research as candidates for a future Foundation revision. The 2026 reduction that produced the v0.2.0 basis has since resolved most of them, and each is marked with its current disposition. Each remains exemplified by at least one covered framework.
 
 **Inter-cycle Reflection Stage**
 A formally required stage between the close of one programme cycle and the opening of the next, in which learning from the completed cycle is reviewed and institutionalized before the next design phase begins. Distinct from the completion gate (which closes the current cycle) and the entry gate (which opens the next). Exemplified by: World Vision LEAP Reflect stage. Potentially related to: USAID CLA adaptive management loops; Developmental Evaluation.
+**Disposition (v0.2.0):** Seated, as a configuration of Program Learning Architecture (Layer 7); it is the minimum expression of that primitive, declared when only the cumulative-sequence-linkage element is present.
 
 **Multi-cycle Retrospective Assessment**
 A formal evaluation spanning all prior grant cycles in a multi-year grantee relationship, assessing accumulated impact across the full history rather than the most recent cycle only. Requires that indicator specifications from all prior cycles be preserved in comparable form. Exemplified by: NED Cumulative Assessment Report (required for renewed multi-year NED grantees). No other covered framework currently exemplifies this primitive.
+**Disposition (v0.2.0):** Seated as a standing primitive (Portfolio, Layer 7).
 
 **Portfolio-level Continuation Benchmark**
 A published performance threshold applied to a funder's entire grant portfolio rather than to individual grants, where failure of the portfolio to meet the threshold triggers compliance consequences for the funder rather than for individual grantees. Exemplified by: SBIR/STTR Phase I-to-II transition rate minimum (0.25) and commercialization revenue benchmark (USD 100,000 per Phase II award average). No other covered framework currently exemplifies this primitive at the statutory level.
+**Disposition (v0.2.0):** Seated as a standing primitive (Portfolio, Layer 7).
 
 **Regulatory Approval Pathway as Terminal Gate**
 A terminal evaluation gate defined not by a funder's completion criteria but by an external regulatory body's approval decision. The grant or OT contract is structured so that regulatory approval (e.g., FDA market authorization for a medical countermeasure) constitutes the equivalent of the completion gate outcome evidence. Exemplified by: BARDA OT contracts for medical countermeasure development (FDA approval pathway as terminal evaluation gate). Related to: ARPA-H payable milestone structure, but distinct because the terminal gate is external to both funder and grantee.
+**Disposition (v0.2.0):** Open. Not seated in the 146-primitive basis; it sits with the External Outcome Standard Binding Condition in the unratified gap-pass tier the author rules on, the case where the completion gate is defined by an external standard's verdict rather than the funder's own criteria.
 
 ---
 
@@ -389,6 +449,13 @@ A terminal evaluation gate defined not by a funder's completion criteria but by 
 **Building program type bundles:** Each bundle combines CROSS runbook provisions + WALKRI field specifications + compatibility mapping. The compatibility mapping in each bundle can reference this index rather than listing all covered frameworks: "programs of this type typically exemplify the following primitives, which are addressed by CROSS provisions X, Y, Z."
 
 **Identifying gaps:** Frameworks that exemplify primitives not yet listed in this index are candidates for new compatibility statements. Frameworks that exemplify one of the four new candidate primitives at the bottom of this document are particularly valuable, as they would help establish whether those primitives are genuinely generalizable or specific to their current exemplar.
+
+---
+
+## Changelog
+
+- **0.2.0 (2026-06-07):** Refreshed to the Primitives Foundation v0.2.0, the 146-primitive basis. Front matter foundation reference updated from 0.1.3. Added two exemplar-rich obligation primitives the v0.2.0 reduction produced: the Allocation Rule (the combinatory allocation act, with framework exemplars across its eight configuration values from quadratic funding to lottery) and Financing Instrument Type (pure grant, repayable grant, concessional loan, blend). Corrected stale classifications: Theory of Change Hierarchy now references Layer 6 and the folded Theory Layer; Sustainability Stance moved to Layer 6; the Affected Population Verification note now records that the concept was seated as a primitive and then folded to a configuration of Evidence Strength. Reframed the candidates section as a disposition record: Inter-cycle Reflection Stage (now a configuration of Program Learning Architecture), Multi-cycle Retrospective Assessment, and Portfolio-level Continuation Benchmark are seated, while Regulatory Approval Pathway as Terminal Gate remains open in the unratified gap-pass tier. The index stays selective by design, covering the primitives that generate the most significant external framework alignments rather than all 146.
+- **0.1.0 (2026-05-19):** Initial release. Selective framework-exemplar index mapping obligation, gate, measurement, and cohort-facing primitives to the external frameworks that most clearly exemplify them, with a candidates-for-revision section and usage guidance.
 
 ---
 

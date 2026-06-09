@@ -113,7 +113,7 @@ A continuing European foundation grantee must demonstrate: prior period outcome 
 
 ## Part 2: WALKRI Field Specifications
 
-The following field specifications cover the intake fields most commonly required in European philanthropy and EU structural fund programs. Each specification satisfies WALKRI's five pre-publication requirements: criterion intent, operational definition, response form, evidence form, compliance threshold.
+The following field specifications cover the intake fields most commonly required in European philanthropy and EU structural fund programs. Each specification satisfies WALKRI's five pre-publication requirements: criterion intent, operational definition, response form, evidence form, conformance threshold.
 
 ---
 
@@ -127,7 +127,7 @@ The following field specifications cover the intake fields most commonly require
 
 **Evidence form:** At completion: evidence that the declared form of EU added value was produced. For scale: output volumes that demonstrably exceed what national budgets supported. For cross-border: documented evidence of cross-border cooperation or spillover effects. For leverage: co-investment volumes and confirmation that co-investors would not have participated without the EU anchor investment. For innovation: documentation of the novel approach and evidence of uptake beyond the funded project.
 
-**Compliance threshold:** A named counterfactual and a named form of EU added value with a corresponding evidence plan. An EU added value declaration that does not specify a counterfactual does not satisfy this field. A declaration that identifies EU added value as "contributing to EU priorities" without specifying what would have occurred without EU investment does not satisfy this field.
+**Conformance threshold:** A named counterfactual and a named form of EU added value with a corresponding evidence plan. An EU added value declaration that does not specify a counterfactual does not satisfy this field. A declaration that identifies EU added value as "contributing to EU priorities" without specifying what would have occurred without EU investment does not satisfy this field.
 
 ---
 
@@ -141,7 +141,7 @@ The following field specifications cover the intake fields most commonly require
 
 **Evidence form:** Monitoring data collected throughout the programme period at the frequency specified in the performance framework (typically annual for annual performance reports to the European Commission). Participant-level data for ESF+ indicators must be collected at participant entry and exit from the supported operation.
 
-**Compliance threshold:** All mandatory common indicators for the relevant fund and intervention field must be declared with baseline and target values before the programme opens. A programme design that omits a mandatory common indicator applicable to its intervention field does not satisfy this field. Programmes that cannot establish a baseline before activities begin must include a baseline measurement plan with a timeline and must not report results until the baseline is established.
+**Conformance threshold:** All mandatory common indicators for the relevant fund and intervention field must be declared with baseline and target values before the programme opens. A programme design that omits a mandatory common indicator applicable to its intervention field does not satisfy this field. Programmes that cannot establish a baseline before activities begin must include a baseline measurement plan with a timeline and must not report results until the baseline is established.
 
 ---
 
@@ -155,7 +155,7 @@ The following field specifications cover the intake fields most commonly require
 
 **Evidence form:** Participant-level records maintained in the programme's management information system, with disaggregated summary statistics available for the annual performance report. For the European Commission's aggregate reporting: Member State management authority systems must be able to extract disaggregated data in the format specified by the Commission's technical specifications.
 
-**Compliance threshold:** All five disaggregation dimensions must be declared and planned for collection at the entry gate. A data collection plan that defers disaggregation method design until after participant enrollment begins does not satisfy this field. GDPR compliance documentation must be in place before participant data collection begins; collection without GDPR compliance constitutes a regulatory violation, not merely an evidence gap.
+**Conformance threshold:** All five disaggregation dimensions must be declared and planned for collection at the entry gate. A data collection plan that defers disaggregation method design until after participant enrollment begins does not satisfy this field. GDPR compliance documentation must be in place before participant data collection begins; collection without GDPR compliance constitutes a regulatory violation, not merely an evidence gap.
 
 ---
 
@@ -169,7 +169,7 @@ The following field specifications cover the intake fields most commonly require
 
 **Evidence form:** At entry: the IOOI chain as a structured document or programme logic model, approved by the foundation's programme officer or the BMZ/GIZ results measurement team before funds are committed. At completion: outcome measurement results linked to the declared outcome indicators, and an impact assessment or contribution to impact argument linked to the declared impact tier.
 
-**Compliance threshold:** A complete four-tier IOOI chain with causal links between tiers and at least one measurable indicator at the output and outcome tiers. A programme that declares an impact statement ("improving social cohesion") without a corresponding outcome indicator linked to programme activities does not satisfy this field. The impact tier of the IOOI chain is typically shared with other actors and not fully attributable to the programme; programmes must acknowledge this and present a contribution argument rather than an attribution claim at the impact tier.
+**Conformance threshold:** A complete four-tier IOOI chain with causal links between tiers and at least one measurable indicator at the output and outcome tiers. A programme that declares an impact statement ("improving social cohesion") without a corresponding outcome indicator linked to programme activities does not satisfy this field. The impact tier of the IOOI chain is typically shared with other actors and not fully attributable to the programme; programmes must acknowledge this and present a contribution argument rather than an attribution claim at the impact tier.
 
 ---
 
@@ -183,7 +183,7 @@ The following field specifications cover the intake fields most commonly require
 
 **Evidence form:** Annual performance reports submitted to the European Commission by 31 January each year, covering progress against milestones and targets for the preceding calendar year. The 2025 mid-term performance review uses data from the 2024 annual performance report. Programmes must maintain monitoring data at the project level that can be aggregated to the programme level for the annual performance report.
 
-**Compliance threshold:** Milestones and targets for all output and result indicators must be set before the programme begins operations. Milestones must be set at a level that reflects realistic expectations given programme design and implementation capacity; milestones set at zero or negligibly low values for early years without justification do not satisfy this field. Significant milestone underachievement (defined in CPR 2021/1060 as achievement of less than 65% of the 2024 milestone by the end of 2024) triggers performance review consequences.
+**Conformance threshold:** Milestones and targets for all output and result indicators must be set before the programme begins operations. Milestones must be set at a level that reflects realistic expectations given programme design and implementation capacity; milestones set at zero or negligibly low values for early years without justification do not satisfy this field. Significant milestone underachievement (defined in CPR 2021/1060 as achievement of less than 65% of the 2024 milestone by the end of 2024) triggers performance review consequences.
 
 ---
 
@@ -197,7 +197,7 @@ The following field specifications cover the intake fields most commonly require
 
 **Evidence form:** The published CPR Article 45 evaluation plan, accessible from the Managing Authority's website or programme management information system. For project-level applicants: confirmation from the Managing Authority that the programme evaluation plan is in place and that the project's monitoring obligations are aligned with the programme evaluation plan's data requirements.
 
-**Compliance threshold:** A published CPR Article 45 evaluation plan with a date that predates programme operations. A programme that has begun disbursing funds without a published evaluation plan does not satisfy this field. Project-level applicants that cannot confirm the existence of a programme-level evaluation plan must flag this as a gap at the application gate; funding is not blocked by the gap, but the gap must be reported.
+**Conformance threshold:** A published CPR Article 45 evaluation plan with a date that predates programme operations. A programme that has begun disbursing funds without a published evaluation plan does not satisfy this field. Project-level applicants that cannot confirm the existence of a programme-level evaluation plan must flag this as a gap at the application gate; funding is not blocked by the gap, but the gap must be reported.
 
 ---
 
@@ -211,7 +211,7 @@ The following field specifications cover the intake fields most commonly require
 
 **Evidence form:** At entry: audited financial statements for the prior year (or financial projections for new enterprises) showing revenue source breakdown. At completion: actual revenue breakdown for the grant period, confirming that commercial revenue architecture operated as declared. For ICMA Social Bond reporting: the annual impact report covering use of proceeds and revenue allocation.
 
-**Compliance threshold:** A named revenue model (integrated, complementary, or hybrid) with a revenue source breakdown. A social enterprise that claims integrated social and commercial activity without specifying which clients or services generate the commercial revenue does not satisfy this field. Projected revenue architecture that differs significantly from actual results must be disclosed mid-grant; material divergence from the declared architecture is a completion gate issue.
+**Conformance threshold:** A named revenue model (integrated, complementary, or hybrid) with a revenue source breakdown. A social enterprise that claims integrated social and commercial activity without specifying which clients or services generate the commercial revenue does not satisfy this field. Projected revenue architecture that differs significantly from actual results must be disclosed mid-grant; material divergence from the declared architecture is a completion gate issue.
 
 ---
 

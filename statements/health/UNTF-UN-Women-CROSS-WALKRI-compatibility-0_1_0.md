@@ -1,7 +1,7 @@
 ---
 title: UN Trust Fund to End Violence Against Women (UNTF) Compatibility - CROSS+WALKRI
-version: 0.1.0
-date: 2026-05-18
+version: 0.1.2
+date: 2026-06-08
 license: CC0
 standards: CROSS v0.4.5 (github.com/CrossWalkri/CROSS), WALKRI v0.1.7 (github.com/CrossWalkri/WALKRI)
 references:
@@ -9,6 +9,13 @@ references:
   - untf.unwomen.org/en/grants
   - UN Women Evaluation Policy (unwomen.org)
   - UNTF Learning Hub (untf.unwomen.org/en/learning-hub)
+lens_tags:
+  calibration_tier: outcome_specified_self_reported
+  authority_source: voluntary_published
+  cultural_methodological_lineage: western_institutional
+  funder_typology: multilateral_bank_or_fund
+  framework_scope_type: grantee_outcome_measurement
+  # UN Trust Fund to End Violence Against Women (UN Women administered)
 ---
 
 # UN Trust Fund to End Violence Against Women (UNTF)
@@ -59,8 +66,17 @@ The UNTF's tiered mandatory evaluation model is a formally published version of 
 
 WALKRI's five pre-publication field requirements apply to UNTF intake instruments to ensure that KPI fields specify what evidence qualifies as a documented change in violence against women or in the enabling environment before any grantee begins baseline data collection. The UNTF's mandatory evaluation architecture is structurally sound, but the pre-publication specification of KPI intake fields is the layer at which data quality for gender-based violence programs is most often lost. A KPI field that asks grantees to report "number of women who report reduced experience of violence" requires, before any grantee deploys a survey, a precise operational definition of what counts as a reported experience of violence in this program context, what survey instrument or interview protocol qualifies as the evidence form, and what response threshold distinguishes a meaningful change from a measurement artifact.
 
-WALKRI's criterion intent requirement specifies what the UNTF intends each KPI to capture: not merely that women reported a different experience, but that the change is attributable to the program's theory of change and documented through a specified instrument at a specified time relative to program contact. WALKRI's operational definition requirement specifies the precise scope of the KPI: whether "reduced experience of violence" includes psychological violence alongside physical violence, whether it covers intimate partner violence only or extends to community-level violence, and how the measurement protocol handles respondents who experienced multiple violence types. WALKRI's compliance threshold requirement specifies the minimum response or change that satisfies the KPI at each six-month reporting gate, preventing inflated claims based on marginal changes that do not constitute program impact. Applied before any grantee begins baseline data collection, these requirements produce KPI instruments that generate UNTF evaluation data capable of supporting the portfolio-level learning that the Learning Hub is designed to enable.
+WALKRI's criterion intent requirement specifies what the UNTF intends each KPI to capture: not merely that women reported a different experience, but that the change is attributable to the program's theory of change and documented through a specified instrument at a specified time relative to program contact. WALKRI's operational definition requirement specifies the precise scope of the KPI: whether "reduced experience of violence" includes psychological violence alongside physical violence, whether it covers intimate partner violence only or extends to community-level violence, and how the measurement protocol handles respondents who experienced multiple violence types. WALKRI's conformance threshold requirement specifies the minimum response or change that satisfies the KPI at each six-month reporting gate, preventing inflated claims based on marginal changes that do not constitute program impact. Applied before any grantee begins baseline data collection, these requirements produce KPI instruments that generate UNTF evaluation data capable of supporting the portfolio-level learning that the Learning Hub is designed to enable.
 
 ---
 
 *Published under CC0. For the current version of CROSS and WALKRI, see github.com/CrossWalkri.*
+
+---
+
+## Changelog
+
+| Version | Date | Summary |
+|---|---|---|
+| 0.1.2 | 2026-06-08 | Frame Language own-voice pass applied as part of the corpus-wide 2026-06-08 sweep: own-voice watchlist terms (govern-family, accountability, mandatory, compliance, enforce, legitimate) recast to conformance and obligation vocabulary where they appeared in this document's own voice; citation use of source-framework terms preserved. Primitive-rename references aligned to current canon (Continuity Capacity, the Collective disbursement state, Affected Population Verification Gate). Em-dash- and watchlist-clean re-verified. No compatibility finding or mapping changed; vocabulary only. |
+| 0.1.1 | 2026-05-23 | Retroactive lens tagging: added calibration_tier, authority_source, cultural_methodological_lineage, funder_typology, framework_scope_type per Lenses Framework v0.1.0. |

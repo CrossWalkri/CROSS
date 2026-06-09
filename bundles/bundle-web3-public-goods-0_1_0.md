@@ -104,7 +104,7 @@ A continuing program operator must demonstrate: the entry specification gate for
 
 ## Part 2: WALKRI Field Specifications
 
-The following field specifications cover the intake fields most commonly required in Web3 and public goods grant programs. Each specification satisfies WALKRI's five pre-publication requirements: criterion intent, operational definition, response form, evidence form, compliance threshold.
+The following field specifications cover the intake fields most commonly required in Web3 and public goods grant programs. Each specification satisfies WALKRI's five pre-publication requirements: criterion intent, operational definition, response form, evidence form, conformance threshold.
 
 ---
 
@@ -118,7 +118,7 @@ The following field specifications cover the intake fields most commonly require
 
 **Evidence form:** The address must be demonstrably controlled by the applicant: either a transaction signed from that address as part of the application process, or a public attestation linking the address to the applicant's public identity (ENS name resolution, GitHub verification, or equivalent).
 
-**Compliance threshold:** A valid address format that is demonstrably controlled by the applicant. Addresses for which no control evidence is provided do not satisfy this field. Exchange or custodial wallet addresses that the applicant does not control do not satisfy this field.
+**Conformance threshold:** A valid address format that is demonstrably controlled by the applicant. Addresses for which no control evidence is provided do not satisfy this field. Exchange or custodial wallet addresses that the applicant does not control do not satisfy this field.
 
 ---
 
@@ -132,7 +132,7 @@ The following field specifications cover the intake fields most commonly require
 
 **Evidence form:** No external documentation required for the disclosure itself. The applicant's declaration is the evidence. Funders may cross-reference on-chain records for TGEs and token allocations to verify completeness. Non-disclosure discovered after award is treated as a material omission.
 
-**Compliance threshold:** A disclosure that names all concurrent funding sources for the declared scope, including pending applications. A disclosure that omits a known token allocation or pending TGE does not satisfy this field. "None" is a compliant response only when the applicant has no funding sources covering the declared scope.
+**Conformance threshold:** A disclosure that names all concurrent funding sources for the declared scope, including pending applications. A disclosure that omits a known token allocation or pending TGE does not satisfy this field. "None" is a compliant response only when the applicant has no funding sources covering the declared scope.
 
 ---
 
@@ -146,7 +146,7 @@ The following field specifications cover the intake fields most commonly require
 
 **Evidence form:** For software outputs: the license file in the repository. For services: a terms of service or access policy document. For condition claims: a specified measurement source (on-chain analytics, user counts, developer adoption metrics).
 
-**Compliance threshold:** A mechanism selection with a corresponding access condition that is specific enough to verify. "Open source" without a named SPDX identifier does not satisfy this field. "Public good" without a named mechanism does not satisfy this field. All-rights-reserved copyright is not compatible with a public goods output production claim.
+**Conformance threshold:** A mechanism selection with a corresponding access condition that is specific enough to verify. "Open source" without a named SPDX identifier does not satisfy this field. "Public good" without a named mechanism does not satisfy this field. All-rights-reserved copyright is not compatible with a public goods output production claim.
 
 ---
 
@@ -160,7 +160,7 @@ The following field specifications cover the intake fields most commonly require
 
 **Evidence form:** On-chain records (deployment transaction hashes, protocol interaction counts), public GitHub commit history (repository URL with specific commits), published documentation (URL with date), protocol analytics (Dune Analytics queries, Etherscan data, or equivalent), or public forum posts and governance participation records. Self-reported impact claims without at least one independently verifiable evidence source do not satisfy this field.
 
-**Compliance threshold:** At least one independently verifiable evidence source per claimed contribution. Evidence must correspond to the declared assessment period. Contributions made outside the assessment period do not qualify regardless of their quality. Impact evidence must demonstrate use by parties other than the applicant's own team (ecosystem adoption, not self-use).
+**Conformance threshold:** At least one independently verifiable evidence source per claimed contribution. Evidence must correspond to the declared assessment period. Contributions made outside the assessment period do not qualify regardless of their quality. Impact evidence must demonstrate use by parties other than the applicant's own team (ecosystem adoption, not self-use).
 
 ---
 
@@ -174,7 +174,7 @@ The following field specifications cover the intake fields most commonly require
 
 **Evidence form:** At completion: the artifact at the specified location, demonstrably matching the specification. For software: a repository at the stated URL with a commit from within the grant period. For deployed contracts: a verified contract at the stated address. For documentation: a published document at the stated URL with a publication date within the grant period.
 
-**Compliance threshold:** Each deliverable must exist at the specified location and match the operational definition stated at application. A deliverable that ships with materially reduced scope (core features absent, documentation missing, deployment not completed) does not satisfy this field without a prior scope change declaration.
+**Conformance threshold:** Each deliverable must exist at the specified location and match the operational definition stated at application. A deliverable that ships with materially reduced scope (core features absent, documentation missing, deployment not completed) does not satisfy this field without a prior scope change declaration.
 
 ---
 

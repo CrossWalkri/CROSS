@@ -1,12 +1,19 @@
 ---
 title: Optimism Retro Funding Impact Evaluation Methodology Compatibility - CROSS+WALKRI
-version: 0.1.0
-date: 2026-05-18
+version: 0.1.2
+date: 2026-06-08
 license: CC0
 standards: CROSS v0.4.5 (github.com/CrossWalkri/CROSS), WALKRI v0.1.7 (github.com/CrossWalkri/WALKRI)
 references:
   - Optimism Retro Funding round documentation (community.optimism.io)
   - optimism.io/retropgf
+lens_tags:
+  calibration_tier: outcome_specified_self_reported
+  authority_source: voluntary_published
+  cultural_methodological_lineage: western_institutional
+  funder_typology: dao_or_protocol
+  framework_scope_type: allocator_process
+  # Optimism Retro Funding Season 7 Impact Evaluation Methodology companion statement; same DAO-or-protocol funder typology as the main statement; allocator_process primary scope
 ---
 
 # Optimism Retro Funding Impact Evaluation Methodology (2025)
@@ -61,10 +68,19 @@ CROSS addresses all three structural innovations in the 2025 methodology, and th
 
 WALKRI's pre-publication requirements apply to the metrics collection layer of the 2025 Retro Funding methodology. The published metrics formula specifies which impact metrics are used and how they are weighted, but it does not necessarily specify, for each metric, what evidence form satisfies the metric, what documentation standard applies to self-reported data, and what threshold distinguishes a valid measurement from an estimate. These are precisely the five pre-publication requirements WALKRI imposes.
 
-For each impact metric in the formula, WALKRI requires: criterion intent (what the metric is designed to measure in the Optimism ecosystem Impact Chain), operational definition (exactly what activity or output counts toward the metric), response form (how the metric value is calculated and reported), evidence form (what on-chain or off-chain documentation is required to substantiate the reported value), and compliance threshold (the minimum documentation standard a project must meet for its metric submission to be counted). Without this specification, the metrics formula may be mathematically precise while operating on inputs of variable quality: a project with rigorous on-chain evidence and a project with informal self-reported estimates may receive the same formula treatment even though the underlying data quality is not equivalent.
+For each impact metric in the formula, WALKRI requires: criterion intent (what the metric is designed to measure in the Optimism ecosystem Impact Chain), operational definition (exactly what activity or output counts toward the metric), response form (how the metric value is calculated and reported), evidence form (what on-chain or off-chain documentation is required to substantiate the reported value), and conformance threshold (the minimum documentation standard a project must meet for its metric submission to be counted). Without this specification, the metrics formula may be mathematically precise while operating on inputs of variable quality: a project with rigorous on-chain evidence and a project with informal self-reported estimates may receive the same formula treatment even though the underlying data quality is not equivalent.
 
 The Impact Chain dependency graph creates a specific WALKRI opportunity. The causal pathway each project declares must be verifiable: each link in the chain from outputs to ecosystem outcomes should have an evidence form that can be independently checked. WALKRI applied to the Impact Chain specification means that before any round opens, the Optimism Foundation publishes what evidence form satisfies each claim of causal contribution in the dependency graph, preventing self-reported causal claims from substituting for documented causal pathways.
 
 ---
 
 *Published under CC0. For the current version of CROSS and WALKRI, see github.com/CrossWalkri.*
+
+---
+
+## Changelog
+
+| Version | Date | Summary |
+|---|---|---|
+| 0.1.2 | 2026-06-08 | Frame Language own-voice pass applied as part of the corpus-wide 2026-06-08 sweep: own-voice watchlist terms (govern-family, accountability, mandatory, compliance, enforce, legitimate) recast to conformance and obligation vocabulary where they appeared in this document's own voice; citation use of source-framework terms preserved. Primitive-rename references aligned to current canon (Continuity Capacity, the Collective disbursement state, Affected Population Verification Gate). Em-dash- and watchlist-clean re-verified. No compatibility finding or mapping changed; vocabulary only. |
+| 0.1.1 | 2026-05-23 | Retroactive lens tagging: added calibration_tier, authority_source, cultural_methodological_lineage, funder_typology, framework_scope_type per Lenses Framework v0.1.0. |

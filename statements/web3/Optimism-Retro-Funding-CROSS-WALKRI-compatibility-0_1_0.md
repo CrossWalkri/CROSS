@@ -1,7 +1,7 @@
 ---
 title: Optimism Retro Funding Compatibility - CROSS+WALKRI
-version: 0.1.0
-date: 2026-05-18
+version: 0.1.2
+date: 2026-06-08
 license: CC0
 standards: CROSS v0.4.0 (github.com/CrossWalkri/CROSS), WALKRI v0.1.6 (github.com/CrossWalkri/WALKRI)
 references:
@@ -10,6 +10,13 @@ references:
   - Retro Funding 4 Impact Metrics specification: https://gov.optimism.io/t/retro-funding-4-impact-metrics-a-collective-experiment/8226
   - Evolution of Retro Funding 2025: https://gov.optimism.io/t/the-evolution-of-retro-funding-in-2025/9414
   - OSO Documentation: https://docs.opensource.observer
+lens_tags:
+  calibration_tier: process_conformant
+  authority_source: voluntary_published
+  cultural_methodological_lineage: western_institutional
+  funder_typology: dao_or_protocol
+  framework_scope_type: allocator_process
+  # Optimism Retro Funding pre-Season-7 (Rounds 1-4); superseded by v0.2.0 statement which is already lens-tagged; this v0.1.0 statement retained for historical record
 ---
 
 # Optimism Retro Funding Compatibility
@@ -20,9 +27,9 @@ references:
 
 ## Summary
 
-The Optimism Collective's Retroactive Public Goods Funding program and CROSS+WALKRI address the same accountability problem from different directions. Optimism's RetroPGF recognizes work that was already done; CROSS provides the obligation architecture that specifies, in advance, what evidence of that past work must satisfy. The two systems are structurally compatible because CROSS's retroactive obligation mode was designed for exactly the pattern RetroPGF embodies: work is completed first, then recognized, with impact evaluated against published criteria rather than prospective commitments.
+The Optimism Collective's Retroactive Public Goods Funding program and CROSS+WALKRI address the same verification problem from different directions. Optimism's RetroPGF recognizes work that was already done; CROSS provides the obligation architecture that specifies, in advance, what evidence of that past work must satisfy. The two systems are structurally compatible because CROSS's retroactive obligation mode was designed for exactly the pattern RetroPGF embodies: work is completed first, then recognized, with impact evaluated against published criteria rather than prospective commitments.
 
-WALKRI reinforces this compatibility at the field level. The Milestones and Metrics Council's requirements that impact metrics be verifiable and reproducible are satisfied structurally by WALKRI's evidence form requirement, which mandates that every metric include a specified measurement instrument and a documented access path before evaluation opens.
+WALKRI reinforces this compatibility at the field level. The Milestones and Metrics Council's requirements that impact metrics be verifiable and reproducible are satisfied structurally by WALKRI's evidence form requirement, which requires that every metric include a specified measurement instrument and a documented access path before evaluation opens.
 
 ---
 
@@ -42,7 +49,7 @@ Projects are evaluated against their on-chain identity: OSO registration anchors
 
 ## How CROSS Addresses These Requirements
 
-CROSS's retroactive obligation mode governs programs where the funded work precedes the funding decision. This is the structural definition of RetroPGF: the Optimism Collective funds contributions that have already been made to the ecosystem, not contributions that are promised.
+CROSS's retroactive obligation mode applies to programs where the funded work precedes the funding decision. This is the structural definition of RetroPGF: the Optimism Collective funds contributions that have already been made to the ecosystem, not contributions that are promised.
 
 In retroactive obligation mode, CROSS's four-gate sequence operates with a modified entry gate: instead of specifying future deliverables, the entry gate specifies the evidence criteria by which past contributions will be assessed. The entry specification gate requires these criteria to be published before applications open. This satisfies the Milestones and Metrics Council's requirement that metric definitions precede evaluation.
 
@@ -74,7 +81,7 @@ CROSS+WALKRI has a published compatibility statement for Open Source Observer (s
 
 | Optimism Retro Funding Requirement | CROSS Provision | WALKRI Provision |
 | :-- | :-- | :-- |
-| Metric definitions published before evaluation opens | Entry specification gate: criteria fixed before applications open (retroactive obligation mode) | Pre-publication field requirements: criterion intent, operational definition, and compliance threshold must be declared before the round opens |
+| Metric definitions published before evaluation opens | Entry specification gate: criteria fixed before applications open (retroactive obligation mode) | Pre-publication field requirements: criterion intent, operational definition, and conformance threshold must be declared before the round opens |
 | Metrics verifiable from independent public sources | Attestation Corpus query: cross-references on-chain data against declared identity | Validity standard (5.1): data must measure the intended criterion; Integrity standard (5.2): evidence collected independently of the beneficiary |
 | Metrics reproducible by any evaluator | Gate configuration includes evidence scope and strength specification | Evidence form requirement: OSO query (metric name, project slug, time window, access path) is the reproducible measurement instrument |
 | Project identity anchored to on-chain addresses and GitHub orgs | Field 6: on-chain identity anchor (blockchain address, network, protocol, tag) maps to OSO oss-directory blockchain field | WALKRI recipient profile exportable as OSO oss-directory YAML |
@@ -87,9 +94,9 @@ CROSS+WALKRI has a published compatibility statement for Open Source Observer (s
 
 A CROSS+WALKRI-conformant Optimism round produces something Optimism's current framework does not require but would benefit from: a pre-funding specification layer that makes the metrics trustworthy before evaluation begins.
 
-The current Optimism process publishes metric definitions before evaluation opens. CROSS+WALKRI extends this by requiring those definitions to meet the WALKRI field specification standard: each metric must have a stated criterion intent, an operational definition that specifies its exact boundary conditions, a documented evidence form with an OSO access path, and a compliance threshold. This elevates the metric definition from a name-and-description pair to a structured, auditable specification.
+The current Optimism process publishes metric definitions before evaluation opens. CROSS+WALKRI extends this by requiring those definitions to meet the WALKRI field specification standard: each metric must have a stated criterion intent, an operational definition that specifies its exact boundary conditions, a documented evidence form with an OSO access path, and a conformance threshold. This elevates the metric definition from a name-and-description pair to a structured, auditable specification.
 
-The result is that badgeholders evaluate contributions against metrics whose measurement instruments are documented in advance, whose access paths are independently verifiable, and whose operational definitions remove ambiguity about what counts. This is the accountability infrastructure that makes retroactive recognition trustworthy rather than discretionary.
+The result is that badgeholders evaluate contributions against metrics whose measurement instruments are documented in advance, whose access paths are independently verifiable, and whose operational definitions remove ambiguity about what counts. This is the verification infrastructure that makes retroactive recognition trustworthy rather than discretionary.
 
 ---
 
@@ -114,3 +121,5 @@ License: CC0
 | Version | Date | Summary |
 |---|---|---|
 | 0.1.0 | 2026-05-18 | Initial draft. Retroactive obligation mode alignment with RetroPGF structure. WALKRI evidence form mapped to verifiability and reproducibility requirements. OSO compatibility bridge documented. Mapping table covering entry specification gate, on-chain identity anchor, cohort position assessment, and WALKRI data quality standards. |
+| 0.1.1 | 2026-05-23 | Retroactive lens tagging: added calibration_tier, authority_source, cultural_methodological_lineage, funder_typology, framework_scope_type per Lenses Framework v0.1.0. |
+| 0.1.2 | 2026-06-08 | Frame Language own-voice pass applied as part of the corpus-wide 2026-06-08 sweep: own-voice watchlist terms (govern-family, accountability, mandatory, compliance, enforce, legitimate) recast to conformance and obligation vocabulary where they appeared in this document's own voice; citation use of source-framework terms preserved. Primitive-rename references aligned to current canon (Continuity Capacity, the Collective disbursement state, Affected Population Verification Gate). Em-dash- and watchlist-clean re-verified. No compatibility finding or mapping changed; vocabulary only. |

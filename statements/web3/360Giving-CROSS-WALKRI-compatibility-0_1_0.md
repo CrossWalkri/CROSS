@@ -1,12 +1,19 @@
 ---
 title: 360Giving Data Standard Compatibility - CROSS+WALKRI
-version: 0.1.0
-date: 2026-05-18
+version: 0.1.2
+date: 2026-06-08
 license: CC0
 standards: CROSS v0.4.2 (github.com/CrossWalkri/CROSS), WALKRI v0.1.6 (github.com/CrossWalkri/WALKRI)
 references:
   - https://standard.threesixtygiving.org/en/latest/
   - https://www.360giving.org/about/data-standard/
+lens_tags:
+  calibration_tier: process_conformant
+  authority_source: voluntary_published
+  cultural_methodological_lineage: western_institutional
+  funder_typology: pooled_fund_or_intermediary
+  framework_scope_type: accounting_financial
+  # 360Giving open data standard for UK grantmaking; pooled_fund_or_intermediary captures intermediary nature; accounting_financial scope as data disclosure standard; alternative civil_society_advisory authority
 ---
 
 # 360Giving Data Standard Compatibility
@@ -17,7 +24,7 @@ references:
 
 ## Summary
 
-360Giving is a UK charity publishing an open data standard for grant transparency, accepted by over 200 UK funders including Esmee Fairbairn, Nuffield Foundation, Joseph Rowntree Foundation, and the National Lottery Community Fund. Its ten required fields establish the minimum data infrastructure for grant transparency publication. CROSS covers all ten required 360Giving fields as a strict superset; programs using CROSS can generate 360Giving-compliant records as a byproduct of standard gate operations. WALKRI ensures that the grant data published to 360Giving meets the measurement quality standards that 360Giving's optional recommended fields also anticipate.
+360Giving is a UK charity publishing an open data standard for grant transparency, accepted by over 200 UK funders including Esmee Fairbairn, Nuffield Foundation, Joseph Rowntree Foundation, and the National Lottery Community Fund. Its ten required fields establish the minimum data infrastructure for grant transparency publication. CROSS covers all ten required 360Giving fields as a strict superset; programs using CROSS can generate 360Giving-conformant records as a byproduct of standard gate operations. WALKRI ensures that the grant data published to 360Giving meets the measurement quality standards that 360Giving's optional recommended fields also anticipate.
 
 360Giving represents the UK sector's most widely adopted open data infrastructure for grant-making. Compatibility with the 360Giving standard means that CROSS-conformant funders in the UK context are not required to maintain a separate data pipeline for transparency publication; their CROSS obligation records, properly formatted, satisfy the standard's requirements directly.
 
@@ -71,7 +78,7 @@ CROSS adds substantial structure beyond the 360Giving required fields. The addit
 
 360Giving's optional fields include outcome indicators, evaluation reports, and geographic targeting data. CROSS's indicator specification (Fields 6-11), Theory of Change hierarchy, and continuation gate sustainability stance produce data that populates these optional fields. Funders seeking to publish maximum transparency data through 360Giving, beyond the required minimum, can draw on CROSS gate records to populate the full range of optional fields without additional collection effort.
 
-This means CROSS-conformant programs have a pathway to publishing not only 360Giving-compliant records but 360Giving records that are richer than the sector average, because CROSS requires specification of data that most funders collect informally or not at all.
+This means CROSS-conformant programs have a pathway to publishing not only 360Giving-conformant records but 360Giving records that are richer than the sector average, because CROSS requires specification of data that most funders collect informally or not at all.
 
 ---
 
@@ -106,3 +113,5 @@ License: CC0
 | Version | Date | Summary |
 |---|---|---|
 | 0.1.0 | 2026-05-18 | Initial draft. All ten 360Giving required fields mapped to CROSS provisions. CROSS-as-strict-superset argument stated and documented. Pathway to optional field population via CROSS gate records described. WALKRI quality role in outcomes data publication explained. |
+| 0.1.1 | 2026-05-23 | Retroactive lens tagging: added calibration_tier, authority_source, cultural_methodological_lineage, funder_typology, framework_scope_type per Lenses Framework v0.1.0. |
+| 0.1.2 | 2026-06-08 | Frame Language own-voice pass applied as part of the corpus-wide 2026-06-08 sweep: own-voice watchlist terms (govern-family, accountability, mandatory, compliance, enforce, legitimate) recast to conformance and obligation vocabulary where they appeared in this document's own voice; citation use of source-framework terms preserved. Primitive-rename references aligned to current canon (Continuity Capacity, the Collective disbursement state, Affected Population Verification Gate). Em-dash- and watchlist-clean re-verified. No compatibility finding or mapping changed; vocabulary only. |

@@ -1,12 +1,19 @@
 ---
 title: CRS ProPack MEAL System Compatibility - CROSS+WALKRI
-version: 0.1.0
-date: 2026-05-18
+version: 0.1.2
+date: 2026-06-08
 license: CC0
 standards: CROSS v0.4.5 (github.com/CrossWalkri/CROSS), WALKRI v0.1.7 (github.com/CrossWalkri/WALKRI)
 references:
   - CRS ProPack I: Project Package (crs.org/our-work-overseas/research-publications)
   - CRS ProPack II: Monitoring, Evaluation, Accountability, and Learning (crs.org/our-work-overseas/research-publications)
+lens_tags:
+  calibration_tier: outcome_specified_self_reported
+  authority_source: voluntary_published
+  cultural_methodological_lineage: western_institutional
+  funder_typology: faith_based
+  framework_scope_type: grantee_outcome_measurement
+  # Catholic Relief Services Project Package (ProPack) MEAL system
 ---
 
 # CRS ProPack MEAL System
@@ -17,13 +24,13 @@ references:
 
 ## Summary
 
-Catholic Relief Services (CRS) publishes ProPack I and ProPack II as its formally stated, publicly available MEAL standard governing both its own programs and sub-award partners. ProPack I covers project design, MEAL system design, and implementation; ProPack II covers monitoring, evaluation, accountability, and learning in greater depth. The ProPack system is distinctive in two respects relevant to CROSS+WALKRI: it integrates MEAL system design into project design rather than treating evaluation as a post-award obligation, and it includes accountability mechanisms directed at beneficiaries as a formal MEAL system requirement rather than an optional add-on. CROSS satisfies ProPack's structural requirements at the level of gates and indicator specification, and WALKRI's pre-publication audit applies directly to each intake field in CRS partner data collection tools.
+Catholic Relief Services (CRS) publishes ProPack I and ProPack II as its formally stated, publicly available MEAL standard governing both its own programs and sub-award partners. ProPack I covers project design, MEAL system design, and implementation; ProPack II covers monitoring, evaluation, accountability, and learning in greater depth. The ProPack system is distinctive in two respects relevant to CROSS+WALKRI: it integrates MEAL system design into project design rather than treating evaluation as a post-award obligation, and it includes obligation mechanisms directed at beneficiaries as a formal MEAL system requirement rather than an optional add-on. CROSS satisfies ProPack's structural requirements at the level of gates and indicator specification, and WALKRI's pre-publication audit applies directly to each intake field in CRS partner data collection tools.
 
 ---
 
 ## The CRS ProPack MEAL Framework
 
-CRS ProPack I and ProPack II constitute CRS's primary grantee and partner-facing MEAL standard. ProPack I covers project design, MEAL system design, and project implementation. ProPack II covers monitoring, evaluation, accountability, and learning in greater depth, including detailed guidance on evaluation design, data quality, and learning processes. Both documents are formally published and publicly accessible through the CRS website, and compliance with their requirements is mandatory for implementing partners receiving CRS sub-awards.
+CRS ProPack I and ProPack II constitute CRS's primary grantee and partner-facing MEAL standard. ProPack I covers project design, MEAL system design, and project implementation. ProPack II covers monitoring, evaluation, accountability, and learning in greater depth, including detailed guidance on evaluation design, data quality, and learning processes. Both documents are formally published and publicly accessible through the CRS website, and conformance with their requirements is required for implementing partners receiving CRS sub-awards.
 
 The ProPack system has five structurally distinctive elements not found in most other institutional MEAL frameworks covered by CROSS+WALKRI.
 
@@ -49,7 +56,7 @@ CROSS addresses the ProPack framework at the level of its four-gate sequence and
 
 **Theory of Change hierarchy:** ProPack's requirement that Theory of Change precede indicator selection is exactly the ordering CROSS's Theory of Change hierarchy enforces. CROSS defines four levels (activities, outputs, outcomes, goals) and requires that indicators be associated with specific levels before the application gate opens. Selecting indicators before specifying the Theory of Change is a CROSS conformance failure.
 
-**Accountability mechanisms and CROSS coverage:** ProPack's community feedback loops and complaint response mechanisms represent a formal expansion of CROSS's coherence disclosure toward beneficiary-facing accountability obligations. CROSS currently requires coherence disclosure regarding other programs and funders but does not separately name beneficiary accountability mechanisms as a required disclosure element. The ProPack MEAL system makes visible a gap in CROSS's current architecture: the entry specification gate does not yet require specification of feedback and complaint response mechanisms as a distinct MEAL component. This is documented here as a coverage gap for consideration in future CROSS revision.
+**Accountability mechanisms and CROSS coverage:** ProPack's community feedback loops and complaint response mechanisms represent a formal expansion of CROSS's coherence disclosure toward beneficiary-facing obligation requirements. CROSS currently requires coherence disclosure regarding other programs and funders but does not separately name beneficiary obligation mechanisms as a required disclosure element. The ProPack MEAL system makes visible a gap in CROSS's current architecture: the entry specification gate does not yet require specification of feedback and complaint response mechanisms as a distinct MEAL component. This is documented here as a coverage gap for consideration in future CROSS revision.
 
 **Completion gate:** ProPack's After Action Reviews and real-time learning sessions, together with the formal final evaluation, correspond to CROSS's completion gate. The completion gate requires structured evidence review against pre-specified indicators. ProPack's real-time learning activities are compatible with ongoing monitoring against those same indicators, and the After Action Review at cycle close corresponds directly to the completion gate review.
 
@@ -69,10 +76,19 @@ CROSS addresses the ProPack framework at the level of its four-gate sequence and
 
 WALKRI's five pre-publication field requirements apply at the level of each intake field in CRS partner data collection tools. ProPack requires that data collection instruments be designed and finalized as part of the MEAL plan before project launch, which means the WALKRI audit must occur at the same stage: before instruments are shared with partners.
 
-For each indicator intake field, WALKRI requires: criterion intent (what the field is designed to measure and why), operational definition (exactly what counts and does not count for that field), response form (how a valid response is structured), evidence form (what documentary evidence is required to support the response), and compliance threshold (the minimum standard a response must meet). In the ProPack context, these five requirements apply to every field in every data collection tool that feeds a MEAL system indicator. A partner receiving a CRS sub-award who co-develops a MEAL plan under ProPack has, on WALKRI's account, a right to receive fully specified intake instruments before any data collection begins. Without that specification, the partner cannot know whether its data collection will be valid under the MEAL plan's standards.
+For each indicator intake field, WALKRI requires: criterion intent (what the field is designed to measure and why), operational definition (exactly what counts and does not count for that field), response form (how a valid response is structured), evidence form (what documentary evidence is required to support the response), and conformance threshold (the minimum standard a response must meet). In the ProPack context, these five requirements apply to every field in every data collection tool that feeds a MEAL system indicator. A partner receiving a CRS sub-award who co-develops a MEAL plan under ProPack has, on WALKRI's account, a right to receive fully specified intake instruments before any data collection begins. Without that specification, the partner cannot know whether its data collection will be valid under the MEAL plan's standards.
 
 The partner co-design requirement in ProPack creates a specific WALKRI opportunity: because partners co-develop the MEAL plan, they can participate in the WALKRI specification of intake fields. This is the most direct form of co-production that WALKRI's pre-publication audit structure makes possible. Rather than partners receiving fully designed instruments, they participate in specifying exactly what each field is meant to capture, what evidence form satisfies it, and what threshold determines a valid entry.
 
 ---
 
 *Published under CC0. For the current version of CROSS and WALKRI, see github.com/CrossWalkri.*
+
+---
+
+## Changelog
+
+| Version | Date | Summary |
+|---|---|---|
+| 0.1.2 | 2026-06-08 | Frame Language own-voice pass applied as part of the corpus-wide 2026-06-08 sweep: own-voice watchlist terms (govern-family, accountability, mandatory, compliance, enforce, legitimate) recast to conformance and obligation vocabulary where they appeared in this document's own voice; citation use of source-framework terms preserved. Primitive-rename references aligned to current canon (Continuity Capacity, the Collective disbursement state, Affected Population Verification Gate). Em-dash- and watchlist-clean re-verified. No compatibility finding or mapping changed; vocabulary only. |
+| 0.1.1 | 2026-05-23 | Retroactive lens tagging: added calibration_tier, authority_source, cultural_methodological_lineage, funder_typology, framework_scope_type per Lenses Framework v0.1.0. |

@@ -1,7 +1,7 @@
 ---
 title: PCORI Methodology Standards Compatibility - CROSS+WALKRI
-version: 0.1.0
-date: 2026-05-18
+version: 0.1.2
+date: 2026-06-08
 license: CC0
 standards: CROSS v0.4.5 (github.com/CrossWalkri/CROSS), WALKRI v0.1.7 (github.com/CrossWalkri/WALKRI)
 references:
@@ -9,6 +9,13 @@ references:
   - Affordable Care Act, Section 6301 (Patient-Centered Outcomes Research Institute)
   - PCORI Engagement Rubric (pcori.org/sites/default/files/Engagement-Rubric.pdf)
   - ClinicalTrials.gov (clinicaltrials.gov) and PCORI Study Registration Requirements
+lens_tags:
+  calibration_tier: independently_verified
+  authority_source: statutory
+  cultural_methodological_lineage: western_institutional
+  funder_typology: government_non_aid
+  framework_scope_type: professional_practice_ethics
+  # Patient-Centered Outcomes Research Institute Methodology Standards; statutory authority via Patient Protection and Affordable Care Act; methodology standards govern researcher practitioner conduct
 ---
 
 # PCORI Methodology Standards
@@ -70,12 +77,21 @@ CROSS addresses the PCORI Methodology Standards at the structural level.
 
 ## How WALKRI Complements This Alignment
 
-PCORI's Methodology Standards specify that outcomes must be operationally defined in the study protocol but do not prescribe, at the instrument field level, how patient-reported outcome (PRO) instruments must be specified before deployment. A PCORI-funded study measuring a PRO such as pain interference, functional status, or quality of life must select a validated instrument and report it in the protocol, but the protocol registration requirement does not extend to specifying, for each intake field, what the criterion intent is, what the operational definition of a qualifying response is, and what the compliance threshold is for individual field completion. This is the level at which WALKRI operates.
+PCORI's Methodology Standards specify that outcomes must be operationally defined in the study protocol but do not prescribe, at the instrument field level, how patient-reported outcome (PRO) instruments must be specified before deployment. A PCORI-funded study measuring a PRO such as pain interference, functional status, or quality of life must select a validated instrument and report it in the protocol, but the protocol registration requirement does not extend to specifying, for each intake field, what the criterion intent is, what the operational definition of a qualifying response is, and what the conformance threshold is for individual field completion. This is the level at which WALKRI operates.
 
-WALKRI's five pre-publication requirements applied to PRO instrument fields before any patient sees the instrument resolve the most common source of data quality problems in PRO-based comparative effectiveness research: ambiguous item wording, undefined response anchors, and unspecified threshold for what constitutes a valid (as opposed to missing) response. WALKRI's operational definition requirement forces each field in the instrument to specify what the item is designed to measure and what a qualifying response means in the context of this study's population. The evidence form requirement specifies what response format is used, what the anchor labels mean, and how responses map to the scoring convention declared in the protocol. The compliance threshold requirement specifies what response rate and what response pattern constitute the threshold below which a participant's data is treated as missing rather than incomplete.
+WALKRI's five pre-publication requirements applied to PRO instrument fields before any patient sees the instrument resolve the most common source of data quality problems in PRO-based comparative effectiveness research: ambiguous item wording, undefined response anchors, and unspecified threshold for what constitutes a valid (as opposed to missing) response. WALKRI's operational definition requirement forces each field in the instrument to specify what the item is designed to measure and what a qualifying response means in the context of this study's population. The evidence form requirement specifies what response format is used, what the anchor labels mean, and how responses map to the scoring convention declared in the protocol. The conformance threshold requirement specifies what response rate and what response pattern constitute the threshold below which a participant's data is treated as missing rather than incomplete.
 
 For multi-site PCORI studies, the WALKRI pre-publication audit across all participating sites' intake instruments ensures that the PRO instrument is implemented consistently across the clustering structure declared in the study protocol. A WALKRI audit confirms that each site's intake fields match the protocol's instrument specification, so that the clustering analysis pre-specified in the protocol reflects actual data collection practices rather than site-level implementation variation. This audit function is particularly valuable for PCORI's clustered data methodology standards, where the statistical approach to clustering assumes equivalent measurement across the clusters.
 
 ---
 
 *Published under CC0. For the current version of CROSS and WALKRI, see github.com/CrossWalkri.*
+
+---
+
+## Changelog
+
+| Version | Date | Summary |
+|---|---|---|
+| 0.1.2 | 2026-06-08 | Frame Language own-voice pass applied as part of the corpus-wide 2026-06-08 sweep: own-voice watchlist terms (govern-family, accountability, mandatory, compliance, enforce, legitimate) recast to conformance and obligation vocabulary where they appeared in this document's own voice; citation use of source-framework terms preserved. Primitive-rename references aligned to current canon (Continuity Capacity, the Collective disbursement state, Affected Population Verification Gate). Em-dash- and watchlist-clean re-verified. No compatibility finding or mapping changed; vocabulary only. |
+| 0.1.1 | 2026-05-23 | Retroactive lens tagging: added calibration_tier, authority_source, cultural_methodological_lineage, funder_typology, framework_scope_type per Lenses Framework v0.1.0. |

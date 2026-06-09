@@ -1,7 +1,7 @@
 ---
 title: US Federal Education Evidence Framework (ESSA, WWC, and EIR) Compatibility - CROSS+WALKRI
-version: 0.1.0
-date: 2026-05-18
+version: 0.1.2
+date: 2026-06-08
 license: CC0
 standards: CROSS v0.4.4 (github.com/CrossWalkri/CROSS), WALKRI v0.1.7 (github.com/CrossWalkri/WALKRI)
 references:
@@ -9,6 +9,13 @@ references:
   - 34 CFR 77.1 (US Department of Education definitions regulation)
   - What Works Clearinghouse Standards Handbook Version 4.0 (ies.ed.gov/ncee/wwc)
   - Education Innovation and Research (EIR) Program (ed.gov/grants-and-programs/grants-special-populations/grants-economically-disadvantaged-students/education-innovation-and-research)
+lens_tags:
+  calibration_tier: independently_verified
+  authority_source: statutory
+  cultural_methodological_lineage: western_institutional
+  funder_typology: government_non_aid
+  framework_scope_type: grantee_outcome_measurement
+  # ESSA evidence tiers and WWC standards under Every Student Succeeds Act; statutory authority; WWC and EIR provide independent verification
 ---
 
 # US Federal Education Evidence Framework (ESSA, WWC, and EIR)
@@ -64,10 +71,19 @@ CROSS addresses the ESSA tier architecture, the WWC methodology requirements, an
 
 ## How WALKRI Complements This Alignment
 
-ESSA Tier 4's ongoing study commitment is the most commonly underspecified requirement in the federal education evidence framework. Programs declare an ongoing evaluation in their applications without specifying what the evaluation will measure, how it will measure it, who will conduct it, or what evidence standard the results must meet. The commitment is procedurally present but substantively empty. WALKRI's five pre-publication field requirements applied to EIR intake fields resolve this problem at the source: before any grantee submits a proposal, the intake field collecting the ongoing evaluation commitment must specify criterion intent (what the evaluation must assess), operational definition (what counts as a qualifying study design), response form (how the applicant documents the evaluation design), evidence form (what documentation of the evaluation plan is required), and compliance threshold (what study design and evidence standard the committed evaluation must meet). A WALKRI-conformant EIR intake field for the ongoing evaluation commitment produces evaluation commitments that are substantively preregistered, not merely declared.
+ESSA Tier 4's ongoing study commitment is the most commonly underspecified requirement in the federal education evidence framework. Programs declare an ongoing evaluation in their applications without specifying what the evaluation will measure, how it will measure it, who will conduct it, or what evidence standard the results must meet. The commitment is procedurally present but substantively empty. WALKRI's five pre-publication field requirements applied to EIR intake fields resolve this problem at the source: before any grantee submits a proposal, the intake field collecting the ongoing evaluation commitment must specify criterion intent (what the evaluation must assess), operational definition (what counts as a qualifying study design), response form (how the applicant documents the evaluation design), evidence form (what documentation of the evaluation plan is required), and conformance threshold (what study design and evidence standard the committed evaluation must meet). A WALKRI-conformant EIR intake field for the ongoing evaluation commitment produces evaluation commitments that are substantively preregistered, not merely declared.
 
-The EIR Mid-Phase requirement that grantees implement a rigorous independent evaluation meeting WWC standards creates a secondary WALKRI problem: reviewers must assess whether a proposed evaluation design meets WWC standards at the application stage, before any evaluation has been conducted. Without a WALKRI-conformant reviewer guidance document specifying what "meets WWC standards" means for each study type at the proposal stage, inter-reviewer variability is high and applicant uncertainty about the required standard is structural rather than incidental. WALKRI's compliance threshold requirement, applied to the reviewer-facing guidance for the Mid-Phase evaluation requirement, forces the program to specify, before any applications are reviewed, exactly what design elements an independent evaluation must include to satisfy the WWC standards threshold.
+The EIR Mid-Phase requirement that grantees implement a rigorous independent evaluation meeting WWC standards creates a secondary WALKRI problem: reviewers must assess whether a proposed evaluation design meets WWC standards at the application stage, before any evaluation has been conducted. Without a WALKRI-conformant reviewer guidance document specifying what "meets WWC standards" means for each study type at the proposal stage, inter-reviewer variability is high and applicant uncertainty about the required standard is structural rather than incidental. WALKRI's conformance threshold requirement, applied to the reviewer-facing guidance for the Mid-Phase evaluation requirement, forces the program to specify, before any applications are reviewed, exactly what design elements an independent evaluation must include to satisfy the WWC standards threshold.
 
 ---
 
 *Published under CC0. For the current version of CROSS and WALKRI, see github.com/CrossWalkri.*
+
+---
+
+## Changelog
+
+| Version | Date | Summary |
+|---|---|---|
+| 0.1.2 | 2026-06-08 | Frame Language own-voice pass applied as part of the corpus-wide 2026-06-08 sweep: own-voice watchlist terms (govern-family, accountability, mandatory, compliance, enforce, legitimate) recast to conformance and obligation vocabulary where they appeared in this document's own voice; citation use of source-framework terms preserved. Primitive-rename references aligned to current canon (Continuity Capacity, the Collective disbursement state, Affected Population Verification Gate). Em-dash- and watchlist-clean re-verified. No compatibility finding or mapping changed; vocabulary only. |
+| 0.1.1 | 2026-05-23 | Retroactive lens tagging: added calibration_tier, authority_source, cultural_methodological_lineage, funder_typology, framework_scope_type per Lenses Framework v0.1.0. |

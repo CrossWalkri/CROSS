@@ -1,12 +1,19 @@
 ---
 title: Australian DFAT Performance Assessment Framework Compatibility - CROSS+WALKRI
-version: 0.1.0
-date: 2026-05-18
+version: 0.1.2
+date: 2026-06-08
 license: CC0
 standards: CROSS v0.4.2 (github.com/CrossWalkri/CROSS), WALKRI v0.1.6 (github.com/CrossWalkri/WALKRI)
 references:
   - https://www.dfat.gov.au/sites/default/files/dfat-aid-evaluation-policy-nov-2016.pdf
   - https://www.dfat.gov.au/sites/default/files/performance-delivery-framework.pdf
+lens_tags:
+  calibration_tier: independently_verified
+  authority_source: statutory
+  cultural_methodological_lineage: western_institutional
+  funder_typology: bilateral_aid_agency
+  framework_scope_type: grantee_outcome_measurement
+  # Department of Foreign Affairs and Trade Australia bilateral aid
 ---
 
 # Australian DFAT Performance Assessment Framework
@@ -23,7 +30,7 @@ Australia's Department of Foreign Affairs and Trade (DFAT) applies a three-tier 
 
 ## The DFAT Framework's Approach
 
-Australia's DFAT Aid Evaluation Policy (2016) and International Development Performance and Delivery Framework (current) together establish a performance management architecture that operates simultaneously at three distinct levels of granularity. This three-tier structure is one of the more formally explicit portfolio management systems among bilateral donors, and it creates compliance obligations that extend beyond individual project documentation into country-program and portfolio-level evidence aggregation.
+Australia's DFAT Aid Evaluation Policy (2016) and International Development Performance and Delivery Framework (current) together establish a performance management architecture that operates simultaneously at three distinct levels of granularity. This three-tier structure is one of the more formally explicit portfolio management systems among bilateral donors, and it creates conformance obligations that extend beyond individual project documentation into country-program and portfolio-level evidence aggregation.
 
 At tier 3, individual projects must document project-level results against specified indicators. This is familiar territory for grant management: indicator definitions, baselines, targets, collection methods, and periodic reporting against those targets. Most bilateral aid systems operate at this level as their primary performance management requirement.
 
@@ -33,7 +40,7 @@ Tier 1 operates at the full portfolio level, requiring aggregate indicators that
 
 A second distinctive feature of DFAT's framework is the explicit attributability rule requirement. Programs must specify, at the indicator level, whether a given result is directly attributable to the funded intervention or represents a contribution claim in the presence of other causal factors. This distinction is not left to evaluator judgment at the end of a program cycle; it must be declared in advance as part of indicator documentation. The practical effect is that programs claiming direct attribution must be able to defend that claim against a counterfactual standard, while programs claiming contribution must be able to document their theory of how their intervention contributed within a multi-causal environment.
 
-From 2024-25, DFAT added a climate mainstreaming threshold to its bilateral and regional investment requirements. At least 50% of new bilateral and regional investments above 3 million AUD must have a climate change objective, rising to 80% by 2028-29. This threshold applies at the portfolio level, but satisfying it requires that individual program documentation include climate objective tagging in a form that DFAT can aggregate across investments to assess portfolio-level compliance.
+From 2024-25, DFAT added a climate mainstreaming threshold to its bilateral and regional investment requirements. At least 50% of new bilateral and regional investments above 3 million AUD must have a climate change objective, rising to 80% by 2028-29. This threshold applies at the portfolio level, but satisfying it requires that individual program documentation include climate objective tagging in a form that DFAT can aggregate across investments to assess portfolio-level conformance.
 
 ---
 
@@ -65,8 +72,17 @@ For climate mainstreaming, the CROSS coherence disclosure field, which requires 
 
 WALKRI's five pre-publication field specification requirements support DFAT's need for consistent, comparable data across its portfolio. The challenge DFAT faces in aggregating from tier 3 to tier 1 is not only conceptual; it is a data quality problem. If individual programs specify their measurement instruments at different levels of precision, or if intake fields collecting comparable concepts use incompatible collection methods, aggregation produces noise rather than signal.
 
-WALKRI requires that each measurement field be specified with instrument type, unit, collection method, verification pathway, and access information before applications open. For programs collecting climate objective data, WALKRI-compliant field specifications ensure that the climate evidence produced at tier 3 is expressed with sufficient methodological consistency to be meaningfully aggregated at tiers 2 and 1. Programs operating under DFAT's framework gain a practical advantage from WALKRI compliance: their instrument-level field documentation reduces the evidence quality variance that makes portfolio-level aggregation unreliable, directly supporting DFAT's climate mainstreaming threshold assessment obligations.
+WALKRI requires that each measurement field be specified with instrument type, unit, collection method, verification pathway, and access information before applications open. For programs collecting climate objective data, WALKRI-conformant field specifications ensure that the climate evidence produced at tier 3 is expressed with sufficient methodological consistency to be meaningfully aggregated at tiers 2 and 1. Programs operating under DFAT's framework gain a practical advantage from WALKRI conformance: their instrument-level field documentation reduces the evidence quality variance that makes portfolio-level aggregation unreliable, directly supporting DFAT's climate mainstreaming threshold assessment obligations.
 
 ---
 
 *Published under CC0. For the current version of CROSS and WALKRI, see github.com/CrossWalkri.*
+
+---
+
+## Changelog
+
+| Version | Date | Summary |
+|---|---|---|
+| 0.1.2 | 2026-06-08 | Frame Language own-voice pass applied as part of the corpus-wide 2026-06-08 sweep: own-voice watchlist terms (govern-family, accountability, mandatory, compliance, enforce, legitimate) recast to conformance and obligation vocabulary where they appeared in this document's own voice; citation use of source-framework terms preserved. Primitive-rename references aligned to current canon (Continuity Capacity, the Collective disbursement state, Affected Population Verification Gate). Em-dash- and watchlist-clean re-verified. No compatibility finding or mapping changed; vocabulary only. |
+| 0.1.1 | 2026-05-23 | Retroactive lens tagging: added calibration_tier, authority_source, cultural_methodological_lineage, funder_typology, framework_scope_type per Lenses Framework v0.1.0. |

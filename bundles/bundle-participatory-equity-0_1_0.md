@@ -113,7 +113,7 @@ A continuing program operator must demonstrate: the entry specification gate for
 
 ## Part 2: WALKRI Field Specifications
 
-The following field specifications cover the intake fields most commonly required in participatory and equity-focused grant programs. Each specification satisfies WALKRI's five pre-publication requirements: criterion intent, operational definition, response form, evidence form, compliance threshold.
+The following field specifications cover the intake fields most commonly required in participatory and equity-focused grant programs. Each specification satisfies WALKRI's five pre-publication requirements: criterion intent, operational definition, response form, evidence form, conformance threshold.
 
 ---
 
@@ -127,7 +127,7 @@ The following field specifications cover the intake fields most commonly require
 
 **Evidence form:** The selection process documentation published before community decision-makers are recruited. At completion: the list of community decision-makers by role (anonymized if requested by participants), their demographic characteristics in aggregate, the compensation paid, and any conflicts identified and how they were managed. If the community decision-maker authority was advisory rather than binding: documentation of any instances where the funder's determination differed from the community decision-maker panel's recommendation, with the reason for the difference.
 
-**Compliance threshold:** A stated selection process with criteria, a recruitment method, and a role authority specification that is unambiguous about whether community voice is binding or advisory. A program that describes community members as "participating" in grantmaking without specifying their decision-making authority, compensation, or selection process does not satisfy this field. Programs where community members are consulted but do not make or substantially determine allocation decisions are not participatory grantmaking programs under CROSS's definition; they may be community-informed grantmaking programs, which carry different entry specification requirements.
+**Conformance threshold:** A stated selection process with criteria, a recruitment method, and a role authority specification that is unambiguous about whether community voice is binding or advisory. A program that describes community members as "participating" in grantmaking without specifying their decision-making authority, compensation, or selection process does not satisfy this field. Programs where community members are consulted but do not make or substantially determine allocation decisions are not participatory grantmaking programs under CROSS's definition; they may be community-informed grantmaking programs, which carry different entry specification requirements.
 
 ---
 
@@ -141,7 +141,7 @@ The following field specifications cover the intake fields most commonly require
 
 **Evidence form:** At recruitment completion: the actual demographic composition of the community decision-maker panel on each specified dimension, compared to the target. If the actual composition falls below the minimum threshold on any dimension: the corrective action taken or a documented explanation of why corrective action was not feasible. At completion: whether the demographic composition of the panel was maintained throughout the grant cycle (i.e., that panel attrition did not compromise representativeness).
 
-**Compliance threshold:** A named target for at least the race/ethnicity and geography dimensions, with a reference population data source. A program that states only that it "seeks diverse community representation" without specifying target proportions or reference population data does not satisfy this field. For programs applying NCRP racial equity criteria: race/ethnicity and geography representativeness targets are required at the statutory disaggregation level; they cannot be downgraded to qualitative description.
+**Conformance threshold:** A named target for at least the race/ethnicity and geography dimensions, with a reference population data source. A program that states only that it "seeks diverse community representation" without specifying target proportions or reference population data does not satisfy this field. For programs applying NCRP racial equity criteria: race/ethnicity and geography representativeness targets are required at the statutory disaggregation level; they cannot be downgraded to qualitative description.
 
 ---
 
@@ -155,7 +155,7 @@ The following field specifications cover the intake fields most commonly require
 
 **Evidence form:** At completion: outcome data from the named source, disaggregated by race/ethnicity and geography at minimum, with additional disaggregation dimensions as declared. For gap measures: the gap calculation with both reference groups shown. For level measures: the trend data for the community of color over the grant period. Data that is not disaggregated by race/ethnicity does not satisfy this field even if overall population outcomes improved.
 
-**Compliance threshold:** Each racial equity outcome indicator must name the racial/ethnic groups for which data will be collected, a named data source, and a baseline value disaggregated by race/ethnicity. An indicator that tracks population-level outcomes without racial disaggregation does not satisfy this field as a racial equity outcome indicator. Baseline data collected only at the aggregate population level, without racial disaggregation, must be treated as an absence of baseline; the program must commit to racial-disaggregation baseline collection as a grant deliverable.
+**Conformance threshold:** Each racial equity outcome indicator must name the racial/ethnic groups for which data will be collected, a named data source, and a baseline value disaggregated by race/ethnicity. An indicator that tracks population-level outcomes without racial disaggregation does not satisfy this field as a racial equity outcome indicator. Baseline data collected only at the aggregate population level, without racial disaggregation, must be treated as an absence of baseline; the program must commit to racial-disaggregation baseline collection as a grant deliverable.
 
 ---
 
@@ -169,7 +169,7 @@ The following field specifications cover the intake fields most commonly require
 
 **Evidence form:** A consent documentation record from the community entity: a signed consent declaration, a council resolution, a community assembly record, or equivalent formal documentation of the community's decision. The consent record must bear a date predating the program's entry specification gate opening. For programs in which ongoing consent is required: consent confirmation records at each major program decision point. The absence of a consent record from the community entity, replaced only by the funder's assertion that consent was obtained, does not satisfy this field.
 
-**Compliance threshold:** A dated consent record from a named community governing entity, predating the program's entry specification gate opening. A funder's statement that "the community was consulted" without a formal consent record from the community entity does not satisfy this field. Programs that open their entry specification gate or application window before FPIC documentation is on record have not satisfied Sub-type D requirements; the sequence cannot be retroactively corrected.
+**Conformance threshold:** A dated consent record from a named community governing entity, predating the program's entry specification gate opening. A funder's statement that "the community was consulted" without a formal consent record from the community entity does not satisfy this field. Programs that open their entry specification gate or application window before FPIC documentation is on record have not satisfied Sub-type D requirements; the sequence cannot be retroactively corrected.
 
 ---
 
@@ -183,7 +183,7 @@ The following field specifications cover the intake fields most commonly require
 
 **Evidence form:** At completion: indicator data for each power type declared, collected by the method stated at the entry gate. For policy wins: dated documentation of the policy decision and evidence of the grantee's role in achieving it. For narrative shift: survey data or media analysis from the measurement tool declared. For organizing membership: member records or sign-in logs with demographic data attached. Narrative claims of power-building impact without corresponding indicator data do not satisfy this field.
 
-**Compliance threshold:** At least one indicator per power type that is relevant to the funded work, with a named measurement method and a baseline or baseline collection plan. An indicator list that consists only of activity counts (number of meetings, number of events, number of materials distributed) does not satisfy this field as a power-building indicator set; activity counts may appear separately as output specifications. Indicators without a named measurement method cannot be confirmed at the completion gate.
+**Conformance threshold:** At least one indicator per power type that is relevant to the funded work, with a named measurement method and a baseline or baseline collection plan. An indicator list that consists only of activity counts (number of meetings, number of events, number of materials distributed) does not satisfy this field as a power-building indicator set; activity counts may appear separately as output specifications. Indicators without a named measurement method cannot be confirmed at the completion gate.
 
 ---
 
@@ -197,7 +197,7 @@ The following field specifications cover the intake fields most commonly require
 
 **Evidence form:** At completion: participation records disaggregated by the demographic dimensions committed to in the Demographic Representation of Decision-Makers field. Post-process participant survey results (aggregated and anonymized). For any instance where the final allocation differed from the deliberated preference of the majority of participants: documentation of why the difference occurred and whether it triggered the funder override mechanism declared at the entry gate.
 
-**Compliance threshold:** Metrics for all three participation dimensions: access, quality, and outcome. A process equity record that documents only attendance (who came) without addressing participation quality (whether attendees had substantive influence) does not satisfy this field. Participant survey results must be collected and attached to the completion record; programs that did not collect post-process participant feedback cannot satisfy this field retroactively.
+**Conformance threshold:** Metrics for all three participation dimensions: access, quality, and outcome. A process equity record that documents only attendance (who came) without addressing participation quality (whether attendees had substantive influence) does not satisfy this field. Participant survey results must be collected and attached to the completion record; programs that did not collect post-process participant feedback cannot satisfy this field retroactively.
 
 ---
 
@@ -211,7 +211,7 @@ The following field specifications cover the intake fields most commonly require
 
 **Evidence form:** The use declaration document submitted with the application. At completion (for programs using Retroactive obligation mode): the grantee's narrative report describing how funds were actually used, compared to the anticipated uses declared at entry. If actual uses differed materially from anticipated uses: a brief explanation of the organizational circumstances that led to the change. The narrative report is an attestation corpus document, not a compliance determination; the funder does not assess the report for adherence to the entry declaration.
 
-**Compliance threshold:** An anticipated use declaration covering at least the major operating budget categories, with an explicit non-binding statement. A grantee that refuses to provide any use declaration, even informational, cannot satisfy this field; a declaration that an organization's uses cannot be anticipated is itself a compliant response if accompanied by a brief explanation of the organizational circumstances. Programs that use the use declaration to create de facto compliance conditions (e.g., by conditioning renewal on use conformance) have converted a general operating support grant into a restricted grant and must reclassify the grant and apply the corresponding CROSS obligation mode.
+**Conformance threshold:** An anticipated use declaration covering at least the major operating budget categories, with an explicit non-binding statement. A grantee that refuses to provide any use declaration, even informational, cannot satisfy this field; a declaration that an organization's uses cannot be anticipated is itself a compliant response if accompanied by a brief explanation of the organizational circumstances. Programs that use the use declaration to create de facto compliance conditions (e.g., by conditioning renewal on use conformance) have converted a general operating support grant into a restricted grant and must reclassify the grant and apply the corresponding CROSS obligation mode.
 
 ---
 
@@ -225,7 +225,7 @@ The following field specifications cover the intake fields most commonly require
 
 **Evidence form:** At entry: the community accountability mechanism design document or the relevant section of the program design. At completion: the community feedback collected during the grant period (aggregated and anonymized), the program's documented responses to the feedback, and any program changes made in response to community feedback. A narrative describing instances where community feedback led to a program design change, or a statement that no design changes were made and the reason.
 
-**Compliance threshold:** A named mechanism type with a stated frequency, a documented response obligation, and a named person or role responsible for managing the mechanism. A program that relies entirely on informal community relationships as its accountability mechanism, without a structured feedback channel, does not satisfy this field. Programs where community accountability mechanisms exist in the grantee's general operations but are not specified in relation to the funded program do not satisfy this field; the mechanism must be explicitly connected to the grant-funded activities.
+**Conformance threshold:** A named mechanism type with a stated frequency, a documented response obligation, and a named person or role responsible for managing the mechanism. A program that relies entirely on informal community relationships as its accountability mechanism, without a structured feedback channel, does not satisfy this field. Programs where community accountability mechanisms exist in the grantee's general operations but are not specified in relation to the funded program do not satisfy this field; the mechanism must be explicitly connected to the grant-funded activities.
 
 ---
 
@@ -273,9 +273,9 @@ Compatibility statements: NCRP-Racial-Equity-Criteria, Equitable-Evaluation-Init
 
 ---
 
-### Beneficiary Accountability Primitive
+### Affected Population Verification Primitive
 
-The beneficiary accountability primitive requires that communities served by grant programs have a structured mechanism to provide feedback to the program and that the program is obligated to respond. Frameworks that implement this primitive:
+The affected population verification primitive requires that communities served by grant programs have a structured mechanism to provide feedback to the program and that the program is obligated to respond. Frameworks that implement this primitive:
 
 - **CRS ProPack (Catholic Relief Services)**: defines community feedback and response mechanisms (CFRMs) as required program design elements for all humanitarian and development programs; provides operational guidance on mechanism design, frequency, accessibility, and response obligations
 - **World Vision LEAP (Learning through Evaluation with Accountability and Planning)**: requires a Community-Based Feedback and Response Mechanism (CBFRM) for all World Vision programs; the mechanism must be designed before the program begins and must be accessible to all community members, including those with literacy or language barriers

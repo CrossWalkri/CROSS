@@ -123,7 +123,7 @@ A continuing program operator must demonstrate: the entry specification gate for
 
 ## Part 2: WALKRI Field Specifications
 
-The following field specifications cover the intake fields most commonly required in corporate CSR and social impact grant programs. Each specification satisfies WALKRI's five pre-publication requirements: criterion intent, operational definition, response form, evidence form, compliance threshold.
+The following field specifications cover the intake fields most commonly required in corporate CSR and social impact grant programs. Each specification satisfies WALKRI's five pre-publication requirements: criterion intent, operational definition, response form, evidence form, conformance threshold.
 
 ---
 
@@ -137,7 +137,7 @@ The following field specifications cover the intake fields most commonly require
 
 **Evidence form:** For Sub-type B programs: the relevant section of the company's corporate strategy, annual report, or strategic planning document that names the business objective the grant addresses. For Sub-type C (ESG-linked): the specific GRI, SASB, or CSRD disclosure item the grant activity is intended to address. The evidence form is a citation, not a reproduction of the full document.
 
-**Compliance threshold:** A named corporate strategic objective with a stated causal pathway to the funded community outcome. A generic statement that the grant "aligns with our community investment priorities" without naming a specific strategic objective does not satisfy this field for Sub-type B programs. Sub-type A programs (pure philanthropic grants) satisfy this field with a "No business case claimed" declaration accompanied by a policy rationale.
+**Conformance threshold:** A named corporate strategic objective with a stated causal pathway to the funded community outcome. A generic statement that the grant "aligns with our community investment priorities" without naming a specific strategic objective does not satisfy this field for Sub-type B programs. Sub-type A programs (pure philanthropic grants) satisfy this field with a "No business case claimed" declaration accompanied by a policy rationale.
 
 ---
 
@@ -151,7 +151,7 @@ The following field specifications cover the intake fields most commonly require
 
 **Evidence form:** At completion: data from the specified measurement source, disaggregated at the declared dimensions, covering the grant period. For programs where the baseline was a grant deliverable: the baseline dataset collected during the grant period along with the endline dataset. Data must come from the source declared at the entry gate; data from an alternative source requires a documented explanation of why the declared source was not used.
 
-**Compliance threshold:** Each indicator must have a named measurement source, a baseline or baseline collection plan, and a target value. An indicator without a baseline or a named measurement source cannot be confirmed at the completion gate. Indicators stated only at the organizational output level (number of training sessions delivered) do not satisfy this field as community outcome indicators; they may appear separately as output specifications.
+**Conformance threshold:** Each indicator must have a named measurement source, a baseline or baseline collection plan, and a target value. An indicator without a baseline or a named measurement source cannot be confirmed at the completion gate. Indicators stated only at the organizational output level (number of training sessions delivered) do not satisfy this field as community outcome indicators; they may appear separately as output specifications.
 
 ---
 
@@ -165,7 +165,7 @@ The following field specifications cover the intake fields most commonly require
 
 **Evidence form:** The published source for each rate used: the LBG/B4SI published benchmark rate document (with version year), the company's internal HR rate schedule (internal document reference acceptable; the rate itself must be stated), or the market rate survey citation. At completion: a contribution log showing each contribution type, quantity (hours or units), rate applied, and total value by type, summed to the program total.
 
-**Compliance threshold:** Each non-cash contribution type must have a named valuation basis, a specific rate, and a source for the rate. A program that includes volunteer hours without a stated hourly rate, or in-kind contributions without a stated valuation basis, does not satisfy this field. The same valuation method must be applied consistently to the same contribution type across the program period; mid-program changes to the valuation method require a documented explanation and may require restatement of prior period contributions.
+**Conformance threshold:** Each non-cash contribution type must have a named valuation basis, a specific rate, and a source for the rate. A program that includes volunteer hours without a stated hourly rate, or in-kind contributions without a stated valuation basis, does not satisfy this field. The same valuation method must be applied consistently to the same contribution type across the program period; mid-program changes to the valuation method require a documented explanation and may require restatement of prior period contributions.
 
 ---
 
@@ -179,7 +179,7 @@ The following field specifications cover the intake fields most commonly require
 
 **Evidence form:** At completion: participation records by activity type and unit. For giving programs: payroll deduction totals by period with match calculations. For volunteering: hours logs submitted by employees and confirmed by grantee organizations or volunteer program coordinators. For skills-based volunteering: project completion records with hours documented. Aggregate participation figures without individual or event-level records do not satisfy this field for programs in which employee participation is a basis for matching contributions.
 
-**Compliance threshold:** Each declared employee engagement activity must have a named measurement method and a basis for confirming participation at completion. Participation figures based entirely on self-report without any confirmation mechanism do not satisfy this field. For matching programs: the match calculation must be auditable from payroll records through to disbursement.
+**Conformance threshold:** Each declared employee engagement activity must have a named measurement method and a basis for confirming participation at completion. Participation figures based entirely on self-report without any confirmation mechanism do not satisfy this field. For matching programs: the match calculation must be auditable from payroll records through to disbursement.
 
 ---
 
@@ -193,7 +193,7 @@ The following field specifications cover the intake fields most commonly require
 
 **Evidence form:** At entry gate: the impact assessment plan document or the relevant section of the project proposal. At completion gate: the final third-party impact assessment report, the Board resolution noting receipt of the report, and the Annual Report section citing the assessment. For programs above the INR 1 crore / 3-year threshold, the completion gate is not confirmed until the Board resolution is on record.
 
-**Compliance threshold:** A named assessment agency with confirmed MCA registration (for India CSR mandatory programs). An assessment methodology stated at sufficient specificity that the funder can confirm the agency is using the declared approach. An assessment timeline that places the report receipt before the completion gate is finalized. Programs above the mandatory threshold that reach completion without a filed impact assessment report have not satisfied the India CSR completion gate regardless of the quality of their activity-level evidence.
+**Conformance threshold:** A named assessment agency with confirmed MCA registration (for India CSR mandatory programs). An assessment methodology stated at sufficient specificity that the funder can confirm the agency is using the declared approach. An assessment timeline that places the report receipt before the completion gate is finalized. Programs above the mandatory threshold that reach completion without a filed impact assessment report have not satisfied the India CSR completion gate regardless of the quality of their activity-level evidence.
 
 ---
 
@@ -207,7 +207,7 @@ The following field specifications cover the intake fields most commonly require
 
 **Evidence form:** The relevant section of the ESG framework's disclosure requirements (by citation, not reproduction). At completion: the company's ESG disclosure showing the grant program's contribution to the stated disclosure item, with a reference back to the grant's completion gate record. The linkage is confirmed when the disclosure item cites data produced by the grant program's measurement system.
 
-**Compliance threshold:** A named framework, a named disclosure item, and a named grant outcome indicator that provides data for the item. A general statement that the program "contributes to our GRI reporting" without a specific disclosure item does not satisfy this field. The grant's outcome indicators must be structured to produce data in the format required by the ESG framework's disclosure item; indicators that require significant post-hoc transformation to fit a disclosure format indicate a misalignment between the grant measurement design and the stated ESG linkage.
+**Conformance threshold:** A named framework, a named disclosure item, and a named grant outcome indicator that provides data for the item. A general statement that the program "contributes to our GRI reporting" without a specific disclosure item does not satisfy this field. The grant's outcome indicators must be structured to produce data in the format required by the ESG framework's disclosure item; indicators that require significant post-hoc transformation to fit a disclosure format indicate a misalignment between the grant measurement design and the stated ESG linkage.
 
 ---
 
@@ -221,7 +221,7 @@ The following field specifications cover the intake fields most commonly require
 
 **Evidence form:** For elected LBG/B4SI verification: the verifier's signed verification statement attached to the program's completion record. For ESG assurance: the auditor's assurance report covering the grant program's contribution to the stated disclosure items. For India CSR: the third-party impact assessment report serves as the verification record; this field references the Impact Assessment Plan field.
 
-**Compliance threshold:** Programs that declare elected verification must name the verifying entity and the verification scope before the entry gate is confirmed. Programs that claim LBG/B4SI independent verification pathway without a named verifier do not satisfy this field. Programs for which verification is mandatory under India CSR must satisfy this field through the Impact Assessment Plan field; the two fields are treated as a linked pair for India CSR programs above the threshold.
+**Conformance threshold:** Programs that declare elected verification must name the verifying entity and the verification scope before the entry gate is confirmed. Programs that claim LBG/B4SI independent verification pathway without a named verifier do not satisfy this field. Programs for which verification is mandatory under India CSR must satisfy this field through the Impact Assessment Plan field; the two fields are treated as a linked pair for India CSR programs above the threshold.
 
 ---
 
@@ -235,7 +235,7 @@ The following field specifications cover the intake fields most commonly require
 
 **Evidence form:** Business metric data from a named internal or external measurement source, covering the baseline and end-of-grant periods. For market development claims: market size or revenue data from a named industry source or the company's internal sales data (aggregated, not individual transaction-level). For supply chain claims: supplier volume or quality data from the company's procurement system. For workforce claims: recruitment or retention data from HR systems. Internal data sources are acceptable for this field; the measurement source and reporting period must be named.
 
-**Compliance threshold:** A named business metric with a baseline value and a measured or projected end value. A narrative that describes business value without a named metric or baseline does not satisfy this field for Sub-type B programs. The community value and business value must be reported separately and must not be summed into a single combined figure that obscures the composition of each.
+**Conformance threshold:** A named business metric with a baseline value and a measured or projected end value. A narrative that describes business value without a named metric or baseline does not satisfy this field for Sub-type B programs. The community value and business value must be reported separately and must not be summed into a single combined figure that obscures the composition of each.
 
 ---
 

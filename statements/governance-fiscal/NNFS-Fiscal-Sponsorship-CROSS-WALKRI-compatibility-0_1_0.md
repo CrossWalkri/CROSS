@@ -1,12 +1,19 @@
 ---
 title: NNFS Guidelines for Comprehensive Fiscal Sponsorship Compatibility - CROSS+WALKRI
-version: 0.1.0
-date: 2026-05-18
+version: 0.1.2
+date: 2026-06-08
 license: CC0
 standards: CROSS v0.4.3 (github.com/CrossWalkri/CROSS), WALKRI v0.1.7 (github.com/CrossWalkri/WALKRI)
 references:
   - https://www.fiscalsponsors.org/nnfs-guidelines
   - https://s3.amazonaws.com/nnfs/file_assets/d0758100838a/NNFS%20Guidelines%20for%20Comprehensive%20Fiscal%20Sponsorship.pdf
+lens_tags:
+  calibration_tier: process_conformant
+  authority_source: voluntary_published
+  cultural_methodological_lineage: western_institutional
+  funder_typology: pooled_fund_or_intermediary
+  framework_scope_type: professional_practice_ethics
+  # National Network of Fiscal Sponsors Best Practices; pooled_fund_or_intermediary captures fiscal sponsor typology; alternative civil_society_advisory
 ---
 
 # NNFS Guidelines for Comprehensive Fiscal Sponsorship
@@ -44,13 +51,13 @@ CROSS addresses the NNFS requirements through specific field groups and gate req
 | Board-level approval of all new sponsored projects | CROSS organizational identity declaration: governance structure field documents whether a board-level approval mechanism exists and is operative for the hosted project. |
 | Independent financial audits (publicly available) | CROSS Attestation Corpus: persistent, publicly accessible record of gate determinations and financial declarations. The Attestation Corpus does not replace a GAAP audit but provides the program-level documentation that audit processes draw on. |
 | Ethics standards applied to all sponsored projects | CROSS Part VII conflict of interest provisions: applied at the program level regardless of whether the grantee is the fiscal sponsor, the hosted project, or a hybrid arrangement. |
-| Pre-Approved Grant Relationship variance power | CROSS disbursement authority "governed" state: funds controlled by a governance mechanism rather than an individual authority. This accommodates the variance power structure where the sponsor exercises formal control but the project directs operations. |
+| Pre-Approved Grant Relationship variance power | CROSS disbursement authority "collective" state: funds controlled by a named authority-conferring mechanism rather than an individual authority. This accommodates the variance power structure where the sponsor exercises formal control but the project directs operations. |
 
 The project agreement mapping is the most direct. NNFS requires that written project agreements specify scope and deliverables for every hosted project. CROSS's entry specification gate requires that scope and deliverables be documented in a structured, independently verifiable format before any funds are disbursed. The gate record satisfies the NNFS requirement for a written project agreement while adding the additional structural rigor of being machine-readable, timestamped, and included in the Attestation Corpus.
 
 The fund accounting mapping addresses one of the most operationally demanding NNFS requirements. Fund accounting at the individual project level requires that each hosted project's finances be isolated from both the fiscal sponsor's general funds and the funds of other hosted projects. CROSS's concurrent funding disclosure documents all funders, funding amounts, purposes, and periods for a single program, producing exactly the data structure that project-level fund isolation requires. A fiscal sponsor implementing CROSS+WALKRI-conformant programs for all hosted projects has the documentation needed to demonstrate fund isolation for each project individually.
 
-The organizational identity fields require careful implementation in fiscal sponsorship contexts. CROSS Field 6 (on-chain identity anchor) accommodates the wallet addresses associated with fiscal sponsorship arrangements, including multisig wallets where the fiscal sponsor and the hosted project team both hold signing authority. The disbursement authority field distinguishes between: funds controlled by the fiscal sponsor as an organization, funds controlled by the hosted project team directly, and funds controlled by a governance mechanism that includes both parties. These distinctions correspond directly to the difference between Comprehensive Fiscal Sponsorship and Pre-Approved Grant Relationship Sponsorship.
+The organizational identity fields require careful implementation in fiscal sponsorship contexts. CROSS Field 6 (on-chain identity anchor) accommodates the wallet addresses associated with fiscal sponsorship arrangements, including multisig wallets where the fiscal sponsor and the hosted project team both hold signing authority. The disbursement authority field distinguishes between: funds controlled by the fiscal sponsor as an organization, funds controlled by the hosted project team directly, and funds controlled by a named authority-conferring mechanism that includes both parties. These distinctions correspond directly to the difference between Comprehensive Fiscal Sponsorship and Pre-Approved Grant Relationship Sponsorship.
 
 ---
 
@@ -67,3 +74,12 @@ In the Web3 and public goods context, where fiscal sponsorship through platforms
 ---
 
 *Published under CC0. For the current version of CROSS and WALKRI, see github.com/CrossWalkri.*
+
+---
+
+## Changelog
+
+| Version | Date | Summary |
+|---|---|---|
+| 0.1.2 | 2026-06-08 | Frame Language own-voice pass applied as part of the corpus-wide 2026-06-08 sweep: own-voice watchlist terms (govern-family, accountability, mandatory, compliance, enforce, legitimate) recast to conformance and obligation vocabulary where they appeared in this document's own voice; citation use of source-framework terms preserved. Primitive-rename references aligned to current canon (Continuity Capacity, the Collective disbursement state, Affected Population Verification Gate). Em-dash- and watchlist-clean re-verified. No compatibility finding or mapping changed; vocabulary only. |
+| 0.1.1 | 2026-05-23 | Retroactive lens tagging: added calibration_tier, authority_source, cultural_methodological_lineage, funder_typology, framework_scope_type per Lenses Framework v0.1.0. |
