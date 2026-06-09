@@ -1,7 +1,7 @@
 ---
 title: CROSS Canonical Round Configuration Schema
-version: 0.1.0
-date: 2026-05-22
+version: 0.1.1
+date: 2026-06-09
 license: CC0
 status: Working draft. Initial specification.
 companion_standards:
@@ -16,7 +16,7 @@ related_documents:
 
 # CROSS Canonical Round Configuration Schema
 
-Version 0.1.0 | 2026-05-22 | CC0
+Version 0.1.1 | 2026-06-09 | CC0
 
 ---
 
@@ -24,7 +24,7 @@ Version 0.1.0 | 2026-05-22 | CC0
 
 The CROSS Canonical Round Configuration Schema is the machine-readable format in which a CROSS-conformant round specification is expressed, stored, transported, and imported by grantee tools. It is the output of the CROSS Grant Configurator (CROSS-grant-configurator-0_2_0.md) at the Commit stage of the CLEAR lifecycle and the input to grantee Theory of Change tools, reviewer dashboards, and data analysis pipelines.
 
-This document specifies the schema. It is a JSON Schema (draft-07) document with WALKRI extensions at the field level. CROSS governs the obligation architecture fields at the round level; WALKRI governs the criterion specification quality fields at the field level. The governing authority boundary is specified in WALKRI-CROSS-boundary-0_1_0.md.
+This document specifies the schema. It is a JSON Schema (draft-07) document with WALKRI extensions at the field level. CROSS covers the obligation architecture fields at the round level; WALKRI covers the criterion specification quality fields at the field level. The authority boundary is specified in WALKRI-CROSS-boundary-0_1_0.md.
 
 **Format agnosticism.** The canonical format is the source of truth. It is not the rendering format for any specific form platform. Platform translators convert from this format to Fillout, Jotform, Typeform, KoBoToolbox, XLSForm, or any other rendering target. A translator must preserve all canonical fields; it may add platform-specific properties. Translators are platform responsibilities, not schema responsibilities.
 
@@ -46,7 +46,7 @@ The following fields constitute the CROSS obligation architecture at the round l
 | `title` | string | Human-readable round name. |
 | `schema_version` | string (semver) | Version of this schema used (e.g., `0.1.0`). |
 | `obligation_mode` | enum | CROSS obligation mode: `build`, `change`, `retroactive`, or `compound`. |
-| `gate_type` | enum | Gate this configuration governs: `entry-specification`, `milestone`, `completion`, or `continuation`. |
+| `gate_type` | enum | Gate this configuration applies to: `entry-specification`, `milestone`, `completion`, or `continuation`. |
 | `sections` | array | Ordered array of Section objects. See Part III. |
 
 ### 2.2 Optional Fields (All Obligation Modes)
@@ -106,7 +106,7 @@ A Section groups fields that belong to the same logical part of the round. Secti
 
 ## Part IV: Field Schema
 
-A Field is a JSON Schema property definition with WALKRI criterion specification properties added as vendor extensions using the `x-walkri-` prefix. WALKRI-extended fields remain valid JSON Schema: compliant validators ignore properties they do not recognize.
+A Field is a JSON Schema property definition with WALKRI criterion specification properties added as vendor extensions using the `x-walkri-` prefix. WALKRI-extended fields remain valid JSON Schema: conformant validators ignore properties they do not recognize.
 
 ### 4.1 JSON Schema Base Properties
 
@@ -151,7 +151,7 @@ A written justification for why the chosen field type fits the criterion intent.
 
 The specific artifact type and access path that constitutes conformant evidence for this field. Not "evidence of X" but the specific form: "a URL to the LICENSE file in the root of a public repository" or "a Dune Analytics dashboard URL with the query returning results for the applicant's contract address."
 
-**`x-walkri-compliance-threshold`** (object, required)
+**`x-walkri-conformance-threshold`** (object, required)
 
 Required for all fields. When no external standard is referenced, carry `{"minimum-threshold": "none"}` as an explicit assertion. When an external standard is referenced, include: `standard-url`, `version-anchor`, `required-components`, `evidence-per-component`, and `minimum-threshold` (`all`, `minimum-N-of-M`, or `custom`).
 
@@ -163,7 +163,7 @@ The result of WALKRI audit for this field. A field satisfying all five criterion
 
 **`x-walkri-specification-version`** (string, semver, required)
 
-The version of this field specification. Enables downstream consumers to determine which definition governed the data collected in any given reporting period.
+The version of this field specification. Enables downstream consumers to determine which definition applied to the data collected in any given reporting period.
 
 **`x-walkri-specification-date`** (string, ISO 8601 date, required)
 
@@ -219,16 +219,16 @@ The following is a minimal conformant round configuration for a Build obligation
           "type": "string",
           "required": true,
           "minLength": 5,
-          "x-walkri-criterion-intent": "Establishes the legal identity of the applying entity for accountability and cross-program identity matching.",
+          "x-walkri-criterion-intent": "Establishes the legal identity of the applying entity for answerability and cross-program identity matching.",
           "x-walkri-operational-definition": {
             "inclusion": "The name of the natural person or registered organization exactly as it appears in the relevant jurisdiction of registration, followed by the jurisdiction name. Example: 'Acme Protocol Ltd., Delaware, USA'.",
-            "exclusion": "Project names, display names, or GitHub organization names that are not also the legal name. Exception: if no legal entity exists, the applicant states this explicitly and names the accountable individual.",
+            "exclusion": "Project names, display names, or GitHub organization names that are not also the legal name. Exception: if no legal entity exists, the applicant states this explicitly and names the responsible individual.",
             "unit-of-analysis": "One legal entity per response.",
-            "edge-case": "An unincorporated collective: must state 'No legal entity. Accountable individual: [full name].' This satisfies the field."
+            "edge-case": "An unincorporated collective: must state 'No legal entity. Responsible individual: [full name].' This satisfies the field."
           },
           "x-walkri-response-form-justification": "Free text with no fixed-option constraint because legal names and jurisdictions vary in length and form. A dropdown cannot capture the full name-plus-jurisdiction as a combined response without truncation or omission.",
           "x-walkri-evidence-form": "The legal name as it appears in a public registration record. Program verifies against a public registry where available.",
-          "x-walkri-compliance-threshold": {
+          "x-walkri-conformance-threshold": {
             "minimum-threshold": "none"
           },
           "x-walkri-verdict": "instrument",
@@ -249,9 +249,9 @@ A platform translator converts from this canonical format to a specific form ren
 
 **Preservation requirements.** A translator must preserve: the field identifier (`id`), the verdict (`x-walkri-verdict`), all five criterion specification properties, the specification version and date, and the round-level obligation architecture (obligation_mode, gate_type, change_specification, components). Properties that a target platform cannot render natively must be preserved as metadata fields, not discarded.
 
-**Addition permissions.** A translator may add platform-specific properties required for rendering. Platform properties do not override canonical properties; where a conflict exists, the canonical property governs.
+**Addition permissions.** A translator may add platform-specific properties required for rendering. Platform properties do not override canonical properties; where a conflict exists, the canonical property takes precedence.
 
-**Label enforcement.** A translator must not silently publish a field carrying `x-walkri-verdict: "label"`. The operator must be informed before the configuration is submitted to the platform.
+**Label handling.** A translator must not silently publish a field carrying `x-walkri-verdict: "label"`. The operator must be informed before the configuration is submitted to the platform.
 
 **Round-level fields.** A translator that converts only the field sections must also produce a separate machine-readable export of the round-level obligation architecture (obligation_mode, change_specification, components) so that the canonical round specification is not lost in translation.
 
@@ -261,4 +261,5 @@ A platform translator converts from this canonical format to a specific form ren
 
 | Version | Date | Changes |
 |---|---|---|
+| 0.1.1 | 2026-06-09 | Conformance-threshold rename and Frame Language own-voice pass. The field property `x-walkri-compliance-threshold` is renamed `x-walkri-conformance-threshold` (a breaking annotation-key rename, aligning with the JSON schemas at @0.2.1 and the interface specification). Own-voice watchlist terms recast (govern to covers/applies, the "compliant validators" gloss to "conformant", enforce to handling, accountability/accountable in the worked example to answerability/responsible). No field or requirement changed; naming and vocabulary only. |
 | 0.1.0 | 2026-05-22 | Initial specification. |

@@ -1,7 +1,7 @@
 ---
 title: CROSS Theory of Change Builder Skill
-version: 0.1.0
-date: 2026-05-22
+version: 0.1.1
+date: 2026-06-09
 license: CC0
 status: Working draft. Initial specification.
 related_documents:
@@ -12,7 +12,7 @@ related_documents:
 
 # CROSS Theory of Change Builder Skill
 
-Version 0.1.0 | 2026-05-22 | CC0
+Version 0.1.1 | 2026-06-09 | CC0
 
 Invoke this skill to help a grantee or applicant construct a Theory of Change that is compatible with CROSS obligation architecture. Use it before any grant application, during a pre-application preparation session, or when asked to evaluate whether an existing Theory of Change is CROSS-conformant.
 
@@ -134,7 +134,7 @@ Ask: "What constitutes completion evidence and who confirms it?" The evidence fo
 
 After completing the relevant moves, issue one of three verdicts:
 
-**Compliant:** The Theory of Change has a declared obligation mode, a complete change specification (if Change or Compound), component specs with contribution_to_change (if Compound), and an evidence plan. A well-designed CROSS-conformant application form can collect this Theory of Change as structured data.
+**Conformant:** The Theory of Change has a declared obligation mode, a complete change specification (if Change or Compound), component specs with contribution_to_change (if Compound), and an evidence plan. A well-designed CROSS-conformant application form can collect this Theory of Change as structured data.
 
 **Underspecified:** The Theory of Change has a declared obligation mode but one or more required elements are missing or vague. Name the specific gaps. Work to fill them. Do not issue this verdict and stop: treat it as a prompt for the next move.
 
@@ -154,8 +154,8 @@ Structured fields:
 - **change_specification:** All nine fields (from_state, from_state_source, to_state, indicator, indicator_operational_definition, causal_mechanism, key_assumptions, evidence_threshold, evaluation_timeline). Null for build and retroactive.
 - **components:** Array of component objects (id, name, obligation_mode, deliverable, operational_definition, completion_criteria, contribution_to_change). Null for non-compound.
 - **evidence_plan:** Plain text description of the evidence collection approach.
-- **cross_verdict:** compliant, underspecified, or label-only.
-- **gaps:** Empty array for compliant. For underspecified or label-only: specific named elements that are missing.
+- **cross_verdict:** conformant, underspecified, or label-only.
+- **gaps:** Empty array for conformant. For underspecified or label-only: specific named elements that are missing.
 
 ---
 
@@ -168,3 +168,12 @@ A gap named before application is fixable. A gap discovered during evaluation is
 Work with any sector and any type of work. The obligation mode and evidence forms adapt to context. What does not adapt: the requirement to specify before you can evaluate.
 
 Never use em dashes in responses.
+
+---
+
+## Changelog
+
+| Version | Date | Changes |
+|---|---|---|
+| 0.1.1 | 2026-06-09 | Verdict value renamed: the `cross_verdict` value "compliant" is now "conformant", aligning with the corpus conformance vocabulary and this skill's own "CROSS-conformant" usage. Output-schema value change only; the three-verdict structure (conformant, underspecified, label-only) is unchanged. |
+| 0.1.0 | 2026-05-22 | Initial specification. |
