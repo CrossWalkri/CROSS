@@ -129,7 +129,7 @@ The most common integration failure between KarmaGAP and CROSS-conformant progra
 
 A CROSS-conformant program running KarmaGAP should pre-populate milestone descriptions from the published gate configuration. The milestone description in KarmaGAP should state: the gate type (progress verification or completion verification), the evidence scope required, and the evidence strength required. This makes the KarmaGAP milestone record an externally verifiable statement of the CROSS gate configuration rather than a post-hoc grantee narrative.
 
-Where Grants Forge is used for round configuration, it should export KarmaGAP-formatted milestone templates as part of its round specification output, enabling grantees to register the correct milestone structure in KarmaGAP at the time of award rather than defining their own.
+Where a conformant configurator is used for round configuration, it should export KarmaGAP-formatted milestone templates as part of its round specification output, enabling grantees to register the correct milestone structure in KarmaGAP at the time of award rather than defining their own.
 
 ---
 
