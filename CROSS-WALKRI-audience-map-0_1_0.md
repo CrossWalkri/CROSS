@@ -1,7 +1,7 @@
 ---
 title: CROSS+WALKRI Audience Map - Six Cohorts
-version: 0.1.0
-date: 2026-05-19
+version: 0.1.1
+date: 2026-06-13
 license: CC0
 standards: CROSS v0.4.7 (github.com/CrossWalkri/CROSS), WALKRI v0.1.7 (github.com/CrossWalkri/WALKRI)
 ---
@@ -14,7 +14,7 @@ standards: CROSS v0.4.7 (github.com/CrossWalkri/CROSS), WALKRI v0.1.7 (github.co
 
 ## Overview
 
-CROSS+WALKRI is a two-standard architecture for grant accountability. CROSS governs the obligation structure of grant programs: what funders commit to specifying, what grantees commit to producing, and how evidence of fulfillment is verified and recorded. WALKRI governs the intake field layer: what every field in every grant application or data collection instrument must specify before any applicant or participant sees it.
+CROSS+WALKRI is a two-standard architecture for grant answerability. CROSS specifies the obligation structure of grant programs: what funders commit to specifying, what grantees commit to producing, and how evidence of fulfillment is verified and recorded. WALKRI specifies the intake field layer: what every field in every grant application or data collection instrument must specify before any applicant or participant sees it.
 
 Six cohorts interact with this architecture from distinct positions with distinct needs. The cohorts are not organized by who holds the budget; they are organized by what each cohort does in relation to grant programs and what the standards do for them.
 
@@ -46,9 +46,9 @@ People evaluating applications and gate evidence at any stage of a grant program
 
 ## Cohort 3: Program Operators
 
-Staff and contractors who run grant programs day-to-day: drafting round specifications, configuring intake forms, coordinating reviewers, tracking disbursements, collecting completion evidence, and producing closing documentation. They experience CROSS+WALKRI as the operational architecture that governs every decision in the grant program lifecycle.
+Staff and contractors who run grant programs day-to-day: drafting round specifications, configuring intake forms, coordinating reviewers, tracking disbursements, collecting completion evidence, and producing closing documentation. They experience CROSS+WALKRI as the operational architecture that structures every decision in the grant program lifecycle.
 
-**What CROSS delivers:** CROSS provides a structured four-gate lifecycle that makes the program timeline and decision points explicit before the round opens. Each gate has specified inputs and outputs: what must be ready before it opens, what must be produced before it closes. The Grant Configurator architecture (Part IX) provides the implementation model for configuring rounds. Part XI specifies what funders are obligated to publish and maintain, giving program operators a clear compliance checklist.
+**What CROSS delivers:** CROSS provides a structured four-gate lifecycle that makes the program timeline and decision points explicit before the round opens. Each gate has specified inputs and outputs: what must be ready before it opens, what must be produced before it closes. The Grant Configurator architecture (Part IX) provides the implementation model for configuring rounds. Part XI specifies what funders are obligated to publish and maintain, giving program operators a clear conformance checklist.
 
 **What WALKRI delivers:** The pre-publication audit is the primary WALKRI procedure for program operators. Before any intake form is shared with applicants, operators conduct a field-by-field review confirming that each field satisfies all five requirements. WALKRI converts what is otherwise an informal editorial process into a structured audit with a clear conformance standard. The pre-publication audit is the operational procedure that produces WALKRI conformance.
 
@@ -85,9 +85,9 @@ Researchers, evaluators, and data practitioners who study grant outcomes across 
 
 ## Cohort 6: Institutional Funders
 
-Foundations, government agencies, DAOs, and multilateral bodies making strategic decisions about grant program design and adoption of accountability standards. They experience CROSS+WALKRI primarily as the architecture they are considering adopting and the evidence base for why adoption serves their institutional interests.
+Foundations, government agencies, DAOs, and multilateral bodies making strategic decisions about grant program design and adoption of obligation standards. They experience CROSS+WALKRI primarily as the architecture they are considering adopting and the evidence base for why adoption serves their institutional interests.
 
-**What CROSS delivers:** Part XII documents formal structural alignment between CROSS and 95+ institutional frameworks spanning international development, public health, workforce development, environmental finance, education, corporate accountability, Islamic giving, humanitarian standards, and Web3 public goods. An institutional funder whose existing evaluation requirements are addressed in Part XII can adopt CROSS without abandoning its existing framework: CROSS satisfies those requirements structurally. The pre-commitment architecture protects institutional funders from retrospective accountability claims. The portfolio-level reporting structure aggregates program outcomes for institutional learning and external reporting requirements.
+**What CROSS delivers:** Part XII documents formal structural alignment between CROSS and 95+ institutional frameworks spanning international development, public health, workforce development, environmental finance, education, corporate accountability, Islamic giving, humanitarian standards, and Web3 public goods. An institutional funder whose existing evaluation requirements are addressed in Part XII can adopt CROSS without abandoning its existing framework: CROSS satisfies those requirements structurally. The pre-commitment architecture protects institutional funders from retrospective answerability claims. The portfolio-level reporting structure aggregates program outcomes for institutional learning and external reporting requirements.
 
 **What WALKRI delivers:** The pre-publication audit is an institutional due diligence procedure. Institutional funders who require WALKRI conformance across their grant portfolio ensure that every intake instrument their grantees encounter is specified to a standard that produces comparable, auditable data. For institutional funders who report against mandatory indicator sets (HRSA UDS, SAMHSA NOMs, WIOA, ESSA, and others covered in Part XII), WALKRI conformance at the intake field level is the structural mechanism that ensures reported data satisfies those mandatory indicators reliably.
 
@@ -104,8 +104,17 @@ Foundations, government agencies, DAOs, and multilateral bodies making strategic
 | 2. Reviewers | Pre-specified criteria; calibration requirement; conflict framework | Conformance thresholds that replace reviewer-level threshold determination |
 | 3. Program Operators | Structured four-gate lifecycle; round specification architecture | Pre-publication audit as an operational conformance procedure |
 | 4. Platform Providers | Machine-readable obligation architecture mapping to a data model and workflow | Field-level metadata specification enabling WALKRI-conformant form builders |
-| 5. Analysts | Commensurably specified indicators; mandatory structured dataset at round close; public Attestation Corpus | Operational definitions and evidence form requirements as the basis for cross-program comparability |
+| 5. Analysts | Commensurably specified indicators; required structured dataset at round close; public Attestation Corpus | Operational definitions and evidence form requirements as the basis for cross-program comparability |
 | 6. Institutional Funders | Compatibility with 95+ existing frameworks (Part XII); portfolio reporting structure | Pre-publication audit as institutional due diligence ensuring mandatory indicators are reliably collected |
+
+---
+
+## Changelog
+
+| Version | Date | Summary |
+|---|---|---|
+| 0.1.1 | 2026-06-13 | Frame Language own-voice pass applied as part of the public forward-facing long-tail sweep. Own-voice watchlist terms recast: "architecture for grant accountability" to "grant answerability"; "CROSS governs" and "WALKRI governs" to "specifies"; "the operational architecture that governs every decision" to "structures every decision"; "a clear compliance checklist" to "conformance checklist"; "adoption of accountability standards" to "adoption of obligation standards"; "retrospective accountability claims" to "answerability claims"; "mandatory structured dataset" to "required structured dataset." Kept: "government agencies" (government-as-party), "corporate accountability" as a named framework-domain, and the external "mandatory indicator sets" (HRSA, SAMHSA, WIOA, ESSA) as citation. No cohort mapping or provision reference changed; vocabulary only. Em-dash- and watchlist-clean re-verified. |
+| 0.1.0 | 2026-05-19 | Initial audience map. |
 
 ---
 

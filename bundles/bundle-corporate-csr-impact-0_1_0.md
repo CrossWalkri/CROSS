@@ -1,7 +1,7 @@
 ---
 title: CROSS+WALKRI Program Bundle - Corporate CSR and Social Impact
-version: 0.1.0
-date: 2026-05-19
+version: 0.1.1
+date: 2026-06-12
 license: CC0
 standards: CROSS v0.4.7 (github.com/CrossWalkri/CROSS), WALKRI v0.1.7 (github.com/CrossWalkri/WALKRI)
 bundle_type: corporate-csr-impact
@@ -13,11 +13,11 @@ bundle_type: corporate-csr-impact
 
 ## Overview
 
-This bundle covers grant and funding programs through which corporations distribute community investment resources, whether driven by voluntary strategy, mandatory statutory compliance, or ESG reporting obligations. The ecosystem includes direct corporate foundation grants, shared value / CSV programs that link grant activity to business strategy, ESG-linked social investment portfolios, and corporate-community investment programs reported under sector standards such as LBG/B4SI or under the India CSR mandate (Companies Act 2013, Section 135).
+This bundle covers grant and funding programs through which corporations distribute community investment resources, whether driven by voluntary strategy, required statutory conformance, or ESG reporting obligations. The ecosystem includes direct corporate foundation grants, shared value / CSV programs that link grant activity to business strategy, ESG-linked social investment portfolios, and corporate-community investment programs reported under sector standards such as LBG/B4SI or under the India CSR mandate (Companies Act 2013, Section 135).
 
 Four program sub-types operate in this space with materially different obligation structures. This bundle addresses all four and notes where provisions diverge.
 
-**Sub-type A: Corporate foundation grants** distribute funds from a company-controlled foundation or community investment budget, often including employee matching programs, community investment funds, and product donation programs. The grant is voluntary but subject to internal governance and may include non-cash contributions that require valuation.
+**Sub-type A: Corporate foundation grants** distribute funds from a company-controlled foundation or community investment budget, often including employee matching programs, community investment funds, and product donation programs. The grant is voluntary but subject to internal authorization and may include non-cash contributions that require valuation.
 
 **Sub-type B: Shared value / CSV programs** structure grants around a business case: the grant funds activities that simultaneously produce community outcomes and advance the company's strategic interests (market development, supply chain strengthening, workforce development). Both the community outcome and the business value are declared and measured.
 
@@ -101,7 +101,7 @@ Programs claiming attribution without an independent verification mechanism decl
 
 ### Attestation Gate and Corpus
 
-The Attestation Corpus for corporate CSR programs should be structured to satisfy both internal governance requirements and any applicable statutory or standards reporting obligations:
+The Attestation Corpus for corporate CSR programs should be structured to satisfy both internal authorization requirements and any applicable statutory or standards reporting obligations:
 
 - Program specification: recorded in board minutes, CSR committee charter, or equivalent governance document before the program opens
 - Application record: stored in the company's grant management system with date stamp
@@ -129,7 +129,7 @@ The following field specifications cover the intake fields most commonly require
 
 ### Field: Business Case and Strategic Alignment
 
-**Criterion intent:** Documents the relationship between the grant activity and the corporate funder's strategic objectives, enabling transparent assessment of whether the program is a genuine shared value investment or a grant with a post-hoc business rationale attached. This field is mandatory for Sub-type B (shared value / CSV) programs and recommended for any program that will be reported in a corporate sustainability report.
+**Criterion intent:** Documents the relationship between the grant activity and the corporate funder's strategic objectives, enabling legible assessment of whether the program is a genuine shared value investment or a grant with a post-hoc business rationale attached. This field is mandatory for Sub-type B (shared value / CSV) programs and recommended for any program that will be reported in a corporate sustainability report.
 
 **Operational definition:** Strategic alignment is the stated relationship between a specific corporate business objective (a named market, a named supply chain function, a named workforce pipeline, a named brand or reputation objective) and the community outcome the grant funds. Business case documentation describes the anticipated causal pathway from the community outcome to the business objective: why achieving the community outcome is expected to advance the corporate strategic interest.
 
@@ -171,7 +171,7 @@ The following field specifications cover the intake fields most commonly require
 
 ### Field: Employee Engagement Metrics
 
-**Criterion intent:** Specifies the measurement approach for employee-giving programs, skills-based volunteering programs, and other grant activities in which employee participation is a program output or a basis for matching contributions, ensuring that participation figures are measured consistently and that the relationship between employee participation and matching contributions is transparent.
+**Criterion intent:** Specifies the measurement approach for employee-giving programs, skills-based volunteering programs, and other grant activities in which employee participation is a program output or a basis for matching contributions, ensuring that participation figures are measured consistently and that the relationship between employee participation and matching contributions is legible.
 
 **Operational definition:** Employee engagement in a community investment context is any structured participation by company employees in a grant program's funded activities: direct financial giving (individual donations eligible for company match), volunteer hours contributed to a grantee organization, skills-based or pro bono professional services, and board service or secondments. Engagement metrics are the counts, rates, and characteristics of this participation measured at the program level.
 
@@ -227,7 +227,7 @@ The following field specifications cover the intake fields most commonly require
 
 ### Field: Concurrent Business Value Documentation
 
-**Criterion intent:** For Sub-type B (shared value / CSV) programs, documents the business value generated alongside the community value, ensuring transparency about the dual-purpose nature of the grant and enabling the funder to report both values without conflating them.
+**Criterion intent:** For Sub-type B (shared value / CSV) programs, documents the business value generated alongside the community value, ensuring legibility about the dual-purpose nature of the grant and enabling the funder to report both values without conflating them.
 
 **Operational definition:** Concurrent business value is the measurable benefit the corporate funder derives from the grant activity, expressed in terms of the stated corporate strategic objective: market access, supply chain strengthening, workforce pipeline, brand or reputation metric, or equivalent. Concurrent business value documentation is the record of how this benefit was measured, what value was realized, and how it relates to the community value produced by the same activity.
 
@@ -298,7 +298,7 @@ Compatibility statements: LBG/B4SI, Kellogg-Logic-Model, PHINEO-IOOI, Annie-E-Ca
 
 ### Organizational Identity Primitive
 
-The organizational identity primitive requires declaration of the applying entity's legal identity, governance structure, and accountability relationships. Corporate CSR frameworks that address this primitive:
+The organizational identity primitive requires declaration of the applying entity's legal identity, decision-standing structure, and obligation relationships. Corporate CSR frameworks that address this primitive:
 
 - **India CSR Schedule VII categories**: the mandatory CSR schedule defines eligible activity categories that also implicitly constrain eligible organizational partners; grantee organizations must fall within the declared category to satisfy India CSR compliance
 - **GFGP ARS 1651**: the African continent's grant management standard for grantee capacity assessment; relevant for corporate CSR programs operating in African markets where GFGP compliance is expected
@@ -328,6 +328,15 @@ The disaggregation ratchet primitive requires that disaggregated outcome data be
 - **Equitable Evaluation Initiative**: pre-specifies the disaggregation dimensions for programs seeking equity alignment; CROSS's disaggregation ratchet operates at the statutory level for race-disaggregated data in programs adopting EEI principles
 
 Compatibility statements: NCRP-Racial-Equity-Criteria, IFC-OPIM, Equitable-Evaluation-Initiative.
+
+---
+
+## Changelog
+
+| Version | Date | Summary |
+|---|---|---|
+| 0.1.1 | 2026-06-12 | Frame Language own-voice pass applied as part of the bundle long-tail sweep. Own-voice watchlist terms recast: "mandatory statutory compliance" to "required statutory conformance"; "internal governance" to "internal authorization"; own-voice "transparent assessment" and "transparency" to "legible" and "legibility"; "governance structure, and accountability relationships" to "decision-standing structure, and obligation relationships." Citation use preserved: every India CSR statutory reference (mandatory impact assessment, the threshold, India CSR compliance), GFGP compliance, GRI references, Annie E. Casey Results-Based Accountability (its population and performance accountability are RBA's terms). No field, conformance threshold, or compatibility mapping changed; vocabulary only. Left for review as documentary venue naming: "corporate governance record" and "governance document" as publication-record types. Em-dash- and watchlist-clean re-verified. |
+| 0.1.0 | 2026-05-19 | Initial bundle release. |
 
 ---
 

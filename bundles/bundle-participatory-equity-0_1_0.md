@@ -1,7 +1,7 @@
 ---
 title: CROSS+WALKRI Program Bundle - Participatory and Equity-Focused Grantmaking
-version: 0.1.0
-date: 2026-05-19
+version: 0.1.1
+date: 2026-06-12
 license: CC0
 standards: CROSS v0.4.7 (github.com/CrossWalkri/CROSS), WALKRI v0.1.7 (github.com/CrossWalkri/WALKRI)
 bundle_type: participatory-equity
@@ -69,7 +69,7 @@ Before any application window opens, before any community vote is held, or befor
 
 **Organizational identity for grantee partners:** The applying community organization must declare: legal name and registration number, jurisdiction of registration or community governance status for unincorporated community organizations, primary service geography and target community, primary contact and authorized representative, and whether the organization is community-owned, community-controlled, or community-led (defined by whether the governing board, staff leadership, or membership is majority from the communities served).
 
-**Community accountability mechanism:** Each applicant must declare how the grant-funded program will be accountable to the community it serves, distinct from accountability to the institutional funder. Community accountability mechanisms include: community advisory boards with defined authority, community feedback processes with stated response requirements, participatory evaluation with community members as evaluators, and public reporting to the community in accessible formats. A mechanism that routes all accountability through the institutional funder without a direct community feedback channel does not satisfy this field.
+**Community feedback and response mechanism:** Each applicant must declare how the grant-funded program will answer to the community it serves through a feedback and response channel, distinct from its obligation to the institutional funder. Community feedback and response mechanisms include: community advisory boards with defined authority, community feedback processes with stated response requirements, participatory evaluation with community members as evaluators, and public reporting to the community in accessible formats. A mechanism that routes all feedback through the institutional funder without a direct community feedback channel does not satisfy this field.
 
 **Theory of Change for power-building and systemic change (Sub-type C):** Applications for power-building grants must map the funded activities to power-building outputs (organizing membership growth, leadership development, coalition building) and from outputs to power-building outcomes (policy wins, narrative shift metrics, community decision-making authority gained) and from outcomes to the goal (reduced racial disparity, increased community self-determination, systemic policy change). The Theory of Change must specify which activities are expected to produce which outputs, with the causal narrative at each level transition.
 
@@ -99,13 +99,13 @@ The Attestation Corpus for participatory and equity-focused grantmaking must inc
 - Disaggregated outcome data: reported at the disaggregation level committed to at the entry gate, with any data limitation disclosures attached
 - Community feedback record: the feedback from community decision-makers and, for Sub-type D, from the community about the program's impact on self-determination
 
-For programs reporting under NCRP criteria: the corpus must be structured to produce the data required for NCRP verification. For programs reporting under CRS ProPack, World Vision LEAP, or Core Humanitarian Standard Commitment 5: the community accountability mechanism record must satisfy those standards' beneficiary feedback documentation requirements.
+For programs reporting under NCRP criteria: the corpus must be structured to produce the data required for NCRP verification. For programs reporting under CRS ProPack, World Vision LEAP, or Core Humanitarian Standard Commitment 5: the community feedback and response mechanism record must satisfy those standards' beneficiary feedback documentation requirements.
 
 ### Continuation Gate
 
 For multi-year programs or programs that renew annually:
 
-A continuing grantee must demonstrate: completion of prior year obligations at the agreed level, an updated community accountability mechanism record showing that community feedback was received and responded to, and updated disaggregated outcome data. For trust-based unrestricted grants: the grantee's narrative report is the continuation evidence; no additional reporting requirements are imposed.
+A continuing grantee must demonstrate: completion of prior year obligations at the agreed level, an updated community feedback and response mechanism record showing that community feedback was received and responded to, and updated disaggregated outcome data. For trust-based unrestricted grants: the grantee's narrative report is the continuation evidence; no additional reporting requirements are imposed.
 
 A continuing program operator must demonstrate: the entry specification gate for the new cycle is published before the prior cycle closes, the participatory process specification is updated to reflect any design changes recommended by community decision-maker feedback, and the FPIC consent record is updated if the program has materially changed since the original consent was sought.
 
@@ -119,7 +119,7 @@ The following field specifications cover the intake fields most commonly require
 
 ### Field: Community Decision-Maker Role and Selection Process
 
-**Criterion intent:** Establishes how community members are identified, recruited, and empowered as grant reviewers, panel members, or fund allocators, so that the participatory grantmaking mechanism is transparent, the community decision-maker selection is accountable to the communities being served, and the authority of community decision-makers is unambiguous before anyone is invited to participate.
+**Criterion intent:** Establishes how community members are identified, recruited, and authorized as grant reviewers, panel members, or fund allocators, so that the participatory grantmaking mechanism is legible, the community decision-maker selection is answerable to the communities being served, and the authority of community decision-makers is unambiguous before anyone is invited to participate.
 
 **Operational definition:** A community decision-maker is a person who participates in the allocation decision for a grant program and who is from or representative of the communities the grant program serves, not a representative of the institutional funder or grantmaking foundation. The selection process is the method by which eligible community members are identified, recruited, and confirmed as panelists or allocators. The role specification describes what authority the community decision-maker has: whether their determination is final, whether it is a recommendation that can be overridden, or whether it is a weighted input into a combined funder-community decision.
 
@@ -215,17 +215,17 @@ The following field specifications cover the intake fields most commonly require
 
 ---
 
-### Field: Community Accountability Mechanism
+### Field: Community Feedback and Response Mechanism
 
-**Criterion intent:** Establishes how the funded program is directly accountable to the community it serves, distinct from accountability to the institutional funder, ensuring that community members have a structured channel to provide feedback on the program and that the program is obligated to respond.
+**Criterion intent:** Establishes how the funded program answers directly to the community it serves through a feedback and response channel, distinct from its obligation to the institutional funder, ensuring that community members have a structured channel to provide feedback on the program and that the program is bound to respond.
 
-**Operational definition:** A community accountability mechanism is a structured process through which community members can provide feedback on the funded program and receive a documented response from the program operator. The mechanism is direct: it does not route exclusively through the institutional funder. It is structured: feedback is collected through a named process with a defined frequency, format, and response obligation, not only through informal channels. It is responsive: the program operator is obligated to acknowledge feedback and describe what action, if any, was taken in response. Community accountability mechanisms include: community advisory boards with defined authority and meeting frequency, community feedback surveys with stated response requirements, community member participation in program evaluation, and public reporting to the community in accessible formats with an opportunity for community response.
+**Operational definition:** A community feedback and response mechanism is a structured process through which community members can provide feedback on the funded program and receive a documented response from the program operator. The mechanism is direct: it does not route exclusively through the institutional funder. It is structured: feedback is collected through a named process with a defined frequency, format, and response obligation, not only through informal channels. It is responsive: the program operator is obligated to acknowledge feedback and describe what action, if any, was taken in response. Community feedback and response mechanisms include: community advisory boards with defined authority and meeting frequency, community feedback surveys with stated response requirements, community member participation in program evaluation, and public reporting to the community in accessible formats with an opportunity for community response.
 
-**Response form:** Mechanism type (community advisory board, community survey, participatory evaluation, public reporting with response period, or combination). Frequency of feedback collection (quarterly, semi-annually, annually, or event-triggered). Format and language accessibility of the feedback process. The program's response obligation: within what time period, in what format, and by whom. How feedback will be documented and included in the attestation corpus. For programs serving indigenous communities under Sub-type D: how the community accountability mechanism relates to the FPIC ongoing consent process.
+**Response form:** Mechanism type (community advisory board, community survey, participatory evaluation, public reporting with response period, or combination). Frequency of feedback collection (quarterly, semi-annually, annually, or event-triggered). Format and language accessibility of the feedback process. The program's response obligation: within what time period, in what format, and by whom. How feedback will be documented and included in the attestation corpus. For programs serving indigenous communities under Sub-type D: how the community feedback and response mechanism relates to the FPIC ongoing consent process.
 
-**Evidence form:** At entry: the community accountability mechanism design document or the relevant section of the program design. At completion: the community feedback collected during the grant period (aggregated and anonymized), the program's documented responses to the feedback, and any program changes made in response to community feedback. A narrative describing instances where community feedback led to a program design change, or a statement that no design changes were made and the reason.
+**Evidence form:** At entry: the community feedback and response mechanism design document or the relevant section of the program design. At completion: the community feedback collected during the grant period (aggregated and anonymized), the program's documented responses to the feedback, and any program changes made in response to community feedback. A narrative describing instances where community feedback led to a program design change, or a statement that no design changes were made and the reason.
 
-**Conformance threshold:** A named mechanism type with a stated frequency, a documented response obligation, and a named person or role responsible for managing the mechanism. A program that relies entirely on informal community relationships as its accountability mechanism, without a structured feedback channel, does not satisfy this field. Programs where community accountability mechanisms exist in the grantee's general operations but are not specified in relation to the funded program do not satisfy this field; the mechanism must be explicitly connected to the grant-funded activities.
+**Conformance threshold:** A named mechanism type with a stated frequency, a documented response obligation, and a named person or role responsible for managing the mechanism. A program that relies entirely on informal community relationships as its feedback and response mechanism, without a structured feedback channel, does not satisfy this field. Programs where community feedback and response mechanisms exist in the grantee's general operations but are not specified in relation to the funded program do not satisfy this field; the mechanism must be explicitly connected to the grant-funded activities.
 
 ---
 
@@ -280,7 +280,7 @@ The affected population verification primitive requires that communities served 
 - **CRS ProPack (Catholic Relief Services)**: defines community feedback and response mechanisms (CFRMs) as required program design elements for all humanitarian and development programs; provides operational guidance on mechanism design, frequency, accessibility, and response obligations
 - **World Vision LEAP (Learning through Evaluation with Accountability and Planning)**: requires a Community-Based Feedback and Response Mechanism (CBFRM) for all World Vision programs; the mechanism must be designed before the program begins and must be accessible to all community members, including those with literacy or language barriers
 - **Core Humanitarian Standard (CHS) Commitment 5**: all organizations working in humanitarian contexts must establish feedback mechanisms through which affected people can report complaints and receive responses; Commitment 5 specifies that the mechanism must be known to all affected people, accessible without cost, and managed by a named person with response authority
-- **Community Foundation National Standards**: the Council on Foundations' national standards for community foundations include community accountability requirements that align with this primitive
+- **Community Foundation National Standards**: the Council on Foundations' national standards for community foundations include community feedback and response requirements that align with this primitive
 
 Compatibility statements: CRS-ProPack, World-Vision-LEAP, Core-Humanitarian-Standard-Commitment-5, Community-Foundation-National-Standards.
 
@@ -317,6 +317,15 @@ FPIC as a pre-condition for opening the entry specification gate is a new primit
 CROSS extends the FPIC principle by requiring that consent documentation be on record as a pre-condition for opening the entry specification gate. This means the consent process is prior to the gate, not part of it; the gate cannot open until consent is confirmed. This sequencing requirement is new in the grant management standards corpus.
 
 Compatibility statements: ILO-Convention-169, UN-DRIP, World-Bank-IPPF (references to FPIC in project design), but no existing framework specifies the gate sequence.
+
+---
+
+## Changelog
+
+| Version | Date | Summary |
+|---|---|---|
+| 0.1.1 | 2026-06-12 | Frame Language own-voice pass applied as part of the bundle long-tail sweep. Recast non-field leaks: "empowered as grant reviewers" to "authorized as grant reviewers"; the participatory mechanism "is transparent" to "is legible"; "accountable to the communities being served" to "answerable to the communities being served." Field rename, with Durgadas's sign-off: the WALKRI field "Community Accountability Mechanism" renamed to "Community Feedback and Response Mechanism" throughout (field heading, Application Gate, attestation and continuation references, definition and conformance threshold), aligning with the source frameworks it maps to (CRS ProPack community feedback and response mechanisms, World Vision LEAP Community-Based Feedback and Response Mechanism) and following the corpus precedent of "Beneficiary Accountability Gate" to "Affected Population Verification Gate." The field's defined content (a direct, structured, responsive community feedback channel) is unchanged; the term is recast. Citation use preserved: World Vision LEAP's full name, Annie E. Casey Results-Based Accountability, NCRP, OECD, FPIC. Left for the context-dependent follow-up: own-voice "beneficiaries." Em-dash- and watchlist-clean re-verified. |
+| 0.1.0 | 2026-05-19 | Initial bundle release. |
 
 ---
 

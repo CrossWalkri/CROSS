@@ -1,11 +1,12 @@
 ---
 title: CROSS Canonical Round Configuration Schema
-version: 0.1.1
-date: 2026-06-09
+version: 0.1.2
+date: 2026-06-13
 license: CC0
 status: Working draft. Initial specification.
 companion_standards:
-  - WALKRI v0.1.7 (github.com/CrossWalkri/WALKRI)
+  - WALKRI v0.2.0 (github.com/CrossWalkri/WALKRI)
+  - CROSS v0.5.2 (github.com/CrossWalkri/CROSS)
 related_documents:
   - CROSS-common-reporting-outcome-standards-schema-0_2_0.md
   - CROSS-grant-configurator-0_2_0.md
@@ -16,7 +17,7 @@ related_documents:
 
 # CROSS Canonical Round Configuration Schema
 
-Version 0.1.1 | 2026-06-09 | CC0
+Version 0.1.2 | 2026-06-13 | CC0
 
 ---
 
@@ -161,6 +162,8 @@ Required for all fields. When no external standard is referenced, carry `{"minim
 
 The result of WALKRI audit for this field. A field satisfying all five criterion specification requirements at conformant quality is an `instrument`. A field missing or failing any one is a `label`. A label may not be published in a CROSS+WALKRI conformant round without a documented override and revision timeline.
 
+As of WALKRI v0.2.0, WALKRI conformance also carries the instrument dependency declaration (WALKRI Section 3.9). The dependency graph among a round's fields is derived mechanically from the field set's own formal logic, attested, and carried in the conformance record; a field with no dependency edges declares `independent` under the Declared-Absent convention. The practical consequence for this schema is that a conformant round's derived and attested dependency graph travels with the field set, alongside the per-field verdicts above. This sentence reflects WALKRI's current state; it is not a new CROSS requirement.
+
 **`x-walkri-specification-version`** (string, semver, required)
 
 The version of this field specification. Enables downstream consumers to determine which definition applied to the data collected in any given reporting period.
@@ -247,7 +250,7 @@ The following is a minimal conformant round configuration for a Build obligation
 
 A platform translator converts from this canonical format to a specific form rendering platform's import format.
 
-**Preservation requirements.** A translator must preserve: the field identifier (`id`), the verdict (`x-walkri-verdict`), all five criterion specification properties, the specification version and date, and the round-level obligation architecture (obligation_mode, gate_type, change_specification, components). Properties that a target platform cannot render natively must be preserved as metadata fields, not discarded.
+**Preservation requirements.** A translator must preserve: the field identifier (`id`), the verdict (`x-walkri-verdict`), all five criterion specification properties, the specification version and date, the instrument dependency declaration and the derived dependency-graph artifact (WALKRI Section 3.9), including the `independent` Declared-Absent value where a field carries no dependency edges, and the round-level obligation architecture (obligation_mode, gate_type, change_specification, components). Properties that a target platform cannot render natively must be preserved as metadata fields, not discarded.
 
 **Addition permissions.** A translator may add platform-specific properties required for rendering. Platform properties do not override canonical properties; where a conflict exists, the canonical property takes precedence.
 
@@ -261,5 +264,6 @@ A platform translator converts from this canonical format to a specific form ren
 
 | Version | Date | Changes |
 |---|---|---|
+| 0.1.2 | 2026-06-13 | Companion-standard re-point after the WALKRI reconception. The pinned companion standards are updated to WALKRI v0.2.0 and CROSS v0.5.2. The instrument-vs-label audit section notes that, as of WALKRI v0.2.0, WALKRI conformance carries the instrument dependency declaration (WALKRI Section 3.9): the field-set dependency graph is derived mechanically, attested, and carried in the conformance record, with `independent` declared under the Declared-Absent convention for edgeless fields, so the derived and attested graph travels with the field set. The Translator Contract preservation list adds the dependency declaration and dependency-graph artifact to the properties a translator must preserve. These reflect WALKRI's current state and introduce no new CROSS requirement; no schema field changed. |
 | 0.1.1 | 2026-06-09 | Conformance-threshold rename and Frame Language own-voice pass. The field property `x-walkri-compliance-threshold` is renamed `x-walkri-conformance-threshold` (a breaking annotation-key rename, aligning with the JSON schemas at @0.2.1 and the interface specification). Own-voice watchlist terms recast (govern to covers/applies, the "compliant validators" gloss to "conformant", enforce to handling, accountability/accountable in the worked example to answerability/responsible). No field or requirement changed; naming and vocabulary only. |
 | 0.1.0 | 2026-05-22 | Initial specification. |

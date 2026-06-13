@@ -1,7 +1,7 @@
 ---
 title: CROSS+WALKRI Program Bundle - International Development
-version: 0.1.0
-date: 2026-05-19
+version: 0.1.1
+date: 2026-06-12
 license: CC0
 standards: CROSS v0.4.7 (github.com/CrossWalkri/CROSS), WALKRI v0.1.7 (github.com/CrossWalkri/WALKRI)
 bundle_type: international-development
@@ -70,7 +70,7 @@ International development programs routinely involve co-financing and parallel f
 
 **Beneficiary population specification:** The application must declare the target population with the disaggregation categories required by the program's entry specification. Where gender disaggregation is required, the application must specify the gender-disaggregated baseline for the primary indicators and the gender-disaggregated targets. Where geographic disaggregation is required (sub-national, district, or community level), the application must specify the geographic scope of activities and outcomes at that resolution.
 
-**Local partner and implementation structure:** The application must name the implementing organization(s), specify the role and responsibilities of each, and declare whether implementation is direct (the applying organization implements) or through local partners (sub-grantees, contracted service providers, government counterparts). Where local partners are primary implementers, the accountability structure for partner performance against the results framework must be stated.
+**Local partner and implementation structure:** The application must name the implementing organization(s), specify the role and responsibilities of each, and declare whether implementation is direct (the applying organization implements) or through local partners (sub-grantees, contracted service providers, government counterparts). Where local partners are primary implementers, the obligation structure for partner performance against the results framework must be stated.
 
 **Attribution or contribution declaration:** The application must confirm the causality stance declared in the entry specification gate and provide the counterfactual baseline: what condition exists in the target population without this intervention, and how that baseline was established. For contribution stance claims, the application must name the other actors contributing to the same outcome and describe the theory by which this program's contribution is distinguishable.
 
@@ -88,7 +88,7 @@ International development programs routinely involve co-financing and parallel f
 
 ### Attestation Gate and Corpus
 
-The Attestation Corpus for international development grants must be structured to satisfy both the funder's accountability requirements and the host-country government's program coordination requirements:
+The Attestation Corpus for international development grants must be structured to satisfy both the funder's obligation requirements and the host-country government's program coordination requirements:
 
 - Program documentation: the entry specification gate document, including the results framework with all eleven indicator fields, stored in the funder's official program repository
 - Application record: the approved application including the Theory of Change, indicator specifications, beneficiary population declaration, and concurrent funding disclosure
@@ -284,6 +284,15 @@ Coherence, the fifth OECD DAC criterion, requires that programs not undermine th
 **IATI as the attestation corpus for portfolio coherence:** The IATI Standard requires machine-readable publication of activity data including funding amounts, implementing organizations, geographic coordinates, sector codes, and results data. For bilateral development programs, IATI publication constitutes the machine-readable layer of the attestation corpus. Programs building development grant management infrastructure should treat IATI publication as a first-class output of the completion gate, not an afterthought. The IATI Activity Standard's result element maps directly onto CROSS's completion gate evidence requirements.
 
 **The disaggregation ratchet applied across a program lifecycle:** In development programming, disaggregation requirements typically increase rather than decrease as programs mature: a program might begin with gender disaggregation only, add geographic disaggregation at the mid-term review, and add disability disaggregation for the final phase. The CROSS disaggregation ratchet formalizes this norm: disaggregation may be extended but not contracted without a documented justification. Programs designing multi-phase development grants should build the ratchet into the continuation gate requirements explicitly.
+
+---
+
+## Changelog
+
+| Version | Date | Summary |
+|---|---|---|
+| 0.1.1 | 2026-06-12 | Frame Language own-voice pass applied as part of the bundle long-tail sweep. Two own-voice recasts: "the accountability structure for partner performance" to "the obligation structure for partner performance"; "the funder's accountability requirements" to "the funder's obligation requirements." Citation use preserved: the MEAL acronym (Monitoring, Evaluation, Accountability, and Learning), IATI (International Aid Transparency Initiative), Global Affairs Canada's ODA Accountability Act, and "governance quality" as a named development outcome domain. No field, conformance threshold, or compatibility mapping changed; vocabulary only. Em-dash- and watchlist-clean re-verified. |
+| 0.1.0 | 2026-05-19 | Initial bundle release. |
 
 ---
 

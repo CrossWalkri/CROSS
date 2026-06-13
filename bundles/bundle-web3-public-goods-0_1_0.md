@@ -1,7 +1,7 @@
 ---
 title: CROSS+WALKRI Program Bundle - Web3 and Public Goods Funding
-version: 0.1.0
-date: 2026-05-19
+version: 0.1.1
+date: 2026-06-12
 license: CC0
 standards: CROSS v0.4.7 (github.com/CrossWalkri/CROSS), WALKRI v0.1.7 (github.com/CrossWalkri/WALKRI)
 bundle_type: web3-public-goods
@@ -110,7 +110,7 @@ The following field specifications cover the intake fields most commonly require
 
 ### Field: Primary Wallet Address
 
-**Criterion intent:** Establishes the on-chain identity anchor for the applying entity; the address that will receive grant funds if awarded and that serves as the verifiable accountability anchor throughout the grant period.
+**Criterion intent:** Establishes the on-chain identity anchor for the applying entity; the address that will receive grant funds if awarded and that serves as the verifiable obligation anchor throughout the grant period.
 
 **Operational definition:** A wallet address is the cryptographic public key representation of the entity's on-chain identity. For individual contributors: the address they primarily use for on-chain activity in this ecosystem. For teams: the multi-sig or DAO governance-controlled address through which the team's treasury operates. For legal entities with on-chain operations: the address associated with the entity's primary on-chain presence.
 
@@ -212,7 +212,7 @@ The retroactive obligation mode assesses past contribution rather than specifyin
 
 ### On-chain Identity Anchor
 
-The on-chain identity anchor primitive requires a verifiable wallet address as the accountability subject. Relevant frameworks:
+The on-chain identity anchor primitive requires a verifiable wallet address as the obligation subject. Relevant frameworks:
 
 - **DAOIP-5**: DAO identity specification; wallet-anchored organizational identity
 - **CROSS Part IV**: on-chain identity anchor as sixth organizational identity field
@@ -271,6 +271,15 @@ These provide reference architectures for Web3 programs building toward portfoli
 **Impact Chain dependency graph (Optimism Retro Funding 2025):** Projects must declare their position in a causal chain showing how outputs contribute to downstream ecosystem outcomes. This is a specific implementation of the Theory of Change hierarchy primitive applied at the ecosystem level and enforced computationally. Programs building retroactive funding infrastructure should study this implementation.
 
 **Human-in-the-loop override with published conditions:** The 2025 Retro Funding methodology pre-specifies conditions under which the formula-based allocation can be overridden by a committee, with override conditions published before the round opens. This is CROSS's completion gate with a pre-specified override mechanism. This pattern is new in the corpus.
+
+---
+
+## Changelog
+
+| Version | Date | Summary |
+|---|---|---|
+| 0.1.1 | 2026-06-12 | Frame Language own-voice pass applied as part of the bundle long-tail sweep. Two own-voice recasts: "the verifiable accountability anchor" to "the verifiable obligation anchor"; "as the accountability subject" to "as the obligation subject." Kept as named web3 concepts and publication venues (admissible domain vocabulary): "DAO governance mechanisms," "governance forum," "governance-controlled address," "governance participation records," "on-chain governance record." No field, conformance threshold, or compatibility mapping changed; vocabulary only. Em-dash- and watchlist-clean re-verified. |
+| 0.1.0 | 2026-05-19 | Initial bundle release. |
 
 ---
 

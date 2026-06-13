@@ -1,7 +1,7 @@
 ---
 title: CROSS+WALKRI Program Bundle - Community Foundation
-version: 0.1.0
-date: 2026-05-19
+version: 0.1.1
+date: 2026-06-12
 license: CC0
 standards: CROSS v0.4.7 (github.com/CrossWalkri/CROSS), WALKRI v0.1.7 (github.com/CrossWalkri/WALKRI)
 bundle_type: community-foundation
@@ -21,7 +21,7 @@ Four program sub-types operate in this space with materially different obligatio
 
 **Sub-type B: Trust-based and equity-focused grantmaking** distributes multi-year unrestricted general operating support to organizations working on racial equity, social justice, and systemic change. Trust-Based Philanthropy emphasizes reducing burden, building trust, and sharing power with grantees. CROSS handles this sub-type through the Retroactive obligation mode for unrestricted recognition and the sufficiency position declaration for general operating support. The tension between TBP principles and pre-specification is real and is addressed directly in this bundle.
 
-**Sub-type C: Place-based community development** distributes resources from CDBG (Community Development Block Grant), CDFI (Community Development Financial Institution) Fund grants, and community action agency programs using CSBG ROMA (Community Services Block Grant Results-Oriented Management and Accountability). These programs are governed by federal accountability frameworks that pre-specify the national outcome goals against which all local activity is measured.
+**Sub-type C: Place-based community development** distributes resources from CDBG (Community Development Block Grant), CDFI (Community Development Financial Institution) Fund grants, and community action agency programs using CSBG ROMA (Community Services Block Grant Results-Oriented Management and Accountability). These programs operate under federal results frameworks that pre-specify the national outcome goals against which all local activity is measured.
 
 **Sub-type D: Participatory grantmaking** designs the grant review and decision-making process so that community members with lived experience of the issues being addressed hold decision-making authority over grant awards, not merely advisory roles. The participation structure itself is a pre-specified component of the entry specification gate.
 
@@ -61,7 +61,7 @@ Before any application window opens, the following must be committed to in writi
 
 **Organizational capacity indicators (for capacity-building grants):** Where the grant is explicitly for organizational capacity, the application must specify what capacity will be built and how that capacity will be measured. Acceptable capacity indicators include: staff positions filled, staff retention rates, board composition and diversity, financial reserves as a percentage of annual budget, technology systems implemented, or program delivery capacity measured by service volume. The capacity indicator must be specified to at minimum Fields 1 through 5 (name, definition, unit, baseline, target).
 
-**General operating support use declaration (for unrestricted grants):** For Sub-type B programs providing unrestricted support, the application must include an organizational identity and governance disclosure: the organization's mission, its geographic scope and primary community served, its governance structure (board composition, leadership demographics), its financial position (most recent audited financials or Form 990), and a narrative describing how the general operating support will be used. This disclosure is not a project indicator specification; it is the accountability frame for unrestricted recognition.
+**General operating support use declaration (for unrestricted grants):** For Sub-type B programs providing unrestricted support, the application must include an organizational identity and decision-standing disclosure: the organization's mission, its geographic scope and primary community served, its decision-standing structure (board composition, leadership demographics), its financial position (most recent audited financials or Form 990), and a narrative describing how the general operating support will be used. This disclosure is not a project indicator specification; it is the obligation frame for unrestricted recognition.
 
 ### Completion Gate
 
@@ -71,11 +71,11 @@ Before any application window opens, the following must be committed to in writi
 
 **Participatory process completion evidence:** For Sub-type D programs, the completion gate for the grantmaking process includes: documentation that community reviewers with the declared characteristics participated in the review, documentation of the weight applied to community voice in the final award decisions, and a process evaluation assessing whether the participation structure operated as designed. Grants awarded through a process that deviated from the pre-specified participation structure require a disclosure of the deviation.
 
-**Organizational performance for unrestricted grants:** For TBP-aligned programs, the completion gate for unrestricted grants is a periodic check-in rather than an indicator report. The completion assessment should confirm: the organization is still operating within its declared mission and geographic scope, its governance and leadership are consistent with the representation declared at application, and no material changes to the organization's capacity or fiscal health have occurred without disclosure.
+**Organizational performance for unrestricted grants:** For TBP-aligned programs, the completion gate for unrestricted grants is a periodic check-in rather than an indicator report. The completion assessment should confirm: the organization is still operating within its declared mission and geographic scope, its decision-standing and leadership are consistent with the representation declared at application, and no material changes to the organization's capacity or fiscal health have occurred without disclosure.
 
 ### Attestation Gate and Corpus
 
-The Attestation Corpus for community foundation grants should be structured for transparency to the community served as well as to the donor base:
+The Attestation Corpus for community foundation grants should be structured for legibility to the community served as well as to the donor base:
 
 - Grant guidelines: the entry specification gate document published before each cycle opens, archived in the funder's public grant database
 - Application record: the approved application with the population scope, indicator specifications, and concurrent funding disclosure, retained in the funder's grant management system
@@ -88,7 +88,7 @@ The Attestation Corpus for community foundation grants should be structured for 
 
 For multi-year grants and for programs that fund organizations in recurring cycles:
 
-A continuing grant must demonstrate: delivery of prior-period commitments against the results framework, updated population scope and demographic disaggregation data (the disaggregation ratchet applies: a continuing grant may not reduce its disaggregation below the prior period without justification), and disclosure of any changes to the organization's governance, leadership, or financial position since the prior application.
+A continuing grant must demonstrate: delivery of prior-period commitments against the results framework, updated population scope and demographic disaggregation data (the disaggregation ratchet applies: a continuing grant may not reduce its disaggregation below the prior period without justification), and disclosure of any changes to the organization's decision-standing, leadership, or financial position since the prior application.
 
 A continuing program must demonstrate: the geographic scope and community outcome frame for the new cycle are published before the previous cycle closes, racial equity analysis is updated with the most recent available baseline data, and the participation structure for Sub-type D programs is reviewed and affirmed or modified with community input before the new cycle opens.
 
@@ -144,7 +144,7 @@ The following field specifications cover the intake fields most commonly require
 
 ### Field: Community Decision-Maker Role and Weighting in Review Process
 
-**Criterion intent:** Establishes the specific role, selection process, and decision authority of community members in the grantmaking process, satisfying the pre-specification requirement for participatory grantmaking programs and creating accountability for whether the stated participation structure was actually implemented.
+**Criterion intent:** Establishes the specific role, selection process, and decision authority of community members in the grantmaking process, satisfying the pre-specification requirement for participatory grantmaking programs and making it checkable whether the stated participation structure was actually implemented.
 
 **Operational definition:** A community decision-maker is a person with lived experience of the conditions the grant program addresses who holds formal decision-making authority in the grant review process. Authority means a vote or veto that materially affects grant awards, not merely an advisory or consultative role. The weighting of community voice is the fraction of the decision authority held by community decision-makers relative to foundation staff, board members, or external experts. Selection of community reviewers must follow a process that is declared before the grant cycle opens.
 
@@ -215,7 +215,7 @@ The disaggregation ratchet in community foundation programs applies primarily to
 
 Community foundation programs have weaker independent verification requirements than research or bilateral development programs, but meaningful standards exist:
 
-- **360Giving (data transparency as a form of external verification):** 360Giving's open data standard for UK grant data enables third-party analysis of who receives grants, for what purpose, and in which geographies; public data publication is a transparency mechanism that functions as a distributed form of verification
+- **360Giving (data legibility as a form of external verification):** 360Giving's open data standard for UK grant data enables third-party analysis of who receives grants, for what purpose, and in which geographies; public data publication is a legibility mechanism that functions as a distributed form of verification
 - **Community Foundation National Standards accreditation:** the accreditation process includes a peer review of the foundation's grantmaking practices against the National Standards; accreditation status is a third-party verification of process quality
 
 *Compatibility statements:* 360Giving-Data-Standard, Community-Foundation-National-Standards-Accreditation, Equitable-Evaluation-Initiative.
@@ -259,7 +259,16 @@ The NCRP's coherence standard for equity-focused grantmaking requires that progr
 
 **The Trust-Based Philanthropy tension with pre-specification, resolved:** Trust-Based Philanthropy and CROSS's entry specification gate appear to be in conflict: TBP emphasizes reducing grantee burden and providing unrestricted support, while CROSS requires pre-specified indicators before awards are made. This bundle resolves the tension by distinguishing the level at which pre-specification applies. For TBP-aligned programs, the pre-specification is at the funder's portfolio level (what community conditions is the foundation working to change?), not at the grantee's project level (what will your specific program produce?). Unrestricted grants are recognized through the Retroactive obligation mode based on organizational contribution to those community conditions. The entry specification gate specifies the criteria for organizational recognition; the grantee is not asked to commit to project-specific indicators. This resolution is novel in the corpus and represents a genuine extension of CROSS's obligation mode architecture into the trust-based grantmaking context.
 
-**Geographic boundary as the primary scope anchor for community foundations:** Community foundations are distinctive among grantmaking organizations in that their geographic scope is constitutive of their identity; a community foundation exists to serve a specific place. The geographic boundary is not just a targeting parameter; it is the primary definition of the accountability subject. CROSS's population scope declaration, when applied to community foundation programs, should begin with the geographic boundary as the primary anchor and derive all other scope declarations from it. This means that the geographic scope must be specified with enough precision to determine which organizations and which populations fall within the mandate, not merely stated as a region name.
+**Geographic boundary as the primary scope anchor for community foundations:** Community foundations are distinctive among grantmaking organizations in that their geographic scope is constitutive of their identity; a community foundation exists to serve a specific place. The geographic boundary is not just a targeting parameter; it is the primary definition of the obligation subject. CROSS's population scope declaration, when applied to community foundation programs, should begin with the geographic boundary as the primary anchor and derive all other scope declarations from it. This means that the geographic scope must be specified with enough precision to determine which organizations and which populations fall within the mandate, not merely stated as a region name.
+
+---
+
+## Changelog
+
+| Version | Date | Summary |
+|---|---|---|
+| 0.1.1 | 2026-06-12 | Frame Language own-voice pass applied as part of the bundle long-tail sweep. Own-voice watchlist terms recast: "governed by federal accountability frameworks" to "operate under federal results frameworks"; own-voice "governance disclosure" and "governance structure" to "decision-standing" forms; "accountability frame" and "accountability subject" to obligation forms; "creating accountability for whether X was implemented" to "making it checkable whether X was implemented"; own-voice "transparency" to "legibility." Citation use preserved: Trust-Based Philanthropy Project, CSBG ROMA (its name carries "Accountability"), Annie E. Casey Results-Based Accountability (population and performance accountability are RBA's terms), OECD's consultation-to-empowerment spectrum, NCRP, 360Giving. No field, conformance threshold, or compatibility mapping changed; vocabulary only. Left for the context-dependent follow-up: own-voice uses of "beneficiary," not recast in this pass. Em-dash- and watchlist-clean re-verified. |
+| 0.1.0 | 2026-05-19 | Initial bundle release. |
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: CROSS+WALKRI Program Bundle - Fiscal Sponsorship
-version: 0.1.0
-date: 2026-05-19
+version: 0.1.1
+date: 2026-06-12
 license: CC0
 standards: CROSS v0.4.7 (github.com/CrossWalkri/CROSS), WALKRI v0.1.7 (github.com/CrossWalkri/WALKRI)
 bundle_type: fiscal-sponsorship
@@ -15,9 +15,9 @@ bundle_type: fiscal-sponsorship
 
 This bundle covers grant and funding programs in which a legally recognized nonprofit organization (the fiscal sponsor) holds grants on behalf of a project, initiative, or organization that lacks independent legal status or independent charitable determination. The fiscal sponsorship ecosystem includes comprehensive sponsorship arrangements, pre-approved grant relationships, independent contractor sponsorship, and cross-border arrangements in which a US 501(c)(3) sponsors non-US projects.
 
-Fiscal sponsorship creates a distinctive entity boundary problem that no other bundle in the CROSS+WALKRI corpus addresses: the legal grant recipient (the sponsor) and the operational program (the sponsored project) are different entities with different identities, different accountability structures, and potentially different relationships to the grant funder. CROSS's entity boundary primitive and organizational identity fields were designed with this problem in mind; this bundle specifies how to apply them in fiscal sponsorship contexts.
+Fiscal sponsorship creates a distinctive entity boundary problem that no other bundle in the CROSS+WALKRI corpus addresses: the legal grant recipient (the sponsor) and the operational program (the sponsored project) are different entities with different identities, different obligation structures, and potentially different relationships to the grant funder. CROSS's entity boundary primitive and organizational identity fields were designed with this problem in mind; this bundle specifies how to apply them in fiscal sponsorship contexts.
 
-Four program sub-types operate in this space with materially different legal structures, disbursement authorities, and accountability relationships. This bundle addresses all four and notes where provisions diverge.
+Four program sub-types operate in this space with materially different legal structures, disbursement authorities, and obligation relationships. This bundle addresses all four and notes where provisions diverge.
 
 **Sub-type A: Comprehensive fiscal sponsorship (NNFS Model A)** places the sponsored project entirely within the sponsor's legal identity. The sponsor is the legal grantee; the sponsored project has no independent legal standing. The sponsor controls all funds, hires project staff as its own employees, and bears full legal responsibility for the project's activities.
 
@@ -47,7 +47,7 @@ Before any application window opens (or before any grant agreement is executed b
 
 **Entity boundary declaration:** The primary entry-gate decision in fiscal sponsorship is the entity boundary declaration: which entity is the CROSS+WALKRI applying entity for this grant? The options are: (1) the fiscal sponsor (Sub-types A, D; and Sub-type C where the sponsor holds the grant), or (2) the sponsored project (Sub-type B; and Sub-type C where the project is the contractual party with the funder, which is atypical). This declaration governs which entity's organizational identity fields are completed, which entity's disbursement authority is declared, and which entity's Obligation Fulfillment Record is updated when the grant closes.
 
-**Fiscal sponsorship agreement type:** The NNFS model reference (A, C, L, or other) governs the legal relationship between sponsor and project. This must be declared at the entry gate because it determines: who controls the funds, who is legally responsible for grant compliance, whether the project can represent itself to third parties as operating under the sponsor's charitable status, and what happens to the OFR if the project changes sponsors.
+**Fiscal sponsorship agreement type:** The NNFS model reference (A, C, L, or other) governs the legal relationship between sponsor and project. This must be declared at the entry gate because it determines: who controls the funds, who is legally responsible for grant conformance, whether the project can represent itself to third parties as operating under the sponsor's charitable status, and what happens to the OFR if the project changes sponsors.
 
 **Disbursement authority declaration:** In comprehensive fiscal sponsorship (Sub-type A), the sponsor controls disbursement; the sponsored project does not have independent disbursement authority. In pre-approved grant relationships (Sub-type B), the project controls disbursement once the sponsor releases funds. This distinction must be declared at the entry gate; it affects the completion gate evidence (who signs off on fund use) and the attestation corpus (which entity's records must confirm expenditure).
 
@@ -59,9 +59,9 @@ Before any application window opens (or before any grant agreement is executed b
 
 ### Application Gate
 
-**Organizational identity of the applying entity:** For Sub-type A (comprehensive), the sponsor completes the full organizational identity declaration including its legal name, EIN, governance structure, current leadership, and prior grant history. The sponsored project's identity is declared within the sponsor's application as a program scope, not as a separate organizational identity.
+**Organizational identity of the applying entity:** For Sub-type A (comprehensive), the sponsor completes the full organizational identity declaration including its legal name, EIN, decision-standing structure, current leadership, and prior grant history. The sponsored project's identity is declared within the sponsor's application as a program scope, not as a separate organizational identity.
 
-For Sub-type B (pre-approved), the sponsored project completes the organizational identity declaration, including its own governance structure (even if informal, such as a steering committee or leadership team without independent legal standing) and the name and EIN of the fiscal sponsor standing behind the grant.
+For Sub-type B (pre-approved), the sponsored project completes the organizational identity declaration, including its own decision-standing structure (even if informal, such as a steering committee or leadership team without independent legal standing) and the name and EIN of the fiscal sponsor standing behind the grant.
 
 **Prior grant and OFR history:** For recurring sponsored projects, the OFR history must be disclosed. A project that has operated under prior fiscal sponsors must carry its OFR history with it; the current sponsor confirms receipt of the prior OFR and its completeness. A project whose prior OFR is incomplete or whose prior sponsor cannot confirm OFR delivery must disclose this gap at the application gate.
 
@@ -100,7 +100,7 @@ For recurring sponsored projects or multi-year fiscal sponsorship arrangements:
 
 A continuing comprehensive sponsorship (Sub-type A) must demonstrate: prior period restricted fund balance reconciled and closed, OFR complete for the prior grant period, and any changes to the sponsored project's leadership or scope disclosed and updated in the organizational identity declaration for the new period.
 
-A continuing pre-approved grant relationship (Sub-type B) must demonstrate: the sponsored project's prior OFR complete, the sponsor's charitable certification of the project's work renewed or confirmed as still current, and any changes to the project's governance or mission that might affect the sponsor's certification disclosed.
+A continuing pre-approved grant relationship (Sub-type B) must demonstrate: the sponsored project's prior OFR complete, the sponsor's charitable certification of the project's work renewed or confirmed as still current, and any changes to the project's decision-standing or mission that might affect the sponsor's certification disclosed.
 
 For projects changing sponsors mid-program: an OFR continuity package must be assembled by the outgoing sponsor, covering all gates completed under the prior sponsorship, and transferred to the incoming sponsor before the new grant period begins. The CROSS system treats a sponsor change as a material event requiring disclosure at the entry specification gate of the next grant period.
 
@@ -116,7 +116,7 @@ The following field specifications cover the intake fields most commonly require
 
 **Criterion intent:** Establishes which entity (fiscal sponsor or sponsored project) is the CROSS+WALKRI applying entity for this grant, resolving the foundational ambiguity in fiscal sponsorship arrangements before any other fields are completed.
 
-**Operational definition:** The applying entity is the entity that signs the grant agreement with the funder and bears legal accountability for grant compliance. In comprehensive fiscal sponsorship (Model A), this is always the sponsor; in pre-approved grant relationships (Model C), this is typically the sponsored project (which signs its own grant agreement with the funder, with the sponsor's certified endorsement); in independent contractor sponsorship (Model L), this is the sponsor (which holds the grant and contracts with the project). The entity boundary declaration must also name the other party: if the sponsor is the applying entity, the sponsored project must be named; if the sponsored project is the applying entity, the sponsor must be named. Both entities' legal identities and EINs (or equivalent for non-US entities) must appear in the declaration.
+**Operational definition:** The applying entity is the entity that signs the grant agreement with the funder and bears legal obligation for grant conformance. In comprehensive fiscal sponsorship (Model A), this is always the sponsor; in pre-approved grant relationships (Model C), this is typically the sponsored project (which signs its own grant agreement with the funder, with the sponsor's certified endorsement); in independent contractor sponsorship (Model L), this is the sponsor (which holds the grant and contracts with the project). The entity boundary declaration must also name the other party: if the sponsor is the applying entity, the sponsored project must be named; if the sponsored project is the applying entity, the sponsor must be named. Both entities' legal identities and EINs (or equivalent for non-US entities) must appear in the declaration.
 
 **Response form:** A declaration stating: (1) the applying entity (sponsor or project), with legal name and EIN; (2) the other party to the fiscal sponsorship arrangement, with legal name and EIN or registration number; (3) the NNFS model reference governing the relationship; and (4) which entity will control disbursement of grant funds.
 
@@ -128,21 +128,21 @@ The following field specifications cover the intake fields most commonly require
 
 ### Field: Fiscal Sponsorship Agreement Type
 
-**Criterion intent:** Documents the legal model governing the fiscal sponsorship arrangement, establishing the accountability structure, disbursement authority, and compliance obligations that flow from the choice of model.
+**Criterion intent:** Documents the legal model governing the fiscal sponsorship arrangement, establishing the obligation structure, disbursement authority, and conformance obligations that flow from the choice of model.
 
-**Operational definition:** The NNFS (National Network of Fiscal Sponsors) model taxonomy provides the standard reference for fiscal sponsorship agreement types. Model A (comprehensive): the project is entirely within the sponsor's legal identity; the sponsor employs the project's staff and holds all assets. Model C (pre-approved grant relationship): the project retains independence; the sponsor pre-approves the project's work as qualifying charitable activity and stands behind grants. Model L (independent contractor): the project delivers services to the sponsor under a contractor agreement. Other models exist in practice (Models B, D, E, F, G) for specific situations; if a model outside A, C, and L is used, the agreement must be described in sufficient detail to establish the accountability structure equivalent to an NNFS model reference.
+**Operational definition:** The NNFS (National Network of Fiscal Sponsors) model taxonomy provides the standard reference for fiscal sponsorship agreement types. Model A (comprehensive): the project is entirely within the sponsor's legal identity; the sponsor employs the project's staff and holds all assets. Model C (pre-approved grant relationship): the project retains independence; the sponsor pre-approves the project's work as qualifying charitable activity and stands behind grants. Model L (independent contractor): the project delivers services to the sponsor under a contractor agreement. Other models exist in practice (Models B, D, E, F, G) for specific situations; if a model outside A, C, and L is used, the agreement must be described in sufficient detail to establish the obligation structure equivalent to an NNFS model reference.
 
 **Response form:** The NNFS model designation (A, C, L, or other with description) and a brief description of the key features of the arrangement as it applies to this grant: who holds the funds, who controls disbursement, who employs the project staff (if any), and what happens to the project's assets if the sponsorship arrangement ends before the grant period closes.
 
 **Evidence form:** The executed fiscal sponsorship agreement, which specifies the model and its key provisions. For Model A arrangements: the agreement should confirm that the project operates as a program of the sponsor, that all assets are held by the sponsor, and that the project staff are employees of the sponsor. For Model C arrangements: the agreement should confirm the pre-approval mechanism, the independence of the project, and the sponsor's certification process. For international fiscal sponsorship (Sub-type D): the agreement must also address the equivalency determination or expenditure responsibility pathway the sponsor will use.
 
-**Conformance threshold:** A named NNFS model (or described alternative) with an executed agreement that confirms the key features of the model. An arrangement described as a fiscal sponsorship that does not conform to any recognized model (and cannot be described with enough specificity to establish the accountability structure) does not satisfy this field. The agreement must be executed before funds are disbursed; a verbal or email-based arrangement without a written agreement does not satisfy this field regardless of the parties' good faith.
+**Conformance threshold:** A named NNFS model (or described alternative) with an executed agreement that confirms the key features of the model. An arrangement described as a fiscal sponsorship that does not conform to any recognized model (and cannot be described with enough specificity to establish the obligation structure) does not satisfy this field. The agreement must be executed before funds are disbursed; a verbal or email-based arrangement without a written agreement does not satisfy this field regardless of the parties' good faith.
 
 ---
 
 ### Field: Disbursement Authority Confirmation
 
-**Criterion intent:** Establishes who controls the grant funds and under what mechanism funds flow from the holding entity to the operational project, providing the accountability anchor for fund use across the two-entity structure of fiscal sponsorship.
+**Criterion intent:** Establishes who controls the grant funds and under what mechanism funds flow from the holding entity to the operational project, providing the obligation anchor for fund use across the two-entity structure of fiscal sponsorship.
 
 **Operational definition:** Disbursement authority is the power to authorize expenditure of grant funds. In Model A (comprehensive), disbursement authority resides entirely with the sponsor; the sponsored project makes expenditure requests that the sponsor approves and processes through its own financial system. In Model C (pre-approved), disbursement authority resides with the sponsored project once the sponsor has released the grant funds; the project operates its own financial accounts and makes its own expenditure decisions within the scope of the pre-approved grant agreement. In Model L (contractor), disbursement authority resides with the sponsor (who holds the grant), while the contractor invoices for deliverables and is paid as a vendor. For international fiscal sponsorship (Sub-type D): disbursement authority over the initial grant resides with the US sponsor, which then transfers funds to the non-US project through a mechanism (expenditure responsibility or equivalency determination) that satisfies IRS requirements.
 
@@ -178,19 +178,19 @@ The following field specifications cover the intake fields most commonly require
 
 **Evidence form:** The disclosure itself is the evidence at the application gate. Funders may cross-reference grant databases and public financial filings (Form 990) to verify completeness. For federal grants: 2 CFR 200 requires disclosure of other federal awards; the concurrent sponsorship disclosure satisfies this requirement for the fiscal sponsorship dimension of the federal award.
 
-**Conformance threshold:** A disclosure that names all concurrent fiscal sponsors and overlapping grants for the declared scope. A disclosure that omits a known concurrent sponsorship arrangement is a material omission that triggers a completion gate review. "None" is a compliant response only when the project has no other fiscal sponsors and the sponsor holds no other grants covering the declared scope. For international fiscal sponsorship (Sub-type D): disclosure must cover US and non-US funding sources for the non-US project.
+**Conformance threshold:** A disclosure that names all concurrent fiscal sponsors and overlapping grants for the declared scope. A disclosure that omits a known concurrent sponsorship arrangement is a material omission that triggers a completion gate review. "None" is a conformant response only when the project has no other fiscal sponsors and the sponsor holds no other grants covering the declared scope. For international fiscal sponsorship (Sub-type D): disclosure must cover US and non-US funding sources for the non-US project.
 
 ---
 
 ### Field: Pass-Through Requirements
 
-**Criterion intent:** Documents which 2 CFR 200 requirements the fiscal sponsor is flowing down to the sponsored project as a pass-through entity for federal grants, ensuring that the sponsored project is aware of and compliant with applicable federal requirements.
+**Criterion intent:** Documents which 2 CFR 200 requirements the fiscal sponsor is flowing down to the sponsored project as a pass-through entity for federal grants, ensuring that the sponsored project is aware of and conformant with applicable federal requirements.
 
 **Operational definition:** Under 2 CFR 200, a pass-through entity is a non-federal entity that receives a federal award and subawards a portion of those funds to a subrecipient. If the sponsored project is a subrecipient (not merely a contractor), the sponsor must flow down all applicable federal requirements. Required pass-through information includes: the federal award identification number and date, the applicable CFDA number, all federal requirements imposed by the federal awarding agency on the award, and the indirect cost rate applicable to the project. The distinction between subrecipient and contractor (determined at the entry gate) governs which requirements apply: subrecipients are subject to 2 CFR 200 requirements; contractors are subject only to the contractor agreement terms.
 
 **Response form:** For grants subject to 2 CFR 200: a list of the federal requirements flowed down to the sponsored project, including the audit threshold and requirement, the cost principles applicable to the project's entity type, reporting requirements, and any award-specific terms. For grants not subject to 2 CFR 200 (private foundation grants, corporate grants): a statement confirming that this field does not apply and identifying the grant source.
 
-**Evidence form:** The sponsor's written notification to the sponsored project of applicable federal requirements, typically in the subaward agreement or pass-through letter. For model A (comprehensive): the sponsor bears all federal compliance obligations internally and is not flowing requirements down to a separate entity; this field is marked as not applicable with an explanation that the project operates entirely within the sponsor's legal identity. For model C (pre-approved): the pass-through requirements must be communicated in writing before any project expenditure begins.
+**Evidence form:** The sponsor's written notification to the sponsored project of applicable federal requirements, typically in the subaward agreement or pass-through letter. For model A (comprehensive): the sponsor bears all federal conformance obligations internally and is not flowing requirements down to a separate entity; this field is marked as not applicable with an explanation that the project operates entirely within the sponsor's legal identity. For model C (pre-approved): the pass-through requirements must be communicated in writing before any project expenditure begins.
 
 **Conformance threshold:** For grants subject to 2 CFR 200: a written notification to the sponsored project of all applicable requirements, executed before any subaward funds are disbursed. An oral communication of federal requirements, or a communication that omits the audit threshold or cost principles, does not satisfy this field. For grants not subject to 2 CFR 200: a confirmation that this field does not apply with the grant source identified. A blank field without explanation does not satisfy this field.
 
@@ -198,9 +198,9 @@ The following field specifications cover the intake fields most commonly require
 
 ### Field: Obligation Fulfillment Record Ownership
 
-**Criterion intent:** Establishes which entity maintains the Obligation Fulfillment Record for this grant and what happens to the OFR if the project changes sponsors, ensuring continuity of accountability across the lifecycle of the sponsored project.
+**Criterion intent:** Establishes which entity maintains the Obligation Fulfillment Record for this grant and what happens to the OFR if the project changes sponsors, ensuring continuity of obligation across the lifecycle of the sponsored project.
 
-**Operational definition:** The OFR is the cumulative record of a program's completion of gate requirements across all its grant periods. In fiscal sponsorship, OFR ownership follows the applying entity: the sponsor holds the OFR for Sub-type A (comprehensive), C (contractor), and D (international) grants; the sponsored project holds the OFR for Sub-type B (pre-approved) grants. When a project moves between sponsors, the OFR must move with it: the outgoing sponsor's completed gates become part of the project's accountability history, and the incoming sponsor must receive, review, and confirm the OFR before the new grant period begins. A project whose OFR cannot be transferred because the outgoing sponsor is defunct, unresponsive, or in dispute with the project must disclose this gap at the entry gate of the next grant period.
+**Operational definition:** The OFR is the cumulative record of a program's completion of gate requirements across all its grant periods. In fiscal sponsorship, OFR ownership follows the applying entity: the sponsor holds the OFR for Sub-type A (comprehensive), C (contractor), and D (international) grants; the sponsored project holds the OFR for Sub-type B (pre-approved) grants. When a project moves between sponsors, the OFR must move with it: the outgoing sponsor's completed gates become part of the project's obligation history, and the incoming sponsor must receive, review, and confirm the OFR before the new grant period begins. A project whose OFR cannot be transferred because the outgoing sponsor is defunct, unresponsive, or in dispute with the project must disclose this gap at the entry gate of the next grant period.
 
 **Response form:** A declaration of which entity holds the OFR for this grant (sponsor or project), the current status of the OFR (gates completed, gates pending, any open items from prior grant periods), and the transfer protocol if the project changes sponsors before the grant period closes. For new projects without prior OFR history: a statement confirming this is the first grant period for this project under this sponsor.
 
@@ -232,7 +232,7 @@ This section maps the fiscal sponsorship program type to the frameworks in the C
 
 ### Entity Boundary Primitive
 
-The entity boundary primitive requires programs to declare which entity bears accountability when the legal recipient and the operational program are different. Fiscal sponsorship is the primary domain in which this primitive applies:
+The entity boundary primitive requires programs to declare which entity bears obligation when the legal recipient and the operational program are different. Fiscal sponsorship is the primary domain in which this primitive applies:
 
 - **NNFS National Network of Fiscal Sponsors Guidelines**: the most formally published standard addressing the entity boundary problem; provides the model taxonomy (A, C, L, and others) that distinguishes the sponsor's legal identity from the project's operational identity.
 - **2 CFR 200 pass-through entity provisions**: the federal regulatory definition of the entity boundary between pass-through entity (fiscal sponsor) and subrecipient (sponsored project); the most legally consequential entity boundary standard in the US nonprofit sector.
@@ -283,7 +283,7 @@ Compatibility statements: INPAS International Non-Profit Accounting Standard, 2 
 The independent verification primitive requires that completion gate evidence be confirmed by a party independent of the applying entity. In fiscal sponsorship, the sponsor serves as the independent verification pathway for the sponsored project's work:
 
 - **Model C (pre-approved)**: the sponsor is the independent verification pathway for the sponsored project; the sponsor's certification of the project's work as qualifying charitable activity is the independent verification at the application gate, and the sponsor's review of the project's completion evidence is the independent verification at the completion gate.
-- **International fiscal sponsorship (Sub-type D)**: the US sponsor's equivalency determination or expenditure responsibility oversight is the independent verification pathway for the non-US project's work; the IRS requires this verification as a condition of maintaining the US sponsor's charitable status.
+- **International fiscal sponsorship (Sub-type D)**: the US sponsor's equivalency determination or expenditure responsibility monitoring is the independent verification pathway for the non-US project's work; the IRS requires this verification as a condition of maintaining the US sponsor's charitable status.
 - **CROSS independent verification principle**: the requirement that at least one gate assessment per grant period involve evidence reviewed by a party independent of the applying entity.
 
 Compatibility statements: NNFS Fiscal Sponsorship Guidelines (Model C certification role), IRS Expenditure Responsibility regulations, CROSS independent verification principle.
@@ -292,13 +292,22 @@ Compatibility statements: NNFS Fiscal Sponsorship Guidelines (Model C certificat
 
 ### Portfolio Aggregation at the Sponsor Level
 
-The sponsor-level portfolio of sponsored projects creates a distinctive form of portfolio aggregation: the sponsor holds accountability for multiple projects simultaneously, each with its own restricted fund account and OFR:
+The sponsor-level portfolio of sponsored projects creates a distinctive form of portfolio aggregation: the sponsor holds obligation for multiple projects simultaneously, each with its own restricted fund account and OFR:
 
 - **NNFS portfolio management**: fiscal sponsors managing multiple projects must maintain separate accounting for each; the NNFS guidelines address portfolio management at the sponsor level.
 - **CROSS portfolio aggregation mechanism**: applied at the sponsor level, the portfolio consists of all sponsored projects and the sponsor's own programs; the mechanism tracks obligation completion across the portfolio.
 - **PMD Pro/FMD Pro**: project management and financial management standards for development projects within sponsored structures; provides tools for multi-project tracking within a single organizational entity.
 
 Compatibility statements: NNFS Fiscal Sponsorship Guidelines, CROSS portfolio aggregation mechanism, PMD Pro (project management for development), FMD Pro (financial management for development), GPC Grant Professional Certification Standards.
+
+---
+
+## Changelog
+
+| Version | Date | Summary |
+|---|---|---|
+| 0.1.1 | 2026-06-12 | Frame Language own-voice pass applied as part of the bundle long-tail sweep. Own-voice watchlist terms recast to obligation and conformance vocabulary: "accountability structure," "accountability relationships," "accountability anchor," "accountability history," and "bears accountability" recast to obligation forms; own-voice "governance structure" recast to "decision-standing structure"; own-voice "compliance" and "compliant" recast to "conformance" and "conformant"; "oversight" recast to "monitoring" in the expenditure-responsibility context. Citation use of source frameworks preserved (2 CFR 200, GFGP ARS 1651, NNFS, INPAS, IRS expenditure responsibility). No field, conformance threshold, or compatibility mapping changed; vocabulary only. One borderline left for review: "IRS compliance pathway" retained as citation of the IRS regulatory regime. Em-dash- and watchlist-clean re-verified. |
+| 0.1.0 | 2026-05-19 | Initial bundle release. |
 
 ---
 

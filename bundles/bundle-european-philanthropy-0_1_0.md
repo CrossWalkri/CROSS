@@ -1,7 +1,7 @@
 ---
 title: CROSS+WALKRI Program Bundle - European Philanthropy
-version: 0.1.0
-date: 2026-05-19
+version: 0.1.1
+date: 2026-06-12
 license: CC0
 standards: CROSS v0.4.7 (github.com/CrossWalkri/CROSS), WALKRI v0.1.7 (github.com/CrossWalkri/WALKRI)
 bundle_type: european-philanthropy
@@ -15,7 +15,7 @@ bundle_type: european-philanthropy
 
 This bundle covers grant and funding programs operating within European philanthropic, development finance, and EU regulatory contexts. The ecosystem spans impact investing and venture philanthropy, EU structural and cohesion fund grantmaking, European foundation and bilateral aid programs, and EU social enterprise impact measurement frameworks.
 
-Four program sub-types operate in this space with materially different accountability structures, regulatory requirements, and measurement frameworks. This bundle addresses all four and notes where provisions diverge.
+Four program sub-types operate in this space with materially different obligation structures, regulatory requirements, and measurement frameworks. This bundle addresses all four and notes where provisions diverge.
 
 **Sub-type A: European impact investing and venture philanthropy** engages social enterprises and mission-driven organizations with a blend of financial return expectations and social outcome requirements. Key practitioners include EVPA (European Venture Philanthropy Association) members, Ashoka, and social enterprise support intermediaries. The EVPA five-step impact measurement model (plan, do, assess, review, share) is the embedded standard.
 
@@ -80,7 +80,7 @@ Before any application window opens (or before a Managing Authority commits to a
 
 **Sub-type A (venture philanthropy):** Step 3 of the EVPA model (assess) is the completion gate. Evidence must confirm: declared output indicators achieved, outcome indicators assessed against targets, and a review (Step 4) that identifies learning to carry forward. The sharing step (Step 5) is the attestation gate: findings are published for the field.
 
-**Sub-type B (ESIF):** Completion evidence addresses output and result indicators against the targets declared in the performance framework. For the mid-term performance review (2025 for 2021-2027 programmes): output indicator achievement against 2024 milestones determines whether funds are maintained or subject to reprogramming. This is portfolio-level accountability with financial consequences; milestone underachievement is not merely an evidence gap but may trigger fund reallocation.
+**Sub-type B (ESIF):** Completion evidence addresses output and result indicators against the targets declared in the performance framework. For the mid-term performance review (2025 for 2021-2027 programmes): output indicator achievement against 2024 milestones determines whether funds are maintained or subject to reprogramming. This is portfolio-level obligation with financial consequences; milestone underachievement is not merely an evidence gap but may trigger fund reallocation.
 
 **Sub-type C (European foundations and Nordic bilateral):** Completion evidence addresses outcomes in the IOOI chain: changes in participant conditions attributable to the programme's activities. Nordic results-based management frameworks require evidence of outcomes linked to the declared Theory of Change, with country-ownership evidence (partner government or civil society confirmation of results) for bilateral programmes.
 
@@ -307,6 +307,15 @@ ICMA Social Bond Principles define four components of social bond reporting that
 The Social Bond Principles provide the closest parallel to CROSS's four-gate structure in capital markets contexts.
 
 Compatibility statements: ICMA Social Bond Principles, EU GECES Social Impact Measurement (2014), EVPA Five-Step Impact Measurement, INDIGO Social Impact Bond database.
+
+---
+
+## Changelog
+
+| Version | Date | Summary |
+|---|---|---|
+| 0.1.1 | 2026-06-12 | Frame Language own-voice pass applied as part of the bundle long-tail sweep. Two own-voice recasts: "materially different accountability structures" to "obligation structures"; "portfolio-level accountability with financial consequences" to "portfolio-level obligation with financial consequences." Citation use preserved throughout: the EU ESIF "mandatory common indicators" (a regulatory term of art, the bulk of the watchlist hits), the fund regulations, EVPA's "stakeholder map," GECES, ICMA. No field, conformance threshold, or compatibility mapping changed; vocabulary only. Em-dash- and watchlist-clean re-verified. |
+| 0.1.0 | 2026-05-19 | Initial bundle release. |
 
 ---
 
