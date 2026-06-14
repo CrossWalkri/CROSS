@@ -5,7 +5,7 @@ date: 2026-06-08
 license: CC0
 standards: CROSS v0.4.0 (github.com/CrossWalkri/CROSS), WALKRI v0.1.6 (github.com/CrossWalkri/WALKRI)
 references:
-  - Packard Foundation Guiding Principles and Practices for Monitoring, Evaluation and Learning, 2019 revision, https://www.packard.org/wp-content/uploads/2019/01/MELGuidingPrinciples.pdf
+  - Packard Foundation Guiding Principles and Practices for Monitoring, Evaluation and Learning, 2019 revision, 
 lens_tags:
   calibration_tier: outcome_specified_self_reported
   authority_source: voluntary_published
@@ -91,7 +91,7 @@ CROSS: github.com/CrossWalkri/CROSS
 
 WALKRI: github.com/CrossWalkri/WALKRI
 
-Packard Foundation MEL Guiding Principles: https://www.packard.org/wp-content/uploads/2019/01/MELGuidingPrinciples.pdf
+Packard Foundation MEL Guiding Principles: 
 
 License: CC0
 

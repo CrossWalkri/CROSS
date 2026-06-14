@@ -6,8 +6,8 @@ license: CC0
 standards: CROSS v0.4.2 (github.com/CrossWalkri/CROSS), WALKRI v0.1.6 (github.com/CrossWalkri/WALKRI)
 references:
   - https://www.sida.se/en/for-partners/guidance-for-sidas-partner-organisations/evaluation-of-swedish-development-cooperation
-  - https://www.norad.no/globalassets/filer/partner/utlysninger/guidelines-for-applicants-on-results-and-knowledge-management--ny.pdf
-  - https://um.dk/en/-/media/websites/umen/danida/results/evaluation-of-development-assistance/relevant-documents/evaluationpolicy2020.ashx
+  - https://www.norad.no/globalassets/filer/partner/utlysninger/2025/guidelines-for-applicants-on-results-and-knowledge-management--ny.pdf
+  - https://um.dk/en/danida/results/eval/reference-documents
 lens_tags:
   calibration_tier: independently_verified
   authority_source: statutory
@@ -100,9 +100,9 @@ WALKRI: github.com/CrossWalkri/WALKRI
 
 Sida evaluation guidance: https://www.sida.se/en/for-partners/guidance-for-sidas-partner-organisations/evaluation-of-swedish-development-cooperation
 
-Norad results guidelines: https://www.norad.no/globalassets/filer/partner/utlysninger/guidelines-for-applicants-on-results-and-knowledge-management--ny.pdf
+Norad results guidelines: https://www.norad.no/globalassets/filer/partner/utlysninger/2025/guidelines-for-applicants-on-results-and-knowledge-management--ny.pdf
 
-Danida Evaluation Policy 2020: https://um.dk/en/-/media/websites/umen/danida/results/evaluation-of-development-assistance/relevant-documents/evaluationpolicy2020.ashx
+Danida Evaluation Policy 2020: https://um.dk/en/danida/results/eval/reference-documents
 
 License: CC0
 

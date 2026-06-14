@@ -9,7 +9,7 @@ references:
   - https://lwr.org/dmel
   - http://lwrdmel.weebly.com/
   - https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4160271
-  - https://corusinternational.org/lwr
+  - https://corusinternational.org/Lutheran-World-Relief
 lens_tags:
   calibration_tier: outcome_specified_self_reported
   authority_source: voluntary_published

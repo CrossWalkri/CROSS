@@ -6,7 +6,7 @@ license: CC0
 standards: CROSS v0.4.4 (github.com/CrossWalkri/CROSS), WALKRI v0.1.7 (github.com/CrossWalkri/WALKRI)
 references:
   - https://usaidlearninglab.org/faq/collaborating,-learning,-and-adapting-cla
-  - https://www.workwithusaid.gov/resource-library/collaborating-learning-and-adapting-cla-toolkit
+  - 
   - https://www.thepolicypractice.com/sites/default/files/2025-03/508c_cla_framework_two-pager_a4_ip_v1_2022-07-28_1.pdf
 lens_tags:
   calibration_tier: outcome_specified_self_reported

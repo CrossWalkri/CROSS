@@ -5,9 +5,9 @@ date: 2026-06-08
 license: CC0
 standards: CROSS v0.4.2 (github.com/CrossWalkri/CROSS), WALKRI v0.1.6 (github.com/CrossWalkri/WALKRI)
 references:
-  - https://www.impacteurope.net/sites/www.evpa.ngo/files/publications/EVPA_A_Practical_Guide_to_Measuring_and_-Managing_Impact_final.pdf
+  - https://thegiin.org/publication/research/a-practical-guide-to-measuring-and-managing-impact/
   - https://www.impacteurope.net
-  - https://socialvalueint.org/principles-of-social-value/
+  - https://www.socialvalueint.org/principles
 lens_tags:
   calibration_tier: outcome_specified_self_reported
   authority_source: voluntary_published
@@ -93,7 +93,7 @@ WALKRI: github.com/CrossWalkri/WALKRI
 
 EVPA / Impact Europe: https://www.impacteurope.net
 
-EVPA Practical Guide: https://www.impacteurope.net/sites/www.evpa.ngo/files/publications/EVPA_A_Practical_Guide_to_Measuring_and_-Managing_Impact_final.pdf
+EVPA Practical Guide: https://thegiin.org/publication/research/a-practical-guide-to-measuring-and-managing-impact/
 
 License: CC0
 

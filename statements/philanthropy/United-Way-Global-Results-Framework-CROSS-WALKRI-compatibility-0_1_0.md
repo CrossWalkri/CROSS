@@ -8,10 +8,10 @@ references:
   - https://www.unitedway.org/
   - https://clearimpact.com/solutions/united-way/global-results-framework/
   - https://clearimpact.com/rba-case-study-united-way-worldwide/
-  - https://clearimpact.com/uww-global-results-framework-data-reporting-guide/
-  - https://clearimpact.com/uww-global-results-framework-orientation/
+  - https://clearimpact.com/solutions/united-way/global-results-framework/
+  - https://clearimpact.com/solutions/united-way/global-results-framework/
   - https://clearimpact.com/scorecard/united-way-software/
-  - https://www.unitedway.org/the-latest/press/uw-programs-helped-nearly-4k-children-enter-primary-school-ready-to-learn
+  - 
   - https://equity.unitedway.org/equity-impact/overview
 lens_tags:
   calibration_tier: outcome_specified_self_reported

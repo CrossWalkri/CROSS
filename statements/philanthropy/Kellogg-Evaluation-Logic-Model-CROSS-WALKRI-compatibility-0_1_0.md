@@ -7,7 +7,7 @@ standards: CROSS v0.4.4 (github.com/CrossWalkri/CROSS), WALKRI v0.1.7 (github.co
 references:
   - https://www.betterevaluation.org/sites/default/files/2022-07/EvaluationHandbook.pdf
   - https://www.betterevaluation.org/tools-resources/wk-kellogg-foundation-logic-model-guide
-  - https://www.nj.gov/state/assets/pdf/ofbi/kellogg-foundation-logic-model-development-guide.pdf
+  - https://wkkf.issuelab.org/resource/logic-model-development-guide.html
 lens_tags:
   calibration_tier: outcome_specified_self_reported
   authority_source: voluntary_published

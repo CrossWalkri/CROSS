@@ -8,7 +8,7 @@ references:
   - COPE Ethical Guidelines for Peer Reviewers (v2), https://publicationethics.org/files/cope-ethical-guidelines-peer-reviewers-v2_0.pdf
   - COPE guidance index, https://publicationethics.org/guidance/Guidelines
   - Committee on Publication Ethics organizational scope, https://publicationethics.org/
-  - IDEAS Competencies for Development Evaluation (2012), https://ideas-global.org/ideas-competencies/
+  - IDEAS Competencies for Development Evaluation (2012), https://ideas-global.org/about/professionalisation/
   - AEA/JCSEE Program Evaluation Standards, https://www.eval.org/About/Competencies-Standards/Program-Evaluation-Standards
 lens_tags:
   calibration_tier: process_conformant
@@ -114,7 +114,7 @@ COPE Ethical Guidelines for Peer Reviewers: https://publicationethics.org/files/
 
 COPE guidance index: https://publicationethics.org/guidance/Guidelines
 
-IDEAS Competencies for Development Evaluation: https://ideas-global.org/ideas-competencies/
+IDEAS Competencies for Development Evaluation: https://ideas-global.org/about/professionalisation/
 
 AEA/JCSEE Program Evaluation Standards: https://www.eval.org/About/Competencies-Standards/Program-Evaluation-Standards
 

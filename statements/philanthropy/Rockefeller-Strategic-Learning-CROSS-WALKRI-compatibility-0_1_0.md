@@ -6,7 +6,7 @@ license: CC0
 standards: CROSS v0.4.1 (github.com/CrossWalkri/CROSS), WALKRI v0.1.6 (github.com/CrossWalkri/WALKRI)
 references:
   - https://www.rockefellerfoundation.org/perspective/deepening-impact-through-strategic-learning/
-  - https://www.rockefellerfoundation.org/report/2024-impact-report/
+  - https://www.rockefellerfoundation.org/reports/impact-report/
 lens_tags:
   calibration_tier: outcome_specified_self_reported
   authority_source: voluntary_published

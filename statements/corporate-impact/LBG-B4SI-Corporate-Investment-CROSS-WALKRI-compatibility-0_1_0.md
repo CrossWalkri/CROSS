@@ -6,7 +6,7 @@ license: CC0
 standards: CROSS v0.4.2 (github.com/CrossWalkri/CROSS), WALKRI v0.1.6 (github.com/CrossWalkri/WALKRI)
 references:
   - https://b4si.net/wp-content/uploads/2018/10/LBG-Public-Guidance-Manual_2018.pdf
-  - https://onlbg.com/en/the-methodological-framework/
+  - https://b4si.net/framework/
 lens_tags:
   calibration_tier: outcome_specified_self_reported
   authority_source: voluntary_published
