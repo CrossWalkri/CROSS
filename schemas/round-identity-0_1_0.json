@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/CrossWalkri/CROSS/main/schemas/round-identity-0_1_0.json",
+  "title": "CROSS+WALKRI Round Identity Sub-Schema",
+  "description": "Shared identity sub-schema referenced by every cohort-specific schema in the CROSS+WALKRI family. The fields here are the join key across cohort artifacts for a single round.",
+  "x-cross-walkri-version": "0.1.0",
+  "x-cross-walkri-canonical-id": "cross-walkri/round-identity@0.1.0",
+  "x-cross-walkri-target-release": "cross-walkri/release@1.0",
+  "type": "object",
+  "required": ["round_id", "program_id", "funder_id", "conforms_to"],
+  "properties": {
+    "round_id": {
+      "type": "string",
+      "pattern": "^[a-zA-Z0-9_-]+$",
+      "x-cross-walkri-primitive": "Gate Type (Layer 3)",
+      "x-cross-walkri-source-section": "CROSS Part IV",
+      "description": "Unique identifier for the round within the program. Stable across all cohort artifacts referencing this round."
+    },
+    "program_id": {
+      "type": "string",
+      "pattern": "^[a-zA-Z0-9_-]+$",
+      "x-cross-walkri-primitive": "Entity Boundary (Layer 2)",
+      "x-cross-walkri-source-section": "CROSS Part IV.A",
+      "description": "The funding program this round belongs to. A program may contain multiple rounds; a round belongs to exactly one program."
+    },
+    "funder_id": {
+      "type": "string",
+      "pattern": "^[a-zA-Z0-9_-]+$",
+      "x-cross-walkri-primitive": "Entity Boundary (Layer 2)",
+      "x-cross-walkri-source-section": "CROSS Part IV.A",
+      "description": "The funding entity operating this round. Maps to the funder side of the Funder-Side Obligation Architecture."
+    },
+    "cycle_number": {
+      "type": "integer",
+      "minimum": 1,
+      "x-cross-walkri-primitive": "Gate Type (Layer 3)",
+      "x-cross-walkri-source-section": "CROSS Part IV",
+      "description": "The numeric cycle this round occupies within the program. Increments per round; resets only on program retirement."
+    },
+    "conforms_to": {
+      "type": "string",
+      "pattern": "^cross-walkri/release@[0-9]+\\.[0-9]+$",
+      "x-cross-walkri-primitive": "Schema Family Coherence (Evolution Rules Commitment 2)",
+      "x-cross-walkri-source-section": "Evolution Rules Section 5",
+      "description": "The CROSS+WALKRI family release-snapshot this round instance claims to satisfy. Validators enforce that all referenced schema versions match the release-snapshot manifest."
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,103 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/CrossWalkri/CROSS/main/schemas/runbook-0_1_0.json",
+  "title": "CROSS+WALKRI Runbook Schema (Operator Cohort)",
+  "description": "The operational procedures the round operates under. Specifies the CLEAR stages with their procedural details, the determination procedures, and the inter-cycle reflection and pre-award indicator confirmation stages. This is the operator-cohort artifact that operationalizes the full CLEAR lifecycle.",
+  "x-cross-walkri-version": "0.1.0",
+  "x-cross-walkri-canonical-id": "cross-walkri/runbook@0.1.0",
+  "x-cross-walkri-cohort": "operator",
+  "x-cross-walkri-clear-stage": "Commit through Register",
+  "x-cross-walkri-target-release": "cross-walkri/release@1.0",
+  "type": "object",
+  "required": ["round_identity", "clear_stages", "determination_procedures", "conforms_to"],
+  "properties": {
+    "round_identity": {
+      "$ref": "https://raw.githubusercontent.com/CrossWalkri/CROSS/main/schemas/round-identity-0_1_0.json",
+      "x-cross-walkri-source-section": "CROSS Part IV (shared identity layer)"
+    },
+    "clear_stages": {
+      "type": "object",
+      "required": ["commit", "list", "evaluate", "attest", "register"],
+      "properties": {
+        "commit": {
+          "type": "object",
+          "description": "The funder publishes the obligation architecture. Round-config publication date, runbook publication date, and applicant-facing-publication date all sit in this stage."
+        },
+        "list": {
+          "type": "object",
+          "description": "Intake against the published specification. Application open and close dates, declarations required, and disqualification triggers."
+        },
+        "evaluate": {
+          "type": "object",
+          "description": "Assessment against the committed criteria. Determination body engagement, scoring procedure, and finding generation."
+        },
+        "attest": {
+          "type": "object",
+          "description": "Evidence submitted at completion. Attestation Corpus query procedures, evidence form requirements, and verification steps."
+        },
+        "register": {
+          "type": "object",
+          "description": "Outcomes registered into the institutional record. Public publication of determinations, attestation corpus updates, and inter-cycle reflection inputs."
+        }
+      },
+      "x-cross-walkri-primitive": ["Gate Type (Layer 3)", "CLEAR Lifecycle (Foundational Anchor)"],
+      "x-cross-walkri-source-section": "Primitives Foundation v0.1.6 Foundational Structural Anchors",
+      "description": "The five stages of the round lifecycle as procedurally specified."
+    },
+    "determination_procedures": {
+      "type": "object",
+      "required": ["determination_body_reference", "scoring_procedure"],
+      "properties": {
+        "determination_body_reference": {
+          "type": "string",
+          "description": "Reference to the determination body specified in the round-config."
+        },
+        "scoring_procedure": {
+          "type": "string"
+        },
+        "tie_break_procedure": {
+          "type": "string"
+        },
+        "appeals_procedure": {
+          "type": "string"
+        }
+      },
+      "x-cross-walkri-primitive": "Determination Body Separation (Layer 4)",
+      "x-cross-walkri-source-section": "CROSS Part VIII",
+      "description": "How the determination body operates during the Evaluate stage."
+    },
+    "pre_award_indicator_confirmation": {
+      "type": "object",
+      "properties": {
+        "confirmation_required": {
+          "type": "boolean"
+        },
+        "confirmation_procedure": {
+          "type": "string"
+        }
+      },
+      "x-cross-walkri-primitive": "Pre-Award Indicator Confirmation Stage (Layer 3)",
+      "x-cross-walkri-source-section": "Primitives Foundation v0.1.6 Layer 3",
+      "description": "The stage at which the program confirms with the applicant which indicators of contribution will be measured before evaluation runs."
+    },
+    "inter_cycle_reflection": {
+      "type": "object",
+      "properties": {
+        "reflection_required": {
+          "type": "boolean"
+        },
+        "publication_deadline": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "x-cross-walkri-primitive": "Inter-cycle Reflection Stage (Layer 4)",
+      "x-cross-walkri-source-section": "Primitives Foundation v0.1.6 Layer 4",
+      "description": "Reflection on round outcomes published before the next cycle opens, instantiating pre-commitment as structural posture."
+    },
+    "conforms_to": {
+      "type": "string",
+      "pattern": "^cross-walkri/runbook@[0-9]+\\.[0-9]+\\.[0-9]+$"
+    }
+  }
+}

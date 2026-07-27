@@ -1,0 +1,319 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/CrossWalkri/CROSS/main/schemas/runbook-0_2_0.json",
+  "title": "CROSS+WALKRI Runbook Schema (Operator Cohort)",
+  "description": "The operational procedures the round operates under, fully populated. Disambiguation from Round Config: the Round Config specifies what is to be done (parameters, rules, configurations); the Runbook specifies how those parameters are operationally executed across the CLEAR lifecycle. Supersedes v0.1.0 (skeleton).",
+  "x-cross-walkri-version": "0.2.0",
+  "x-cross-walkri-canonical-id": "cross-walkri/runbook@0.2.0",
+  "x-cross-walkri-cohort": "operator",
+  "x-cross-walkri-clear-stage": "Commit through Register",
+  "x-cross-walkri-supersedes": "cross-walkri/runbook@0.1.0",
+  "x-cross-walkri-target-release": "cross-walkri/release@1.0",
+  "type": "object",
+  "required": [
+    "round_identity",
+    "clear_stages",
+    "determination_procedures",
+    "adverse_signal_engagement_procedures",
+    "attestation_corpus_query_procedures",
+    "redress_procedures",
+    "reporting_procedures",
+    "conflict_of_interest_procedures",
+    "conforms_to"
+  ],
+  "properties": {
+    "round_identity": {
+      "$ref": "https://raw.githubusercontent.com/CrossWalkri/CROSS/main/schemas/round-identity-0_1_0.json",
+      "x-cross-walkri-source-section": "CROSS Part IV (shared identity layer)"
+    },
+    "round_config_reference": {
+      "type": "string",
+      "pattern": "^cross-walkri/round-config@[0-9]+\\.[0-9]+\\.[0-9]+$",
+      "x-cross-walkri-primitive": "Schema Family Coherence (Evolution Rules Commitment 2)",
+      "description": "The Round Config version this runbook operationalizes. The runbook executes the configuration; the configuration defines the rules."
+    },
+    "clear_stages": {
+      "type": "object",
+      "required": ["commit", "list", "evaluate", "attest", "register"],
+      "properties": {
+        "commit": {
+          "type": "object",
+          "properties": {
+            "round_config_publication_procedure": {"type": "string"},
+            "runbook_publication_procedure": {"type": "string"},
+            "applicant_facing_publication_procedure": {"type": "string"},
+            "publication_deadlines": {"type": "object"},
+            "publication_location": {"type": "string"},
+            "version_control_methodology": {"type": "string"}
+          },
+          "description": "Funder publishes the obligation architecture. All three artifacts (round-config, runbook, applicant-facing-publication) are produced and published. Publication is immutable from this point; any modification requires a new round identifier."
+        },
+        "list": {
+          "type": "object",
+          "properties": {
+            "application_intake_procedure": {"type": "string"},
+            "intake_platform": {"type": "string"},
+            "declaration_collection_procedure": {"type": "string"},
+            "pre_condition_check_procedure": {"type": "string"},
+            "incomplete_application_handling": {"type": "string"},
+            "extension_handling": {"type": "string"}
+          },
+          "description": "Intake against the published specification. Applications collected; pre-conditions checked; incomplete applications handled per published rules."
+        },
+        "evaluate": {
+          "type": "object",
+          "properties": {
+            "determination_body_engagement_procedure": {"type": "string"},
+            "scoring_procedure": {"type": "string"},
+            "tie_break_procedure": {"type": "string"},
+            "deliberation_documentation_procedure": {"type": "string"},
+            "finding_generation_procedure": {"type": "string"},
+            "rigor_tier_calibration_procedure": {"type": "string"}
+          },
+          "description": "Assessment against the committed criteria. Determination body engages applications; scoring procedure applied; findings generated and recorded."
+        },
+        "attest": {
+          "type": "object",
+          "properties": {
+            "evidence_submission_procedure": {"type": "string"},
+            "evidence_verification_procedure": {"type": "string"},
+            "attestation_corpus_query_invocation": {"type": "string"},
+            "evidence_strength_validation_procedure": {"type": "string"},
+            "completion_gate_finding_procedure": {"type": "string"},
+            "iteration_handling_procedure": {
+              "type": "string",
+              "description": "Applies at progress verification gates (Developmental in character). Does not apply at completion verification gates (Summative in character)."
+            }
+          },
+          "description": "Evidence submitted at completion. Attestation Corpus queried; evidence strength validated against round's configured tier; completion findings generated."
+        },
+        "register": {
+          "type": "object",
+          "properties": {
+            "determination_publication_procedure": {"type": "string"},
+            "attestation_corpus_update_procedure": {"type": "string"},
+            "inter_cycle_reflection_input_procedure": {"type": "string"},
+            "obligation_fulfillment_record_update_procedure": {"type": "string"},
+            "public_record_publication_location": {"type": "string"}
+          },
+          "description": "Outcomes registered into the institutional record. Determinations published; Attestation Corpus updated; Inter-cycle Reflection Stage inputs collected; Obligation Fulfillment Record updated for each applicant."
+        }
+      },
+      "x-cross-walkri-primitive": ["Gate Type (Layer 3)", "CLEAR Lifecycle (Foundational Anchor)"],
+      "x-cross-walkri-source-section": "Primitives Foundation v0.1.6 Foundational Structural Anchors",
+      "description": "The five stages of the round lifecycle as procedurally specified."
+    },
+    "determination_procedures": {
+      "type": "object",
+      "required": ["determination_body_reference", "scoring_procedure", "tie_break_procedure", "appeals_procedure"],
+      "properties": {
+        "determination_body_reference": {
+          "type": "string",
+          "description": "Reference to the determination body specified in the round-config."
+        },
+        "scoring_procedure": {
+          "type": "string",
+          "description": "Step-by-step scoring methodology including evidence weight, criterion ordering, and aggregation rules."
+        },
+        "tie_break_procedure": {
+          "type": "string",
+          "description": "How tied scores are resolved (e.g., earlier application timestamp, public benefit mechanism priority, randomized selection from tied set)."
+        },
+        "appeals_procedure": {
+          "type": "string",
+          "description": "How within-determination-body appeals are handled before findings are finalized."
+        },
+        "deliberation_documentation_procedure": {"type": "string"},
+        "minority_dissent_recording_procedure": {"type": "string"}
+      },
+      "x-cross-walkri-primitive": ["Determination Body Separation (Layer 4)", "Gate Character (Layer 3) - Summative"],
+      "x-cross-walkri-source-section": "CROSS Part VIII"
+    },
+    "pre_award_indicator_confirmation_procedures": {
+      "type": "object",
+      "properties": {
+        "confirmation_initiation_procedure": {"type": "string"},
+        "indicator_schedule_recording_procedure": {"type": "string"},
+        "indicator_schedule_storage_location": {"type": "string"},
+        "confirmation_failure_handling": {"type": "string"},
+        "deadline_enforcement": {"type": "string"}
+      },
+      "x-cross-walkri-primitive": "Pre-Award Indicator Confirmation Stage (Layer 3)",
+      "x-cross-walkri-source-section": "Primitives Foundation v0.1.6 Layer 3"
+    },
+    "inter_cycle_reflection_procedures": {
+      "type": "object",
+      "properties": {
+        "reflection_authoring_procedure": {"type": "string"},
+        "reflection_review_procedure": {"type": "string"},
+        "publication_deadline_enforcement": {"type": "string"},
+        "publication_location": {"type": "string"},
+        "next_cycle_input_handover_procedure": {"type": "string"}
+      },
+      "x-cross-walkri-primitive": "Inter-cycle Reflection Stage (Program Learning Architecture configuration, Layer 7)",
+      "x-cross-walkri-source-section": "Primitives Foundation v0.2.0 Layer 7 (Program Learning Architecture configuration)"
+    },
+    "beneficiary_validation_procedures": {
+      "type": "object",
+      "properties": {
+        "validation_party_engagement_procedure": {"type": "string"},
+        "validation_collection_procedure": {"type": "string"},
+        "validation_documentation_procedure": {"type": "string"},
+        "disqualification_application_procedure": {"type": "string"}
+      },
+      "x-cross-walkri-primitive": "Beneficiary Validation Mechanism (Layer 3)",
+      "x-cross-walkri-source-section": "Primitives Foundation v0.1.6 Layer 3",
+      "description": "Required when round-config public_benefit_mechanism.mechanism_type is condition_change or access_provision. Operational procedures for the entry-stage validation."
+    },
+    "affected_population_verification_procedures": {
+      "type": "object",
+      "properties": {
+        "participation_collection_procedure": {"type": "string"},
+        "participation_recording_procedure": {"type": "string"},
+        "threshold_assessment_procedure": {"type": "string"}
+      },
+      "x-cross-walkri-primitive": "Affected Population Verification Gate (Evidence Strength configuration, Layer 4)",
+      "x-cross-walkri-source-section": "Primitives Foundation v0.2.0 Layer 4 (Evidence Strength configuration)",
+      "description": "Required when round-config public_benefit_mechanism.mechanism_type is condition_change or access_provision. Operational procedures for the completion-stage verification. Renamed from Beneficiary Accountability Gate at Primitives Foundation v0.1.7."
+    },
+    "adverse_signal_engagement_procedures": {
+      "type": "object",
+      "required": ["surfacing_procedure", "review_procedure", "log_maintenance_procedure"],
+      "properties": {
+        "surfacing_procedure": {
+          "type": "string",
+          "description": "How adverse signals are collected from applicants at entry gate and identified by reviewers during evaluation."
+        },
+        "review_procedure": {
+          "type": "string",
+          "description": "How surfaced signals are reviewed and how the determination body's response is documented."
+        },
+        "log_maintenance_procedure": {
+          "type": "string",
+          "description": "Standing log update procedure; per-signal entries; publication cadence."
+        },
+        "suppression_prevention_procedure": {
+          "type": "string",
+          "description": "Operational controls preventing reviewer suppression of adverse signals encountered during evaluation."
+        }
+      },
+      "x-cross-walkri-primitive": "Adverse Signal Engagement Principle Core Standard",
+      "x-cross-walkri-source-section": "CROSS Part I (suite standard reference)"
+    },
+    "attestation_corpus_query_procedures": {
+      "type": "object",
+      "required": ["query_construction_procedure", "query_execution_procedure", "snapshot_recording_procedure"],
+      "properties": {
+        "query_construction_procedure": {
+          "type": "string",
+          "description": "How queries are constructed per applicant against the Attestation Corpus sources specified in the round-config."
+        },
+        "query_execution_procedure": {
+          "type": "string",
+          "description": "Operational details of query execution against each source, including API access patterns and rate-limit handling."
+        },
+        "snapshot_recording_procedure": {
+          "type": "string",
+          "description": "How query results are recorded as Attestation Corpus snapshots with timestamps."
+        },
+        "snapshot_storage_location": {"type": "string"},
+        "snapshot_audit_trail": {"type": "string"}
+      },
+      "x-cross-walkri-primitive": ["Attestation Corpus (Layer 4)", "Independent Verifiability (Layer 1)"],
+      "x-cross-walkri-source-section": "Primitives Foundation v0.1.6 Layer 4"
+    },
+    "redress_procedures": {
+      "type": "object",
+      "required": ["initial_redress_procedure", "redress_panel_composition", "escalation_procedure"],
+      "properties": {
+        "initial_redress_procedure": {"type": "string"},
+        "redress_panel_composition": {"type": "string"},
+        "escalation_procedure": {"type": "string"},
+        "redress_record_publication_procedure": {"type": "string"}
+      },
+      "x-cross-walkri-primitive": "Funder-Side Obligation Architecture (Foundational Anchor)",
+      "x-cross-walkri-source-section": "CROSS Part XI",
+      "description": "Operational procedures for grantee redress at completion verification gates. Per CROSS Part XI funder obligations."
+    },
+    "reporting_procedures": {
+      "type": "object",
+      "required": ["cadence_enforcement", "format_specifications", "publication_location"],
+      "properties": {
+        "cadence_enforcement": {"type": "string"},
+        "format_specifications": {"type": "string"},
+        "publication_location": {"type": "string"},
+        "incomplete_reporting_handling": {"type": "string"},
+        "obligation_fulfillment_record_update_procedure": {"type": "string"}
+      },
+      "x-cross-walkri-primitive": "Obligation Fulfillment Record (Layer 3)",
+      "x-cross-walkri-source-section": "Primitives Foundation v0.1.6 Layer 3"
+    },
+    "conflict_of_interest_procedures": {
+      "type": "object",
+      "required": ["pre_review_declaration_procedure", "tier_classification_procedure", "waiver_procedure"],
+      "properties": {
+        "pre_review_declaration_procedure": {"type": "string"},
+        "tier_classification_procedure": {"type": "string"},
+        "waiver_procedure": {
+          "type": "string",
+          "description": "Procedure for Tier 2 qualified waivers including authority approval flow and documentation requirements."
+        },
+        "post_review_certification_procedure": {"type": "string"},
+        "attestation_integrity_check_procedure": {
+          "type": "string",
+          "description": "Procedure for verifying that any party signing an attestation confirming applicant evidence is not Tier 1 conflicted with that applicant."
+        }
+      },
+      "x-cross-walkri-primitive": "Conflict of Interest (Layer 3)",
+      "x-cross-walkri-source-section": "CROSS Part VIII"
+    },
+    "data_quality_assurance_procedures": {
+      "type": "object",
+      "properties": {
+        "validity_check_procedure": {"type": "string"},
+        "integrity_check_procedure": {"type": "string"},
+        "precision_check_procedure": {"type": "string"},
+        "reliability_check_procedure": {"type": "string"},
+        "timeliness_check_procedure": {"type": "string"}
+      },
+      "x-cross-walkri-primitive": "Data Quality Standards (Layer 5)",
+      "x-cross-walkri-source-section": "WALKRI Part V; Primitives Foundation v0.1.6 Layer 5"
+    },
+    "format_neutrality_operational_procedure": {
+      "type": "string",
+      "x-cross-walkri-primitive": "Format Agnosticism (Layer 1)",
+      "x-cross-walkri-source-section": "Primitives Foundation v0.1.6 Layer 1; Evolution Rules Commitment 5",
+      "description": "How the operator verifies that infrastructure presented by applicants meets content requirements without imposing format prescriptions beyond those named as primitive requirements in the round-config."
+    },
+    "disbursement_procedures": {
+      "type": "object",
+      "properties": {
+        "tranche_release_procedure": {"type": "string"},
+        "milestone_verification_procedure": {"type": "string"},
+        "disbursement_record_procedure": {"type": "string"},
+        "withholding_procedure": {"type": "string"}
+      },
+      "x-cross-walkri-primitive": "Disbursement Authority (Layer 2)",
+      "x-cross-walkri-source-section": "Primitives Foundation v0.1.6 Layer 2"
+    },
+    "operational_disciplines": {
+      "type": "object",
+      "properties": {
+        "em_dash_discipline": {
+          "type": "string",
+          "const": "No em dash (U+2014) appears in any operator-published artifact; grep-verify before publication."
+        },
+        "frame_language_discipline": {
+          "type": "string",
+          "description": "Operator-published artifacts are grep-checked against the Frame 1 watchlist; each hit receives a Part I admissibility check; leaks are replaced per the Frame Language Replacement Table."
+        },
+        "consistency_audit_procedure": {"type": "string"}
+      },
+      "x-cross-walkri-source-section": "Evolution Rules v0.1.2 Section 6"
+    },
+    "conforms_to": {
+      "type": "string",
+      "pattern": "^cross-walkri/runbook@[0-9]+\\.[0-9]+\\.[0-9]+$"
+    }
+  }
+}

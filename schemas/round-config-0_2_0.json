@@ -1,0 +1,636 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/CrossWalkri/CROSS/main/schemas/round-config-0_2_0.json",
+  "title": "CROSS+WALKRI Round Configuration Schema (Funder Cohort)",
+  "description": "The complete configuration a funder publishes for a round. Operationalizes the Commit stage of the CLEAR lifecycle. Supersedes v0.1.0 (skeleton); v0.2.0 fully populates fields for round-level primitives, gate configurations, population-anchored configurations, funder-side disciplines, evidence requirements, conflict and concurrent funding requirements, round operations, and Lens metadata. v0.2.1 renames the conformance_threshold field (formerly compliance_threshold) for Frame Language conformance; a breaking field rename.",
+  "x-cross-walkri-version": "0.2.1",
+  "x-cross-walkri-canonical-id": "cross-walkri/round-config@0.2.1",
+  "x-cross-walkri-cohort": "funder",
+  "x-cross-walkri-clear-stage": "Commit",
+  "x-cross-walkri-supersedes": "cross-walkri/round-config@0.1.0",
+  "x-cross-walkri-target-release": "cross-walkri/release@1.0",
+  "type": "object",
+  "required": [
+    "round_identity",
+    "obligation_mode",
+    "public_benefit_mechanism",
+    "budget",
+    "entry_specification_gate",
+    "completion_verification_gate",
+    "determination_body",
+    "attestation_corpus_specification",
+    "evidence_requirements",
+    "concurrent_funding_disclosure_requirements",
+    "conflict_of_interest_declaration_requirements",
+    "application_period",
+    "lens_metadata",
+    "conforms_to"
+  ],
+  "properties": {
+    "round_identity": {
+      "$ref": "https://raw.githubusercontent.com/CrossWalkri/CROSS/main/schemas/round-identity-0_1_0.json",
+      "x-cross-walkri-source-section": "CROSS Part IV (shared identity layer)"
+    },
+    "obligation_mode": {
+      "type": "string",
+      "enum": ["build", "change", "retroactive"],
+      "x-cross-walkri-primitive": "Obligation Mode (Layer 3)",
+      "x-cross-walkri-source-section": "CROSS Part III; Primitives Foundation v0.1.6 Layer 3",
+      "description": "The classification of what type of commitment this round creates: deliverable production (build), measured population change (change), or recognition of prior contribution (retroactive)."
+    },
+    "public_benefit_mechanism": {
+      "type": "object",
+      "required": ["mechanism_type", "access_condition"],
+      "properties": {
+        "mechanism_type": {
+          "type": "string",
+          "enum": ["output_production", "access_provision", "condition_change", "ecosystem_shift"]
+        },
+        "access_condition": {
+          "type": "string",
+          "description": "Mechanism-specific terms that enable benefit to reach the stated population."
+        },
+        "spdx_license": {
+          "type": "string",
+          "description": "Required when mechanism_type is output_production. The SPDX identifier of the license under which outputs are released."
+        }
+      },
+      "x-cross-walkri-primitive": ["Public Benefit Mechanism (Layer 3)", "Access Condition (Layer 3)"],
+      "x-cross-walkri-source-section": "CROSS Part IVa; Primitives Foundation v0.1.6 Layer 3",
+      "description": "The mechanism by which the round produces public benefit. Each mechanism type constrains the minimum evidence scope required at completion."
+    },
+    "downstream_use_restriction": {
+      "type": "object",
+      "properties": {
+        "restriction_predicate": {
+          "type": "array",
+          "items": {"type": "string"},
+          "description": "Named classes of use that disqualify (e.g., military application, mass surveillance infrastructure, autonomous targeting)."
+        },
+        "verification_mechanism": {
+          "type": "string",
+          "description": "How the applicant's intended use is checked against the restriction at the entry gate."
+        },
+        "disclosure_obligation": {
+          "type": "string",
+          "description": "What the applicant must declare about intended use in the application."
+        }
+      },
+      "x-cross-walkri-primitive": "Downstream-Use Restriction (Layer 3)",
+      "x-cross-walkri-source-section": "Primitives Foundation v0.1.6 Layer 3",
+      "description": "Optional. Funder-published restriction on intended use or downstream application of grant outputs, operationalized as an entry-gate eligibility filter."
+    },
+    "development_stage_targeting": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["stage_1_proof_of_concept", "stage_2_early_adoption", "stage_3_growth", "stage_4_established_infrastructure", "stage_5_retroactive_recognition"]
+      },
+      "x-cross-walkri-primitive": "Development Stage (Layer 2)",
+      "x-cross-walkri-source-section": "CROSS Part II; Primitives Foundation v0.1.6 Layer 2",
+      "description": "Which development stages are within scope for this round. A round with no stage targeting accepts all five stages."
+    },
+    "revenue_architecture_constraints": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["grant_only", "fee_for_service", "commercial", "hybrid"]
+      },
+      "x-cross-walkri-primitive": "Revenue Architecture (Layer 2)",
+      "x-cross-walkri-source-section": "CROSS Part II; Primitives Foundation v0.1.6 Layer 2",
+      "description": "Which revenue architecture types are within scope for this round. Empty array means no constraint."
+    },
+    "cohort_position": {
+      "type": "string",
+      "enum": ["initiating", "continuation", "convergence"],
+      "x-cross-walkri-primitive": "Portfolio Position (Layer 7)",
+      "x-cross-walkri-source-section": "Primitives Foundation v0.1.6 Layer 7",
+      "description": "This round's relationship to prior rounds in the same program. Determines what prior work attribution is required."
+    },
+    "coordination_scaling_standard_tier": {
+      "type": "string",
+      "enum": ["tier_1_minimal", "tier_2_standard", "tier_3_full_institutional"],
+      "x-cross-walkri-primitive": "Coordination Scaling Standard reference",
+      "x-cross-walkri-source-section": "CROSS Part I (suite standard reference)",
+      "description": "The rigor tier the Coordination Scaling Standard calibrates this round at. Determined by funding amount and public impact claim scope."
+    },
+    "budget": {
+      "type": "object",
+      "required": ["amount", "denomination", "allocation_method", "disbursement_schedule"],
+      "properties": {
+        "amount": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "denomination": {
+          "type": "string",
+          "description": "Currency or token denomination (USD, EUR, OP, ETH, ARB, etc.)."
+        },
+        "allocation_method": {
+          "type": "string",
+          "enum": ["fixed_disbursement", "quadratic_funding", "algorithmic_metric", "discretionary_committee", "competitive_pool", "milestone_tranche", "hybrid"]
+        },
+        "disbursement_schedule": {
+          "type": "object",
+          "properties": {
+            "entry_gate_tranche_percentage": {"type": "number", "minimum": 0, "maximum": 100},
+            "progress_tranche_percentages": {
+              "type": "array",
+              "items": {"type": "number", "minimum": 0, "maximum": 100}
+            },
+            "completion_tranche_percentage": {"type": "number", "minimum": 0, "maximum": 100}
+          }
+        }
+      },
+      "x-cross-walkri-primitive": ["Sufficiency (Layer 2)", "Gate Type (Layer 3)"],
+      "x-cross-walkri-source-section": "CROSS Part IV.B",
+      "description": "Total budget, allocation method, and disbursement schedule across gates."
+    },
+    "entry_specification_gate": {
+      "type": "object",
+      "required": ["pre_conditions_required", "criteria", "evidence_form_specifications"],
+      "properties": {
+        "pre_conditions_required": {
+          "type": "object",
+          "required": ["organizational_identity_declaration", "sufficiency_architecture_declaration", "public_benefit_mechanism_declaration"],
+          "properties": {
+            "organizational_identity_declaration": {"type": "boolean", "const": true},
+            "sufficiency_architecture_declaration": {"type": "boolean", "const": true},
+            "public_benefit_mechanism_declaration": {"type": "boolean", "const": true},
+            "prior_work_attribution_required_if_cited": {"type": "boolean", "const": true},
+            "obligation_fulfillment_record_required_for_returning_applicants": {"type": "boolean", "const": true}
+          },
+          "description": "The five pre-conditions checked before any gate scoring begins."
+        },
+        "criteria": {
+          "type": "object",
+          "description": "Mode-specific criteria per CROSS Part III. Build mode: falsifiable deliverable with verifiable completion criteria. Change mode: FROM state as specific measurable condition. Retroactive mode: prior contribution evidence."
+        },
+        "evidence_form_specifications": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/evidence_form_specification"
+          }
+        },
+        "rigor_tier_assignment_method": {
+          "type": "string",
+          "enum": ["configured_by_funder", "calibrated_by_coordination_scaling_standard"]
+        }
+      },
+      "x-cross-walkri-primitive": "Gate Type (Layer 3) - Entry Specification Gate",
+      "x-cross-walkri-source-section": "CROSS Part III, IV, IVa",
+      "description": "The entry specification gate configuration. Operates as a binary pre-criterion before any rigor-tier scoring."
+    },
+    "progress_verification_gates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["milestone_specification", "evidence_requirements", "disbursement_trigger"],
+        "properties": {
+          "milestone_specification": {"type": "string"},
+          "evidence_requirements": {
+            "$ref": "#/$defs/evidence_form_specification"
+          },
+          "disbursement_trigger": {"type": "string"},
+          "iteration_rights_apply": {"type": "boolean", "const": true}
+        }
+      },
+      "x-cross-walkri-primitive": ["Gate Type (Layer 3)", "Gate Character (Layer 3) - Developmental"],
+      "x-cross-walkri-source-section": "CROSS Part XI",
+      "description": "Optional. Configured progress verification gates between entry and completion. Developmental in character; grantees retain iteration rights."
+    },
+    "completion_verification_gate": {
+      "type": "object",
+      "required": ["evidence_scope", "evidence_strength", "independent_verification_source", "causality_stance"],
+      "properties": {
+        "evidence_scope": {
+          "type": "string",
+          "enum": ["output_evidence", "usage_evidence", "outcome_evidence", "impact_evidence"]
+        },
+        "evidence_strength": {
+          "type": "string",
+          "enum": ["self_report_with_documentation", "third_party_verifiable", "independent_review", "independent_evaluation"]
+        },
+        "independent_verification_source": {
+          "type": "string",
+          "description": "Named source from which verification can be obtained, lying outside the applicant's control per Commitment 6."
+        },
+        "causality_stance": {
+          "type": "string",
+          "enum": ["attribution_stance", "contribution_stance"]
+        },
+        "redress_rights_apply": {"type": "boolean", "const": true},
+        "iteration_rights_apply": {"type": "boolean", "const": false}
+      },
+      "x-cross-walkri-primitive": ["Gate Type (Layer 3) - Completion Verification Gate", "Gate Character (Layer 3) - Summative", "Evidence Scope (Layer 4)", "Evidence Strength (Layer 4)", "Independent Verifiability (Layer 1)", "Causality Stance (Layer 4)"],
+      "x-cross-walkri-source-section": "CROSS Part XI; Primitives Foundation v0.1.6 Layers 3 and 4",
+      "description": "The completion verification gate configuration. Summative in character; grantees have redress rights, not iteration rights."
+    },
+    "continuation_specification_gate": {
+      "type": "object",
+      "properties": {
+        "stages_advanced": {"type": "string"},
+        "sustainability_stance_required": {"type": "boolean", "const": true},
+        "evidence_requirements": {
+          "$ref": "#/$defs/evidence_form_specification"
+        }
+      },
+      "x-cross-walkri-primitive": "Gate Type (Layer 3) - Continuation Specification Gate",
+      "x-cross-walkri-source-section": "CROSS Part XII; Primitives Foundation v0.1.6 Layer 3",
+      "description": "Optional. Configured at program level for multi-round programs."
+    },
+    "pre_award_indicator_confirmation_stage": {
+      "type": "object",
+      "properties": {
+        "confirmation_required": {"type": "boolean"},
+        "confirmation_procedure": {"type": "string"},
+        "deadline_relative_to_entry_gate": {"type": "string"}
+      },
+      "x-cross-walkri-primitive": "Pre-Award Indicator Confirmation Stage (Layer 3)",
+      "x-cross-walkri-source-section": "Primitives Foundation v0.1.6 Layer 3",
+      "description": "Optional but recommended. Substantive specification confirmation between entry-gate selection and disbursement start."
+    },
+    "beneficiary_validation_mechanism": {
+      "type": "object",
+      "properties": {
+        "validating_parties": {
+          "type": "array",
+          "items": {"type": "string"},
+          "description": "Named bodies or representatives drawn from or accountable to the affected population."
+        },
+        "validation_procedure": {"type": "string"},
+        "disqualification_condition": {"type": "string"}
+      },
+      "x-cross-walkri-primitive": "Beneficiary Validation Mechanism (Layer 3)",
+      "x-cross-walkri-source-section": "Primitives Foundation v0.1.6 Layer 3",
+      "description": "Required when public_benefit_mechanism.mechanism_type is condition_change or access_provision and a named beneficiary population exists. Operates at entry, before disbursement."
+    },
+    "affected_population_verification_gate": {
+      "type": "object",
+      "properties": {
+        "beneficiary_population": {"type": "string"},
+        "participation_mechanism": {"type": "string"},
+        "minimum_participation_threshold": {"type": "string"}
+      },
+      "x-cross-walkri-primitive": "Affected Population Verification Gate (Evidence Strength configuration, Layer 4)",
+      "x-cross-walkri-source-section": "Primitives Foundation v0.2.0 Layer 4 (Evidence Strength configuration)",
+      "description": "Required when public_benefit_mechanism.mechanism_type is condition_change or access_provision. Operates at completion. Renamed from Beneficiary Accountability Gate at Primitives Foundation v0.1.7."
+    },
+    "disaggregation_floor": {
+      "type": "object",
+      "properties": {
+        "floor_categories": {
+          "type": "array",
+          "items": {"type": "string"},
+          "description": "Disaggregation dimensions declared at entry that cannot be dropped at later gates (e.g., gender, race or ethnicity, geographic region, age cohort, disability status)."
+        },
+        "addition_protocol": {"type": "string"}
+      },
+      "x-cross-walkri-primitive": "Disaggregation Floor (Layer 5)",
+      "x-cross-walkri-source-section": "Primitives Foundation v0.1.6 Layer 5",
+      "description": "Optional. Required when equity, inclusion, or population-targeted public benefit mechanisms are declared."
+    },
+    "determination_body": {
+      "type": "object",
+      "required": ["body_type", "structural_separation_from_applicants", "charter_url", "conflict_of_interest_procedure"],
+      "properties": {
+        "body_type": {
+          "type": "string",
+          "enum": ["committee", "algorithm", "community_vote", "external_panel", "hybrid"]
+        },
+        "structural_separation_from_applicants": {
+          "type": "string",
+          "description": "Statement of how the determination body is structurally separate from applicants and from program management."
+        },
+        "charter_url": {
+          "type": "string",
+          "format": "uri",
+          "description": "Stable URL of the publicly accessible charter or policy document specifying composition, scope, authority, and removal mechanism."
+        },
+        "conflict_of_interest_procedure": {
+          "type": "string",
+          "description": "How Tier 1 (categorical bar), Tier 2 (qualified waiver), and Tier 3 (disclosure encouraged) conflicts are handled."
+        },
+        "appointment_mechanism": {"type": "string"},
+        "removal_mechanism": {"type": "string"}
+      },
+      "x-cross-walkri-primitive": ["Determination Body Separation (Layer 4)", "Conflict of Interest (Layer 3)"],
+      "x-cross-walkri-source-section": "CROSS Part VIII; Primitives Foundation v0.1.6 Layer 4",
+      "description": "The institutional layer that makes funding determinations, structurally separate from program management."
+    },
+    "attestation_corpus_specification": {
+      "type": "object",
+      "required": ["sources", "query_methodology"],
+      "properties": {
+        "sources": {
+          "type": "array",
+          "items": {"type": "string"},
+          "description": "Named third-party sources from which attestations about applicants are queryable (on-chain attestation registries, KarmaGAP, Gitcoin Explorer, deps.dev, GitHub archive, regulatory filings, etc.)."
+        },
+        "query_methodology": {
+          "type": "string",
+          "description": "How the corpus is queried (typically against the On-chain Identity Anchor or legal entity identifier)."
+        },
+        "dating_convention": {"type": "string"},
+        "query_input": {
+          "type": "string",
+          "enum": ["on_chain_identity_anchor", "legal_entity_identifier", "both"]
+        }
+      },
+      "x-cross-walkri-primitive": ["Attestation Corpus (Layer 4)", "Independent Verifiability (Layer 1)"],
+      "x-cross-walkri-source-section": "Primitives Foundation v0.1.6 Layer 4",
+      "description": "The queryable record of contribution and use evidence this round operates against. Required per Commitment 6 Independent Verifiability."
+    },
+    "inter_cycle_reflection_stage": {
+      "type": "object",
+      "properties": {
+        "reflection_required": {"type": "boolean"},
+        "publication_deadline": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Publication deadline, which must precede the opening of the next cycle (pre-commitment as structural posture)."
+        },
+        "scope": {"type": "string"}
+      },
+      "x-cross-walkri-primitive": "Inter-cycle Reflection Stage (Program Learning Architecture configuration, Layer 7)",
+      "x-cross-walkri-source-section": "Primitives Foundation v0.2.0 Layer 7 (Program Learning Architecture configuration)",
+      "description": "Optional. Reflection on round outcomes published before the next cycle opens, instantiating pre-commitment as structural posture."
+    },
+    "portfolio_level_continuation_benchmark": {
+      "type": "object",
+      "properties": {
+        "metric": {"type": "string"},
+        "threshold": {"type": "string"},
+        "review_period": {"type": "string"}
+      },
+      "x-cross-walkri-primitive": "Portfolio-level Continuation Benchmark (Layer 7)",
+      "x-cross-walkri-source-section": "Primitives Foundation v0.1.6 Layer 7",
+      "description": "Optional. Funder-declared threshold that the program as a whole must meet to justify continued operation. Distinct from individual grantee continuation gates."
+    },
+    "adverse_signal_engagement_plan": {
+      "type": "object",
+      "required": ["surfacing_obligation", "log_publication"],
+      "properties": {
+        "surfacing_obligation": {
+          "type": "string",
+          "description": "Statement that applicants must surface adverse signals (prior rejections, contradictory findings, negative due diligence) and reviewers must not suppress signals found during evaluation."
+        },
+        "log_publication": {"type": "boolean"},
+        "log_publication_location": {"type": "string"},
+        "review_procedure": {"type": "string"}
+      },
+      "x-cross-walkri-primitive": "Adverse Signal Engagement Principle Core Standard",
+      "x-cross-walkri-source-section": "CROSS Part I (suite standard reference)",
+      "description": "How adverse signals are surfaced and handled during the round. Required per the Adverse-Signal Engagement Principle Core Standard."
+    },
+    "redress_provisions": {
+      "type": "object",
+      "properties": {
+        "completion_gate_redress_procedure": {"type": "string"},
+        "appeal_procedure": {"type": "string"},
+        "redress_timeline": {"type": "string"}
+      },
+      "x-cross-walkri-primitive": "Funder-Side Obligation Architecture (Foundational Anchor)",
+      "x-cross-walkri-source-section": "CROSS Part XI",
+      "description": "Required. Redress and appeal procedures for completion-gate determinations. Part of the funder-side obligation architecture."
+    },
+    "format_agnosticism_declaration": {
+      "type": "object",
+      "properties": {
+        "content_conformance_accepted": {"type": "boolean", "const": true},
+        "format_neutrality_statement": {"type": "string"},
+        "named_format_exceptions": {
+          "type": "array",
+          "items": {"type": "string"},
+          "description": "Format requirements that are themselves primitive requirements (e.g., SPDX identifier for output_production access_condition; published URL for Attestation Corpus)."
+        }
+      },
+      "x-cross-walkri-primitive": "Format Agnosticism (Layer 1)",
+      "x-cross-walkri-source-section": "Primitives Foundation v0.1.6 Layer 1; Evolution Rules v0.1.2 Commitment 5",
+      "description": "Declares that this round accepts any infrastructure meeting the content requirements, regardless of format, except where format is itself a primitive requirement."
+    },
+    "evidence_requirements": {
+      "type": "object",
+      "required": ["evidence_form_specifications"],
+      "properties": {
+        "evidence_form_specifications": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/evidence_form_specification"
+          }
+        },
+        "data_quality_standards_applied": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": ["validity", "integrity", "precision", "reliability", "timeliness"]
+          },
+          "default": ["validity", "integrity", "precision", "reliability", "timeliness"]
+        }
+      },
+      "x-cross-walkri-primitive": ["Criterion Specification Elements (Layer 5)", "Data Quality Standards (Layer 5)", "Evidence Form (Layer 4)"],
+      "x-cross-walkri-source-section": "WALKRI Sections 3 and 5; Primitives Foundation v0.1.6 Layers 4 and 5",
+      "description": "Evidence form specifications and data quality standards applied across the round's gates."
+    },
+    "concurrent_funding_disclosure_requirements": {
+      "type": "object",
+      "required": ["required_fields", "lookback_window_months"],
+      "properties": {
+        "required_fields": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": ["source_name", "source_type", "approximate_amount", "relationship_to_scope", "ongoing_obligations", "governance_rights"]
+          },
+          "default": ["source_name", "source_type", "approximate_amount", "relationship_to_scope", "ongoing_obligations", "governance_rights"]
+        },
+        "lookback_window_months": {"type": "integer", "default": 24},
+        "non_disclosure_consequence": {
+          "type": "string",
+          "const": "disqualification",
+          "description": "Per CROSS Part II Dimension 4: non-disclosure is a disqualifier; disclosure is not."
+        }
+      },
+      "x-cross-walkri-primitive": "Information Asymmetry Classification Standard reference",
+      "x-cross-walkri-source-section": "CROSS Part II Dimension 4; Part I suite standard references",
+      "description": "Concurrent funding disclosure requirements applied at entry gate."
+    },
+    "conflict_of_interest_declaration_requirements": {
+      "type": "object",
+      "required": ["pre_review_declaration_required", "tier_classification_required"],
+      "properties": {
+        "pre_review_declaration_required": {"type": "boolean", "const": true},
+        "tier_classification_required": {"type": "boolean", "const": true},
+        "bidirectional_disclosure": {"type": "boolean", "const": true},
+        "post_review_certification_required": {"type": "boolean"}
+      },
+      "x-cross-walkri-primitive": "Conflict of Interest (Layer 3)",
+      "x-cross-walkri-source-section": "CROSS Part VIII; Primitives Foundation v0.1.6 Layer 3",
+      "description": "Conflict of interest declaration and tier classification requirements."
+    },
+    "coherence_disclosure_requirements": {
+      "type": "object",
+      "properties": {
+        "self_reference_consistency_required": {"type": "boolean"},
+        "scope_consistency_required": {"type": "boolean"},
+        "stage_obligation_consistency_required": {"type": "boolean"}
+      },
+      "x-cross-walkri-primitive": "Coherence Disclosure (cross-cutting)",
+      "x-cross-walkri-source-section": "CROSS Part III, IV; WALKRI applicant identity",
+      "description": "Internal consistency checks applied to applications."
+    },
+    "application_period": {
+      "type": "object",
+      "required": ["open_date", "close_date"],
+      "properties": {
+        "open_date": {"type": "string", "format": "date-time"},
+        "close_date": {"type": "string", "format": "date-time"},
+        "extensions_permitted": {"type": "boolean"}
+      },
+      "x-cross-walkri-primitive": "CLEAR Lifecycle - List Stage",
+      "x-cross-walkri-source-section": "Primitives Foundation v0.1.6 Foundational Structural Anchors",
+      "description": "The window during which applications are accepted. Operationalizes the List stage of CLEAR."
+    },
+    "review_period": {
+      "type": "object",
+      "properties": {
+        "open_date": {"type": "string", "format": "date-time"},
+        "close_date": {"type": "string", "format": "date-time"}
+      },
+      "x-cross-walkri-primitive": "CLEAR Lifecycle - Evaluate Stage",
+      "description": "The window during which the determination body reviews applications. Operationalizes the Evaluate stage of CLEAR."
+    },
+    "determination_publication_date": {
+      "type": "string",
+      "format": "date-time",
+      "x-cross-walkri-primitive": "CLEAR Lifecycle - Register Stage",
+      "description": "The date by which determinations are published into the institutional record. Operationalizes the Register stage of CLEAR."
+    },
+    "reporting_cadence": {
+      "type": "object",
+      "properties": {
+        "progress_report_cadence": {"type": "string"},
+        "completion_report_deadline_relative_to_grant_end": {"type": "string"},
+        "publication_requirements": {"type": "string"}
+      },
+      "x-cross-walkri-primitive": "Obligation Fulfillment Record (Layer 3)",
+      "description": "Reporting cadence and format requirements for grantees."
+    },
+    "lens_metadata": {
+      "type": "object",
+      "required": ["calibration_tier_current", "calibration_tier_target", "authority_source", "cultural_methodological_lineage", "funder_typology", "framework_scope_type"],
+      "properties": {
+        "calibration_tier_current": {
+          "type": "string",
+          "enum": ["impressionistic", "process_conformant", "outcome_specified_self_reported", "independently_verified", "falsifiable"]
+        },
+        "calibration_tier_target": {
+          "type": "string",
+          "enum": ["impressionistic", "process_conformant", "outcome_specified_self_reported", "independently_verified", "falsifiable"]
+        },
+        "target_horizon": {"type": "string"},
+        "authority_source": {
+          "type": "string",
+          "enum": ["statutory", "regulatory", "contractual", "voluntary_published", "civil_society_advisory", "professional_society_standard"]
+        },
+        "cultural_methodological_lineage": {
+          "type": "string",
+          "enum": ["western_institutional", "islamic_finance_jurisprudence", "indigenous_treaty_partnership", "indigenous_led_participatory_non_treaty", "traditional_without_administrative_infrastructure", "hybrid"]
+        },
+        "funder_typology": {
+          "type": "string",
+          "enum": ["bilateral_aid_agency", "multilateral_bank_or_fund", "private_foundation", "government_non_aid", "pooled_fund_or_intermediary", "individual_donor", "dao_or_protocol", "corporate_csr", "faith_based", "settlement_administered"]
+        },
+        "framework_scope_type": {
+          "type": "string",
+          "enum": ["grantee_outcome_measurement", "allocator_process", "third_party_rating", "certification", "professional_practice_ethics", "government_accountability", "accounting_financial", "jurisprudential"]
+        }
+      },
+      "x-cross-walkri-primitive": "Lenses Framework (cross-cutting metadata)",
+      "x-cross-walkri-source-section": "CROSS-WALKRI-lenses-framework-0_1_0.md",
+      "description": "Lens Framework tagging for the round. Current-plus-target calibration tier per the Lenses Framework runbook output shape."
+    },
+    "conforms_to": {
+      "type": "string",
+      "pattern": "^cross-walkri/round-config@[0-9]+\\.[0-9]+\\.[0-9]+$",
+      "description": "The schema version this instance claims to satisfy."
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "public_benefit_mechanism": {
+            "properties": {
+              "mechanism_type": {
+                "enum": ["condition_change", "access_provision"]
+              }
+            }
+          }
+        }
+      },
+      "then": {
+        "required": ["beneficiary_validation_mechanism", "affected_population_verification_gate"],
+        "description": "Population-anchored mechanism types require both entry-stage validation and completion-stage verification."
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "public_benefit_mechanism": {
+            "properties": {
+              "mechanism_type": {"const": "output_production"}
+            }
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "public_benefit_mechanism": {
+            "required": ["spdx_license"]
+          }
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "evidence_form_specification": {
+      "type": "object",
+      "required": ["criterion_intent", "operational_definition", "response_form", "evidence_form", "conformance_threshold"],
+      "properties": {
+        "criterion_intent": {
+          "type": "string",
+          "description": "Written statement of what the field measures, distinct from its label."
+        },
+        "operational_definition": {
+          "type": "string",
+          "description": "Complete definition of each option or response category with qualifying and non-qualifying examples."
+        },
+        "response_form": {
+          "type": "string",
+          "description": "Response type with written justification for why that type is appropriate for the criterion intent."
+        },
+        "evidence_form": {
+          "type": "string",
+          "description": "Specification of the artifact that satisfies the criterion: document type, data source, collection methodology at a level sufficient for independent replication."
+        },
+        "conformance_threshold": {
+          "type": "string",
+          "description": "For fields referencing an external standard: which components apply, what evidence satisfies each, and what the minimum threshold for passage is."
+        },
+        "independent_verification_source": {
+          "type": "string",
+          "description": "Named source outside the applicant's control from which verification can be obtained per Commitment 6."
+        },
+        "data_quality_standards_satisfied": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": ["validity", "integrity", "precision", "reliability", "timeliness"]
+          }
+        }
+      },
+      "description": "The five Criterion Specification Elements (Layer 5 primitive) plus independent verification source. Required for every measurement instrument in the round."
+    }
+  }
+}

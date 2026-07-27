@@ -1,0 +1,306 @@
+{
+  "_comment_purpose": "Worked instance demonstrating cross-walkri/round-config@0.2.1 against a hypothetical Te Puni Kokiri Iwi Development Fund round. This instance exercises the population-anchored conditional branch of the Round Config schema (condition_change mechanism requiring Beneficiary Validation Mechanism at entry plus Affected Population Verification Gate at completion). Closes Consistency Audit Finding 8 which named the population-anchored conditional as not yet exercised. Demonstrates the schema's expressiveness across Indigenous Treaty partnership cultural-methodological lineage.",
+  "_comment_authority": "This is an illustrative example authored by Durgadas Hegde as part of the CROSS+WALKRI corpus. Values are constructed for schema demonstration; the actual Te Puni Kokiri Iwi Development Fund parameters are set by Te Puni Kokiri in partnership with named Iwi. This instance does NOT bind Te Puni Kokiri to these specific parameters and is NOT an official Te Puni Kokiri publication. The CROSS+WALKRI compatibility statement for Te Puni Kokiri Effectiveness for Maori at statements/philanthropy/Te-Puni-Kokiri-Effectiveness-for-Maori-CROSS-WALKRI-compatibility-0_1_0.md is the canonical analytical artifact for this framework.",
+  "_comment_cultural_methodological_note": "Te Puni Kokiri operates within Aotearoa New Zealand's Treaty of Waitangi partnership framework. Iwi (tribal entities) are not merely beneficiary populations under settler-colonial evaluation logic; they are Treaty partners with sovereign decision-standing in matters affecting Maori well-being. The CROSS+WALKRI primitives applied here (Beneficiary Validation Mechanism, Affected Population Verification Gate) operate at full strength because the Treaty partnership structurally places Iwi representatives in named validation and verification roles. Tikanga (Maori customary practice) governs the operational form of validation and verification; CROSS+WALKRI primitives specify the structural content, not the cultural form. Format Agnosticism (Commitment 5) is what allows tikanga-aligned methodologies to satisfy the primitive's content requirements.",
+
+  "round_identity": {
+    "round_id": "tpk-iwi-development-fund-2026-cycle-2",
+    "program_id": "tpk-iwi-development-fund",
+    "funder_id": "te-puni-kokiri",
+    "cycle_number": 2,
+    "conforms_to": "cross-walkri/release@0.1.0"
+  },
+
+  "obligation_mode": "change",
+
+  "public_benefit_mechanism": {
+    "mechanism_type": "condition_change",
+    "access_condition": "The funded work must produce a measurable shift in named Iwi-defined well-being conditions, from a declared FROM state to a declared TO state. The FROM state is established at entry through Iwi-validated baseline data per the Beneficiary Validation Mechanism. The intervention mechanism connecting funded activities to the expected change is named in the Theory of Change pathway and validated by Iwi representatives at entry. The TO state is measurable through the named indicators specified at the Pre-Award Indicator Confirmation Stage and verified at completion through the Affected Population Verification Gate."
+  },
+
+  "downstream_use_restriction": {
+    "restriction_predicate": [
+      "extraction of Maori cultural knowledge for non-Maori commercial use without Iwi consent",
+      "deployment in contexts that breach the Treaty of Waitangi partnership principles",
+      "use that contradicts the funded Iwi's own development priorities"
+    ],
+    "verification_mechanism": "Applicant declares intended use at the entry specification gate; the declaration is reviewed by the partnered Iwi's named representative body in conjunction with the Te Puni Kokiri evaluation team before disbursement.",
+    "disclosure_obligation": "Applicant must declare the intended class of use, deployment context, and any named downstream consumers known at the time of application, with specific attention to data sovereignty per Maori Data Sovereignty principles (Te Mana Raraunga)."
+  },
+
+  "development_stage_targeting": [
+    "stage_2_early_adoption",
+    "stage_3_growth",
+    "stage_4_established_infrastructure"
+  ],
+
+  "revenue_architecture_constraints": [
+    "grant_only",
+    "fee_for_service",
+    "hybrid"
+  ],
+
+  "cohort_position": "continuation",
+
+  "coordination_scaling_standard_tier": "tier_3_full_institutional",
+
+  "budget": {
+    "amount": 2400000,
+    "denomination": "NZD",
+    "allocation_method": "milestone_tranche",
+    "disbursement_schedule": {
+      "entry_gate_tranche_percentage": 25,
+      "progress_tranche_percentages": [25, 25],
+      "completion_tranche_percentage": 25
+    }
+  },
+
+  "entry_specification_gate": {
+    "pre_conditions_required": {
+      "organizational_identity_declaration": true,
+      "sufficiency_architecture_declaration": true,
+      "public_benefit_mechanism_declaration": true,
+      "prior_work_attribution_required_if_cited": true,
+      "obligation_fulfillment_record_required_for_returning_applicants": true
+    },
+    "criteria": {
+      "_comment": "Change-obligation mode entry gate per CROSS Part III Section B. Applicant names the FROM state as a specific measurable condition in a defined Iwi population; Iwi-validated baseline; named independently accessible source for the FROM state evidence.",
+      "from_state_named_as_specific_measurable_condition": true,
+      "named_population_required": true,
+      "iwi_validation_required_for_population_characterization": true,
+      "independently_accessible_source_for_from_state": true
+    },
+    "evidence_form_specifications": [
+      {
+        "criterion_intent": "Demonstrate that the proposed intervention addresses a specific Iwi-validated condition in a named Maori population, with the FROM state established by data the Iwi recognizes as accurate.",
+        "operational_definition": "Qualifying FROM state: specific, measurable, named in the published Iwi development plan or equivalent named source, validated by the relevant Iwi authority (Runanga, mandated Iwi organization, or equivalent) before application. Excluded: generic well-being claims; FROM states derived solely from non-Iwi data sources without Iwi validation.",
+        "response_form": "Narrative statement of the FROM state plus structured Iwi validation documentation.",
+        "evidence_form": "Iwi-validated baseline data with citation to the Iwi authority that validated it; Iwi development plan or equivalent published Iwi-sourced document naming the condition; tikanga-aligned validation record (the format of the record follows tikanga, not settler-state administrative form).",
+        "conformance_threshold": "Minimum: one specific named condition; one named Maori population; one Iwi authority validating both; one independently accessible source for the baseline data.",
+        "independent_verification_source": "Iwi authority records; published Iwi development plans; Statistics New Zealand Maori-population data where applicable; named tikanga-aligned validation documentation",
+        "data_quality_standards_satisfied": ["validity", "integrity", "precision", "reliability", "timeliness"]
+      },
+      {
+        "criterion_intent": "Demonstrate that the applying entity has authority to deliver the proposed intervention within the partnered Iwi's tikanga framework.",
+        "operational_definition": "Applicant has documented relationship with the partnered Iwi authority; the Iwi has authorized the applicant to operate within the Iwi's development priorities; the applicant's intended methodology aligns with tikanga as validated by the Iwi.",
+        "response_form": "Letter or signed instrument from the Iwi authority confirming the partnership relationship plus tikanga-alignment statement.",
+        "evidence_form": "Iwi authority signed instrument (form follows tikanga); applicant's own statement of methodology with named tikanga-alignment criteria.",
+        "conformance_threshold": "Iwi authority signed instrument is required; an applicant without a documented Iwi partnership cannot satisfy this criterion.",
+        "independent_verification_source": "The Iwi authority itself; Iwi-published partnership records",
+        "data_quality_standards_satisfied": ["validity", "integrity", "precision"]
+      }
+    ],
+    "rigor_tier_assignment_method": "calibrated_by_coordination_scaling_standard"
+  },
+
+  "progress_verification_gates": [
+    {
+      "milestone_specification": "Mid-cycle progress against the Pre-Award Indicator Confirmation Stage indicator schedule; Iwi feedback collected and documented; any drift between intended and observed condition change surfaced through the Adverse Signal Engagement plan.",
+      "evidence_requirements": {
+        "criterion_intent": "Document mid-cycle progress against the indicator schedule and surface any structural concerns Iwi representatives have identified.",
+        "operational_definition": "Mid-cycle indicator measurement plus Iwi feedback record; structural concerns are entered in the standing Adverse Signal log.",
+        "response_form": "Progress report with indicator readings; separate Iwi feedback record",
+        "evidence_form": "Indicator measurements per the named methodology; Iwi feedback documented in the partnered Iwi's preferred form",
+        "conformance_threshold": "All committed indicators measured at the named intervals; Iwi feedback collected via the named participation mechanism"
+      },
+      "disbursement_trigger": "Mid-cycle progress gate finding by the determination body; release of progress tranche conditional on satisfactory finding",
+      "iteration_rights_apply": true
+    },
+    {
+      "milestone_specification": "Two-thirds-cycle progress check with deepened Iwi consultation if material drift detected; revision opportunity per progress-gate iteration rights.",
+      "evidence_requirements": {
+        "criterion_intent": "Confirm trajectory toward TO state and surface any material drift requiring revision.",
+        "operational_definition": "Indicator measurements; trajectory analysis; documented Iwi consultation if drift exceeds the declared variance threshold",
+        "response_form": "Trajectory analysis report with Iwi consultation record if applicable",
+        "evidence_form": "Same data sources as the first progress gate plus expanded Iwi consultation record where triggered",
+        "conformance_threshold": "Trajectory documented; Iwi consultation occurred and is recorded if variance threshold exceeded"
+      },
+      "disbursement_trigger": "Second progress gate finding; release of second progress tranche",
+      "iteration_rights_apply": true
+    }
+  ],
+
+  "completion_verification_gate": {
+    "evidence_scope": "outcome_evidence",
+    "evidence_strength": "independent_review",
+    "independent_verification_source": "Iwi authority verification per the Affected Population Verification Gate participation mechanism; Te Puni Kokiri Effectiveness for Maori framework's published indicator methodology; named independent evaluator drawn from the Maori evaluation community",
+    "causality_stance": "contribution_stance",
+    "redress_rights_apply": true,
+    "iteration_rights_apply": false
+  },
+
+  "continuation_specification_gate": {
+    "stages_advanced": "Iwi Development Fund Cycle 3 eligibility based on sustained outcome evidence in the funded population; Iwi authority continuation endorsement; sustainability stance declaration.",
+    "sustainability_stance_required": true,
+    "evidence_requirements": {
+      "criterion_intent": "Outcomes persist beyond the funding period under conditions independent of continued Te Puni Kokiri funding; Iwi authority endorses continuation of the partnership.",
+      "operational_definition": "Sustainability stance declared as Sustained, Conditional, or Dependent; Iwi authority continuation endorsement collected separately.",
+      "response_form": "Sustainability stance statement plus Iwi continuation endorsement",
+      "evidence_form": "Indicator readings at sustained intervals after grant end; Iwi authority signed continuation endorsement",
+      "conformance_threshold": "Sustainability stance declared with structural justification; Iwi endorsement obtained"
+    }
+  },
+
+  "pre_award_indicator_confirmation_stage": {
+    "confirmation_required": true,
+    "confirmation_procedure": "Between the entry-gate determination and the start of disbursement, the applicant and Te Puni Kokiri (jointly with the partnered Iwi authority) finalize the Indicator Schedule: which Iwi-validated indicators will be measured, at what intervals, with what tikanga-aligned methodology, against what FROM state baseline. The confirmation is recorded as a tripartite document signed by all three parties.",
+    "deadline_relative_to_entry_gate": "T+21 days after entry-gate determination is published"
+  },
+
+  "beneficiary_validation_mechanism": {
+    "validating_parties": [
+      "The partnered Iwi authority (Runanga or equivalent mandated Iwi organization)",
+      "Named Iwi development plan author body where applicable",
+      "Tikanga-aligned community engagement representatives drawn from the named Maori population"
+    ],
+    "validation_procedure": "Iwi authority reviews the applicant's FROM state characterization, population definition, and intervention mechanism through the Iwi's own tikanga-aligned validation process. The Iwi's validation finding is documented in the Iwi's preferred form (signed instrument, hui minute, equivalent) and is binding on Te Puni Kokiri.",
+    "disqualification_condition": "Iwi authority does not endorse the FROM state characterization; OR the applicant's population definition does not match the Iwi's own population scope; OR the intervention mechanism is not tikanga-aligned per the Iwi's assessment."
+  },
+
+  "affected_population_verification_gate": {
+    "beneficiary_population": "The named Maori population at the named Iwi scope; specific named-population members participate in verification via the named participation mechanism",
+    "participation_mechanism": "Hui (gathering) convened by the Iwi authority with structured engagement on the project's outputs and outcomes; written submissions invited from any named-population member; tikanga-aligned facilitation",
+    "minimum_participation_threshold": "Hui convened with quorum per the Iwi's tikanga; minimum 10% of named-population members participate (in person or via written submission) for the gate to be satisfied; participation rate documented in the gate record"
+  },
+
+  "disaggregation_floor": {
+    "floor_categories": [
+      "Iwi affiliation (where multi-Iwi population)",
+      "Hapu (sub-Iwi grouping) affiliation",
+      "Age cohort",
+      "Gender",
+      "Geographic location within the Iwi rohe (territory)"
+    ],
+    "addition_protocol": "Additional disaggregation categories may be added at progress gates or completion gates with Iwi authority consent; the floor categories cannot be dropped, collapsed, or replaced."
+  },
+
+  "determination_body": {
+    "body_type": "hybrid",
+    "structural_separation_from_applicants": "Determinations are made by a hybrid body composed of Te Puni Kokiri evaluators (structurally separate from applicants), the partnered Iwi authority (structurally separate from the applicant entity but partnered with the named population), and a named independent Maori evaluator (drawn from the Maori evaluation community, structurally outside both Te Puni Kokiri and the applicant). No party in the determination body is the applicant; the partnered Iwi authority's role is partnership-based per the Treaty of Waitangi framework, distinct from applicant role.",
+    "charter_url": "https://www.tpk.govt.nz/en/about-tpk/our-policies/determination-body-charter",
+    "conflict_of_interest_procedure": "Tier 1 (categorical bar): direct financial interest above materiality threshold; family relationship with applicant; current employment with applicant; named on applicant project's public materials. Tier 2 (qualified waiver): prior employment within 36 months; co-authorship within 48 months; mentor or student relationship; Iwi affiliation with the applicant where the applicant is an individual rather than an Iwi-mandated body (in which case the Iwi authority sits separately on the determination body). Tier 3 (disclosure encouraged): social or community relationships within the Maori evaluation community; cross-cycle interactions in different program areas. All declarations pre-determination; Iwi-affiliation declarations recorded transparently per tikanga.",
+    "appointment_mechanism": "Te Puni Kokiri evaluators appointed by Te Puni Kokiri leadership. Iwi authority representatives appointed by the Iwi per the Iwi's own appointment processes. Independent Maori evaluator nominated by the partnered Iwi and confirmed by Te Puni Kokiri.",
+    "removal_mechanism": "Te Puni Kokiri evaluators removable per Te Puni Kokiri employment terms. Iwi authority representatives removable per the Iwi's own processes. Independent Maori evaluator removable by joint Te Puni Kokiri and Iwi authority decision."
+  },
+
+  "attestation_corpus_specification": {
+    "sources": [
+      "Te Puni Kokiri public grant records",
+      "Iwi authority published records (where the Iwi publishes)",
+      "Statistics New Zealand Maori-population data",
+      "Te Puni Kokiri Effectiveness for Maori framework indicator dashboards (where applicable)",
+      "Published Iwi development plans",
+      "Named tikanga-aligned validation documentation"
+    ],
+    "query_methodology": "Per project, queries are constructed against the applying entity's named legal identity and its named Iwi partnership. Query output is recorded as Attestation Corpus snapshot at the completion stage; the snapshot is co-stewarded by Te Puni Kokiri and the partnered Iwi per tikanga-aligned data sovereignty practice.",
+    "dating_convention": "All snapshots include the Gregorian-calendar timestamp and, where applicable, the Maori lunar calendar (Maramataka) date for tikanga-aligned interpretation.",
+    "query_input": "legal_entity_identifier"
+  },
+
+  "inter_cycle_reflection_stage": {
+    "reflection_required": true,
+    "publication_deadline": "2027-04-30T00:00:00Z",
+    "scope": "Per-cycle reflection covering: applicant cohort composition by Iwi; allocation distribution; Iwi authority feedback on the cycle's determinations; identified Adverse Signals and their handling; drift between Cycle 2 commitments and outcomes; recommended adjustments for Cycle 3. Co-authored by Te Puni Kokiri and the participating Iwi authorities; published before Cycle 3 entry gate opens."
+  },
+
+  "portfolio_level_continuation_benchmark": {
+    "metric": "Percentage of Iwi Development Fund Cycle 2 funded projects with sustained outcome evidence at Cycle 3 measurement; aggregate Iwi authority endorsement rate for continuation; Maori well-being indicator trajectory across the funded cohort per the Te Puni Kokiri Effectiveness for Maori framework",
+    "threshold": "Program continuation justified when at least 65% of funded projects show sustained outcome evidence in the next cycle, at least 75% of partnered Iwi authorities endorse continuation, and the aggregate Maori well-being trajectory shows positive movement at the cohort level",
+    "review_period": "Three-cycle rolling window"
+  },
+
+  "adverse_signal_engagement_plan": {
+    "surfacing_obligation": "Applicants must surface adverse signals at the entry specification gate per the Adverse-Signal Engagement Principle Core Standard. Adverse signals include: prior rejections from similar Iwi-partnered programs; Iwi authority concerns about the applicant's prior work; contradictory tikanga-alignment findings; unresolved Obligation Fulfillment Record entries from prior cycles or other Iwi-partnered programs. Reviewers (Te Puni Kokiri evaluators, Iwi authority representatives, independent Maori evaluator) must not suppress adverse signals encountered during evaluation. Iwi-specific adverse signals are handled per the Iwi's own tikanga in addition to the program's adverse signal log.",
+    "log_publication": true,
+    "log_publication_location": "Published as part of the Inter-cycle Reflection Stage document; per-project adverse signal entries linked from the project's Attestation Corpus record; sensitive Iwi-internal signals handled per the Iwi's data sovereignty practice (may be recorded in the log with restricted-access metadata)",
+    "review_procedure": "Adverse signal entries added throughout the cycle; the Inter-cycle Reflection Stage publication includes a summary of signal patterns and the program's response, co-authored with the partnered Iwi authorities."
+  },
+
+  "redress_provisions": {
+    "completion_gate_redress_procedure": "A project receiving an unfavorable completion-gate determination may submit a written redress request within 21 days of the determination publication. The request is reviewed by a redress panel composed of Te Puni Kokiri members not involved in the original determination plus an Iwi authority representative independent of the original determination. The panel issues a written response within 42 days, with tikanga-aligned consultation where the project is Iwi-partnered.",
+    "appeal_procedure": "If the redress panel's response is unsatisfactory, the project may escalate to the Te Puni Kokiri Chief Executive plus the partnered Iwi authority's senior leadership. Escalation outcomes are recorded in the Attestation Corpus.",
+    "redress_timeline": "Initial redress: 21 days to submit; 42 days to respond. Escalation: 30 days to submit after redress response; 60 days for response."
+  },
+
+  "format_agnosticism_declaration": {
+    "content_conformance_accepted": true,
+    "format_neutrality_statement": "Te Puni Kokiri Iwi Development Fund accepts any infrastructure meeting the content requirements specified by the relevant primitives, regardless of format. Tikanga-aligned Maori methodologies (oral validation records documented per tikanga; hui-based participation mechanisms; tikanga-aligned indicator methodologies) satisfy the content requirements without conforming to settler-state administrative format prescriptions. This is the Format Agnosticism commitment operationalized.",
+    "named_format_exceptions": [
+      "Iwi authority signed instrument required for entry-gate Iwi validation (form follows tikanga but a signed instrument is required)",
+      "Indicator measurement methodology must be reproducible (per WALKRI's reproducibility standard)",
+      "Attestation Corpus snapshots require Gregorian timestamp at minimum"
+    ]
+  },
+
+  "evidence_requirements": {
+    "evidence_form_specifications": [
+      {
+        "criterion_intent": "Outcome shift in named Iwi-validated indicator from FROM state to TO state",
+        "operational_definition": "Indicator value measured at named intervals using named tikanga-aligned methodology; baseline established at entry; shift documented as the difference between baseline and completion-stage measurement",
+        "response_form": "Tabulated indicator readings with methodology citation",
+        "evidence_form": "Indicator measurement records co-signed by the applicant and the partnered Iwi authority; named external evaluator's independent measurement where independent review evidence strength is configured",
+        "conformance_threshold": "Indicator readings recorded at all named intervals; baseline and completion measurements both attested; documented methodology follows the Pre-Award Indicator Confirmation Stage agreement",
+        "independent_verification_source": "Iwi authority records; named Maori evaluator's measurement records; Te Puni Kokiri program records",
+        "data_quality_standards_satisfied": ["validity", "integrity", "precision", "reliability", "timeliness"]
+      }
+    ],
+    "data_quality_standards_applied": ["validity", "integrity", "precision", "reliability", "timeliness"]
+  },
+
+  "concurrent_funding_disclosure_requirements": {
+    "required_fields": [
+      "source_name",
+      "source_type",
+      "approximate_amount",
+      "relationship_to_scope",
+      "ongoing_obligations",
+      "governance_rights"
+    ],
+    "lookback_window_months": 24,
+    "non_disclosure_consequence": "disqualification"
+  },
+
+  "conflict_of_interest_declaration_requirements": {
+    "pre_review_declaration_required": true,
+    "tier_classification_required": true,
+    "bidirectional_disclosure": true,
+    "post_review_certification_required": true
+  },
+
+  "coherence_disclosure_requirements": {
+    "self_reference_consistency_required": true,
+    "scope_consistency_required": true,
+    "stage_obligation_consistency_required": true
+  },
+
+  "application_period": {
+    "open_date": "2026-08-01T00:00:00Z",
+    "close_date": "2026-09-15T17:00:00+12:00",
+    "extensions_permitted": true
+  },
+
+  "review_period": {
+    "open_date": "2026-09-16T00:00:00+12:00",
+    "close_date": "2026-11-30T17:00:00+13:00"
+  },
+
+  "determination_publication_date": "2026-12-15T00:00:00+13:00",
+
+  "reporting_cadence": {
+    "progress_report_cadence": "Quarterly during the funded period (typically 18-24 months); Iwi authority feedback collected each quarter",
+    "completion_report_deadline_relative_to_grant_end": "Completion attestation due 90 days after the funded period closes; Affected Population Verification Gate hui scheduled within 120 days of grant end",
+    "publication_requirements": "Per-project completion reports published openly with Iwi consent on sensitive elements; allocation results published on Te Puni Kokiri's grant register; Inter-cycle Reflection Stage document published per the deadline above"
+  },
+
+  "lens_metadata": {
+    "calibration_tier_current": "independently_verified",
+    "calibration_tier_target": "falsifiable",
+    "target_horizon": "Iwi Development Fund Cycle 4 (estimated 2028 launch)",
+    "authority_source": "voluntary_published",
+    "cultural_methodological_lineage": "indigenous_treaty_partnership",
+    "funder_typology": "government_non_aid",
+    "framework_scope_type": "allocator_process"
+  },
+
+  "conforms_to": "cross-walkri/round-config@0.2.1"
+}

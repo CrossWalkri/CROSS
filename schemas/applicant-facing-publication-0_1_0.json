@@ -1,0 +1,107 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/CrossWalkri/CROSS/main/schemas/applicant-facing-publication-0_1_0.json",
+  "title": "CROSS+WALKRI Applicant-Facing Publication Schema (Applicant Cohort)",
+  "description": "The artifact shown to applicants. Specifies the entry specification gate criteria, the public benefit mechanism, the access condition, the obligation mode, and the evidence requirements at each gate. This is the applicant-cohort artifact published at the Commit stage of CLEAR and used by applicants throughout List.",
+  "x-cross-walkri-version": "0.1.0",
+  "x-cross-walkri-canonical-id": "cross-walkri/applicant-facing-publication@0.1.0",
+  "x-cross-walkri-cohort": "applicant",
+  "x-cross-walkri-clear-stage": "Commit and List",
+  "x-cross-walkri-target-release": "cross-walkri/release@1.0",
+  "type": "object",
+  "required": ["round_identity", "obligation_mode", "public_benefit_mechanism", "entry_specification_gate_criteria", "conforms_to"],
+  "properties": {
+    "round_identity": {
+      "$ref": "https://raw.githubusercontent.com/CrossWalkri/CROSS/main/schemas/round-identity-0_1_0.json",
+      "x-cross-walkri-source-section": "CROSS Part IV (shared identity layer)"
+    },
+    "obligation_mode": {
+      "type": "string",
+      "enum": ["build", "change", "retroactive"],
+      "x-cross-walkri-primitive": "Obligation Mode (Layer 3)",
+      "x-cross-walkri-source-section": "CROSS Part III",
+      "description": "What kind of obligation this round creates. Determines which entry gate logic applies."
+    },
+    "public_benefit_mechanism": {
+      "type": "object",
+      "required": ["mechanism_type", "access_condition"],
+      "properties": {
+        "mechanism_type": {
+          "type": "string",
+          "enum": ["output_production", "access_provision", "condition_change", "ecosystem_shift"]
+        },
+        "access_condition": {
+          "type": "string"
+        }
+      },
+      "x-cross-walkri-primitive": "Public Benefit Mechanism (Layer 3)",
+      "x-cross-walkri-source-section": "CROSS Part IVa",
+      "description": "The mechanism by which the round produces public benefit. Each mechanism type constrains the minimum evidence scope required at completion."
+    },
+    "entry_specification_gate_criteria": {
+      "type": "object",
+      "required": ["organizational_identity_required", "sufficiency_architecture_required", "public_benefit_mechanism_required"],
+      "properties": {
+        "organizational_identity_required": {
+          "type": "boolean",
+          "const": true
+        },
+        "sufficiency_architecture_required": {
+          "type": "boolean",
+          "const": true
+        },
+        "public_benefit_mechanism_required": {
+          "type": "boolean",
+          "const": true
+        },
+        "additional_pre_conditions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "x-cross-walkri-primitive": "Gate Type (Layer 3)",
+      "x-cross-walkri-source-section": "CROSS Part III, IV, IVa",
+      "description": "The three required declarations at the entry specification gate plus any round-specific additional pre-conditions."
+    },
+    "evidence_requirements": {
+      "type": "object",
+      "properties": {
+        "entry_gate_evidence": {
+          "type": "string",
+          "description": "What evidence applicants must submit at entry."
+        },
+        "completion_gate_evidence": {
+          "type": "string",
+          "description": "What evidence is required at completion. Must satisfy the mechanism-evidence scope alignment for the declared mechanism type."
+        },
+        "independent_verification_source": {
+          "type": "string"
+        }
+      },
+      "x-cross-walkri-primitive": ["Evidence Form (Layer 4)", "Independent Verifiability from Sources Outside the Applicant's Control (Layer 1)"],
+      "x-cross-walkri-source-section": "WALKRI Section 3; Primitives Foundation v0.1.6 Layer 1",
+      "description": "Evidence requirements at entry and completion gates with the independent verification source named per Commitment 6."
+    },
+    "applicable_lens_metadata": {
+      "type": "object",
+      "properties": {
+        "calibration_tier_round_operates_at": {
+          "type": "string",
+          "enum": ["impressionistic", "process_conformant", "outcome_specified_self_reported", "independently_verified", "falsifiable"]
+        },
+        "framework_scope_type": {
+          "type": "string"
+        }
+      },
+      "x-cross-walkri-primitive": "Lenses Framework",
+      "x-cross-walkri-source-section": "CROSS-WALKRI-lenses-framework-0_1_0.md",
+      "description": "Lens metadata exposed to applicants so they know which tier the round operates at and what scope type the framework occupies."
+    },
+    "conforms_to": {
+      "type": "string",
+      "pattern": "^cross-walkri/applicant-facing-publication@[0-9]+\\.[0-9]+\\.[0-9]+$"
+    }
+  }
+}

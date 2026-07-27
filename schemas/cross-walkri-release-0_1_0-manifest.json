@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/CrossWalkri/CROSS/main/schemas/cross-walkri-release-0_1_0-manifest.json",
+  "title": "CROSS+WALKRI Family Release Snapshot Manifest v0.1.0",
+  "description": "Interim pre-stability release-snapshot for the CROSS+WALKRI JSON Schema family. Names the compatible set of schema versions that operate together in this snapshot. Instance documents conforming to this snapshot declare round_identity.conforms_to = 'cross-walkri/release@0.1.0'.",
+  "x-cross-walkri-version": "0.1.0",
+  "x-cross-walkri-canonical-id": "cross-walkri/release@0.1.0",
+  "x-cross-walkri-status": "interim pre-stability snapshot; not v1.0",
+  "x-cross-walkri-date": "2026-05-23",
+  "x-cross-walkri-members": {
+    "round-identity": {
+      "canonical_id": "cross-walkri/round-identity@0.1.0",
+      "filename": "round-identity-0_1_0.json",
+      "role": "shared sub-schema; join key across cohorts"
+    },
+    "round-config": {
+      "canonical_id": "cross-walkri/round-config@0.2.1",
+      "filename": "round-config-0_2_0.json",
+      "role": "funder cohort; published at Commit stage"
+    },
+    "runbook": {
+      "canonical_id": "cross-walkri/runbook@0.2.0",
+      "filename": "runbook-0_2_0.json",
+      "role": "operator cohort; operationalizes Commit through Register stages"
+    },
+    "applicant-facing-publication": {
+      "canonical_id": "cross-walkri/applicant-facing-publication@0.2.1",
+      "filename": "applicant-facing-publication-0_2_0.json",
+      "role": "applicant cohort; published at Commit, used through List"
+    }
+  },
+  "x-cross-walkri-not-yet-included": [
+    "cross-walkri/form-spec@0.1.0 (deferred to release v1.1 per architecture document)",
+    "cross-walkri/reviewer-brief (future)",
+    "cross-walkri/review-config (future)",
+    "cross-walkri/determination-record (future)",
+    "cross-walkri/analytical-export (future)",
+    "cross-walkri/cross-program-comparison (future)",
+    "cross-walkri/integration-spec (future)",
+    "cross-walkri/conformance-declaration (future)",
+    "cross-walkri/portfolio-schema (future)",
+    "cross-walkri/multi-program-audit (future)",
+    "cross-walkri/application-draft (future)",
+    "cross-walkri/evidence-submission (future)",
+    "cross-walkri/adverse-signal-log (future; per Consistency Audit Finding 10)"
+  ],
+  "x-cross-walkri-compatibility-rule": "Within this snapshot, all member schemas are compatible. Instance documents must use only the versions named above. A schema major-version change in any member produces a new snapshot (release@0.2.0 or release@1.0 depending on scope).",
+  "x-cross-walkri-conformance-test": "A round instance conforms to release@0.1.0 when (1) the Round Identity sub-schema in the instance matches round-identity@0.1.0; (2) each cohort-specific schema instance matches the version named in this manifest; (3) all $ref cross-references resolve to schemas in this manifest; (4) the round_identity.conforms_to declaration names 'cross-walkri/release@0.1.0'.",
+  "x-cross-walkri-changelog": [
+    {
+      "version": "0.1.0",
+      "date": "2026-05-23",
+      "summary": "Initial interim pre-stability release-snapshot. Names round-identity@0.1.0, round-config@0.2.0, runbook@0.2.0, applicant-facing-publication@0.2.0 as compatible members. Established to address Consistency Audit Finding 2 (the Octant Epoch 13 instance previously referenced release@1.0 which had not been declared)."
+    }
+  ]
+}

@@ -1,0 +1,255 @@
+{
+  "_comment_purpose": "Worked instance demonstrating cross-walkri/round-config@0.2.1 against a hypothetical Octant Epoch 13 round configuration. Values are illustrative for implementation reference; actual Epoch 13 parameters are set by Octant and may differ. This instance is the reference artifact for Quentin's implementation work and a quality test of the schema's expressiveness.",
+  "_comment_authority": "This is an example instance authored by Durgadas Hegde as part of the CROSS+WALKRI corpus. It is not an official Octant publication and does not bind Octant to these specific parameters.",
+
+  "round_identity": {
+    "round_id": "octant-epoch-13",
+    "program_id": "octant",
+    "funder_id": "golem-foundation",
+    "cycle_number": 13,
+    "conforms_to": "cross-walkri/release@0.1.0"
+  },
+
+  "obligation_mode": "retroactive",
+
+  "public_benefit_mechanism": {
+    "mechanism_type": "output_production",
+    "access_condition": "Funded projects must release qualifying outputs under an OSI-conformant open-source license. License declaration is checked at the entry specification gate and license file presence is verified at the attestation stage from a publicly accessible source outside the applicant's control. Where the project also operates an access_provision component (e.g., a hosted service), the access mechanism is named at entry and verified at attestation.",
+    "spdx_license": "MIT OR Apache-2.0 OR GPL-3.0 OR AGPL-3.0 OR BSD-3-Clause"
+  },
+
+  "downstream_use_restriction": {
+    "restriction_predicate": [
+      "military application",
+      "mass surveillance infrastructure",
+      "autonomous targeting systems"
+    ],
+    "verification_mechanism": "Applicant declares intended use at the entry specification gate; the declaration is checked against the restriction predicate by the determination body before disbursement. A declared use that matches any restriction predicate item is a categorical entry-gate failure.",
+    "disclosure_obligation": "Applicant must declare the intended class of use, deployment context, and any named downstream consumers known at the time of application."
+  },
+
+  "development_stage_targeting": [
+    "stage_2_early_adoption",
+    "stage_3_growth",
+    "stage_4_established_infrastructure",
+    "stage_5_retroactive_recognition"
+  ],
+
+  "revenue_architecture_constraints": [
+    "grant_only",
+    "fee_for_service",
+    "hybrid"
+  ],
+
+  "cohort_position": "continuation",
+
+  "coordination_scaling_standard_tier": "tier_2_standard",
+
+  "budget": {
+    "amount": 800.0,
+    "denomination": "ETH",
+    "allocation_method": "hybrid",
+    "disbursement_schedule": {
+      "entry_gate_tranche_percentage": 0,
+      "progress_tranche_percentages": [],
+      "completion_tranche_percentage": 100
+    }
+  },
+
+  "entry_specification_gate": {
+    "pre_conditions_required": {
+      "organizational_identity_declaration": true,
+      "sufficiency_architecture_declaration": true,
+      "public_benefit_mechanism_declaration": true,
+      "prior_work_attribution_required_if_cited": true,
+      "obligation_fulfillment_record_required_for_returning_applicants": true
+    },
+    "criteria": {
+      "_comment": "Retroactive mode entry gate per CROSS Part III Section C. Applicant presents contribution evidence accessible from sources outside the applicant's control.",
+      "contribution_description_required": true,
+      "contribution_period_required": true,
+      "independently_accessible_use_evidence_required": true,
+      "prior_award_disclosure_required": true
+    },
+    "evidence_form_specifications": [
+      {
+        "criterion_intent": "Demonstrate that the project produced or maintains a public-goods output that the Ethereum ecosystem or the wider open-source web3 commons makes use of.",
+        "operational_definition": "Qualifying outputs include: open-source libraries with documented downstream dependencies; protocols deployed on Ethereum mainnet or L2 networks with documented usage; research outputs with citations; documentation, tooling, or infrastructure that other projects build on. Excluded: outputs available only to the applicant team or with paywall barriers preventing public use.",
+        "response_form": "Narrative description of the output plus structured evidence pointers (links, identifiers).",
+        "evidence_form": "GitHub repository URL with commit history; deps.dev dependency graph showing downstream consumers; deployment addresses on Ethereum mainnet or L2; documentation URL; published research DOI.",
+        "conformance_threshold": "Minimum: one named output with public accessibility evidence and at least one independent downstream user identifiable from a public source.",
+        "independent_verification_source": "GitHub archive; deps.dev; Etherscan or L2 explorers; Google Scholar; project-independent documentation sources",
+        "data_quality_standards_satisfied": ["validity", "integrity", "precision", "reliability"]
+      },
+      {
+        "criterion_intent": "Demonstrate that the applicant entity is the body accountable for the output's continued maintenance during the period claimed for the round.",
+        "operational_definition": "The applicant's legal or organizational identity matches the entity that has been making material contributions during the contribution period (the prior epoch). Identity is checked against the Organizational Identity Declaration. Where prior work was performed under a different entity, the Prior Work Attribution Statement is required.",
+        "response_form": "Organizational Identity Declaration plus Prior Work Attribution Statement where applicable.",
+        "evidence_form": "Legal entity registration documents; GitHub commit attribution; on-chain identity anchor (wallet address) with sustained activity.",
+        "conformance_threshold": "Identity match between applicant and contributing entity; or explicit Prior Work Attribution Statement with documented relationship status.",
+        "independent_verification_source": "Registry records; GitHub commit attribution; on-chain transaction history",
+        "data_quality_standards_satisfied": ["validity", "integrity", "precision"]
+      }
+    ],
+    "rigor_tier_assignment_method": "calibrated_by_coordination_scaling_standard"
+  },
+
+  "completion_verification_gate": {
+    "evidence_scope": "usage_evidence",
+    "evidence_strength": "third_party_verifiable",
+    "independent_verification_source": "deps.dev dependency graphs; on-chain transaction records; GitHub archive; project-independent documentation; Open Source Observer (OSO) public data models",
+    "causality_stance": "contribution_stance",
+    "redress_rights_apply": true,
+    "iteration_rights_apply": false
+  },
+
+  "continuation_specification_gate": {
+    "stages_advanced": "Epoch 14 onward eligibility based on continued contribution during the Epoch 13 measurement period plus sustainability stance declaration",
+    "sustainability_stance_required": true,
+    "evidence_requirements": {
+      "criterion_intent": "Project continues to be maintained with new contribution during subsequent epochs.",
+      "operational_definition": "Contribution activity is observable in the Attestation Corpus during the next epoch's measurement window.",
+      "response_form": "Status of the project under one of three sustainability stances: Sustained, Conditional, Dependent",
+      "evidence_form": "Same data sources as completion gate, applied to subsequent epoch window",
+      "conformance_threshold": "Documented activity in the Attestation Corpus during the next epoch's measurement period."
+    }
+  },
+
+  "pre_award_indicator_confirmation_stage": {
+    "confirmation_required": true,
+    "confirmation_procedure": "Between entry-gate eligibility confirmation and the community allocation vote, each eligible project confirms with the Octant team which contribution indicators will be queried at the attestation stage. The confirmation produces a per-project Indicator Schedule recorded in the Attestation Corpus before the vote opens.",
+    "deadline_relative_to_entry_gate": "T+7 days after entry-gate determinations are published"
+  },
+
+  "determination_body": {
+    "body_type": "hybrid",
+    "structural_separation_from_applicants": "Eligibility determinations are made by the Octant team (Octant Foundation staff). Allocation determinations are made by community voting weighted by GLM lock-up and validated against the COCM-equivalent coordination analysis. Neither the Octant team nor individual community voters are applicants in the same round; an Octant team member or affiliated organization applying would trigger Tier 1 categorical bar per CROSS Part VIII.",
+    "charter_url": "https://docs.octant.app/governance/determination-body-charter",
+    "conflict_of_interest_procedure": "Tier 1 (categorical bar, no waiver): direct financial interest above materiality threshold; family relationship with applicant; current employment with applicant; named on applicant project's public materials. Tier 2 (qualified waiver): prior employment within 36 months; co-authorship within 48 months; mentor or student relationship; governance token voting on applicant proposals. Tier 3 (disclosure encouraged): social or community relationships; cross-round interactions in different program areas. Octant team members declare conflicts pre-eligibility-review; community voters disclose conflicts pre-vote where they exceed Tier 2 materiality.",
+    "appointment_mechanism": "Octant team members appointed by Golem Foundation. Community voters self-select by acquiring and locking GLM.",
+    "removal_mechanism": "Octant team members removable per Golem Foundation employment terms. Community voter weight subject to coordination analysis adjustment per the Adverse Signal Engagement plan."
+  },
+
+  "attestation_corpus_specification": {
+    "sources": [
+      "Octant on-chain allocation records (Ethereum mainnet)",
+      "GLM lock-up records",
+      "GitHub archive",
+      "deps.dev dependency graph",
+      "Etherscan and L2 explorers",
+      "Open Source Observer (OSO) public data models",
+      "Snapshot governance records where applicable",
+      "Karma GAP grant and milestone records"
+    ],
+    "query_methodology": "Per project, queries are constructed against the project's declared On-chain Identity Anchor (Ethereum address or set of addresses) and named GitHub organizations. Query output is recorded as Attestation Corpus snapshot at the completion stage. Snapshots are queryable by any third party using the published source list.",
+    "dating_convention": "All snapshots include the block height (for on-chain sources) and ISO-8601 UTC timestamp at query time.",
+    "query_input": "both"
+  },
+
+  "inter_cycle_reflection_stage": {
+    "reflection_required": true,
+    "publication_deadline": "2026-09-15T00:00:00Z",
+    "scope": "Per-Epoch reflection covering: applicant cohort composition, allocation distribution, COCM-equivalent coordination findings, identified Adverse Signals and their handling, drift between Epoch 13 commitments and outcomes, recommended adjustments for Epoch 14. Publication is required before Epoch 14 entry gate opens."
+  },
+
+  "portfolio_level_continuation_benchmark": {
+    "metric": "Percentage of Epoch 13 funded projects with documented activity in Epoch 14's attestation window; aggregate independent usage growth across funded projects measured by deps.dev downstream dependency count and on-chain usage",
+    "threshold": "Octant program continuation justified when at least 70% of funded projects show documented activity in the next epoch and aggregate usage growth across the cohort exceeds the prior epoch's baseline",
+    "review_period": "Three-epoch rolling window"
+  },
+
+  "adverse_signal_engagement_plan": {
+    "surfacing_obligation": "Applicants must surface adverse signals at the entry specification gate per the Adverse-Signal Engagement Principle Core Standard. Adverse signals include: prior rejections from similar programs with similar scope; contradictory technical findings about the project's claims; negative due diligence findings from other funders; unresolved Obligation Fulfillment Record entries from prior epochs or other programs. Reviewers (Octant team members) must not suppress adverse signals encountered during entry-gate review. Community voters are informed of surfaced adverse signals through the published application materials before the vote opens.",
+    "log_publication": true,
+    "log_publication_location": "Published as part of the Inter-cycle Reflection Stage document, with per-project adverse signal entries linked from the project's Attestation Corpus record",
+    "review_procedure": "Adverse signal entries are added to the standing log throughout the epoch. The Inter-cycle Reflection Stage publication includes a summary of signal patterns and the program's response."
+  },
+
+  "redress_provisions": {
+    "completion_gate_redress_procedure": "A project receiving an unfavorable completion-gate determination may submit a written redress request within 14 days of the determination publication. The request is reviewed by the determination body's redress panel, which is composed of Octant team members not involved in the original determination. The panel issues a written response within 28 days.",
+    "appeal_procedure": "If the redress panel's response is unsatisfactory, the project may escalate to the Golem Foundation's grant program review body. Escalation is recorded in the Attestation Corpus.",
+    "redress_timeline": "Initial redress: 14 days to submit; 28 days to respond. Escalation: 30 days to submit after redress response; 60 days for review body response."
+  },
+
+  "format_agnosticism_declaration": {
+    "content_conformance_accepted": true,
+    "format_neutrality_statement": "Octant accepts any infrastructure meeting the content requirements specified by the relevant primitives, regardless of format. Code in any language; documentation in any format; on-chain attestations under any EAS-compatible schema; off-chain attestations in signed JSON, PDF, or institutional document format are all accepted when they meet the content specifications.",
+    "named_format_exceptions": [
+      "SPDX identifier required for output_production access_condition",
+      "Ethereum address format required for on-chain identity anchor",
+      "ISO-8601 UTC timestamp required for Attestation Corpus dating"
+    ]
+  },
+
+  "evidence_requirements": {
+    "evidence_form_specifications": [
+      {
+        "criterion_intent": "Project output is observable in independently maintained data sources",
+        "operational_definition": "Output appears in at least two named sources from the Attestation Corpus sources list",
+        "response_form": "Per-project Attestation Corpus snapshot",
+        "evidence_form": "JSON-formatted snapshot containing source name, query, timestamp, and query output",
+        "conformance_threshold": "Minimum two source matches per project",
+        "independent_verification_source": "Multiple Attestation Corpus sources (any two of the eight listed)",
+        "data_quality_standards_satisfied": ["validity", "integrity", "precision", "reliability", "timeliness"]
+      }
+    ],
+    "data_quality_standards_applied": ["validity", "integrity", "precision", "reliability", "timeliness"]
+  },
+
+  "concurrent_funding_disclosure_requirements": {
+    "required_fields": [
+      "source_name",
+      "source_type",
+      "approximate_amount",
+      "relationship_to_scope",
+      "ongoing_obligations",
+      "governance_rights"
+    ],
+    "lookback_window_months": 24,
+    "non_disclosure_consequence": "disqualification"
+  },
+
+  "conflict_of_interest_declaration_requirements": {
+    "pre_review_declaration_required": true,
+    "tier_classification_required": true,
+    "bidirectional_disclosure": true,
+    "post_review_certification_required": true
+  },
+
+  "coherence_disclosure_requirements": {
+    "self_reference_consistency_required": true,
+    "scope_consistency_required": true,
+    "stage_obligation_consistency_required": true
+  },
+
+  "application_period": {
+    "open_date": "2026-06-01T00:00:00Z",
+    "close_date": "2026-06-21T23:59:59Z",
+    "extensions_permitted": false
+  },
+
+  "review_period": {
+    "open_date": "2026-06-22T00:00:00Z",
+    "close_date": "2026-07-05T23:59:59Z"
+  },
+
+  "determination_publication_date": "2026-07-06T00:00:00Z",
+
+  "reporting_cadence": {
+    "progress_report_cadence": "Not applicable in retroactive mode; the contribution period is the prior epoch and reporting is at the attestation stage",
+    "completion_report_deadline_relative_to_grant_end": "Attestation snapshots due 14 days after the community allocation vote closes",
+    "publication_requirements": "Per-project Attestation Corpus snapshots published openly; allocation results published on-chain; Inter-cycle Reflection Stage document published per the deadline above"
+  },
+
+  "lens_metadata": {
+    "calibration_tier_current": "impressionistic",
+    "calibration_tier_target": "process_conformant",
+    "target_horizon": "Epoch 13 completion (2026-09-15)",
+    "authority_source": "voluntary_published",
+    "cultural_methodological_lineage": "western_institutional",
+    "funder_typology": "dao_or_protocol",
+    "framework_scope_type": "allocator_process"
+  },
+
+  "conforms_to": "cross-walkri/round-config@0.2.1"
+}

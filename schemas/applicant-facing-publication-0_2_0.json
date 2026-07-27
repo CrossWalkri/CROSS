@@ -1,0 +1,362 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/CrossWalkri/CROSS/main/schemas/applicant-facing-publication-0_2_0.json",
+  "title": "CROSS+WALKRI Applicant-Facing Publication Schema (Applicant Cohort)",
+  "description": "The artifact shown to applicants, fully populated. The applicant-cohort projection of the Round Config: only fields applicants need to understand and act on. Funder-side configuration details (determination body charter URL, scoring algorithm specifics, internal escalation procedures) are not exposed here. Supersedes v0.1.0 (skeleton). v0.2.1 renames the conformance_threshold field (formerly compliance_threshold) for Frame Language conformance; a breaking field rename.",
+  "x-cross-walkri-version": "0.2.1",
+  "x-cross-walkri-canonical-id": "cross-walkri/applicant-facing-publication@0.2.1",
+  "x-cross-walkri-cohort": "applicant",
+  "x-cross-walkri-clear-stage": "Commit and List",
+  "x-cross-walkri-supersedes": "cross-walkri/applicant-facing-publication@0.1.0",
+  "x-cross-walkri-target-release": "cross-walkri/release@1.0",
+  "type": "object",
+  "required": [
+    "round_identity",
+    "round_config_reference",
+    "obligation_mode",
+    "public_benefit_mechanism_options",
+    "application_period",
+    "entry_specification_gate_requirements",
+    "evidence_requirements",
+    "disclosure_obligations",
+    "applicant_rights",
+    "completion_verification_gate_summary",
+    "applicable_lens_metadata",
+    "conforms_to"
+  ],
+  "properties": {
+    "round_identity": {
+      "$ref": "https://raw.githubusercontent.com/CrossWalkri/CROSS/main/schemas/round-identity-0_1_0.json",
+      "x-cross-walkri-source-section": "CROSS Part IV (shared identity layer)"
+    },
+    "round_config_reference": {
+      "type": "string",
+      "pattern": "^cross-walkri/round-config@[0-9]+\\.[0-9]+\\.[0-9]+$",
+      "x-cross-walkri-primitive": "Schema Family Coherence (Evolution Rules Commitment 2)",
+      "description": "Reference to the Round Config this publication projects. Applicants can request the underlying Round Config; the funder publishes both."
+    },
+    "obligation_mode": {
+      "type": "string",
+      "enum": ["build", "change", "retroactive"],
+      "x-cross-walkri-primitive": "Obligation Mode (Layer 3)",
+      "x-cross-walkri-source-section": "CROSS Part III",
+      "description": "What kind of obligation this round creates. Determines which entry gate criteria apply: build requires a falsifiable deliverable with verifiable completion criteria; change requires a FROM state as a specific measurable condition; retroactive requires prior contribution evidence."
+    },
+    "public_benefit_mechanism_options": {
+      "type": "object",
+      "required": ["allowed_mechanism_types", "access_condition_requirements"],
+      "properties": {
+        "allowed_mechanism_types": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": ["output_production", "access_provision", "condition_change", "ecosystem_shift"]
+          }
+        },
+        "access_condition_requirements": {
+          "type": "object",
+          "properties": {
+            "output_production_requires_spdx_license": {"type": "boolean", "const": true},
+            "access_provision_requires_named_access_mechanism": {"type": "boolean", "const": true},
+            "condition_change_requires_population_definition": {"type": "boolean", "const": true},
+            "ecosystem_shift_requires_causal_pathway": {"type": "boolean", "const": true}
+          }
+        }
+      },
+      "x-cross-walkri-primitive": ["Public Benefit Mechanism (Layer 3)", "Access Condition (Layer 3)"],
+      "x-cross-walkri-source-section": "CROSS Part IVa"
+    },
+    "downstream_use_restriction_summary": {
+      "type": "object",
+      "properties": {
+        "restriction_predicate": {
+          "type": "array",
+          "items": {"type": "string"}
+        },
+        "disclosure_obligation_text": {"type": "string"}
+      },
+      "x-cross-walkri-primitive": "Downstream-Use Restriction (Layer 3)",
+      "description": "Present only when the round has a Downstream-Use Restriction. Applicants must declare intended use and submit to verification."
+    },
+    "development_stage_targeting": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["stage_1_proof_of_concept", "stage_2_early_adoption", "stage_3_growth", "stage_4_established_infrastructure", "stage_5_retroactive_recognition"]
+      },
+      "x-cross-walkri-primitive": "Development Stage (Layer 2)",
+      "description": "Which development stages are within scope. Applicants outside this range are not eligible; out-of-stage applications may be accepted by funder exception."
+    },
+    "revenue_architecture_constraints_summary": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["grant_only", "fee_for_service", "commercial", "hybrid"]
+      },
+      "x-cross-walkri-primitive": "Revenue Architecture (Layer 2)",
+      "description": "Which revenue architecture types are eligible. Commercial and hybrid entities must specifically delineate the public-goods scope."
+    },
+    "application_period": {
+      "type": "object",
+      "required": ["open_date", "close_date"],
+      "properties": {
+        "open_date": {"type": "string", "format": "date-time"},
+        "close_date": {"type": "string", "format": "date-time"},
+        "extensions_permitted": {"type": "boolean"},
+        "intake_platform_url": {"type": "string", "format": "uri"}
+      }
+    },
+    "review_period_summary": {
+      "type": "object",
+      "properties": {
+        "open_date": {"type": "string", "format": "date-time"},
+        "close_date": {"type": "string", "format": "date-time"},
+        "determination_publication_date": {"type": "string", "format": "date-time"}
+      },
+      "description": "Approximate review schedule. Applicants are notified of determinations on or before the determination_publication_date."
+    },
+    "entry_specification_gate_requirements": {
+      "type": "object",
+      "required": ["required_declarations", "evidence_form_specifications"],
+      "properties": {
+        "required_declarations": {
+          "type": "object",
+          "required": ["organizational_identity_declaration", "sufficiency_architecture_declaration", "public_benefit_mechanism_declaration"],
+          "properties": {
+            "organizational_identity_declaration": {
+              "type": "object",
+              "properties": {
+                "fields_required": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "enum": ["legal_entity_name_and_jurisdiction", "parent_organization", "affiliated_entity", "prior_round_history", "disbursement_authority", "on_chain_identity_anchor"]
+                  }
+                }
+              }
+            },
+            "sufficiency_architecture_declaration": {
+              "type": "object",
+              "properties": {
+                "elements_required": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "enum": ["scope_declaration", "sufficiency_position", "portfolio_context_statement", "grant_contribution_statement"]
+                  }
+                }
+              }
+            },
+            "public_benefit_mechanism_declaration": {
+              "type": "object",
+              "properties": {
+                "mechanism_type_required": {"type": "boolean", "const": true},
+                "access_condition_required": {"type": "boolean", "const": true}
+              }
+            },
+            "prior_work_attribution_required_if_cited": {"type": "boolean", "const": true},
+            "obligation_fulfillment_record_required_for_returning_applicants": {"type": "boolean", "const": true}
+          }
+        },
+        "evidence_form_specifications": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/applicant_evidence_form_specification"
+          }
+        },
+        "criteria_summary": {
+          "type": "string",
+          "description": "Plain-language summary of mode-specific entry criteria per CROSS Part III."
+        }
+      },
+      "x-cross-walkri-primitive": "Gate Type (Layer 3) - Entry Specification Gate",
+      "x-cross-walkri-source-section": "CROSS Part III, IV, IVa"
+    },
+    "evidence_requirements": {
+      "type": "object",
+      "required": ["evidence_scope", "evidence_strength", "evidence_form_specifications_for_completion"],
+      "properties": {
+        "evidence_scope": {
+          "type": "string",
+          "enum": ["output_evidence", "usage_evidence", "outcome_evidence", "impact_evidence"]
+        },
+        "evidence_strength": {
+          "type": "string",
+          "enum": ["self_report_with_documentation", "third_party_verifiable", "independent_review", "independent_evaluation"]
+        },
+        "evidence_form_specifications_for_completion": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/applicant_evidence_form_specification"
+          }
+        },
+        "independent_verification_source": {
+          "type": "string",
+          "description": "Named source from which verification can be obtained, lying outside the applicant's control per Commitment 6."
+        }
+      },
+      "x-cross-walkri-primitive": ["Evidence Scope (Layer 4)", "Evidence Strength (Layer 4)", "Independent Verifiability (Layer 1)"],
+      "x-cross-walkri-source-section": "WALKRI Section 3; Primitives Foundation v0.1.6 Layer 4"
+    },
+    "disclosure_obligations": {
+      "type": "object",
+      "required": ["concurrent_funding_disclosure", "conflict_of_interest_disclosure", "adverse_signal_disclosure"],
+      "properties": {
+        "concurrent_funding_disclosure": {
+          "type": "object",
+          "required": ["required_fields", "lookback_window_months"],
+          "properties": {
+            "required_fields": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": ["source_name", "source_type", "approximate_amount", "relationship_to_scope", "ongoing_obligations", "governance_rights"]
+              }
+            },
+            "lookback_window_months": {"type": "integer"},
+            "non_disclosure_consequence_text": {
+              "type": "string",
+              "description": "Plain-language statement that non-disclosure is a disqualifier; disclosure is not."
+            }
+          }
+        },
+        "conflict_of_interest_disclosure": {
+          "type": "object",
+          "properties": {
+            "applicant_disclosure_required": {"type": "boolean", "const": true},
+            "tier_classification_explanation_text": {"type": "string"}
+          }
+        },
+        "adverse_signal_disclosure": {
+          "type": "object",
+          "required": ["surfacing_obligation_text"],
+          "properties": {
+            "surfacing_obligation_text": {
+              "type": "string",
+              "description": "Plain-language statement of the applicant's obligation to surface adverse signals (prior rejections, contradictory findings, negative due diligence)."
+            }
+          }
+        }
+      }
+    },
+    "applicant_rights": {
+      "type": "object",
+      "required": ["progress_gate_iteration_rights", "completion_gate_redress_rights"],
+      "properties": {
+        "progress_gate_iteration_rights": {
+          "type": "object",
+          "properties": {
+            "applies": {"type": "boolean", "const": true},
+            "explanation_text": {
+              "type": "string",
+              "description": "At progress verification gates (Developmental in character), applicants retain iteration rights: feedback surfaces what needs to change before the next gate; applicants may revise."
+            }
+          }
+        },
+        "completion_gate_redress_rights": {
+          "type": "object",
+          "properties": {
+            "applies": {"type": "boolean", "const": true},
+            "redress_window_days": {"type": "integer"},
+            "redress_procedure_summary": {"type": "string"},
+            "escalation_available": {"type": "boolean"}
+          },
+          "description": "At completion verification gates (Summative in character), applicants have redress rights (not iteration rights)."
+        },
+        "privacy_sensitive_accommodation_available": {
+          "type": "boolean",
+          "description": "Per CROSS Part XVII. Available when the beneficiary population faces elevated risk from standard outcome measurement."
+        }
+      },
+      "x-cross-walkri-primitive": ["Gate Character (Layer 3)", "Funder-Side Obligation Architecture (Foundational Anchor)"]
+    },
+    "completion_verification_gate_summary": {
+      "type": "object",
+      "required": ["evidence_scope", "evidence_strength", "causality_stance"],
+      "properties": {
+        "evidence_scope": {
+          "type": "string",
+          "enum": ["output_evidence", "usage_evidence", "outcome_evidence", "impact_evidence"]
+        },
+        "evidence_strength": {
+          "type": "string",
+          "enum": ["self_report_with_documentation", "third_party_verifiable", "independent_review", "independent_evaluation"]
+        },
+        "causality_stance": {
+          "type": "string",
+          "enum": ["attribution_stance", "contribution_stance"]
+        },
+        "verification_timeline": {"type": "string"}
+      }
+    },
+    "format_agnosticism_statement": {
+      "type": "string",
+      "x-cross-walkri-primitive": "Format Agnosticism (Layer 1)",
+      "description": "Plain-language statement that this round accepts content-conformant evidence in any format, with named format requirements (e.g., SPDX identifier for output_production access_condition) called out specifically."
+    },
+    "applicable_lens_metadata": {
+      "type": "object",
+      "required": ["calibration_tier_round_operates_at", "framework_scope_type"],
+      "properties": {
+        "calibration_tier_round_operates_at": {
+          "type": "string",
+          "enum": ["impressionistic", "process_conformant", "outcome_specified_self_reported", "independently_verified", "falsifiable"]
+        },
+        "calibration_tier_target_for_next_round": {
+          "type": "string",
+          "enum": ["impressionistic", "process_conformant", "outcome_specified_self_reported", "independently_verified", "falsifiable"]
+        },
+        "framework_scope_type": {
+          "type": "string"
+        }
+      },
+      "x-cross-walkri-primitive": "Lenses Framework",
+      "description": "Applicant-visible Lens metadata: which tier the round operates at and where it is heading. Helps applicants calibrate their expectations and prepare evidence appropriate to the tier."
+    },
+    "support_resources": {
+      "type": "object",
+      "properties": {
+        "documentation_url": {"type": "string", "format": "uri"},
+        "support_contact": {"type": "string"},
+        "office_hours": {"type": "string"}
+      }
+    },
+    "conforms_to": {
+      "type": "string",
+      "pattern": "^cross-walkri/applicant-facing-publication@[0-9]+\\.[0-9]+\\.[0-9]+$"
+    }
+  },
+  "$defs": {
+    "applicant_evidence_form_specification": {
+      "type": "object",
+      "required": ["criterion_intent", "operational_definition", "response_form", "evidence_form", "conformance_threshold"],
+      "properties": {
+        "criterion_intent": {
+          "type": "string",
+          "description": "What this criterion measures. Written for applicant comprehension."
+        },
+        "operational_definition": {
+          "type": "string",
+          "description": "What counts and what does not, with qualifying and non-qualifying examples."
+        },
+        "response_form": {
+          "type": "string",
+          "description": "How the applicant should structure their response."
+        },
+        "evidence_form": {
+          "type": "string",
+          "description": "What artifact the applicant submits to satisfy the criterion."
+        },
+        "conformance_threshold": {
+          "type": "string",
+          "description": "Minimum threshold the evidence must meet."
+        },
+        "independent_verification_source_visible_to_applicant": {
+          "type": "string",
+          "description": "If applicable, the named source the funder will use to verify the applicant's claims. Makes verification reproducible and transparent."
+        }
+      },
+      "description": "The five Criterion Specification Elements (Layer 5 primitive) projected for applicant comprehension. The funder's internal evaluation rubric may have additional fields not shown here."
+    }
+  }
+}

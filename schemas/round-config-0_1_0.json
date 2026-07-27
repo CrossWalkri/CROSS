@@ -1,0 +1,135 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/CrossWalkri/CROSS/main/schemas/round-config-0_1_0.json",
+  "title": "CROSS+WALKRI Round Configuration Schema (Funder Cohort)",
+  "description": "The configuration a funder publishes for a round. Specifies budget, obligation mode, gate configuration, attestation corpus specification, and the determination body separation declaration. This is the funder-cohort artifact that operationalizes the Commit stage of the CLEAR lifecycle.",
+  "x-cross-walkri-version": "0.1.0",
+  "x-cross-walkri-canonical-id": "cross-walkri/round-config@0.1.0",
+  "x-cross-walkri-cohort": "funder",
+  "x-cross-walkri-clear-stage": "Commit",
+  "x-cross-walkri-target-release": "cross-walkri/release@1.0",
+  "type": "object",
+  "required": ["round_identity", "obligation_mode", "budget", "gate_configuration", "determination_body", "conforms_to"],
+  "properties": {
+    "round_identity": {
+      "$ref": "https://raw.githubusercontent.com/CrossWalkri/CROSS/main/schemas/round-identity-0_1_0.json",
+      "x-cross-walkri-source-section": "CROSS Part IV (shared identity layer)"
+    },
+    "obligation_mode": {
+      "type": "string",
+      "enum": ["build", "change", "retroactive"],
+      "x-cross-walkri-primitive": "Obligation Mode (Layer 3)",
+      "x-cross-walkri-source-section": "CROSS Part III",
+      "description": "The classification of what type of commitment this round creates: deliverable production (build), measured population change (change), or recognition of prior contribution (retroactive)."
+    },
+    "budget": {
+      "type": "object",
+      "required": ["amount", "denomination"],
+      "properties": {
+        "amount": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "denomination": {
+          "type": "string",
+          "description": "Currency or token denomination (USD, EUR, OP, ETH, etc.)."
+        },
+        "allocation_method": {
+          "type": "string",
+          "enum": ["fixed_disbursement", "quadratic_funding", "algorithmic_metric", "discretionary_committee", "hybrid"]
+        }
+      },
+      "x-cross-walkri-primitive": "Sufficiency (Layer 2)",
+      "x-cross-walkri-source-section": "CROSS Part IV.B",
+      "description": "Total budget and allocation method for the round."
+    },
+    "gate_configuration": {
+      "type": "object",
+      "required": ["entry_specification", "evidence_scope", "evidence_strength"],
+      "properties": {
+        "entry_specification": {
+          "type": "object",
+          "x-cross-walkri-primitive": "Gate Type (Layer 3)"
+        },
+        "evidence_scope": {
+          "type": "string",
+          "enum": ["self_reported", "documented", "independently_sourced", "independently_verified", "audited"]
+        },
+        "evidence_strength": {
+          "type": "string",
+          "enum": ["minimum", "standard", "high", "independent_review"]
+        }
+      },
+      "x-cross-walkri-primitive": ["Gate Type (Layer 3)", "Evidence Scope (Layer 4)", "Evidence Strength (Layer 4)"],
+      "x-cross-walkri-source-section": "CROSS Part XI",
+      "description": "The gate configuration applied across the round's CLEAR stages. Evidence scope and strength are tier-calibrated per the Coordination Scaling Standard."
+    },
+    "attestation_corpus_specification": {
+      "type": "object",
+      "properties": {
+        "sources": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "query_methodology": {
+          "type": "string"
+        },
+        "dating_convention": {
+          "type": "string"
+        }
+      },
+      "x-cross-walkri-primitive": "Attestation Corpus (Layer 4)",
+      "x-cross-walkri-source-section": "Primitives Foundation v0.1.6 Layer 4",
+      "description": "The queryable record of contribution and use evidence the round operates against. Named sources, query methodology, and dating convention must be specified per Commitment 6 (Independent Verifiability)."
+    },
+    "determination_body": {
+      "type": "object",
+      "required": ["body_type", "structural_separation_from_applicants"],
+      "properties": {
+        "body_type": {
+          "type": "string",
+          "enum": ["committee", "algorithm", "vote", "external_panel", "hybrid"]
+        },
+        "structural_separation_from_applicants": {
+          "type": "string",
+          "description": "Statement of how the determination body is structurally separate from applicants per Determination Body Separation primitive."
+        },
+        "conflict_of_interest_procedure": {
+          "type": "string"
+        }
+      },
+      "x-cross-walkri-primitive": "Determination Body Separation (Layer 4)",
+      "x-cross-walkri-source-section": "CROSS Part VIII; Primitives Foundation v0.1.6 Layer 4",
+      "description": "Names the body that renders funding determinations and specifies how it is structurally separate from applicants."
+    },
+    "lens_metadata": {
+      "type": "object",
+      "properties": {
+        "calibration_tier_current": {
+          "type": "string",
+          "enum": ["impressionistic", "process_conformant", "outcome_specified_self_reported", "independently_verified", "falsifiable"]
+        },
+        "calibration_tier_target": {
+          "type": "string",
+          "enum": ["impressionistic", "process_conformant", "outcome_specified_self_reported", "independently_verified", "falsifiable"]
+        },
+        "authority_source": {
+          "type": "string"
+        },
+        "funder_typology": {
+          "type": "string"
+        }
+      },
+      "x-cross-walkri-primitive": "Lenses Framework (cross-cutting metadata)",
+      "x-cross-walkri-source-section": "CROSS-WALKRI-lenses-framework-0_1_0.md",
+      "description": "Lens Framework tagging for the round. Current-plus-target calibration tier per the Lenses Framework runbook output shape."
+    },
+    "conforms_to": {
+      "type": "string",
+      "pattern": "^cross-walkri/round-config@[0-9]+\\.[0-9]+\\.[0-9]+$",
+      "description": "The schema version this instance claims to satisfy."
+    }
+  }
+}
