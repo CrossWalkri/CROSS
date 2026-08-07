@@ -217,7 +217,7 @@ All AI assistance is invoked using the CROSS skill (claude-skills/claude-skill-C
 
 Layer 1 checks whether the evidence the applicant submitted with their application matches the claims made in the entry specification. The check covers: does the named data source exist and is it publicly accessible? does the reported baseline value correspond to what the named source shows? for build-obligation applications, is the named deliverable location accessible? for retroactive obligation applications, does the evidence of use cited match independently verifiable records?
 
-This layer is implemented via the evidence verification endpoint (currently at `/api/evidence/verify` in the Octant grant operations dashboard). It returns a structured verification report for each submitted evidence item: verified, verified in substance (with a note on what could not be confirmed), or cannot be verified from any public source (with the reason and what was tried).
+This layer is implemented via an evidence verification endpoint. It returns a structured verification report for each submitted evidence item: verified, verified in substance (with a note on what could not be confirmed), or cannot be verified from any public source (with the reason and what was tried).
 
 The "cannot be verified" output from Layer 1 triggers the extended verification procedure from the document editing guidebook before the finding is recorded as unverifiable: Playwright rendering for JavaScript-dependent pages, direct API query of the data source, on-chain query via named public indexers, and aggregator checks via named third-party data providers.
 
@@ -233,7 +233,7 @@ Layer 2 investigates the following categories for each applicant:
 
 **On-chain usage data.** For applicants making on-chain usage claims: independent query of the claimed contract addresses or protocol addresses from named public blockchain data sources. Comparison against the applicant's stated baseline and target.
 
-**Prior grants and funding history.** Search across known grant history databases (Gitcoin grants data, KarmaGAP, on-chain treasury records where accessible) for prior grants to this applicant or this project. Cross-reference against the applicant's concurrent funding disclosure to identify any discrepancy. Prior Octant funding history is checked against the PoC vault records.
+**Prior grants and funding history.** Search across known grant history databases (Gitcoin grants data, KarmaGAP, on-chain treasury records where accessible) for prior grants to this applicant or this project. Cross-reference against the applicant's concurrent funding disclosure to identify any discrepancy. Prior funding from the operating program itself is cross-checked against the program's own grant records.
 
 **Adverse signal investigation.** Independent search for adverse signals: prior rejections from comparable programs, published technical criticisms, community dispute records, documented coordinating conflicts, or negative due diligence findings that appear in public sources.
 
