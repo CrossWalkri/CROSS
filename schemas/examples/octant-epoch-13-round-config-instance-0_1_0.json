@@ -1,5 +1,5 @@
 {
-  "_comment_purpose": "Worked instance demonstrating cross-walkri/round-config@0.2.1 against a hypothetical Octant Epoch 13 round configuration. Values are illustrative for implementation reference; actual Epoch 13 parameters are set by Octant and may differ. This instance is the reference artifact for Quentin's implementation work and a quality test of the schema's expressiveness.",
+  "_comment_purpose": "Worked instance demonstrating cross-walkri/round-config@0.2.1 against a hypothetical Octant Epoch 13 round configuration. Values are illustrative for implementation reference; actual Epoch 13 parameters are set by Octant and may differ. This instance is the reference artifact for third-party implementation work and a quality test of the schema's expressiveness.",
   "_comment_authority": "This is an example instance authored by Durgadas Hegde as part of the CROSS+WALKRI corpus. It is not an official Octant publication and does not bind Octant to these specific parameters.",
 
   "round_identity": {
