@@ -3,7 +3,7 @@ title: CROSS - Common Reporting Outcome Standards Schema
 version: 0.5.7
 date: 2026-08-06
 license: CC0
-status: Working draft. Supersedes version 0.1.0. Incorporates comparative research across thirteen grant programs spanning web3, open source, and institutional funding contexts.
+status: Working draft. Supersedes version 0.1.0. Incorporates comparative research across thirteen grant programs spanning web3, open source, and institutional funding contexts. The filename stem 0_2_0 is the stable series identifier for the CROSS suite; the version above is authoritative.
 related_documents:
   - standards/standards-3_0-adverse-signal-engagement-0_7_11.md
   - standards/standards-3_0-information-asymmetry-0_1_26.md
