@@ -160,6 +160,10 @@ The `statements/` directory contains 126+ individually published compatibility s
 
 `CROSS-common-reporting-outcome-standards-schema-worked-examples-0_2_0.md` contains six cases demonstrating how the entry specification gate and rigor tier apply across different application types.
 
+**Machine-readable**
+
+CROSS has two machine-readable layers that answer different questions. `machine-readable/` is the conformance layer: a JSON Schema, Zod, and semantic-tier set generated from one LinkML source that validates a CROSS outcome indicator (Part V) against the standard. `schemas/` is the serialization and interop layer: the JSON Schema family (round-config, runbook, applicant-facing-publication) for moving round data into and out of CROSS so implementers can build tooling. Neither supersedes the other.
+
 ---
 
 ## AI tools
