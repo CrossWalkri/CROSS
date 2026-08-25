@@ -1,10 +1,10 @@
 ---
 title: CROSS+WALKRI Primitives Framework Index
-version: 0.2.0
-date: 2026-06-07
+version: 0.2.1
+date: 2026-08-25
 license: CC0
 standards: CROSS v0.4.7 (github.com/CrossWalkri/CROSS), WALKRI v0.1.7 (github.com/CrossWalkri/WALKRI)
-foundation: CROSS-WALKRI-primitives-foundation-0_1_0.md (internal version 0.2.0, the 146-primitive basis)
+foundation: GRAIN-notation-0_1_0.md (GRAIN, internal version 0.3.0, the 136-primitive basis; formerly CROSS-WALKRI-primitives-foundation, now tombstoned)
 ---
 
 # CROSS+WALKRI Primitives Framework Index
@@ -19,7 +19,7 @@ First, classification: when a new external framework is encountered, locate the 
 
 Second, architecture: the index shows that CROSS+WALKRI's compatibility claims are not an accumulation of framework-by-framework agreements but a consequence of underlying structural alignment. All 95+ covered frameworks exemplify some combination of the primitives listed here. New frameworks will do the same.
 
-Primitives from the Foundation's methodological layer (Bidirectional Precision, Transclusion, Frame Language) and most identity-layer primitives (Entity Boundary, Scope, Sufficiency, Revenue Architecture, Disbursement Authority, Continuity Capacity, Development Stage, On-chain Identity Anchor) generate CROSS+WALKRI provisions but do not produce distinctive framework exemplars at the level of external compatibility claims. This index covers the primitives that generate the most significant external framework alignments: obligation primitives, gate primitives, measurement primitives, and the cohort-facing WALKRI primitive.
+The methodological commitments a prior revision carried in Layer 1 (bidirectional precision, transclusion, Frame Language inheritance) are released to the Precision-First Design Standard and Frame Language in GRAIN 0.3.0 and are no longer grant primitives. Most identity-layer primitives (Entity Boundary, Scope, Sufficiency, Revenue Architecture, Disbursement Authority, Continuity Capacity, Development Stage, On-chain Identity Anchor) generate grant-standard provisions but do not produce distinctive framework exemplars at the level of external compatibility claims. This index covers the primitives that generate the most significant external framework alignments: obligation primitives, gate primitives, measurement primitives, and the cohort-facing WALKRI primitive.
 
 A separate section at the end documents primitives identified during the framework research that are not yet in the Primitives Foundation and are candidates for the next foundation revision.
 
@@ -454,6 +454,7 @@ A terminal evaluation gate defined not by a funder's completion criteria but by 
 
 ## Changelog
 
+- **0.2.1 (2026-08-25):** Reconciled to the GRAIN 0.3.0 rework. The foundation reference now points to GRAIN-notation-0_1_0.md, the 136-primitive basis; the old CROSS-WALKRI-primitives-foundation copy is tombstoned with a redirect to GRAIN. The Layer 1 methodological items and the four Layer 5 WALKRI-core items (criterion specification elements, the data-quality standards, external standard identifier types, access models) are noted as released to their home standards and are no longer grant primitives. Mapping entries unchanged.
 - **0.2.0 (2026-06-07):** Refreshed to the Primitives Foundation v0.2.0, the 146-primitive basis. Front matter foundation reference updated from 0.1.3. Added two exemplar-rich obligation primitives the v0.2.0 reduction produced: the Allocation Rule (the combinatory allocation act, with framework exemplars across its eight configuration values from quadratic funding to lottery) and Financing Instrument Type (pure grant, repayable grant, concessional loan, blend). Corrected stale classifications: Theory of Change Hierarchy now references Layer 6 and the folded Theory Layer; Sustainability Stance moved to Layer 6; the Affected Population Verification note now records that the concept was seated as a primitive and then folded to a configuration of Evidence Strength. Reframed the candidates section as a disposition record: Inter-cycle Reflection Stage (now a configuration of Program Learning Architecture), Multi-cycle Retrospective Assessment, and Portfolio-level Continuation Benchmark are seated, while Regulatory Approval Pathway as Terminal Gate remains open in the unratified gap-pass tier. The index stays selective by design, covering the primitives that generate the most significant external framework alignments rather than all 146.
 - **0.1.0 (2026-05-19):** Initial release. Selective framework-exemplar index mapping obligation, gate, measurement, and cohort-facing primitives to the external frameworks that most clearly exemplify them, with a candidates-for-revision section and usage guidance.
 
