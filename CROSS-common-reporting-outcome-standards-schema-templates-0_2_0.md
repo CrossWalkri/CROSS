@@ -1,9 +1,9 @@
 ---
 title: CROSS - Common Reporting Outcome Standards Schema - Templates
-version: 0.3.1
-date: 2026-06-05
+version: 0.3.2
+date: 2026-09-03
 license: CC0
-status: Working draft. Companion templates document synced to the CROSS specification at CROSS-common-reporting-outcome-standards-schema-0_5_0.md. Supersedes version 0.2.0.
+status: Working draft. Companion templates document synced to the CROSS specification at CROSS-common-reporting-outcome-standards-schema-0_2_0.md (internal 0.5.8). Supersedes version 0.2.0.
 ---
 
 # CROSS: Common Reporting Outcome Standards Schema - Templates
@@ -13,6 +13,8 @@ Version 0.3.1 | 2026-06-08 | CC0
 ---
 
 ## Changelog
+
+**0.3.2 (2026-09-03).** Synced to CROSS 0.5.8. Added the served-population scale trigger as an above-ceiling note to the three entry-template floor considerations (Templates 1A, 1C, 2): where the served population is past the Coordination Scaling Standard affected-party reach ceiling, the template captures the proxy or guardian channel through which the round handles the population, because above the ceiling the carried consideration alone does not satisfy the floor. Propagates CROSS 0.5.2. The ORE ingestion-boundary and STRUCK exit-boundary adoptions (CROSS 0.5.4 to 0.5.7) are standard-level Part I boundary declarations, not template fields. Sync stamp advanced from 0.5.0 to 0.5.8, and the stale sync filename reference corrected to the 0_2_0 stem. Frame Language own-voice pass clean; em-dash sweep clean. No existing template restructured.
 
 **0.3.1 (2026-06-08).** Frame Language own-voice pass. Own-voice watchlist terms were replaced with the structural act each names (accountability became obligation; the integrity standard became the data quality standard; mandatory became required; "name the individual who assumes personal accountability" became "who is personally answerable"; own-voice beneficiary safety became affected-population safety). Two naming updates aligned the templates with the spec: the Template 1A/1B/1C/2 titles "Build/Retroactive/Change Accountability" became "Build/Retroactive/Change Obligation", and Template 15 "Governance and Continuity Resilience Declaration" became "Continuity Capacity Declaration". Form-field labels, framework names, governance tokens, and the changelog rows were preserved as citation. Em-dash sweep clean. No template was restructured; vocabulary and naming only.
 
@@ -112,7 +114,7 @@ The distinction between Standard and Small Team scale in change-obligation round
 
 > [Enter named beneficiary or user, and briefly describe how the need was expressed]
 
-*Served-population risk-bearer floor (noted consideration).* The served population (the people this deliverable is meant to serve) bears loss when funded work does not reach them. The spec names the served population as a risk-bearer carried through every gate, not validated only at entry. You name them here at entry; at the completion verification gate the funder additionally considers whether work recorded as delivered actually reached them. Naming the served population precisely now (not only an immediate user) makes that later consideration possible.
+*Served-population risk-bearer floor (noted consideration).* The served population (the people this deliverable is meant to serve) bears loss when funded work does not reach them. The spec names the served population as a risk-bearer carried through every gate, not validated only at entry. You name them here at entry; at the completion verification gate the funder additionally considers whether work recorded as delivered actually reached them. Naming the served population precisely now (not only an immediate user) makes that later consideration possible. Where this population is past the affected-party reach ceiling the Coordination Scaling Standard specifies, the round cannot reach it directly: note the proxy or guardian channel through which the round handles the population, because above the ceiling the carried consideration alone does not satisfy the floor.
 
 ---
 
@@ -275,7 +277,7 @@ The distinction between Standard and Small Team scale in change-obligation round
 
 > [Enter the defined population]
 
-*Served-population risk-bearer floor (noted consideration).* The population named here is a risk-bearer of the round's evaluation, not only the subject of a baseline measurement. The spec carries the served population through every gate: it bears loss when the round funds work that does not serve it. Name it precisely enough that, at the completion verification gate, the funder can consider whether the change you report actually reached this population or whether effects on it fall outside your declared indicators.*
+*Served-population risk-bearer floor (noted consideration).* The population named here is a risk-bearer of the round's evaluation, not only the subject of a baseline measurement. The spec carries the served population through every gate: it bears loss when the round funds work that does not serve it. Name it precisely enough that, at the completion verification gate, the funder can consider whether the change you report actually reached this population or whether effects on it fall outside your declared indicators. Where this population is past the affected-party reach ceiling the Coordination Scaling Standard specifies, note the proxy or guardian channel through which the round handles it, because above the ceiling the carried consideration alone does not satisfy the floor.*
 
 **Source of evidence for the FROM state**
 
@@ -360,7 +362,7 @@ The distinction between Standard and Small Team scale in change-obligation round
 
 > [Enter the defined population]
 
-*Served-population risk-bearer floor (noted consideration).* The population named here is a risk-bearer of the round's evaluation, carried through every gate, not validated only at entry. The spec records that it bears loss when the round funds work that does not serve it. Name it precisely enough that, at the completion verification gate, the funder can consider whether the change you report actually reached this population, and whether effects on it fall outside your declared indicators.*
+*Served-population risk-bearer floor (noted consideration).* The population named here is a risk-bearer of the round's evaluation, carried through every gate, not validated only at entry. The spec records that it bears loss when the round funds work that does not serve it. Name it precisely enough that, at the completion verification gate, the funder can consider whether the change you report actually reached this population, and whether effects on it fall outside your declared indicators. Where this population is past the affected-party reach ceiling the Coordination Scaling Standard specifies, note the proxy or guardian channel through which the round handles it, because above the ceiling the carried consideration alone does not satisfy the floor.*
 
 **Source of evidence for the FROM state**
 

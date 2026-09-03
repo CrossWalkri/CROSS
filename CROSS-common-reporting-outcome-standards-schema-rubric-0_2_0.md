@@ -1,9 +1,9 @@
 ---
 title: CROSS - Common Reporting Outcome Standards Schema - Assessment Rubric
-version: 0.3.1
-date: 2026-06-08
+version: 0.3.2
+date: 2026-09-03
 license: CC0
-status: Working draft. Companion rubric synced to CROSS-common-reporting-outcome-standards-schema-0_5_0.md. Supersedes version 0.2.0.
+status: Working draft. Companion rubric synced to CROSS-common-reporting-outcome-standards-schema-0_2_0.md (internal 0.5.8). Supersedes version 0.2.0.
 ---
 
 # CROSS: Common Reporting Outcome Standards Schema - Assessment Rubric
@@ -14,7 +14,7 @@ Version 0.3.1 | 2026-06-08 | CC0
 
 ## How to Use This Document
 
-This rubric is the reviewer-facing evaluation tool for applications assessed against the Common Reporting Outcome Standards Schema (CROSS). It is designed to be used during an active review without cross-referencing the full standard. Reviewers who have not read the standard should still be able to complete a well-grounded evaluation using this document alone. This version of the rubric is synced to CROSS version 0.5.0, in which CROSS is declared a domain application of CRAFT (Chains Reveal Attested Falsifiable Truth), the meta-standard for evaluation chain legibility (spec Part XIII receipt). A program that uses this rubric to assess applications against CROSS thereby satisfies CRAFT's conditions for those grant evaluations; the reviewer does not separately apply CRAFT. Where a check below realizes a specific CRAFT requirement, that connection is noted; the note is orientation for a researcher, not an additional step the reviewer performs.
+This rubric is the reviewer-facing evaluation tool for applications assessed against the Common Reporting Outcome Standards Schema (CROSS). It is designed to be used during an active review without cross-referencing the full standard. Reviewers who have not read the standard should still be able to complete a well-grounded evaluation using this document alone. This version of the rubric is synced to CROSS version 0.5.8, in which CROSS is declared a domain application of CRAFT (Chains Reveal Attested Falsifiable Truth), the meta-standard for evaluation chain legibility (spec Part XIII receipt). A program that uses this rubric to assess applications against CROSS thereby satisfies CRAFT's conditions for those grant evaluations; the reviewer does not separately apply CRAFT. Where a check below realizes a specific CRAFT requirement, that connection is noted; the note is orientation for a researcher, not an additional step the reviewer performs.
 
 This rubric covers three obligation modes: build obligation, change obligation, and retroactive obligation. Before applying any scored criteria, a reviewer must determine which mode the round operates in and navigate to the correct entry specification gate in Section 2. The mode is declared in the published round specification; it is not determined by the reviewer and is not open to interpretation during review.
 
@@ -224,6 +224,13 @@ At the completion verification gate, confirm that the determination and the unin
 | The served population was named at entry but the determination record does not show its exposure was considered | Floor not met. The determination record must show the consideration was applied, not merely that the population was named. Return the determination for the consideration to be applied and recorded. |
 
 Note: this floor is a named consideration each gate is checked against. It does not, on its own, require a standing channel through which the served population raises concerns during the grant period; such a channel is a separate configuration a funder may add.
+
+**Above the affected-party reach ceiling.** Where the round's served population is past the affected-party reach ceiling the Coordination Scaling Standard specifies, the round cannot identify and reach that population directly, so the carried consideration alone does not satisfy the floor. Above the ceiling, the round routes its served-population handling through the proxy or guardian channel the Structural Power Obligation Standard specifies and the Coordination Scaling Standard makes a minimum condition, and the determination record must show the channel was the route. Below the ceiling, the carried consideration above is the minimum.
+
+| Finding | Action |
+|---|---|
+| Above the reach ceiling, the determination record shows the served-population handling routed through the authorized proxy or guardian channel | Floor met for the above-ceiling case. Record the channel in the determination. |
+| Above the reach ceiling, the determination relies on the carried consideration alone, with no proxy or guardian channel shown | Floor not met above the ceiling. The carried consideration alone does not satisfy the floor past the reach ceiling; return the determination for the channel to be the route and recorded. |
 
 ---
 
@@ -813,6 +820,7 @@ For retroactive obligation gate failures: the applicant has not provided the req
 
 | Version | Date | Summary |
 |---|---|---|
+| 0.3.2 | 2026-09-03 | Synced to CROSS 0.5.8. Added the served-population scale trigger to the risk-bearer floor scoring in Section 2, with a Finding and Action pair for the above-ceiling case: past the Coordination Scaling Standard affected-party reach ceiling, the carried consideration alone does not satisfy the floor and the round routes served-population handling through the Structural Power Obligation Standard proxy or guardian channel, with the determination record showing the channel was the route; below the ceiling the prior scoring stands. Propagates CROSS 0.5.2. The ORE ingestion-boundary and STRUCK exit-boundary adoptions (CROSS 0.5.4 to 0.5.7) are standard-level Part I boundary declarations, not scored in this reviewer rubric. Sync stamp advanced from 0.5.0 to 0.5.8, and the stale sync filename reference corrected to the 0_2_0 stem. Frame Language own-voice pass clean; em-dash sweep clean. No existing scoring changed. |
 | 0.3.1 | 2026-06-08 | Frame Language own-voice pass. Own-voice watchlist terms were replaced with the structural act each names (mandatory became required; credible became verifiable; the Governing test became the Applicable test). Two naming updates aligned the rubric with the spec: Precondition F "Governance and continuity resilience" became "Decision-standing structure and Continuity Capacity", and the "Attestation integrity" check became "Attestation independence". The WALKRI Integrity data-quality standard, the canonical beneficiary dimension name, framework names, and the changelog rows were preserved as citation. Em-dash sweep clean. No scoring or recommendation vocabulary changed; vocabulary and naming only. |
 | 0.3.0 | 2026-06-05 | Synced to CROSS spec 0.5.0. Added reviewer calibration as an assessment precondition in Section 1. Added Section 2-0 entry-gate preconditions: organizational identity completeness, disbursement authority, sufficiency architecture coherence, public benefit mechanism and access condition, development stage consistency, governance and continuity resilience, obligation fulfillment record, and prior work attribution. Added the served-population risk-bearer floor check to the entry and subsequent gates (spec Part II beneficiary dimension). Added the causality stance distinction (attribution versus contribution) and the counterfactual reference assessment to Section 4. Added token generation event disclosure to Check 1. Expanded Check 3 with the three conflict-of-interest tiers and the attestation-integrity provision, and added Check 3-A Cohort Position assessment. Noted the CRAFT framing where relevant: CROSS is a domain application of CRAFT (spec Part XIII receipt). No change to the 1-4 indicator field scoring or the recommendation vocabulary. |
 | 0.2.0 | 2026-05-14 | Companion rubric to CROSS spec 0.2.0. Three obligation modes, mode-specific entry specification gates, eleven-field indicator rubric, five data quality standards, three conformance checks, recommendation framework. |
