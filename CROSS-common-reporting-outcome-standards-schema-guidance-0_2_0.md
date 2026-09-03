@@ -1,9 +1,9 @@
 ---
 title: CROSS - Common Reporting Outcome Standards Schema - Guidance
-version: 0.3.1
-date: 2026-06-08
+version: 0.3.2
+date: 2026-09-03
 license: CC0
-status: Working draft. Companion guidance document synced to CROSS-common-reporting-outcome-standards-schema-0_5_0.md. Supersedes version 0.2.0.
+status: Working draft. Companion guidance document synced to CROSS-common-reporting-outcome-standards-schema-0_2_0.md (internal 0.5.8). Supersedes version 0.2.0.
 ---
 
 # CROSS: Common Reporting Outcome Standards Schema - Guidance
@@ -12,7 +12,7 @@ Version 0.3.1 | 2026-06-08 | CC0
 
 ---
 
-This document is the practitioner companion to CROSS (Common Reporting Outcome Standards Schema) version 0.5.0. It does not restate the standard. It explains how to apply the standard's criteria, what qualifies and what does not at each decision point, and what the most common failure modes look like. It is written for two audiences: applicants completing a CROSS-conformant grant application, and reviewers evaluating one.
+This document is the practitioner companion to CROSS (Common Reporting Outcome Standards Schema) version 0.5.8. It does not restate the standard. It explains how to apply the standard's criteria, what qualifies and what does not at each decision point, and what the most common failure modes look like. It is written for two audiences: applicants completing a CROSS-conformant grant application, and reviewers evaluating one.
 
 This version of the guidance covers three obligation modes: build obligation, change obligation, and retroactive obligation. Part 1 covers the entry specification for each mode. Part 2 covers the gate architecture. Part 2-A covers the entry-gate declarations the standard requires before any gate assessment proceeds. Parts 3 through 9 cover indicator specification and conformance requirements that apply across modes, with mode-specific notes where the application differs.
 
@@ -129,6 +129,8 @@ The standard names three parties who bear loss when a round's evaluation misjudg
 **How a reviewer confirms the determination record shows the consideration was applied.** This is the test, and it is specific. It is not enough that the served population was named in the application or validated at entry. The determination record at each gate must show that the population's exposure was considered at that gate. A completion determination that records only whether the deliverable exists or whether the indicator moved, with no statement about whether the result reached the served population and no engagement with the unintended outcomes disclosure on that point, has not applied the consideration. A determination that records the reviewer's finding on reach and on uncaptured effects, even a brief finding that no exposure was identified, has applied it. The qualifying difference is a visible consideration in the record, not a named population at entry.
 
 **What the floor does not require.** The floor is a named consideration each gate is checked against. It does not, on its own, require a standing channel through which the served population raises concerns during the grant period. A program may add such a channel as a separate configuration, but a program without one is not non-conformant with the floor. A reviewer assessing floor conformance is checking for the applied consideration in the determination record, not for a participation mechanism.
+
+**What changes above the affected-party reach ceiling.** The consideration above is the minimum where the round can identify and reach its served population directly. Where the served population is past the affected-party reach ceiling the Coordination Scaling Standard specifies, the round cannot identify and reach that population directly, so naming it by impression is the fingerprint of the crossing rather than a reliable identification. Above the ceiling, the round's handling of the served population as a risk-bearer routes through a structurally authorized proxy or guardian channel, the one the Structural Power Obligation Standard specifies and the Coordination Scaling Standard makes a minimum condition above the ceiling; the carried consideration alone does not satisfy the floor above the ceiling, and the determination record must show the channel was the route. Below the ceiling, the carried consideration in the paragraphs above is the minimum and a standing channel remains a separate configuration.
 
 ---
 
@@ -588,6 +590,7 @@ Programs at Stage 2 or above in their Grant Configurator progression should cons
 
 | Version | Date | Summary |
 |---|---|---|
+| 0.3.2 | 2026-09-03 | Synced to CROSS 0.5.8. Added the served-population scale trigger to the risk-bearer floor guidance in Part 2: above the Coordination Scaling Standard affected-party reach ceiling, the carried consideration alone does not satisfy the floor and the round routes served-population handling through the Structural Power Obligation Standard proxy or guardian channel, with the determination record showing the channel was the route; below the ceiling the prior guidance stands. This propagates CROSS 0.5.2. The ORE ingestion-boundary and STRUCK exit-boundary adoptions (CROSS 0.5.4 to 0.5.7) are standard-level Part I boundary declarations not restated in this practitioner guidance. Sync stamp advanced from 0.5.0 to 0.5.8, and the stale sync filename reference corrected to the stable 0_2_0 stem. Frame Language own-voice pass clean; em-dash sweep clean. No existing guidance restructured. |
 | 0.3.1 | 2026-06-08 | Frame Language own-voice pass. Own-voice watchlist terms replaced with the structural act each names (the govern family became covers or applies to; accountability became obligation or verification; mandatory became required; the integrity standard became the data quality standard; credible became supportable; the Governing standard became the Applicable standard). Part 9 heading Beneficiary Validation became Affected-Population Validation and own-voice beneficiary population became affected population; backup capacity was read as backup function where it named a delivery capability. Framework names and citations preserved. Em-dash sweep clean. No guidance content or requirement changed; vocabulary and naming only. |
 | 0.3.0 | 2026-06-05 | Synced to the 0.5.0 standard. Added Part 2-A (Entry-Gate Declarations) with what-qualifies and what-does-not guidance for the organizational identity declaration's six fields including the on-chain identity anchor, the sufficiency architecture declaration's five elements including revenue architecture, the public benefit mechanism and access condition declaration, the development stage declaration, the governance and continuity resilience declaration, the obligation fulfillment record, and the prior work attribution statement. Added the served-population risk-bearer floor guidance to Part 2, with the reviewer test for confirming the determination record shows the consideration was applied. Added token generation event disclosure guidance to Part 5. Added a CRAFT-inheritance note to the introduction. No existing guidance restructured. |
 | 0.2.0 | 2026-05-14 | Companion guidance covering three obligation modes (build, change, retroactive), the four-gate architecture, and the eleven indicator fields, with mode-specific notes. Superseded version 0.1.0. |
