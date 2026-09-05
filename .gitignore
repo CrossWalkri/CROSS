@@ -1,0 +1,13 @@
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Python (machine-readable generator)
+__pycache__/
+*.pyc
+.venv/
+venv/
+machine-readable/venv/
+
+# Node
+node_modules/
