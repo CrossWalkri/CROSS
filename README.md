@@ -120,6 +120,10 @@ The value CROSS creates is specific to each layer of the grants ecosystem.
 
 ---
 
+## Machine-readable layer
+
+This standard ships a machine-readable fetch surface (a JSON Schema, a typed register of its provisions, and conformant and non-conformant examples) for a consumer that ingests it as data rather than reading the prose. It lives as one source in [Polymathie-Studio/tools](https://github.com/Polymathie-Studio/tools): source under `machine-readable/craft/cross/`, the generated schema under `schema/craft/cross/`, indexed by the [CRAFT family manifest](https://raw.githubusercontent.com/Polymathie-Studio/tools/main/schema/craft/craft-manifest.json). This standard's schema: https://raw.githubusercontent.com/Polymathie-Studio/tools/main/schema/craft/cross/cross.schema.json
+
 ## License
 
 CROSS is dedicated to the public domain under **Creative Commons Zero v1.0 Universal (CC0)**. See `LICENSE` for the full dedication.
